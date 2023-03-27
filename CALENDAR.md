@@ -7,7 +7,7 @@
 |    |  6 |  7 |  8 |  9 | 10 | 11 | 12 |
 | 10 |    |    |    |    |    |    |    |
 |    | 13 | 14 | 15 | 16 | 17 | 18 | 19 |
-| 11 | #I |    |    |    |    |    |    |
+| 11 | II |    |    |    |    |    |    |
 |    | 20 | 21 | 22 | 23 | 24 | 25 | 26 |
 | 12 |    |    |    |    |    |    |    |
 |    | 27 | 28 | 29 | 30 | 31 |  1 |  2 |
@@ -61,7 +61,7 @@
 |    |  3 |  4 |  5 |  6 |  7 |  8 |  9 |
 | 27 |    | 24 |    | P3 |    |    |    |
 |    | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
-| 28 |    |    |    | PO |    | #X |    |
+| 28 |    |    |    | PO |    | TT |    |
 |    | 17 | 18 | 19 | 20 | 21 | 22 | 23 |
 | 29 |    |    |    |    |    |    |    |
 |    | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
@@ -69,10 +69,10 @@
 |    | 31 |  1 |  2 |  3 |  4 |  5 |  6 |
 | 31 |    |    |    |    |    |    |    |
 
-- #I: Inicio del Semestre
+- II: Inicio del Semestre
 - RR: Receso de Actividades
 - FF: Feriado
-- #X: Término del Semestre
+- TT: Término del Semestre
 
 # Clases
 
@@ -97,12 +97,12 @@
 | P2 | PEP2 | Aplicaciones de Amplificadores operacionales, filtros activos, osciladores | | |
 | 16 | CIs Analogicos | |Inicio $T_7$ | |
 | 17 | CIs Analogicos | | | |
-| 18: Entrega $T_7$, Fuentes Conmutadas
-| 19: Fuentes Conmutadas, inicio $T_8$
-| 20: Fuentes Conmutadas
-| 21: Entrega $T_8$, Amplificadores de instrumentación
-| 22: Amplificadores de Potencia
-| 23: entrega dispositivo diseñado, Amplificadores de Potencia
-| 24: Amplificadores de Potencia, preparación PEP3
-| PEP3: Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia
+| 18 | Fuentes Conmutadas | | | Entrega $T_7$ |
+| 19 | Fuentes Conmutadas | |inicio $T_8$ | |
+| 20 | Fuentes Conmutadas | | | |
+| 21 | Amplificadores de instrumentación | | |  Entrega $T_8$ |
+| 22 | Amplificadores de Potencia | | | |
+| 23 | Amplificadores de Potencia | Amplificadores de Potencia, entrega dispositivo diseñado | | |
+| 24 | Amplificadores de Potencia | Amplificadores de Potencia, preparación PEP3 | | |
+| P3 | PEP3 | Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia | | |
 | PO | POR | Prueba Optativa Recuperativa | | |
