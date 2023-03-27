@@ -18,6 +18,18 @@ Al término de la asignatura el alumno será capaz de:
 
 ## Programa de Actividades
 
+1. Introducción
+1. Dispositivos electronicos diodos y transistores
+1. amplificadores operaciones y sus aplicaciones
+1. Filtros activos
+1. Osciladores
+1. Circuitos integrados analógicos
+1. Amplificadores de potencia
+1. Fuentes de alimentación conmutadas
+1. Evaluaciones
+
+[Calendario](CALENDAR.md)
+
 ## Evaluaciones
 
 La nota final está compuesta de 3 evaluaciones escritas -$P_1$, $P_2$ y $P_3$- con ponderaciones 0.15, 0.2 y 0.25, respectivamente, y 8 trabajos de diseño ($T_1$,$T_2$,$T_3$,$T_4$,$T_5$,$T_6$,$T_7$,$T_8$) con ponderación 0.05 cada uno.
