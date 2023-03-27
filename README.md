@@ -32,7 +32,7 @@ Al término de la asignatura el alumno será capaz de:
 
 ## Evaluaciones
 
-La nota final está compuesta por 70% del promedio de las evaluaciones escritas, y 30% del promedio de los trabajos. Hay 3 evaluaciones escritas - $P_1$, $P_2$ y $P_3$- con ponderaciones 0.3, 0.35 y 0.35, respectivamente, y 8 trabajos de diseño ($T_1$, $T_2$, $T_3$, $T_4$, $T_5$, $T_6$, $T_7$, $T_8$) con ponderaciones iguales (12.5% cada uno).
+La nota final está compuesta por 70% del promedio de las evaluaciones escritas, y 30% del promedio de los trabajos. Hay 3 evaluaciones escritas - $P_1$, $P_2$ y $P_3$- con ponderaciones 0.3, 0.35 y 0.35, respectivamente, y 8 trabajos de diseño ($T_1$, $T_2$, $T_3$, $T_4$, $T_5$, $T_6$, $T_7$, $T_8$) con ponderaciones iguales ($1 \over 8$ cada uno).
 
 $$ Promedio Final = 0.7\left( 0.3P_1 + 0.35P_2 + 0.35P_3\right) + 0.3\sum_{k=1}^8 \frac{T_k}{8} $$
 
