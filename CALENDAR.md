@@ -76,7 +76,7 @@
 
 # Clases
 
-| #  | Titulo |  Descripción |  incio T |  entrega T |
+| #  | Titulo |  Descripción |  Trabajos |  Entregas |
 | -- | --     | -- | -- | -- |
 | 01 | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, aspectos practicos para el diseño de sistemas electrónicos con pasivos | | |
 | 02 | Diodos | Descipción del diodo (ideal, modelo, real), circuitos con diodos, LEDs | inicio $T_1$ y $T_2$ | |
@@ -85,23 +85,24 @@
 | 05 | Circuitos Amplificadores de Pequeña Señal con BJT | | | |
 | 06 | Amplificadores operacionales (amp ops)| | |Entrega $T_3$ |
 | 07 | Aplicaciones de Amplificadores operacionales| Aplicaciones de Amplificadores operacionales (sólo R), preparación PEP1| | |
-| P1| PEP1 | Diodos, Transistores, Amplificadores operacionales| | |
-- 08: Inicio $T_4$, Aplciaciones de Amplificadores operacionales (analisis con funcion de transferencia)
-- 09: Respuesta en frecuencia, diagrama de Bode, filtros
-- 10: Entrega $T_4$, Filtros activos, inicio $T_5$
-- 11: Filtros activos
-- 12: Entrega $T_5$, generadores de señales (osciladores), inicio $T_6$
-- 13: generadores de señales (osciladores)
-- 14: Entrega $T_6$, generadores de señales (osciladores)
-- 15: CIs Analógicos, preparación PEP2
-- PEP2: Aplicaciones de Amplificadores operacionales, filtros activos, osciladores
-- 16: Inicio $T_7$, CIs Analogicos
-- 17: CIs Analogicos
-- 18: Entrega $T_7$, Fuentes Conmutadas
-- 19: Fuentes Conmutadas, inicio $T_8$
-- 20: Fuentes Conmutadas
-- 21: Entrega $T_8$, Amplificadores de Instrumentación
-- 22: Amplificadores de Potencia
-- 23: entrega dispositivo diseñado, Amplificadores de Potencia
-- 24: Amplificadores de Potencia, preparación PEP3
-- PEP3: Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia
+| P1 | PEP1 | Diodos, Transistores, Amplificadores operacionales| | |
+| 08 | Aplciaciones de Amplificadores operacionales  | Aplciaciones de Amplificadores operacionales (analisis con funcion de transferencia) | Inicio $T_4$ | |
+| 09 | Respuesta en frecuencia | Respuesta en frecuencia, diagrama de Bode, filtros | | |
+| 10 | Filtros activos | | inicio $T_5$ | Entrega $T_4$ |
+| 11 | Filtros activos | | | |
+| 12 | Osciladores | generadores de señales (osciladores) | inicio $T_6$ | Entrega $T_5$ |
+| 13 | Osciladores | generadores de señales (osciladores) | | |
+| 14 | Osciladores | generadores de señales (osciladores) | | Entrega $T_6$ |
+| 15 | CIs Analógicos | CIs Analógicos, preparación PEP2 | | |
+| P2 | PEP2 | Aplicaciones de Amplificadores operacionales, filtros activos, osciladores | | |
+| 16 | CIs Analogicos | |Inicio $T_7$ | |
+| 17 | CIs Analogicos | | | |
+| 18: Entrega $T_7$, Fuentes Conmutadas
+| 19: Fuentes Conmutadas, inicio $T_8$
+| 20: Fuentes Conmutadas
+| 21: Entrega $T_8$, Amplificadores de instrumentación
+| 22: Amplificadores de Potencia
+| 23: entrega dispositivo diseñado, Amplificadores de Potencia
+| 24: Amplificadores de Potencia, preparación PEP3
+| PEP3: Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia
+| PO | POR | Prueba Optativa Recuperativa | | |
