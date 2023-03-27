@@ -32,9 +32,9 @@ Al término de la asignatura el alumno será capaz de:
 
 ## Evaluaciones
 
-La nota final está compuesta de 3 evaluaciones escritas -$P_1$, $P_2$ y $P_3$- con ponderaciones 0.15, 0.2 y 0.25, respectivamente, y 8 trabajos de diseño ($T_1$,$T_2$,$T_3$,$T_4$,$T_5$,$T_6$,$T_7$,$T_8$) con ponderación 0.05 cada uno.
+La nota final está compuesta por 70% del promedio de las evaluaciones escritas, y 30% del promedio de los trabajos. Hay 3 evaluaciones escritas - $P_1$, $P_2$ y $P_3$- con ponderaciones 0.3, 0.35 y 0.35, respectivamente, y 8 trabajos de diseño ($T_1$, $T_2$, $T_3$, $T_4$, $T_5$, $T_6$, $T_7$, $T_8$) con ponderaciones iguales (12.5% cada uno).
 
-$$ Promedio Final = 0.15P_1 + 0.2P_2 + 0.25P_3 + \sum_{k=1}^8 0.05T_k $$
+$$ Promedio Final = 0.7\left( 0.3P_1 + 0.35P_2 + 0.35P_3\right) + 0.3\sum_{k=1}^8 \frac{T_k}{8} $$
 
 El sistema de evaluación contempla, además, una Prueba Optativa Recuperativa (POR)
 
