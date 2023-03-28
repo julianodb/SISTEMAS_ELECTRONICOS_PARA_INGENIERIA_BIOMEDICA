@@ -3,9 +3,14 @@
 
 ![FING](img/logo_fing.png?raw=true "FING")
 
+
 ## Horário
-- Martes: bloque 5 (15:20 - 16:40)
-- Jueves: bloque 4 (13:45 - 15:05)
+- Martes: bloque 5 (15:20 - 16:40), ELE629
+- Jueves: bloque 4 (13:45 - 15:05), ED804
+
+## Profesor
+
+Juliano Barboza
 
 ## Resultados de Aprendizaje
 
@@ -41,7 +46,7 @@ evaluadas ($P_1$, $P_2$ o $P_3$).
 
 ## Programa de Actividades
 
-1. Introducción
+1. [Introducción](01_Introduccion.md)
 1. Dispositivos electronicos diodos y transistores
 1. amplificadores operaciones y sus aplicaciones
 1. Filtros activos
