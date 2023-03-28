@@ -1,4 +1,4 @@
-# Sistemas Electronicos Interdisciplinaria
+# Sistemas Electrónicos Interdisciplinaria
 ##### (para Ingeniería Biomédia, 1/2023)
 
 ![FING](img/logo_fing.png?raw=true "FING")
@@ -24,7 +24,7 @@ Al término de la asignatura el alumno será capaz de:
 ## Contribución al Perfil de Egreso
 - Capacidad de aprendizaje autonomo
 - Capacidad para abordar y resolver problemas de ingeniería en una perspectiva sistémica
-- Desarrollar la capcidad de diagnóstico, modelación y diseño de sistemas o procesos en el ámbito de su especialidad
+- Desarrollar la capacidad de diagnóstico, modelación y diseño de sistemas o procesos en el ámbito de su especialidad
 
 ## Evaluaciones
 
@@ -48,7 +48,7 @@ evaluadas ($P_1$, $P_2$ o $P_3$).
 
 1. [Introducción](01_Introduccion.md)
 1. Dispositivos electronicos diodos y transistores
-1. amplificadores operaciones y sus aplicaciones
+1. Amplificadores operacionales y sus aplicaciones
 1. Filtros activos
 1. Osciladores
 1. Circuitos integrados analógicos
