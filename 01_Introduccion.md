@@ -21,7 +21,7 @@ Grupos de 3
 
 Teoría de Circuitos
 
-$R_{series} = R_1 + R_2$
+$$R_{series} = R_1 + R_2$$
 
 $$R_{paralelo} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2}}$$
 
