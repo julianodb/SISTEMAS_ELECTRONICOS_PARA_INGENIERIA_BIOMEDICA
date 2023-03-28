@@ -1,4 +1,5 @@
-# Sistemas Electronicos (para Ingeniería Biomédia)
+# Sistemas Electronicos Interdisciplinaria
+##### (para Ingeniería Biomédia, 1/2023)
 
 ![FING](img/logo_fing.png?raw=true "FING")
 
