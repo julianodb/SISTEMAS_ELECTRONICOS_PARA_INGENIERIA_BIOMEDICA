@@ -47,7 +47,7 @@ evaluadas ($P_1$, $P_2$ o $P_3$).
 ## Programa de Actividades
 
 1. [Introducción](01_Introduccion.md)
-1. Dispositivos electronicos diodos y transistores
+1. Dispositivos electronicos: [diodos](02_Diodos.md) y transistores
 1. Amplificadores operacionales y sus aplicaciones
 1. Filtros activos
 1. Osciladores
@@ -56,3 +56,6 @@ evaluadas ($P_1$, $P_2$ o $P_3$).
 1. Fuentes de alimentación conmutadas
 
 [Calendario](CALENDAR.md)
+
+### Trabajos
+[T1](T1.md)
