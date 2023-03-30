@@ -79,7 +79,7 @@
 | #  | Titulo |  Descripción |  Entrega |  Trabajo |
 | -- | --     | -- | -- | -- |
 | [01](01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, aspectos practicos para el diseño de sistemas electrónicos con pasivos | | |
-| 02 | Diodos | Descipción del diodo (ideal, modelo, real), circuitos con diodos, LEDs |  | inicio $T_1$ y $T_2$ |
+| [02](02_Diodos.md) | Diodos | Descipción del diodo (ideal, modelo, real), circuitos con diodos, LEDs |  | inicio $T_1$ y $T_2$ |
 | 03 | Transistor de Unión Bipolar (BJT) | Descripción del BJT(ideal, real, fórmulas, uso como llave), necesidad de polarización, circuitos de polarización BJT| | |
 | 04 | Analisis de ca del BJT | | Entrega $T_1$ y $T_2$ | inicio $T_3$ |
 | 05 | Circuitos Amplificadores de Pequeña Señal con BJT | | | |
