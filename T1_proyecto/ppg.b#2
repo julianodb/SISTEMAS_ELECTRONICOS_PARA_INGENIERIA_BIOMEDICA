@@ -1557,7 +1557,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 </elements>
 <signals>
-<signal name="N$2">
+<signal name="GND">
 <contactref element="LED5MM1" pad="K"/>
 <contactref element="GND" pad="1"/>
 <contactref element="GND" pad="2"/>

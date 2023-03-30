@@ -1412,12 +1412,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </designrules>
 <autorouter>
 <pass name="Default">
-<param name="RoutingGrid" value="50mil"/>
+<param name="RoutingGrid" value="0.5mm"/>
 <param name="AutoGrid" value="1"/>
 <param name="Efforts" value="0"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -1432,7 +1432,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
 <param name="PrefDir.15" value="0"/>
-<param name="PrefDir.16" value="a"/>
+<param name="PrefDir.16" value="-"/>
 <param name="cfVia" value="8"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
@@ -1564,21 +1564,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="D1" pad="A"/>
 <contactref element="LED3MM2" pad="K"/>
 <contactref element="LED5MM2" pad="K"/>
-<wire x1="47" y1="13.73" x2="47" y2="16.27" width="0" layer="19" extent="1-1"/>
-<wire x1="34.27" y1="24" x2="47" y2="16.27" width="0" layer="19" extent="1-1"/>
-<wire x1="31.27" y1="13" x2="34.27" y2="24" width="0" layer="19" extent="1-1"/>
-<wire x1="30.08" y1="3" x2="31.27" y2="13" width="0" layer="19" extent="1-1"/>
-<wire x1="19.73" y1="18" x2="31.27" y2="13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="RV1" pad="2"/>
 <contactref element="LED3MM2" pad="A"/>
-<wire x1="14" y1="7.3" x2="28.73" y2="13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="RH1" pad="2"/>
 <contactref element="LED5MM1" pad="A"/>
-<wire x1="31.73" y1="24" x2="20.08" y2="13.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="RV1" pad="1"/>
@@ -1587,16 +1580,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="D1" pad="C"/>
 <contactref element="RH1" pad="1"/>
 <contactref element="RH2" pad="1"/>
-<wire x1="17.08" y1="24" x2="9.92" y2="13.5" width="0" layer="19" extent="1-1"/>
-<wire x1="5.5" y1="17.27" x2="17.08" y2="24" width="0" layer="19" extent="1-1"/>
-<wire x1="5.5" y1="14.73" x2="5.5" y2="17.27" width="0" layer="19" extent="1-1"/>
-<wire x1="8.92" y1="7.3" x2="5.5" y2="14.73" width="0" layer="19" extent="1-1"/>
-<wire x1="19.92" y1="3" x2="8.92" y2="7.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="LED5MM2" pad="A"/>
 <contactref element="RH2" pad="2"/>
-<wire x1="22.27" y1="18" x2="6.92" y2="24" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

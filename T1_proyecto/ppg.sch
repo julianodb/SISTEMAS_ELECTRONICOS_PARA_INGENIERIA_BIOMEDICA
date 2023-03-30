@@ -7669,8 +7669,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="RV1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/5V" package3d_urn="urn:adsk.eagle:package:23502/1"/>
 <part name="LED3MM2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value=" "/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="DO41Z10" package3d_urn="urn:adsk.eagle:package:43341/1" value=" "/>
-<part name="LED5MM2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value=" "/>
-<part name="RH2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="VMTA55" package3d_urn="urn:adsk.eagle:package:26121/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -7706,14 +7704,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <attribute name="NAME" x="42.418" y="18.415" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="44.958" y="26.289" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED5MM2" gate="G$1" x="40.64" y="45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="45.212" y="49.276" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="45.212" y="51.435" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="RH2" gate="G$1" x="33.02" y="45.72" smashed="yes">
-<attribute name="NAME" x="29.21" y="47.2186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="29.21" y="42.418" size="1.778" layer="96"/>
-</instance>
 <instance part="GND1" gate="1" x="83.82" y="20.32" smashed="yes">
 <attribute name="VALUE" x="81.28" y="17.78" size="1.778" layer="96"/>
 </instance>
@@ -7736,12 +7726,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <junction x="83.82" y="55.88"/>
 <pinref part="LED3MM2" gate="G$1" pin="C"/>
 <wire x1="45.72" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="33.02" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <junction x="73.66" y="58.42"/>
-<pinref part="LED5MM2" gate="G$1" pin="C"/>
-<wire x1="73.66" y1="45.72" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
-<junction x="73.66" y="45.72"/>
+<wire x1="73.66" y1="33.02" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <junction x="83.82" y="22.86"/>
 </segment>
@@ -7775,18 +7761,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="0" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
 <junction x="0" y="58.42"/>
 <wire x1="15.24" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="33.02" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
 <junction x="15.24" y="58.42"/>
-<pinref part="RH2" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="45.72" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<junction x="15.24" y="45.72"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="LED5MM2" gate="G$1" pin="A"/>
-<pinref part="RH2" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="33.02" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
