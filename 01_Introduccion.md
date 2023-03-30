@@ -9,6 +9,9 @@ Pagina: https://github.com/julianodb/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOME
 ## Motivación
 
 Electrónica Analógica vs Digital
+
+[Texas Instruments Medical Applications](https://www.ti.com/applications/industrial/medical/overview.html)
+
 ![motiv](img/01_aplicaciones.png "motiv")
 
 ## Trabajos
@@ -17,7 +20,7 @@ https://www.youtube.com/embed/AXxBt_TyKTw
 
 Grupos de 3
 
-## Revisión/Resúmen de Prerequisitos
+## Revisión/Resúmen de Circuitos
 
 Teoría de Circuitos
 
