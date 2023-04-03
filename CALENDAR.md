@@ -79,12 +79,12 @@
 | #  | Titulo |  Descripción |  Entrega |  Trabajo |
 | -- | --     | -- | -- | -- |
 | [01](01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, aspectos practicos para el diseño de sistemas electrónicos con pasivos | | |
-| [02](02_Diodos.md) | Diodos | Descipción del diodo (ideal, modelo, real), circuitos con diodos, LEDs |  | inicio $T_1$ y $T_2$ |
-| 03 | Transistor de Unión Bipolar (BJT) | Descripción del BJT(ideal, real, fórmulas, uso como llave), necesidad de polarización, circuitos de polarización BJT| | |
-| 04 | Analisis de ca del BJT | | Entrega $T_1$ y $T_2$ | inicio $T_3$ |
-| 05 | Circuitos Amplificadores de Pequeña Señal con BJT | | | |
-| 06 | Amplificadores operacionales (amp ops)| | Entrega $T_3$ | |
-| 07 | Aplicaciones de Amplificadores operacionales| Aplicaciones de Amplificadores operacionales (sólo R), preparación PEP1| | |
+| [02](02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  |  |
+| [03](03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Fotopletismógrafo |  | inicio $T_1$ y $T_2$ |
+| 04 | Transistor de Unión Bipolar (BJT) | Descripción del BJT (ideal, real, fórmulas, uso como llave), necesidad de polarización, circuitos de polarización BJT| | |
+| 05 | Analisis de ca del BJT | Análices de ca, modelo $r_e$, polarización fija, diisor de voltaje, emisor comun | Entrega $T_1$ y $T_2$ | inicio $T_3$ |
+| 06 | Amplificadores operacionales (amp ops)| | | |
+| 07 | Aplicaciones de Amplificadores operacionales| Aplicaciones de Amplificadores operacionales (sólo R), preparación PEP1| Entrega $T_3$ | |
 | P1 | PEP1 | Diodos, Transistores, Amplificadores operacionales| | |
 | 08 | Aplciaciones de Amplificadores operacionales  | Aplciaciones de Amplificadores operacionales (analisis con funcion de transferencia) |  | Inicio $T_4$ |
 | 09 | Respuesta en frecuencia | Respuesta en frecuencia, diagrama de Bode, filtros | | |
