@@ -45,3 +45,7 @@ $$
 La tensión de zener ($V_Z$) es una constante para cada diodo. Depende del material y forma de construcción, y se puede obtener en distintos valores, usualmente mayores y más estables que $V_f$
 
 - ESD -> TVS
+
+## Bibliografia
+
+Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.). Cap.1 y 2, pág. 1-114

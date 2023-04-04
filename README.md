@@ -41,8 +41,8 @@ evaluadas ($P_1$, $P_2$ o $P_3$).
 - Nota Mínima para la POR mayor igual a 3.0
 
 ## Bibliografia
-- Boylestad,R. & Nashelsky,L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.).México: Prentice Hall.
-- Millman,J. & Grabel,A. (2001). Microelectronics. MC GRAW HILL INDIA; 2nd edition.
+- Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.).México: Prentice Hall.
+- Millman, J. & Grabel, A. (2001). Microelectronics. MC GRAW HILL INDIA; 2nd edition.
 
 ## Programa de Actividades
 
