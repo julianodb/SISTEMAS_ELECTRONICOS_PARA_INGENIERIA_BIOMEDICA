@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
@@ -64,10 +64,12 @@
 <wire x1="50" y1="0" x2="50" y2="50" width="0" layer="20"/>
 <wire x1="50" y1="50" x2="0" y2="50" width="0" layer="20"/>
 <wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
-<text x="34" y="6" size="1.016" layer="51">Grupo: </text>
-<text x="34" y="4.5" size="1.016" layer="51">integrante 1</text>
-<text x="34" y="3" size="1.016" layer="51">integrante 2</text>
-<text x="34" y="1.5" size="1.016" layer="51">integrante 3</text>
+<text x="34" y="6" size="1.016" layer="25">Grupo: </text>
+<text x="34" y="4.5" size="1.016" layer="25">integrante 1</text>
+<text x="34" y="3" size="1.016" layer="25">integrante 2</text>
+<text x="34" y="1.5" size="1.016" layer="25">integrante 3</text>
+<text x="3" y="1.5" size="1.016" layer="25">dd/mm/yyyy</text>
+<text x="31" y="7.5" size="1.016" layer="25">Sistemas Electronicos - T1</text>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">

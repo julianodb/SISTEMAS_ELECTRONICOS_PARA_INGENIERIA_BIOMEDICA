@@ -1329,7 +1329,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="oshpark-2layer">
+<designrules name="oshpark-2layer *">
 <description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
 &lt;p&gt;
 Please make sure your boards conform to these design rules.
@@ -1355,7 +1355,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="mdCopperDimension" value="15mil"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
+<param name="msWidth" value="15mil"/>
 <param name="msDrill" value="10mil"/>
 <param name="msMicroVia" value="10mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
@@ -1412,12 +1412,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </designrules>
 <autorouter>
 <pass name="Default">
-<param name="RoutingGrid" value="0.5mm"/>
+<param name="RoutingGrid" value="50mil"/>
 <param name="AutoGrid" value="1"/>
 <param name="Efforts" value="0"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="|"/>
+<param name="PrefDir.1" value="a"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -1432,7 +1432,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
 <param name="PrefDir.15" value="0"/>
-<param name="PrefDir.16" value="-"/>
+<param name="PrefDir.16" value="a"/>
 <param name="cfVia" value="8"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
@@ -1557,7 +1557,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </element>
 </elements>
 <signals>
-<signal name="N$2">
+<signal name="GND">
 <contactref element="LED5MM1" pad="K"/>
 <contactref element="GND" pad="1"/>
 <contactref element="GND" pad="2"/>
