@@ -18,9 +18,9 @@
 |Sem |Lun |Mar |Mie |Jue |Vie |Sab |Dom |
 |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
 |    |  3 |  4 |  5 |  6 |  7 |  8 |  9 |
-| 14 |    | 03 |    | 04 | FF |    |    |
+| 14 |    | 03 |    | PP | FF | PP | PP |
 |    | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
-| 15 |    | 05 |    | 06 |    |    |    |
+| 15 | PP | PP | PP | 06 |    |    |    |
 |    | 17 | 18 | 19 | 20 | 21 | 22 | 23 |
 | 16 |    | 07 |    | P1 |    |    |    |
 |    | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
@@ -71,6 +71,7 @@
 
 - II: Inicio del Semestre
 - RR: Receso de Actividades
+- PP: Paro Estudiantil
 - FF: Feriado
 - TT: Término del Semestre
 
@@ -80,9 +81,9 @@
 | -- | --     | -- | -- | -- |
 | [01](01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, aspectos practicos para el diseño de sistemas electrónicos con pasivos | | |
 | [02](02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  |  |
-| [03](03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Fotopletismógrafo |  | inicio $T_1$ y $T_2$ |
-| 04 | Transistor de Unión Bipolar (BJT) | Descripción del BJT (ideal, real, fórmulas, uso como llave), necesidad de polarización, circuitos de polarización BJT| | |
-| 05 | Analisis de ca del BJT | Análices de ca, modelo $r_e$, polarización fija, diisor de voltaje, emisor comun | Entrega $T_1$ y $T_2$ | inicio $T_3$ |
+| [03](03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Fotopletismógrafo |  | inicio $T_1$ |
+| 04 | Transistor de Unión Bipolar (BJT) | Descripción del BJT (ideal, real, fórmulas, uso como llave), necesidad de polarización, circuitos de polarización BJT| Entrega $T_1$ | inicio $T_2$ |
+| 05 | Analisis de ca del BJT | Análisis de ca, modelo $r_e$, polarización fija, divisor de voltaje, emisor comun | Entrega $T_2$ | inicio $T_3$ |
 | 06 | Amplificadores operacionales (amp ops)| | | |
 | 07 | Aplicaciones de Amplificadores operacionales| Aplicaciones de Amplificadores operacionales (sólo R), preparación PEP1| Entrega $T_3$ | |
 | P1 | PEP1 | Diodos, Transistores, Amplificadores operacionales| | |
