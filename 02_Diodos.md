@@ -27,6 +27,7 @@ $$ \left\{
     \end{array} 
 \right.
 $$
+
 La tensión de polarización en directa ($V_f$) es una constante para cada diodo. Depende del material y forma de construcción, y es usualmente 0,7V para diodos de silício
 
 ## Ejercicios
