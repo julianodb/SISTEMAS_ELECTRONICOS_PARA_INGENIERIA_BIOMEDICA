@@ -5,12 +5,14 @@
 
 
 ## Horário
-- Martes: bloque 5 (15:20 - 16:40), ELE629
-- Jueves: bloque 4 (13:45 - 15:05), ED804
+- Martes: bloque 5 (M5: 15:20 - 16:40), ED401
+- Jueves: bloque 4 (J4: 13:45 - 15:05), ED804
 
 ## Profesor
 
 Juliano Barboza
+
+contacto: a través de LOA
 
 ## Resultados de Aprendizaje
 
@@ -47,7 +49,7 @@ evaluadas ($P_1$, $P_2$ o $P_3$).
 ## Programa de Actividades
 
 1. [Introducción](01_Introduccion.md)
-1. Dispositivos electronicos: [diodos](02_Diodos.md) y transistores
+1. Dispositivos electronicos: [dio](02_Diodos.md)[dos](03_Diodos_II.md) y [tran](04_BJT.md)sistores
 1. Amplificadores operacionales y sus aplicaciones
 1. Filtros activos
 1. Osciladores
