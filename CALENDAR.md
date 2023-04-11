@@ -82,7 +82,7 @@
 | [01](01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, aspectos practicos para el diseño de sistemas electrónicos con pasivos | | |
 | [02](02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  |  |
 | [03](03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Fotopletismógrafo |  | inicio $T_1$ |
-| 04 | Transistor de Unión Bipolar (BJT) | Descripción del BJT (ideal, real, fórmulas, uso como llave), necesidad de polarización, circuitos de polarización BJT| Entrega $T_1$ | inicio $T_2$ |
+| [04](04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (ideal, real, fórmulas, uso como llave), necesidad de polarización, circuitos de polarización BJT| Entrega $T_1$ | inicio $T_2$ |
 | 05 | Analisis de ca del BJT | Análisis de ca, modelo $r_e$, polarización fija, divisor de voltaje, emisor comun | Entrega $T_2$ | inicio $T_3$ |
 | 06 | Amplificadores operacionales (amp ops)| | | |
 | 07 | Aplicaciones de Amplificadores operacionales| Aplicaciones de Amplificadores operacionales (sólo R), preparación PEP1| Entrega $T_3$ | |
