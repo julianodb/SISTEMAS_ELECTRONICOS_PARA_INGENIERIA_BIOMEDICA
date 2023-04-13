@@ -12,7 +12,7 @@ Electrónica Analógica vs Digital
 
 [Texas Instruments Medical Applications](https://www.ti.com/applications/industrial/medical/overview.html)
 
-![motiv](img/01_aplicaciones.png "motiv")
+![motiv](/img/01_aplicaciones.png "motiv")
 
 ## Trabajos
 

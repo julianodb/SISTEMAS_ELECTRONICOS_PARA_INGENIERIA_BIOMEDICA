@@ -79,10 +79,10 @@
 
 | #  | Titulo |  Descripción |  Entrega |  Trabajo |
 | -- | --     | -- | -- | -- |
-| [01](01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, aspectos practicos para el diseño de sistemas electrónicos con pasivos | | |
-| [02](02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  |  |
-| [03](03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Fotopletismógrafo |  | inicio $T_1$ |
-| [04](04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (ideal, real, fórmulas, uso como llave), necesidad de polarización, circuitos de polarización BJT| Entrega $T_1$ | inicio $T_2$ |
+| [01](/teoria/01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, aspectos practicos para el diseño de sistemas electrónicos con pasivos | | |
+| [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  |  |
+| [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Fotopletismógrafo |  | inicio $T_1$ |
+| [04](/teoria/04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (ideal, real, fórmulas, uso como llave), necesidad de polarización, circuitos de polarización BJT| Entrega $T_1$ | inicio $T_2$ |
 | 05 | Analisis de ca del BJT | Análisis de ca, modelo $r_e$, polarización fija, divisor de voltaje, emisor comun | Entrega $T_2$ | inicio $T_3$ |
 | 06 | Amplificadores operacionales (amp ops)| | | |
 | 07 | Aplicaciones de Amplificadores operacionales| Aplicaciones de Amplificadores operacionales (sólo R), preparación PEP1| Entrega $T_3$ | |
@@ -107,3 +107,14 @@
 | 24 | Amplificadores de Potencia | Amplificadores de Potencia, preparación PEP3 | | |
 | P3 | PEP3 | Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia | | |
 | PO | POR | Prueba Optativa Recuperativa | | |
+
+# Laboratórios
+
+- L1: Instrumentación básica utilizada en electrónica
+- L2: Curva del diodo, zener y fotodiodo
+- L3: Circuitos Cambiador de nivel, Rectificador y Multiplicador de Voltaje. Diodo de proteccion
+- L4: respuesta en frecuencia / filtros pasivos, transistor BJT (curvas características)
+- L5: amplificador en emisor comun, amplificador diferencial
+- L6: amp ops
+- L7: oscilador y filtro activo
+- L8: Amplificador de Instrumentación
