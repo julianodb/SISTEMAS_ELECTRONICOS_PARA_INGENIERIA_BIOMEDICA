@@ -48,4 +48,4 @@ Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispo
 
 ### [Aclaraciones](/teoria/T1.md#aclaraciones-05042023)
 
-### [Aclaraciones 2](/teoria/T1.md#aclaraciones-17042023)
+### [Aclaraciones 2](/teoria/T1.md#aclaraciones-18042023)
