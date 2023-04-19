@@ -8,7 +8,7 @@
 - Jueves: bloque 4 (J4: 13:45 - 15:05), ED804
 
 ## Horário Laboratório
-- Viernes, bloque 4 (V4: 13:45 - 15:05), laboratorio de Control, Departamento de Ingeniería Eléctrica
+- Viernes, bloque 4 (V4: 13:45 - 15:05), laboratorio por confirmar, Departamento de Ingeniería Eléctrica
 
 ## Profesor
 
@@ -52,7 +52,7 @@ El sistema de evaluación contempla, además, una Prueba Optativa Recuperativa (
 - La POR reemplaza la peor nota de las 3 notas
 evaluadas ($P_1$, $P_2$ o $P_3$).
 - El contenido de la POR es definida por el profesor.
-- Nota Mínima para la POR mayor igual a 3.0
+- Nota Mínima para la POR mayor o igual a 3.0
 
 ### Laboratorio
 
@@ -60,7 +60,7 @@ EL desarrollo del laboratorio estará en función a las siguientes actividades:
 - Experiencias de laboratorio presenciales.
 - Experiencias de laboratorio simuladas.
 
-Los software a utilizar en el curso serán MatLab y TINA.
+Los software a utilizar en el curso serán MatLab (o Octave) y TINA (o LTSpice).
 
 La primera actividad corresponderá al desarrollo de las experiencias entregadas en guías que deberán ser desarrolladas en clases incluyendo el informe el cual deberá ser entregado al finalizar la sesión.
 
