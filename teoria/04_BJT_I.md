@@ -2,7 +2,7 @@
 
 ## Motivación
 
-## Transistores de Unión Bipolar a grandes rasgos
+## Transistores a grandes rasgos
 
 ## Símbolo, nomenclatura y convenciones
 
