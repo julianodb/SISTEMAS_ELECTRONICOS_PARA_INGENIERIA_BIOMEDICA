@@ -5,6 +5,7 @@
 ![diode_conv](../img/02_diode_convention.jpg)
 
 ## Diodo Ideal
+
 $$ 
 \left\{ 
     \begin{array}{ c l }
