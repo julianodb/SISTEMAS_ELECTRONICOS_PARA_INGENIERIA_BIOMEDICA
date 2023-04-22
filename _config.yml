@@ -1,2 +1,1 @@
-kramdown:
-  math_engine: mathjax
+theme: minima
