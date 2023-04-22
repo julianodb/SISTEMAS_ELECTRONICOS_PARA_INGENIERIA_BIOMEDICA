@@ -82,6 +82,8 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Ls
 
 ## Programa de Actividades
 
+### Clases
+
 1. Introducción. Clase [01](/teoria/01_Introduccion.md)
 1. Dispositivos electronicos: diodos (clases [02](/teoria/02_Diodos.md) y [03](/teoria/03_Diodos_II.md)) y transistores (clases [04](/teoria/04_BJT_I.md))
 1. Amplificadores operacionales y sus aplicaciones
@@ -98,3 +100,8 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Ls
 [T1](/teoria/T1.md)
 
 [T2](/teoria/T2.md)
+
+### Laboratorios
+
+[Introducción](/laboratorio/intro.pdf)
+[L1](/laboratorio/L1.md)

@@ -112,7 +112,8 @@
 
 # Laboratórios
 
-- L1: Instrumentación básica utilizada en electrónica
+- [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
+- [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica
 - L2: Curva del diodo, zener y fotodiodo
 - L3: Circuitos Cambiador de nivel, Rectificador y Multiplicador de Voltaje. Diodo de proteccion
 - L4: respuesta en frecuencia / filtros pasivos, transistor BJT (curvas características)
