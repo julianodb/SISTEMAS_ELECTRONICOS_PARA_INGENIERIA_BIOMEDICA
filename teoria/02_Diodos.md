@@ -5,7 +5,8 @@
 ![diode_conv](../img/02_diode_convention.jpg)
 
 ## Diodo Ideal
-$$ \left\{ 
+$$ 
+\left\{ 
     \begin{array}{ c l }
         \textrm{conduce }(I_D>0) & \quad \textrm{si } V_D > 0 \\
         \textrm{no conduce }(I_D=0)                 & \quad \textrm{si } V_D \leq 0
@@ -20,7 +21,8 @@ $$
 
 ## Modelo mejorado
 
-$$ \left\{ 
+$$ 
+\left\{ 
     \begin{array}{ c l }
         \textrm{conduce }(I_D>0) & \quad \textrm{si } V_D > V_f \\
         \textrm{no conduce }(I_D=0)                 & \quad \textrm{si } V_D \leq V_f
