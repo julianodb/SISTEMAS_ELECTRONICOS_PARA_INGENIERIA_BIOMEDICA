@@ -44,8 +44,8 @@ No tiene solucción analítica. Útil para entender el circuito graficamente
 
 Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.). Cap. 1 y 2, pág. 1-114
 
-## [Trabajo 1](/teoria/T1.md)
+## [Trabajo 1](../teoria/T1.md)
 
-### [Aclaraciones](/teoria/T1.md#aclaraciones-05042023)
+### [Aclaraciones](../teoria/T1.md#aclaraciones-05042023)
 
-### [Aclaraciones 2](/teoria/T1.md#aclaraciones-18042023)
+### [Aclaraciones 2](../teoria/T1.md#aclaraciones-18042023)
