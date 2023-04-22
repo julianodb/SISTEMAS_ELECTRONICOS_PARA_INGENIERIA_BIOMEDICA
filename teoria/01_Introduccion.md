@@ -2,9 +2,7 @@
 
 ## Detalles Administrativos
 
-[README](README.md)
-
-Pagina: https://github.com/julianodb/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA
+Página: [https://github.com/julianodb/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA](https://github.com/julianodb/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA)
 
 ## Motivación
 
@@ -12,11 +10,11 @@ Electrónica Analógica vs Digital
 
 [Texas Instruments Medical Applications](https://www.ti.com/applications/industrial/medical/overview.html)
 
-![motiv](/img/01_aplicaciones.png "motiv")
+![motiv](../img/01_aplicaciones.png "motiv")
 
 ## Trabajos
 
-https://www.youtube.com/embed/AXxBt_TyKTw
+[https://www.youtube.com/embed/AXxBt_TyKTw](https://www.youtube.com/embed/AXxBt_TyKTw)
 
 Grupos de 3
 

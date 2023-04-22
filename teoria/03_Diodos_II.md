@@ -42,7 +42,7 @@ No tiene solucción analítica. Útil para entender el circuito graficamente
 
 ## Bibliografia
 
-Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.). Cap.1 y 2, pág. 1-114
+Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.). Cap. 1 y 2, pág. 1-114
 
 ## [Trabajo 1](/teoria/T1.md)
 
