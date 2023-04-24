@@ -2,7 +2,7 @@
 
 ## Símbolo, nomenclatura y convenciones
 
-![diode_conv](../img/02_diode_convention.jpg)
+![diode_conv](https://julianodb.github.io/electronic_circuits_diagrams/diode.png)
 
 ## Diodo Ideal
 
