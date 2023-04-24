@@ -104,4 +104,5 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Ls
 ### Laboratorios
 
 [Introducción](/laboratorio/intro.pdf)
+
 [L1](/laboratorio/L1.md)
