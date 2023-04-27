@@ -8,7 +8,7 @@
 - Jueves: bloque 4 (J4: 13:45 - 15:05), ED804
 
 ## Horário Laboratório
-- Viernes, bloque 4 (V4: 13:45 - 15:05), laboratorio por confirmar, Departamento de Ingeniería Eléctrica
+- Viernes, bloque 4 (V4: 13:45 - 15:05), laboratorio SMART PLANT (129), Departamento de Ingeniería Eléctrica
 
 ## Profesor
 
