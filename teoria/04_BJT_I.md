@@ -4,6 +4,8 @@
 
 ## Transistores a grandes rasgos
 
+### ley de moore
+
 ## Símbolo, nomenclatura y convenciones
 
 ## Modelo del transistor bipolar NPN
