@@ -56,15 +56,7 @@ evaluadas ($P_1$, $P_2$ o $P_3$).
 
 ### Laboratorio
 
-EL desarrollo del laboratorio estará en función a las siguientes actividades:
-- Experiencias de laboratorio presenciales.
-- Experiencias de laboratorio simuladas.
-
-Los software a utilizar en el curso serán MatLab (o Octave) y TINA (o LTSpice).
-
-La primera actividad corresponderá al desarrollo de las experiencias entregadas en guías que deberán ser desarrolladas en clases incluyendo el informe el cual deberá ser entregado al finalizar la sesión.
-
-En el caso de las experiencias simuladas, éstas deberán ser entregadas al ingresar al siguiente laboratorio. De lo contrario no podrá realizar la experiencia y esta será calificada con nota 1.0.
+EL desarrollo del laboratorio estará en función a Experiencias de laboratorio presenciales. Éstas  corresponderán a las experiencias entregadas en guías que deberán ser desarrolladas en clases incluyendo el informe el cual deberá ser entregado al finalizar la sesión.
 
 Las inasistencias al laboratorio deberán ser justificadas ante docencia, quien informará a los profesores sobre la justificación de esta.
 
@@ -72,9 +64,9 @@ Las recuperaciones de laboratorios serán informadas caso a caso.
 
 Las ponderaciones para la evaluación serán:
 
-$$ Promedio Final = 0.5\sum_{i=1}^n \frac{Lp_i}{n} + 0.5\sum_{j=1}^m \frac{Ls_j}{m} $$
+$$ Promedio Final = \sum_{i=1}^n \frac {Lp_i}{n}$$
 
-Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Ls_j$ son las notas de las Experiencias de laboratorio simuladas
+Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
 ## Bibliografia
 - Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.).México: Prentice Hall.
