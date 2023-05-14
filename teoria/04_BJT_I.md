@@ -4,17 +4,11 @@
 
 ## Transistores a grandes rasgos
 
-### ley de moore
-
 ## Símbolo, nomenclatura y convenciones
 
-## Modelo del transistor bipolar NPN
+## Ecuaciones del transistor bipolar NPN
 
 ## El efecto de $V_{CE}$
-
-## Modo de corte
-
-## Aplicación: BJT como llave
 
 ## Ejercícios
 
