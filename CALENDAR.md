@@ -87,13 +87,13 @@
 | [04](/teoria/04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo| | |
 | [05](/teoria/05_BJT_II.md) | Analisis de ca del BJT | Uso del BJT como llave y como amplificador, Análisis de grandes señales, modelo $r_e$, polarización fija, emisor comun | | inicio $T_2$|
 | 06 | Amplificador de emisor comun | Amplificador de emisor comun, divisor de voltaje, entrega guia PEP1 | Entrega $T_1$  |  |
-| 07 | Amplificadores operacionales | Amplificadores operacionales, ejercicios guia PEP1 | Entrega $T_2$ | inicio $T_3$ |
+| 07 | Tópicos de Diodos y BJTs | construcción diodos, fotodiodos, fototransistores, ejercicios guia PEP1 | Entrega $T_2$ | inicio $T_3$ |
 | P1 | PEP1 | Diodos, Transistores| | |
 | 08 | Aplicaciones de Amplificadores operacionales| Aplicaciones de Amplificadores operacionales (sólo R)| Entrega $T_3$ | Inicio $T_4$  |
-| 09 | Aplciaciones de Amplificadores operacionales  | Aplciaciones de Amplificadores operacionales (analisis con funcion de transferencia) | Entrega $T_4$ | inicio $T_5$ |
-| 10 | Respuesta en frecuencia | Respuesta en frecuencia, diagrama de Bode, filtros | | |
-| 11 | Filtros activos | Filtros activos, entrega guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
-| 12 | Filtros activos | Filtros activos, ejercicios guia PEP2 |  |  |
+| 09 | Aplicaciones de Amplificadores operacionales  | Aplciaciones de Amplificadores operacionales (analisis con funcion de transferencia) |  | |
+| 10 | Respuesta en frecuencia | Respuesta en frecuencia, diagrama de Bode, filtros |Entrega $T_4$ | inicio $T_5$|
+| 11 | Filtros activos | Filtros activos, entrega guia PEP2 | | |
+| 12 | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
 | P2 | PEP2 | Amplificadores operacionales, filtros activos | | | 
 | 13 | Osciladores | generadores de señales (osciladores) | Entrega $T_6$ | Inicio $T_7$ |
 | 14 | Osciladores | generadores de señales (osciladores) |  |  |
