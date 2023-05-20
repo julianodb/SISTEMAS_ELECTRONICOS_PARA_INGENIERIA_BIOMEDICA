@@ -8,7 +8,7 @@
 - Jueves: bloque 4 (J4: 13:45 - 15:05), ED804
 
 ## Horário Laboratório
-- Viernes, bloque 4 (V4: 13:45 - 15:05), laboratorio por confirmar, Departamento de Ingeniería Eléctrica
+- Viernes, bloque 4 (V4: 13:45 - 15:05), laboratorio SMART PLANT (129), Departamento de Ingeniería Eléctrica
 
 ## Profesor
 
@@ -56,15 +56,7 @@ evaluadas ($P_1$, $P_2$ o $P_3$).
 
 ### Laboratorio
 
-EL desarrollo del laboratorio estará en función a las siguientes actividades:
-- Experiencias de laboratorio presenciales.
-- Experiencias de laboratorio simuladas.
-
-Los software a utilizar en el curso serán MatLab (o Octave) y TINA (o LTSpice).
-
-La primera actividad corresponderá al desarrollo de las experiencias entregadas en guías que deberán ser desarrolladas en clases incluyendo el informe el cual deberá ser entregado al finalizar la sesión.
-
-En el caso de las experiencias simuladas, éstas deberán ser entregadas al ingresar al siguiente laboratorio. De lo contrario no podrá realizar la experiencia y esta será calificada con nota 1.0.
+EL desarrollo del laboratorio estará en función a Experiencias de laboratorio presenciales. Éstas  corresponderán a las experiencias entregadas en guías que deberán ser desarrolladas en clases incluyendo el informe el cual deberá ser entregado al finalizar la sesión.
 
 Las inasistencias al laboratorio deberán ser justificadas ante docencia, quien informará a los profesores sobre la justificación de esta.
 
@@ -72,9 +64,9 @@ Las recuperaciones de laboratorios serán informadas caso a caso.
 
 Las ponderaciones para la evaluación serán:
 
-$$ Promedio Final = 0.5\sum_{i=1}^n \frac{Lp_i}{n} + 0.5\sum_{j=1}^m \frac{Ls_j}{m} $$
+$$ Promedio Final = \sum_{i=1}^n \frac {Lp_i}{n}$$
 
-Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Ls_j$ son las notas de las Experiencias de laboratorio simuladas
+Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
 ## Bibliografia
 - Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.).México: Prentice Hall.
@@ -82,8 +74,10 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Ls
 
 ## Programa de Actividades
 
-1. [Introducción](/teoria/01_Introduccion.md)
-1. Dispositivos electronicos: [dio](/teoria/02_Diodos.md)[dos](/teoria/03_Diodos_II.md) y [tran](/teoria/04_BJT.md)sistores
+### Clases
+
+1. Introducción. Clase [01](/teoria/01_Introduccion.md)
+1. Dispositivos electronicos: diodos (clases [02](/teoria/02_Diodos.md) y [03](/teoria/03_Diodos_II.md)) y transistores (clases [04](/teoria/04_BJT_I.md), [05](/teoria/05_BJT_II.md))
 1. Amplificadores operacionales y sus aplicaciones
 1. Filtros activos
 1. Osciladores
@@ -94,5 +88,15 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Ls
 [Calendario](CALENDAR.md)
 
 ### Trabajos
+
 [T1](/teoria/T1.md)
+
 [T2](/teoria/T2.md)
+
+### Laboratorios
+
+[Introducción](/laboratorio/intro.pdf)
+
+[L1](/laboratorio/L1.md)
+
+[L2](/laboratorio/L2.md)
