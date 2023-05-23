@@ -86,7 +86,7 @@
 | [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Fotopletismógrafo |  | inicio $T_1$ |
 | [04](/teoria/04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo| | |
 | [05](/teoria/05_BJT_II.md) | Analisis de ca del BJT | Uso del BJT como llave y como amplificador, Análisis de grandes señales, modelo $r_e$, polarización fija, emisor comun | | inicio $T_2$|
-| 06 | Amplificador de emisor comun | Amplificador de emisor comun, divisor de voltaje, entrega guia PEP1 | Entrega $T_1$  |  |
+| [06](/teoria/06_CE.md) | Amplificador de emisor comun | Amplificador de emisor comun, divisor de voltaje, entrega guia PEP1 | Entrega $T_1$  |  |
 | 07 | Tópicos de Diodos y BJTs | construcción diodos, fotodiodos, fototransistores, $Z_i$, $Z_o$, $r_o$, ejercicios | Entrega $T_2$ | inicio $T_3$ |
 | P1 | PEP1 | Diodos, Transistores| | |
 | 08 | Aplicaciones de Amplificadores operacionales| Aplicaciones de Amplificadores operacionales (sólo R)| Entrega $T_3$ | Inicio $T_4$  |
