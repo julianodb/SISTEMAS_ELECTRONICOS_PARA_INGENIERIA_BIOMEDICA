@@ -17,18 +17,30 @@
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter.png" width="300"> 
 
 # Fórmulas
+
 $$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
+
 $$ V_T = \frac{kT}{q}$$
 
 - $k$: Constante de Boltzmann. $k=1.38 * 10^{-23} J/K$
 - $q$: Carga del electrón. $q=1.6*10^{-19} C$
+
 $$I_E = I_C + I_B$$
+
 - en modo activo ($V_{CE} > V_{CE_{SAT}}$):
+
 $$I_C = \beta I_B $$
+
 - en modo saturado ($0 < \beta_{forzado} < \beta$):
+
 $$V_{CE} = V_{CE_{SAT}}$$
+
 $$I_C = \beta_{forzado} I_B $$
+
 - modelo híbrido-$\pi$ de pequeñas señales:
+
 $$r_{\pi} = \frac{\beta V_T}{I_{C_Q}}$$
+
 $$i_C = \beta i_B $$
+
 $$A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$$
