@@ -10,7 +10,7 @@
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_3R.png" width="200">
 
-2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 30 V$, $R_1= 82 k\Omega$, $R_2= 5.6 k\Omega$, $R_C= 3.3 k\Omega$, $R_E= 1 k\Omega$
+2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 30 V$, $R_1= 82 k\Omega$, $R_2= 5.6 k\Omega$, $R_C= 3.3 k\Omega$, $R_E= 1 k\Omega$, $\beta=100$
    1. La corriente de colector de polarización $I_{C_Q}$
    2. La ganancia de voltaje $A_V$
 
