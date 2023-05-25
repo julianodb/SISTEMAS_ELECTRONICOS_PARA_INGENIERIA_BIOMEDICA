@@ -93,6 +93,8 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
 [T2](/teoria/T2.md)
 
+[T3](/teoria/T3.md)
+
 ### Laboratorios
 
 [Introducción](/laboratorio/intro.pdf)
