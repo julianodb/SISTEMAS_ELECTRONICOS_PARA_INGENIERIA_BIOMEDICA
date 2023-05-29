@@ -27,6 +27,8 @@ $$ V_T = \frac{kT}{q}$$
 
 ### Curva de Carga
 
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_diode.png" width="48">
+
 $I_R = I_D$
 
 - $I_R (V_D) = \frac{V_i - V_D}{R}$
