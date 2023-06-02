@@ -90,8 +90,9 @@
 | [07](/teoria/07_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_2$ | inicio $T_3$ |
 | P1 | PEP1 | Diodos, Transistores| | |
 | 08 | Tópicos de componentes electrónicos pasivos | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |  |
-| 09 | Amplificadores operacionales| $Z_i$, $Z_o$, $r_o$, Amplificadores operacionales y aplicaciones | Entrega $T_3$ | Inicio $T_4$  |
-| 10 | Aplicaciones de Amplificadores operacionales  | Aplciaciones de Amplificadores operacionales (analisis con funcion de transferencia) |  | |
+| 08 | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_[NL]}$, $A_{V_L}$, Amplificadores |  |  |
+| 09 | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, Circuitos con amp op | Entrega $T_3$ | Inicio $T_4$ |
+| 10 | Aplicaciones de Amplificadores operacionales  | Aplicaciones de Amplificadores operacionales (analisis con funcion de transferencia) | |
 | 11 | Respuesta en frecuencia | Respuesta en frecuencia, diagrama de Bode, filtros |Entrega $T_4$ | inicio $T_5$|
 | 12 | Filtros activos | Filtros activos, entrega guia PEP2 | | |
 | 13 | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
