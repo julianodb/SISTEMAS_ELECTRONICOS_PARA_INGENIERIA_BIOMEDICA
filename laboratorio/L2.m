@@ -6,14 +6,14 @@ CH2 = dlmread("DS0001A.CSV", ",", 25, 0);
 
 T = CH1(:,1);
 X = CH1(:,2);
-Y = CH2(:,2).*rand(size(Y));
+Y = CH2(:,2).*rand(size(X));
 close all;
 plot(T, X, ";X;");
 hold on;
 plot(T, Y, ";Y;");
 
 figure;
-plot(X, Y, ";X-Y;");
+plot(X, Y, ";X-Y;*");
 hold on;
 
 figure; hold on;
