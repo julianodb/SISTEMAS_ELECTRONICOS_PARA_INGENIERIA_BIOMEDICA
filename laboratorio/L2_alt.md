@@ -38,8 +38,8 @@ La persona obtuvo los siguientes valores:
 - (a) 8.68 MΩ
 - (b) 360 kΩ
 
-  1. ¿Cuál de las dos formas es la correcta para medir, (a) ó (b)? (2 ptos.)
-  1. Estime la resistencia del cuerpo de la persona que realizó la medición. (4 ptos)
+  1. ¿Cuál de las dos formas es la correcta para medir, (a) ó (b)? (1 pto.)
+  1. Estime la resistencia del cuerpo de la persona que realizó la medición. (2 ptos)
 
 2. Se tomó una fotorresistencia y se midió su resistencia. Luego se tapó la fotorresistencia con la mano y se midió su resistencia nuevamente. Los valores obtenidos por cada grupo realizando el experimento se muestran en la siguiente tabla:
 
@@ -51,9 +51,9 @@ La persona obtuvo los siguientes valores:
     | 4 | 5 kΩ | 30 kΩ |
     | promedio | $R_{light}$ | $R_{dark}$ |
 
-   1. Calcule el promedio y de las mediciones ($R_{light}$ y $R_{dark}$) y sus desviaciones estandar.  (2 ptos) 
-   2. Calcule la razón entre $R_{dark}$ y $R_{light}$. (2 ptos)
-   2. En que condiciones la resistencia de la fotorresistencia es más baja: ¿con luz o sin luz ? (2 ptos)
+   1. Calcule el promedio y de las mediciones ($R_{light}$ y $R_{dark}$) y sus desviaciones estandar.  (1 pto) 
+   2. Calcule la razón entre $R_{dark}$ y $R_{light}$. (1 pto)
+   2. En que condiciones la resistencia de la fotorresistencia es más baja: ¿con luz o sin luz ? (1 pto)
 
 3. Para el siguiente experimento, se utilizó el circuito de la Figura 2a, en el cual $R_1=220$ y $R_2= 1k$. Se configuró el generador de funciones para generar una onda cuadrada, con duty cycle de 50%, 5Vpp y offset de 2.5V. Con esto, el LED se enciende y apaga de acuerdo a la frecuencia del generador de funciones. 
 
@@ -68,7 +68,7 @@ La persona obtuvo los siguientes valores:
 
     Figura 2b: mediciones del circuito de la Figura 2a con frecuencia de la onda cuadrada de 15Hz
    
-   Estime el tiempo de subida de la fotorresistencia (tiempo necesario para cambiar del 10% al 90% del valor final). (4 ptos.) 
+   Estime el tiempo de subida de la fotorresistencia (tiempo necesario para cambiar del 10% al 90% del valor final). (2 ptos.) 
 
 4. Para el siguiente experimento, se utilizó el circuito de la Figura 3a, en el cual $R_1=220$ y $R_2= 1k$. Nuevamente, se configuró el generador de funciones para generar una onda cuadrada, con duty cycle de 50%, 5Vpp y offset de 2.5V. Ésta configuración del fotodiodo se denomina modo fotoconductivo.
 
@@ -84,8 +84,8 @@ La persona obtuvo los siguientes valores:
 
      Figura 3b: mediciones del circuito de la Figura 3a con frecuencia de la onda cuadrada de 80 kHz
    
-     Estime el tiempo de subida del fotodiodo en modo fotoconductivo (tiempo necesario para cambiar del 10% al 90% del valor final). (4 ptos.)
+     Estime el tiempo de subida del fotodiodo en modo fotoconductivo (tiempo necesario para cambiar del 10% al 90% del valor final). (2 ptos.)
     
-   3. ¿Cómo se compara la velocidad de la fotorresistencia con la del fotodiodo en modo fotoconductivo? (4 ptos.)
+   3. ¿Cómo se compara la velocidad de la fotorresistencia con la del fotodiodo en modo fotoconductivo? (2 ptos.)
     
 Nota sesión = ptos.+10
