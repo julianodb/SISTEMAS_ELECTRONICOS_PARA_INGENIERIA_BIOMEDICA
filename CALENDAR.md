@@ -89,21 +89,20 @@
 | [06](/teoria/06_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 | Entrega $T_1$  |  |
 | [07](/teoria/07_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_2$ | inicio $T_3$ |
 | P1 | PEP1 | Diodos, Transistores| | |
-| 08 | Tópicos de componentes electrónicos pasivos | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |  |
 | 08 | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_[NL]}$, $A_{V_L}$, Amplificadores |  |  |
 | 09 | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, Circuitos con amp op | Entrega $T_3$ | Inicio $T_4$ |
-| 10 | Aplicaciones de Amplificadores operacionales  | Aplicaciones de Amplificadores operacionales (analisis con funcion de transferencia) | |
+| 10 | Aplicaciones de Amplificadores operacionales  | Capacitancia, Aplicaciones de Amplificadores operacionales (analisis con funcion de transferencia) | |
 | 11 | Respuesta en frecuencia | Respuesta en frecuencia, diagrama de Bode, filtros |Entrega $T_4$ | inicio $T_5$|
 | 12 | Filtros activos | Filtros activos, entrega guia PEP2 | | |
 | 13 | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
-| P2 | PEP2 | Amplificadores operacionales, filtros activos | | | 
+| P2 | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
 | 14 | Osciladores | generadores de señales (osciladores) | Entrega $T_6$ | Inicio $T_7$ |
 | 15 | Osciladores | generadores de señales (osciladores) |  |  |
 | 16 | CIs Analógicos | CIs Analógicos | Entrega $T_7$ |  |
 | 17 | Fuentes Conmutadas | |  | inicio $T_8$ |
 | 18 | Fuentes Conmutadas | | |   |
 | 19 | Amplificadores de instrumentación | | Entrega $T_8$ |   |
-| 20 | Amplificadores de Potencia | Amplificadores de Potencia, entrega guia PEP3  | | |
+| 20 | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 |  |  |
 | 21 | Amplificadores de Potencia | Amplificadores de Potencia, entrega dispositivo diseñado, ejercicios guia PEP3 | | |
 | P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia | | |
 | PO | POR | Prueba Optativa Recuperativa | | |
@@ -112,7 +111,7 @@
 
 - [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
 - [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica
-- L2: Curva del diodo, zener y fotodiodo
+- [L2](/laboratorio/L2.md): Fotorresistencia, fotodiodo, curva del diodo y zener. [L2 Recuperativo](/laboratorio/L2_alt.md)
 - L3: Circuitos Cambiador de nivel, Rectificador y Multiplicador de Voltaje. Diodo de proteccion
 - L4: respuesta en frecuencia / filtros pasivos, transistor BJT (curvas características)
 - L5: amplificador en emisor comun, amplificador diferencial
