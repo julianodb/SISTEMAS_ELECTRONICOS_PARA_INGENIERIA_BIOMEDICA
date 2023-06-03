@@ -5,6 +5,5 @@ sys = tf([1],[0.008 1]);
 [ch2, _, _] = lsim(sys, ch1*0.3/5+0.001, t);
 figure;
 hold on;
-plot(t, ch1, ";CH1;")
-plot(t, ch2, ";CH2;")
+plotyy(t, ch1*12/5, t, ch2)
 grid on;
