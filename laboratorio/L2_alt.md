@@ -54,18 +54,26 @@ La persona obtuvo los siguientes valores:
     | 2 | 3,746 kΩ | 32,45 kΩ |
     | 3 | 1,6 kΩ | 22 kΩ |
     | 4 | 5 kΩ | 30 kΩ |
+    | promedio | $R_{light}$ | $R_{dark}$ |
 
-   1. Calcule la razón entre el valor más alto y más bajo para cada grupo. (2 ptos) 
-   2. Calcule también el promedio y desviación estandar de dicha razón. (2 ptos)
+   1. Calcule el promedio y de las mediciones ($R_{light}$ y $R_{dark}$) y sus desviaciones estandar.  (2 ptos) 
+   2. Calcule la razón entre $R_{dark}$ y $R_{light}$. (2 ptos)
    2. En que condiciones la resistencia de la fotorresistencia es más baja: ¿con luz o sin luz ? (2 ptos)
 
-3. Para el siguiente experimento, se utilizó el circuito de la Figura 2, en el cual $R_1=220$ y $R_2= 1k$. Se configuró el generador de funciones para generar una onda cuadrada, con duty cycle de 50%, 5Vpp y offset de 2.5V. Con esto, el LED se enciende y apaga de acuerdo a la frecuencia del generador de funciones. Se cambió la frecuencia, hasta que la mitad del período de la onda fuese comparable con el tiempo de subida o de bajada.
+3. Para el siguiente experimento, se utilizó el circuito de la Figura 2a, en el cual $R_1=220$ y $R_2= 1k$. Se configuró el generador de funciones para generar una onda cuadrada, con duty cycle de 50%, 5Vpp y offset de 2.5V. Con esto, el LED se enciende y apaga de acuerdo a la frecuencia del generador de funciones. 
 
-   1. ¿A qué frecuencia, aproximadamente, ocurre esto? (6 ptos.) 
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/ldr.png" width="300">
 
-   <img src="https://julianodb.github.io/electronic_circuits_diagrams/ldr.png" width="300">
+    Figura 2a: circuito con fotorresistencia
+    
+   1. Considerando que la resistencia de la fotorresistencia cambia al valor $R_{dark}$ cuando el LED está apagado, y al valor $R_{light}$ cuando el LED está encendido, determine el valor del voltage que se debería medir en el canal 2 del osciloscopio en ambas condiciones. (4 ptos)
+   1. En el experimento se observó que el cambio del valor de la resistencia de la fotorresistencia no es immediato. Por ejemplo, a una frecuencia de 15 Hz se observaron las siguientes formas de onda:
+   
+    ![Figura 2b](../img/L2_alt_ex3.png "Figura 2b")
 
-   Figura 2: circuito con fotorresistencia
+    Figura 2b: mediciones del circuito de la Figura 2a con frecuencia de la onda cuadrada de 15Hz
+   
+   Estime el tiempo de subida de la fotorresistencia (tiempo necesario para cambiar del 10% al 90% del valor final). (4 ptos.) 
 
 4. Identifiquen en el protoboard el circuito de la Figura 3, en el cual $R_1=220$ y $R_2= 1k$. Conecten el osciloscopio conforme la figura. Configuren el generador de funciones de la misma forma que el ejercício anterior: onda cuadrada, con duty cycle de 50%, 5Vpp y offset de 2.5V.
     1. Encuentren una frecuencia adecuada para observar el tiempo de subida del fotodiodo y anoten su valor. (4 ptos.)
