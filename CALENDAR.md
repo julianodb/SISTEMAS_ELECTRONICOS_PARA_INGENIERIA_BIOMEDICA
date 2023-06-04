@@ -89,10 +89,10 @@
 | [06](/teoria/06_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 | Entrega $T_1$  |  |
 | [07](/teoria/07_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_2$ | inicio $T_3$ |
 | P1 | PEP1 | Diodos, Transistores| | |
-| 08 | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_[NL]}$, $A_{V_L}$, Amplificadores |  |  |
-| 09 | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, Circuitos con amp op | Entrega $T_3$ | Inicio $T_4$ |
-| 10 | Aplicaciones de Amplificadores operacionales  | Capacitancia, Aplicaciones de Amplificadores operacionales (analisis con funcion de transferencia) | |
-| 11 | Respuesta en frecuencia | Respuesta en frecuencia, diagrama de Bode, filtros |Entrega $T_4$ | inicio $T_5$|
+| 08 | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  |  |
+| 09 | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor y no-inversor | Entrega $T_3$ | Inicio $T_4$ |
+| 10 | Aplicaciones de Amplificadores operacionales | Aplicaciones de Amplificadores operacionales, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | |
+| 11 | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros |Entrega $T_4$ | inicio $T_5$|
 | 12 | Filtros activos | Filtros activos, entrega guia PEP2 | | |
 | 13 | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
 | P2 | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
@@ -112,9 +112,9 @@
 - [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
 - [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica
 - [L2](/laboratorio/L2.md): Fotorresistencia, fotodiodo, curva del diodo y zener. [L2 Recuperativo](/laboratorio/L2_alt.md)
-- L3: Circuitos Cambiador de nivel, Rectificador y Multiplicador de Voltaje. Diodo de proteccion
-- L4: respuesta en frecuencia / filtros pasivos, transistor BJT (curvas características)
+- [L3](/laboratorio/L3.md): Rectificador y Diodo de proteccion.
+- L4: transistor BJT (curvas características) + corte y saturación
 - L5: amplificador en emisor comun, amplificador diferencial
-- L6: amp ops
-- L7: oscilador y filtro activo
-- L8: Amplificador de Instrumentación
+- L6: amp ops y Amplificador de Instrumentación
+- L7: respuesta en frecuencia / filtros pasivos
+- L8: oscilador y filtro activo
