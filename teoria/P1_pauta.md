@@ -157,9 +157,29 @@
 1. Calcule $V_o$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=5\enspace V$, $R_B= 45\enspace k\Omega$, $R_C= 625\enspace \Omega$, $\beta = 100$, $V_{CE_{SAT}} = 0.3\enspace V$ y $V_{BE} =0.7\enspace V$ cuando la unión base-emisor está polarizada en directa. *(1.5pt)*
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_inverter.png" width="200">
+      
+      > Considerando $I_B$ e $I_C$ con sus sentidos convencionales.
 
    1. $V_i = 0\enspace V$ *(0.5pt)*
+
+      > $V_i = 0 \implies V_B = 0 \implies V_{BE} = 0 \implies I_B = 0$
+      >
+      > $I_B = 0 \implies I_C = 0$
+      >
+      > $\therefore V_o = V_{CC} - R_C I_C = 5 - 0 = 5\ V$
    1. $V_i = 2\enspace V$ *(0.5pt)*
+      
+      > base-emisor polarizado en directa $\implies V_{BE} = 0.7\ V$
+      >
+      > Malla 1 ($V_i$, $R_B$, $V_{BE})
+      >
+      > $V_i - R_B I_B - V_{BE} = 0$
+      >
+      > $2 - 45000 I_B - 0.7 = 0$
+      >
+      > $I_B \approx 29\ \mu A $
+      >
+      > Assumiendo que el transsitor está en modo *activo*
    1. $V_i = 5\enspace V$ *(0.5pt)*
    
 
