@@ -52,20 +52,20 @@
 |    | 12 | 13 | 14 | 15 | 16 | 17 | 18 |
 | 24 |    | 11 |    | 12 | L4 |    |    |
 |    | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
-| 25 |    | 13 | FF | P2 |    |    |    |
+| 25 |    | 13 | FF | P2 | L5 |    |    |
 |    | 26 | 27 | 28 | 29 | 30 |  1 |  2 |
-| 26 | FF | 14 |    | 15 | L5 |    |    |
+| 26 | FF | 14 |    | 15 | L6 |    |    |
 
 ## JULIO / 2023
 
 |Sem |Lun |Mar |Mie |Jue |Vie |Sab |Dom |
 |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
 |    |  3 |  4 |  5 |  6 |  7 |  8 |  9 |
-| 27 |    | 16 |    | 17 | L6 |    |    |
+| 27 |    | 16 |    | 17 | L7 |    |    |
 |    | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
-| 28 |    | 18 |    | 19 | L7 |    |    |
+| 28 |    | 18 |    | 19 | L8 |    |    |
 |    | 17 | 18 | 19 | 20 | 21 | 22 | 23 |
-| 29 |    | 20 |    | 21 | L8 |    |    |
+| 29 |    | 20 |    | 21 |    |    |    |
 |    | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
 | 30 |    | P3 |    | PO |    | TT |    |
 |    | 31 |  1 |  2 |  3 |  4 |  5 |  6 |
@@ -89,20 +89,20 @@
 | [06](/teoria/06_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 | Entrega $T_1$  |  |
 | [07](/teoria/07_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_2$ | inicio $T_3$ |
 | P1 | PEP1 | Diodos, Transistores| | |
-| 08 | Tópicos de componentes electrónicos pasivos | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |  |
-| 09 | Amplificadores operacionales| $Z_i$, $Z_o$, $r_o$, Amplificadores operacionales y aplicaciones | Entrega $T_3$ | Inicio $T_4$  |
-| 10 | Aplicaciones de Amplificadores operacionales  | Aplciaciones de Amplificadores operacionales (analisis con funcion de transferencia) |  | |
-| 11 | Respuesta en frecuencia | Respuesta en frecuencia, diagrama de Bode, filtros |Entrega $T_4$ | inicio $T_5$|
+| 08 | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  |  |
+| 09 | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor y no-inversor | Entrega $T_3$ | Inicio $T_4$ |
+| 10 | Aplicaciones de Amplificadores operacionales | Aplicaciones de Amplificadores operacionales, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | |
+| 11 | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |Entrega $T_4$ | inicio $T_5$|
 | 12 | Filtros activos | Filtros activos, entrega guia PEP2 | | |
 | 13 | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
-| P2 | PEP2 | Amplificadores operacionales, filtros activos | | | 
+| P2 | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
 | 14 | Osciladores | generadores de señales (osciladores) | Entrega $T_6$ | Inicio $T_7$ |
 | 15 | Osciladores | generadores de señales (osciladores) |  |  |
 | 16 | CIs Analógicos | CIs Analógicos | Entrega $T_7$ |  |
 | 17 | Fuentes Conmutadas | |  | inicio $T_8$ |
 | 18 | Fuentes Conmutadas | | |   |
 | 19 | Amplificadores de instrumentación | | Entrega $T_8$ |   |
-| 20 | Amplificadores de Potencia | Amplificadores de Potencia, entrega guia PEP3  | | |
+| 20 | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 |  |  |
 | 21 | Amplificadores de Potencia | Amplificadores de Potencia, entrega dispositivo diseñado, ejercicios guia PEP3 | | |
 | P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia | | |
 | PO | POR | Prueba Optativa Recuperativa | | |
@@ -111,10 +111,10 @@
 
 - [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
 - [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica
-- L2: Curva del diodo, zener y fotodiodo
-- L3: Circuitos Cambiador de nivel, Rectificador y Multiplicador de Voltaje. Diodo de proteccion
-- L4: respuesta en frecuencia / filtros pasivos, transistor BJT (curvas características)
+- [L2](/laboratorio/L2.md): Fotorresistencia, fotodiodo, curva del diodo y zener. [L2 Recuperativo](/laboratorio/L2_alt.md)
+- [L3](/laboratorio/L3.md): Rectificador y Diodo de proteccion.
+- L4: transistor BJT (curvas características) + corte y saturación
 - L5: amplificador en emisor comun, amplificador diferencial
-- L6: amp ops
-- L7: oscilador y filtro activo
-- L8: Amplificador de Instrumentación
+- L6: amp ops y Amplificador de Instrumentación
+- L7: respuesta en frecuencia / filtros pasivos
+- L8: oscilador y filtro activo

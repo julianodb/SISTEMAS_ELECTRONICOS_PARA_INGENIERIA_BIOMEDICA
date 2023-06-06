@@ -95,6 +95,8 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
 [T3](/teoria/T3.md)
 
+[T4](/teoria/T4.md)
+
 ### Laboratorios
 
 [Introducción](/laboratorio/intro.pdf)
@@ -102,3 +104,5 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 [L1](/laboratorio/L1.md)
 
 [L2](/laboratorio/L2.md)
+
+[L2 Recuperativo](/laboratorio/L2_alt.md)
