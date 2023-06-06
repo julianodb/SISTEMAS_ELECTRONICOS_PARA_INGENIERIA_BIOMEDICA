@@ -1,5 +1,7 @@
 # Sistemas Electrónicos 2023/01
-## Prueba Escrita 1
+## Prueba Escrita 1 - Pauta
+
+> En general, por errores de cálculo se descuenta 0.05pt, y por errores conceptuales o en la aplicación de fórmulas 0.1pt.
 
 1. El fabricante de cierto diodo asegura que el voltaje de polarización en directa típico es $V_F = 0.7\enspace V$. Conteste las preguntas a continuación para comprobar en que rango de corrientes dicha aproximación es "buena". Consideraremos una aproximación "buena" si el valor real del voltaje no difiere por más de 10% del valor asumido. Suponga que $I_S=10\enspace pA$ y $n=1$. Suponga también que la temperatura es $T=300\enspace K$. *(1.5 pt)*
       > $$ V_T = \frac{kT}{q} $$
@@ -57,7 +59,7 @@
       >
       > $ I_{VCC} = I = 9.3\ mA $
       >
-      > $ I_{R_1} = I_1 = 4.3\ mA $
+      > $ I_{D_1} = I_{R_1} = I_1 = 4.3\ mA $
       >
       > $ I_{R_2} = I_2 = 5\ mA $
       >
@@ -105,7 +107,7 @@
       >
       > $ I_{VCC} = I = 9.3\ mA $
       >
-      > $ I_{R_1} = I_1 = 4.3\ mA $
+      > $ I_{D_1} = I_{R_1} = I_1 = 4.3\ mA $
       >
       > $ I_{R_2} = I_2 = 5\ mA $
       >
@@ -116,6 +118,34 @@
    1. Datos: $V_{CC}=5\enspace V$, $R_3=1\enspace k\Omega$, $R_4=1\enspace k\Omega$, $R_5=1\enspace k\Omega$ *(0.75pt)*
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_3R.png" width="200">
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_3R.png" width="200">
+      >
+      > $D_3$ está polarizado en inversa => no conduce. Si se asume lo contrario se llegaría a que $V_4 = 5.7\ V > V_{CC}$. Pero $V_{CC}$ tiene que ser el mayor voltaje en el circuito, entonces $D_3$ está polarizado en inversa => no conduce.
+      >
+      > LKC (+0.1pt)
+      >
+      > $I_3 = I_5 = I$
+      >
+      > Malla 1 (VCC, D2, R3 y R5)
+      >
+      > $V_{CC} - V_{D_2} - R_3 I - R_5 I = 0$ (+0.4pt)
+      >
+      > $ 5 - 0.7 - 1000 I - 1000 I = 0 $
+      >
+      > $ I = 2.15\ mA $
+      >
+      > Resultados (+0.25pt)
+      >
+      > $I_{V_{CC}} = I_{D_2} = I_{R_3} = I_{R_5} = I = 2.15\ mA$
+      >
+      > $I_{D_3} = I_{R_4} = 0$
+      >
+      > $V_5 = R_5 I = 1000*0.00215 = 2.15\ V$
+      >
+      > $V_4 = V_5 + R_4 I_4 = 2.15 + 0 = 2.15\ V$
+      >
+      > $V_3 = V_5 + R_3 I = 2.15 + 1000*0.00215 = 4.3\ V$
 
 1. Calcule $V_o$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=5\enspace V$, $R_B= 45\enspace k\Omega$, $R_C= 625\enspace \Omega$, $\beta = 100$, $V_{CE_{SAT}} = 0.3\enspace V$ y $V_{BE} =0.7\enspace V$ cuando la unión base-emisor está polarizada en directa.
    1. $V_i = 0\enspace V$
