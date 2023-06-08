@@ -1,4 +1,4 @@
-# 09 - Ammplificador Operacional
+# 09 - Amplificador Operacional
 
 ## capítulos del libro
 - Capítulo 5
