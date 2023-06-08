@@ -98,7 +98,7 @@
       >
       > usando (1)
       >
-      > $ 4.3 - 1000 I_1 + 1000 0.005 = 0 $
+      > $ 4.3 - 1000 I_1 + 1000 * 0.005 = 0 $
       >
       > $ I_1 = 9.3\ mA $
       >
@@ -134,9 +134,9 @@
       >
       > $I_3 = I_5 = I$
       >
-      > Malla 1 (VCC, D2, R3 y R5)
+      > Malla 1 (VCC, D2, R3 y R5) (+0.4pt)
       >
-      > $V_{CC} - V_{D_2} - R_3 I - R_5 I = 0$ (+0.4pt)
+      > $V_{CC} - V_{D_2} - R_3 I - R_5 I = 0$
       >
       > $ 5 - 0.7 - 1000 I - 1000 I = 0 $
       >
@@ -162,16 +162,16 @@
 
    1. $V_i = 0\enspace V$ *(0.5pt)*
 
-      > $V_i = 0 \implies V_B = 0 \implies V_{BE} = 0 \implies I_B = 0$
+      > $V_i = 0 \implies V_B = 0 \implies V_{BE} = 0 \implies I_B = 0$ (+0.2pt)
       >
-      > $I_B = 0 \implies I_C = 0$
+      > $I_B = 0 \implies I_C = 0$ (+0.2pt)
       >
-      > $\therefore V_o = V_{CC} - R_C I_C = 5 - 0 = 5\ V$
+      > $\therefore V_o = V_{CC} - R_C I_C = 5 - 0 = 5\ V$ (+0.1pt)
    1. $V_i = 2\enspace V$ *(0.5pt)*
       
       > base-emisor polarizado en directa $\implies V_{BE} = 0.7\ V$
       >
-      > Malla 1 ($V_i$, $R_B$, $V_{BE})
+      > Malla 1 ($V_i$, $R_B$, $V_{BE}) (+0.2pt)
       >
       > $V_i - R_B I_B - V_{BE} = 0$
       >
@@ -179,15 +179,158 @@
       >
       > $I_B \approx 29\ \mu A $
       >
-      > Assumiendo que el transsitor está en modo *activo*
+      > Si se asume que el transistor está saturado se llega a $I_C \approx 6.9\ mA$. Pero, en dicho caso $\beta_{forzado} = I_C / I_B \approx 238$ es mayor que $\beta$. Por lo tanto, no está saturado.
+      >
+      > Assumiendo que el transistor está en modo *activo*: (+0.2pt)
+      >
+      > $I_C = \beta I_B = 100 * 29\ \mu A = 2.9\ mA $
+      >
+      > Malla 2 (colector y emisor) (+0.1pt):
+      >
+      > $V_{CC} - R_C I_C - V_{CE} = 0$
+      >
+      > $5 - 625 * 0.0029 - V_{CE} = 0$
+      >
+      > $V_{CE} \approx 3.2\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo.
+      >
+      > $\therefore V_o = 3.2\ V$
    1. $V_i = 5\enspace V$ *(0.5pt)*
    
+      > base-emisor polarizado en directa $\implies V_{BE} = 0.7\ V$
+      >
+      > Malla 1 ($V_i$, $R_B$, $V_{BE}) (+0.2pt)
+      >
+      > $V_i - R_B I_B - V_{BE} = 0$
+      >
+      > $5 - 45000 I_B - 0.7 = 0$
+      >
+      > $I_B \approx 95\ \mu A $
+      >
+      > Si se asume que el transistor está activo, se llega a $I_C \approx 9.5\ mA$. Pero, en dicho caso $V_{CE} = V_{CC} - R_C I_C = 5 - 625 * 0.095 \approx -0.9\ V$, que es menor que $V_{CE_{SAT}}$. Por lo tanto, no está activo.
+      >
+      > Assumiendo que el transistor está en modo *saturado*:
+      >
+      > Malla 2 (colector y emisor) (+0.2pt):
+      >
+      > $V_{CC} - R_C I_C - V_{CE_{SAT}} = 0$
+      >
+      > $5 - 625 I_C - 0.3 = 0$
+      >
+      > $ I_C \approx 6.9\ mA$
+      >
+      > $ V_o = V_{CE} = V_{CE_{SAT}} = 0.3\ V$
+      >
+      > Comprobación de $\beta_{forzado}$: (+0.1pt)
+      >
+      > $\beta_{forzado} = I_C / I_B = 6.9\ mA / 95\ \mu A \approx 73$. Como $0 <\beta_{forzado} < \beta$, se confirma que el transistor está operando en el modo saturado.
 
 2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 15\enspace V$, $R_1= 24\enspace k\Omega$, $R_2= 6.2\enspace k\Omega$, $R_C= 5.1\enspace k\Omega$, $R_E= 1.5\enspace k\Omega$, $\beta = 100$ y la temperatura $T=300\enspace K$.
-   1. La corriente de colector de polarización $I_{C_Q}$
-   2. La ganancia de voltaje $A_V$
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter.png" width="300"> 
+
+   1. La corriente de colector de polarización $I_{C_Q}$
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_thevenin.png" width="300"> 
+      >
+      > Cálculo del circuito equivalente de Thevenin
+      >
+      > $V_{th} = \frac{R_2}{R_1 + R_2} V_{CC}$ (+0.2pt)
+      >
+      > $V_{th} = \frac{6200}{24000 + 6200} 15$
+      >
+      > $V_{th} \approx 3.08\ V$
+      >
+      > $R_{th} = R_1 // R_2$ (+0.2pt)
+      >
+      > $R_{th} = \frac{R_1 R_2}{R_1 + R_2}$
+      >
+      > $R_{th} = \frac{24000*6200}{24000 + 6200}$
+      >
+      > $R_{th} \approx 4.9\ k\Omega$
+      >
+      > Malla Base-Emissor (+0.35pt)
+      >
+      > $V_{th} - R_{th} I_B - V_{BE} - R_E I_E = 0$
+      >
+      > Usando $I_E = (\beta + 1) I_B$:
+      >
+      > $V_{th} - R_{th} I_B - V_{BE} - R_E (\beta + 1) I_B = 0$
+      >
+      > $I_B = \frac{V_{th}  - V_{BE}}{R_{th} + (\beta + 1) R_E}$
+      >
+      > Usando $V_{BE} = 0.7\ V$ y los valores de $V_{th}$ y $R_{th}$
+      >
+      > $I_B = \frac{3.08  - 0.7}{4900 + 101 * 1500}$
+      >
+      > $I_B \approx 15\ \mu A$
+      >
+      > Asumiendo modo activo
+      >
+      > $I_{C_Q} = \beta I_B$
+      >
+      > $I_{C_Q} = 100 * 15\ \mu A$
+      >
+      > $I_{C_Q} \approx 1.5\ mA$
+      >
+      > Comprobación de modo activo
+      >
+      > $V_{C_Q} = V_{CC} - R_C I_{C_Q} $
+      >
+      > $V_{C_Q} = 15 - 5100 * 0.0015 $
+      >
+      > $V_{C_Q} \approx 7.35\ V$.
+      >
+      > $V_{E} = R_E I_{E} = R_E (\beta + 1) I_B$
+      >
+      > $V_{E} = 1500 * 101 * 0.0000015$
+      >
+      > $V_{E} \approx 0.23\ V$
+      >
+      > $V_{CE} = V_{C_Q} - V_E$
+      >
+      > $V_{CE} = 7.35 - 0.23 = 7.12\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo. 
+   2. La ganancia de voltaje $A_V$
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_small_signal.png" width="300"> 
+      >
+      > Dibujo del circuito equivalente en AC (+0.25pt)
+      >
+      > Malla de la base (+0.15pt)
+      >
+      > $v_{i_{AC}} - r_\pi i_{B_{AC}} = 0$
+      >
+      > $ v_{i_{AC}} = r_\pi i_{B_{AC}}$ (1)
+      >
+      > Malla del colector (+0.1pt)
+      >
+      > $v_{o_{AC}} + R_C i_{C_{AC}} = 0$
+      >
+      > $v_{o_{AC}} = - R_C i_{C_{AC}}$
+      >
+      > Asumiendo modo activo (comprobado en analisis DC)
+      >
+      > $v_{o_{AC}} = - R_C \beta i_{B_{AC}}$ (2)
+      >
+      > Definición de la ganancia de voltaje (+0.25pt)
+      >
+      > $A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$
+      >
+      > Usando (1) y (2)
+      >
+      > $A_V = \frac{- R_C \beta i_{B_{AC}}}{r_\pi i_{B_{AC}}}$
+      >
+      > $\implies A_V = \frac{- R_C \beta }{r_\pi}$
+      >
+      > Utilizando la fórumla de $r_\pi$
+      >
+      > $A_V = \frac{- R_C \beta I_{C_Q} }{\beta V_T}$
+      >
+      > $A_V = \frac{- R_C I_{C_Q} }{V_T}$
+      >
+      > $A_V = \frac{- 5100 * 0.0015 }{0.026}$
+      >
+      > $A_V \approx -294$
+      
 
 # Fórmulas
 $$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
