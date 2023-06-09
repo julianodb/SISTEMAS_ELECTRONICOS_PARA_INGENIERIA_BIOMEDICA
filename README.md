@@ -78,7 +78,7 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
 1. Introducción. Clase [01](/teoria/01_Introduccion.md)
 1. Dispositivos electronicos: diodos (clases [02](/teoria/02_Diodos.md) y [03](/teoria/03_Diodos_II.md)) y transistores (clases [04](/teoria/04_BJT_I.md), [05](/teoria/05_BJT_II.md), [06](/teoria/06_CE.md) y [07](/teoria/07_CE_II.md))
-1. Amplificadores operacionales y sus aplicaciones ([09](/teoria/09_opamp.md))
+1. Amplificadores operacionales y sus aplicaciones (clases [09](/teoria/09_opamp.md), [10](/teoria/10_opamp_II.md))
 1. Filtros activos
 1. Osciladores
 1. Circuitos integrados analógicos
