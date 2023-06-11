@@ -113,7 +113,7 @@
 - [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica
 - [L2](/laboratorio/L2.md): Fotorresistencia, fotodiodo, curva del diodo y zener. [L2 Recuperativo](/laboratorio/L2_alt.md)
 - [L3](/laboratorio/L3.md): Rectificador y Diodo de proteccion.
-- L4: transistor BJT (curvas características) + corte y saturación
+- [L4](/laboratorio/L4.md): transistor BJT (curvas características) + corte y saturación
 - L5: amplificador en emisor comun, amplificador diferencial
 - L6: amp ops y Amplificador de Instrumentación
 - L7: respuesta en frecuencia / filtros pasivos
