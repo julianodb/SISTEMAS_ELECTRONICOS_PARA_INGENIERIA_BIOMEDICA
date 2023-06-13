@@ -43,57 +43,57 @@
 
       Figura 2: Medición de $v_o$
 
-      - ¿Qué tipo de rectificador es? ¿Media onda o onda completa? (0.5 pto.)
-      - Calculen el promedio de las mediciones de $V_{min}$, $V_{max}$ y $V_{medio}$ (0.5 pto.) 
+      - ¿Qué tipo de rectificador es? ¿Media onda o onda completa? (0.5pt.)
+      - Calculen el promedio de las mediciones de $V_{min}$, $V_{max}$ y $V_{medio}$ (0.5pt.) 
          | grupo | $V_{min}$ | $V_{max}$ | $V_{medio}$ |
          | -- | -- | -- | -- |
          | A | 0 V | 16.4 V | 9.68 V |
          | B | 0 V | 17.2 V | 10 V |
          | C | -800 mV | 16.4 V | 9.3 V |
          | D | 0 V | 16.8 V | 9.53 V |
-      - Calculen el valor $\frac{V_{medio}}{V_{max}}$  de la señal $v_o$ (utilizen el valor promedio de $V_{max}$ y $V_{medio}$). Como se compara con el valor teórico de 0.636 ? (0.5 pto.) 
-   1. Se conectó el condensador, y se observó una señal como la figura 3 (línea celeste).
+      - Calculen el valor $\frac{V_{medio}}{V_{max}}$  de la señal $v_o$ (utilizen el valor promedio de $V_{max}$ y $V_{medio}$). Como se compara con el valor teórico de 0.636 ? (0.5pt.) 
+1. Se conectó el condensador, y se observó una señal como la figura 3 (línea celeste). La frecuencia de la señal observada fue de aproximadamente 100 Hz.
 
-      ![filter](../img/L3_filter.png)
+   ![filter](../img/L3_filter.png)
 
-      Figura 3: Medición de $v_o$ con el condensador conectado
+   Figura 3: Medición de $v_o$ con el condensador conectado
+   
+   - ¿Expliquen qué hace el condensador? (1pt.)
 
-      Se probaron distintos valores de R y C, y se midieron $V_{max}$ y $V_{pp}$ (rizo) para cada uno. Se observó que $V_{max}$ se mantuvo practicamente constante e igual al valor sin condensador. Los valores de rizo medidos se resumen a continuación:
+1. Se probaron distintos valores de R y C, y se midieron $V_{max}$ y $V_{pp}$ (rizo) para cada uno. Se observó que $V_{max}$ se mantuvo practicamente constante e igual al valor sin condensador. Los valores de rizo medidos se muestran en la siguiente tabla:
 
-      | R ($k\Omega$) | C ($\mu F$) | RC (??) | $V_{pp}$ (V) |
-      | -- | -- | -- | -- |
-      | 1 | 1 | 0.001 | 15.6 |
-      | 1 | 1 | 0.001 | 15.8 |
-      | 10 | 1 | 0.01 | 16.6 |
-      | 10 | 1 | 0.01 | 7.6 |
-      | 0.22 | 100 | 0.022 | 13.4 |
-      | 1 | 100 | 0.1 | 2 |
-      | 1 | 100 | 0.1 | 1.8 |
-      | 100 | 1 | 0.1 | 1.6 |
-      | 100 | 1 | 0.1 | 2 |
-      | 10 | 100 | 1 | 4.48 |
-      | 10 | 100 | 1 | 1.6 |
-      | 10 | 100 | 1 | ~0 |
-      | 1 | 2200 | 2.2 | ~0 |
-      | 1 | 2200 | 2.2 | ~0 |
-      | 100 | 100 | 10 | ~0 |
-      | 100 | 100 | 10 | 1.2 |
-      | 10 | 2200 | 22 | ~0 |
-      | 10 | 2200 | 22 | 0.4 |
-      | 10 | 2200 | 22 | 0.4 |
-      | 100 | 2200 | 220 | ~0 |
-      | 100 | 2200 | 220 | 1.4 |
+   | $R$ ($k\Omega$) | $C$ ($\mu F$) | $R*C$ (??) | $V_{pp}$ (V) |
+   | -- | -- | -- | -- |
+   | 1 | 1 | 0.001 | 15.8 |
+   | 10 | 1 | 0.01 | 16.6 |
+   | 0.22 | 100 | 0.022 | 13.4 |
+   | 1 | 100 | 0.1 | 2 |
+   | 100 | 1 | 0.1 | 2 |
+   | 10 | 100 | 1 | 1.6 |
+   | 1 | 2200 | 2.2 | ~0* |
+   | 100 | 100 | 10 | ~0* |
+   | 10 | 2200 | 22 | ~0* |
+   | 100 | 2200 | 220 | ~0* |
 
-      - ¿Cómo es la señal ahora? (0.5 pto.) 
-      - ¿Expliquen qué hace el condensador? (0.5 pto.)
-      - Hagan una tabla con los valores de R, C y RC, y concluyan sobre la relación entre los valores de RC, el período de la señal y la forma de onda de la salida. (1 pto.)
+   (*) La señal era practicamente un valor constante DC.
+
+   - ¿En el Sistema Internacional de Unidades, cual es la unidad del producto $R*C$ ? (AYUDA: empieza con la letra s) (0.5pt.) 
+   - Concluyan sobre la relación entre los valores de R*C, el período de la señal, la cantidad de rizo y la forma de onda de la salida. (1pt.)
 
   
-2. Agreguen el regulador de voltaje 7805 al circuito, conforme indica la figura 4. Usen 3 valores distintos de R ($R=200\ \Omega$, $R=1\ k\Omega$ y $R=100\ k\Omega$) Anoten el valor del voltaje para cada resistencia. (Sugerencia: Midan el voltaje con el multímetro.). 
-   1. ¿Hay variación en el voltaje de cada una de las resistencia? (1 pto.)
+1. Se agregó el regulador de voltaje 7805 al circuito, conforme indica la figura 4. Usando 3 valores distintos de R ($R=220\ \Omega$, $R=1\ k\Omega$ y $R=100\ k\Omega$), se anotó el valor del voltaje $v_o$ para cada resistencia.
 
-  <img src="https://julianodb.github.io/electronic_circuits_diagrams/full_bridge_and_7805.png" width="400">
+   <img src="https://julianodb.github.io/electronic_circuits_diagrams/full_bridge_and_7805.png" width="400">
 
-  Figura 4: Circuito rectificador y regulador
+   Figura 4: Circuito rectificador y regulador
 
-$$ Nota\ sesión = 1.0 + pts. $$
+   | Grupo | $R=220\ \Omega$ | $R=1\ k\Omega$ | $R=100\ k\Omega$ |
+   | -- | -- | -- | -- |
+   | A | 5 V | 5 V | 5 V |
+   | B | 4.97 V | 4.88 V | 4.98 V |
+   | C | 5 V | 5 V | 5 V |
+
+   1. Aproximadamente, ¿cuanta corriente fluye por R para cada valor de resistencia que se probó? (0.5pt.)
+   1. ¿Hay variación significativa en el voltaje de cada una de las resistencias? (0.5pt.)
+
+$ Nota\ sesión = 1.0 + pts. $

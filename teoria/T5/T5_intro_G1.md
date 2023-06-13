@@ -25,7 +25,7 @@ Valores obtenidos en trabajos anteriores:
     - $R_{3_{disponible}} = 220\ k\Omega$
 - $R_{4_{calculado}} = 62.6\ k\Omega$
     - $R_{4_{disponible}} = 68\ k\Omega$
-- $R_C = \cancel{4.3 k\Omega}$ (necesita corrección)
+- $R_C = 4.3\ k\Omega$ (necesita corrección)
 - $R_B = 1\ k\Omega$
 - $D_1$, $D_2$ y $D_3$ son LEDS color NARANJA (BLANCO?)
 - $Q_3$ transistor 2N2222 o equivalente
