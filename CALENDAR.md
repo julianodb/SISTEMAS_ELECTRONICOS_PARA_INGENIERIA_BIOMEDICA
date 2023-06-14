@@ -92,7 +92,7 @@
 | 08 | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  |  |
 | [09](/teoria/09_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor | Entrega $T_3$ | Inicio $T_4$ |
 | [10](/teoria/10_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | |
-| 11 | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |Entrega $T_4$ | inicio $T_5$|
+| [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |Entrega $T_4$ | inicio $T_5$|
 | 12 | Filtros activos | Filtros activos, entrega guia PEP2 | | |
 | 13 | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
 | P2 | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
