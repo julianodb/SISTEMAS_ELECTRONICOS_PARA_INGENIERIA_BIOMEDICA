@@ -1,4 +1,4 @@
-# Sistemas Electrónicos 2023/01
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2023/01
 ## Prueba Escrita 1 - Recuperativa
 
 1. El fabricante de cierto diodo asegura que el voltaje de polarización en directa típico es $V_F = 0.7\ V$. Conteste las preguntas a continuación para comprobar en que rango de corrientes dicha aproximación es "buena". Consideraremos una aproximación "buena" si el valor real del voltaje no difiere por más de 10% del valor asumido. Suponga que $I_S=1\ pA$ y $n=1$. Suponga también que la temperatura es $T=300\ K$. 
@@ -23,7 +23,7 @@
    
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_inverter.png" width="200">
 
-2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 10\ V$, $R_1= 16\ k\Omega$, $R_2= 3.9\ k\Omega$, $R_C= 4.7\ k\Omega$, $R_E= 1\ k\Omega$, $\beta = 100$ y la temperatura $T=300\ K$.
+2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 10\ V$, $R_1= 16\ k\Omega$, $R_2= 3.9\ k\Omega$, $R_C= 4.7\ k\Omega$, $R_E= 1\ k\Omega$, la temperatura $T=300\ K$, $\beta = 100$ ,$V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa.
    1. La corriente de colector de polarización $I_{C_Q}$
    2. La ganancia de voltaje $A_V$
 
