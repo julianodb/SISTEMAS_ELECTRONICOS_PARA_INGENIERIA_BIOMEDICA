@@ -16,14 +16,14 @@
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_3R.png" width="200">
 
-1. Calcule $V_o$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=5\ V$, $R_B= 45\ k\Omega$, $R_C= 625\ \Omega$, $\beta = 100$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa.
+1. Calcule $V_o$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=12\ V$, $R_B= 68\ k\Omega$, $R_C= 1\ k\Omega$, $\beta = 100$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa.
    1. $V_i = 0\ V$
-   1. $V_i = 2\ V$
-   1. $V_i = 5\ V$
+   1. $V_i = 6\ V$
+   1. $V_i = 12\ V$
    
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_inverter.png" width="200">
 
-2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 15\ V$, $R_1= 24\ k\Omega$, $R_2= 6.2\ k\Omega$, $R_C= 5.1\ k\Omega$, $R_E= 1.5\ k\Omega$, $\beta = 100$ y la temperatura $T=300\ K$.
+2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 10\ V$, $R_1= 16\ k\Omega$, $R_2= 3.9\ k\Omega$, $R_C= 4.7\ k\Omega$, $R_E= 1\ k\Omega$, $\beta = 100$ y la temperatura $T=300\ K$.
    1. La corriente de colector de polarización $I_{C_Q}$
    2. La ganancia de voltaje $A_V$
 
