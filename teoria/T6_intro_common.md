@@ -35,4 +35,4 @@ Características del transistor $Q_2$:
 - $V_{CE_{SAT}} = 0.7 V$
 - $V_{BE} = 1 V$
 
-En este trabajo, se agregarán los componentes $C_R$, $R_{bias}$ y $C_F$. Además, se determinarán los valores de $C_1$ y $C_2$. Su tarea es diseñar los filtros 1, 2 y 3, cuyos objetivos son, por un lado, eliminar las señales DC y, por otro, filtrar el ruido de alta frecuencia.
+En este trabajo, se agregarán los componentes $C_R$, $R_{bias}$, $C_F$ y $C_G$. Además, se determinarán los valores de $C_1$ y $C_2$. Su tarea es diseñar los filtros 1, 2 y 3, cuyos objetivos son, por un lado, eliminar las señales DC y, por otro, filtrar el ruido de alta frecuencia.
