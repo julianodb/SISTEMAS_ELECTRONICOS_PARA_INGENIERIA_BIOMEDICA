@@ -12,20 +12,20 @@ Figura 1: División del proyecto de Fotopletismografo en bloques
 
 Considerando lo que se ha diseñado en los trabajos anteriores, el circuito completo se muestra en las figuras a continuación:
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T4a.png" width="800">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T6a.png" width="800">
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T4b.png" width="800">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T6b.png" width="800">
 
-*circuitos aún no diseñados
+*circuito aún no diseñado
 
 Valores obtenidos en trabajos anteriores:
 - $R_1 = 150\ \Omega$
 - $R_2 = 10\ k\Omega$
-- $R_{3_{calculado}} = 248.5\ k\Omega$
-    - $R_{3_{disponible}} = 220\ k\Omega$
-- $R_{4_{calculado}} = 62.6\ k\Omega$
-    - $R_{4_{disponible}} = 68\ k\Omega$
-- $R_C = 2600\ \Omega$ (falta elegir valor disponible más cercano)
+- $R_3 = \qquad\ k\Omega$
+- $R_4 = \qquad\ k\Omega$
+- $R_5 = 680\ k\Omega$
+- $R_6 = 10\ k\Omega$
+- $R_C = \qquad\ \Omega$
 - $R_B = 330\ \Omega$
 - $D_1$, $D_2$ y $D_3$ son LEDS color AZUL
 - $Q_3$ transistor 2N2222 o equivalente
@@ -33,13 +33,10 @@ Valores obtenidos en trabajos anteriores:
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/three_R.png" width="200">
 
-Requerimientos originales de la primera etapa de amplificación:
-- $I_{C_Q} = 1.2\ mA$
-- $A_V = -120$
-- $R_3 // R_4 = R_{th} = 50\ k\Omega$
-
 Características del transistor $Q_2$:
 
 - $\beta = 10.000$
 - $V_{CE_{SAT}} = 0.7 V$
 - $V_{BE} = 1 V$
+
+En este trabajo, se agregarán los componentes $C_R$, $R_{bias}$, $C_F$ y $C_G$. Además, se determinarán los valores de $C_1$ y $C_2$. Su tarea es diseñar los filtros 1, 2 y 3, cuyos objetivos son, por un lado, eliminar las señales DC y, por otro, filtrar el ruido de alta frecuencia.

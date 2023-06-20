@@ -19,11 +19,11 @@ Considerando lo que se ha diseñado en los trabajos anteriores, el circuito comp
 Valores obtenidos en trabajos anteriores:
 - $R_1 = 150\ \Omega$
 - $R_2 = 10\ k\Omega$
-- $R_{3_{calculado}} = \qquad k\Omega$
-    - $R_{3_{disponible}} = 220\ k\Omega$
-- $R_{4_{calculado}} = \qquad k\Omega$
-    - $R_{4_{disponible}} = 68\ k\Omega$
-- $R_C = \qquad k\Omega$
+- $R_3 = \qquad\ k\Omega$
+- $R_4 = \qquad\ k\Omega$
+- $R_5 = 680\ k\Omega$
+- $R_6 = \qquad\ k\Omega$
+- $R_C = \qquad\ \Omega$
 - $R_B = \qquad \Omega$
 - $D_1$, $D_2$ y $D_3$ son LEDS color _________
 - $Q_3$ transistor 2N2222 o equivalente
