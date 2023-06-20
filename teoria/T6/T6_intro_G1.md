@@ -1,6 +1,4 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Trabajo 5 de Sistemas Electrónicos
-
-## Grupo 1
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Trabajo 6 de Sistemas Electrónicos - G1
 
 ## Introducción
 
@@ -12,9 +10,9 @@ Figura 1: División del proyecto de Fotopletismografo en bloques
 
 Considerando lo que se ha diseñado en los trabajos anteriores, el circuito completo se muestra en las figuras a continuación:
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T6a.png" width="800">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T6a.png" width="600">
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T6b.png" width="800">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T6b.png" width="600">
 
 *circuito aún no diseñado
 
