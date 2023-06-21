@@ -52,20 +52,20 @@
 |    | 12 | 13 | 14 | 15 | 16 | 17 | 18 |
 | 24 |    | 11 |    | 12 | L4 |    |    |
 |    | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
-| 25 |    | 13 | FF | P2 | L5 |    |    |
+| 25 |    | 13 | FF | PP | L5 |    |    |
 |    | 26 | 27 | 28 | 29 | 30 |  1 |  2 |
-| 26 | FF | 14 |    | 15 | L6 |    |    |
+| 26 | FF | P2 |    | 14 | L6 |    |    |
 
 ## JULIO / 2023
 
 |Sem |Lun |Mar |Mie |Jue |Vie |Sab |Dom |
 |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
 |    |  3 |  4 |  5 |  6 |  7 |  8 |  9 |
-| 27 |    | 16 |    | 17 | L7 |    |    |
+| 27 |    | 15 |    | 16 | L7 |    |    |
 |    | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
-| 28 |    | 18 |    | 19 | L8 |    |    |
+| 28 |    | 17 |    | 18 | L8 |    |    |
 |    | 17 | 18 | 19 | 20 | 21 | 22 | 23 |
-| 29 |    | 20 |    | 21 |    |    |    |
+| 29 |    | 19 |    | 20 |    |    |    |
 |    | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
 | 30 |    | P3 |    | PO |    | TT |    |
 |    | 31 |  1 |  2 |  3 |  4 |  5 |  6 |
@@ -93,8 +93,8 @@
 | [09](/teoria/09_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor | Entrega $T_3$ | Inicio $T_4$ |
 | [10](/teoria/10_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | |
 | [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |Entrega $T_4$ | inicio $T_5$|
-| 12 | Filtros activos | Filtros activos, entrega guia PEP2 | | |
-| 13 | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
+| [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, entrega guia PEP2 | | |
+| [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
 | P2 | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
 | 14 | Osciladores | generadores de señales (osciladores) | Entrega $T_6$ | Inicio $T_7$ |
 | 15 | Osciladores | generadores de señales (osciladores) |  |  |
@@ -114,7 +114,7 @@
 - [L2](/laboratorio/L2.md): Fotorresistencia, fotodiodo, curva del diodo y zener. [L2 Recuperativo](/laboratorio/L2_alt.md)
 - [L3](/laboratorio/L3.md): Rectificador y Diodo de proteccion.
 - [L4](/laboratorio/L4.md): transistor BJT (curvas características) + corte y saturación
-- L5: amplificador en emisor comun, amplificador diferencial
-- L6: amp ops y Amplificador de Instrumentación
-- L7: respuesta en frecuencia / filtros pasivos
-- L8: oscilador y filtro activo
+- [L5](/laboratorio/L5.md): amplificador operacional y aplicaciones en CC
+- L6: respuesta en frecuencia / filtros pasivos
+- L7: amplificador operacional y aplicaciones en CA
+- L8: multivibradores
