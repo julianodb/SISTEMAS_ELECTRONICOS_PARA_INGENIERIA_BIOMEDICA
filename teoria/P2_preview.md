@@ -3,7 +3,7 @@
 
 1. La Figura 1 muestra un sistema de control ON/OFF de temperatura de una incubadora, donde tanto $IC_1$ como $R_{heat}$ están mecanicamente conectados a ella. Cuando encendido, el calor generado en $R_{heat}$ sube la temperatura en la incubadora, mientras que cuando no hay corriente en $R_{heat}$, la incubadora se enfría naturalmente. $IC_1$ es un sensor de temperatura TMP235 de Texas Instruments que genera un voltaje proporcional a la temperatura, de acuerdo a la siguiente ecuación 
 
-    $v_s = 500\ mV + \theta*10\ mV$
+    $v_{temp} = 500\ mV + \theta*10\ mV$
 
     Donde $\theta$ es la temperatura en grados celsius.
 
