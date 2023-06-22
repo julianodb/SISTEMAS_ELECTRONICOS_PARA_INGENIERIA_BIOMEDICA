@@ -88,7 +88,7 @@
 | [05](/teoria/05_BJT_II.md) | Analisis de ca del BJT | Uso del BJT como llave y como amplificador, Análisis de grandes señales, polarización fija, emisor comun | | inicio $T_2$|
 | [06](/teoria/06_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 | Entrega $T_1$  |  |
 | [07](/teoria/07_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_2$ | inicio $T_3$ |
-| P1 | PEP1 | Diodos, Transistores| | |
+| [P1](/teoria/P1.md) | PEP1 | Diodos, Transistores| | |
 | 08 | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  |  |
 | [09](/teoria/09_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor | Entrega $T_3$ | Inicio $T_4$ |
 | [10](/teoria/10_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | |
@@ -96,14 +96,13 @@
 | [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, entrega guia PEP2 | | |
 | [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
 | P2 | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
-| 14 | Osciladores | generadores de señales (osciladores) | Entrega $T_6$ | Inicio $T_7$ |
-| 15 | Osciladores | generadores de señales (osciladores) |  |  |
+| 14 | Osciladores | multivibradores | Entrega $T_6$ | Inicio $T_7$ |
+| 15 | Osciladores | multivibradores y osciladores |  |  |
 | 16 | CIs Analógicos | CIs Analógicos | Entrega $T_7$ |  |
-| 17 | Fuentes Conmutadas | |  | inicio $T_8$ |
-| 18 | Fuentes Conmutadas | | |   |
-| 19 | Amplificadores de instrumentación | | Entrega $T_8$ |   |
-| 20 | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 |  |  |
-| 21 | Amplificadores de Potencia | Amplificadores de Potencia, entrega dispositivo diseñado, ejercicios guia PEP3 | | |
+| 17 | Fuentes Conmutadas | Reguladores de Voltaje |  | inicio $T_8$ |
+| 18 | Fuentes Conmutadas | Reguladores de Voltaje | |   |
+| 19 | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_8$ |   |
+| 20 | Amplificadores de Potencia | Amplificadores de Potencia, entrega dispositivo diseñado, ejercicios guia PEP3 | | |
 | P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia | | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
