@@ -54,22 +54,22 @@
 |    | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 | 25 |    | 13 | FF | PP | L5 |    |    |
 |    | 26 | 27 | 28 | 29 | 30 |  1 |  2 |
-| 26 | FF | P2 |    | 14 | L6 |    |    |
+| 26 | FF | RR | RR | RR | RR |    |    |
 
 ## JULIO / 2023
 
 |Sem |Lun |Mar |Mie |Jue |Vie |Sab |Dom |
 |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
 |    |  3 |  4 |  5 |  6 |  7 |  8 |  9 |
-| 27 |    | 15 |    | 16 | L7 |    |    |
+| 27 |    | P2 |    | 14 | L5 |    |    |
 |    | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
-| 28 |    | 17 |    | 18 | L8 |    |    |
+| 28 |    | 15 |    | 16 | L6 |    |    |
 |    | 17 | 18 | 19 | 20 | 21 | 22 | 23 |
-| 29 |    | 19 |    | 20 |    |    |    |
+| 29 |    | 17 |    | 18 | L7 |    |    |
 |    | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
-| 30 |    | P3 |    | PO |    | TT |    |
+| 30 |    | 19 |    | 20 | L8 |    |    |
 |    | 31 |  1 |  2 |  3 |  4 |  5 |  6 |
-| 31 |    |    |    |    |    |    |    |
+| 31 |    | P3 |    | PO |    | TT |    |
 
 - II: Inicio del Semestre
 - RR: Receso de Actividades
@@ -95,7 +95,7 @@
 | [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |Entrega $T_4$ | inicio $T_5$|
 | [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, entrega guia PEP2 | | |
 | [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
-| P2 | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
+| [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
 | 14 | Osciladores | multivibradores | Entrega $T_6$ | Inicio $T_7$ |
 | 15 | Osciladores | multivibradores y osciladores |  |  |
 | 16 | CIs Analógicos | CIs Analógicos | Entrega $T_7$ |  |
