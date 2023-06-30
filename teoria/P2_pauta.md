@@ -13,9 +13,79 @@
 
     Determine $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es (2pt):
     1. 0 °C
+        > $v_{temp} = 400\ mV + 0*19.5\ mV = 400\ mV $
+        >
+        > $v_{set} = 1080\ mV > v_{temp}$
+        >
+        > Como $v_{set} > v_{temp} \implies v_{+} > v_{-}$. Asumiendo un amplificador operacional ideal, la salida se satura en el voltaje de alimentación positivo, $V_{CC}$.
+        >
+        > Por lo tanto, $v_o = V_{CC} = 5\ V$.
+        >
+        > Como la unión base-emisor de Q está polarizada en directa, se asume $V_{BE} = 0.7\ V$.
+        >
+        > Por lo tanto, la corriente en la base de Q es $I_B = \frac{v_o-V_{BE}}{R_B} = \frac{5-0.7}{680} \approx 6.3\ mA$
+        >
+        > Para calcular la potencia en $R_{heat}$, se debe descubrir si Q está acutando en modo activo o saturado.
+        >
+        > Si se asume que Q está en modo activo:
+        >
+        > $I_C = \beta I_B = 1000*6.3\ mA = 6.3\ A$
+        >
+        > Comprobando el criterio de modo activo ( $V_{CE}> V_{CE_{SAT}}$ ):
+        >
+        > $V_{CE} = V_C = V_{heat} - R_{heat} I_C = 10 - 3* 6.3 = -8.9\ V$
+        >
+        > Como $-8.9\ V < V_{CE_{SAT}} = 0.3\ V$, se concluye que Q NO está operando en modo activo.
+        >
+        > Si se asume que Q está en modo saturado:
+        >
+        > $V_{CE} = V_{CE_{SAT}} = 0.3\ V$
+        >
+        > $\therefore I_C = \frac{V_{heat}-V_{CE}}{R_{heat}} = \frac{10-0.3}{3} \approx 3.23\ A$
+        >
+        > Comprobando el criterio de modo saturado ($0 < \beta_{forzado} < \beta$):
+        >
+        > $\beta_{forzado} = I_C / I_B = 3.23 / 0.0063 \approx 510$
+        >
+        > Como $0 < 510 < 1000$, se concluye que Q SÍ está operando en modo saturado.
+        >
+        > Finalmente, el calor entregado por $R_{heat}$ es:
+        >
+        > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 3.23^2 \approx 31\ W$
     1. 34 °C
+        > $v_{temp} = 400\ mV + 34*19.5\ mV = 1063\ mV $
+        >
+        > $v_{set} = 1080\ mV > v_{temp}$
+        >
+        > Como $v_{set} > v_{temp} \implies v_{+} > v_{-}$. Asumiendo un amplificador operacional ideal, la salida se satura en el voltaje de alimentación positivo, $V_{CC}$.
+        >
+        > Por lo tanto, $v_o = V_{CC} = 5\ V$.
+        >
+        > Como $v_o$ es el mismo del ejercício anterior, las corrientes y voltajes s¿en el transistor serán las mismas y, por lo tanto, $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 3.23^2 \approx 31\ W$
     1. 35 °C
+        > $v_{temp} = 400\ mV + 35*19.5\ mV = 1082.5\ mV $
+        >
+        > $v_{set} = 1080\ mV < v_{temp}$
+        >
+        > Como $v_{set} < v_{temp} \implies v_{+} < v_{-}$. Asumiendo un amplificador operacional ideal, la salida se satura en el voltaje de alimentación negativo, $tierra = 0\ V.
+        >
+        > Por lo tanto, $v_o = 0\ V$.
+        >
+        > Como $V_{BE} = 0 \implies I_B = 0 \implies I_C = 0$, el calor entregado por $R_{heat}$ es:
+        >
+        > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 0^2 = 0\ W$
     1. 36 °C
+        > $v_{temp} = 400\ mV + 36*19.5\ mV = 1102\ mV $
+        >
+        > $v_{set} = 1080\ mV < v_{temp}$
+        >
+        > Como $v_{set} < v_{temp} \implies v_{+} < v_{-}$. Asumiendo un amplificador operacional ideal, la salida se satura en el voltaje de alimentación negativo, $tierra = 0\ V.
+        >
+        > Por lo tanto, $v_o = 0\ V$.
+        >
+        > Como $V_{BE} = 0 \implies I_B = 0 \implies I_C = 0$, el calor entregado por $R_{heat}$ es:
+        >
+        > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 0^2 = 0\ W$
 
 2. El circuito de la figura 2 implementa una mejora en el circuito de control para la incubadora, haciendo con que el calor entregado sea *proporcional* a la diferencia entre la temperatura actual y la deseada. 
 
@@ -62,6 +132,8 @@ $$ H(s) = \frac{v_o(s)}{v_i(s)} $$
 $$ A_v(\omega) = || H(s=j\omega) ||$$
 $$ A_{v_{dB}}(\omega) = 20 log\left(|| H(j\omega) ||\right)$$
 $$ \phi(\omega) = arg\left( H(j\omega) \right) = tan^{-1} \left( \frac{Im\{H(j\omega)\}}{Re\{H(j\omega)\}} \right)$$
+
+$$Calor_{Resistencia} = IV = RI^2 = V^2 / R$$
 
 - $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
 - $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
