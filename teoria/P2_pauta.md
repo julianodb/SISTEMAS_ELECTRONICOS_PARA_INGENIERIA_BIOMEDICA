@@ -1,0 +1,77 @@
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2023/01
+## Prueba Escrita 2 - Pauta
+
+1. La Figura 1 muestra un sistema de control ON/OFF de temperatura de una incubadora, donde tanto el sensor de temperatura $IC_1$ como la resistencia $R_{heat}$ están térmicamente conectados a ella. Cuando Q está encendido, el calor generado en $R_{heat}$ sube la temperatura en la incubadora, mientras que cuando no hay corriente en $R_{heat}$, la incubadora se enfría naturalmente. $IC_1$ es un sensor de temperatura TMP236 de Texas Instruments que genera un voltaje proporcional a la temperatura. El potenciometro $R_{pot}$ permite ajustar el voltaje $V_{set}$ para seleccionar la temperatura deseada. El voltaje $v_{temp}$ se determina con la siguiente ecuación:
+
+    $v_{temp} = 400\ mV + \theta*19.5\ mV$
+
+    Donde $\theta$ es la temperatura en grados celsius.
+
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_1.png" width="300">
+
+    Figura 1: Sistema de control de temperatura ON/OFF de una incubadora. Los valores de los componentes y características del transistor se encuentran en la sección al final de la prueba
+
+    Determine $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es (2pt):
+    1. 0 °C
+    1. 34 °C
+    1. 35 °C
+    1. 36 °C
+
+2. El circuito de la figura 2 implementa una mejora en el circuito de control para la incubadora, haciendo con que el calor entregado sea *proporcional* a la diferencia entre la temperatura actual y la deseada. 
+
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_2.png" width="300"> 
+
+    Figura 2: Sistema de control de temperatura proporcional de una incubadora. Los valores de los componentes y características del transistor se encuentran en la sección al final de la prueba
+
+    Determine $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es (2pt):
+    1. 0 °C
+    1. 34 °C
+    1. 35 °C
+    1. 36 °C
+
+3. El circuito de la figura 3 implementa una mejora en el circuito de control de la figura 2. Se agregaron capacitores cuya función es filtrar señales de ruído, en especial el ruido producido por la red eléctrica a 50 Hz. 
+
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_3.png" width="300"> 
+
+    Figura 3: Sistema de control de temperatura proporcional integrativo de una incubadora. Los valores de los componentes y características del transistor se encuentran en la sección al final de la prueba
+
+    Determine:
+    1. la ganancia de voltaje del circuito amplificador en función de la frecuencia ($A_{V}(\omega)$). Considere que el voltaje de salida es $v_o$ y que el voltaje de entrada es $v_i=V_{set}-v_{temp}$.
+    2. el tipo de filtro (pasobaja, pasoalta, pasobanda)
+    3. la frecuencia de corte en Hz.
+    3. la amplitud de la salida para una señal de 50 Hz y amplitud 0.1 V.
+
+## Valores de componentes y voltajes fijos de los Circuitos
+- $V_{CC} = 5\ V$
+- $V_{set} = 1080\ mV $
+- $R_B = 680\ \Omega$
+- $V_{heat} = 10\ V$
+- $R_{heat} = 3\ \Omega$
+- $R_1 = R_3 = 1\ k\Omega$
+- $R_2 = R_4 = 47\ k\Omega$
+- $C_1 = C_2 = 47\ \mu F$
+
+## Características del transistor Q:
+- $\beta = 1000$
+- $V_{CE_{SAT}} = 0.3\ V$
+- $V_{BE} \approx 0.7\ V$ cuando la unión base-emisor está polarizada en directa.
+
+# Fórmulas
+
+$$ H(s) = \frac{v_o(s)}{v_i(s)} $$
+$$ A_v(\omega) = || H(s=j\omega) ||$$
+$$ A_{v_{dB}}(\omega) = 20 log\left(|| H(j\omega) ||\right)$$
+$$ \phi(\omega) = arg\left( H(j\omega) \right) = tan^{-1} \left( \frac{Im\{H(j\omega)\}}{Re\{H(j\omega)\}} \right)$$
+
+- $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
+- $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
+$$I_E = I_C + I_B$$
+- en modo activo ($V_{CE} > V_{CE_{SAT}}$):
+$$I_C = \beta I_B $$
+- en modo saturado ($0 < \beta_{forzado} < \beta$):
+$$V_{CE} = V_{CE_{SAT}}$$
+$$I_C = \beta_{forzado} I_B $$
+- modelo híbrido-$\pi$ de pequeñas señales:
+$$r_{\pi} = \frac{\beta V_T}{I_{C_Q}}$$
+$$i_{C_{AC}} = \beta i_{B_{AC}} $$
+$$A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$$
