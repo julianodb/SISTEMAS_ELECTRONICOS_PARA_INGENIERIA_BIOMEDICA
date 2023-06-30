@@ -25,7 +25,7 @@
         >
         > Por lo tanto, la corriente en la base de Q es $I_B = \frac{v_o-V_{BE}}{R_B} = \frac{5-0.7}{680} \approx 6.3\ mA$
         >
-        > Para calcular la potencia en $R_{heat}$, se debe descubrir si Q está acutando en modo activo o saturado.
+        > Para calcular la potencia en $R_{heat}$, se debe descubrir si Q está actuando en modo activo o saturado.
         >
         > Si se asume que Q está en modo activo:
         >
@@ -61,7 +61,7 @@
         >
         > Por lo tanto, $v_o = V_{CC} = 5\ V$.
         >
-        > Como $v_o$ es el mismo del ejercício anterior, las corrientes y voltajes s¿en el transistor serán las mismas y, por lo tanto, $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 3.23^2 \approx 31\ W$
+        > Como $v_o$ es el mismo del ejercício anterior, las corrientes y voltajes en el transistor serán las mismas y, por lo tanto, $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 3.23^2 \approx 31\ W$
     1. 35 °C
         > $v_{temp} = 400\ mV + 35*19.5\ mV = 1082.5\ mV $
         >
@@ -93,37 +93,38 @@
 
     Figura 2: Sistema de control de temperatura proporcional de una incubadora. Los valores de los componentes y características del transistor se encuentran en la sección al final de la prueba
 
-    Determine $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es (2pt):
-    > Como hay realimentación negativa, $V_+ = V_-$. Además, la corriente en $R_2$ es igual a la corriente en $R_1$, y el voltaje $V_+$ está determinado por el divisor resistivo $R_3$ y $R_4$. Por lo tanto:
-    >
-    > $$\begin{cases}
-        V_+ = V_- & \text{(1)}\\
-        \frac{v_o-V_-}{R_2} = \frac{V_--V_{temp}}{R_1} & \text{(2)}\\
-        V_+ = \frac{R_4}{R_3+R_4}V_{set} & \text{(3)}
-        \end{cases}$$
-    >
-    > Utilizando (1) se reemplaza $V_-$ por $V_+$ en (2). Luego, se reemplaza $V_+$ por la expresión en (3). Así, se obtiene:
-    > 
-    > $\frac{v_o-\frac{R_4}{R_3+R_4}V_{set}}{R_2} = \frac{\frac{R_4}{R_3+R_4}V_{set}-V_{temp}}{R_1}$
-    > 
-    > $v_o-\frac{R_4}{R_3+R_4}V_{set} = \frac{R_2}{R_1}\frac{R_4}{R_3+R_4}V_{set}-\frac{R_2}{R_1}V_{temp}$
-    > 
-    > $v_o = (\frac{R_2}{R_1}+1)\frac{R_4}{R_3+R_4}V_{set}-\frac{R_2}{R_1}V_{temp}$
-    > 
-    > $v_o = \frac{R_2+R_1}{R_1}\frac{R_4}{R_3+R_4}V_{set}-\frac{R_2}{R_1}V_{temp}$
-    >
-    > Como $R_3 = R_1$ y $R_4 = R_2$,
-    >
-    > $v_o = \frac{R_2+R_1}{R_1}\frac{R_2}{R_1+R_2}V_{set}-\frac{R_2}{R_1}V_{temp}$
-    >
-    > $v_o = \frac{R_2}{R_1}V_{set}-\frac{R_2}{R_1}V_{temp}$
-    >
-    > $v_o = \frac{R_2}{R_1}(V_{set}-V_{temp})$
-    >
-    > Reemplazando $R_2 = 47\ k\Omega$ y $R_1 = 1\ k\Omega$,
-    >
-    > $v_o = 47(V_{set}-V_{temp})$
-    1. 0 °C
+    Determine (2pt):
+    1. Una fórmula para $v_o$ en función de $V_{set}$ y $v_{temp}$
+        > Como hay realimentación negativa, $V_+ = V_-$. Además, la corriente en $R_2$ es igual a la corriente en $R_1$, y el voltaje $V_+$ está determinado por el divisor resistivo $R_3$ y $R_4$. Por lo tanto:
+        >
+        > $$\begin{cases}
+            V_+ = V_- & \text{(1)}\\
+            \frac{v_o-V_-}{R_2} = \frac{V_--V_{temp}}{R_1} & \text{(2)}\\
+            V_+ = \frac{R_4}{R_3+R_4}V_{set} & \text{(3)}
+            \end{cases}$$
+        >
+        > Utilizando (1) se reemplaza $V_-$ por $V_+$ en (2). Luego, se reemplaza $V_+$ por la expresión en (3). Así, se obtiene:
+        > 
+        > $\frac{v_o-\frac{R_4}{R_3+R_4}V_{set}}{R_2} = \frac{\frac{R_4}{R_3+R_4}V_{set}-V_{temp}}{R_1}$
+        > 
+        > $v_o-\frac{R_4}{R_3+R_4}V_{set} = \frac{R_2}{R_1}\frac{R_4}{R_3+R_4}V_{set}-\frac{R_2}{R_1}V_{temp}$
+        > 
+        > $v_o = (\frac{R_2}{R_1}+1)\frac{R_4}{R_3+R_4}V_{set}-\frac{R_2}{R_1}V_{temp}$
+        > 
+        > $v_o = \frac{R_2+R_1}{R_1}\frac{R_4}{R_3+R_4}V_{set}-\frac{R_2}{R_1}V_{temp}$
+        >
+        > Como $R_3 = R_1$ y $R_4 = R_2$,
+        >
+        > $v_o = \frac{R_2+R_1}{R_1}\frac{R_2}{R_1+R_2}V_{set}-\frac{R_2}{R_1}V_{temp}$
+        >
+        > $v_o = \frac{R_2}{R_1}V_{set}-\frac{R_2}{R_1}V_{temp}$
+        >
+        > $v_o = \frac{R_2}{R_1}(V_{set}-V_{temp})$
+        >
+        > Reemplazando $R_2 = 47\ k\Omega$ y $R_1 = 1\ k\Omega$,
+        >
+        > $v_o = 47(V_{set}-V_{temp})$
+    1. $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es 0 °C
         > $v_{temp} = 400\ mV + 0*19.5\ mV = 400\ mV $
         >
         > $v_o = 47(V_{set} - v_{temp}) = 47(1,08 -0,4)$
@@ -134,8 +135,8 @@
         >
         > $v_o = 5\ V$
         >
-        > Como $v_o$ es el mismo del ejercício 1.1, las corrientes y voltajes s¿en el transistor serán las mismas y, por lo tanto, $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 3.23^2 \approx 31\ W$
-    1. 34 °C
+        > Como $v_o$ es el mismo del ejercício 1.1, las corrientes y voltajes en el transistor serán las mismas y, por lo tanto, $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 3.23^2 \approx 31\ W$
+    1. $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es 34 °C
         > $v_{temp} = 400\ mV + 34*19.5\ mV = 1063\ mV $
         >
         > $v_o = 47(V_{set} - v_{temp}) = 47(1,08 -1,063)$
@@ -146,7 +147,7 @@
         >
         > Por lo tanto, la corriente en la base de Q es $I_B = \frac{v_o-V_{BE}}{R_B} = \frac{0.799-0.7}{680} \approx 146\ \mu A$
         >
-        > Para calcular la potencia en $R_{heat}$, se debe descubrir si Q está acutando en modo activo o saturado.
+        > Para calcular la potencia en $R_{heat}$, se debe descubrir si Q está actuando en modo activo o saturado.
         >
         > Si se asume que Q está en modo saturado:
         >
@@ -173,7 +174,7 @@
         > Finalmente, el calor entregado por $R_{heat}$ es:
         >
         > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 0.146^2 \approx 64\ mW$
-    1. 35 °C
+    1. $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es 35 °C
         > $v_{temp} = 400\ mV + 35*19.5\ mV = 1082.5\ mV $
         >
         > $v_o = 47(V_{set} - v_{temp}) = 47(1,08 -1,0825)$
@@ -187,21 +188,7 @@
         > Como $V_{BE} = 0 \implies I_B = 0 \implies I_C = 0$, el calor entregado por $R_{heat}$ es:
         >
         > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 0^2 = 0\ W$
-    1. 36 °C
-        > $v_{temp} = 400\ mV + 36*19.5\ mV = 1102\ mV $
-        >
-        > $v_o = 47(V_{set} - v_{temp}) = 47(1,08 -1,102)$
-        >
-        > $v_o = -1.034\ V$
-        >
-        > Como el amplificador operacional está alimentado por $V_{CC} = 5\ V$ y $tierra = 0\ V$, el menor voltaje de salida posible es 0 V.
-        >
-        > Por lo tanto, $v_o = 0\ V$.
-        >
-        > Como $V_{BE} = 0 \implies I_B = 0 \implies I_C = 0$, el calor entregado por $R_{heat}$ es:
-        >
-        > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 0^2 = 0\ W$
-
+    
 3. El circuito de la figura 3 implementa una mejora en el circuito de control de la figura 2. Se agregaron capacitores cuya función es filtrar señales de ruído, en especial el ruido producido por la red eléctrica a 50 Hz. 
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_3.png" width="300"> 
