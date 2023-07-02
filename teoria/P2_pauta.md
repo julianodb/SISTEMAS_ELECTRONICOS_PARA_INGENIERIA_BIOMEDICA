@@ -67,9 +67,9 @@ Figura 1: Sistema de control de temperatura ON/OFF de una incubadora. Los valore
         >
         > $v_{set} = 1080\ mV < v_{temp}$
         >
-        > Como $v_{set} < v_{temp} \implies v_{+} < v_{-}$. Asumiendo un amplificador operacional ideal, la salida se satura en el voltaje de alimentación negativo, $tierra = 0\ V.
+        > Como $v_{set} < v_{temp} \implies v_{+} < v_{-}$. Asumiendo un amplificador operacional ideal, la salida se satura en el voltaje de alimentación negativo.
         >
-        > Por lo tanto, $v_o = 0\ V$.
+        > Por lo tanto, $v_o = tierra = 0\ V$.
         >
         > Como $V_{BE} = 0 \implies I_B = 0 \implies I_C = 0$, el calor entregado por $R_{heat}$ es:
         >
@@ -129,7 +129,7 @@ Figura 2: Sistema de control de temperatura proporcional integrativo de una incu
         >
         > Para calcular la potencia en $R_{heat}$, se debe descubrir si Q está actuando en modo activo o saturado.
         >
-        > > Si se asume que Q está en modo saturado:
+        > Si se asume que Q está en modo saturado:
         >
         > $V_{CE} = V_{CE_{SAT}} = 0.3\ V$
         >
