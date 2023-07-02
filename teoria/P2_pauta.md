@@ -269,10 +269,10 @@ Figura 2: Sistema de control de temperatura proporcional integrativo de una incu
         > $A_v(\omega) \approx 47\frac{1}{\sqrt{1+(2.2 \omega)^2}}$
     2. el tipo de filtro (pasobaja, pasoalta, pasobanda)
         > La ganancia del circuito disminuye conforme aumenta la frecuencia. Por lo tanto, se trata e un filtro pasobaja
-    3. la frecuencia de corte en Hz.
+    3. la frecuencia de corte en Hz. Asuma que la ganancia maxima es $\frac{R_2}{R_1}$.
         > La frecuencia de corte es la frecuencia con la cual la ganancia es $A_{v_{max}}/\sqrt{2}$
         >
-        > Considerando $A_{v_{max}} = 47$ y $\omega_c = 2\pi f_c$:
+        > Considerando $A_{v_{max}} = \frac{R_2}{R_1} = 47$ y $\omega_c = 2\pi f_c$:
         >
         > $47\frac{1}{\sqrt{1+(2.2* 2\pi f_c)^2}} = \frac{47}{\sqrt{2}}$
         >
