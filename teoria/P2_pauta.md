@@ -1,19 +1,19 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2023/01
 ## Prueba Escrita 2 - Pauta
 
-1. La Figura 1 muestra un sistema de control ON/OFF de temperatura de una incubadora, donde tanto el sensor de temperatura $IC_1$ como la resistencia $R_{heat}$ están térmicamente conectados a ella. Cuando Q está encendido, el calor generado en $R_{heat}$ sube la temperatura en la incubadora, mientras que cuando no hay corriente en $R_{heat}$, la incubadora se enfría naturalmente. $IC_1$ es un sensor de temperatura TMP236 de Texas Instruments que genera un voltaje proporcional a la temperatura. El potenciometro $R_{pot}$ permite ajustar el voltaje $V_{set}$ para seleccionar la temperatura deseada. El voltaje $v_{temp}$ se determina con la siguiente ecuación:
+La Figura 1 muestra un sistema de control ON/OFF de temperatura de una incubadora, donde tanto el sensor de temperatura $IC_1$ como la resistencia $R_{heat}$ están térmicamente conectados a ella. Cuando Q está encendido, el calor generado en $R_{heat}$ sube la temperatura en la incubadora, mientras que cuando no hay corriente en $R_{heat}$, la incubadora se enfría naturalmente. $IC_1$ es un sensor de temperatura TMP236 de Texas Instruments que genera un voltaje proporcional a la temperatura. El potenciometro $R_{pot}$ permite ajustar el voltaje $V_{set}$ para seleccionar la temperatura deseada. El voltaje $v_{temp}$ se determina con la siguiente ecuación:
 
-    $v_{temp} = 400\ mV + \theta*19.5\ mV$
+$v_{temp} = 400\ mV + \theta*19.5\ mV$
 
-    Donde $\theta$ es la temperatura en grados celsius.
+Donde $\theta$ es la temperatura en grados celsius.
 
-    <img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_1.png" width="300">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_1.png" width="300">
 
-    Figura 1: Sistema de control de temperatura ON/OFF de una incubadora. Los valores de los componentes y características del transistor se encuentran en la sección al final de la prueba
+Figura 1: Sistema de control de temperatura ON/OFF de una incubadora. Los valores de los componentes y características del transistor se encuentran en la sección al final de la prueba
 
-    Determine $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es (2pt):
-    1. 0 °C
-        > $v_{temp} = 400\ mV + 0*19.5\ mV = 400\ mV $
+1. Para el circuito de la Figura 1, determine $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es (2pt):
+    1. 33 °C
+        > $v_{temp} = 400\ mV + 33*19.5\ mV = 1043.5\ mV $
         >
         > $v_{set} = 1080\ mV > v_{temp}$
         >
@@ -74,27 +74,19 @@
         > Como $V_{BE} = 0 \implies I_B = 0 \implies I_C = 0$, el calor entregado por $R_{heat}$ es:
         >
         > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 0^2 = 0\ W$
-    1. 36 °C
-        > $v_{temp} = 400\ mV + 36*19.5\ mV = 1102\ mV $
-        >
-        > $v_{set} = 1080\ mV < v_{temp}$
-        >
-        > Como $v_{set} < v_{temp} \implies v_{+} < v_{-}$. Asumiendo un amplificador operacional ideal, la salida se satura en el voltaje de alimentación negativo, $tierra = 0\ V.
-        >
-        > Por lo tanto, $v_o = 0\ V$.
-        >
-        > Como $V_{BE} = 0 \implies I_B = 0 \implies I_C = 0$, el calor entregado por $R_{heat}$ es:
-        >
-        > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 0^2 = 0\ W$
 
-2. El circuito de la figura 2 implementa una mejora en el circuito de control para la incubadora, haciendo con que el calor entregado sea *proporcional* a la diferencia entre la temperatura actual y la deseada. 
+El circuito de la figura 2 implementa mejoras en el circuito de control de la figura 1. Primero, se hizo con que el calor entregado sea *proporcional* a la diferencia entre la temperatura actual y la deseada. Además, se agregaron capacitores cuya función es filtrar señales de ruído, en especial el ruido producido por la red eléctrica a 50 Hz. 
 
-    <img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_2.png" width="300"> 
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_3.png" width="300"> 
 
-    Figura 2: Sistema de control de temperatura proporcional de una incubadora. Los valores de los componentes y características del transistor se encuentran en la sección al final de la prueba
+Figura 2: Sistema de control de temperatura proporcional integrativo de una incubadora. Los valores de los componentes y características del transistor se encuentran en la sección al final de la prueba
 
-    Determine (2pt):
-    1. Una fórmula para $v_o$ en función de $V_{set}$ y $v_{temp}$
+2. Para el circuito de la Figura 2, considerando el análisis en corriente contínua ($\omega=0$), determine (2pt):
+    1. una fórmula para $v_o$ en función de $V_{set}$ y $v_{temp}$ en corriente contínua.
+        > Para el análisis en corriente contínua, se eliminan los condensadores. Por lo tanto, el circuito sería el siguiente:
+        >
+        > <img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_2.png" width="300"> 
+        >
         > Como hay realimentación negativa, $V_+ = V_-$. Además, la corriente en $R_2$ es igual a la corriente en $R_1$, y el voltaje $V_+$ está determinado por el divisor resistivo $R_3$ y $R_4$. Por lo tanto:
         >
         > $$\begin{cases}
@@ -189,13 +181,7 @@
         >
         > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 0^2 = 0\ W$
     
-3. El circuito de la figura 3 implementa una mejora en el circuito de control de la figura 2. Se agregaron capacitores cuya función es filtrar señales de ruído, en especial el ruido producido por la red eléctrica a 50 Hz. 
-
-    <img src="https://julianodb.github.io/electronic_circuits_diagrams/temperature_control_3.png" width="300"> 
-
-    Figura 3: Sistema de control de temperatura proporcional integrativo de una incubadora. Los valores de los componentes y características del transistor se encuentran en la sección al final de la prueba
-
-    Determine:
+2. Para el circuito de la Figura 2, considerando el análisis en frecuencia, determine (2pt):
     1. la ganancia de voltaje del circuito amplificador en función de la frecuencia ($A_{V}(\omega)$). Considere que el voltaje de salida es $v_o$ y que el voltaje de entrada es $v_i=V_{set}-v_{temp}$.
         > Como hay realimentación negativa, $V_+ = V_-$. Además, la corriente en $R_2 // C_1$ es igual a la corriente en $R_1$, y el voltaje $V_+$ está determinado por la malla con $V_{set}$, $R_3$, $R_4$ y $C_2$. Por lo tanto:
         >
@@ -274,7 +260,7 @@
         >
         > $f_c \approx 0.072\ Hz$
 
-    3. la amplitud de la salida para una señal de 50 Hz y amplitud 0.1 V.
+    3. la amplitud de la salida para una señal de entrada $v_i$ de 50 Hz y amplitud 0.1 V.
         > $A_v(\omega = 2\pi*50) \approx 47\frac{1}{\sqrt{1+(2.2 *2\pi*50)^2}}$
         >
         > $A_v(\omega = 2\pi*50) \approx 47\frac{1}{\sqrt{1+(220 \pi)^2}}$
