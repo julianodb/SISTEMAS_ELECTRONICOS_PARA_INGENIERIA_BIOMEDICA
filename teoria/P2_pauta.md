@@ -197,9 +197,95 @@
 
     Determine:
     1. la ganancia de voltaje del circuito amplificador en función de la frecuencia ($A_{V}(\omega)$). Considere que el voltaje de salida es $v_o$ y que el voltaje de entrada es $v_i=V_{set}-v_{temp}$.
+        > Como hay realimentación negativa, $V_+ = V_-$. Además, la corriente en $R_2 // C_1$ es igual a la corriente en $R_1$, y el voltaje $V_+$ está determinado por la malla con $V_{set}$, $R_3$, $R_4$ y $C_2$. Por lo tanto:
+        >
+        > $$\begin{cases}
+            V_+ = V_- & \text{(1)}\\
+            \frac{v_o-V_-}{R_2// Z_{C_1}} = \frac{V_--V_{temp}}{R_1} & \text{(2)}\\
+            V_+ = \frac{R_4//Z_{C_2}}{R_3+R_4//Z_{C_2}}V_{set} & \text{(3)}
+            \end{cases}$$
+        >
+        > Donde $Z_{C_1}$ es la impedancia de $C_1$ y $Z_{C_2}$ es la impedancia de $C_2$
+        > Utilizando (1) se reemplaza $V_-$ por $V_+$ en (2). Luego, se reemplaza $V_+$ por la expresión en (3). Así, se obtiene:
+        > 
+        > $\frac{v_o-\frac{R_4//Z_{C_2}}{R_3+R_4//Z_{C_2}}V_{set}}{R_2// Z_{C_1}} = \frac{\frac{R_4//Z_{C_2}}{R_3+R_4//Z_{C_2}}V_{set}-V_{temp}}{R_1}$
+        > 
+        > $v_o-\frac{R_4//Z_{C_2}}{R_3+R_4//Z_{C_2}}V_{set} = \frac{R_2// Z_{C_1}}{R_1}\frac{R_4//Z_{C_2}}{R_3+R_4//Z_{C_2}}V_{set}-\frac{R_2// Z_{C_1}}{R_1}V_{temp}$
+        > 
+        > $v_o = (\frac{R_2// Z_{C_1}}{R_1}+1)\frac{R_4//Z_{C_2}}{R_3+R_4//Z_{C_2}}V_{set}-\frac{R_2// Z_{C_1}}{R_1}V_{temp}$
+        > 
+        > $v_o = \frac{R_2// Z_{C_1} + R_1}{R_1}\frac{R_4//Z_{C_2}}{R_3+R_4//Z_{C_2}}V_{set}-\frac{R_2// Z_{C_1}}{R_1}V_{temp}$
+        >
+        > Como $R_3 = R_1$, $R_4 = R_2$ y $C_2 = C_1$,
+        >
+        > $v_o = \frac{R_2// Z_{C_1} + R_1}{R_1}\frac{R_2//Z_{C_1}}{R_2//Z_{C_1}+R_1}V_{set}-\frac{R_2// Z_{C_1}}{R_1}V_{temp}$
+        >
+        > $v_o = \frac{R_2//Z_{C_1}}{R_1}V_{set}-\frac{R_2// Z_{C_1}}{R_1}V_{temp}$
+        >
+        > $v_o = \frac{R_2//Z_{C_1}}{R_1}(V_{set}-V_{temp})$
+        >
+        > $v_o = \frac{\frac{1}{1/R_2+1/Z_{C_1}}}{R_1}(V_{set}-V_{temp})$
+        >
+        > $v_o = \frac{1}{R_1}\frac{1}{\frac{1}{R_2}+\frac{1}{Z_{C_1}}}(V_{set}-V_{temp})$
+        >
+        > $v_o = \frac{1}{R_1}\frac{1}{\frac{1}{R_2}(1+\frac{R_2}{Z_{C_1}})}(V_{set}-V_{temp})$
+        >
+        > $v_o = \frac{R_2}{R_1}\frac{1}{1+\frac{R_2}{Z_{C_1}}}(V_{set}-V_{temp})$
+        >
+        > Reemplazando $Z_{C_1} = \frac{1}{C_1 s}$ y $V_{set}-V_{temp} = v_i$ 
+        >
+        > $v_o = \frac{R_2}{R_1}\frac{1}{1+R_2 C_1 s}v_i$
+        >
+        > Utilizando la definición de función de transferencia
+        >
+        > $H(s) = \frac{v_o(s)}{v_i(s)} $
+        >
+        > $H(s) = \frac{\frac{R_2}{R_1}\frac{1}{1+R_2 C_1 s}v_i(s)}{v_i(s)} $
+        >
+        > $H(s) = \frac{R_2}{R_1}\frac{1}{1+R_2 C_1 s} $
+        >
+        > Calculando la ganancia de voltaje en función de la frecuencia:
+        >
+        > $A_v(\omega) = || H(s=j\omega) ||$
+        >
+        > $A_v(\omega) = || \frac{R_2}{R_1}\frac{1}{1+R_2 C_1 j\omega} ||$
+        >
+        > $A_v(\omega) = \frac{R_2}{R_1}\frac{1}{\sqrt{1+(R_2 C_1 \omega)^2}}$
+        >
+        > Reemplazando $R_2 = 47\ k\Omega$, $R_1 = 1\ k\Omega$ y $C_1 = 47\ \mu F$,
+        >
+        > $A_v(\omega) \approx 47\frac{1}{\sqrt{1+(2.2 \omega)^2}}$
     2. el tipo de filtro (pasobaja, pasoalta, pasobanda)
+        > La ganancia del circuito disminuye conforme aumenta la frecuencia. Por lo tanto, se trata e un filtro pasobaja
     3. la frecuencia de corte en Hz.
+        > La frecuencia de corte es la frecuencia con la cual la ganancia es $A_{v_{max}}/\sqrt{2}$
+        >
+        > Considerando $A_{v_{max}} = 47$ y $\omega_c = 2\pi f_c$:
+        >
+        > $47\frac{1}{\sqrt{1+(2.2* 2\pi f_c)^2}} = \frac{47}{\sqrt{2}}$
+        >
+        > $1+(4.4\pi f_c)^2 = 2$
+        >
+        > $(4.4\pi f_c)^2 = 1$
+        >
+        > $4.4\pi f_c = 1$
+        >
+        > $f_c = \frac{1}{4.4\pi}$
+        >
+        > $f_c \approx 0.072\ Hz$
+
     3. la amplitud de la salida para una señal de 50 Hz y amplitud 0.1 V.
+        > $A_v(\omega = 2\pi*50) \approx 47\frac{1}{\sqrt{1+(2.2 *2\pi*50)^2}}$
+        >
+        > $A_v(\omega = 2\pi*50) \approx 47\frac{1}{\sqrt{1+(220 \pi)^2}}$
+        >
+        > $A_v(\omega = 2\pi*50) \approx 0.068$
+        >
+        > Por lo tanto, la amplitud de la salida para una señal de 50 Hz y amplitud 0.1 V es:
+        >
+        > $v_{o_{amplitud}} = A_v v_{i_{amplitud}}$
+        >
+        > $v_{o_{amplitud}} = 0.068*0.1 = 6.8\ mV$
 
 ## Valores de componentes y voltajes fijos de los Circuitos
 - $V_{CC} = 5\ V$
