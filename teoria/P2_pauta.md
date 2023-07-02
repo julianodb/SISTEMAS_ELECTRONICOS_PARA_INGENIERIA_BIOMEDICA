@@ -116,18 +116,44 @@ Figura 2: Sistema de control de temperatura proporcional integrativo de una incu
         > Reemplazando $R_2 = 47\ k\Omega$ y $R_1 = 1\ k\Omega$,
         >
         > $v_o = 47(V_{set}-V_{temp})$
-    1. $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es 0 °C
-        > $v_{temp} = 400\ mV + 0*19.5\ mV = 400\ mV $
+    1. $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es 33 °C
+        > $v_{temp} = 400\ mV + 33*19.5\ mV = 1043.5\ mV $
         >
-        > $v_o = 47(V_{set} - v_{temp}) = 47(1,08 -0,4)$
+        > $v_o = 47(V_{set} - v_{temp}) = 47(1,08 -1,0435)$
         >
-        > $v_o = 31.96\ V$
+        > $v_o \approx 1.72\ V$
         >
-        > Como el amplificador operacional está alimentado por $V_{CC} = 5\ V$, el mayor voltaje de salida posible es 5 V. Por lo tanto, el amplificador está saturado y:
+        > Como la unión base-emisor de Q está polarizada en directa, se asume $V_{BE} = 0.7\ V$.
         >
-        > $v_o = 5\ V$
+        > Por lo tanto, la corriente en la base de Q es $I_B = \frac{v_o-V_{BE}}{R_B} = \frac{1.72-0.7}{680} \approx 1.5\ mA$
         >
-        > Como $v_o$ es el mismo del ejercício 1.1, las corrientes y voltajes en el transistor serán las mismas y, por lo tanto, $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 3.23^2 \approx 31\ W$
+        > Para calcular la potencia en $R_{heat}$, se debe descubrir si Q está actuando en modo activo o saturado.
+        >
+        > > Si se asume que Q está en modo saturado:
+        >
+        > $V_{CE} = V_{CE_{SAT}} = 0.3\ V$
+        >
+        > $\therefore I_C = \frac{V_{heat}-V_{CE}}{R_{heat}} = \frac{10-0.3}{3} \approx 3.23\ A$
+        >
+        > Comprobando el criterio de modo saturado ($0 < \beta_{forzado} < \beta$):
+        >
+        > $\beta_{forzado} = I_C / I_B = 3.23 / 0.0015 \approx 2130$
+        >
+        > Como $2130 > 1000$, se concluye que Q NO está operando en modo saturado.
+        >
+        > Si se asume que Q está en modo activo:
+        >
+        > $I_C = \beta I_B = 1000*1.5\ mA = 1.5\ A$
+        >
+        > Comprobando el criterio de modo activo ( $V_{CE}> V_{CE_{SAT}}$ ):
+        >
+        > $V_{CE} = V_C = V_{heat} - R_{heat} I_C = 10 - 3* 1.5 = 5.5\ V$
+        >
+        > Como $5.5\ V > V_{CE_{SAT}} = 0.3\ V$, se concluye que Q SÍ está operando en modo activo.
+        >
+        > Finalmente, el calor entregado por $R_{heat}$ es:
+        >
+        > $Calor_{R_{heat}} = R_{heat} I_C^2 = 3* 1.5^2 = 6.75\ W$
     1. $v_o$ y el calor entregado a la incubadora por $R_{heat}$ si la temperatura es 34 °C
         > $v_{temp} = 400\ mV + 34*19.5\ mV = 1063\ mV $
         >
