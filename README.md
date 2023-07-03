@@ -117,4 +117,6 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
 [L4](/laboratorio/L4.md)
 
+[L4 Recuperativo](/laboratorio/L4_alt.md)
+
 [L5](/laboratorio/L5.md)
