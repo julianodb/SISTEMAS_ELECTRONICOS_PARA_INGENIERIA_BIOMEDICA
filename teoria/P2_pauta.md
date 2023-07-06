@@ -291,7 +291,8 @@ Figura 2: Sistema de control de temperatura proporcional integrativo de una incu
         > $f_c \approx 0.072\ Hz$ (+0.25pt)
 
     3. la amplitud de la salida para una señal de entrada $v_i$ de 50 Hz y amplitud 0.1 V.
-        > $A_v(\omega = 2\pi*50) \approx 47\frac{1}{\sqrt{1+(2.2 *2\pi*50)^2}}$
+        >
+        > $A_v(\omega = 2\pi*50) \approx 47\frac{1}{\sqrt{1+(2.2 * 2\pi *50)^2}}$
         >
         > $A_v(\omega = 2\pi*50) \approx 47\frac{1}{\sqrt{1+(220 \pi)^2}}$
         >
