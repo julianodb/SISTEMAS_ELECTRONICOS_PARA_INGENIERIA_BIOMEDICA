@@ -20,7 +20,6 @@ El circuito completo, considerando la adición del monoestable, se muestra en la
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/T7b.png" width="800">
 
-
 Valores obtenidos en trabajos anteriores:
 - $R_1 = 150\ \Omega$
 - $R_2 = 10\ k\Omega$
