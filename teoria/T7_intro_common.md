@@ -20,21 +20,4 @@ El circuito completo, considerando la adición del monoestable, se muestra en la
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/T7b.png" width="800">
 
-Valores obtenidos en trabajos anteriores:
-- $R_1 = 150\ \Omega$
-- $R_2 = 10\ k\Omega$
-- $R_3 = \qquad\ k\Omega$
-- $R_4 = \qquad\ k\Omega$
-- $R_5 = 680\ k\Omega$
-- $R_6 = \qquad\ k\Omega$
-- $R_C = \qquad\ \Omega$
-- $R_B = \qquad \Omega$
-- $D_1$, $D_2$ y $D_3$ son LEDS color _________
-- $Q_3$ transistor 2N2222 o equivalente
-- $RL_1 = RL_2 = RL_3= \qquad \Omega$
-
-Características del transistor $Q_2$:
-
-- $\beta = 10.000$
-- $V_{CE_{SAT}} = 0.7 V$
-- $V_{BE} = 1 V$
+Figura 2: Circuito del Fotopletismógrafo
