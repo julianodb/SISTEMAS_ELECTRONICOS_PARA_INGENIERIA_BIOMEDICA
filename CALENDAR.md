@@ -96,7 +96,7 @@
 | [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, entrega guia PEP2 | | |
 | [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
 | [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
-| 14 | Osciladores | multivibradores | Entrega $T_6$ | Inicio $T_7$ |
+| [14](/teoria/14_multivibrators.md) | Osciladores | multivibradores | Entrega $T_6$ | Inicio $T_7$ |
 | 15 | Osciladores | multivibradores y osciladores |  |  |
 | 16 | CIs Analógicos | CIs Analógicos | Entrega $T_7$ |  |
 | 17 | Fuentes Conmutadas | Reguladores de Voltaje |  | inicio $T_8$ |
@@ -114,6 +114,6 @@
 - [L3](/laboratorio/L3.md): Rectificador y Diodo de proteccion. [L3 Recuperativo](/laboratorio/L3_alt.md)
 - [L4](/laboratorio/L4.md): transistor BJT (curvas características) + corte y saturación. [L4 Recuperativo](/laboratorio/L4_alt.md)
 - [L5](/laboratorio/L5.md): amplificador operacional y aplicaciones en CC
-- L6: respuesta en frecuencia / filtros pasivos
-- L7: amplificador operacional y aplicaciones en CA
+- [L6](/laboratorio/L6.md): respuesta en frecuencia / filtros activos
+- L7: respuesta en frecuencia / filtros pasivos
 - L8: multivibradores
