@@ -21,8 +21,8 @@ Valores obtenidos en trabajos anteriores:
 - $R_2 = 10\ k\Omega$
 - $R_3 = \qquad\ k\Omega$
 - $R_4 = \qquad\ k\Omega$
-- $R_5 = 680\ k\Omega$
-- $R_6 = 6.8\ k\Omega$
+- $R_5 = 6.8\ k\Omega$
+- $R_6 = 680\ k\Omega$
 - $R_C = \qquad\ \Omega$
 - $R_B = 680 \Omega$
 - $D_1$, $D_2$ y $D_3$ son LEDS color AMARILLO
