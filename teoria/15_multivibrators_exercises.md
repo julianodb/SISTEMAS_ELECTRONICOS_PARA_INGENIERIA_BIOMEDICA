@@ -32,10 +32,8 @@
 
 ## Respuestas
 
-1.1. $V_{TH} = -6\ V$; $V_{TL} = 6\ V$
-1.2. $V_{TH} = -1\ V$; $V_{TL} = 1\ V$
-1.3. $V_{TH} \approx -0.12\ V$; $V_{TL} \approx 0.12\ V$
+1.i. $V_{TH} = -6\ V$; $V_{TL} = 6\ V$
 
-2.1. $V_{TH} = 6\ V$; $V_{TL} = -6\ V$
-2.2. $V_{TH} = 1\ V$; $V_{TL} = -1\ V$
-2.3. $V_{TH} \approx 0.12\ V$; $V_{TL} \approx -0.12\ V$
+1.ii. $V_{TH} = -1\ V$; $V_{TL} = 1\ V$
+
+1.iii. $V_{TH} \approx -0.12\ V$; $V_{TL} \approx 0.12\ V$
