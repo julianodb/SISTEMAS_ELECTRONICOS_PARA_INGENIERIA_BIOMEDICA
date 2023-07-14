@@ -52,4 +52,4 @@ Memoria
 
 ## 3. Multivibrador monoestable
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/monostable_multivibrator.png" width="300">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/monostable_multivibrator.png" width="400">
