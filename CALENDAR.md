@@ -97,9 +97,9 @@
 | [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
 | [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
 | [14](/teoria/14_multivibrators.md) | Osciladores | multivibradores | Entrega $T_6$ | Inicio $T_7$ |
-| 15 | Osciladores | multivibradores y osciladores |  |  |
-| 16 | CIs Analógicos | CIs Analógicos | Entrega $T_7$ |  |
-| 17 | Fuentes Conmutadas | Reguladores de Voltaje |  | inicio $T_8$ |
+| [15](/teoria/15_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |  |
+| [16](/teoria/16_oscilators.md) | Osciladores | Osciladores | |  |
+| 17 | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
 | 18 | Fuentes Conmutadas | Reguladores de Voltaje | |   |
 | 19 | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_8$ |   |
 | 20 | Amplificadores de Potencia | Amplificadores de Potencia, entrega dispositivo diseñado, ejercicios guia PEP3 | | |
