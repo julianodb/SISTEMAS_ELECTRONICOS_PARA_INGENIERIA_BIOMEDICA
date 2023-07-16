@@ -27,7 +27,7 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
     | 100 | | 
     | 200 | | 
 
-## Recursos del pañol
+## Recursos utilizados
 
 | tipo | descripcion | cantidad | | tipo | descripcion | valor | cantidad |
 | -- | -- | -- | --| -- | -- | -- | -- |
@@ -42,18 +42,27 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
 | Otros |  |  | |  | |  |  |
 | | Protoboard | 1 | |  | | | |
 | | cables, alicate, etc | | |  | | |  |
+| | Circuito del filtro 3 | 1 | |  | | |  |
+| | Circuito del sensor CNY70 | 1 | |  | | |  |
 
-## Procedimiento experimental e informe
+## Resultado experimental e informe
 
-Nota: Ante cualquier duda en el uso de los instrumentos, o las conexiones eléctricas, consulten al profesor.
-
-1. Armen el circuito de la figura 2. Este circuito es una forma rudimentaria de obtener un voltaje fijo a través de un divisor resistivo, y se va a utilizar para producir uno de los voltajes requeridos más adelante. Utilicen $R_X= 100\ k\Omega$ y $C_{bias}=47\ \mu F$.
+1. Se armó el circuito de la figura 2. Este circuito es una forma rudimentaria de obtener un voltaje fijo a través de un divisor resistivo, y se va a utilizar para producir uno de los voltajes requeridos más adelante. Se utilizó $R_X= 100\ k\Omega$ y $C_{bias}=47\ \mu F$.
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/half_voltage_divider.png" width="200">
 
     Figura 2: Divisor de voltage
 
-    1. Alimenten el circuito con $V_{CC}=5\ V$ (pueden limitar la fuente CC a 300 mA). Utilizando el osciloscopio, observen el valor de $V_{bias}$ y anoten cuanto tiempo demora en estabilizarse y su valor en estado estacionario. Ayuda: utilicen al menos 1 segundo por division en la escala horizontal. (0.5 pt)
+    1. Calcule la función de transferencia entre $V_{CC}$ y $V_{bias}$ ($H(s) = \frac{V_{bias}(s)}{V_{CC}(s)}$) (0.5 pt)
+    2. Encuentre una fórmula para $V_{bias}$ cuando $V_{CC}$ es una entrada escalón de 5 V. ¿Cuál es el valor en estado estacionário? ¿Cuánto tiempo $V_{bias}$ demora en alcanzar 90% del valor en estado estacionário ? (0.5 pt)
+    3. Se encendió la fuente CC ($V_{CC} = 5\ V$), se midió el valor de $V_{bias}$ después de un largo período de tiempo, y también cuanto tiempo se demoró en llegar a dicho valor. Los resultados se muestran en la tabla a continuación. ¿Como se comparan los resultados teóricos anteriores con las mediciones realizadas en laboratorio? 
+
+        | Grupo | $V_{bias}$ después de un largo período de tiempo (V) | tiempo para alcanzar valor final (s) |
+        | -- | -- | -- |
+        | A | 2,34 | 8 |
+        | B | 2,6 | 8,25 |
+        | C | 2,44 | 5 |
+        | D | 2,4 | 13 |
 
 1. Identifiquen la placa de circuito impreso que implementa el circuito de la figura 3.
 
