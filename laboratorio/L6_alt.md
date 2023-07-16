@@ -54,8 +54,10 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
     Figura 2: Divisor de voltage
 
     1. Calcule la función de transferencia entre $V_{CC}$ y $V_{bias}$ ($H(s) = \frac{V_{bias}(s)}{V_{CC}(s)}$) (0.5 pt)
-    2. Encuentre una fórmula para $V_{bias}$ cuando $V_{CC}$ es una entrada escalón de 5 V. ¿Cuál es el valor en estado estacionário? ¿Cuánto tiempo $V_{bias}$ demora en alcanzar 90% del valor en estado estacionário ? (0.5 pt)
-    3. Se encendió la fuente CC ($V_{CC} = 5\ V$), se midió el valor de $V_{bias}$ después de un largo período de tiempo, y también cuanto tiempo se demoró en llegar a dicho valor. Los resultados se muestran en la tabla a continuación. ¿Como se comparan los resultados teóricos anteriores con las mediciones realizadas en laboratorio? 
+
+    2. Encuentre una fórmula para $V_{bias}$ cuando $V_{CC}$ es una entrada escalón de 5 V. ¿Cuál es el valor en estado estacionário? ¿Cuánto tiempo $V_{bias}$ demora en alcanzar 90% del valor en estado estacionário ? (1 pt)
+
+    3. Se encendió la fuente CC ($V_{CC} = 5\ V$), se midió el valor de $V_{bias}$ después de un largo período de tiempo, y también cuanto tiempo se demoró en llegar a dicho valor. Los resultados se muestran en la tabla a continuación. ¿Como se comparan los resultados teóricos anteriores con las mediciones realizadas en laboratorio? (0.5 pt)
 
         | Grupo | $V_{bias}$ después de un largo período de tiempo (V) | tiempo para alcanzar valor final (s) |
         | -- | -- | -- |
@@ -77,9 +79,9 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
         * Grupo C: 2,42 V
         * Grupo D: 2,92 V
 
-        1. En corriente contínua, ¿cual debiese ser el valor de $v_{o2}$ ? ¿Como se compara con las mediciones realizadas en laboratorio ? (0.5 pt)
+        1. En corriente contínua, ¿cual debiese ser el valor de $v_{o2}$ ? ¿Como se compara con las mediciones realizadas en laboratorio ? (1 pt)
 
-    2. Se ajustó el generador de funciones para generar una señal sinusoidal con 20 mV peak-to-peak sin offset. Se conectó el generador de funciones a la entrada ($v_{i2}$). Con el osciloscopio, se midió la salida ($v_{o2}$). Se ajustó la frecuencia del generador de funciones a los valores indicados y se midió el valor peak-to-peak de la salida. Los resultados se muestran en la tabla a continuación. (2.6 pt)
+    2. Se ajustó el generador de funciones para generar una señal sinusoidal con 20 mV peak-to-peak sin offset. Se conectó el generador de funciones a la entrada ($v_{i2}$). Con el osciloscopio, se midió la salida ($v_{o2}$). Se ajustó la frecuencia del generador de funciones a los valores indicados y se midió el valor peak-to-peak de la salida. Los resultados se muestran en la tabla a continuación.
 
         | frecuencia (Hz) | $v_{o2}$ peak-to-peak grupo A (mV) | $v_{o2}$ peak-to-peak grupo B (mV) |
         | -- | -- | -- |
@@ -98,11 +100,11 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
         | 500 Hz | 168 | 240 |
         | 1 kHz  | 120 |  |
 
-        1. Considerando que $R_6/R_5 = 100$, cual sería la ganancia del circuito en una frecuencia donde $C_2$ y $C_G$ se pueden considerar corto-circuitos y $C_F$ un circuito abierto ? (0.5 pt)
+        1. Considerando que $R_6/R_5 = 100$, cual sería la ganancia del circuito en una frecuencia donde $C_2$ y $C_G$ se pueden considerar corto-circuitos y $C_F$ un circuito abierto ? (1 pt)
 
         3. ¿Cual es la ganancia máxima medida en laboratorio ? (0.5 pt)
 
-        4. ¿ Qué tipo de filtro está implementado ? (0.4 pt)
+        4. ¿ Qué tipo de filtro está implementado ? (0.5 pt)
 
         5. Basándose en las mediciones, ¿en qué rango está(n) la(s) frecuencia(s) de corte ? (0.5 pt)
 
@@ -113,3 +115,7 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
     Figura 4: Sensor del fotopletismógrafo
 
     1. Uno de los integrantes del grupo puso un dedo sobre el sensor CNY70. Se esperaron diversos segundos para que los circuitos se estabilizaran. La figura a continuación muestra un bosquejo de la forma de onda medida en la entrada y en la salida del filtro. Laamplitud de la forma de onda de entrada era de aproximadamente 20 mV, y la amplitud de la forma de onda en la salida era de aproximadamente 2 V. La frecuencia medida fue de aproximadamente 2 Hz. Como estaba el integrante del grupo que puso el dedo sobre el sensor: ¿calmo o agitado? (0.5 pt)
+    
+    ![L6_mediciones](/img/L6_mediciones.jpg "L6_mediciones")
+    
+    Figura 5: Mediciones del filtro 3 aplicado al sensor del fotopletismógrafo
