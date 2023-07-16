@@ -22,10 +22,10 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
     | $v_i$  (mV) |$v_o$ (mV) |
     | -- | -- |
     | 0 | |
-    | 10 | | 
-    | 50 | | 
-    | 100 | | 
-    | 200 | | 
+    | 20 | | 
+    | 40 | | 
+    | 80 | | 
+    | 160 | | 
 
 ## Recursos utilizados
 
@@ -72,7 +72,7 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
 
     Figura 3: Filtro activo con amplificador operacional
 
-    1. Se conectó la fuente CC (5 V) y el voltage $V_{bias}$ (2.5 V). Se enciendó la fuente CC y se anotó el valor de voltaje medido en la salida del circuito en estado estacionario. los resultados se muestran a continuación
+    1. Se conectó la fuente CC (5 V) y el voltage $V_{bias}$ (2.5 V). Se enciendó la fuente CC y, sin conectar nada a la entrada ($v_{i2}$), se anotó el valor del voltaje medido en la salida del circuito ($v_{o2}$) en estado estacionario. los resultados se muestran a continuación
 
         * Grupo A: 2,36 V
         * Grupo B: 2,6 V
@@ -100,7 +100,7 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
         | 500 Hz | 168 | 240 |
         | 1 kHz  | 120 |  |
 
-        1. Considerando que $R_6/R_5 = 100$, cual sería la ganancia del circuito en una frecuencia donde $C_2$ y $C_G$ se pueden considerar corto-circuitos y $C_F$ un circuito abierto ? (1 pt)
+        1. Considerando que $R_6/R_5 = 100$, ¿cual sería la ganancia del circuito en una frecuencia donde $C_2$ y $C_G$ se pueden considerar corto-circuitos y $C_F$ un circuito abierto ? (1 pt)
 
         3. ¿Cual es la ganancia máxima medida en laboratorio ? (0.5 pt)
 
@@ -108,13 +108,13 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
 
         5. Basándose en las mediciones, ¿en qué rango está(n) la(s) frecuencia(s) de corte ? (0.5 pt)
 
-3. Se desconectó el generador de funciones y se reemplazó por el voltage $V_o$ del circuito de la figura 4, donde $R_1=150\ \Omega$ y $R_2 = 10\ k\Omega$
+3. Se desconectó el generador de funciones de $v_{i2}$ y se conectó el voltage $V_o$ del circuito de la figura 4, donde $R_1=150\ \Omega$ y $R_2 = 10\ k\Omega$
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/cny70_circuit.png" width="300">
 
     Figura 4: Sensor del fotopletismógrafo
 
-    1. Uno de los integrantes del grupo puso un dedo sobre el sensor CNY70. Se esperaron diversos segundos para que los circuitos se estabilizaran. La figura a continuación muestra un bosquejo de la forma de onda medida en la entrada y en la salida del filtro. Laamplitud de la forma de onda de entrada era de aproximadamente 20 mV, y la amplitud de la forma de onda en la salida era de aproximadamente 2 V. La frecuencia medida fue de aproximadamente 2 Hz. Como estaba el integrante del grupo que puso el dedo sobre el sensor: ¿calmo o agitado? (0.5 pt)
+    1. Uno de los integrantes del grupo puso un dedo sobre el sensor CNY70. Se esperaron diversos segundos para que los circuitos se estabilizaran. La figura a continuación muestra un bosquejo de la forma de onda medida en la entrada y en la salida del filtro. La amplitud de la forma de onda de entrada era de aproximadamente 20 mV, y la amplitud de la forma de onda en la salida era de aproximadamente 2 V. La frecuencia medida fue de aproximadamente 2 Hz. Como estaba el integrante del grupo que puso el dedo sobre el sensor: ¿calmo o agitado? (0.5 pt)
     
     ![L6_mediciones](/img/L6_mediciones.jpg "L6_mediciones")
     
