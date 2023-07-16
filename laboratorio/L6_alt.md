@@ -81,7 +81,7 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
 
     2. Se ajustó el generador de funciones para generar una señal sinusoidal con 20 mV peak-to-peak sin offset. Se conectó el generador de funciones a la entrada ($v_{i2}$). Con el osciloscopio, se midió la salida ($v_{o2}$). Se ajustó la frecuencia del generador de funciones a los valores indicados y se midió el valor peak-to-peak de la salida. Los resultados se muestran en la tabla a continuación. (2.6 pt)
 
-        | frecuencia (Hz) | $v_{o2} peak-to-peak grupo A (mV) | $v_{o2} peak-to-peak grupo B (mV) |
+        | frecuencia (Hz) | $v_{o2}$ peak-to-peak grupo A (mV) | $v_{o2}$ peak-to-peak grupo B (mV) |
         | -- | -- | -- |
         | < 0.1 Hz | 280 |  |
         | 0.1 Hz | 360 | 160 |
@@ -106,10 +106,10 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
 
         5. Basándose en las mediciones, ¿en qué rango está(n) la(s) frecuencia(s) de corte ? (0.5 pt)
 
-3. Desconecten el generador de funciones y reemplazenlo por el voltage $V_o$ del circuito de la figura 4, donde $R_1=150\ \Omega$ y $R_2 = 10\ k\Omega$
+3. Se desconectó el generador de funciones y se reemplazó por el voltage $V_o$ del circuito de la figura 4, donde $R_1=150\ \Omega$ y $R_2 = 10\ k\Omega$
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/cny70_circuit.png" width="300">
 
     Figura 4: Sensor del fotopletismógrafo
 
-    1. Pongan un dedo sobre el sensor CNY70. Intenten aplicar suficiente presión para que el dedo no se mueva, pero sin apretar mucho. Esperen diversos segundos para que los circuitos se estabilicen. Hagan un bosquejo de la forma de onda medida en la salida del filtro e indiquen su amplitud y frecuencia. (0.5 pt)
+    1. Uno de los integrantes del grupo puso un dedo sobre el sensor CNY70. Se esperaron diversos segundos para que los circuitos se estabilizaran. La figura a continuación muestra un bosquejo de la forma de onda medida en la entrada y en la salida del filtro. Laamplitud de la forma de onda de entrada era de aproximadamente 20 mV, y la amplitud de la forma de onda en la salida era de aproximadamente 2 V. La frecuencia medida fue de aproximadamente 2 Hz. Como estaba el integrante del grupo que puso el dedo sobre el sensor: ¿calmo o agitado? (0.5 pt)
