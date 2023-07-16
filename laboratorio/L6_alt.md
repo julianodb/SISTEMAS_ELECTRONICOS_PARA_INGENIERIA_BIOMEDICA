@@ -64,47 +64,47 @@ Figura 1: Circuito amplificador utilizando amplificador operacional.
         | C | 2,44 | 5 |
         | D | 2,4 | 13 |
 
-1. Identifiquen la placa de circuito impreso que implementa el circuito de la figura 3.
+1. Se identificó la placa de circuito impreso que implementa el circuito de la figura 3.
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/opamp_bandpass.png" width="270">
 
     Figura 3: Filtro activo con amplificador operacional
 
-    1. Conecten la fuente CC (5 V) y el voltage $V_{bias}$ (2.5 V). 
-        1. Enciendan la fuente CC y anoten el valor de voltaje medido en la salida del circuito en estado estacionario. (0.5 pt)
+    1. Se conectó la fuente CC (5 V) y el voltage $V_{bias}$ (2.5 V). Se enciendó la fuente CC y se anotó el valor de voltaje medido en la salida del circuito en estado estacionario. los resultados se muestran a continuación
 
-    2. Ajusten el generador de funciones para generar una señal sinusoidal con 20 mV peak-to-peak sin offset. Conecten el generador de funciones a la entrada ($v_{i2}$). Con el osciloscopio, midan la entrada en un canal, y la salida ($v_{o2}$) en otro canal. Asegurense de que todas las tierras están conectadas entre si.
+        * Grupo A: 2,36 V
+        * Grupo B: 2,6 V
+        * Grupo C: 2,42 V
+        * Grupo D: 2,92 V
 
-        1.  Ajusten la frecuencia del generador de funciones a los valores indicados y midan el valor peak-to-peak de la salida. (2.6 pt)
+        1. En corriente contínua, ¿cual debiese ser el valor de $v_{o2}$ ? ¿Como se compara con las mediciones realizadas en laboratorio ? (0.5 pt)
 
-            1. < 0.1 Hz
-            2. 0.1 Hz
-            2. 0.2 Hz
-            3. 0.5 Hz
-            4. 1 Hz
-            5. 2 Hz
-            6. 5 Hz
-            7. 10 Hz
-            8. 20 Hz
-            9. 50 Hz
-            10. 100 Hz
-            11. 200 Hz
-            12. 500 Hz
-            13. 1 kHz 
+    2. Se ajustó el generador de funciones para generar una señal sinusoidal con 20 mV peak-to-peak sin offset. Se conectó el generador de funciones a la entrada ($v_{i2}$). Con el osciloscopio, se midió la salida ($v_{o2}$). Se ajustó la frecuencia del generador de funciones a los valores indicados y se midió el valor peak-to-peak de la salida. Los resultados se muestran en la tabla a continuación. (2.6 pt)
 
-        3. ¿Cual es la ganancia máxima del circuito implementado ? (0.5 pt)
+        | frecuencia (Hz) | $v_{o2} peak-to-peak grupo A (mV) | $v_{o2} peak-to-peak grupo B (mV) |
+        | -- | -- | -- |
+        | < 0.1 Hz | 280 |  |
+        | 0.1 Hz | 360 | 160 |
+        | 0.2 Hz | 880 | 480 |
+        | 0.5 Hz | 1200 | 1280 |
+        | 1 Hz | 1800 | 1760 |
+        | 2 Hz | 2000 |  |
+        | 5 Hz | 2040 |  |
+        | 10 Hz | 2000 | 1920 |
+        | 20 Hz | 1760 | 1680 |
+        | 50 Hz | 1040 | 1120 |
+        | 100 Hz | 600 | 720 |
+        | 200 Hz | 320 | 400 |
+        | 500 Hz | 168 | 240 |
+        | 1 kHz  | 120 |  |
+
+        1. Considerando que $R_6/R_5 = 100$, cual sería la ganancia del circuito en una frecuencia donde $C_2$ y $C_G$ se pueden considerar corto-circuitos y $C_F$ un circuito abierto ? (0.5 pt)
+
+        3. ¿Cual es la ganancia máxima medida en laboratorio ? (0.5 pt)
 
         4. ¿ Qué tipo de filtro está implementado ? (0.4 pt)
 
         5. Basándose en las mediciones, ¿en qué rango está(n) la(s) frecuencia(s) de corte ? (0.5 pt)
-        
-    1. Anoten el valor de los componentes utilizados (0.5 pt):
-        * $R_{bias}$
-        * $R_5$
-        * $R_6$
-        * $C_2$
-        * $C_F$
-        * $C_G$
 
 3. Desconecten el generador de funciones y reemplazenlo por el voltage $V_o$ del circuito de la figura 4, donde $R_1=150\ \Omega$ y $R_2 = 10\ k\Omega$
 
