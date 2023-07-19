@@ -99,7 +99,7 @@
 | [14](/teoria/14_multivibrators.md) | Osciladores | multivibradores | Entrega $T_6$ | Inicio $T_7$ |
 | [15](/teoria/15_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |  |
 | [16](/teoria/16_oscilators.md) | Osciladores | Osciladores | |  |
-| 17 | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
+| [17](/teoria/17_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
 | 18 | Fuentes Conmutadas | Reguladores de Voltaje | |   |
 | 19 | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_8$ |   |
 | 20 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, entrega dispositivo diseñado, ejercicios guia PEP3 | | |
