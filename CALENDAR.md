@@ -114,6 +114,6 @@
 - [L3](/laboratorio/L3.md): Rectificador y Diodo de proteccion. [L3 Recuperativo](/laboratorio/L3_alt.md)
 - [L4](/laboratorio/L4.md): transistor BJT (curvas características) + corte y saturación. [L4 Recuperativo](/laboratorio/L4_alt.md)
 - [L5](/laboratorio/L5.md): amplificador operacional y aplicaciones en CC
-- [L6](/laboratorio/L6.md): respuesta en frecuencia / filtros activos
+- [L6](/laboratorio/L6.md): respuesta en frecuencia / filtros activos. [L6 Recuperativo](/laboratorio/L6_alt.md)
 - L7: respuesta en frecuencia / filtros pasivos
 - L8: multivibradores
