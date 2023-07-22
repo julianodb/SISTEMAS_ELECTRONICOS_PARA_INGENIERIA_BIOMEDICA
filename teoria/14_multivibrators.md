@@ -53,24 +53,30 @@ $$ V_+ = \frac{ v_i + \beta v_o}{\beta + 1}$$
 Si suponemos que $V_+ < V_-$, la salida del amplificador es $-V_{CC}$. Dicha condición se mantendrá mientras la inegualdad sea verdadera. Por lo tanto:
 
 $$V_+ < V_-$$
+
 $$ \frac{ v_i + \beta v_o}{\beta + 1} <0 $$
+
 $$ v_i - \beta V_{CC} <0 $$
+
 $$ v_i < \beta V_{CC} $$
 
 Es decir, mientras la entrada se mantenga menor que $\beta V_{CC}$, la salida se mantendrá en $-V_{CC}$. Si se grafica el resultado en una gráfica de $v_o$ por $v_i$, se obtiene la siguiente figura:
 
-TBD
+![schmitt1](../img/14_schmitt_voltage.gif)
 
 Analicemos el otro caso, en que $V_+ > V_-$. La salida del amplificador será $+V_{CC}$, y dicha condición se mantendrá mientras la inegualdad sea verdadera:
 
 $$V_+ > V_-$$
+
 $$ \frac{ v_i + \beta v_o}{\beta + 1} > 0 $$
+
 $$ v_i + \beta V_{CC} > 0 $$
+
 $$ v_i > - \beta V_{CC} $$
 
 Es decir, mientras la entrada se mantenga mayor a $- \beta V_{CC}$, la salida se mantendrá en $+V_{CC}$. Si se grafica el resultado en la gráfica anterior de $v_o$ por $v_i$, se obtiene la siguiente figura:
 
-TBD
+![schmitt2](../img/14_schmitt_voltage_complete.gif)
 
 Primeramente, notese que $v_o$ tiene dos posibles valores: $-V_{CC}$ o $+V_{CC}$. Se trata, por lo tanto, de un multivibrador. Además, cuando la salida cambia a uno de estos valores, se mantiene en él si no cambian las condiciones de entrada. Son, por lo tanto, dos estados estables. Se trata por lo tanto de un multivibrador biestable. 
 
@@ -95,6 +101,7 @@ $$ v = V_{final} - (V_{final}  -V_{inicial})e^\frac{-t}{RC}$$
 Reemplazando los valores $V_{inicial} = -\beta V_{bias}$ , $V_{final} = +V_{bias}$ , $R = R_{10}$ y $C = C_4$ ,se obtiene la siguiente expresión:
 
 $$ V_- = +V_{bias} - (+V_{bias}  +\beta V_{bias})e^\frac{-t}{R_{10}C_4}$$
+
 $$ V_- = V_{bias} (1 - (1 +\beta )e^\frac{-t}{R_{10}C_4})$$
 
 Que es una función creciente, conforme esperado. Como $v_o = +V_{bias}$ , $V_+ = \beta V_{bias}$ . Por lo tanto, el valor de $V_-$ seguirá creciendo hasta que supere $V_+ = \beta V_{bias}$ , momento en el cual la salida pasará a $-V_{bias}$, pues $V_- > V_+$. Si se define el tiempo necesario para alcanzar dicho valor como $\frac{T}{2}$ , se tiene:
@@ -115,7 +122,7 @@ $$ T = 2 R_{10}C_4 \ln{\frac{1+\beta}{1-\beta}}$$
 
 La siguiente figura muestra las formas de onda, donde se definió $V_{SAT} = V_{bias}$ y $V_{REF} = \beta V_{bias}$ :
 
-![T7_F5](../img/14_astable_waveform.gif)
+![T7_F4](../img/14_astable_waveform.gif)
 
 ## 3. Multivibrador monoestable
 
