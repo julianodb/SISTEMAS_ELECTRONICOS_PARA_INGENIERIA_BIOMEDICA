@@ -126,4 +126,38 @@ La siguiente figura muestra las formas de onda, donde se definió $V_{SAT} = V_{
 
 ## 3. Multivibrador monoestable
 
+El último tipo de multivibrador es el monoestable, el cual tiene un estado estable y otro estado "cuasi-estable". El multivibrador monoestable, cuando libre de perturbaciones exteriores, se mantiene en su estado estable. Cuando perturbado de la manera apropiada, cambia su estado al "cuasi-estable", se mantiene un período de tiempo predeterminado, y luego vuelve a estar en su estado estable. De ésa forma, es un sistema que produce un cambio de estado después de un valor fijo de tiempo. 
+
+Una posible implementación del multivibrador monoestable en circuitos electrónicos se muestra en la figura a continuación.
+
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/monostable_multivibrator.png" width="400">
+
+El circuito está basado en el multivibrador astable, ya que éste implementa un mecanismo para cambiar de estado después de un tiempo fijo. Para convertirlo en un monoestable, simplemente se agrega el diodo $D_3$, que interrumpe la descarga del capacitor $C_4$ cuando $v_o = -V_{bias}$. En dicha condición, el diodo se polariza en directa y efectivamente corto-circuita el capacitor $C_4$, impidiendo que el voltaje $V_-$ siga bajando. De ésta forma, $V_-$ no llega a $-\beta V_{bias}$, y no ocurre la transición de $v_o = - V_{bias}$ a $v_o = + V_{bias}$. El estado estable, por lo tanto, es $v_o = - V_{bias}$. Si se asume un diodo ideal, $V_- = 0$ en el estado estacionario del estado estable.
+
+El subcircuito compuesto por $C_3$, $R_7$ y $D_2$ es un circuito gatillo cuyo objetivo es gatillar la transición del monoestable a su estado casi-estable. En este caso esécífico, el objetivo es elevar $V_+$ (que normalmente está en $-\beta V_{bias}$) por sobre 0 momentaneamente. Cuando eso ocurre, $V_+ > V_-$ y el comparador cambia la salida a $+V_{bias}$. Asumiendo que el voltaje en $D_2$ se vuelve negativo después de la transición, el diodo estará cortado y el circuito gatilla deja de influenciar el resto del circuito. El análisis a partir de éste punto es bastante similar al astable: $C_4$ empezará a cargarse a través de $R_{10}$, siguiendo la siguiente expresión:
+
+$$ v = V_{final} - (V_{final}  -V_{inicial})e^\frac{-t}{RC}$$
+
+Reemplazando los valores $V_{inicial} = 0$ , $V_{final} = +V_{bias}$ , $R = R_{10}$ y $C = C_4$ ,se obtiene la siguiente expresión:
+
+$$ V_- = +V_{bias} - (+V_{bias} - 0)e^\frac{-t}{R_{10}C_4}$$
+
+$$ V_- = V_{bias} (1 - e^\frac{-t}{R_{10}C_4})$$
+
+Eventualmente, $V_-$ alcanza $V_+ = \beta V_{bias}$ y el monoestable vuelve a su estado estable con $v_o = - V_{bias}$. El tiempo en transición $T_t$, contado desde el momento en que el monoestable cambia al estado casi-estable hasta en instante donde vuelve a su estado natural se puede calcular como:
+
+$$ \beta V_{bias} = V_{bias} (1 - e^\frac{-T_t}{R_{10}C_4})$$
+
+$$ \beta  = 1 - e^\frac{-T_t}{R_{10}C_4}$$
+
+$$ e^\frac{-T_t}{R_{10}C_4} = 1- \beta$$
+
+$$ \frac{-T_t}{R_{10}C_4} = \ln (1- \beta)$$
+
+$$ -T_t = R_{10}C_4\ln (1- \beta)$$
+
+$$ T_t = R_{10}C_4\ln \frac{1}{1- \beta}$$
+
+La siguiente figura muestra un bosquejo de las formas de onda del circuito, siendo la primera señal el voltaje sobre $R_7$.
+
+![T7_F5](../img/T7_F4.jpeg)
