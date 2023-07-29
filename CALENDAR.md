@@ -115,5 +115,5 @@
 - [L4](/laboratorio/L4.md): transistor BJT (curvas características) + corte y saturación. [L4 Recuperativo](/laboratorio/L4_alt.md)
 - [L5](/laboratorio/L5.md): amplificador operacional y aplicaciones en CC
 - [L6](/laboratorio/L6.md): respuesta en frecuencia / filtros activos. [L6 Recuperativo](/laboratorio/L6_alt.md)
-- L7: multivibradores
-- L8: respuesta en frecuencia / filtros pasivos
+- [L7](/laboratorio/L7.md): multivibradores
+- [L8](/laboratorio/L8.md): respuesta en frecuencia / filtros pasivos. [L8 Recuperativo](/laboratorio/L8_alt.md)
