@@ -101,9 +101,9 @@
 | [16](/teoria/16_oscilators.md) | Osciladores | Osciladores | |  |
 | [17](/teoria/17_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
 | 18 | Fuentes Conmutadas | Reguladores de Voltaje | |   |
-| 19 | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_8$ |   |
-| 20 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, entrega dispositivo diseñado, ejercicios guia PEP3 | | |
-| P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia | | |
+| [19](/teoria/19_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_8$ |   |
+| 20 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 | | |
+| P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
 # Laboratórios

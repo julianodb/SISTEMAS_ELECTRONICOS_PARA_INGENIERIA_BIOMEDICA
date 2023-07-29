@@ -76,14 +76,14 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
 ### Clases
 
-1. Introducción. Clase [01](/teoria/01_Introduccion.md)
+1. Introducción. Clases [01](/teoria/01_Introduccion.md) y [19](/teoria/19_semiconductors.md)
 1. Dispositivos electronicos: diodos (clases [02](/teoria/02_Diodos.md) y [03](/teoria/03_Diodos_II.md)) y transistores (clases [04](/teoria/04_BJT_I.md), [05](/teoria/05_BJT_II.md), [06](/teoria/06_CE.md) y [07](/teoria/07_CE_II.md))
 1. Amplificadores operacionales y sus aplicaciones (clases [09](/teoria/09_opamp.md), [10](/teoria/10_opamp_II.md))
 1. Filtros activos (clases [11](/teoria/11_frec.md), [12](/teoria/12_frec_II.md) y [13](/teoria/13_pre_P2.md))
 1. Osciladores (clases [14](/teoria/14_multivibrators.md), [15](/teoria/15_multivibrators_exercises.md) y [16](/teoria/16_oscilators.md))
 1. Circuitos integrados analógicos
 1. Amplificadores de potencia
-1. Fuentes de alimentación conmutadas (clases [17](/teoria/17_voltage_regulators.md))
+1. Fuentes de alimentación conmutadas (clases [17](/teoria/17_voltage_regulators.md) y 18)
 
 [Calendario](CALENDAR.md)
 
