@@ -81,7 +81,7 @@
 | -- | --     | -- | -- | -- |
 | [01](/teoria/01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, aspectos practicos para el diseño de sistemas electrónicos con pasivos | | |
 | [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  |  |
-| [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Fotopletismógrafo |  | inicio $T_1$ |
+| [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Electromiógrafo |  | inicio $T_1$ |
 | [04](/teoria/04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo| | |
 | [05](/teoria/05_BJT_II.md) | Analisis de ca del BJT | Uso del BJT como llave y como amplificador, Análisis de grandes señales, polarización fija, emisor comun | | inicio $T_2$|
 | [06](/teoria/06_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 | Entrega $T_1$  |  |
