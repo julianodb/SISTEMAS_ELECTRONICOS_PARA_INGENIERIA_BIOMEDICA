@@ -110,10 +110,10 @@
 
 - [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
 - [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica
-- [L2](/laboratorio/L2.md): Fotorresistencia, fotodiodo, curva del diodo y zener. [L2 Recuperativo](/laboratorio/L2_alt.md)
-- [L3](/laboratorio/L3.md): Rectificador y Diodo de proteccion. [L3 Recuperativo](/laboratorio/L3_alt.md)
-- [L4](/laboratorio/L4.md): transistor BJT (curvas características) + corte y saturación. [L4 Recuperativo](/laboratorio/L4_alt.md)
+- [L2](/laboratorio/L2.md): Fotorresistencia, fotodiodo, curva del diodo y zener. 
+- [L3](/laboratorio/L3.md): Rectificador y Diodo de proteccion. 
+- [L4](/laboratorio/L4.md): transistor BJT (curvas características) + corte y saturación. 
 - [L5](/laboratorio/L5.md): amplificador operacional y aplicaciones en CC
-- [L6](/laboratorio/L6.md): respuesta en frecuencia / filtros activos. [L6 Recuperativo](/laboratorio/L6_alt.md)
+- [L6](/laboratorio/L6.md): respuesta en frecuencia / filtros activos. 
 - [L7](/laboratorio/L7.md): multivibradores
-- [L8](/laboratorio/L8.md): respuesta en frecuencia / filtros pasivos. [L8 Recuperativo](/laboratorio/L8_alt.md)
+- [L8](/laboratorio/L8.md): respuesta en frecuencia / filtros pasivos. 
