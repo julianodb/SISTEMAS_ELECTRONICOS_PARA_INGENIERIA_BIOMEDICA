@@ -79,29 +79,31 @@
 
 | #  | Titulo |  Descripción |  Entrega |  Trabajo |
 | -- | --     | -- | -- | -- |
-| [01](/teoria/01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, aspectos practicos para el diseño de sistemas electrónicos con pasivos | | |
-| [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  |  |
-| [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos, Proyecto Electromiógrafo |  | inicio $T_1$ |
-| [04](/teoria/04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo| | |
-| [05](/teoria/05_BJT_II.md) | Analisis de ca del BJT | Uso del BJT como llave y como amplificador, Análisis de grandes señales, polarización fija, emisor comun | | inicio $T_2$|
-| [06](/teoria/06_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 | Entrega $T_1$  |  |
-| [07](/teoria/07_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_2$ | inicio $T_3$ |
+| [01](/teoria/01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, convenciones y simbología en esquemáticos | | |
+| [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto Electromiógrafo |  | inicio $T_1$ |
+| [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos |  |  |
+| [04](/teoria/04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo| Entrega $T_1$ | inicio $T_2$ |
+| [05](/teoria/05_BJT_II.md) | Analisis de ca del BJT | Uso del BJT como llave y como amplificador, Análisis de grandes señales, polarización fija, emisor comun |Entrega $T_2$ | inicio $T_3$|
+| [06](/teoria/06_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 |   |  |
+| [07](/teoria/07_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_3$ | |
 | [P1](/teoria/P1.md) | PEP1 | Diodos, Transistores| | |
 | 08 | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  |  |
-| [09](/teoria/09_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor | Entrega $T_3$ | Inicio $T_4$ |
-| [10](/teoria/10_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | |
-| [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |Entrega $T_4$ | inicio $T_5$|
-| [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, entrega guia PEP2 | | |
-| [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ejercicios guia PEP2 | Entrega $T_5$ | inicio $T_6$ |
-| [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | | | 
-| [14](/teoria/14_multivibrators.md) | Osciladores | multivibradores | Entrega $T_6$ | Inicio $T_7$ |
-| [15](/teoria/15_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |  |
-| [16](/teoria/16_oscilators.md) | Osciladores | Osciladores | |  |
-| [17](/teoria/17_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
-| 18 | Fuentes Conmutadas | Reguladores de Voltaje | |   |
-| [19](/teoria/19_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_8$ |   |
-| 20 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 | | |
-| P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación y Amplificadores de Potencia | entrega dispositivo diseñado | |
+| [09](/teoria/09_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor |  |  |
+| [10](/teoria/10_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | | Inicio $T_4$ |
+| [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | | |
+| [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte |Entrega $T_4$ | inicio $T_5$|
+| [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ancho de banda, normalización, entrega guia PEP2 |  |  |
+| 14 | Ejercicios PEP2 | ejercicios guia PEP2 | Entrega $T_5$ |  |
+| [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos |  | | 
+| [15](/teoria/15_multivibrators.md) | Osciladores | multivibradores | inicio $T_6$ | |
+| [16](/teoria/16_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |   |
+| [17](/teoria/17_oscilators.md) | Osciladores | Osciladores | Entrega $T_6$ | Inicio $T_7$ |
+| [18](/teoria/18_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | | |
+| 19 | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
+| [20](/teoria/20_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | |  |
+| 21 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 | Entrega $T_8$ | |
+| X | Construcción de prototipo | | | |
+| P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación, física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
 # Laboratórios
