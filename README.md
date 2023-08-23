@@ -134,3 +134,5 @@ $$ Promedio Final = 0.7\ Promedio Final Teoría + 0.3\ Promedio Final Laboratori
 [L7](/laboratorio/L7.md)
 
 [L8](/laboratorio/L8.md)
+
+[L9](/laboratorio/L9.md)
