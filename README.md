@@ -8,8 +8,8 @@
 [uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=31135)
 
 ## Horário Teoría
-- Martes: bloque 6 (M6: 16:55 - 18:15), sala TBD
-- Jueves: bloque 4 (J4: 13:45 - 15:05), sala TBD
+- Martes: bloque 6 (M6: 16:55 - 18:15), sala ELE628
+- Jueves: bloque 4 (J4: 13:45 - 15:05), sala ED804
 
 ## Horário Laboratório
 - Viernes, bloque 4 (V4: 13:45 - 15:05), sala TBD
