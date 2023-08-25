@@ -55,14 +55,16 @@ El sistema de evaluación contempla, además, una Prueba Optativa Recuperativa (
 - Si el/la estudiante en el promedio final obtiene una nota menor a 4.0, puede optar a una POR.
 - La POR reemplaza la peor nota de las 3 notas
 evaluadas ($P_1$, $P_2$ o $P_3$).
-- El contenido de la POR es definida por el profesor.
+- El contenido de la POR es todo la materia
 - Nota Mínima para la POR mayor o igual a 3.0
+
+Si el Promedio Final Teoría es menor a 4.0, el/la estudiante reprueba la parte teórica de la asignatura.
 
 ### Laboratorio
 
 EL desarrollo del laboratorio estará en función a experiencias de laboratorio presenciales. Éstas corresponderán a las experiencias entregadas en guías que deberán ser desarrolladas en clases incluyendo el informe el cual deberá ser entregado al finalizar la sesión.
 
-Las inasistencias al laboratorio deberán ser justificadas ante docencia, quien informará a los profesores sobre la justificación de esta.
+Las inasistencias al laboratorio deberán ser justificadas ante docencia, quien informará a los profesores sobre la justificación de ésta.
 
 Las recuperaciones de laboratorios serán informadas caso a caso.
 
@@ -72,9 +74,13 @@ $$ Promedio Final Laboratorio = \sum_{i=1}^n \frac {Lp_i}{n}$$
 
 Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
+Si el Promedio Final Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
+
 ### Promedio final y aprobación
 
-La condición de aprobación en la asignatura es que los promedios finales de Teoría y de Laboratorio sean mayores o iguales a 4.0. El promedio final de la asignatura se calcula como:
+En el caso de que el/la estudiante repruebe apenas teoría o apenas laboratorio, tendrá que cursar solamente la parte reprobada en el semestre siguiente en que se dicte la asignatura.
+
+El promedio final de la asignatura se calcula como:
 
 $$ Promedio Final = 0.7\ Promedio Final Teoría + 0.3\ Promedio Final Laboratorio  $$
 
