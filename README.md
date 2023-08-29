@@ -5,7 +5,7 @@
 
 ## Página de la asignatura
 
-[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=31135)
+[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=36972)
 
 ## Horário Teoría
 - Martes: bloque 6 (M6: 16:55 - 18:15), sala ELE628
