@@ -12,7 +12,7 @@
 - Jueves: bloque 4 (J4: 13:45 - 15:05), sala ED804
 
 ## Horário Laboratório
-- Viernes, bloque 4 (V4: 13:45 - 15:05), sala TBD
+- Martes, bloque 2 (M2: 09:50 - 11:10), laboratorios de docencia de biomedica
 
 ## Profesor
 
