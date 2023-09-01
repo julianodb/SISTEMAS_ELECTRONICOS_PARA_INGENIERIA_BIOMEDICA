@@ -6,6 +6,19 @@ Corriente tiene el sentido contrario de la tensión eléctrica, a menos que sea 
 
 ## Diodos Zener y TVS
 
+$$ \left\{ 
+    \begin{array}{ c l }
+        \textrm{conduce }(I_D>0) & \quad \textrm{si } V_D > V_f \\
+        \textrm{no conduce }(I_D=0)                 & \quad \textrm{si } -V_Z < V_D \leq V_f \\
+        \textrm{conduce }(I_D<0)                 & \quad \textrm{si } V_D \leq -V_Z
+    \end{array} 
+\right.
+$$
+
+La tensión de zener ($V_Z$) es una constante para cada diodo. Depende del material y forma de construcción, y se puede obtener en distintos valores, usualmente mayores y más estables que $V_f$
+
+- ESD -> TVS
+
 El diodo zener utilizado como protección de picos de voltaje limita el voltaje que llega a la carga a que esté entre $-V_f$ y $V_Z$.
 
 ## Diodo real
@@ -45,9 +58,3 @@ No tiene solucción analítica. Útil para entender el circuito graficamente
 ## Bibliografia
 
 Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.). Cap. 1 y 2, pág. 1-114
-
-## [Trabajo 1](../teoria/T1.md)
-
-### [Aclaraciones](../teoria/T1.md#aclaraciones-05042023)
-
-### [Aclaraciones 2](../teoria/T1.md#aclaraciones-18042023)
