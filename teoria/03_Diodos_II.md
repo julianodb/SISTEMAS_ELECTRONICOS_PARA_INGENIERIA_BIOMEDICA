@@ -57,4 +57,16 @@ No tiene solucción analítica. Útil para entender el circuito graficamente
 
 ## Bibliografia
 
-Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.). Cap. 1 y 2, pág. 1-114
+Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.)
+
+### Capítulos
+- Capítulo 1, sesiones 1.6, 1.7, 1.9, 1.12, 1.15
+- Capítulo 2, sesiones 2.1, 2.2, 2.10, 2.12
+
+### Ejercícios Recomendados
+- Capítulo 1
+  - Sesión 1.6: ej 15, 16, 17, 18, 21
+  - Sesión 1.12: ej 43, 46
+- Capítulo 2
+  - Sesíon 2.2: ejs 1, 2, 3, 4
+  - Sesión 2.10: ejs 42, 43, 44, 45, 46
