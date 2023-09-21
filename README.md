@@ -107,6 +107,11 @@ $$ Promedio Final = 0.7\ Promedio Final Teoría + 0.3\ Promedio Final Laboratori
 
 [T1](/teoria/T1.md)
 
+[T2](/teoria/T2.md)
+
+[T3](/teoria/T13md)
+
+
 ### Laboratorios
 
 [Introducción](/laboratorio/intro.pdf)
