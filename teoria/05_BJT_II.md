@@ -1,10 +1,10 @@
 # Transistor de Unión Bipolar (BJT) II
 
-## resolución de circuitos electronicos
-
-## aproximaciones con corriente constante y con voltaje constante
+## ejercicios con BJT
 
 ## Modo de Saturación vs modo activo
+
+## $I_{C_{SAT}}$
 
 ## Uso del BJT como llave
 
