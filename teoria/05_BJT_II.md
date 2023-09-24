@@ -2,11 +2,42 @@
 
 ## ejercicios con BJT
 
-## Modo de Saturación vs modo activo
+- Calcular $V_C$, $V_E$, $I_B$, $I_C$ y $I_E$ si $V_{CC} = 10\ V$ y:
+  - $\beta = 100$ y $V_i = 4\ V$ 
+  - $\beta = 50$ y $V_i = 6\ V$
+
+![npn_re_rc](https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc.png)
+
+## Resúmen BJT: Modo de Saturación vs modo activo
+
+$$I_E = I_C + I_B$$
+
+- en modo activo ($V_{CE} > V_{CE_{SAT}}$):
+
+$$I_C = \beta I_B $$
+
+- en modo saturado ($0 < \beta_{forzado} < \beta$):
+
+$$V_{CE} = V_{CE_{SAT}}$$
+
+$$I_C = \beta_{forzado} I_B $$
 
 ## $I_{C_{SAT}}$
 
+- corriente de colector impuesta por el circuito externo cuando $V_{CE} = V_{CE_{SAT}}$
+
 ## Uso del BJT como llave
+
+![npn_inverter](https://julianodb.github.io/electronic_circuits_diagrams/npn_inverter.png)
+
+![v_i_square_wave](https://julianodb.github.io/electronic_circuits_diagrams/v_i_square_wave.png)
+
+Asumiendo, $V_{LOW} < V_{BE}$ y $V_{HIGH} > V_{BE}$:
+
+1. Calcular $I_{C_{Sat}}$ (en el ejemplo, $I_{C_{Sat}} = \frac{V_{CC} - V_{CE_{SAT}}}{R_C}$)
+2. Elegir $\beta_{forzado} < \beta$
+3. Calcular $I_B = \frac{I_{C_{Sat}}}{\beta_{forzado}}$
+4. Calcular $R_B = \frac{V_{HIGH} - V_{BE}}{I_B}$
 
 ## Uso del BJT como amplificador (introducción)
 
