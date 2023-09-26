@@ -32,7 +32,7 @@ $$I_C = \beta_{forzado} I_B $$
 
 ![v_i_square_wave](https://julianodb.github.io/electronic_circuits_diagrams/v_i_square_wave.png)
 
-Asumiendo, $V_{LOW} < V_{BE}$ y $V_{HIGH} > V_{BE}$:
+Asumiendo $V_{LOW} < V_{BE}$ y $V_{HIGH} > V_{BE}$:
 
 1. Calcular $I_{C_{Sat}}$ (en el ejemplo, $I_{C_{Sat}} = \frac{V_{CC} - V_{CE_{SAT}}}{R_C}$)
 2. Elegir $\beta_{forzado} < \beta$
