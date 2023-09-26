@@ -6,12 +6,12 @@
    1. $I_D = 1\ A$
    1. $I_D = 10\ A$
 
-1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=5\ V$, $R_E= 1\ k\Omega$, $R_C= 625\ \Omega$, $\beta = 100$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa.
+1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=5\ V$, $R_E= 1\ k\Omega$, $R_C= 625\ \Omega$, $\beta = 100$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
    1. $V_i = 0\ V$
    1. $V_i = 2\ V$
    1. $V_i = 5\ V$
    
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc.png" width="200">
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc.png" width="150">
 
 # Fórmulas
 $$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
