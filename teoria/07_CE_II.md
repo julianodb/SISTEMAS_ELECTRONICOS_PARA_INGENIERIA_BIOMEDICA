@@ -48,11 +48,11 @@ $r_{\pi} = \frac{\beta n V_T}{I_{C_Q}}$
 
 por lo tanto,
 
-$ i_{B_{AC}} = \frac{I_{C_Q}{\beta n V_T}} v_{i_{AC}}$
+$ i_{B_{AC}} = \frac{I_{C_Q}}{\beta n V_T} v_{i_{AC}}$
 
 Luego
 
-$ i_{C_{AC}} = \beta i_{B_{AC}} = \frac{I_{C_Q}{ n V_T}} v_{i_{AC}} $
+$ i_{C_{AC}} = \beta i_{B_{AC}} = \frac{I_{C_Q}}{ n V_T} v_{i_{AC}} $
 
 En la malla del colector:
 
