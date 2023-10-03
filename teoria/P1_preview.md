@@ -5,15 +5,15 @@
    1. $I_D = 100\ mA$ 
       > $V_D \approx 0.596\ V$
       >
-      > $error \% \approx -15 \%$
+      > error % $\approx -15$ %
    1. $I_D = 1\ A$
       > $V_D \approx 0.655\ V$
       >
-      > $error \% \approx -6.4 \%$
+      > error % $ \approx -6.4$ %
    1. $I_D = 10\ A$
       > $V_D \approx 0.715\ V$
       >
-      > $error \% \approx 2.1 \%$
+      > error % $\approx 2.1 $ %
 
 1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=5\ V$, $R_E= 1\ k\Omega$, $R_C= 625\ \Omega$, $\beta = 100$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
    1. $V_i = 0\ V$
