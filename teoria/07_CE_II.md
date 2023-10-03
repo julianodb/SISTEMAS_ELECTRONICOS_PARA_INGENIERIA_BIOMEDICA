@@ -1,6 +1,8 @@
 # Amplificador con emisor común II
 
-## Amplificador con emisor común con polarización por divisor de voltaje y estabilizada por emisor
+## Ejercício: Amplificador con emisor común con polarización por divisor de voltaje y estabilizada por emisor
+
+Calcular $I_{C_Q}$ y $A_V$.
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter.png" width="300"> 
 
@@ -64,4 +66,24 @@ Como la ganancia de voltaje es $A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$,
 
 $A_V = \frac{- R_C I_{C_Q} }{n V_T}$
 
-## Ejercicios recomendados
+## Bibliografia
+
+Atención: en clase hemos preferido la notación de $r_\pi$ para la resistencia entre base y emisor en el modelo de pequeñas señales, pero en el libro se prefiere la notación $\beta r_e$. De todas formas, son equivalentes:
+
+$r_{\pi} = \beta r_e$
+
+$r_{e} = \frac{V_T}{I_{C_Q}}$
+
+$r_{\pi} = \frac{\beta V_T}{I_{C_Q}}$
+
+Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.)
+
+### Capítulos
+- Capítulo 4, sesión 4.5
+- Capítulo 5, sesiones 5.5 y 5.6
+
+### Ejercícios Recomendados
+- Capítulo 4
+  - Sesión 4.5: ej 20 (a, b y c)
+- Capítulo 5
+  - Sesíon 5.5: ej 13 (ignorar $r_o$)
