@@ -60,7 +60,7 @@ $v_{o_{AC}} + R_C i_{C_{AC}} = 0$
 
 $v_{o_{AC}} = - R_C i_{C_{AC}}$
 
-$v_{o_{AC}} = - \frac{R_C I_{C_Q}{ n V_T}} v_{i_{AC}} $
+$v_{o_{AC}} = - \frac{R_C I_{C_Q}}{ n V_T} v_{i_{AC}} $
 
 Como la ganancia de voltaje es $A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$,
 
