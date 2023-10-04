@@ -51,49 +51,70 @@
    
    1. Datos: $V_{CC}=5\ V$, $R=1\ k\Omega$ *(0.75pt)*
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_resistor_diode.png" width="130">
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_resistor_diode.png" width="150">
 
-      > $D$ está polarizado en directa => conduce y $V_{D} = 0.7\ V$ (+0.1pt)
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_resistor_diode_with_currents.png" width="150">
       >
-      > Si se asume que $D$ no conduce, se llega a que $V_{D} = 5\ V$. Pero si $V_{D} > 0$ significa que conduce => contradicción. Por lo tanto  $D$ está polarizado en directa => conduce y $V_{D} = 0.7\ V$
+      > $D$ está polarizado en directa => conduce y $V_{D} = 0.7\ V$ (+0.25pt)
       >
-      > 
+      > Si se asume que $D$ no conduce, se llega a que $V_{D} = 5\ V$. Pero si $V_{D} > 0.7$ significa que conduce => contradicción. Por lo tanto  $D$ está polarizado en directa => conduce y $V_{D} = 0.7\ V$
+      >
+      > LKV en la malla:
+      >
+      > $ V_{CC} - R I - V_D = 0$ (+0.25pt)
+      >
+      > $ I = \frac{V_{CC}-V_D}{R} = \frac{5-0.7}{1000} $
+      >
+      > $ I = 4.3\ mA$ (+0.25pt)
    
    1. Datos: $V_{CC}=5\ V$, $R_1=1\ k\Omega$, $R_2=1\ k\Omega$ *(0.75pt)*
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R.png" width="200"> 
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R.png" width="220"> 
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/two_diode_3R_with_currents.png" width="200">
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_with_currents.png" width="220">
       >
-      > $D_3$ está polarizado en inversa => no conduce. Si se asume lo contrario se llegaría a que $V_4 = 5.7\ V > V_{CC}$. Pero $V_{CC}$ tiene que ser el mayor voltaje en el circuito, entonces $D_3$ está polarizado en inversa => no conduce.
+      > $D_1$ está polarizado en directa => conduce. Si se asume lo contrario se llegaría a que $V_{D_1} = 5\ V$. Pero si $V_{D_1} > 0.7$ significa que conduce => contradicción. Por lo tanto $D_1$ está polarizado en directa => conduce y $V_{D_1} = 0.7\ V$ (+0.075pt)
       >
-      > $D_2$ está polarizado en directa => conduce y $V_{D_2} = 0.7\ V$. Si se asume que $D_2$ no conduce, se llega a que $V_{D_2} = 5\ V$. Pero si $V_{D_2} > 0$ significa que conduce => contradicción. Por lo tanto $D_2$ está polarizado en directa => conduce y $V_{D_2} = 0.7\ V$
+      > $D_2$ está polarizado en directa => conduce y $V_{D_2} = 0.7\ V$. Si se asume que $D_2$ no conduce, se llega a que $V_2 = 4.3\ V$ y $V_1 = 2.15\ V$ $\implies V_{D_2} = 2.15\ V$. Pero si $V_{D_2} > 0.7$ significa que conduce => contradicción. Por lo tanto $D_2$ está polarizado en directa => conduce y $V_{D_2} = 0.7\ V$ (+0.075pt)
       >
-      > LKC (+0.1pt)
+      > $V_2 = V_{CC} - V_{D_1} = 5 - 0.7 = 4.3\ V$
       >
-      > $I_4 = 0$
+      > $V_1 = V_2 - V_{D_2} = 4.3 - 0.7 = 3.6\ V$
       >
-      > $I_3 = I_5 = I$
+      > $I_{R_1} = \frac{V_1 - 0}{R_1} = 3.6/1000 = 3.6\ mA$
       >
-      > Malla 1 (VCC, D2, R3 y R5) (+0.4pt)
+      > $I_{R_2} = \frac{V_2 - V_1}{R_2} = 0.7/1000 = 0.7\ mA$
       >
-      > $V_{CC} - V_{D_2} - R_3 I - R_5 I = 0$
+      > LKC en $V_1$:
       >
-      > $ 5 - 0.7 - 1000 I - 1000 I = 0 $
+      > $I_{D_2} + I_{R_2} - I_{R_1} = 0 $
       >
-      > $ I = 2.15\ mA $
+      > $I_{D_2} + 0.0007 - 0.0036 = 0 $
       >
-      > Resultados (+0.25pt)
+      > $I_{D_2} = 0.0029 = 2.9\ mA $
       >
-      > $I_{V_{CC}} = I_{D_2} = I_{R_3} = I_{R_5} = I = 2.15\ mA$
+      > LKC en $V_2$:
       >
-      > $I_{D_3} = I_{R_4} = I_4 = 0$
+      > $I_{D_1} - I_{R_2} - I_{D_2} = 0 $
       >
-      > $V_5 = R_5 I = 1000*0.00215 = 2.15\ V$
+      > $I_{D_1} - 0.0007 - 0.0029 = 0 $
       >
-      > $V_4 = V_5 + R_4 I_4 = 2.15 + 0 = 2.15\ V$
+      > $I_{D_1} = 0.0036 = 3.6\ mA $
       >
-      > $V_3 = V_5 + R_3 I = 2.15 + 1000*0.00215 = 4.3\ V$
+      > Resultados
+      >
+      > $V_1 = 3.6\ V$ (+0.1pt)
+      >
+      > $V_2 = 4.3\ V$ (+0.1pt)
+      >
+      > $I_{R_1} = 3.6\ mA$ (+0.1pt)
+      >
+      > $I_{R_2} =  0.7\ mA$ (+0.1pt)
+      >
+      > $I_{D_1} = 3.6\ mA $ (+0.1pt)
+      >
+      > $I_{D_2} = 2.9\ mA $ (+0.1pt)
+      >
 
 1. Calcule $V_o$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=5\enspace V$, $R_B= 45\enspace k\Omega$, $R_C= 625\enspace \Omega$, $\beta = 100$, $V_{CE_{SAT}} = 0.3\enspace V$ y $V_{BE} =0.7\enspace V$ cuando la unión base-emisor está polarizada en directa. *(1.5pt)*
 
