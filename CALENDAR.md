@@ -24,9 +24,9 @@
 |    |  9 | 10    | 11 | 12    | 13 | 14 | 15 |
 | 41 | FF | L3 09 |    | 10 T4 |    |    |    |
 |    | 16 | 17    | 18 | 19    | 20 | 21 | 22 |
-| 42 |    | L4 11 |    | CC    | CC |    |    |
+| 42 |    | L4 11 T5? |    | CC    | CC |    |    |
 |    | 23 | 24    | 25 | 26    | 27 | 28 | 29 |
-| 43 |    | L5 12 T5 |    | 13    | FF |    |    |
+| 43 |    | L5 12 T5? |    | 13    | FF |    |    |
 
 ## NOVIEMBRE / 2023
 
@@ -91,19 +91,18 @@
 | [08](/teoria/08_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  |  |
 | [09](/teoria/09_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor |  |  |
 | [10](/teoria/10_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | | Inicio $T_4$ |
-| [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | | |
-| [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte |Entrega $T_4$ | inicio $T_5$|
-| [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ancho de banda, normalización, entrega guia PEP2 |  |  |
-| 14 | Ejercicios PEP2 | ejercicios guia PEP2 | Entrega $T_5$ |  |
-| [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos |  | | 
-| [15](/teoria/15_multivibrators.md) | Osciladores | multivibradores | inicio $T_6$ | |
-| [16](/teoria/16_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |   |
-| [17](/teoria/17_oscilators.md) | Osciladores | Osciladores | Entrega $T_6$ | Inicio $T_7$ |
-| [18](/teoria/18_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | | |
-| 19 | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
-| [20](/teoria/20_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | |  |
-| 21 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 | Entrega $T_8$ | |
-| X | Construcción de prototipo | | | |
+| [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | |inicio $T_5$ ?|
+| [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte , entrega guia PEP2 |Entrega $T_4$ | inicio $T_5$ ?|
+| [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ancho de banda, normalización, respuestas guia PEP2 |  |  |
+| [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | Entrega $T_5$ ? | | 
+| [14](/teoria/14_multivibrators.md) | Osciladores | multivibradores | inicio $T_6$ | |
+| [15](/teoria/15_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |   |
+| [16](/teoria/16_oscilators.md) | Osciladores | Osciladores | Entrega $T_6$ | Inicio $T_7$ |
+| [17](/teoria/17_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | | |
+| 18 | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
+| [19](/teoria/19_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | |  |
+| 20 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 | Entrega $T_8$ | |
+| 21 | Construcción de prototipo? | | | |
 | P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación, física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
