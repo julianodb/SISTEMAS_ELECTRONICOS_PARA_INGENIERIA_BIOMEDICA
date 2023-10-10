@@ -24,9 +24,9 @@
 |    |  9 | 10    | 11 | 12    | 13 | 14 | 15 |
 | 41 | FF | L3 09 |    | 10 T4 |    |    |    |
 |    | 16 | 17    | 18 | 19    | 20 | 21 | 22 |
-| 42 |    | L4 11 |    | 12 T5 |    |    |    |
+| 42 |    | L4 11 |    | CC    | CC |    |    |
 |    | 23 | 24    | 25 | 26    | 27 | 28 | 29 |
-| 43 |    | L5 13 |    | 14    | FF |    |    |
+| 43 |    | L5 12 T5 |    | 13    | FF |    |    |
 
 ## NOVIEMBRE / 2023
 
@@ -35,20 +35,20 @@
 |    | 30 | 31    |  1 |  2    |  3 |  4 |  5 |
 | 44 | RR | RR    | FF | RR    | RR | RR |    |
 |    |  6 |  7    |  8 |  9    | 10 | 11 | 12 |
-| 45 |    | P2    |    | 15 T6 |    |    |    |
+| 45 |    | P2    |    | 14 T6 |    |    |    |
 |    | 13 | 14    | 15 | 16    | 17 | 18 | 19 |
-| 46 |    | L6 16 |    | 17 T7 |    |    |    |
+| 46 |    | L6 15 |    | 16 T7 |    |    |    |
 |    | 20 | 21    | 22 | 23    | 24 | 25 | 26 |
-| 47 |    | L7 18 |    | 19 T8 |    |    |    |
+| 47 |    | L7 17 |    | 18 T8 |    |    |    |
 
 ## DICIEMBRE / 2023
 
 |Sem |Lun |Mar    |Mie |Jue |Vie |Sab |Dom |
 |:-: |:-: |:-:    |:-: |:-: |:-: |:-: |:-: |
 |    | 27 | 28    | 29 | 30 |  1 |  2 |  3 |
-| 48 |    | L8 20 |    | 21 |    |    |    |
+| 48 |    | L8 19 |    | 20 |    |    |    |
 |    |  4 |  5    |  6 |  7 |  8 |  9 | 10 |
-| 49 |    | L9 22 |    | P3 | FF |    |    |
+| 49 |    | L9 21 |    | P3 | FF |    |    |
 |    | 11 | 12    | 13 | 14 | 15 | 16 | 17 |
 | 50 |    | PO    |    |  * |    |    |    |
 |    | 18 | 19    | 20 | 21 | 22 | 23 | 24 |
@@ -74,6 +74,7 @@
 - PP: Paro Estudiantil
 - FF: Feriado
 - TT: Término del Semestre
+- CC: Congreso
 
 # Clases
 
@@ -87,7 +88,7 @@
 | [06](/teoria/06_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 |   |  |
 | [07](/teoria/07_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_3$ | |
 | [P1](/teoria/P1.md) | PEP1 | Diodos, Transistores| | |
-| 08 | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  |  |
+| [08](/teoria/08_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  |  |
 | [09](/teoria/09_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor |  |  |
 | [10](/teoria/10_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | | Inicio $T_4$ |
 | [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | | |
