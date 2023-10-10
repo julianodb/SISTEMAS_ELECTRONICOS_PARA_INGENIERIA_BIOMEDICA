@@ -128,63 +128,66 @@
       >
       > $I_B = 0 \implies I_C = 0$ (+0.2pt)
       >
-      > $V_{CE} = V_{CC} - R_C I_C - R_E I_E = 12 - 0 - 0 = 12\ V$ > V_{CE_{SAT}} (+0.1pt)
+      > $V_{CE} = V_{CC} - R_C I_C - R_E I_E = 12 - 0 - 0 = 12\ V > V_{CE_{SAT}}$ (+0.1pt)
    1. $V_i = 6\ V$ *(0.5pt)*
       
       > base-emisor polarizado en directa $\implies V_{BE} = 0.7\ V$
       >
-      > Malla 1 ($V_i$, $R_B$, $V_{BE}$, $R_E$z) (+0.2pt)
+      > $V_E = V_i - V_{BE} = 6 - 0.7 = 5.3\ V$ (+0.1pt)
       >
-      > $V_i - R_B I_B - V_{BE} = 0$
+      > Resistencia $R_E$
       >
-      > $2 - 45000 I_B - 0.7 = 0$
+      > $R_E I_E  = V_E$
       >
-      > $I_B \approx 29\ \mu A $
+      > $ I_E  = V_E / R_E = 5.3 / 5600 \approx 0.95\ mA$ (+0.1pt)
       >
-      > Si se asume que el transistor está saturado se llega a $I_C \approx 6.9\ mA$. Pero, en dicho caso $\beta_{forzado} = I_C / I_B \approx 238$ es mayor que $\beta$. Por lo tanto, no está saturado.
+      > Si se asume que el transistor está saturado se llega a $I_C \approx 5.4\ mA$. Pero, en dicho caso $I_B = I_E - I_C = -4.45\ mA$, y por lo tanto $\beta_{forzado} = I_C / I_B \approx -4.7$ es menor que cero. Por lo tanto, no está saturado.
       >
-      > Assumiendo que el transistor está en modo *activo*: (+0.2pt)
+      > Assumiendo que el transistor está en modo *activo*: (+0.1pt)
       >
-      > $I_C = \beta I_B = 100 * 29\ \mu A = 2.9\ mA $
+      > $I_C = \beta I_B $
       >
-      > Malla 2 (colector y emisor) (+0.1pt):
+      > Como $I_E = I_C + I_B$,
       >
-      > $V_{CC} - R_C I_C - V_{CE} = 0$
+      > $I_E = \beta I_B + I_B = (1+\beta) I_B$
       >
-      > $5 - 625 * 0.0029 - V_{CE} = 0$
+      > $I_B = I_E / (1 + \beta) = 0.00095 / 51 \approx 0.019\ mA$
       >
-      > $V_{CE} \approx 3.2\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo.
+      > $I_C = I_E - I_B = 0.95 - 0.019 \approx 0.93\ mA$ (+0.1pt)
       >
-      > $\therefore V_o = 3.2\ V$
+      > Comprobación del modo activo: Resistor $R_C$: (+0.1pt)
+      >
+      > $R_C I_C  = V_{CC} - V_C$
+      >
+      > $V_C = V_{CC} - R_C I_C = 12 - 1200 * 0.00093 \apprpx 10.9\ V$
+      >
+      > $V_{CE} = V_C - V_E = 10.9 - 5.3 = 5.6\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo.
+
    1. $V_i = 11\ V$ *(0.5pt)*
    
       > base-emisor polarizado en directa $\implies V_{BE} = 0.7\ V$
       >
-      > Malla 1 ($V_i$, $R_B$, $V_{BE}) (+0.2pt)
+      > $V_E = V_i - V_{BE} = 11 - 0.7 = 10.3\ V$ (+0.1pt)
       >
-      > $V_i - R_B I_B - V_{BE} = 0$
+      > Resistencia $R_E$
       >
-      > $5 - 45000 I_B - 0.7 = 0$
+      > $R_E I_E  = V_E$
       >
-      > $I_B \approx 95\ \mu A $
+      > $ I_E  = V_E / R_E = 10.3 / 5600 \approx 1.8\ mA$ (+0.1pt)
       >
-      > Si se asume que el transistor está activo, se llega a $I_C \approx 9.5\ mA$. Pero, en dicho caso $V_{CE} = V_{CC} - R_C I_C = 5 - 625 * 0.095 \approx -0.9\ V$, que es menor que $V_{CE_{SAT}}$. Por lo tanto, no está activo.
+      > Si se asume que el transistor está activo, se llega a $I_C \approx 1.76\ mA$. Pero, en dicho caso $V_{CE} = V_{CC} - R_C I_C - V_E= 12 - 1200 * 0.00176 - 10.3  \approx -0.4\ V$, que es menor que $V_{CE_{SAT}}$. Por lo tanto, no está activo.
       >
-      > Assumiendo que el transistor está en modo *saturado*:
+      > Assumiendo que el transistor está en modo *saturado*: (+0.1pt)
       >
-      > Malla 2 (colector y emisor) (+0.2pt):
+      > $V_C = V_E + V_{CE_{SAT}} = 10.3 + 0.2 = 10.5\ V$
       >
-      > $V_{CC} - R_C I_C - V_{CE_{SAT}} = 0$
-      >
-      > $5 - 625 I_C - 0.3 = 0$
-      >
-      > $ I_C \approx 6.9\ mA$
-      >
-      > $ V_o = V_{CE} = V_{CE_{SAT}} = 0.3\ V$
+      > $I_C = \frac{V_{CC}-V_C}{R_C} = \frac{12-10.5}{1200} = 1.25\ mA $ (+0.1pt)
       >
       > Comprobación de $\beta_{forzado}$: (+0.1pt)
       >
-      > $\beta_{forzado} = I_C / I_B = 6.9\ mA / 95\ \mu A \approx 73$. Como $0 <\beta_{forzado} < \beta$, se confirma que el transistor está operando en el modo saturado.
+      > $I_B = I_E - I_C = 1.8 - 1-25 = 0.55\ mA$
+      >
+      > $\beta_{forzado} = I_C / I_B = 1.25\ mA / 0.55\ mA \approx 2.3$. Como $0 <\beta_{forzado} < \beta$, se confirma que el transistor está operando en el modo saturado.
 
 2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 15\enspace V$, $R_1= 24\enspace k\Omega$, $R_2= 6.2\enspace k\Omega$, $R_C= 5.1\enspace k\Omega$, $R_E= 1.5\enspace k\Omega$, $\beta = 100$ y la temperatura $T=300\enspace K$.
 
