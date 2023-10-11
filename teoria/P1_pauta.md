@@ -189,11 +189,11 @@
       >
       > $\beta_{forzado} = I_C / I_B = 1.25\ mA / 0.55\ mA \approx 2.3$. Como $0 <\beta_{forzado} < \beta$, se confirma que el transistor está operando en el modo saturado.
 
-2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 15\enspace V$, $R_1= 24\enspace k\Omega$, $R_2= 6.2\enspace k\Omega$, $R_C= 5.1\enspace k\Omega$, $R_E= 1.5\enspace k\Omega$, $\beta = 100$ y la temperatura $T=300\enspace K$.
+2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 20\ V$, $R_1= 10\ k\Omega$, $R_2= 3.3\ k\Omega$, $R_C= 3.9\ k\Omega$, $R_E= 2\ k\Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter.png" width="300"> 
 
-   1. La corriente de colector de polarización $I_{C_Q}$
+   1. La corriente de colector de polarización $I_{C_Q}$ *(0.75pt)*
 
       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_thevenin.png" width="300"> 
       >
@@ -201,19 +201,19 @@
       >
       > $V_{th} = \frac{R_2}{R_1 + R_2} V_{CC}$ (+0.2pt)
       >
-      > $V_{th} = \frac{6200}{24000 + 6200} 15$
+      > $V_{th} = \frac{3300}{10000 + 3300} 20$
       >
-      > $V_{th} \approx 3.08\ V$
+      > $V_{th} \approx 4.96\ V$
       >
       > $R_{th} = R_1 // R_2$ (+0.2pt)
       >
       > $R_{th} = \frac{R_1 R_2}{R_1 + R_2}$
       >
-      > $R_{th} = \frac{24000*6200}{24000 + 6200}$
+      > $R_{th} = \frac{10000*3300}{10000 + 3300}$
       >
-      > $R_{th} \approx 4.9\ k\Omega$
+      > $R_{th} \approx 2.5\ k\Omega$
       >
-      > Malla Base-Emissor (+0.35pt)
+      > Malla Base-Emissor (+0.25pt)
       >
       > $V_{th} - R_{th} I_B - V_{BE} - R_E I_E = 0$
       >
@@ -225,36 +225,36 @@
       >
       > Usando $V_{BE} = 0.7\ V$ y los valores de $V_{th}$ y $R_{th}$
       >
-      > $I_B = \frac{3.08  - 0.7}{4900 + 101 * 1500}$
+      > $I_B = \frac{4.96  - 0.7}{2500 + 101 * 2000}$
       >
-      > $I_B \approx 15\ \mu A$
+      > $I_B \approx 21\ \mu A$
       >
       > Asumiendo modo activo
       >
       > $I_{C_Q} = \beta I_B$
       >
-      > $I_{C_Q} = 100 * 15\ \mu A$
+      > $I_{C_Q} = 100 * 21\ \mu A$
       >
-      > $I_{C_Q} \approx 1.5\ mA$
+      > $I_{C_Q} \approx 2.1\ mA$
       >
-      > Comprobación de modo activo
+      > Comprobación de modo activo (+0.1pt)
       >
       > $V_{C_Q} = V_{CC} - R_C I_{C_Q} $
       >
-      > $V_{C_Q} = 15 - 5100 * 0.0015 $
+      > $V_{C_Q} = 20 - 3900 * 0.0021 $
       >
-      > $V_{C_Q} \approx 7.35\ V$.
+      > $V_{C_Q} \approx 11.8\ V$.
       >
       > $V_{E} = R_E I_{E} = R_E (\beta + 1) I_B$
       >
-      > $V_{E} = 1500 * 101 * 0.0000015$
+      > $V_{E} = 2000 * 101 * 0.000021$
       >
-      > $V_{E} \approx 0.23\ V$
+      > $V_{E} \approx 4.2\ V$
       >
       > $V_{CE} = V_{C_Q} - V_E$
       >
-      > $V_{CE} = 7.35 - 0.23 = 7.12\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo. 
-   2. La ganancia de voltaje $A_V$
+      > $V_{CE} = 11.8 - 4.2 = 7.6\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo. 
+   2. La ganancia de voltaje $A_V$ *(0.75pt)*
 
       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_small_signal.png" width="300"> 
       >
@@ -292,9 +292,9 @@
       >
       > $A_V = \frac{- R_C I_{C_Q} }{V_T}$
       >
-      > $A_V = \frac{- 5100 * 0.0015 }{0.026}$
+      > $A_V = \frac{- 3900 * 0.0021 }{0.026}$
       >
-      > $A_V \approx -294$
+      > $A_V \approx -315$
       
 
 # Fórmulas
