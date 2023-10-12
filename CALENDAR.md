@@ -92,7 +92,7 @@
 | [09](/teoria/09_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor |  |  |
 | [10](/teoria/10_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | | Inicio $T_4$ |
 | [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | |
-| [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte , entrega guia PEP2 |Entrega $T_4$ | inicio $T_5$|
+| [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte , entrega guia PEP2 |Entrega $T_4$ (lunes) | inicio $T_5$|
 | [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ancho de banda, normalización, respuestas guia PEP2 |  |  |
 | [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | Entrega $T_5$ (lunes) | | 
 | [14](/teoria/14_multivibrators.md) | Osciladores | multivibradores | inicio $T_6$ | |
