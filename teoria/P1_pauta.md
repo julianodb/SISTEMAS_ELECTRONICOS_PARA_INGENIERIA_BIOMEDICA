@@ -159,7 +159,7 @@
       >
       > $R_C I_C  = V_{CC} - V_C$
       >
-      > $V_C = V_{CC} - R_C I_C = 12 - 1200 * 0.00093 \apprpx 10.9\ V$
+      > $V_C = V_{CC} - R_C I_C = 12 - 1200 * 0.00093 \approx 10.9\ V$
       >
       > $V_{CE} = V_C - V_E = 10.9 - 5.3 = 5.6\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo.
 
@@ -185,7 +185,7 @@
       >
       > Comprobación de $\beta_{forzado}$: (+0.1pt)
       >
-      > $I_B = I_E - I_C = 1.8 - 1-25 = 0.55\ mA$
+      > $I_B = I_E - I_C = 1.8 - 1.25 = 0.55\ mA$
       >
       > $\beta_{forzado} = I_C / I_B = 1.25\ mA / 0.55\ mA \approx 2.3$. Como $0 <\beta_{forzado} < \beta$, se confirma que el transistor está operando en el modo saturado.
 
