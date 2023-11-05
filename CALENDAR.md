@@ -95,9 +95,9 @@
 | [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte , entrega guia PEP2 |Entrega $T_4$ (lunes) | inicio $T_5$|
 | [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ancho de banda, normalización, respuestas guia PEP2 |  |  |
 | [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | Entrega $T_5$ (lunes) | | 
+| [14](/teoria/14_oscilators.md) | Osciladores | Osciladores | Entrega $T_6$ | Inicio $T_7$ |
 | [14](/teoria/14_multivibrators.md) | Osciladores | multivibradores | inicio $T_6$ | |
 | [15](/teoria/15_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |   |
-| [16](/teoria/16_oscilators.md) | Osciladores | Osciladores | Entrega $T_6$ | Inicio $T_7$ |
 | [17](/teoria/17_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | | |
 | 18 | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
 | [19](/teoria/19_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | |  |
