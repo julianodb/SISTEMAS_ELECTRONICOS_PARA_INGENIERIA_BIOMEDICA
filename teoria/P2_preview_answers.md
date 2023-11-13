@@ -20,11 +20,11 @@
     Determine: 
 
     1. La ganancia total del sistema ($A_{V_{TOTAL}} = \frac{v_{o2}}{v_{i1}}$)
-        > $A_{V_{TOTAL}} = 30380.5 \approx 30000$
+        > $A_{V_{TOTAL}} = 42353.6 \approx 42000$
     2. Una forma de disminuir la pérdida de ganancia por la incompatibilidad de impedancias es disminuir el valor de $R_C$. Sin embargo, esto también afecta la ganancia de cada amplificador ($A_{V1}$ y $A_{V2}$). Calcule la nueva ganancia total del sistema si se reduce $R_C$ por la mitad ($R_C = 2.55\ k\Omega$)
-        > $A_{V_{TOTAL}} = 10194.8 \approx 10000$
+        > $A_{V_{TOTAL}} = 14212.6 \approx 14000$
     2. Para compensar la pérdida de ganancia de cada amplificador por la disminución de $R_C$, se puede cambiar $R_1$ y $R_2$ de tal forma a aumentar la corriente quiescente de colector ($I_{C_Q}$). El costo de hacerlo es que el circuito consume más energía. Calcule la nueva ganancia total del sistema si se reduce $R_C$ por la mitad ($R_C = 2.55\ k\Omega$) y al mismo tiempo se duplica $I_{C_Q}$ ($I_{C_Q} = 3\ mA$)
-        > $A_{V_{TOTAL}} = 40779.2 \approx 41000$
+        > $A_{V_{TOTAL}} = 56850.5.2 \approx 57000$
 
 4. Para el circuito de la Figura 3, asumiendo que $R_1=R_2=10\ k\Omega$ y $C_1=C_2=1\ nF$ determine:
 
