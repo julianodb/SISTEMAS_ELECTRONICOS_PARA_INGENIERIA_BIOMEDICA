@@ -22,8 +22,49 @@
     Determine: 
 
     1. La ganancia total del sistema ($A_{V_{TOTAL}} = \frac{v_{o2}}{v_{i1}}$) (0.7 pt)
+
+        > $v_{o2} = A_{V2} v_{B2}  = A_{V2} v_{o1} $ (1) +0.3pt
+        >
+        > $v_{o1} = A_{V1} v_{B1} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = A_{V1} v_{i1} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} $ (2) +0.3pt
+        >
+        > Reemplazando (2) en (1):
+        >
+        > $v_{o2} = A_{V2} A_{V1} v_{i1} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} $
+        >
+        > $\therefore A_{V_{TOTAL}} = \frac{v_{o2}}{v_{i1}} = A_{V2} A_{V1} \frac{Z_{i2}}{Z_{i2}+Z_{o1}}  $
+        >
+        > $A_{V_{TOTAL}} = (-315) (-315) \frac{2.5\ k\Omega}{2.5\ k\Omega+3.9\ k\Omega}  $ 
+        >
+        > $A_{V_{TOTAL}} = 38759.765625 \approx 39000$ (+0.1pt)
+
     2. Una forma de disminuir la pérdida de ganancia por la incompatibilidad de impedancias es disminuir el valor de $R_C$ (lo que disminuye $Z_{o1}$). Sin embargo, esto también afecta la ganancia de cada amplificador ($A_{V1}$ y $A_{V2}$). Calcule la nueva ganancia total del sistema si se reduce $R_C$ por la mitad ($R_C = 1.95\ k\Omega$) (0.7 pt)
+
+        > $Z_{i2}' = Z_{i2} = 2.5\ k\Omega$ (+0.2pt)
+        >
+        > $ Z_{o1}' =  R_C' =  1.95\ k\Omega $ (+0.2pt)
+        >
+        > $ A_{V2}' = A_{V1}' = - \frac{R_C' I_{C_Q}}{V_T} = - \frac{1}{2}\frac{R_C I_{C_Q}}{V_T} = \frac{A_{V1}}{2} = - 157.5 $ (+0.2pt)
+        >
+        > $ A_{V_{TOTAL}} = A_{V2}' A_{V1}' \frac{Z_{i2}'}{Z_{i2}'+Z_{o1}'}  $
+        >
+        > $A_{V_{TOTAL}} = (-157.5) (-157.5) \frac{2.5\ k\Omega}{2.5\ k\Omega+1.95\ k\Omega}  $ 
+        >
+        > $A_{V_{TOTAL}} = 13936.0955 \approx 14000$ (+0.1pt)
+
     2. Para compensar la pérdida de ganancia de cada amplificador por la disminución de $R_C$, se puede cambiar $R_1$ y $R_2$ de tal forma a aumentar la corriente quiescente de colector ($I_{C_Q}$). El costo de hacerlo es que el circuito consume más energía. Calcule la nueva ganancia total del sistema si se reduce $R_C$ por la mitad ($R_C = 1.95\ k\Omega$) y al mismo tiempo se duplica $I_{C_Q}$ ($I_{C_Q} = 4.2\ mA$) (0.6 pt)
+
+        > $Z_{i2}'' = Z_{i2} = 2.5\ k\Omega$ (+0.2pt)
+        >
+        > $ Z_{o1}'' =  R_C'' =  1.95\ k\Omega $ (+0.2pt)
+        >
+        > $ A_{V2}'' = A_{V1}'' = - \frac{R_C'' I_{C_Q}''}{V_T} = - \frac{1}{2}\frac{R_C 2 I_{C_Q}}{V_T} = - \frac{R_C I_{C_Q}}{V_T}= A_{V1} = - 315 $ (+0.2pt)
+        >
+        > $ A_{V_{TOTAL}} = A_{V2}'' A_{V1}'' \frac{Z_{i2}''}{Z_{i2}''+Z_{o1}''}  $
+        >
+        > $A_{V_{TOTAL}} = (-315) (-315) \frac{2.5\ k\Omega}{2.5\ k\Omega+1.95\ k\Omega}  $ 
+        >
+        > $A_{V_{TOTAL}} = 55744.3820 \approx 56000$ (+0.1pt)
+
 
 3. La figura 4 muestra un circuito de amplificador de instrumentación con la salida conectada a un circuito con LED.
 
