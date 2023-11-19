@@ -114,8 +114,23 @@
         > $ V_o = 21 (V_2 - V_1) $   (+0.1pt)
         >
     2. Considerando que la impedancia de entrada de cada amplificador operacional es $1\ G\Omega$, calcule la impedancia de entrada del sistema para la entrada diferencial $V_2 - V_1$ (es decir, la resistencia entre los terminales $V_2$ y $V_1$). (0.4 pt)
-        > --------------------------------hay que dibujar el circuito
         > 
+        > <img src="https://julianodb.github.io/electronic_circuits_diagrams/instrumentation_amplifier_plus_npn_with_annotations.png" width="400">
+        >
+        > La resistencia entre los terminales $V_2$ y $V_1$ está dada por:
+        >
+        > $Z_i = R_i + R_G // (R_5 + R_1 + R_i + R_3 + R_6) + R_i$ (+0.3pt)
+        >
+        > $Z_i = 2 R_i + R_G // (2 R_5 + 2 R_1 + R_i)$
+        >
+        > $Z_i = 2 R_i + \frac{R_G (2 R_5 + 2 R_1 + R_i)}{R_G + 2 R_5 + 2 R_1 + R_i}$
+        >
+        > $Z_i = 2 (1\ G\Omega) + \frac{1\ k\Omega (2 (10\ k\Omega) + 2 (20\ k\Omega) + (1\ G\Omega))}{(1\ k\Omega) + 2 (10\ k\Omega) + 2 (20\ k\Omega) + (1\ G\Omega)}$
+        >
+        > $Z_i = 2000000000 + \frac{1000 (1000060000)}{1000061000}$
+        >
+        > $Z_i = 2000000999 \approx 2\ G\Omega$ (+0.1pt)
+        >
     1. En qué modo está funcionando el transistor Q cuando la corriente directa en el LED es 10 mA. (0.4 pt)
         >
         > $V_{CE} = V_{CC} - V_f - R_L I_f$ (+0.2pt)
@@ -158,11 +173,11 @@
         >
         > Observando $C_2$ y $R_2$, se puede deducir que la tensión entre $C_1$ y $C_2$ es:
         >
-        > $v_x = v_o \frac{1/C_2 s + R_2}{R_2} = v_o \frac{1+ R_2 C_2 s}{R_2 C_2 s}$ (1)
+        > $v_x = v_o \frac{1/C_2 s + R_2}{R_2} = v_o \frac{1+ R_2 C_2 s}{R_2 C_2 s}$ (1) (+0.05pt)
         >
         > Aplicando LKC en el mismo punto:
         >
-        > $ (v_i - v_x) C_1 s = \frac{v_o}{R_2} + \frac{v_x - v_o}{R_1}$
+        > $ (v_i - v_x) C_1 s = \frac{v_o}{R_2} + \frac{v_x - v_o}{R_1}$ (+0.05pt)
         >
         > $ v_i C_1 s = v_x C_1 s + \frac{v_o}{R_2} + \frac{v_x - v_o}{R_1}$
         >
@@ -184,7 +199,7 @@
         >
         > Como $R_1=R_2$ y $C_1=C_2$:
         >
-        > $ H(s) = \frac{R_1^2 C_1^2 s^2}{1+  2 R_1 C_1 s + R_1^2 C_1^2 s^2 } $
+        > $ H(s) = \frac{R_1^2 C_1^2 s^2}{1+  2 R_1 C_1 s + R_1^2 C_1^2 s^2 } $ (+0.05pt)
         >
         > La ganancia en frecuencia es, por lo tanto:
         >
@@ -194,13 +209,13 @@
         >
         > $A_v(\omega) = \frac{R_1^2 C_1^2 \omega^2}{\sqrt{R_1^4 C_1^4 \omega^4 - 2 R_1^2 C_1^2 \omega^2 + 1+  4 R_1^2 C_1^2 \omega^2 }}$
         >
-        > $A_v(\omega) = \frac{R_1^2 C_1^2 \omega^2}{\sqrt{R_1^4 C_1^4 \omega^4 + 2 R_1^2 C_1^2 \omega^2 + 1 }}$
+        > $A_v(\omega) = \frac{R_1^2 C_1^2 \omega^2}{\sqrt{R_1^4 C_1^4 \omega^4 + 2 R_1^2 C_1^2 \omega^2 + 1 }}$ (+0.05pt)
         >
         > Se observa que el denominador es estrictamente mayor a $ R_1^2 C_1^2 \omega^2 $, lo que hace con que $A_v(\omega) < 1$
         >
         > Por otro lado, $$\lim_{\omega \to \infty} A_v(\omega) = 1$$
         >
-        > Por lo tanto, $A_{V_{MAX}} = 1$
+        > Por lo tanto, $A_{V_{MAX}} = 1$ (+0.05pt)
         >
         > Se calcula la frecuencia de corte:
         >
@@ -208,7 +223,7 @@
         >
         > $A_v(2\pi f_c) = \frac{1}{\sqrt{2}}$
         >
-        > $\frac{R_1^2 C_1^2 (2\pi f_c)^2}{\sqrt{R_1^4 C_1^4 (2\pi f_c)^4 + 2 R_1^2 C_1^2 (2\pi f_c)^2 + 1 }} = \frac{1}{\sqrt{2}}$
+        > $\frac{R_1^2 C_1^2 (2\pi f_c)^2}{\sqrt{R_1^4 C_1^4 (2\pi f_c)^4 + 2 R_1^2 C_1^2 (2\pi f_c)^2 + 1 }} = \frac{1}{\sqrt{2}}$ (+0.05pt)
         >
         > $\sqrt{2} R_1^2 C_1^2 (2\pi f_c)^2 = \sqrt{R_1^4 C_1^4 (2\pi f_c)^4 + 2 R_1^2 C_1^2 (2\pi f_c)^2 + 1 }$
         >
@@ -220,32 +235,32 @@
         >
         > El lado izquierdo es positivo, por lo tanto:
         >
-        > $R_1^2 C_1^2 (2\pi f_c)^2 = 1+\sqrt{2}$
+        > $R_1^2 C_1^2 (2\pi f_c)^2 = 1+\sqrt{2}$ (+0.05pt)
         >
         > $R_1 C_1 (2\pi f_c) = \sqrt{1+\sqrt{2}}$
         >
         > $ f_c = \frac{\sqrt{1+\sqrt{2}}}{2\pi R_1 C_1} = \frac{\sqrt{1+\sqrt{2}}}{2\pi 3.3* 3.3 * 10^{-6}}$
         >
-        > $ f_c = 22708 \approx 22.7\ k Hz$
+        > $ f_c = 22708 \approx 22.7\ k Hz$ (+0.05pt)
 
     1. La ganancia en dB en corriente contínua.(0.4 pt)
         >
-        > $A_v(0) = \frac{R_1^2 C_1^2 0^2}{\sqrt{R_1^4 C_1^4 0^4 + 2 R_1^2 C_1^2 0^2 + 1 }} = 0$
+        > $A_v(0) = \frac{R_1^2 C_1^2 0^2}{\sqrt{R_1^4 C_1^4 0^4 + 2 R_1^2 C_1^2 0^2 + 1 }} = 0$ (+0.3pt)
         > 
-        > $A_{v_{dB}}(0) = 20 log(0)  = - \infty$
+        > $A_{v_{dB}}(0) = 20 log(0)  = - \infty$ (+0.1pt)
     1. La ganancia en dB para una entrada con frecuencia 50 Hz. (0.4 pt)
         >
-        > $A_v(2\pi 50) = \frac{R_1^2 C_1^2 (2\pi 50)^2}{\sqrt{R_1^4 C_1^4 (2\pi 50)^4 + 2 R_1^2 C_1^2 (2\pi 50)^2 + 1 }} = 0.000011704$
+        > $A_v(2\pi 50) = \frac{R_1^2 C_1^2 (2\pi 50)^2}{\sqrt{R_1^4 C_1^4 (2\pi 50)^4 + 2 R_1^2 C_1^2 (2\pi 50)^2 + 1 }} = 0.000011704$ (+0.3pt)
         > 
-        > $A_{v_{dB}}(0) = 20 log(0.000011704) \approx - 98$
+        > $A_{v_{dB}}(0) = 20 log(0.000011704) \approx - 98$ (+0.1pt)
     1. La ganancia en dB para una entrada con frecuencia 100 kHz. (0.4 pt)
         >
-        > $A_v(2\pi 100000) = \frac{R_1^2 C_1^2 (2\pi 100000)^2}{\sqrt{R_1^4 C_1^4 (2\pi 100000)^4 + 2 R_1^2 C_1^2 (2\pi 100000)^2 + 1 }} = 0.9791$
+        > $A_v(2\pi 100000) = \frac{R_1^2 C_1^2 (2\pi 100000)^2}{\sqrt{R_1^4 C_1^4 (2\pi 100000)^4 + 2 R_1^2 C_1^2 (2\pi 100000)^2 + 1 }} = 0.9791$ (+0.3pt)
         > 
-        > $A_{v_{dB}}(0) = 20 log(0.9791) = -0.1836 \approx 0$
+        > $A_{v_{dB}}(0) = 20 log(0.9791) = -0.1836 \approx 0$ (+0.1pt)
     1. Qué tipo de filtro está implementado. (0.4 pt)
         >
-        > $A_V(\omega)$ es una función creciente. Por lo tanto, el filtro es del tipo paso-alta
+        > $A_V(\omega)$ es una función creciente. Por lo tanto, el filtro es del tipo paso-alta (+0.4pt)
 
 # Fórmulas
 
