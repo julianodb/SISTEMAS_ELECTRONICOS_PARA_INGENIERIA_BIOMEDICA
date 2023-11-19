@@ -53,9 +53,9 @@
 
     2. Para compensar la pérdida de ganancia de cada amplificador por la disminución de $R_C$, se puede cambiar $R_1$ y $R_2$ de tal forma a aumentar la corriente quiescente de colector ($I_{C_Q}$). El costo de hacerlo es que el circuito consume más energía. Calcule la nueva ganancia total del sistema si se reduce $R_C$ por la mitad ($R_C = 1.95\ k\Omega$) y al mismo tiempo se duplica $I_{C_Q}$ ($I_{C_Q} = 4.2\ mA$) (0.6 pt)
 
-        > $Z_{i2}'' = Z_{i2} = 2.5\ k\Omega$ (+0.2pt)
+        > $Z_{i2}'' = Z_{i2} = 2.5\ k\Omega$ (+0.15pt)
         >
-        > $ Z_{o1}'' =  R_C'' =  1.95\ k\Omega $ (+0.2pt)
+        > $ Z_{o1}'' =  R_C'' =  1.95\ k\Omega $ (+0.15pt)
         >
         > $ A_{V2}'' = A_{V1}'' = - \frac{R_C'' I_{C_Q}''}{V_T} = - \frac{1}{2}\frac{R_C 2 I_{C_Q}}{V_T} = - \frac{R_C I_{C_Q}}{V_T}= A_{V1} = - 315 $ (+0.2pt)
         >
@@ -88,10 +88,63 @@
     Determine:
 
     1. La relación entre la salida del amplificador de instrumentación, $v_o$, y sus entradas $V_1$ y $V_2$. (0.4 pt)
+
+        > Si denominamos $V_{o1}$ la salida del amplificador con entrada $V_1$ y $V_{o2}$ la salida del amplificador con entrada $V_2$, tenemos:
+        >
+        > $ V_{o2} - V_{o1} = (V_2 - V_1) \frac{R_G + R_5 + R_6}{R_G}$ (1) (+0.1pt)
+        >
+        > Por otro lado, aplicando corto-circuito virtual al amplificador de salida:
+        >
+        > $ V_+ = V_-$  (+0.1pt)
+        >
+        > $ V_{o2} \frac{R_4}{R_4+R_5} = V_{o1} \frac{R_2}{R_2+R_1} + V_{o} \frac{R_1}{R_2+R_1}$  (+0.1pt)
+        >
+        > Como $R_1 = R_2 = R_3 = R_4$:
+        >
+        > $  \frac{V_{o2}}{2} =  \frac{V_{o1}}{2} +  \frac{V_{o}}{2}$
+        >
+        > $ V_o = V_{o2} - V_{o1} $ 
+        >
+        > Utilizando (1),
+        >
+        > $ V_o = (V_2 - V_1) \frac{R_G + R_5 + R_6}{R_G}$
+        >
+        > $ V_o = (V_2 - V_1) \frac{1\ k\Omega + 10\ k\Omega + 10\ k\Omega}{1\ k\Omega}$
+        >
+        > $ V_o = 21 (V_2 - V_1) $   (+0.1pt)
+        >
     2. Considerando que la impedancia de entrada de cada amplificador operacional es $1\ G\Omega$, calcule la impedancia de entrada del sistema para la entrada diferencial $V_2 - V_1$ (es decir, la resistencia entre los terminales $V_2$ y $V_1$). (0.4 pt)
+        > --------------------------------hay que dibujar el circuito
+        > 
     1. En qué modo está funcionando el transistor Q cuando la corriente directa en el LED es 10 mA. (0.4 pt)
+        >
+        > $V_{CE} = V_{CC} - V_f - R_L I_f$ (+0.2pt)
+        >
+        > $V_{CE} = 10 - 3 - 330 * 0.01 = 3.7\ V$
+        >
+        > Como $V_{CE} > V_{CE_{SAT}}$, el transistor Q está en el modo activo (+0.2pt)
+
     1. Para que valor de $v_o$ la corriente en el LED es 10 mA. (0.4 pt)
+        >
+        > Como Q está en el modo activo, $I_C = \beta I_B $ (+0.15pt)
+        >
+        > $0.01 = 50 I_B $
+        >
+        > $I_B = 200\ \mu A $
+        >
+        > $v_o - I_B R_B - V_{BE} = 0$ (+0.15pt)
+        >
+        > $v_o =  I_B R_B + V_{BE} = 0.0002 * 10000$ + 0.7
+        >
+        > $v_o = 2.7\ V$ (+0.1pt)
+
     1. Si $V_1 = 1\ V$, a que valor de $V_2$ corresponde el valor de $v_o$ calculado en el ítem anterior. (0.4 pt)
+
+        > $ V_o = 21 (V_2 - V_1) $
+        >
+        > $ V_2 = V_o / 21 + V_1 = 2.7 / 21 + 1 $
+        >
+        > $V_2 = 1.12857 \approx 1.13\ V$ (+0.4 pt)
 
 4. Para el circuito de la Figura 5, asumiendo que $R_1=R_2=3.3\ k\Omega$ y $C_1=C_2=3.3\ nF$ determine:
 
