@@ -153,10 +153,99 @@
     Figura 5: Circuito con topología Sallen-Key.
 
     1. La(s) frecuencia(s) de corte en Hz. (0.4 pt)
+        >
+        > Corto circuito virtual: $V_+ = V_- = v_o$
+        >
+        > Observando $C_2$ y $R_2$, se puede deducir que la tensión entre $C_1$ y $C_2$ es:
+        >
+        > $v_x = v_o \frac{1/C_2 s + R_2}{R_2} = v_o \frac{1+ R_2 C_2 s}{R_2 C_2 s}$ (1)
+        >
+        > Aplicando LKC en el mismo punto:
+        >
+        > $ (v_i - v_x) C_1 s = \frac{v_o}{R_2} + \frac{v_x - v_o}{R_1}$
+        >
+        > $ v_i C_1 s = v_x C_1 s + \frac{v_o}{R_2} + \frac{v_x - v_o}{R_1}$
+        >
+        > $ v_i C_1 s = v_x (C_1 s + \frac{1}{R_1}) + v_o (\frac{1}{R_2} - \frac{1}{R_1})$
+        >
+        > $ v_i C_1 s = v_x (\frac{R_1 C_1 s + 1}{R_1}) + v_o (\frac{R_1-R_2}{R_1 R_2})$
+        >
+        > Reemplazando (1)
+        >
+        > $ v_i C_1 s = v_o \frac{1+ R_2 C_2 s}{R_2 C_2 s} (\frac{R_1 C_1 s + 1}{R_1}) + v_o (\frac{R_1-R_2}{R_1 R_2})$
+        >
+        > $ v_i C_1 s = v_o( \frac{(1+ R_2 C_2 s)(R_1 C_1 s + 1)}{R_1 R_2 C_2 s} + \frac{R_1-R_2}{R_1 R_2} )$
+        >
+        > $ v_i C_1 s = v_o \frac{1+ R_2 C_2 s + R_1 C_1 s + R_1 R_2 C_1 C_2 s^2 + R_1C_2 s - R_2 C_2 s}{R_1 R_2 C_2 s} $
+        >
+        > $ v_i = v_o \frac{1+  R_1 C_1 s + R_1C_2 s + R_1 R_2 C_1 C_2 s^2 }{R_1 R_2 C_1 C_2 s^2} $
+        >
+        > $ \therefore H(s) = \frac{v_o}{v_i} = \frac{R_1 R_2 C_1 C_2 s^2}{1+  R_1 C_1 s + R_1C_2 s + R_1 R_2 C_1 C_2 s^2 } $
+        >
+        > Como $R_1=R_2$ y $C_1=C_2$:
+        >
+        > $ H(s) = \frac{R_1^2 C_1^2 s^2}{1+  2 R_1 C_1 s + R_1^2 C_1^2 s^2 } $
+        >
+        > La ganancia en frecuencia es, por lo tanto:
+        >
+        > $A_v(\omega) = || H(s=j\omega) || = || \frac{-R_1^2 C_1^2 \omega^2}{1+  2 R_1 C_1 j \omega - R_1^2 C_1^2 \omega^2 } || $
+        >
+        > $A_v(\omega) = \frac{R_1^2 C_1^2 \omega^2}{\sqrt{(1- R_1^2 C_1^2 \omega^2)^2+  (2 R_1 C_1 \omega)^2 }}$
+        >
+        > $A_v(\omega) = \frac{R_1^2 C_1^2 \omega^2}{\sqrt{R_1^4 C_1^4 \omega^4 - 2 R_1^2 C_1^2 \omega^2 + 1+  4 R_1^2 C_1^2 \omega^2 }}$
+        >
+        > $A_v(\omega) = \frac{R_1^2 C_1^2 \omega^2}{\sqrt{R_1^4 C_1^4 \omega^4 + 2 R_1^2 C_1^2 \omega^2 + 1 }}$
+        >
+        > Se observa que el denominador es estrictamente mayor a $ R_1^2 C_1^2 \omega^2 $, lo que hace con que $A_v(\omega) < 1$
+        >
+        > Por otro lado, $$\lim_{\omega \to \infty} A_v(\omega) = 1$$
+        >
+        > Por lo tanto, $A_{V_{MAX}} = 1$
+        >
+        > Se calcula la frecuencia de corte:
+        >
+        > $A_v(\omega_c) = A_v(2\pi f_c) = \frac{A_{v_{max}}}{\sqrt{2}}$
+        >
+        > $A_v(2\pi f_c) = \frac{1}{\sqrt{2}}$
+        >
+        > $\frac{R_1^2 C_1^2 (2\pi f_c)^2}{\sqrt{R_1^4 C_1^4 (2\pi f_c)^4 + 2 R_1^2 C_1^2 (2\pi f_c)^2 + 1 }} = \frac{1}{\sqrt{2}}$
+        >
+        > $\sqrt{2} R_1^2 C_1^2 (2\pi f_c)^2 = \sqrt{R_1^4 C_1^4 (2\pi f_c)^4 + 2 R_1^2 C_1^2 (2\pi f_c)^2 + 1 }$
+        >
+        > $2 R_1^4 C_1^4 (2\pi f_c)^4 = R_1^4 C_1^4 (2\pi f_c)^4 + 2 R_1^2 C_1^2 (2\pi f_c)^2 + 1 $
+        >
+        > $R_1^4 C_1^4 (2\pi f_c)^4 - 2 R_1^2 C_1^2 (2\pi f_c)^2 - 1 = 0$
+        >
+        > $R_1^2 C_1^2 (2\pi f_c)^2 = \frac{2\pm\sqrt{4+4}}{2} = \frac{2\pm2\sqrt{2}}{2} = 1\pm\sqrt{2}$
+        >
+        > El lado izquierdo es positivo, por lo tanto:
+        >
+        > $R_1^2 C_1^2 (2\pi f_c)^2 = 1+\sqrt{2}$
+        >
+        > $R_1 C_1 (2\pi f_c) = \sqrt{1+\sqrt{2}}$
+        >
+        > $ f_c = \frac{\sqrt{1+\sqrt{2}}}{2\pi R_1 C_1} = \frac{\sqrt{1+\sqrt{2}}}{2\pi 3.3* 3.3 * 10^{-6}}$
+        >
+        > $ f_c = 22708 \approx 22.7\ k Hz$
+
     1. La ganancia en dB en corriente contínua.(0.4 pt)
+        >
+        > $A_v(0) = \frac{R_1^2 C_1^2 0^2}{\sqrt{R_1^4 C_1^4 0^4 + 2 R_1^2 C_1^2 0^2 + 1 }} = 0$
+        > 
+        > $A_{v_{dB}}(0) = 20 log(0)  = - \infty$
     1. La ganancia en dB para una entrada con frecuencia 50 Hz. (0.4 pt)
+        >
+        > $A_v(2\pi 50) = \frac{R_1^2 C_1^2 (2\pi 50)^2}{\sqrt{R_1^4 C_1^4 (2\pi 50)0^4 + 2 R_1^2 C_1^2 (2\pi 50)0^2 + 1 }} = 0.000011704$
+        > 
+        > $A_{v_{dB}}(0) = 20 log(0.000011704) \approx - 98$
     1. La ganancia en dB para una entrada con frecuencia 100 kHz. (0.4 pt)
+        >
+        > $A_v(2\pi 100000) = \frac{R_1^2 C_1^2 (2\pi 100000)^2}{\sqrt{R_1^4 C_1^4 (2\pi 50)0^4 + 2 R_1^2 C_1^2 (2\pi 100000)0^2 + 1 }} = 0.9791$
+        > 
+        > $A_{v_{dB}}(0) = 20 log(0.9791) = -0.1836 \approx 0$
     1. Qué tipo de filtro está implementado. (0.4 pt)
+        >
+        > $A_V(\omega)$ es una función creciente. Por lo tanto, el filtro es del tipo paso-alta
 
 # Fórmulas
 
