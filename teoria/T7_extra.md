@@ -59,6 +59,8 @@ IMAGENES:
 
 ![TX_bloques](../img/eagle/07d_pot.png)
 
+![TX_bloques](../img/eagle/07e_diode.png)
+
 Conexiones del PINHD-1X5:
 
 ![TX_bloques](../img/eagle/pwr_connector.png)
