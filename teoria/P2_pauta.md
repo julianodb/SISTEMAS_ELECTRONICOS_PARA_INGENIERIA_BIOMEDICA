@@ -235,12 +235,12 @@
         > $A_{v_{dB}}(0) = 20 log(0)  = - \infty$
     1. La ganancia en dB para una entrada con frecuencia 50 Hz. (0.4 pt)
         >
-        > $A_v(2\pi 50) = \frac{R_1^2 C_1^2 (2\pi 50)^2}{\sqrt{R_1^4 C_1^4 (2\pi 50)0^4 + 2 R_1^2 C_1^2 (2\pi 50)0^2 + 1 }} = 0.000011704$
+        > $A_v(2\pi 50) = \frac{R_1^2 C_1^2 (2\pi 50)^2}{\sqrt{R_1^4 C_1^4 (2\pi 50)^4 + 2 R_1^2 C_1^2 (2\pi 50)^2 + 1 }} = 0.000011704$
         > 
         > $A_{v_{dB}}(0) = 20 log(0.000011704) \approx - 98$
     1. La ganancia en dB para una entrada con frecuencia 100 kHz. (0.4 pt)
         >
-        > $A_v(2\pi 100000) = \frac{R_1^2 C_1^2 (2\pi 100000)^2}{\sqrt{R_1^4 C_1^4 (2\pi 50)0^4 + 2 R_1^2 C_1^2 (2\pi 100000)0^2 + 1 }} = 0.9791$
+        > $A_v(2\pi 100000) = \frac{R_1^2 C_1^2 (2\pi 100000)^2}{\sqrt{R_1^4 C_1^4 (2\pi 100000)^4 + 2 R_1^2 C_1^2 (2\pi 100000)^2 + 1 }} = 0.9791$
         > 
         > $A_{v_{dB}}(0) = 20 log(0.9791) = -0.1836 \approx 0$
     1. Qué tipo de filtro está implementado. (0.4 pt)
