@@ -17,7 +17,7 @@ Cada una de éstas placas se fabricará con técnicas de fabricación distintas.
 
 Para éste trabajo, el enfoque es la placa 3. El objetivo es diseñar la placa en un software de diseño electrónico (Electrical computer-aided design - ECAD), y generar los archivos necesarios para su fabricación. El ECAD elegido para la tarea es el Autodesk EAGLE, que provee una versión gratuita.
 
-1. Descarguen e instalen EAGLE. https://www.autodesk.com/products/eagle/free-download . Alternativamente, utilicen los notebooks del laboratorio.
+1. Descarguen e instalen EAGLE. [https://www.autodesk.com/products/eagle/free-download](https://www.autodesk.com/products/eagle/free-download) . Alternativamente, utilicen los notebooks del laboratorio.
 2. Si necesario, creen sus cuentas en Autodesk para poder iniciar la aplicación.
 4. Creen un nuevo proyecto. Luego, creen un nuevo Schematic en el nuevo proyecto.
 5. El schematic es donde se diseña el circuito electrónico de forma muy similar a la que se hace en clase. Agreguen las partes que se utilizarán en el circuito, conforme las imagenes a continuación. Asegurense de agregar los mismos componentes que los de las imagenes.
@@ -99,6 +99,6 @@ Conexiones del PINHD-1X5:
 
 AYUDA:
 
-Schematic: video de ejemplo de utilización de la herramienta. https://youtu.be/VNoaSeiNSxg
+Schematic: video de ejemplo de utilización de la herramienta. [https://youtu.be/VNoaSeiNSxg](https://youtu.be/VNoaSeiNSxg)
 
 Board: el area de la placa está enmarcado por el rectangulo con borde amarillo y es un poco más oscuro que el fondo gris. Para rutear el circuito hay que mover todos los componentes dentro de dicha area. Además, también hay que implementar las lineas de cobre que hacen la conexion electrica entre ellos. Las lineas amarillas entre los terminales muestran que partes deberian ir conectadas. Para implementar un ruteo automatico, pueden utilizar el boton "Autorouter". Utilicen el boton "DRC" para asegurar que está todo correctamente conectado.
