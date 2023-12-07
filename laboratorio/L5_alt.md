@@ -74,8 +74,11 @@
 
     1. Considerando la tabla con los valores promedios, ¿para que rango de valores de $V_B$ el transistor está operando en modo activo? (0.5 pt)
 
+2. Se armó el circuito de la Figura 2, utilizando $R_C = 1\ k\Omega$ y $R_B = 1\ M\Omega$. Ésta forma de conectar el potenciometro permite utilizarlo como una resistencia variable.
 
-1. Se fijó la posición del potenciometro $R_{pot}$ para que generara un valor de $V_{CE} = 5\ V$. Se conectó un segundo potenciometro $R_{var}$ entre $R_C$ y el colector, conforme indica la Figura 2. Ésta forma de conectar el potenciometro permite utilizarlo como una resistencia variable.
+   <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_characterization_vce_alt.png" width="400">
+
+   Figura 2: Caracterización de $I_C$ y $V_{CE}$ del 
 
    <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_characterization_vce.png" width="400">
 
