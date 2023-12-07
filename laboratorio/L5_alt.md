@@ -1,21 +1,22 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 4 de Sistemas Electrónicos - Recuperativo
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 5 de Sistemas Electrónicos - Recuperativo
+#### Segundo Semestre de 2023
 
 ## Recursos utilizados
 
-| tipo | descripcion | valor | cantidad | | tipo | descripcion | valor | cantidad |
-| -- | -- | -- | -- | --| -- | -- | -- | -- |
-| Instrumentos |  |  |  | | Dispositivos |  |  |  |
-|  | Multímetro |  | 1 | |  | Transistor 2N3904 | | 1 |
-|  | Fuente CC. |  | 1 | |  | Resistencias (Ω) |  |  |
-| Implementos |  |  |  | |  |  | 150 | 1 |
-|  | Cable Banana-Caimán |  | 2 | |  |  | 1k | 1 |
-| Otros |  |  |  | |  | | 10k | 1 |
-| | Protoboard |  | 1 | |  | |47k | 1 |
-| | cables, alicate, etc |  | | |  | |Potenciometro 10k (de panel) | 2 |
+| tipo | descripcion | cantidad | | tipo | descripcion | valor | cantidad |
+| -- | --  | -- | --| -- | -- | -- | -- |
+| Instrumentos  |  |  | | Dispositivos |  |  |  |
+|  | Multímetro  | 1 | |  | Transistor NPN | 2N2222 | 1 |
+|  | Fuente CC.  | 1 | |  | Resistencias (Ω) |  |  |
+| Implementos |   |  | |  |  | 1k | 1 |
+|  | Cable Banana-Caimán  | 2 | |  |  | 51k | 1 |
+| Otros |   |  | |  | | 1M | 1 |
+| | Protoboard |  1 | |  | | Potenciometro 10k (de panel) |1  |
+| | cables, alicate, etc |  | |  | | |  |
 
 ## Resultado experimental e informe
 
-1. Se armó el circuito de la Figura 1, utilizando una resistencia de 1k para $R_C$ y una de 47k para $R_B$. Se utilizó la fuente CC. para generar $V_{CC} = 10\ V$, y se limitó la corriente máxima a 100 mA.
+1. Se armó el circuito de la Figura 1, utilizando una resistencia de 1k para $R_C$ y una de 51k para $R_B$. Se utilizó la fuente CC. para generar $V_{CC} = 10\ V$, y se limitó la corriente máxima a 200 mA.
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_characterization.png" width="400">
 
@@ -26,29 +27,30 @@
     ### Grupo A
     | $V_{R_B}$ (mV) | $I_B$ ($\mu A$) | $I_C$ (mA) | $V_{CE}$ (V) | $V_B$ (mV) |
     | -- | -- | -- | -- | -- |
-    | 50 | 1 | 0.34 | 8.7 | 600 |
-    | 500 | 10 | 4.09 | 5.9 | 666 |
-    | 1000 | 20 | 7.824 | 2.28 | 650 |
-    | 2000 | 40 | 9.8 | 0.193 | 712 |
-    | 3000 | 60 | 9.84 | 0.147 | 716 |
-    | 4000 | 80 | 9.73 | 0.129 | 715 |
-    | 5000 | 100 | 9.88 | 0.118 | 713 |
-    | 6000 | 120 | 9.89 | 0.109 | 719 |
-    | 7000 | 140 | 9.898 | 0.102 | 715 |
-    | 8000 | 160 | 9.903 | 0.097 | 721 |
+    | 50 | 1.01 | x | x | x |
+    | 500 | 10.72 | x | x | x |
+    | 1000 | 20.84 | x | x | x |
+    | 2000 | 40.31 | x | x | x |
+    | 3000 | 60.76 | 0.996 | 0.002 | 749 |
+    | 4000 | 79.63 | 0.996 | 0.003 | 757 |
+    | 5000 | 99.69 | 0.996 | 0.003 | 765 |
+    | 6000 | 119.7 | 0.996 | 0.003 | 770 |
+    | 7000 | 137.8 | 0.995 | 0.003 | 780 |
+    | 8000 | 161.2 | 0.995 | 0.003 | 785 |
     
     ### Grupo B
     | $V_{R_B}$ (mV) | $I_B$ ($\mu A$) | $I_C$ (mA) | $V_{CE}$ (V) | $V_B$ (mV) |
     | -- | -- | -- | -- | -- |
-    | 50 | 1.064 | 0.37 | 9.7 | 610 |
-    | 350 | 7.44 | 2 | 8.11 | 650 |
-    | 500 | 10.6 | 4.07 | 5.9 | 660 |
-    | 1000 | 21.27 | 7.73 | 2.31 | 688 |
-    | 2000 | 42.55 | 9.8 | 0.2 | 717 |
-    | 3000 | 63.82 | 9.95 | 0.16 | 719 |
-    | 4000 | 85.1 | 9.966 | 0.13 | 722 |
-    | 5000 | 106.38 | 9.976 | 0.11 | 718 |
-    | 6000 | 127.66 | 9.980 | 0.11 | 636 |
+    | 50 | 0.98 | 0.066 | 9.767 | 534 |
+    | 500 | 9.8 | 2.22 | 7.619 | 630 |
+    | 1000 | 19.7 | 4.93 | 4.933 | 654 |
+    | 2000 | 39.3 | 9.19 | 0.745 | 680 |
+    | 3000 | 58.96 | 9.82 | 0.1126 | 691 |
+    | 4000 | 78.6 | 9.84 | 0.089 | 693 |
+    | 5000 | 98.3 | 9.85 | 0.079 | 695 |
+    | 6000 | 117.9 | 9.86 | 0.071 | 697 |
+    | 7000 | 137.6 | 9.87 | 0.065 | 698 |
+    | 6000 | 157.2 | 9.87 | 0.060 | 700.2 |
     
     ### Grupo C
     | $V_{R_B}$ (mV) | $I_B$ ($\mu A$) | $I_C$ (mA) | $V_{CE}$ (V) | $V_B$ (mV) |
