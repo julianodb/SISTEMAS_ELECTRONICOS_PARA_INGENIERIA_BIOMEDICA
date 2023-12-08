@@ -22,7 +22,7 @@
 
     Figura 1: Caracterización de $I_B$ e $I_C$ del BJT
 
-    Se ajustó el potenciometro hasta que $V_{R_B}$ tenga aproximadamente el valor indicado en cada línea de la siguiente tabla. Los resultados obtenidos fueron los siguientes
+    Se ajustó el potenciometro hasta que $V_{R_B}$ tenga aproximadamente el valor indicado en cada línea de la siguiente tabla, se calcularon $I_B$ e $I_C$ y se midieron $V_{CE}$ y $V_B$. Los resultados obtenidos fueron los siguientes:
     
     ### Grupo A
     | $V_{R_B}$ (mV) | $I_B$ ($\mu A$) | $I_C$ (mA) | $V_{CE}$ (V) | $V_B$ (mV) |
@@ -74,40 +74,29 @@
 
     1. Considerando la tabla con los valores promedios, ¿para que rango de valores de $V_B$ el transistor está operando en modo activo? (0.5 pt)
 
-2. Se armó el circuito de la Figura 2, utilizando $R_C = 1\ k\Omega$ y $R_B = 1\ M\Omega$. Ésta forma de conectar el potenciometro permite utilizarlo como una resistencia variable.
+2. Se armó el circuito de la Figura 2, utilizando $R_C = 1\ k\Omega$ y $R_B = 1\ M\Omega$. Ésta forma de conectar el potenciometro $R_{var}$ permite utilizarlo como una resistencia variable.
 
    <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_characterization_vce_alt.png" width="400">
 
-   Figura 2: Caracterización de $I_C$ y $V_{CE}$ del 
-
-   <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_characterization_vce.png" width="400">
-
    Figura 2: Caracterización de $I_C$ y $V_{CE}$ del BJT
 
-   1. Se cambió $R_{var}$ a distintos valores y para cada uno se midió $V_{CE}$ e $I_C$. Los valores obtenidos fueron los siguientes:
+   Se cambió $R_{var}$ a distintos valores y para cada uno se midió $V_{CE}$ e $I_C$. Los valores obtenidos fueron los siguientes:
 
    | $V_{CE}$ (V) | $I_C$ (mA) |
    | -- | -- |
-   | 0.09 | 0.89 |
-   | 0.104 | 1.3 |
-   | 0.115 | 1.672 |
-   | 0.126 | 2.065 |
-   | 0.137 | 2.455 |
-   | 0.149 | 2.865 |
-   | 0.162 | 3.247 |
-   | 0.180 | 3.64 |
-   | 0.192 | 3.650 |
-   | 0.21 | 4.024 |
-   | 0.223 | 3.945 |
-   | 0.32 | 4.421 |
-   | 0.886 | 4.246 |
-   | 0.925 | 4.195 |
-   | 1.632 | 4.317 |
-   | 2.528 | 4.409 |
-   | 3.85 | 4.501 |
-   | 5.3 | 4.68 |
-   | 5.66 | 4.613 |
+   | 0.0612 | 0.733 |
+   | 0.064 | 0.802 |
+   | 0.0703 | 0.924 |
+   | 0.0744 | 1.012 |
+   | 0.075 | 1.022 |
+   | 0.108 | 1.702 |
+   | 0.140 | 2.080 |
+   | 0.160 | 2.190 |
+   | 1.222 | 1.81 |
+   | 2.7 | 2.35 |
+   | 5.7 | 2.4 |
+   | 7.464 | 2.3751 |
    
-   Dibuje la gráfica de $I_C$ por $V_{CE}$. (1.5 pt)
+   1. Dibuje la gráfica de $I_C$ por $V_{CE}$. (1 pt)
 
-   1. Indique en la gráfica la región de modo activo y la región de modo saturado. (0.5 pt)
+   1. Indique en la gráfica la región de modo activo y la región de modo saturado. (1 pt)
