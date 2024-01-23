@@ -59,7 +59,7 @@ El sistema de evaluación contempla, además, una Prueba Optativa Recuperativa (
 - Si el/la estudiante en el promedio final obtiene una nota menor a 4.0, puede optar a una POR.
 - La POR reemplaza la peor nota de las 3 notas
 evaluadas.
-- El contenido de la POR es todo la materia
+- El contenido de la POR es toda la materia
 - Nota Mínima para la POR mayor o igual a 3.0
 
 $$ Promedio Teoría = 0.7\frac{ P_1 + P_2 + P_3 + POR - min\{P_1, P_2, P_3\}}{3} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
@@ -68,7 +68,7 @@ Si el Promedio Teoría es menor a 4.0, el/la estudiante reprueba la parte teóri
 
 ### Laboratorio
 
-EL desarrollo del laboratorio estará en función a experiencias de laboratorio presenciales. Éstas corresponderán a las experiencias entregadas en guías que deberán ser desarrolladas en clases incluyendo el informe el cual deberá ser entregado al finalizar la sesión.
+EL desarrollo del laboratorio estará en función a experiencias de laboratorio presenciales. Éstas corresponderán a las experiencias entregadas en guías que deberán ser desarrolladas en clases y cuyo informe deberá ser entregado al finalizar la sesión.
 
 Las inasistencias al laboratorio deberán ser justificadas ante docencia, quien informará a los profesores sobre la justificación de ésta.
 
@@ -76,7 +76,7 @@ Las recuperaciones de laboratorios serán informadas caso a caso.
 
 Las ponderaciones para la evaluación serán:
 
-$$ Promedio Final Laboratorio = \sum_{i=1}^{nl} \frac {Lp_i}{nl}$$
+$$ Promedio Laboratorio = \sum_{i=1}^{nl} \frac {Lp_i}{nl}$$
 
 Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
