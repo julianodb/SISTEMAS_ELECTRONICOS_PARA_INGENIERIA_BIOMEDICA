@@ -8,11 +8,11 @@
 [uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=36972)
 
 ## Horário Teoría
-- Martes: bloque 6 (M6: 16:55 - 18:15), laboratorios de docencia de biomedica
+- Lunes: bloque 4 (L4: 13:45 - 15:05), laboratorios de docencia de biomedica
 - Jueves: bloque 4 (J4: 13:45 - 15:05), sala ED804
 
 ## Horário Laboratório
-- Martes, bloque 2 (M2: 09:50 - 11:10), laboratorios de docencia de biomedica
+- Lunes, bloque 5 (L5: 15:20 - 16:40), laboratorios de docencia de biomedica
 
 ## Profesor
 
@@ -45,20 +45,26 @@ Al término de la asignatura el alumno será capaz de:
 
 ## Evaluaciones
 
-### Teoría
-La nota final está compuesta por 70% del promedio de las evaluaciones escritas, y 30% del promedio de los trabajos. Hay 3 evaluaciones escritas - $P_1$, $P_2$ y $P_3$- con la misma ponderación ($1 \over 3$), y 8 trabajos de diseño ($T_1$, $T_2$, $T_3$, $T_4$, $T_5$, $T_6$, $T_7$, $T_8$) con ponderaciones iguales ($1 \over 8$ cada uno).
+Las notas de todas las evaluaciones (pruebas escritas, trabajos de diseño y laboratorios) serán redondeadas a una casa decimal hacia arriba. Ejemplo: 4.51 se redondea a 4.6.
 
-$$ Promedio Final Teoría = 0.7\sum_{i=1}^3 \frac{P_i}{3} + 0.3\sum_{j=1}^8 \frac{T_j}{8} $$
+$$ Nota Redondeada = \frac{\lceil 10\  Nota Original \rceil}{10}$$
+
+### Teoría
+La nota de teoría está compuesta por 70% del promedio simple de las evaluaciones escritas, y 30% del promedio simple de los trabajos. Están planificados $np=3$ pruebas escritas y $nt=9$ trabajos de diseño.
+
+$$ Promedio Teoría = 0.7\sum_{i=1}^{np} \frac{P_i}{np} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
 
 El sistema de evaluación contempla, además, una Prueba Optativa Recuperativa (POR)
 
 - Si el/la estudiante en el promedio final obtiene una nota menor a 4.0, puede optar a una POR.
 - La POR reemplaza la peor nota de las 3 notas
-evaluadas ($P_1$, $P_2$ o $P_3$).
+evaluadas.
 - El contenido de la POR es todo la materia
 - Nota Mínima para la POR mayor o igual a 3.0
 
-Si el Promedio Final Teoría es menor a 4.0, el/la estudiante reprueba la parte teórica de la asignatura.
+$$ Promedio Teoría = 0.7\frac{ P_1 + P_2 + P_3 + POR - min\{P_1, P_2, P_3\}}{3} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
+
+Si el Promedio Teoría es menor a 4.0, el/la estudiante reprueba la parte teórica de la asignatura.
 
 ### Laboratorio
 
@@ -70,11 +76,11 @@ Las recuperaciones de laboratorios serán informadas caso a caso.
 
 Las ponderaciones para la evaluación serán:
 
-$$ Promedio Final Laboratorio = \sum_{i=1}^n \frac {Lp_i}{n}$$
+$$ Promedio Final Laboratorio = \sum_{i=1}^{nl} \frac {Lp_i}{nl}$$
 
 Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
 
-Si el Promedio Final Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
+Si el Promedio Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
 
 ### Promedio final y aprobación
 
@@ -82,7 +88,7 @@ En el caso de que el/la estudiante repruebe apenas teoría o apenas laboratorio,
 
 El promedio final de la asignatura se calcula como:
 
-$$ Promedio Final = 0.7\ Promedio Final Teoría + 0.3\ Promedio Final Laboratorio  $$
+$$ Promedio Final = 0.7\ Promedio Teoría + 0.3\ Promedio Laboratorio  $$
 
 ## Bibliografia
 - Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.).México: Prentice Hall.
