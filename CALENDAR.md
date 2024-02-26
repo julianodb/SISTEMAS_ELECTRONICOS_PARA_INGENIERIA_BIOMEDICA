@@ -94,14 +94,17 @@
 | [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte , entrega guia PEP2 |Entrega $T_4$ (lunes) | inicio $T_5$|
 | [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ancho de banda, normalización, respuestas guia PEP2 |  |  |
 | [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | Entrega $T_5$ (lunes) | | 
-| [14](/teoria/14_oscilators.md) | Osciladores | Osciladores | Entrega $T_6$ | Inicio $T_7$ |
-| [15](/teoria/15_multivibrators.md) | Osciladores | multivibradores | inicio $T_6$ | |
-| [16](/teoria/16_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |   |
-| [17](/teoria/17_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | | |
-| 18 | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_7$ | inicio $T_8$ |
-| [19](/teoria/19_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | |  |
-| 20 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 | Entrega $T_8$ | |
-| 21 | Construcción de prototipo? | | | |
+| [14](/teoria/14_oscilators.md) | Osciladores | Osciladores |  | inicio $T_6$ |
+| [15](/teoria/15_multivibrators.md) | Osciladores | multivibradores | Entrega $T_6$ (miercoles) | Inicio $T_7$ |
+| [16](/teoria/16_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores | Entrega $T_7$ (viernes) |   |
+| [17](/teoria/17_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | | inicio $T_8$ |
+| 18 | Fuentes Conmutadas | Reguladores de Voltaje |  |  |
+| [19](/teoria/19_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_8$ (miercoles) | inicio $T_9$ |
+| 20 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 | |  |
+| 21 | Construcción de prototipo? |  | Entrega $T_9$ (miercoles) | inicio $T_X$ |
+| 22 | Construcción de prototipo? |  |  | |
+| 23 | Construcción de prototipo? |  | Entrega $T_X$ (miercoles) | |
+| 24 | Construcción de prototipo? |  |  | |
 | P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación, física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
