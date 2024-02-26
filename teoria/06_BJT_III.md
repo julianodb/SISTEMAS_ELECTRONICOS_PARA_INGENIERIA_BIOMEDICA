@@ -1,4 +1,4 @@
-# Transistor de Unión Bipolar (BJT) II
+# Transistor de Unión Bipolar (BJT) III
 
 ## ejercicios con BJT
 

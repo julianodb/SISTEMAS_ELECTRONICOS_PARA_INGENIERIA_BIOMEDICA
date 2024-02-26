@@ -83,17 +83,18 @@
 | [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto Electromiógrafo |  | inicio $T_1$ |
 | [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos |  |  |
 | [04](/teoria/04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo| Entrega $T_1$ | inicio $T_2$ |
-| [05](/teoria/05_BJT_II.md) | Analisis de ca del BJT | Uso del BJT como llave y como amplificador, Análisis de grandes señales, polarización fija, emisor comun |Entrega $T_2$ | inicio $T_3$|
-| [06](/teoria/06_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 |   |  |
-| [07](/teoria/07_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_3$ | |
+| [05](/teoria/05_BJT_II.md) | Analisis de cc del BJT | Uso del BJT como llave, polarización fija, emisor comun, emisor seguidor || |
+| [06](/teoria/06_BJT_III.md) | Analisis de ca del BJT | Uso del BJT como amplificador, Análisis de grandes señales, Amplificador diferencial |Entrega $T_2$ | inicio $T_3$ |
+| [07](/teoria/07_CE.md) | Amplificador diferencial | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 |   |  |
+| [08](/teoria/08_CE_II.md) | Amplificador diferencial II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_3$ | |
 | [P1](/teoria/P1.md) | PEP1 | Diodos, Transistores| | |
-| [08](/teoria/08_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  |  |
-| [09](/teoria/09_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor |  |  |
-| [10](/teoria/10_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | | Inicio $T_4$ |
-| [11](/teoria/11_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | |
-| [12](/teoria/12_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte , entrega guia PEP2 |Entrega $T_4$ (lunes) | inicio $T_5$|
-| [13](/teoria/13_pre_P2.md) | Filtros activos | Filtros activos, ancho de banda, normalización, respuestas guia PEP2 |  |  |
-| [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos | Entrega $T_5$ (lunes) | | 
+| [09](/teoria/09_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  | Inicio $T_4$ |
+| [10](/teoria/10_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor |  |  |
+| [11](/teoria/11_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | Entrega $T_4$ (miercoles) | inicio $T_5$ |
+| [12](/teoria/12_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | |
+| [13](/teoria/13_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte , entrega guia PEP2 | Entrega $T_5$ | |
+| [14](/teoria/14_pre_P2.md) | Filtros activos | Filtros activos, ancho de banda, normalización, respuestas guia PEP2 |  |  |
+| [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos |  | | 
 | [14](/teoria/14_oscilators.md) | Osciladores | Osciladores |  | inicio $T_6$ |
 | [15](/teoria/15_multivibrators.md) | Osciladores | multivibradores | Entrega $T_6$ (miercoles) | Inicio $T_7$ |
 | [16](/teoria/16_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores | Entrega $T_7$ (viernes) |   |
