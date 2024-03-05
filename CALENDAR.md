@@ -103,8 +103,8 @@
 | 20 | Fuentes Conmutadas: ejercicios | Fuentes Conmutadas: ejercicios |  | |
 | [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) | inicio $T_A$ |
 | [22](/teoria/22_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_A$ (miercoles) |  |
-| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 |  |  |
-| 24 | Cierre | Construcción de prototipo? |  | |
+| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, entrega guia PEP3 |  |  |
+| 24 | Cierre | Construcción de prototipo?, ejercicios y respuestas guia PEP3 |  | |
 | P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación, física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
