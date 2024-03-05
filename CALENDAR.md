@@ -51,9 +51,9 @@
 |    | 10    | 11 | 12 | 13 | 14 | 15 | 16 |
 | 12 | 20 L9 |    | T9 | 21 |    |    |    |
 |    | 17    | 18 | 19 | 20 | 21 | 22 | 23 |
-| 13 | 22 LX |    | TX | FF | FF | FF |    |
+| 13 | 22 LA |    | TA | FF | FF | FF |    |
 |    | 24    | 25 | 26 | 27 | 28 | 29 | 30 |
-| 14 | 23 LY |    |    | 24 |    | FF |    |
+| 14 | 23 LB |    |    | 24 |    | FF |    |
 
 ## JULIO / 2024
 
@@ -90,22 +90,22 @@
 | [P1](/teoria/P1.md) | PEP1 | Diodos, Transistores| | |
 | [09](/teoria/09_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  | Inicio $T_4$ |
 | [10](/teoria/10_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor |  |  |
-| [11](/teoria/11_opamp_II.md) | Aplicaciones de Amplificadores operacionales | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | Entrega $T_4$ (miercoles) | inicio $T_5$ |
-| [12](/teoria/12_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | |
-| [13](/teoria/13_frec_II.md) | Filtros activos | Filtros activos, ganancia en frecuencia, frecuencia de corte , entrega guia PEP2 | Entrega $T_5$ | |
-| [14](/teoria/14_pre_P2.md) | Filtros activos | Filtros activos, ancho de banda, normalización, respuestas guia PEP2 |  |  |
+| [11](/teoria/11_opamp_II.md) | Aplicaciones de Amplificadores operacionales: dc | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | Entrega $T_4$ (miercoles) | inicio $T_5$ |
+| [12](/teoria/12_opamp_III.md) | Aplicaciones de Amplificadores operacionales: ac | Circuitos con op amps y elementos que almacenan energía, diferenciador, integrador, intro filtros activos | | |
+| [13](/teoria/13_frec_II.md) | Filtros Activos | Filtros activos, ganancia en frecuencia, frecuencia de corte | Entrega $T_5$ | inicio $T_6$  |
+| [14](/teoria/14_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |  |
+| [15](/teoria/15_multivibrators.md) | Multivibradores | multivibradores bi-estables, entrega guía PEP 2 | Entrega $T_6$ (miercoles) | inicio $T_7$ |
+| [16](/teoria/16_pre_P2.md) | Ejercicios PEP2 | ejercicios y respuestas guia PEP2 | Entrega $T_7$ (viernes) |  |
 | [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos |  | | 
-| [14](/teoria/14_oscilators.md) | Osciladores | Osciladores |  | inicio $T_6$ |
-| [15](/teoria/15_multivibrators.md) | Osciladores | multivibradores | Entrega $T_6$ (miercoles) | Inicio $T_7$ |
-| [16](/teoria/16_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores | Entrega $T_7$ (viernes) |   |
-| [17](/teoria/17_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | | inicio $T_8$ |
+| [17](/teoria/17_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable |  | Inicio $T_8$ |
+| [18](/teoria/18_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |   |
+| [19](/teoria/19_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_8$ (miercoles) | inicio $T_9$ |
+| 20 | Fuentes Conmutadas: ejercicios | Fuentes Conmutadas: ejercicios |  | |
+| [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) | inicio $T_A$ |
 | 18 | Fuentes Conmutadas | Reguladores de Voltaje |  |  |
-| [19](/teoria/19_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_8$ (miercoles) | inicio $T_9$ |
-| 20 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 | |  |
-| 21 | Construcción de prototipo? |  | Entrega $T_9$ (miercoles) | inicio $T_X$ |
-| 22 | Construcción de prototipo? |  |  | |
-| 23 | Construcción de prototipo? |  | Entrega $T_X$ (miercoles) | |
-| 24 | Construcción de prototipo? |  |  | |
+| [22](/teoria/22_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_A$ (miercoles) |  |
+| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 |  |  |
+| 24 | Cierre | Construcción de prototipo? |  | |
 | P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación, física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
@@ -121,3 +121,5 @@
 - [L7](/laboratorio/L7.md): respuesta en frecuencia / filtros pasivos & detector de envolvente. 
 - [L8](/laboratorio/L8.md): multivibradores
 - [L9](/laboratorio/L9.md): respuesta en frecuencia / filtros activos. 
+- [LA](/laboratorio/LA.md): 
+- [LB](/laboratorio/LB.md): 
