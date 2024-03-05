@@ -102,7 +102,6 @@
 | [19](/teoria/19_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_8$ (miercoles) | inicio $T_9$ |
 | 20 | Fuentes Conmutadas: ejercicios | Fuentes Conmutadas: ejercicios |  | |
 | [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) | inicio $T_A$ |
-| 18 | Fuentes Conmutadas | Reguladores de Voltaje |  |  |
 | [22](/teoria/22_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_A$ (miercoles) |  |
 | 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, ejercicios guia PEP3 |  |  |
 | 24 | Cierre | Construcción de prototipo? |  | |
