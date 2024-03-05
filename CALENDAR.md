@@ -82,9 +82,9 @@
 | [01](/teoria/01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, convenciones y simbología en esquemáticos | | |
 | [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto Electromiógrafo |  | inicio $T_1$ |
 | [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos |  |  |
-| [04](/teoria/04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo| Entrega $T_1$ | inicio $T_2$ |
-| [05](/teoria/05_BJT_II.md) | Analisis de cc del BJT | Uso del BJT como llave, polarización fija, emisor comun, emisor seguidor || |
-| [06](/teoria/06_BJT_III.md) | Analisis de ca del BJT | Uso del BJT como amplificador, Análisis de grandes señales, Amplificador diferencial |Entrega $T_2$ | inicio $T_3$ |
+| [04](/teoria/04_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | Entrega $T_1$ | inicio $T_2$ |
+| [05](/teoria/05_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del BJT como llave|  |  |
+| [06](/teoria/06_BJT_II.md) | Analisis de ca del BJT | Uso del BJT como amplificador, polarización fija, emisor comun, emisor seguidor, Análisis de grandes señales, Amplificador diferencial | Entrega $T_2$ | inicio $T_3$ |
 | [07](/teoria/07_CE.md) | Amplificador diferencial | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 |   |  |
 | [08](/teoria/08_CE_II.md) | Amplificador diferencial II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_3$ | |
 | [P1](/teoria/P1.md) | PEP1 | Diodos, Transistores| | |

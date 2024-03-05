@@ -1,4 +1,4 @@
-# 11 - Respuesta em frecuencia
+# Respuesta em frecuencia
 
 ## capítulos del libro
 - Capítulo 9
