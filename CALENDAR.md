@@ -80,16 +80,16 @@
 | #  | Titulo |  Descripción |  Entrega |  Trabajo |
 | -- | --     | -- | -- | -- |
 | [01](/teoria/01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, convenciones y simbología en esquemáticos | | |
-| [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto Electromiógrafo |  | inicio $T_1$ |
+| [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto Espirómetro |  | inicio $T_1$ |
 | [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos |  |  |
 | [04](/teoria/04_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | Entrega $T_1$ | inicio $T_2$ |
 | [05](/teoria/05_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del BJT como llave|  |  |
-| [06](/teoria/06_BJT_II.md) | Analisis de ca del BJT | Uso del BJT como amplificador, polarización fija, emisor comun, emisor seguidor, Análisis de grandes señales, Amplificador diferencial | Entrega $T_2$ | inicio $T_3$ |
+| [06](/teoria/06_BJT_II.md) | BJT como amplificador | Uso del BJT como amplificador, polarización fija, emisor comun, emisor seguidor, Análisis de grandes señales, Amplificador diferencial | Entrega $T_2$ | inicio $T_3$ |
 | [07](/teoria/07_CE.md) | Amplificador diferencial | modelo $\pi$ híbrido, Amplificador con emisor comun, entrega guia PEP1 |   |  |
 | [08](/teoria/08_CE_II.md) | Amplificador diferencial II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios | Entrega $T_3$ | |
 | [P1](/teoria/P1.md) | PEP1 | Diodos, Transistores| | |
 | [09](/teoria/09_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  | Inicio $T_4$ |
-| [10](/teoria/10_opamp.md) | Amplificadores Operacionales | Amplificador diferencial, Amplificador Operacional, comparador, amplificador inversor |  |  |
+| [10](/teoria/10_opamp.md) | Amplificadores Operacionales | Amplificador Operacional, comparador, amplificador inversor |  |  |
 | [11](/teoria/11_opamp_II.md) | Aplicaciones de Amplificadores operacionales: dc | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | Entrega $T_4$ (miercoles) | inicio $T_5$ |
 | [12](/teoria/12_opamp_III.md) | Aplicaciones de Amplificadores operacionales: ac | Circuitos con op amps y elementos que almacenan energía, diferenciador, integrador, intro filtros activos | | |
 | [13](/teoria/13_frec_II.md) | Filtros Activos | Filtros activos, ganancia en frecuencia, frecuencia de corte | Entrega $T_5$ | inicio $T_6$  |
@@ -111,14 +111,14 @@
 # Laboratórios
 
 - [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
-- [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica
+- [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica, resistencias especiales
 - [L2](/laboratorio/L2.md): Diodo DC y Zener
-- [L3](/laboratorio/L3.md): Fotorresistencia, fotodiodo, LED. 
-- [L4](/laboratorio/L4.md): Rectificador y Regulador
-- [L5](/laboratorio/L5.md): transistor BJT (curvas características) + corte y saturación. 
+- [L3](/laboratorio/L3.md): respuesta en frecuencia / filtros pasivos & detector de peak. 
+- [L4](/laboratorio/L4.md): transistor BJT (curvas características) + corte y saturación. 
+- [L5](/laboratorio/L5.md): BJT como amplificador
 - [L6](/laboratorio/L6.md): amplificador operacional y aplicaciones en CC
-- [L7](/laboratorio/L7.md): respuesta en frecuencia / filtros pasivos & detector de envolvente. 
+- [L7](/laboratorio/L7.md): respuesta en frecuencia / filtros activos. 
 - [L8](/laboratorio/L8.md): multivibradores
-- [L9](/laboratorio/L9.md): respuesta en frecuencia / filtros activos. 
-- [LA](/laboratorio/LA.md): 
+- [L9](/laboratorio/L9.md): Rectificador y Regulador Lineal
+- [LA](/laboratorio/LA.md): Reguladores Conmutados
 - [LB](/laboratorio/LB.md): 
