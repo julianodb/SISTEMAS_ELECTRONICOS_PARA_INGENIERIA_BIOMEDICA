@@ -1,11 +1,11 @@
 # Sistemas Electrónicos Interdisciplinaria
-##### (para Ingeniería Biomédia, 2/2023)
+##### (para Ingeniería Biomédia, 1/2024)
 
 ![FING](img/logo_fing.png?raw=true "FING")
 
 ## Página de la asignatura
 
-[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=36972)
+[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=37566)
 
 ## Horário Teoría
 - Lunes: bloque 4 (L4: 13:45 - 15:05), laboratorios de docencia de biomedica
@@ -50,37 +50,41 @@ Las notas de todas las evaluaciones (pruebas escritas, trabajos de diseño y lab
 $$ Nota Redondeada = \frac{\lceil 10\  Nota Original \rceil}{10}$$
 
 ### Teoría
-La nota de teoría está compuesta por 70% del promedio simple de las evaluaciones escritas, y 30% del promedio simple de los trabajos. Están planificados $np=3$ pruebas escritas y $nt=9$ trabajos de diseño.
+La nota de teoría está compuesta por 70% del promedio simple de las evaluaciones escritas, y 30% del promedio simple de los trabajos. 
 
 $$ Promedio Teoría = 0.7\sum_{i=1}^{np} \frac{P_i}{np} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
 
+Están planificados $np=3$ pruebas escritas y $nt=10$ trabajos de diseño.
+
+Cada trabajo de diseño tiene una fecha maxima de entrega. En el caso de atrasos, se descontará 3 puntos por día de atraso.
+
 El sistema de evaluación contempla, además, una Prueba Optativa Recuperativa (POR)
 
-- Si el/la estudiante en el promedio final obtiene una nota menor a 4.0, puede optar a una POR.
-- La POR reemplaza la peor nota de las 3 notas
-evaluadas.
+- Si el/la estudiante en el promedio final obtiene una nota menor a 4.0, pero mayor o igual a 3.0, puede optar a una POR.
+- La POR reemplaza la peor nota de las 3 pruebas escritas.
 - El contenido de la POR es toda la materia
-- Nota Mínima para la POR mayor o igual a 3.0
 
-$$ Promedio Teoría = 0.7\frac{ P_1 + P_2 + P_3 + POR - min\{P_1, P_2, P_3\}}{3} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
+$$ Promedio Teoría = 0.7\frac{ P_1 + P_2 + P_3 + POR - min\{P_1, P_2, P_3, POR\}}{3} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
 
 Si el Promedio Teoría es menor a 4.0, el/la estudiante reprueba la parte teórica de la asignatura.
+
+Además, se exige un mínimo de 75 % de asistencia a clases presenciales. Una asistencia inferior al 75 % sin justificaciones ante docencia causa reprobación automatica de la parte teórica de la asignatura, con una nota 3,5 .
 
 ### Laboratorio
 
 EL desarrollo del laboratorio estará en función a experiencias de laboratorio presenciales. Éstas corresponderán a las experiencias entregadas en guías que deberán ser desarrolladas en clases y cuyo informe deberá ser entregado al finalizar la sesión.
 
-Las inasistencias al laboratorio deberán ser justificadas ante docencia, quien informará a los profesores sobre la justificación de ésta.
-
-Las recuperaciones de laboratorios serán informadas caso a caso.
-
-Las ponderaciones para la evaluación serán:
+Las ponderaciones para la evaluación de laboratorio serán:
 
 $$ Promedio Laboratorio = \sum_{i=1}^{nl} \frac {Lp_i}{nl}$$
 
-Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales
+Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales. Están planificados $nl=11$ actividades de laboratorio durante el semestre.
 
 Si el Promedio Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
+
+La inasistencia al laboratorio deberá ser justificada ante docencia, quien informará a los profesores sobre la justificación de ésta. En caso de inasistencia justificada,la actividad de recuperación será informada caso a caso.
+
+La inasistencia INJUSTIFICADA a un laboratorio causa reprobación automática de la parte de laboratorio de la asignatura, con una nota 3,5 .
 
 ### Promedio final y aprobación
 
