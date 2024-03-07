@@ -57,4 +57,10 @@ $$\sum{voltajes} = 0$$
 
 ## Introducción al Laboratorio
 
-Multímetro y mediciones de baterias, resistencias fijas y resistencias variables
+[Reglamento interno para el uso seguro de los laboratorios de docencia de Ingeniería Civil Biomédica](https://www.ingenieriabiomedica.usach.cl/sites/ing-civil-biomedica/files/laboratorio_cero_usach_biomedica.pdf)
+
+Multímetro y mediciones de baterias, resistencias fijas y resistencias variables.
+
+Protoboard y buenas practicas para conexión de circuitos electrónicos
+
+Osciloscopio y medición de voltajes cambiantes en el tiempo.
