@@ -2,7 +2,7 @@
 
 ## Detalles Administrativos
 
-Página: [uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=36972)
+Página: [uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=37566)
 
 Correo: juliano.dawid @usach.cl
 
@@ -10,17 +10,26 @@ Correo: juliano.dawid @usach.cl
 
 ## Motivación
 
-Electrónica Analógica vs Digital
+Electrónica Analógica
 
 [Texas Instruments Medical Applications](https://www.ti.com/applications/industrial/medical/overview.html)
 
-![motiv](../img/01_aplicaciones2.jpeg "motiv")
-
 ## Trabajos
 
-[EMG](https://learn.sparkfun.com/tutorials/myoware-muscle-sensor-kit/all)
+Espirometro
 
 Grupos de 3
+
+## Notación
+
+- Voltajes, corrientes, conexiones externas, entradas, salidas
+- $\lceil x \rceil$
+- $\therefore$
+- $ \implies $
+- $\iff$
+- $>>$
+- $ \forall $
+- $ | $
 
 ## Revisión/Resúmen de Conceptos
 
@@ -28,10 +37,13 @@ Grupos de 3
 - BODE
 - Fracciones Parciales
 - Transformada de Laplace
+- Función de Transferencia
+- Polos y Ceros
 - Teorema de la Superposición
 - Kirchhoff
 - Serie de Taylor / Maclaurin
 - Nyquist
+- Ley de Ohm
 
 Teoría de Circuitos
 
