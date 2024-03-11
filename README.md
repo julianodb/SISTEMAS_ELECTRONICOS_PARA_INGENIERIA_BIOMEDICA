@@ -1,7 +1,5 @@
-# Sistemas Electrónicos Interdisciplinaria
-##### (enfoque Ingeniería Biomédia, 1/2024)
-
-![FING](img/logo_fing.png?raw=true "FING")
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 1/2024
+##### enfoque Ingeniería Biomédia
 
 ## Página de la asignatura
 
