@@ -16,7 +16,11 @@ Electrónica Analógica
 
 ## Trabajos
 
-Espirometro
+[Espirometro](https://youtu.be/QbOlMsbF1qc?si=5pi-JBWxcQMdzdwz)
+
+El espirómetro es un instrumento de medida usado en medicina para determinar los volúmenes y capacidades del pulmón. Requiere que el paciente sople por un sistema de recogida de aire (por ejemplo un tubo), y luego realiza mediciones como por ejemplo el flujo espiratorio maximo (PEF - tipicamente en L/min) y el volúmen espiratorio forzado 1 (FEV1 - tipicamente en L). Las mediciones realizadas pueden ser insumo para que un profesional de la salud identifique o descarte ciertas enfermedades pulmonares, como asma, bronquitis y emfisema.
+
+![TX](../img/TX.png)
 
 Grupos de 3
 
@@ -27,11 +31,21 @@ Grupos de 3
 - $\therefore$
 - $ \implies $
 - $\iff$
-- $>>$
 - $ \forall $
 - $ | $
+- $>>$
 
 ## Revisión/Resúmen de Conceptos
+
+Teoría de Circuitos
+
+$$R_{series} = R_1 + R_2$$
+
+$$R_{paralelo} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2}}$$
+
+$$\sum{corrientes} = 0$$
+
+$$\sum{voltajes} = 0$$
 
 - Impedancia
 - BODE
@@ -45,15 +59,6 @@ Grupos de 3
 - Nyquist
 - Ley de Ohm
 
-Teoría de Circuitos
-
-$$R_{series} = R_1 + R_2$$
-
-$$R_{paralelo} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2}}$$
-
-$$\sum{corrientes} = 0$$
-
-$$\sum{voltajes} = 0$$
 
 ## Introducción al Laboratorio
 
