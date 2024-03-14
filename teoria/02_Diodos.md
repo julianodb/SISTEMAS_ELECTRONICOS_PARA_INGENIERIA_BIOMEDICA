@@ -35,11 +35,11 @@ La tensión de polarización en directa ($V_f$) es una constante para cada diodo
 
 ## Ejercicio
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_3R.png" width="200">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_3R.png" width="270">
 
 ## LEDs
 
-## [Trabajo 1](../teoria/T1.md)
+## [Trabajo 1](../trabajos/T1.md)
 
 ## Bibliografia
 
