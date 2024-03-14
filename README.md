@@ -6,7 +6,7 @@
 [uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=37566)
 
 ## Horário Teoría
-- Lunes: bloque 4 (L4: 13:45 - 15:05), sala ED804
+- Lunes: bloque 4 (L4: 13:45 - 15:05), sala DOC539 (patio de los perros)
 - Jueves: bloque 4 (J4: 13:45 - 15:05), sala ED804
 
 ## Horário Laboratório
