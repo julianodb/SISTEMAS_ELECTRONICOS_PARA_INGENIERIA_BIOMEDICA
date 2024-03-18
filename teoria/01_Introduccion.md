@@ -14,6 +14,9 @@ Electrónica Analógica
 
 [Texas Instruments Medical Applications](https://www.ti.com/applications/industrial/medical/overview.html)
 
+
+![TX](../img/01_aplicaciones3.png)
+
 ## Trabajos
 
 [Espirometro](https://youtu.be/QbOlMsbF1qc?si=5pi-JBWxcQMdzdwz)
