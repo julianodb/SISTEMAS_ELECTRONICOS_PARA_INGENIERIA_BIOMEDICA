@@ -2,7 +2,7 @@
 
 ## ejercicios con BJT
 
-- Calcular $V_C$, $V_E$, $I_B$, $I_C$ y $I_E$ si $V_{CC} = 10\ V$, $R_C=4.7\ k\omega$, $R_E=3.3\ k\omega$ y:
+- Calcular $V_C$, $V_E$, $I_B$, $I_C$ y $I_E$ si $V_{CC} = 10\ V$, $R_C=4.7\ k\Omega$, $R_E=3.3\ k\Omega$ y:
   - $\beta = 100$ y $V_i = 4\ V$ 
   - $\beta = 50$ y $V_i = 6\ V$
 
