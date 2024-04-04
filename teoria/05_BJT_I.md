@@ -3,6 +3,9 @@
 - Motivación
 - Transistores a grandes rasgos
 - Símbolo, nomenclatura y convenciones
+
+![npn](https://julianodb.github.io/electronic_circuits_diagrams/npn.png)
+
 - Ecuaciones del transistor bipolar NPN
 - El efecto de $V_{CE}$
 - Ejercícios
