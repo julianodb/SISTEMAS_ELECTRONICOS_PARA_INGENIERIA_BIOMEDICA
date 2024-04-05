@@ -1,12 +1,6 @@
 # Transistor de Unión Bipolar (BJT) III
 
-## ejercicios con BJT
-
-- Calcular $V_C$, $V_E$, $I_B$, $I_C$ y $I_E$ si $V_{CC} = 10\ V$, $R_C=4.7\ k\Omega$, $R_E=3.3\ k\Omega$ y:
-  - $\beta = 100$ y $V_i = 4\ V$ 
-  - $\beta = 50$ y $V_i = 6\ V$
-
-![npn_re_rc](https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc.png)
+- El efecto de $V_{CE}$
 
 ## Resúmen BJT: Modo de Saturación vs modo activo
 
@@ -21,6 +15,14 @@ $$I_C = \beta I_B $$
 $$V_{CE} = V_{CE_{SAT}}$$
 
 $$I_C = \beta_{forzado} I_B $$
+
+## ejercicios con BJT
+
+- Calcular $V_C$, $V_E$, $I_B$, $I_C$ y $I_E$ si $V_{CC} = 10\ V$, $R_C=4.7\ k\Omega$, $R_E=3.3\ k\Omega$ y:
+  - $\beta = 100$ y $V_i = 4\ V$ 
+  - $\beta = 50$ y $V_i = 6\ V$
+
+![npn_re_rc](https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc.png)
 
 ## $I_{C_{SAT}}$
 
@@ -38,8 +40,6 @@ Asumiendo $V_{LOW} < V_{BE}$ y $V_{HIGH} > V_{BE}$:
 2. Elegir $\beta_{forzado} < \beta$
 3. Calcular $I_B = \frac{I_{C_{Sat}}}{\beta_{forzado}}$
 4. Calcular $R_B = \frac{V_{HIGH} - V_{BE}}{I_B}$
-
-## Uso del BJT como amplificador (introducción)
 
 ## Bibliografia
 
