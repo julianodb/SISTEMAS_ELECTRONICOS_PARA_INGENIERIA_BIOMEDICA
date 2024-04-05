@@ -8,6 +8,22 @@
 
 - Ecuaciones del transistor bipolar NPN
 
+1. LKC
+   $$I_E = I_C + I_B$$
+1. BASE-EMISOR es un diodo:
+   $$ 
+   \left\{ 
+      \begin{array}{ c l }
+          \textrm{conduce }(I_B>0) & \quad \textrm{si } V_{BE} > V_f \\
+          \textrm{no conduce }(I_B=0)                 & \quad \textrm{si } V_{BE} \leq V_f
+      \end{array} 
+   \right.
+   $$
+1. (en modo activo ($V_{CE} > V_{CE_{SAT}}$)):
+   $$I_C = \beta I_B $$
+
+$\beta$ es una constante para cada transistor
+
 ## Bibliografia
 
 Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.)
