@@ -1,10 +1,10 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/01
 ## Guía Prueba Escrita 1
 
-1. El fabricante de cierto diodo asegura que el voltaje de polarización en directa está entre $V_F = 0.62\ V$ y $V_F = 0.72\ V$ cuando $I_F = 5\ mA$ y $T=25°C$. El rango de temperatura de operación indicado es entre -65 °C y +175 °C. Asumiendo que $I_S=0.05\ pA$ y $n=1$ y utlizando la ecuación de Shockley, compruebe: (1.5 pt)
-   1. Si el valor de $V_D$ a 25 °C con $I_F = 5\ mA$ realmente está dentro del rango indicado por el fabricante
-   1. En cuanto cambia $V_D$ si la temperatura es -65 °C ($I_F$ sigue siendo $5\ mA$).
-   1. En cuanto cambia $V_D$ si la temperatura es +175 °C ($I_F$ sigue siendo $5\ mA$).
+1. El fabricante de cierto diodo asegura que el voltaje de polarización en directa está entre $V_F = 0.62\ V$ y $V_F = 0.72\ V$ cuando $I_F = 10\ mA$ y $T=25°C$. El rango de temperatura de operación indicado es entre -65 °C y +175 °C. Asumiendo que $I_S=0.12\ pA$ y $n=1.1$ y utlizando la ecuación de Shockley, compruebe: (1.5 pt)
+   1. Si el valor de $V_D$ a 25 °C con $I_F = 10\ mA$ realmente está dentro del rango indicado por el fabricante
+   1. En cuanto cambia $V_D$ si la temperatura baja a -65 °C ($I_F$ sigue siendo $10\ mA$).
+   1. En cuanto cambia $V_D$ si la temperatura sube a +175 °C ($I_F$ sigue siendo $10\ mA$).
 
 2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 20\ V$, $R_1= 10\ k\Omega$, $R_2= 3.3\ k\Omega$, $R_C= 3.9\ k\Omega$, $R_E= 2\ k\Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
    1. La corriente de colector de polarización $I_{C_Q}$
