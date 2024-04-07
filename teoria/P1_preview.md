@@ -6,7 +6,7 @@
    1. En cuanto cambia $V_D$ si la temperatura baja a -65 °C ($I_F$ sigue siendo $10\ mA$).
    1. En cuanto cambia $V_D$ si la temperatura sube a +175 °C ($I_F$ sigue siendo $10\ mA$).
 
-2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 20\ V$, $R_B= 10\ k\Omega$, $R_C= 3.9\ k\Omega$, $R_E= 2\ k\Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
+2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 20\ V$, $R_B= 100\ k\Omega$, $R_C= 510\ \Omega$, $R_E= 100\ \Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
    1. La corriente de colector de polarización $I_{C_Q}$
    2. La ganancia de voltaje AC ($A_V$)
 
