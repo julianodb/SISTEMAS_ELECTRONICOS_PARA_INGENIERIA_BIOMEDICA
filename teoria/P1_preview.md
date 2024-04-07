@@ -1,42 +1,25 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2023/02
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/01
 ## Guía Prueba Escrita 1
 
-1. El fabricante de cierto diodo asegura que el voltaje de polarización en directa típico es $V_F = 0.7\ V$. Calcule el valor de $V_D$ utilizando la ecuación de Shockley para los siguientes valores de $I_D$ para comprobar qué tan "buena" es dicha aproximación. Para cada item, calcule también el porcentaje de error con respecto al $V_F$ dado por el fabricante. Suponga que $I_S=10\ pA$ y $n=1$. Suponga también que la temperatura es $T=300\ K$. (1.5 pt)
-   1. $I_D = 100\ mA$ 
-      > $V_D \approx 0.596\ V$
-      >
-      > error % $\approx -15$ %
-   1. $I_D = 1\ A$
-      > $V_D \approx 0.655\ V$
-      >
-      > error % $ \approx -6.4$ %
-   1. $I_D = 10\ A$
-      > $V_D \approx 0.715\ V$
-      >
-      > error % $\approx 2.1 $ %
+1. El fabricante de cierto diodo asegura que el voltaje de polarización en directa está entre $V_F = 0.62\ V$ y $V_F = 0.72\ V$ cuando $I_F = 5\ mA$ y $T=25°C$. El rango de temperatura de operación indicado es entre -65 °C y +175 °C. Asumiendo que $I_S=0.05\ pA$ y $n=1$ y utlizando la ecuación de Shockley, compruebe: (1.5 pt)
+   1. Si el valor de $V_D$ a 25 °C con $I_F = 5\ mA$ realmente está dentro del rango indicado por el fabricante
+   1. En cuanto cambia $V_D$ si la temperatura es -65 °C ($I_F$ sigue siendo $5\ mA$).
+   1. En cuanto cambia $V_D$ si la temperatura es +175 °C ($I_F$ sigue siendo $5\ mA$).
 
-1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=5\ V$, $R_E= 1\ k\Omega$, $R_C= 625\ \Omega$, $\beta = 100$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
-   1. $V_i = 0\ V$
-      > $I_C = 0$
-      >
-      > $V_{CE} = 5\ V$
-   1. $V_i = 2\ V$
-      > $I_C \approx 1.29\ mA$
-      >
-      > $V_{CE} \approx 2.9\ V$
-   1. $V_i = 5\ V$
-      > $I_C \approx 0.8\ mA$
-      >
-      > $\beta_{forzado} \approx 0.2$
-   
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc.png" width="150">
+2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 20\ V$, $R_1= 10\ k\Omega$, $R_2= 3.3\ k\Omega$, $R_C= 3.9\ k\Omega$, $R_E= 2\ k\Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
+   1. La corriente de colector de polarización $I_{C_Q}$
+   2. La ganancia de voltaje AC ($A_V$)
+
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter.png" width="300"> 
 
 # Fórmulas
+
 $$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
 $$ V_T = \frac{kT}{q}$$
 
 - $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
 - $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
+- $T$: Temperatura en Kelvin
 $$I_E = I_C + I_B$$
 - en modo activo ($V_{CE} > V_{CE_{SAT}}$):
 $$I_C = \beta I_B $$
