@@ -11,8 +11,9 @@
 
 2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 20\ V$, $R_B= 100\ k\Omega$, $R_C= 510\ \Omega$, $R_E= 100\ \Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
    1. La corriente de colector de polarización $I_{C_Q}$
-      > 
+      > $I_{C_Q} \approx 17.5\ mA$
    2. La ganancia de voltaje AC ($A_V$)
+      > $A_V \approx -5$
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_base_polarized.png" width="300"> 
 
