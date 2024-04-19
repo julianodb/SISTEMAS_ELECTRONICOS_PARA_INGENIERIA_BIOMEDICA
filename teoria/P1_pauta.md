@@ -1,9 +1,9 @@
-# Sistemas Electrónicos 2023/01
+# Sistemas Electrónicos 2024/01
 ## Prueba Escrita 1 - Pauta
 
 > En general, por errores de cálculo se descuenta 0.05pt, y por errores conceptuales o en la aplicación de fórmulas 0.1pt.
 
-1. El fabricante de cierto diodo asegura que el voltaje de polarización en directa típico es $V_F = 0.7\ V$. Calcule el valor de $V_D$ utilizando la ecuación de Shockley para los siguientes valores de $I_D$ para comprobar qué tan "buena" es dicha aproximación. Para cada item, calcule también el porcentaje de error con respecto al $V_F$ dado por el fabricante. Suponga que $I_S=1\ pA$ y $n=1$. Suponga también que la temperatura es $T=300\ K$. (1.5 pt)
+1. El fabricante de cierto diodo asegura que el voltaje de polarización en directa está entre $V_F = 0.62\ V$ y $V_F = 0.72\ V$ cuando $I_F = 5\ mA$ y $T=25°C$. El rango de temperatura de operación indicado es entre -65 °C y +175 °C. Asumiendo que $I_S=0.05\ pA$ y $n=1$ y utlizando la ecuación de Shockley, compruebe: (1.5 pt)
    > $ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $
    >
    > $ \frac{I_D}{I_S} + 1 = e^{\frac{V_D}{n V_T}} $
@@ -14,36 +14,43 @@
    >
    > Además,
    >
-   > $ V_T = \frac{kT}{q} $
-   >
-   > $ V_T = \frac{1.38\ 10^{-23}\ 300}{1.6\ 10^{-19}} \approx 0.026\ V$ 
-
-   1. $I_D = 15\ mA$ *(0.5 pt)*
-
+   > $ V_T = \frac{kT}{q} $ 
+   1. Si el valor de $V_D$ a 25 °C con $I_F = 5\ mA$ realmente está dentro del rango indicado por el fabricante
+      > $T = 273 + 25 = 298\ K$
+      >
+      > $ V_T = \frac{1.38\ 10^{-23}\ 298}{1.6\ 10^{-19}} $
+      >
+      > $ V_T \approx 0.0257\ V $ (+0.2pt)
+      >
       > $ V_D = n V_T\ln (\frac{I_D}{I_S} + 1)  $ 
       >
-      > $ V_D = 0.026 \ln (\frac{0.015}{10^{-12}} + 1)  \approx 0.606\ V $ (+0.3pt)
+      > $ V_D = 0.0257 \ln (\frac{0.005}{0.05*10^{-12}} + 1)  \approx 0.650\ V $ (+0.3pt)
       >
-      > $Porcentaje\ de\ error\ con\ respecto\ a\ V_F = 100 \frac{0.606 - 0.7}{0.7} \approx -13$ % (+0.2pt)
+      > El valor de $V_D$ está dentro del rango indicado por el fabricante
       >
       > Se aceptan otras respuestas dependiendo del número de casas decimales utilizado en los cálculos
-   1. $I_D = 150\ mA$
-
+   1. En cuanto cambia $V_D$ si la temperatura baja a -65 °C ($I_F$ sigue siendo $5\ mA$).
+      > $T = 273 -65 = 208\ K$
+      >
+      > $ V_T = \frac{1.38\ 10^{-23}\ 208}{1.6\ 10^{-19}} $
+      >
+      > $ V_T \approx 0.0179\ V $ (+0.2pt)
+      >
       > $ V_D = n V_T\ln (\frac{I_D}{I_S} + 1)  $ 
       >
-      > $ V_D = 0.026 \ln (\frac{0.15}{10^{-12}} + 1)  \approx 0.666 V $ (+0.3pt)
-      >
-      > $Porcentaje\ de\ error\ con\ respecto\ a\ V_F = 100 \frac{0.666 - 0.7}{0.7} \approx -4.9$ % (+0.2pt)
+      > $ V_D = 0.0179 \ln (\frac{0.005}{0.05*10^{-12}} + 1)  \approx 0.450\ V $ (+0.3pt)
       >
       > Se aceptan otras respuestas dependiendo del número de casas decimales utilizado en los cálculos
-
-   1. $I_D = 1.5\ A$
-
+   1. En cuanto cambia $V_D$ si la temperatura sube a +175 °C ($I_F$ sigue siendo $5\ mA$).
+      > $T = 273 +175 = 448\ K$
+      >
+      > $ V_T = \frac{1.38\ 10^{-23}\ 448}{1.6\ 10^{-19}} $
+      >
+      > $ V_T \approx 0.0386\ V $ (+0.2pt)
+      >
       > $ V_D = n V_T\ln (\frac{I_D}{I_S} + 1)  $ 
       >
-      > $ V_D = 0.026 \ln (\frac{1.5}{10^{-12}} + 1)  \approx 0.725\ V $ (+0.3pt)
-      >
-      > $Porcentaje\ de\ error\ con\ respecto\ a\ V_F = 100 \frac{0.725 - 0.7}{0.7} \approx 3.6$ % (+0.2pt)
+      > $ V_D = 0.0386 \ln (\frac{0.005}{0.05*10^{-12}} + 1)  \approx 0.980\ V $ (+0.3pt)
       >
       > Se aceptan otras respuestas dependiendo del número de casas decimales utilizado en los cálculos
 
