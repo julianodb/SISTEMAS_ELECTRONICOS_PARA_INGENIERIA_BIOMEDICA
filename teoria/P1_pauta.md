@@ -56,78 +56,81 @@
 
 1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = 0.7\ V$ cuando los diodos están polarizados en directa y $I_D=0$ cuando están polarizados en inversa, resuelva los siguientes circuitos (1.5 pt):
    
-   1. Datos: $V_{CC}=5\ V$, $R=1\ k\Omega$ *(0.75pt)*
+   1. Datos: $V_{CC}=10\ V$, $R_1=5.1\ k\Omega$, $R_2=10\ k\Omega$ (0.75pt)
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_resistor_diode.png" width="150">
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_alt.png" width="350">
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_resistor_diode_with_currents.png" width="150">
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_alt_with_currents.png" width="350">
       >
-      > $D$ está polarizado en directa => conduce y $V_{D} = 0.7\ V$ (+0.25pt)
+      > Si se remueve $D_1$ del circuito, se llega a que $V_{D_1} = V_{CC} = 10\ V$. Pero si $V_{D_1} > 0.7$ significa que conduce. Por lo tanto  $D_1$ está polarizado en directa => conduce y $V_{D} = 0.7\ V$ (+0.1pt)
       >
-      > Si se asume que $D$ no conduce, se llega a que $V_{D} = 5\ V$. Pero si $V_{D} > 0.7$ significa que conduce => contradicción. Por lo tanto  $D$ está polarizado en directa => conduce y $V_{D} = 0.7\ V$
+      > De manera similar, si se remueve $D_2$ del circuito, se llega a que $V_{D_2} \approx 6.4\ V$. Pero si $V_{D_2} > 0.7$ significa que conduce. Por lo tanto  $D_2$ está polarizado en directa => conduce y $V_{D_2} = 0.7\ V$ (+0.15pt)
       >
-      > LKV en la malla:
+      > Como $V_{D_1}$ conduce, $V_1 = 0.7\ V$ (+0.1pt)
       >
-      > $ V_{CC} - R I - V_D = 0$ (+0.25pt)
+      > Como $V_{D_2}$ conduce, $V_2 = V_1+ 0.7 = 1.4 \ V$ (+0.1pt)
       >
-      > $ I = \frac{V_{CC}-V_D}{R} = \frac{5-0.7}{1000} $
+      > Ley de Ohm en $R_2$:
       >
-      > $ I = 4.3\ mA$ (+0.25pt)
+      > $V_2 - V_1 = R_2 I_{R_2}$ (+0.1pt)
+      >
+      > $1.4 - 0.7 = 10000 I_{R_2} $
+      >
+      > $\therefore I_{R_2} = 0.7 / 10000 = 70\ \mu A$ 
+      >
+      > Ley de Ohm en $R_1$:
+      >
+      > $V_{CC} - V_2 = R_1 I_{R_1}$ (+0.1pt)
+      >
+      > $10 - 1.4 = 5100 I_{R_1} $
+      >
+      > $\therefore I_{R_1} = 8.6 / 5100 \approx 1.7\ m A$
+      >
+      > Además, $I_{D_1} = I_{D_2} + I_{R_2} = I_{R_1} \approx 1.7\ m A$ (+0.1pt)
+      >
+      > Finalmente, $I_{D_2} = I_{R_1} - I_{R_2} \approx 1.6\ m A$ (+0.1pt)
+      >
+      > En resúmen:
+      > - $V_1 = 0.7\ V$
+      > - $V_2 = 1.4\ V$
+      > - $I_{R_1} = I_{D_1} \approx 1.7\ m A$
+      > - $I_{R_2} \approx 1.6\ m A$
+      > - $I_{D_2} \approx 70\ \mu A$
    
-   1. Datos: $V_{CC}=5\ V$, $R_1=1\ k\Omega$, $R_2=1\ k\Omega$ *(0.75pt)*
+   1. Datos: $V_{CC}=5\ V$, $R_3=6.8\ k\Omega$, $R_4=4.7\ k\Omega$, $R_5=3.3\ k\Omega$ (0.75pt)
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R.png" width="220"> 
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_3R.png" width="300">
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_with_currents.png" width="220">
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_3R_with_currents.png" width="300">
       >
-      > $D_1$ está polarizado en directa => conduce. Si se asume lo contrario se llegaría a que $V_{D_1} = 5\ V$. Pero si $V_{D_1} > 0.7$ significa que conduce => contradicción. Por lo tanto $D_1$ está polarizado en directa => conduce y $V_{D_1} = 0.7\ V$ (+0.075pt)
+      > Si se remueven $D_2$ y $D_3$ del circuito, se puede mostrar que $V_{D_2} = V_{CC} = 5\ V$ y $V_{D_3} = - V_{CC} = - 5\ V$. Por lo tanto, $D_2$ está polarizado en directa => conduce y $V_{D_2} = 0.7\ V$ (+0.1pt), y $D_3$ está polarizado en inversa => no conduce y $I_4 = 0$. (+0.1pt)
       >
-      > $D_2$ está polarizado en directa => conduce y $V_{D_2} = 0.7\ V$. Si se asume que $D_2$ no conduce, se llega a que $V_2 = 4.3\ V$ y $V_1 = 2.15\ V$ $\implies V_{D_2} = 2.15\ V$. Pero si $V_{D_2} > 0.7$ significa que conduce => contradicción. Por lo tanto $D_2$ está polarizado en directa => conduce y $V_{D_2} = 0.7\ V$ (+0.075pt)
+      > Como $D_2$ está polarizado en directa, $V_3 = V_{CC} - V_{D_2} = 5 - 0.7 = 4.3\ V$ (+0.1pt)
       >
-      > $V_2 = V_{CC} - V_{D_1} = 5 - 0.7 = 4.3\ V$
+      > Como $I_4 = 0$, $R_3$ y $R_5$ forman un divisor de voltaje. Por lo tanto:
       >
-      > $V_1 = V_2 - V_{D_2} = 4.3 - 0.7 = 3.6\ V$
+      > $V_5 = \frac{R_5}{R_3+R_5} V_3 = \frac{3.3}{6.8+3.3} 4.3 \approx 1.4\ V $ (+0.15pt)
       >
-      > $I_{R_1} = \frac{V_1 - 0}{R_1} = 3.6/1000 = 3.6\ mA$
+      > Además, como $I_4 = 0$, $V_{R_4} = 0 \implies V_4 = V_5 \approx 1.4\ V$ (+0.1pt)
       >
-      > $I_{R_2} = \frac{V_2 - V_1}{R_2} = 0.7/1000 = 0.7\ mA$
+      > Con respecto a la corriente:
       >
-      > LKC en $V_1$:
+      > $I_3 = I_5 = \frac{V_3}{R_3+R_5} = \frac{4.3}{10100} \approx 430\ \mu A$ (+0.2pt)
       >
-      > $I_{D_2} + I_{R_2} - I_{R_1} = 0 $
-      >
-      > $I_{D_2} + 0.0007 - 0.0036 = 0 $
-      >
-      > $I_{D_2} = 0.0029 = 2.9\ mA $
-      >
-      > LKC en $V_2$:
-      >
-      > $I_{D_1} - I_{R_2} - I_{D_2} = 0 $
-      >
-      > $I_{D_1} - 0.0007 - 0.0029 = 0 $
-      >
-      > $I_{D_1} = 0.0036 = 3.6\ mA $
-      >
-      > Resultados
-      >
-      > $V_1 = 3.6\ V$ (+0.1pt)
-      >
-      > $V_2 = 4.3\ V$ (+0.1pt)
-      >
-      > $I_{R_1} = 3.6\ mA$ (+0.1pt)
-      >
-      > $I_{R_2} =  0.7\ mA$ (+0.1pt)
-      >
-      > $I_{D_1} = 3.6\ mA $ (+0.1pt)
-      >
-      > $I_{D_2} = 2.9\ mA $ (+0.1pt)
-      >
+      > En resúmen:
+      > - $V_3 = 4.3\ V$
+      > - $V_4 = V_5 \approx 1.4\ V$
+      > - $I_4 = 0$
+      > - $I_3 = I_5 \approx 430\ \mu A$
 
-1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=12\ V$, $R_E= 5.6\ k\Omega$, $R_C= 1.2\ k\Omega$, $\beta = 50$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
+1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=10\ V$, $R_B= 1.2\ k\Omega$, $R_E= 4.7\ k\Omega$, $R_C= 3.3\ k\Omega$, $\beta = 50$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
+   1. $V_i = 0.2\ V$
+   1. $V_i = 4\ V$
+   1. $V_i = 8\ V$
    
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc.png" width="200">
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc_rb.png" width="200">
       
-      > Considerando $I_B$ e $I_C$ con sus sentidos convencionales.
+      > Considerando $I_B$, $I_C$ e $I_E$ con sus sentidos convencionales.
 
    1. $V_i = 0.3\ V$ *(0.5pt)*
 
@@ -306,12 +309,12 @@
 
 # Fórmulas
 
-$$ Porcentaje\ de\ error\ con\ respecto\ a\ X = 100 \frac{Valor\ Real - X}{X} $$
 $$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
 $$ V_T = \frac{kT}{q}$$
 
 - $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
 - $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
+- $T$: Temperatura en Kelvin
 $$I_E = I_C + I_B$$
 - en modo activo ($V_{CE} > V_{CE_{SAT}}$):
 $$I_C = \beta I_B $$
