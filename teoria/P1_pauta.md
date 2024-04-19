@@ -240,82 +240,78 @@
       >
       > $\beta_{forzado} = I_C / I_B = 1\ mA / 0.67\ mA \approx 1.5$. Como $0 <\beta_{forzado} < \beta$, se confirma que el transistor está operando en el modo saturado.
 
-2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 20\ V$, $R_1= 10\ k\Omega$, $R_2= 3.3\ k\Omega$, $R_C= 3.9\ k\Omega$, $R_E= 2\ k\Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
+2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 10\ V$, $R_B= 1\ M\Omega$, $R_C= 5.1\ k\Omega$, $R_E= 100\ \Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter.png" width="300"> 
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_base_polarized_no_ce.png" width="300"> 
 
    1. La corriente de colector de polarización $I_{C_Q}$ *(0.75pt)*
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_thevenin.png" width="300"> 
+      > Malla Base-Emissor (+0.35pt)
       >
-      > Cálculo del circuito equivalente de Thevenin
+      > $V_{CC} - R_{B} I_B - V_{BE} - R_E I_E = 0$
       >
-      > $V_{th} = \frac{R_2}{R_1 + R_2} V_{CC}$ (+0.2pt)
+      > Asumiendo modo activo (+0.1pt),
       >
-      > $V_{th} = \frac{3300}{10000 + 3300} 20$
+      > $I_E = (\beta + 1) I_B$
       >
-      > $V_{th} \approx 4.96\ V$
+      > $\therefore V_{CC} - R_{B} I_B - V_{BE} - R_E (\beta + 1) I_B = 0$
       >
-      > $R_{th} = R_1 // R_2$ (+0.2pt)
+      > $I_B = \frac{V_{CC}  - V_{BE}}{R_{B} + (\beta + 1) R_E}$
       >
-      > $R_{th} = \frac{R_1 R_2}{R_1 + R_2}$
+      > $I_B = \frac{10  - 0.7}{1000000 + 101 * 100}$
       >
-      > $R_{th} = \frac{10000*3300}{10000 + 3300}$
+      > $I_B \approx 9.2\ \mu A$
       >
-      > $R_{th} \approx 2.5\ k\Omega$
-      >
-      > Malla Base-Emissor (+0.25pt)
-      >
-      > $V_{th} - R_{th} I_B - V_{BE} - R_E I_E = 0$
-      >
-      > Usando $I_E = (\beta + 1) I_B$:
-      >
-      > $V_{th} - R_{th} I_B - V_{BE} - R_E (\beta + 1) I_B = 0$
-      >
-      > $I_B = \frac{V_{th}  - V_{BE}}{R_{th} + (\beta + 1) R_E}$
-      >
-      > Usando $V_{BE} = 0.7\ V$ y los valores de $V_{th}$ y $R_{th}$
-      >
-      > $I_B = \frac{4.96  - 0.7}{2500 + 101 * 2000}$
-      >
-      > $I_B \approx 21\ \mu A$
-      >
-      > Asumiendo modo activo
+      > Para la corriente de colector (+0.1pt):
       >
       > $I_{C_Q} = \beta I_B$
       >
-      > $I_{C_Q} = 100 * 21\ \mu A$
+      > $I_{C_Q} = 100 * 9.2\ \mu A$
       >
-      > $I_{C_Q} \approx 2.1\ mA$
+      > $I_{C_Q} = 920\ \mu A$
       >
-      > Comprobación de modo activo (+0.1pt)
+      > Comprobación de modo activo 
       >
-      > $V_{C_Q} = V_{CC} - R_C I_{C_Q} $
+      > $V_{C} = V_{CC} - R_C I_{C_Q} $ (+0.1pt)
       >
-      > $V_{C_Q} = 20 - 3900 * 0.0021 $
+      > $V_{C} = 10 - 5100 * 0.00092 $
       >
-      > $V_{C_Q} \approx 11.8\ V$.
+      > $V_{C} \approx 5.3\ V$.
       >
-      > $V_{E} = R_E I_{E} = R_E (\beta + 1) I_B$
+      > $V_{E} = R_E I_{E} = R_E (\beta + 1) I_B$ (+0.1pt)
       >
-      > $V_{E} = 2000 * 101 * 0.000021$
+      > $V_{E} = 100 * 101 * 0.0000092$
       >
-      > $V_{E} \approx 4.2\ V$
+      > $V_{E} \approx 0.093\ V$
       >
-      > $V_{CE} = V_{C_Q} - V_E$
+      > $V_{CE} = V_{C} - V_E$
       >
-      > $V_{CE} = 11.8 - 4.2 = 7.6\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo. 
-   2. La ganancia de voltaje $A_V$ *(0.75pt)*
+      > $V_{CE} = 5.3 - 0.093 \approx 5.2\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo. 
+   2. La ganancia de voltaje AC $A_V$ *(0.75pt)*
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_small_signal.png" width="300"> 
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_with_re_small_signal.png" width="300"> 
       >
       > Dibujo del circuito equivalente en AC (+0.25pt)
       >
-      > Malla de la base (+0.15pt)
+      > Aplicando LKC en el emisor:
       >
-      > $v_{i_{AC}} - r_\pi i_{B_{AC}} = 0$
+      > $i_{E_{AC}} = i_{B_{AC}} + i_{C_{AC}}$
       >
-      > $ v_{i_{AC}} = r_\pi i_{B_{AC}}$ (1)
+      > Y, asumiendo modo activo (comprobado en analisis DC):
+      >
+      > $i_{E_{AC}} = i_{B_{AC}} + \beta i_{B_{AC}}$
+      >
+      > $i_{E_{AC}} = (\beta + 1) i_{B_{AC}}$
+      >
+      > Malla base-emisor (+0.15pt)
+      >
+      > $v_{i_{AC}} - r_\pi i_{B_{AC}} - R_E i_{E_{AC}} = 0$
+      >
+      > $v_{i_{AC}} - r_\pi i_{B_{AC}} - R_E (\beta + 1) i_{B_{AC}} = 0$
+      >
+      > $v_{i_{AC}} - (r_\pi + (\beta + 1) R_E) i_{B_{AC}} = 0$
+      >
+      > $v_{i_{AC}} = (r_\pi + (\beta + 1) R_E) i_{B_{AC}}$ (1)
       >
       > Malla del colector (+0.1pt)
       >
@@ -323,29 +319,23 @@
       >
       > $v_{o_{AC}} = - R_C i_{C_{AC}}$
       >
-      > Asumiendo modo activo (comprobado en analisis DC)
-      >
       > $v_{o_{AC}} = - R_C \beta i_{B_{AC}}$ (2)
       >
-      > Definición de la ganancia de voltaje (+0.25pt)
+      > Finalmente, para encontrar la ganancia de voltaje AC: (+0.25pt)
       >
       > $A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$
       >
       > Usando (1) y (2)
       >
-      > $A_V = \frac{- R_C \beta i_{B_{AC}}}{r_\pi i_{B_{AC}}}$
+      > $A_V = \frac{- R_C \beta i_{B_{AC}}}{(r_\pi + (\beta + 1) R_E) i_{B_{AC}}}$
       >
-      > $\implies A_V = \frac{- R_C \beta }{r_\pi}$
+      > $\implies A_V = \frac{- R_C \beta }{r_\pi + (\beta + 1) R_E}$
       >
-      > Utilizando la fórumla de $r_\pi$
+      > Utilizando $r_{\pi} = \frac{\beta V_T}{I_{C_Q}} = \frac{100* 0.026}{0.00092} \approx 2.8\ k\Omega$
       >
-      > $A_V = \frac{- R_C \beta I_{C_Q} }{\beta V_T}$
+      > $A_V = \frac{- 5100\ 100 }{2800 + (101) 100}$
       >
-      > $A_V = \frac{- R_C I_{C_Q} }{V_T}$
-      >
-      > $A_V = \frac{- 3900 * 0.0021 }{0.026}$
-      >
-      > $A_V \approx -315$
+      > $A_V \approx -40$
       
 
 # Fórmulas
