@@ -124,34 +124,45 @@
       > - $I_3 = I_5 \approx 430\ \mu A$
 
 1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=10\ V$, $R_B= 1.2\ k\Omega$, $R_E= 4.7\ k\Omega$, $R_C= 3.3\ k\Omega$, $\beta = 50$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
-   1. $V_i = 0.2\ V$
-   1. $V_i = 4\ V$
-   1. $V_i = 8\ V$
    
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc_rb.png" width="200">
       
       > Considerando $I_B$, $I_C$ e $I_E$ con sus sentidos convencionales.
 
-   1. $V_i = 0.3\ V$ *(0.5pt)*
+   1. $V_i = 0.2\ V$ *(0.5pt)*
 
-      > $V_i = 0.3 \implies V_B = 0.3 \implies V_{BE} < 0.7 \implies I_B = 0$ (+0.2pt)
+      > Si se remueve el diodo $V_{BE}$ del circuito se llega a que $V_{BE} = 0.2 < 0.7$, lo que implica que la unión base-emisor está polarizada en inversa y, por lo tanto,$ I_B = 0$ (+0.2pt)
       >
       > $I_B = 0 \implies I_C = 0$ (+0.2pt)
       >
-      > $V_{CE} = V_{CC} - R_C I_C - R_E I_E = 12 - 0 - 0 = 12\ V > V_{CE_{SAT}}$ (+0.1pt)
-   1. $V_i = 6\ V$ *(0.5pt)*
+      > $V_{CE} = V_{CC} - R_C I_C - R_E I_E = 10 - 0 - 0 = 10\ V > V_{CE_{SAT}}$ (+0.1pt)
+   1. $V_i = 4\ V$ *(0.5pt)*
       
-      > base-emisor polarizado en directa $\implies V_{BE} = 0.7\ V$
+      > Si se remueve el diodo $V_{BE}$ del circuito se llega a que $V_{BE} = 4 > 0.7$, lo que implica que la unión base-emisor está polarizada en directa $\implies V_{BE} = 0.7\ V$
       >
-      > $V_E = V_i - V_{BE} = 6 - 0.7 = 5.3\ V$ (+0.1pt)
+      > Si se asume que el transistor está saturado, podemos escribir todos los voltajes con respecto a $V_E$:
       >
-      > Resistencia $R_E$
+      > $V_B = V_E + V_{BE}$
       >
-      > $R_E I_E  = V_E$
+      > $V_C = V_E +  V_{CE_{SAT}}$
       >
-      > $ I_E  = V_E / R_E = 5.3 / 5600 \approx 0.95\ mA$ (+0.1pt)
+      > Luego, aplicando LKC en el transistor:
       >
-      > Si se asume que el transistor está saturado se llega a $I_C \approx 5.4\ mA$. Pero, en dicho caso $I_B = I_E - I_C = -4.45\ mA$, y por lo tanto $\beta_{forzado} = I_C / I_B \approx -4.7$ es menor que cero. Por lo tanto, no está saturado.
+      > $I_C + I_B = I_E$
+      >
+      > $\frac{V_{CC} - V_C}{R_C} + \frac{V_i-V_B}{R_B} = \frac{V_E}{R_E}$
+      >
+      > $\frac{V_{CC} - (V_E + V_{CE_{SAT}})}{R_C} + \frac{V_i-(V_E+V_{BE})}{R_B} = \frac{V_E}{R_E}$
+      >
+      > $R_E R_B V_{CC} - R_E R_B V_E - R_E R_B V_{CE_{SAT}} + R_E R_C V_i - R_E R_C V_E - R_E R_C V_{BE} = R_B R_C V_E$
+      > 
+      > $R_E R_B V_{CC} - R_E R_B V_{CE_{SAT}} + R_E R_C V_i  - R_E R_C V_{BE} = R_B R_C V_E + R_E R_B V_E + R_E R_C V_E$
+      >
+      > $V_E = \frac{R_E R_B (V_{CC} - V_{CE_{SAT}}) + R_E R_C (V_i  -V_{BE})}{R_B R_C  + R_E R_B  + R_E R_C }$
+      >
+      > $V_E = \frac{4700\ 1200 (10 - 0.2) + 4700\ 3300 (4  -0.7)}{1200\ 3300  + 4700\ 1200  + 4700\ 3300 } = \frac{47\ 12 \ 8.8 + 47\ 33\ 3.3}{12\ 33  + 47\ 12  + 47\ 33 } \approx 4\ V $
+      >
+      > Pero si $V_E = 4\ V$, $V_B = 4.7\ V$ y la corriente $I_B$ es negativa ! Contradicción => no está saturado
       >
       > Assumiendo que el transistor está en modo *activo*: (+0.1pt)
       >
@@ -161,43 +172,73 @@
       >
       > $I_E = \beta I_B + I_B = (1+\beta) I_B$
       >
-      > $I_B = I_E / (1 + \beta) = 0.00095 / 51 \approx 0.019\ mA$
+      > LKV en la malla base-emisor (+0.1pt):
       >
-      > $I_C = I_E - I_B = 0.95 - 0.019 \approx 0.93\ mA$ (+0.1pt)
+      > $V_i - R_B I_B - V_{BE} - R_E I_E = 0$
       >
-      > Comprobación del modo activo: Resistor $R_C$: (+0.1pt)
+      > $V_i - R_B I_B - V_{BE} - R_E (1+\beta) I_B = 0$
       >
-      > $R_C I_C  = V_{CC} - V_C$
+      > $I_B = \frac{V_i - V_{BE}}{R_B + R_E (1+\beta)}= \frac{4 - 0.7}{1200 + 4700 (1+50)} = \frac{3.3}{240900}$
       >
-      > $V_C = V_{CC} - R_C I_C = 12 - 1200 * 0.00093 \approx 10.9\ V$
+      > $I_B \approx 13.7\ \mu A$ 
       >
-      > $V_{CE} = V_C - V_E = 10.9 - 5.3 = 5.6\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo.
+      > $I_C = \beta I_B \approx 685\ \mu A$ (+0.1pt)
+      >
+      > Comprobación del modo activo (+0.2pt):
+      >
+      > $V_E = R_E I_E = R_E (I_C + I_B) \approx 3.3\ V$ 
+      >
+      > $V_{CC} - V_C = R_C I_C$
+      >
+      > $V_C = V_{CC} - R_C I_C \approx 7.7\ V$
+      >
+      > $V_{CE} = V_C - V_E = 7.7 - 3.3 = 4.4\ V$. Como $V_{CE} > V_{CE_{SAT}}$, se confirma que el transistor está en el modo activo.
 
-   1. $V_i = 11\ V$ *(0.5pt)*
+   1. $V_i = 8\ V$ *(0.5pt)*
    
-      > base-emisor polarizado en directa $\implies V_{BE} = 0.7\ V$
+      > Si se remueve el diodo $V_{BE}$ del circuito se llega a que $V_{BE} = 8 > 0.7$, lo que implica que la unión base-emisor está polarizada en directa $\implies V_{BE} = 0.7\ V$
       >
-      > $V_E = V_i - V_{BE} = 11 - 0.7 = 10.3\ V$ (+0.1pt)
+      > Si se asume que el transistor está activo:
       >
-      > Resistencia $R_E$
+      > $I_B = \frac{V_i - V_{BE}}{R_B + R_E (1+\beta)}= \frac{8 - 0.7}{1200 + 4700 (1+50)} = \frac{7.3}{240900} \approx 30\ \mu A$
       >
-      > $R_E I_E  = V_E$
+      > $V_E = R_E I_E = R_E (\beta +1) I_B \approx 7.3\ V$
       >
-      > $ I_E  = V_E / R_E = 10.3 / 5600 \approx 1.8\ mA$ (+0.1pt)
+      > $V_C = V_{CC} - R_C I_C = V_{CC} - R_C \beta I_B = 5 \ V$
       >
-      > Si se asume que el transistor está activo, se llega a $I_C \approx 1.76\ mA$. Pero, en dicho caso $V_{CE} = V_{CC} - R_C I_C - V_E= 12 - 1200 * 0.00176 - 10.3  \approx -0.4\ V$, que es menor que $V_{CE_{SAT}}$. Por lo tanto, no está activo.
+      > $V_{CE} = 5 - 7.3 = -2.3\ V < V_{CE_{SAT}}$. Por lo tanto, no está activo.
       >
-      > Assumiendo que el transistor está en modo *saturado*: (+0.1pt)
+      > Assumiendo que el transistor está en modo *saturado* (+0.1pt), podemos escribir todos los voltajes con respecto a $V_E$ (+0.1pt):
       >
-      > $V_C = V_E + V_{CE_{SAT}} = 10.3 + 0.2 = 10.5\ V$
+      > $V_B = V_E + V_{BE}$
       >
-      > $I_C = \frac{V_{CC}-V_C}{R_C} = \frac{12-10.5}{1200} = 1.25\ mA $ (+0.1pt)
+      > $V_C = V_E +  V_{CE_{SAT}}$
+      >
+      > Luego, aplicando LKC en el transistor (+0.1pt):
+      >
+      > $I_C + I_B = I_E$
+      >
+      > $\frac{V_{CC} - V_C}{R_C} + \frac{V_i-V_B}{R_B} = \frac{V_E}{R_E}$ 
+      >
+      > $\frac{V_{CC} - (V_E + V_{CE_{SAT}})}{R_C} + \frac{V_i-(V_E+V_{BE})}{R_B} = \frac{V_E}{R_E}$
+      >
+      > $V_E = \frac{R_E R_B (V_{CC} - V_{CE_{SAT}}) + R_E R_C (V_i  -V_{BE})}{R_B R_C  + R_E R_B  + R_E R_C }$ 
+      > 
+      > $V_E = \frac{4700\ 1200 (10 - 0.2) + 4700\ 3300 (8  -0.7)}{1200\ 3300  + 4700\ 1200  + 4700\ 3300 } = \frac{47\ 12 \ 8.8 + 47\ 33\ 7.3}{12\ 33  + 47\ 12  + 47\ 33 } \approx 6.5\ V $
+      >
+      > $V_C = V_E +  V_{CE_{SAT}} = 6.7\ V$
+      >
+      > $V_{CC} - V_C = R_C I_C \implies I_C = \frac{V_{CC}-V_C}{R_C}$ (+0.1pt)
+      >
+      > $I_C = \frac{10-6.7}{3300} = 1\ m A$ 
       >
       > Comprobación de $\beta_{forzado}$: (+0.1pt)
       >
-      > $I_B = I_E - I_C = 1.8 - 1.25 = 0.55\ mA$
+      > $V_B = V_E + V_{BE} = 7.2\ V$
       >
-      > $\beta_{forzado} = I_C / I_B = 1.25\ mA / 0.55\ mA \approx 2.3$. Como $0 <\beta_{forzado} < \beta$, se confirma que el transistor está operando en el modo saturado.
+      > $I_B = \frac{V_i-V_B}{R_B} = \frac{0.8}{1200} \approx 670\ \mu A$
+      >
+      > $\beta_{forzado} = I_C / I_B = 1\ mA / 0.67\ mA \approx 1.5$. Como $0 <\beta_{forzado} < \beta$, se confirma que el transistor está operando en el modo saturado.
 
 2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 20\ V$, $R_1= 10\ k\Omega$, $R_2= 3.3\ k\Omega$, $R_C= 3.9\ k\Omega$, $R_E= 2\ k\Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
 
