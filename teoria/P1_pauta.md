@@ -94,8 +94,8 @@
       > - $V_1 = 0.7\ V$
       > - $V_2 = 1.4\ V$
       > - $I_{R_1} = I_{D_1} \approx 1.7\ m A$
-      > - $I_{R_2} \approx 1.6\ m A$
-      > - $I_{D_2} \approx 70\ \mu A$
+      > - $I_{D_2} \approx 1.6\ m A$
+      > - $I_{R_2} \approx 70\ \mu A$
    
    1. Datos: $V_{CC}=5\ V$, $R_3=6.8\ k\Omega$, $R_4=4.7\ k\Omega$, $R_5=3.3\ k\Omega$ (0.75pt)
 
