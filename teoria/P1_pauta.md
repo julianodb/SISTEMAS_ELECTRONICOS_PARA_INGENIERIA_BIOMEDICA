@@ -297,7 +297,7 @@
       >
       > $i_{E_{AC}} = i_{B_{AC}} + i_{C_{AC}}$
       >
-      > Y, asumiendo modo activo (comprobado en analisis DC):
+      > Asumiendo modo activo (comprobado en analisis DC):
       >
       > $i_{E_{AC}} = i_{B_{AC}} + \beta i_{B_{AC}}$
       >
