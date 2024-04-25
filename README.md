@@ -7,7 +7,7 @@
 
 ## Horário Teoría
 - Lunes: bloque 4 (L4: 13:45 - 15:05), sala DOC539 (patio de los perros)
-- Jueves: bloque 4 (J4: 13:45 - 15:05), sala ED804
+- Jueves: bloque 4 (J4: 13:45 - 15:05), laboratorios de docencia de biomedica
 
 ## Horário Laboratório
 - Lunes, bloque 5 (L5: 15:20 - 16:40), laboratorios de docencia de biomedica
