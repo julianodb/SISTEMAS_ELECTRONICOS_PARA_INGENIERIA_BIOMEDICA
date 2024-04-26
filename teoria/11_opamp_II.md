@@ -1,4 +1,4 @@
-# 10 - Circuitos con Amplificador Operacional
+# Circuitos con Amplificador Operacional: DC
 
 ## capítulos del libro
 - Capítulo 10
