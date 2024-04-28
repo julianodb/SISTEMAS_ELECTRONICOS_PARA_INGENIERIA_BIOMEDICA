@@ -1,5 +1,21 @@
 # Amplificador Operacional
 
+## Símbolo, nomenclatura y convenciones
+
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/opamp.png" width="200"> 
+
+$$ V_o = A_V (V_+ - V_-) $$
+
+$V_o$, $V_+$ y $V_-$ entre $V_{EE}$ y $V_{CC}$
+
+- $A_V = \infty$
+- $Z_i = \infty$
+- $Z_o = 0$
+
+## Comparador
+
+## Cortocircuito virtual
+
 ## capítulos del libro
 - Capítulo 5
   - sesiones 5.15 y 5.16
