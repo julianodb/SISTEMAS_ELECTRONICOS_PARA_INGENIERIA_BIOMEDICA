@@ -2,7 +2,7 @@
 
 ## capítulos del libro
 - Capítulo 10
-  - sesión 10.5
+  - sesión 10.5 (menos Integrador y Diferenciador)
 - Capítulo 11
   - sesión 11.1
   - sesión 11.2
