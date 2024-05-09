@@ -11,14 +11,14 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
 
-3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=27\ k\Omega$ ,$R_2= 1.5\ k\Omega$, $C_1=C_2=1\ \mu F$, $R_a=1.2\ k\Omega$ y $R_b=2.7\ k\Omega$ determine:
+3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=270\ k\Omega$ ,$R_2= 15\ k\Omega$, $C_1=C_2=10\ \mu F$, $R_a=1.2\ k\Omega$ y $R_b=2.7\ k\Omega$ determine:
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_high_2_with_gain.png" width="400"> 
 
     Figura 5: Circuito con topología Sallen-Key.
 
     1. La ganancia en dB en corriente contínua.(0.4 pt)
-    1. La ganancia en dB para una entrada con frecuencia 100 kHz. (0.4 pt)
+    1. La ganancia en dB para una entrada con frecuencia 25 Hz. (0.4 pt)
     1. La ganancia maxima en dB (0.4 pt)
     1. Qué tipo de filtro está implementado. (0.4 pt)
     1. La(s) frecuencia(s) de corte en Hz. (0.4 pt)
