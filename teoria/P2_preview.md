@@ -3,15 +3,15 @@
 
 1. Para la adquisición de un electrocardiograma (ECG), es necesario medir la diferencia de voltaje entre electrodos que se posicionan en puntos específicos del paciente. Dicha diferencia de voltaje suele ser muy pequeña, del orden de pocos milivolts, por lo que requiere amplificación para poder graficarse y ser procesada. Considerando que la resistencia eléctrica de la interfaz piel-electrodo es de $R_S =56\ k\Omega$, y que se disponen de amplificadores con las características a continuación, determine el factor de amplificación de la señal $v_S$ de cada una de las siguientes configuraciones. Considere que el voltaje de salida de cada circuito es $v_o$. ¿ Cuál configuración permite amplificar más la señal de ECG ?
 
-    1. Configuración 1: $Z_i = 10\ k\Omega$, $Z_o = 100\ \Omega$, $A_{V_{NL}} = 6$. (0.5 pt)
+    1. Configuración 1: $Z_i = 100\ k\Omega$, $Z_o = 1\ k\Omega$, $A_{V_{NL}} = 20$. (0.5 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs.png" width="400">
        
-    1. Configuración 3: $Z_{i1} = 10\ k\Omega$, $Z_{o1} = 100\ \Omega$, $A_{V_{NL1}} = 6$, $Z_{i2} = 1\ k\Omega$, $Z_{o2} = 1\ k\Omega$, $A_{V_{NL2}} = 20$. (0.75 pt)
+    1. Configuración 3: $Z_{i1} = 100\ k\Omega$, $Z_{o1} = 1\ k\Omega$, $A_{V_{NL1}} = 20$, $Z_{i2} = 100 \Omega$, $Z_{o2} = 100 \Omega$, $A_{V_{NL2}} = 10$. (0.75 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
 
-3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=10\ k\Omega$ ,$R_2= 2 R_1 = 20\ k\Omega$, $C_1=C_2=10\ nF$ y $R_a=R_b=10\ k\Omega$ determine:
+3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=27\ k\Omega$ ,$R_2= 1.5\ k\Omega$, $C_1=C_2=1\ \mu F$, $R_a=1.2\ k\Omega$ y $R_b=2.7\ k\Omega$ determine:
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_high_2_with_gain.png" width="400"> 
 
