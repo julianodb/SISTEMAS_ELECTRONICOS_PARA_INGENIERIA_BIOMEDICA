@@ -6,10 +6,14 @@
     1. Configuración 1: $Z_i = 100\ k\Omega$, $Z_o = 1\ k\Omega$, $A_{V_{NL}} = 20$. (0.5 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs.png" width="400">
+
+       > $A_V = \frac{v_o}{v_S} \approx 12.82$
        
     1. Configuración 3: $Z_{i1} = 100\ k\Omega$, $Z_{o1} = 1\ k\Omega$, $A_{V_{NL1}} = 20$, $Z_{i2} = 100 \Omega$, $Z_{o2} = 100 \Omega$, $A_{V_{NL2}} = 10$. (0.75 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
+       
+       > $A_V = \frac{v_o}{v_S} \approx 64.1$
 
 3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=270\ k\Omega$ ,$R_2= 15\ k\Omega$, $C_1=C_2=10\ \mu F$, $R_a=1.2\ k\Omega$ y $R_b=2.7\ k\Omega$ determine:
 
@@ -18,10 +22,20 @@
     Figura 5: Circuito con topología Sallen-Key.
 
     1. La ganancia en dB en corriente contínua.(0.4 pt)
+
+        > $A_{v_{dB}}(0) = -\infty$
     1. La ganancia en dB para una entrada con frecuencia 25 Hz. (0.4 pt)
+
+        > $A_{v_{dB}}(25\ Hz) \approx 3.16\ dB$
     1. La ganancia maxima en dB (0.4 pt)
+
+        > $max (A_{v_{dB}}) \approx 3.19\ dB$
     1. Qué tipo de filtro está implementado. (0.4 pt)
+
+        > filtro paso-alta.
     1. La(s) frecuencia(s) de corte en Hz. (0.4 pt)
+
+        > $f_c \approx 2.1\ Hz$
 
 # Fórmulas
 
