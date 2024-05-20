@@ -26,16 +26,16 @@
         > $A_{v_{dB}}(0) = -\infty$
     1. La ganancia en dB para una entrada con frecuencia 25 Hz. (0.4 pt)
 
-        > $A_{v_{dB}}(25\ Hz) \approx 3.16\ dB$
+        > $A_{v_{dB}}(25\ Hz) \approx 3.2\ dB$
     1. La ganancia maxima en dB (0.4 pt)
 
-        > $max (A_{v_{dB}}) \approx 3.19\ dB$
+        > $max (A_{v_{dB}}) \approx 3.2\ dB$
     1. Qué tipo de filtro está implementado. (0.4 pt)
 
         > filtro paso-alta.
     1. La(s) frecuencia(s) de corte en Hz. (0.4 pt)
 
-        > $f_c \approx 2.1\ Hz$
+        > $f_c \approx 0.25\ Hz$
 
 # Fórmulas
 

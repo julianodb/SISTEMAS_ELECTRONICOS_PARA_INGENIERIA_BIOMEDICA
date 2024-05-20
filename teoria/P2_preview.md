@@ -11,7 +11,7 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
 
-3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=270\ k\Omega$ ,$R_2= 15\ k\Omega$, $C_1=C_2=10\ \mu F$, $R_a=1.2\ k\Omega$ y $R_b=2.7\ k\Omega$ determine:
+3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=15\ k\Omega$ ,$R_2= 270\ k\Omega$, $C_1=C_2=10\ \mu F$, $R_a=1.2\ k\Omega$ y $R_b=2.7\ k\Omega$ determine:
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_high_2_with_gain.png" width="400"> 
 
