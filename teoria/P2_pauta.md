@@ -25,12 +25,20 @@
        >
        > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+R_S} v_S$
        >
-       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{Z_{i1}}{Z_{i1}+R_S} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = 6*6 \frac{10k}{10k + 56k} \approx 0.91$
+       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{Z_{i1}}{Z_{i1}+R_S} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = 6*6 \frac{10k}{10k + 56k} \frac{10k}{10k + 100} \approx 5.4 $
        
     1. Configuración 3: $Z_{i1} = 10\ k\Omega$, $Z_{o1} = 100\ \Omega$, $A_{V_{NL1}} = 6$, $Z_{i2} = 1\ k\Omega$, $Z_{o2} = 1\ k\Omega$, $A_{V_{NL2}} = 20$. (0.75 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
 
+       > $v_o = A_{V_{NL2}} v_{i2}$
+       >
+       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} v_{i1}$
+       >
+       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+R_S} v_S$
+       >
+       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{Z_{i1}}{Z_{i1}+R_S} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = 6*20 \frac{10k}{10k + 56k} \frac{1k}{1k + 100} \approx 16.53 $
+       
 2. Para medir la actividad eléctrica del corazón en un ECG se utilizan electrodos en determinadas posiciones del paciente. La siguiente figura muestra la ubicación y color estándar de los electrodos para un ECG que utiliza 4 electrodos.
 
     <div style="width:400px; overflow:hidden;">
@@ -43,9 +51,65 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr.png" width="400"> 
 
+       > Aplicando corto circuito virtual a todos los amplificadores operacionales y denominando $V_1$ y $V_2$ los voltajes desconocidos:
+       >
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr_annotated.png" width="400"> 
+       >
+       > En la parte superior del circuito, se forma un divisor resistivo entre LL, RA y $V_2$, por lo que se puede escribir:
+       >
+       > $RA = LL \frac{R}{R+R} + V_2 \frac{R}{R+R}$
+       >
+       > $2 RA = LL + V_2$
+       >
+       > $V_2 = 2 RA - LL$ (ecuación 1)
+       >
+       > De la misma forma, en la parte inferior del circuito se forma un divisor de voltaje entre tierra, LA y $V_1$:
+       >
+       > $LA = V_1 \frac{R}{R+R}$
+       >
+       > $ V_1 = 2 LA $ (ecuación 2)
+       >
+       > Finalmente, también hay un divisor de voltaje entre $V_1$, $V_2$ y $aVR$:
+       >
+       > $V_2 = V_1 \frac{R}{R+R} + aVR \frac{R}{R+R} $
+       >
+       > Reemplazando las ecuaciones 1 y 2:
+       >
+       > $ 2 RA - LL = 2 LA \frac{1}{2} + aVR \frac{1}{2} $
+       >
+       > $ 2 RA - LL - LA = aVR \frac{1}{2} $
+       >
+       > $ aVR = 4 RA - 2 LL - 2 LA $
+       >
+       > En realidad, la derivación aVR se define como: $aVR_{real} = RA - \frac{LA + LL}{2}$. Por lo tanto la señal que el circuito obtiene es la derivación aVR amplificada por 4.
+
     2. Encontrar $aVL$ en función de $RA$, $LL$ y $LA$, con $R=20\ k\Omega$ (1 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl.png" width="400"> 
+
+       > Aplicando LKC en el nodo $V_-$:
+       >
+       > $\frac{RA-V_-}{2R} + \frac{LL-V_-}{2R} = \frac{V_- - aVL}{R}$
+       >
+       > $RA-V_- + LL-V_- = 2V_- - 2aVL$
+       >
+       > $RA + LL + 2aVL = 4V_- $
+       >
+       > $V_- = \frac{RA + LL + 2aVL}{4}$
+       >
+       > Aplicando divisor de voltaje en  $V_+$:
+       >
+       > $V_+ = \frac{LA}{2}$
+       >
+       > Aplicando corto circuito virtual:
+       >
+       > $V_+ = V_-$
+       >
+       > $\frac{LA}{2} = \frac{RA + LL + 2aVL}{4}$
+       >
+       > $2LA = RA + LL + 2aVL$
+       >
+       > $aVL = LA - \frac{RA + LL}{2}$
 
 3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=10\ k\Omega$ ,$R_2= 2 R_1 = 20\ k\Omega$, $C_1=C_2=10\ nF$ y $R_a=R_b=10\ k\Omega$ determine:
 
