@@ -9,35 +9,35 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs.png" width="400">
 
-       > $v_o = A_{V_{NL}} v_i$
+       > $v_o = A_{V_{NL}} v_i$ (+0.2pt)
        >
-       > $v_o = A_{V_{NL}} \frac{Z_i}{Z_i+R_S}v_S$
+       > $v_o = A_{V_{NL}} \frac{Z_i}{Z_i+R_S}v_S$ (+0.2pt)
        >
-       > $\therefore A_V = \frac{v_o}{v_S} = A_{V_{NL}} \frac{Z_i}{Z_i+R_S} = 6 \frac{10k}{10k + 56k} \approx 0.91$
+       > $\therefore A_V = \frac{v_o}{v_S} = A_{V_{NL}} \frac{Z_i}{Z_i+R_S} = 6 \frac{10k}{10k + 56k} \approx 0.91$ (+0.1pt)
 
     1. Configuración 2: $Z_{i1} = 10\ k\Omega$, $Z_{o1} = 100\ \Omega$, $A_{V_{NL1}} = 6$, $Z_{i2} = 10\ k\Omega$, $Z_{o2} = 100\ \Omega$, $A_{V_{NL2}} = 6$. (0.75 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
 
-       > $v_o = A_{V_{NL2}} v_{i2}$
+       > $v_o = A_{V_{NL2}} v_{i2}$ (+0.2pt)
        >
-       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} v_{i1}$
+       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} v_{i1}$ (+0.2pt)
        >
-       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+R_S} v_S$
+       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+R_S} v_S$ (+0.2pt)
        >
-       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{Z_{i1}}{Z_{i1}+R_S} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = 6*6 \frac{10k}{10k + 56k} \frac{10k}{10k + 100} \approx 5.4 $
+       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{Z_{i1}}{Z_{i1}+R_S} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = 6*6 \frac{10k}{10k + 56k} \frac{10k}{10k + 100} \approx 5.4 $ (+0.15pt)
        
     1. Configuración 3: $Z_{i1} = 10\ k\Omega$, $Z_{o1} = 100\ \Omega$, $A_{V_{NL1}} = 6$, $Z_{i2} = 1\ k\Omega$, $Z_{o2} = 1\ k\Omega$, $A_{V_{NL2}} = 20$. (0.75 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
 
-       > $v_o = A_{V_{NL2}} v_{i2}$
+       > $v_o = A_{V_{NL2}} v_{i2}$ (+0.2pt)
        >
-       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} v_{i1}$
+       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} v_{i1}$ (+0.2pt)
        >
-       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+R_S} v_S$
+       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+R_S} v_S$ (+0.2pt)
        >
-       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{Z_{i1}}{Z_{i1}+R_S} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = 6*20 \frac{10k}{10k + 56k} \frac{1k}{1k + 100} \approx 16.53 $
+       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{Z_{i1}}{Z_{i1}+R_S} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = 6*20 \frac{10k}{10k + 56k} \frac{1k}{1k + 100} \approx 16.53 $ (+0.15pt)
        
 2. Para medir la actividad eléctrica del corazón en un ECG se utilizan electrodos en determinadas posiciones del paciente. La siguiente figura muestra la ubicación y color estándar de los electrodos para un ECG que utiliza 4 electrodos.
 
@@ -51,13 +51,13 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr.png" width="400"> 
 
-       > Aplicando corto circuito virtual a todos los amplificadores operacionales y denominando $V_1$ y $V_2$ los voltajes desconocidos:
+       > Aplicando corto circuito virtual a todos los amplificadores operacionales y denominando $V_1$ y $V_2$ los voltajes desconocidos: (+0.2pt)
        >
        > <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr_annotated.png" width="400"> 
        >
        > En la parte superior del circuito, se forma un divisor resistivo entre LL, RA y $V_2$, por lo que se puede escribir:
        >
-       > $RA = LL \frac{R}{R+R} + V_2 \frac{R}{R+R}$
+       > $RA = LL \frac{R}{R+R} + V_2 \frac{R}{R+R}$ (+0.2pt)
        >
        > $2 RA = LL + V_2$
        >
@@ -65,17 +65,17 @@
        >
        > De la misma forma, en la parte inferior del circuito se forma un divisor de voltaje entre tierra, LA y $V_1$:
        >
-       > $LA = V_1 \frac{R}{R+R}$
+       > $LA = V_1 \frac{R}{R+R}$ (+0.2pt)
        >
        > $ V_1 = 2 LA $ (ecuación 2)
        >
        > Finalmente, también hay un divisor de voltaje entre $V_1$, $V_2$ y $aVR$:
        >
-       > $V_2 = V_1 \frac{R}{R+R} + aVR \frac{R}{R+R} $
+       > $V_2 = V_1 \frac{R}{R+R} + aVR \frac{R}{R+R} $ (+0.2pt)
        >
        > Reemplazando las ecuaciones 1 y 2:
        >
-       > $ 2 RA - LL = 2 LA \frac{1}{2} + aVR \frac{1}{2} $
+       > $ 2 RA - LL = 2 LA \frac{1}{2} + aVR \frac{1}{2} $ (+0.2pt)
        >
        > $ 2 RA - LL - LA = aVR \frac{1}{2} $
        >
@@ -87,7 +87,7 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl.png" width="400"> 
 
-       > Aplicando LKC en el nodo $V_-$:
+       > Aplicando LKC en el nodo $V_-$: (+0.4pt)
        >
        > $\frac{RA-V_-}{2R} + \frac{LL-V_-}{2R} = \frac{V_- - aVL}{R}$
        >
@@ -97,13 +97,13 @@
        >
        > $V_- = \frac{RA + LL + 2aVL}{4}$
        >
-       > Aplicando divisor de voltaje en  $V_+$:
+       > Aplicando divisor de voltaje en  $V_+$: (+0.4pt)
        >
        > $V_+ = \frac{LA}{2}$
        >
        > Aplicando corto circuito virtual:
        >
-       > $V_+ = V_-$
+       > $V_+ = V_-$ (+0.2pt)
        >
        > $\frac{LA}{2} = \frac{RA + LL + 2aVL}{4}$
        >
