@@ -115,11 +115,107 @@
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_low_2_with_gain.png" width="400"> 
 
+    > Encontrando la función de transferencia $H(s) = \frac{v_o}{v_i}$:
+    >
+    >Como $R_a = R_b$,
+    >
+    > $V_- = \frac{v_o}{2}$
+    >
+    > Además, aplicando corto circuito virtual:
+    >
+    > $V_+ = V_- = \frac{v_o}{2}$
+    >
+    > Si llamamos $v_x$ el voltaje entre $R_1$ y $R_2$, podemos utilizar el divisor de voltaje formado por $R_2$ y $C_2$ para escribirlo en función a $v_o$:
+    >
+    > $V_+ = \frac{v_o}{2} = \frac{1/C_2s}{1/C_2s + R_2} v_x $
+    >
+    > $v_x = \frac{1 + R_2C_2 s}{2} v_o$
+    >
+    > Finalmente, aplicando LKC en el nodo $v_x$:
+    >
+    > $\frac{v_i-v_x}{R_1} + \frac{v_o-v_x}{1/C_1s} = \frac{v_o C_2 s}{2}$
+    >
+    > Reemplazando $v_x$:
+    >
+    > $\frac{v_i-\frac{1 + R_2C_2 s}{2} v_o}{R_1} + \frac{v_o-\frac{1 + R_2C_2 s}{2} v_o}{1/C_1s} = \frac{v_o C_2 s}{2}$
+    >
+    > multiplicando por $2 R_1$
+    >
+    > $2v_i - (1+R_2C_2s)v_o + 2 R_1C_1s v_o - R_1C_1s(1+R_2C_2s) v_o = R_1C_2 s v_o$
+    > 
+    > $2 v_i = (R_1C_2s + 1 + R_2C_2 s - 2R_1C_1 s + R_1C_1 s + R_1R_2C_1C_2s^2) v_o$
+    >
+    > Finalmente:
+    >
+    > $H(s) = \frac{v_o}{v_i} = \frac{2}{ 1 + R_1C_2s+ R_2C_2 s - R_1C_1 s + R_1R_2C_1C_2s^2}$
+    >
+    > Reemplazando $R_2 = 2 R_1$ y $C_2 = C_1$:
+    >
+    > $H(s) = \frac{v_o}{v_i} = \frac{2}{ 1 + R_1C_1s+ 2 R_1C_1 s - R_1C_1 s + 2 R_1R_1C_1C_1s^2}$
+    >
+    > $H(s) = \frac{v_o}{v_i} = \frac{2}{ 1 + 2 R_1C_1 s + 2 (R_1C_1s)^2}$
+
     1. La ganancia en dB en corriente contínua.(0.4 pt)
+       
+       > La ganancia en función de la frecuencia es:
+       >
+       > $ A_v(\omega) = | H(s=j\omega) | = | \frac{2}{ 1 + 2 R_1C_1 j \omega + 2 (R_1C_1j \omega)^2}|$
+       >
+       > $ A_v(\omega) = | \frac{2}{ 1 - 2 (R_1C_1 \omega)^2 + 2 R_1C_1 \omega j}|$
+       >
+       > $ A_v(\omega) = \frac{2}{\sqrt{(1 - 2 (R_1C_1 \omega)^2)^2 + (2 R_1C_1 \omega)^2}}$
+       >
+       > $ A_v(\omega) = \frac{2}{\sqrt{1 - 4 (R_1C_1 \omega)^2 + 4 (R_1C_1 \omega)^4 + 4 (R_1C_1 \omega)^2}}$
+       >
+       > $ A_v(\omega) = \frac{2}{\sqrt{1 + 4 (R_1C_1 \omega)^4 }}$
+       >
+       > La ganancia en corriente continua es:
+       >
+       > $A_{v}(0) = \frac{2}{\sqrt{1 + 4 (R_1C_1 0)^4 }} = 2$
+       >
+       > La ganancia en dB en corriente continua es, por lo tanto:
+       >
+       > $A_{v_{dB}}(0) = 20 log\left(A_{v}(0)\right) = 20 log\left(2\right) \approx 6.02$
     1. La ganancia en dB para una entrada con frecuencia 100 kHz. (0.4 pt)
+       
+       > La ganancia para una entrada con frecuencia 100 kHz es:
+       >
+       > $A_{v}(2\pi 100.000) = \frac{2}{\sqrt{1 + 4 (R_1C_1 2\pi 100.000)^4 }} = \frac{2}{\sqrt{1 + 4 (10.000\ 10^{-8} 2\pi 100.000)^4 }}$
+       >
+       > $A_{v}(2\pi 100.000) = \frac{2}{\sqrt{1 + 4 (20\pi)^4 }} \approx 0.00025$
+       >
+       > La ganancia en dB es, por lo tanto:
+       >
+       > $A_{v_{dB}}(2\pi 100.000) = 20 log\left(A_{v}(2\pi 100.000)\right) \approx 20 log\left(0.00025\right) \approx -71.93$
     1. La ganancia maxima en dB (0.4 pt)
+       
+       > Como la función $A_v(\omega) = \frac{2}{\sqrt{1 + 4 (R_1C_1 \omega)^4 }}$ es monótonamente decreciente, su valor maximo se dá con el valor de $\omega$ minimo. Es decir,
+       >
+       > $max\{A_{v_{dB}}\} = A_{v_{dB}}(0) \approx 6.02$ 
     1. Qué tipo de filtro está implementado. (0.4 pt)
+       
+       > Como la función $A_v(\omega) = \frac{2}{\sqrt{1 + 4 (R_1C_1 \omega)^4 }}$ es monótonamente decreciente, la ganancia disminuye conform $\omega$ aumenta. Es decir, se trata de un filtro paso-baja.
     1. La(s) frecuencia(s) de corte en Hz. (0.4 pt)
+
+       > Para encontrar la frecuencia de corte hay que igualar la ganancia a la ganancia maxima sobre $\sqrt{2}$:
+       >
+       > $A_v(\omega_c) = \frac{A_{v_{max}}}{\sqrt{2}}$
+       >
+       > $\frac{2}{\sqrt{1 + 4 (R_1C_1 \omega_c)^4 }} = \frac{2}{\sqrt{2}}$
+       >
+       > $1 + 4 (R_1C_1 \omega_c)^4 = 2$
+       >
+       > $ (R_1C_1 \omega_c)^4 = \frac{1}{4}$
+       >
+       > $ \omega_c = \frac{1}{R_1C_1 \sqrt{2}}$
+       >
+       > Y para encotnrar la frecuencia de corte en Hz:
+       >
+       > $f_c = \frac{\omega_c}{2\pi} =\frac{1}{2\pi R_1C_1 \sqrt{2}} $
+       >
+       > $f_c =\frac{1}{2\pi 10.000\ 10^{-8} \sqrt{2}} $
+       >
+       > $f_c =\frac{1}{2\pi 10^{-4} \sqrt{2}} \approx 1125 Hz$
 
 # Fórmulas
 
