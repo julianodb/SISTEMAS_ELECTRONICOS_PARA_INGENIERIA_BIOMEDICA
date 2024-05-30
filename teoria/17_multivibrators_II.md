@@ -48,21 +48,21 @@ Una posible implementación del multivibrador monoestable en circuitos electrón
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/monostable_multivibrator_c.png" width="400">
 
-El circuito está basado en el multivibrador astable, ya que éste implementa un mecanismo para cambiar de estado después de un tiempo fijo. Para convertirlo en un monoestable, simplemente se agrega el diodo $D_3$, que interrumpe la descarga del capacitor $C_{m1}$ cuando $v_o = -V_{bias}$. En dicha condición, el diodo se polariza en directa y efectivamente corto-circuita el capacitor $C_{m1}$, impidiendo que el voltaje $V_-$ siga bajando. De ésta forma, $V_-$ no llega a $-\beta V_{bias}$, y no ocurre la transición de $v_o = - V_{bias}$ a $v_o = + V_{bias}$. El estado estable, por lo tanto, es $v_o = - V_{bias}$. Si se asume un diodo ideal, $V_- = 0$ en el estado estacionario del estado estable.
+El circuito está basado en el multivibrador astable, ya que éste implementa un mecanismo para cambiar de estado después de un tiempo fijo. Para convertirlo en un monoestable, simplemente se agrega el diodo $D_3$, que interrumpe la descarga del capacitor $C_{m1}$ cuando $v_o = -V_{CC}$. En dicha condición, el diodo se polariza en directa y efectivamente corto-circuita el capacitor $C_{m1}$, impidiendo que el voltaje $V_-$ siga bajando. De ésta forma, $V_-$ no llega a $-\beta V_{CC}$, y no ocurre la transición de $v_o = - V_{CC}$ a $v_o = + V_{CC}$. El estado estable, por lo tanto, es $v_o = - V_{CC}$. Si se asume un diodo ideal, $V_- = 0$ en el estado estacionario del estado estable.
 
-El subcircuito $TRIGGER$ es un circuito de disparo cuyo objetivo es gatillar la transición del monoestable a su estado casi-estable. En este caso esécífico, el objetivo es elevar $V_+$ (que normalmente está en $-\beta V_{bias}$) por sobre 0 momentaneamente. Cuando eso ocurre, $V_+ > V_-$ y el comparador cambia la salida a $+V_{bias}$. El circuito de disparo está proyectado para que se desconecte después de elevar $V_+$, y por lo tanto deja de influenciar el resto del circuito. El análisis a partir de éste punto es bastante similar al astable: $C_{m1}$ empezará a cargarse a través de $R_{m3}$, siguiendo la siguiente expresión:
+El subcircuito $TRIGGER$ es un circuito de disparo cuyo objetivo es gatillar la transición del monoestable a su estado casi-estable. En este caso esécífico, el objetivo es elevar $V_+$ (que normalmente está en $-\beta V_{CC}$) por sobre 0 momentaneamente. Cuando eso ocurre, $V_+ > V_-$ y el comparador cambia la salida a $+V_{CC}$. El circuito de disparo está proyectado para que se desconecte después de elevar $V_+$, y por lo tanto deja de influenciar el resto del circuito. El análisis a partir de éste punto es bastante similar al astable: $C_{m1}$ empezará a cargarse a través de $R_{m3}$, siguiendo la siguiente expresión:
 
 $$ v = V_{final} - (V_{final}  -V_{inicial})e^\frac{-t}{RC}$$
 
-Reemplazando los valores $V_{inicial} = 0$ , $V_{final} = +V_{bias}$ , $R = R_{m3}$ y $C = C_{m1}$ ,se obtiene la siguiente expresión:
+Reemplazando los valores $V_{inicial} = 0$ , $V_{final} = +V_{CC}$ , $R = R_{m3}$ y $C = C_{m1}$ ,se obtiene la siguiente expresión:
 
-$$ V_- = +V_{bias} - (+V_{bias} - 0)e^\frac{-t}{R_{m3}C_{m1}}$$
+$$ V_- = +V_{CC} - (+V_{CC} - 0)e^\frac{-t}{R_{m3}C_{m1}}$$
 
-$$ V_- = V_{bias} (1 - e^\frac{-t}{R_{m3}C_{m1}})$$
+$$ V_- = V_{CC} (1 - e^\frac{-t}{R_{m3}C_{m1}})$$
 
-Eventualmente, $V_-$ alcanza $V_+ = \beta V_{bias}$ y el monoestable vuelve a su estado estable con $v_o = - V_{bias}$. El tiempo en transición $T_t$, contado desde el momento en que el monoestable cambia al estado casi-estable hasta en instante donde vuelve a su estado natural se puede calcular como:
+Eventualmente, $V_-$ alcanza $V_+ = \beta V_{CC}$ y el monoestable vuelve a su estado estable con $v_o = - V_{CC}$. El tiempo en transición $T_t$, contado desde el momento en que el monoestable cambia al estado casi-estable hasta en instante donde vuelve a su estado natural se puede calcular como:
 
-$$ \beta V_{bias} = V_{bias} (1 - e^\frac{-T_t}{R_{m3}C_{m1}})$$
+$$ \beta V_{CC} = V_{CC} (1 - e^\frac{-T_t}{R_{m3}C_{m1}})$$
 
 $$ \beta  = 1 - e^\frac{-T_t}{R_{m3}C_{m1}}$$
 
@@ -74,6 +74,6 @@ $$ -T_t = R_{m3}C_{m1}\ln (1- \beta)$$
 
 $$ T_t = R_{m3}C_{m1}\ln \frac{1}{1- \beta}$$
 
-La siguiente figura muestra un bosquejo de las formas de onda del circuito, siendo la primera señal del circuito de disparo ($TRIGGER$)$.
+La siguiente figura muestra un bosquejo de las formas de onda del circuito, siendo la primera señal del circuito de disparo ($TRIGGER$).
 
 ![T7_F5](../img/T7_F4.jpeg)
