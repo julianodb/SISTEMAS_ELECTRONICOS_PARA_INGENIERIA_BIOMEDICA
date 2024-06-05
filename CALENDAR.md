@@ -42,18 +42,18 @@
 
 ## JUNIO / 2024
 
-|Sem |Lun    |Mar |Mie |Jue |Vie |Sab |Dom |
-|:-: |:-:    |:-: |:-: |:-: |:-: |:-: |:-: |
-|    | 27    | 28 | 29 | 30 | 31 |  1 |  2 |
-| 10 | P2    |    |    | 17 |    |    |    |
-|    |  3    |  4 |  5 |  6 |  7 |  8 |  9 |
-| 11 | 18 L8 |    | T8 | 19 |    |    |    |
-|    | 10    | 11 | 12 | 13 | 14 | 15 | 16 |
-| 12 | 20 L9 |    | T9 | 21 |    |    |    |
-|    | 17    | 18 | 19 | 20 | 21 | 22 | 23 |
-| 13 | 22 LA |    | TA | FF | FF | FF |    |
-|    | 24    | 25 | 26 | 27 | 28 | 29 | 30 |
-| 14 | 23 LB |    |    | 24 |    | FF |    |
+|Sem |Lun       |Mar |Mie |Jue |Vie |Sab |Dom |
+|:-: |:-:       |:-: |:-: |:-: |:-: |:-: |:-: |
+|    | 27       | 28 | 29 | 30 | 31 |  1 |  2 |
+| 10 | P2       |    |    | 17 |    |    |    |
+|    |  3       |  4 |  5 |  6 |  7 |  8 |  9 |
+| 11 | 18 L8    |    |    |    |    |    | T8 |
+|    | 10       | 11 | 12 | 13 | 14 | 15 | 16 |
+| 12 | 19 L9    |    |    | 20 |    |    |    |
+|    | 17       | 18 | 19 | 20 | 21 | 22 | 23 |
+| 13 | 21 LA    |    | T9 | FF | FF | FF |    |
+|    | 24       | 25 | 26 | 27 | 28 | 29 | 30 |
+| 14 | 22 LB TA |    |    | 23 |    | FF |    |
 
 ## JULIO / 2024
 
@@ -100,11 +100,10 @@
 | [17](/teoria/17_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable |  | Inicio $T_8$ |
 | [18](/teoria/18_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |   |
 | [19](/teoria/19_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_8$ (miercoles) | inicio $T_9$ |
-| 20 | Fuentes Conmutadas: ejercicios | Fuentes Conmutadas: ejercicios |  | |
-| [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) | inicio $T_A$ |
-| [22](/teoria/22_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | capacitancia, resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 | Entrega $T_A$ (miercoles) |  |
-| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, entrega guia PEP3 |  |  |
-| 24 | Cierre | Construcción de prototipo?, ejercicios y respuestas guia PEP3 |  | |
+| 20 | Fuentes Conmutadas: ejercicios + Introducción Osciladores | Fuentes Conmutadas: ejercicios + introducción Osciladores |  | |
+| [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) |  |
+| 22 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, entrega guia PEP3 | Entrega $T_A$ | inicio $T_A$ |
+| [23](/teoria/23_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores, respuestas guia PEP3 |  |  |
 | P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación, física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
