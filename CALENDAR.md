@@ -98,8 +98,8 @@
 | [16](/teoria/16_pre_P2.md) | Ejercicios PEP2 | ejercicios y respuestas guia PEP2 | Entrega $T_7$ (viernes) |  |
 | [P2](/teoria/P2.md) | PEP2 | Amplificadores operacionales, respuesta en frecuencia, filtros activos |  | | 
 | [17](/teoria/17_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable |  | Inicio $T_8$ |
-| [18](/teoria/18_multivibrators_exercises.md) | Osciladores | multivibradores y osciladores |  |   |
-| [19](/teoria/19_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje | Entrega $T_8$ (miercoles) | inicio $T_9$ |
+| [18](/teoria/18_multivibrators_exercises.md) | Ejercicios de Multivibradores + Reguladores de Voltaje Lineales | Ejercicios de Multivibradores + Reguladores de Voltaje Lineales |  |   |
+| [19](/teoria/19_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | Entrega $T_8$ (miercoles) | inicio $T_9$ |
 | 20 | Fuentes Conmutadas: ejercicios + Introducción Osciladores | Fuentes Conmutadas: ejercicios + introducción Osciladores |  | |
 | [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) |  |
 | 22 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, entrega guia PEP3 | Entrega $T_A$ | inicio $T_A$ |
@@ -120,4 +120,4 @@
 - [L8](/laboratorio/L8.md): multivibradores
 - [L9](/laboratorio/L9.md): Rectificador y Regulador Lineal
 - [LA](/laboratorio/LA.md): Reguladores Conmutados
-- [LB](/laboratorio/LB.md): 
+- [LB](/laboratorio/LB.md): Técnicas de Fabricación y Prototipaje en Electrónica
