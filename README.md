@@ -107,4 +107,4 @@ $$ Promedio Final = 0.7\ Promedio Teoría + 0.3\ Promedio Laboratorio  $$
 1. Amplificadores operacionales y sus aplicaciones (clases [09](/teoria/09_amplifiers.md), [10](/teoria/10_opamp.md), [11](/teoria/11_opamp_II.md), [12](/teoria/12_opamp_III.md))
 1. Filtros activos y pasivos (clases [04](/teoria/04_frec.md), [13](/teoria/13_frec_II.md) y [14](/teoria/14_frec_III.md))
 1. Osciladores (clases [15](/teoria/15_multivibrators.md), [17](/teoria/17_multivibrators_II.md), [18](/teoria/18_multivibrators_exercises.md) y [21](/teoria/21_oscilators.md))
-1. Fuentes de alimentación conmutadas (clases [19](/teoria/19_voltage_regulators.md) y 20)
+1. Fuentes de alimentación conmutadas (clases [19](/teoria/19_voltage_regulators.md) y [20](/teoria/20_voltage_regulators_II.md))

@@ -100,10 +100,10 @@
 | [17](/teoria/17_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable |  | Inicio $T_8$ |
 | [18](/teoria/18_multivibrators_exercises.md) | Ejercicios de Multivibradores + Reguladores de Voltaje Lineales | Ejercicios de Multivibradores + Reguladores de Voltaje Lineales |  |   |
 | [19](/teoria/19_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | Entrega $T_8$ (miercoles) | inicio $T_9$ |
-| 20 | Fuentes Conmutadas: ejercicios + Introducción Osciladores | Fuentes Conmutadas: ejercicios + introducción Osciladores |  | |
-| [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) |  |
+| [20](/teoria/20_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  | |
+| [21](/teoria/21_oscilators.md) | Osciladores | Osciladores, entrega guia PEP3 | Entrega $T_9$ (miercoles) |  |
 | [22](/teoria/23_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores, respuestas guia PEP3 |  |  |
-| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, entrega guia PEP3 | Entrega $T_A$ | inicio $T_A$ |
+| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica | Entrega $T_A$ | inicio $T_A$ |
 | P3 | PEP3 | Multiviradores, Fuentes Conmutadas, Osciladores, Física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
