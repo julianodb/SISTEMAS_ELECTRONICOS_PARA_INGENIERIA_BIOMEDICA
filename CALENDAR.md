@@ -51,18 +51,18 @@
 |    | 10    | 11 | 12 | 13 | 14 | 15 | 16 |
 | 12 | 19 L9 | PP | PP | PP | PP |    |    |
 |    | 17    | 18 | 19 | 20 | 21 | 22 | 23 |
-| 13 | PP    | _20| T9 | FF | FF | FF |    |
+| 13 | PP    | PP | PP | FF | FF | FF |    |
 |    | 24    | 25 | 26 | 27 | 28 | 29 | 30 |
-| 14 | 21 LA |    | *9  | 22 |    | FF |    |
+| 14 | PP    | _20|   | 21 | T9 | FF |    |
 
 ## JULIO / 2024
 
 |Sem |Lun       |Mar |Mie |Jue |Vie |Sab |Dom |
 |:-: |:-:       |:-: |:-: |:-: |:-: |:-: |:-: |
 |    |  1       |  2 |  3 |  4 |  5 |  6 |  7 |
-| 15 | 23 LB TA |    |    | P3 |    |    |    |
+| 15 | 22 LA    |    |    | P3 |    |    |    |
 |    |  8       |  9 | 10 | 11 | 12 | 13 | 14 |
-| 16 | PO       |    |    |    |    |    |    |
+| 16 | 23 LB TA |    |    |    |    |    |    |
 |    | 15       | 16 | 17 | 18 | 19 | 20 | 21 |
 | 17 | FF       | FF |    |    | TT |    |    |
 |    | 22       | 23 | 24 | 25 | 26 | 27 | 28 |
@@ -102,9 +102,9 @@
 | [19](/teoria/19_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | Entrega $T_8$ (miercoles) | inicio $T_9$ |
 | 20 | Fuentes Conmutadas: ejercicios + Introducción Osciladores | Fuentes Conmutadas: ejercicios + introducción Osciladores |  | |
 | [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) |  |
-| 22 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, entrega guia PEP3 | Entrega $T_A$ | inicio $T_A$ |
-| [23](/teoria/23_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores, respuestas guia PEP3 |  |  |
-| P3 | PEP3 | Osciladores, Fuentes Conmutadas, Amplificadores de Instrumentación, física de semiconductores | entrega dispositivo diseñado | |
+| [22](/teoria/23_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores, respuestas guia PEP3 |  |  |
+| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, entrega guia PEP3 | Entrega $T_A$ | inicio $T_A$ |
+| P3 | PEP3 | Multiviradores, Fuentes Conmutadas, Osciladores, Física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
 # Laboratórios
