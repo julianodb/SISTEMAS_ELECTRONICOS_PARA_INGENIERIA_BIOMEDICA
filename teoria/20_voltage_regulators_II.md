@@ -92,3 +92,7 @@ $$\frac{V_o}{V_i} = - \frac{ D}{1-D} $$
 | 1/4 | -1/3 |
 | 1/2 | -1 |
 | 3/4 | -3 |
+
+### Convertidor de retroceso (flyback)
+
+![20_1](../img/Flyback_conventions.svg.png)
