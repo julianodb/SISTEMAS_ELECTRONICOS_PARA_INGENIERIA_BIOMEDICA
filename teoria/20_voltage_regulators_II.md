@@ -25,6 +25,7 @@ $$ \Delta I_{ON} + \Delta I_{OFF} = 0$$
 $$ \frac{V_i DT}{L} + \frac{(V_i-V_o) (1-D)T}{L} = 0$$
 
 $$ \bcancel{V_i D} + V_i - \bcancel{V_i D}- V_o (1-D) = 0$$
+
 $$ \frac{V_o}{V_i} = \frac{1}{1-D} $$
 
 | D | $V_o/V_i$ |
