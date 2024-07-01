@@ -53,20 +53,29 @@
 |    | 17    | 18 | 19 | 20 | 21 | 22 | 23 |
 |    | PP    | PP | PP | FF | FF | FF |    |
 |    | 24    | 25 | 26 | 27 | 28 | 29 | 30 |
-| 13 | PP    | _20|   | 21 | T9 | FF |    |
+|    | PP    | PP | PP | PP | PP | FF |    |
 
 ## JULIO / 2024
 
-|Sem |Lun       |Mar |Mie |Jue |Vie |Sab |Dom |
-|:-: |:-:       |:-: |:-: |:-: |:-: |:-: |:-: |
-|    |  1       |  2 |  3 |  4 |  5 |  6 |  7 |
-| 14 | 22 LA    |    |    | P3 |    |    |    |
-|    |  8       |  9 | 10 | 11 | 12 | 13 | 14 |
-| 15 | 23 LB TA |    |    | POR|    |    |    |
-|    | 15       | 16 | 17 | 18 | 19 | 20 | 21 |
-|    | FF       | FF |    |    | TT |    |    |
-|    | 22       | 23 | 24 | 25 | 26 | 27 | 28 |
-|  - |          |    |    |    |    |    |    |
+|Sem |Lun       |Mar |Mie |Jue    |Vie |Sab |Dom |
+|:-: |:-:       |:-: |:-: |:-:    |:-: |:-: |:-: |
+|    |  1       |  2 |  3 |  4    |  5 |  6 |  7 |
+| 12 | PP       | _20|    | 21    | T9 |    |    |
+|    |  8       |  9 | 10 | 11    | 12 | 13 | 14 |
+| 13 | 22 LA    | _23|    | LL P3?| LL | LL | LL |
+|    | 15       | 16 | 17 | 18    | 19 | 20 | 21 |
+| 14 | FF       | FF | LL | LL POR| TT | LL | LL |
+|    | 22       | 23 | 24 | 25    | 26 | 27 | 28 |
+| 15 | LL LB TA | LL | LL | LL    | LL | LL | LL |
+
+## AGOSTO / 2024
+
+|Sem |Lun |Mar |Mie |Jue |Vie |Sab |Dom |
+|:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
+|    | 29 | 30 | 31 | 01 | 02 | 03 | 04 |
+| 16 | LL | LL | LL | LL | LL | LL | LL |
+|    | 05 | 06 | 07 | 08 | 09 | 10 | 11 |
+| 17 | LL | LL | LL | LL | LL | TT |    |
 
 - II: Inicio del Semestre
 - RR: Receso de Actividades
@@ -74,6 +83,7 @@
 - FF: Feriado
 - TT: Término del Semestre
 - CC: Congreso
+- LL: Licencia postnatal
 
 # Clases
 
