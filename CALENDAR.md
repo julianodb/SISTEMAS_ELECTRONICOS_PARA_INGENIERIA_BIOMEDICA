@@ -60,22 +60,28 @@
 |Sem |Lun     |Mar |Mie |Jue  |Vie |Sab |Dom |
 |:-: |:-:     |:-: |:-: |:-:  |:-: |:-: |:-: |
 |    |  1     |  2 |  3 |  4  |  5 |  6 |  7 |
-| 12 | PP     | PP | PP | PP  | PP |    |    |
+|    | PP     | PP | PP | PP  | PP |    |    |
 |    |  8     |  9 | 10 | 11  | 12 | 13 | 14 |
-| 13 | PP     |    |    | _20 | T9 |    |    |
+|    | PP     | PP | PP | PP  | PP |    |    |
 |    | 15     | 16 | 17 | 18  | 19 | 20 | 21 |
-| 14 | FF     | FF |    | _21 |    |    |    |
+| 12 | FF     | FF |    | _20 |    |    |    |
 |    | 22     | 23 | 24 | 25  | 26 | 27 | 28 |
-| 15 | _22 LA |    |    | _23 |    |    |    |
+| 13 | _21 LA |    | T9 | _22 |    |    |    |
 
 ## AGOSTO / 2024
 
-|Sem |Lun    |Mar |Mie |Jue |Vie |Sab |Dom |
-|:-: |:-:    |:-: |:-: |:-: |:-: |:-: |:-: |
-|    | 29    | 30 | 31 | 01 | 02 | 03 | 04 |
-| 16 | LB TA |    |    | P3 |    |    |    |
-|    | 05    | 06 | 07 | 08 | 09 | 10 | 11 |
-| 17 | POR   |    |    |    |    | TT |    |
+|Sem |Lun        |Mar |Mie |Jue |Vie |Sab |Dom |
+|:-: |:-:        |:-: |:-: |:-: |:-: |:-: |:-: |
+|    | 29        | 30 | 31 | 01 | 02 | 03 | 04 |
+| 14 | _23 LB TA |    |    | P3 |    |    |    |
+|    | 05        | 06 | 07 | 08 | 09 | 10 | 11 |
+| 15 | POR       |    |    |    |    | TT?|    |
+|    | 12        | 13 | 14 | 15 | 16 | 17 | 18 |
+| 16 |           |    |    |    |    |    |    |
+|    | 19        | 20 | 21 | 22 | 23 | 24 | 25 |
+| ?  |           |    |    |    |    |    |    |
+|    | 26        | 27 | 28 | 29 | 30 | 31 | 01 |
+| ?  |           |    |    |    |    |    |    |
 
 - II: Inicio del Semestre
 - RR: Receso de Actividades
@@ -111,9 +117,9 @@
 | [18](/teoria/18_multivibrators_exercises.md) | Ejercicios de Multivibradores + Reguladores de Voltaje Lineales | Ejercicios de Multivibradores + Reguladores de Voltaje Lineales |  |   |
 | [19](/teoria/19_voltage_regulators.md) | Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | Entrega $T_8$ (miercoles) | inicio $T_9$ |
 | [20](/teoria/20_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  | |
-| [21](/teoria/21_oscilators.md) | Osciladores | Osciladores, entrega guia PEP3 | Entrega $T_9$ (miercoles) |  |
-| [22](/teoria/22_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores, respuestas guia PEP3 |  |  |
-| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica | Entrega $T_A$ | inicio $T_A$ |
+| [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) |  |
+| [22](/teoria/22_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 |  |  |
+| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, respuestas guia PEP3 | Entrega $T_A$ | inicio $T_A$ |
 | P3 | PEP3 | Multiviradores, Fuentes Conmutadas, Osciladores, Física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
