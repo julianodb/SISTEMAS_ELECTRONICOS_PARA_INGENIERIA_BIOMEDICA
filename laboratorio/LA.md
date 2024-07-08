@@ -8,3 +8,13 @@
 
 ## Procedimiento experimental e informe
 
+
+![photo](../img/LA_photo.jpeg)
+
+Figura 1: Fuente de Poder de la impresora 3D
+
+
+![photo](../img/LA_JT3269A.png)
+
+
+![photo](../img/LA_JT3269A_annotated.png)
