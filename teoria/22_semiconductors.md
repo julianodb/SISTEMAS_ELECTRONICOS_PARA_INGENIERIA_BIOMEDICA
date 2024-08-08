@@ -1,5 +1,47 @@
 # Semiconductores
 
+## 1. ¿Cómo se construye una resistencia ?
+
+$ V = R I$
+
+$ R = \rho \frac{l}{A}$
+
+$\rho$ es la resistividad eléctrica del material. Se mide en $\Omega m $.
+
+Composición Química de un metal:
+
+![21_1](../img/22_Metallic_Bonding_Example.png)
+
+Electrones relativamente libres -> resistividad baja.
+
+Ejemplo Cu: $\rho_{Cu} \approx 1.7\ 10^{-8} \Omega m$
+
+Cable de cobre con area transversal 1 mm^2 y 100 m de extensión tendrá aproximadamente:
+
+$R = \rho l / A = 1.7\ 10^{-8} 100 / 10^{-6} = 1.7 \Omega$
+
+Composición química del diamante:
+
+![21_1](../img/22_diamond.jfif)
+
+$\rho_{diamante} \approx 10^{12}$
+
+$\rho_{aire} \in [10^5,  10^9]$
+
+Proceso de fabricación:
+
+![21_1](../img/22_resistances.png)
+
+![21_1](../img/22_film_resistor7.jpg)
+
+![21_1](../img/22_resistor_technology.png)
+
+https://en.wikipedia.org/wiki/E_series_of_preferred_numbers 
+
+## 2. ¿Cómo se construye un diodo ?
+## 3. ¿Cómo se construye un transistor ?
+## 4. ¿Por qué todos los años sale una versión nueva de los celulares ?
+
 ## Capítulos del libro
 - Capítulo 1
    - sesiones 1.1, 1.3, 1.5, 1.6, 1.10 y 1.16
