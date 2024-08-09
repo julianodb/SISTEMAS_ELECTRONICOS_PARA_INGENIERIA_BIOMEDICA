@@ -39,6 +39,27 @@ Proceso de fabricación:
 https://en.wikipedia.org/wiki/E_series_of_preferred_numbers 
 
 ## 2. ¿Cómo se construye un diodo ?
+
+Semiconductores
+
+Estrucutura química del Silicio:
+
+![21_1](../img/22_si.jpg)
+
+$\rho_{Si} = 640\ \Omega m$
+
+![21_1](../img/22_tipo_n.jpg)
+
+Tipo N
+
+![21_1](../img/22_tipo_p.jpg)
+
+Tipo P
+
+![21_1](../img/22_diodo.png)
+
+fotodiodos y LEDs -> enlaces covalentes requieren justo la energía igual a la de fotones de cierto color para romperse.
+
 ## 3. ¿Cómo se construye un transistor ?
 ## 4. ¿Por qué todos los años sale una versión nueva de los celulares ?
 
