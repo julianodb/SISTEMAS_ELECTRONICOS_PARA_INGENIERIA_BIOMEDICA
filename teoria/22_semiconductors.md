@@ -61,7 +61,14 @@ Tipo P
 fotodiodos y LEDs -> enlaces covalentes requieren justo la energía igual a la de fotones de cierto color para romperse.
 
 ## 3. ¿Cómo se construye un transistor ?
+
+![21_1](../img/22_npn.jpg)
+
 ## 4. ¿Por qué todos los años sale una versión nueva de los celulares ?
+
+Ley de Moore
+
+https://web.archive.org/web/20141006144200/http://web.eng.fiu.edu/npala/EEE6397ex/Gordon_Moore_1965_Article.pdf      
 
 ## Capítulos del libro
 - Capítulo 1
