@@ -70,6 +70,12 @@ Ley de Moore
 
 https://web.archive.org/web/20141006144200/http://web.eng.fiu.edu/npala/EEE6397ex/Gordon_Moore_1965_Article.pdf      
 
+Cual es el tamaño de los transistores más chicos que se pueden fabricar actualmente ?
+
+2024: La menor dimensión de un transistor (altura, ancho o estructura interna) es 3 nm, y se espera que el proceso de fabricación que permite 2 nm esté operativo antes del fin del año.
+
+![node_sizes](../img/nodes.png)
+
 ## Capítulos del libro
 - Capítulo 1
    - sesiones 1.1, 1.3, 1.5, 1.6, 1.10 y 1.16
