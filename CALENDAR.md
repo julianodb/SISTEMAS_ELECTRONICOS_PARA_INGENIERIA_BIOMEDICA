@@ -89,7 +89,6 @@
 - FF: Feriado
 - TT: Término del Semestre
 - CC: Congreso
-- LL: Licencia postnatal
 
 # Clases
 
