@@ -103,7 +103,7 @@ $$ Promedio Final = 0.7\ Promedio Teoría + 0.3\ Promedio Laboratorio  $$
 ### Clases
 
 1. Introducción y contexto. (clases [01](/teoria/01_Introduccion.md))
-1. Dispositivos electronicos: diodos (clases [02](/teoria/02_Diodos.md), [03](/teoria/03_Diodos_II.md) y [23](/teoria/22_semiconductors.md)) y transistores (clases [05](/teoria/05_BJT_I.md), [06](/teoria/06_BJT_II.md), [07](/teoria/07_CE.md) y [08](/teoria/08_CE_II.md))
+1. Dispositivos electronicos: diodos (clases [02](/teoria/02_Diodos.md), [03](/teoria/03_Diodos_II.md) y [22](/teoria/22_semiconductors.md)) y transistores (clases [05](/teoria/05_BJT_I.md), [06](/teoria/06_BJT_II.md), [07](/teoria/07_CE.md) y [08](/teoria/08_CE_II.md))
 1. Amplificadores operacionales y sus aplicaciones (clases [09](/teoria/09_amplifiers.md), [10](/teoria/10_opamp.md), [11](/teoria/11_opamp_II.md), [12](/teoria/12_opamp_III.md))
 1. Filtros activos y pasivos (clases [04](/teoria/04_frec.md), [13](/teoria/13_frec_II.md) y [14](/teoria/14_frec_III.md))
 1. Osciladores (clases [15](/teoria/15_multivibrators.md), [17](/teoria/17_multivibrators_II.md), [18](/teoria/18_multivibrators_exercises.md) y [21](/teoria/21_oscilators.md))

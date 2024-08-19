@@ -118,7 +118,7 @@
 | [20](/teoria/20_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  | |
 | [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) |  |
 | [22](/teoria/22_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 |  |  |
-| 23 | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, respuestas guia PEP3 | Entrega $T_A$ | inicio $T_A$ |
+| [23](/teoria/23_manufacturing.md) | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, respuestas guia PEP3 | Entrega $T_A$ | inicio $T_A$ |
 | P3 | PEP3 | Multiviradores, Fuentes Conmutadas, Osciladores, Física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
