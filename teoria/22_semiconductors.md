@@ -76,6 +76,8 @@ Cual es el tamaño de los transistores más chicos que se pueden fabricar actual
 
 ![node_sizes](../img/nodes.png)
 
+![node_sizes_2](../img/22_moore.png)
+
 ## Capítulos del libro
 - Capítulo 1
    - sesiones 1.1, 1.3, 1.5, 1.6, 1.10 y 1.16
