@@ -6,11 +6,11 @@
 [uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=37566)
 
 ## Horário Teoría
-- Lunes: bloque 4 (L4: 13:45 - 15:05), sala DOC539 (patio de los perros)
-- Jueves: bloque 4 (J4: 13:45 - 15:05), laboratorios de docencia de biomedica
+- Lunes: bloque 5 (L5: 15:20 - 16:40), laboratorio de biomecanica
+- Miércoles: bloque 5 (W5: 15:20 - 16:40), laboratorio de biomecanica
 
 ## Horário Laboratório
-- Lunes, bloque 5 (L5: 15:20 - 16:40), laboratorios de docencia de biomedica
+- Lunes, bloque 6 (L6: 16:55 - 18:15), laboratorio de biomecanica
 
 ## Profesor
 
@@ -54,7 +54,7 @@ $$ Promedio Teoría = 0.7\sum_{i=1}^{np} \frac{P_i}{np} + 0.3\sum_{j=1}^{nt} \fr
 
 Están planificados $np=3$ pruebas escritas y $nt=10$ trabajos de diseño.
 
-Cada trabajo de diseño tiene una fecha maxima de entrega. En el caso de atrasos, se descontará 3 puntos por día de atraso.
+Cada trabajo de diseño tiene una fecha y hora maxima de entrega. En el caso de que se entregue el trabajo con hasta 24 horas de atraso, se descuenta la mitad de la nota (máxima nota posible 4.0). Si se entrega el trabajo con más de 24 horas de atraso, se considera una nota 1.0.
 
 El sistema de evaluación contempla, además, una Prueba Optativa Recuperativa (POR)
 
@@ -66,7 +66,7 @@ $$ Promedio Teoría = 0.7\frac{ P_1 + P_2 + P_3 + POR - min\{P_1, P_2, P_3, POR\
 
 Si el Promedio Teoría es menor a 4.0, el/la estudiante reprueba la parte teórica de la asignatura.
 
-Además, se exige un mínimo de 75 % de asistencia a clases presenciales. Una asistencia inferior al 75 % sin justificaciones ante docencia causa reprobación automatica de la parte teórica de la asignatura, con una nota 3,5 .
+Además, se exige un mínimo de 75 % de asistencia a clases presenciales. Una asistencia inferior al 75 % sin justificaciones ante docencia causa reprobación automatica de la parte teórica de la asignatura, con una nota 3.5 .
 
 ### Laboratorio
 
@@ -80,9 +80,9 @@ Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales. Est�
 
 Si el Promedio Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
 
-La inasistencia al laboratorio deberá ser justificada ante docencia, quien informará a los profesores sobre la justificación de ésta. En caso de inasistencia justificada,la actividad de recuperación será informada caso a caso.
+La inasistencia al laboratorio deberá ser justificada ante docencia, quien informará a los profesores sobre la justificación de ésta. En caso de inasistencia justificada, la actividad de recuperación será informada caso a caso.
 
-La inasistencia INJUSTIFICADA a un laboratorio causa reprobación automática de la parte de laboratorio de la asignatura, con una nota 3,5 .
+La inasistencia INJUSTIFICADA a un laboratorio causa reprobación automática de la parte de laboratorio de la asignatura, con una nota 3.5 .
 
 ### Promedio final y aprobación
 
@@ -91,6 +91,8 @@ En el caso de que el/la estudiante repruebe apenas teoría o apenas laboratorio,
 El promedio final de la asignatura se calcula como:
 
 $$ Promedio Final = 0.7\ Promedio Teoría + 0.3\ Promedio Laboratorio  $$
+
+Se considera redondeo convencional con una casa decimal para el promedio final (entre 0.01 y 0.04 se redondea hacia abajo: 0.0; y entre 0.05 y 0.09 se redondea hacia arriba: 0.1).
 
 ## Bibliografia
 - Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.).México: Prentice Hall.
