@@ -47,6 +47,10 @@ Las notas de todas las evaluaciones (pruebas escritas, trabajos de diseño y lab
 
 $$ Nota Redondeada = \frac{\lceil 10\  Nota Original \rceil}{10}$$
 
+La siguiente tabla muestra un resúmen de las notas
+
+![notas](img/notas.png)
+
 ### Teoría
 La nota de teoría está compuesta por 70% del promedio simple de las evaluaciones escritas, y 30% del promedio simple de los trabajos. 
 
@@ -93,6 +97,8 @@ El promedio final de la asignatura se calcula como:
 $$ Promedio Final = 0.7\ Promedio Teoría + 0.3\ Promedio Laboratorio  $$
 
 Se considera redondeo convencional con una casa decimal para el promedio final (entre 0.01 y 0.04 se redondea hacia abajo: 0.0; y entre 0.05 y 0.09 se redondea hacia arriba: 0.1).
+
+Respecto a las demás reglas de docencia, este curso se adscribe a las DIRECTRICES DE DOCENCIA ING. CIVIL BIOMEDICA 2024.
 
 ## Bibliografia
 - Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.).México: Prentice Hall.
