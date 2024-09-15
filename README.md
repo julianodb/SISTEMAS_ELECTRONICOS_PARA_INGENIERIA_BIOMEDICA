@@ -47,7 +47,7 @@ Las notas de todas las evaluaciones (pruebas escritas, trabajos de diseño y lab
 
 $$ Nota Redondeada = \frac{\lceil 10\  Nota Original \rceil}{10}$$
 
-La siguiente tabla muestra un resúmen de las notas
+La siguiente tabla muestra un resúmen de las evaluaciones.
 
 ![notas](img/notas.png)
 
@@ -66,7 +66,7 @@ El sistema de evaluación contempla, además, una Prueba Optativa Recuperativa (
 - La POR reemplaza la peor nota de las 3 pruebas escritas.
 - El contenido de la POR es toda la materia
 
-$$ Promedio Teoría = 0.7\frac{ P_1 + P_2 + P_3 + POR - min\{P_1, P_2, P_3, POR\}}{3} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
+$$ Promedio Teoría = 0.7\frac{ \sum{P_i} + POR - min\{P_i\}}{np} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
 
 Si el Promedio Teoría es menor a 4.0, el/la estudiante reprueba la parte teórica de la asignatura.
 
