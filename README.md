@@ -3,14 +3,16 @@
 
 ## Página de la asignatura
 
-[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=37566)
+[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=40681)
+
+[Clase de Tinkercad para Laboratorios Online](https://www.tinkercad.com/joinclass/5XK7AATBK)
 
 ## Horário Teoría
-- Lunes: bloque 5 (L5: 15:20 - 16:40), laboratorio de biomecanica
-- Miércoles: bloque 5 (W5: 15:20 - 16:40), laboratorio de biomecanica
+- Lunes: bloque 5 (L5: 15:20 - 16:40), EAO561
+- Miércoles: bloque 5 (W5: 15:20 - 16:40), EAO573
 
 ## Horário Laboratório
-- Lunes, bloque 6 (L6: 16:55 - 18:15), laboratorio de biomecanica
+- Lunes, bloque 6 (L6: 16:55 - 18:15), Laboratorio de Electromedicina y Mediciones Fisiológicas
 
 ## Profesor
 
@@ -74,17 +76,17 @@ Además, se exige un mínimo de 75 % de asistencia a clases presenciales. Una as
 
 ### Laboratorio
 
-EL desarrollo del laboratorio estará en función a experiencias de laboratorio presenciales. Éstas corresponderán a las experiencias entregadas en guías que deberán ser desarrolladas en clases y cuyo informe deberá ser entregado al finalizar la sesión.
+El desarrollo del laboratorio estará en función a experiencias presenciales y online. Las experiencias presenciales corresponderán a guías que deberán ser desarrolladas en clases, y cuyo informe deberá ser entregado al finalizar la sesión. Las experiencias online serán desarrolladas con la plataforma tinkercad, y serán evaluadas a través de cuestionarios en uvirtual.
 
-Las ponderaciones para la evaluación de laboratorio serán:
+Las ponderaciones para la evaluación de laboratorio serán 70% del promedio simple de las experiencias presenciales y 30% del promedio simple de las experiencias online:
 
-$$ Promedio Laboratorio = \sum_{i=1}^{nl} \frac {Lp_i}{nl}$$
+$$ Promedio Laboratorio = 0.7\sum_{i=1}^{nl} \frac {Lp_i}{nl} + 0.3\sum_{j=1}^{no} \frac {Lo_j}{no}$$
 
-Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales. Están planificados $nl=11$ actividades de laboratorio durante el semestre.
+Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Lo_j$ son las notas de las experiencias de laboratorio online. Están planificados $nl=8$ actividades de laboratorio presenciales y $no=7$ actividades online durante el semestre.
 
 Si el Promedio Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
 
-La inasistencia al laboratorio deberá ser justificada ante docencia, quien informará a los profesores sobre la justificación de ésta. En caso de inasistencia justificada, la actividad de recuperación será informada caso a caso.
+La inasistencia al laboratorio presencial deberá ser justificada ante docencia, quien informará a los profesores sobre la justificación de ésta. En caso de inasistencia justificada, la actividad de recuperación será informada caso a caso.
 
 La inasistencia INJUSTIFICADA a un laboratorio causa reprobación automática de la parte de laboratorio de la asignatura, con una nota 3.5 .
 
@@ -98,7 +100,7 @@ $$ Promedio Final = 0.7\ Promedio Teoría + 0.3\ Promedio Laboratorio  $$
 
 Se considera redondeo convencional con una casa decimal para el promedio final (entre 0.01 y 0.04 se redondea hacia abajo: 0.0; y entre 0.05 y 0.09 se redondea hacia arriba: 0.1).
 
-Respecto a las demás reglas de docencia, este curso se adscribe a las DIRECTRICES DE DOCENCIA ING. CIVIL BIOMEDICA 2024.
+Respecto a las demás reglas de docencia, este curso se adscribe a las [DIRECTRICES DOCENCIA ING. CIVIL BIOMEDICA 2024](https://ingenieriabiomedica.usach.cl/sites/ing-civil-biomedica/files/directrices_docencia_ing._civil_biomedica_2024.pdf).
 
 ## Bibliografia
 - Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.).México: Prentice Hall.
