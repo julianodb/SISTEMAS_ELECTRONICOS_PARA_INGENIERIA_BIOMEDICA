@@ -111,12 +111,9 @@
 - [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
 - [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica, resistencias especiales
 - [L2](/laboratorio/L2.md): Diodo DC y Zener
-- [L3](/laboratorio/L3.md): respuesta en frecuencia / filtros pasivos & detector de peak. 
-- [L4](/laboratorio/L4.md): transistor BJT (curvas características) + corte y saturación. 
-- [L5](/laboratorio/L5.md): BJT como amplificador
-- [L6](/laboratorio/L6.md): amplificador operacional y aplicaciones en CC
-- [L7](/laboratorio/L7.md): respuesta en frecuencia / filtros activos. 
-- [L8](/laboratorio/L8.md): multivibradores
-- [L9](/laboratorio/L9.md): Rectificador y Regulador Lineal
-- [LA](/laboratorio/LA.md): Reguladores Conmutados
-- [LB](/laboratorio/LB.md): Técnicas de Fabricación y Prototipaje en Electrónica
+- [L3](/laboratorio/L3.md): transistor BJT (curvas características) + corte y saturación. 
+- [L4](/laboratorio/L4.md): amplificador operacional y aplicaciones en CC
+- [L5](/laboratorio/L5.md): respuesta en frecuencia / filtros activos. 
+- [L6](/laboratorio/L6.md): multivibradores
+- [L7](/laboratorio/L7.md): Reguladores Conmutados
+- [L8](/laboratorio/L8.md): Técnicas de Fabricación y Prototipaje en Electrónica
