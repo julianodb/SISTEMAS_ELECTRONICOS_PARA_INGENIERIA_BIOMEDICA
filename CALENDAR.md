@@ -2,70 +2,70 @@
 
 ## SEPTIEMBRE / 2024
 
-|Sem |Lun       |Mar |Mie |Jue |Vie |Sab |Dom |
-|:-: |:-:       |:-: |:-: |:-: |:-: |:-: |:-: |
-|    |  2       |  3 |  4 |  5 |  6 |  7 |  8 |
-|    |          |    |    |    |    |    |    |
-|    |  9       | 10 | 11 | 12 | 13 | 14 | 15 |
-|    |          |    |    |    |    |    |    |
-|    | 16       | 17 | 18 | 19 | 20 | 21 | 22 |
-|    | RR       | RR | RR | RR | RR | RR |    |
-|    | 23       | 24 | 25 | 26 | 27 | 28 | 29 |
-|  1 | II 01 L1 |    | 02 |    |    |    |    |
+|Sem |Lun            |Mar |Mie |Jue |Vie |Sab |Dom |
+|:-: |:-:            |:-: |:-: |:-: |:-: |:-: |:-: |
+|    |  2            |  3 |  4 |  5 |  6 |  7 |  8 |
+|    |               |    |    |    |    |    |    |
+|    |  9            | 10 | 11 | 12 | 13 | 14 | 15 |
+|    |               |    |    |    |    |    |    |
+|    | 16            | 17 | 18 | 19 | 20 | 21 | 22 |
+|    | RR            | RR | RR | RR | RR | RR |    |
+|    | 23            | 24 | 25 | 26 | 27 | 28 | 29 |
+|  1 | II 01 L1(a+b) |    | 02 |    |    |    |    |
 
 ## OCTUBRE / 2024
 
-|Sem |Lun    |Mar |Mie |Jue |Vie |Sab |Dom |
-|:-: |:-:    |:-: |:-: |:-: |:-: |:-: |:-: |
-|    | 30    |  1 |  2 |  3 |  4 |  5 |  6 |
-|  2 | 03 L2 |    | 04 |    |    |    |    |
-|    |  7    |  8 |  9 | 10 | 11 | 12 | 13 |
-|  3 | 05 L3 |    | 06 |    |    | FF |    |
-|    | 14    | 15 | 16 | 17 | 18 | 19 | 20 |
-|  4 | 07 L4 |    | 08 |    |    |    |    |
-|    | 21    | 22 | 23 | 24 | 25 | 26 | 27 |
-|  5 | P1    |    | 09 |    |    |    |    |
-|    | 28    | 29 | 30 | 31 |  1 |  2 |  3 |
-|  6 | 10 L5 |    | 11 | FF | FF | FF |    |
+|Sem |Lun       |Mar |Mie |Jue |Vie |Sab |Dom |
+|:-: |:-:       |:-: |:-: |:-: |:-: |:-: |:-: |
+|    | 30       |  1 |  2 |  3 |  4 |  5 |  6 |
+|  2 | 03 L2(a) |    | 04 |    |    |    |    |
+|    |  7       |  8 |  9 | 10 | 11 | 12 | 13 |
+|  3 | 05 L2(b) |    | 06 |    |    | FF |    |
+|    | 14       | 15 | 16 | 17 | 18 | 19 | 20 |
+|  4 | 07 L3(b) |    | 08 |    |    |    |    |
+|    | 21       | 22 | 23 | 24 | 25 | 26 | 27 |
+|  5 | P1 L3(a) |    | 09 |    |    |    |    |
+|    | 28       | 29 | 30 | 31 |  1 |  2 |  3 |
+|  6 | 10 L4(a) |    | 11 | FF | FF | FF |    |
 
 ## NOVIEMBRE / 2024
 
-|Sem |Lun    |Mar |Mie |Jue    |Vie |Sab |Dom |
-|:-: |:-:    |:-: |:-: |:-:    |:-: |:-: |:-: |
-|    |  4    |  5 |  6 |  7    |  8 |  9 | 10 |
-|  7 | 12 L6 |    | 13 |       |    |    |    |
-|    | 11    | 12 | 13 | 14    | 15 | 16 | 17 |
-|  8 | 14 L7 |    | 15 |       |    |    |    |
-|    | 18    | 19 | 20 | 21    | 22 | 23 | 24 |
-|  9 | 16 L8 |    | P2 |       |    |    |    |
-|    | 25    | 26 | 27 | 28    | 29 | 30 |  1 |
-| 10 | 17 L9 |    | 18 |       |    |    |    |
+|Sem |Lun       |Mar |Mie |Jue    |Vie |Sab |Dom |
+|:-: |:-:       |:-: |:-: |:-:    |:-: |:-: |:-: |
+|    |  4       |  5 |  6 |  7    |  8 |  9 | 10 |
+|  7 | 12 L4(b) |    | 13 |       |    |    |    |
+|    | 11       | 12 | 13 | 14    | 15 | 16 | 17 |
+|  8 | 14 L5(b) |    | 15 |       |    |    |    |
+|    | 18       | 19 | 20 | 21    | 22 | 23 | 24 |
+|  9 | 16 L5(a) |    | P2 |       |    |    |    |
+|    | 25       | 26 | 27 | 28    | 29 | 30 |  1 |
+| 10 | 17 L6(a) |    | 18 |       |    |    |    |
 
 ## DICIEMBRE / 2024
 
-|Sem |Lun    |Mar |Mie |Jue |Vie |Sab |Dom |
-|:-: |:-:    |:-: |:-: |:-: |:-: |:-: |:-: |
-|    |  2    |  3 |  4 |  5 |  6 |  7 |  8 |
-| 11 | 19 LA |    | 20 |    |    |    |    |
-|    |  9    | 10 | 11 | 12 | 13 | 14 | 15 |
-| 12 | 21    |    | 22 |    |    |    |    |
-|    | 16    | 17 | 18 | 19 | 20 | 21 | 22 |
-| 13 | 23    |    |    |    |    |    |    |
-|    | 23    | 24 | 25 | 26 | 27 | 28 | 29 |
-| 14 |       |    | FF |    |    |    |    |
+|Sem |Lun       |Mar |Mie |Jue |Vie |Sab |Dom |
+|:-: |:-:       |:-: |:-: |:-: |:-: |:-: |:-: |
+|    |  2       |  3 |  4 |  5 |  6 |  7 |  8 |
+| 11 | 19 L6(b) |    | 20 |    |    |    |    |
+|    |  9       | 10 | 11 | 12 | 13 | 14 | 15 |
+| 12 | 21 L7(b) |    | 22 |    |    |    |    |
+|    | 16       | 17 | 18 | 19 | 20 | 21 | 22 |
+| 13 | 23 L7(a) |    |    |    |    |    |    |
+|    | 23       | 24 | 25 | 26 | 27 | 28 | 29 |
+| 14 |          |    | FF |    |    |    |    |
 
 ## ENERO / 2025
 
-|Sem |Lun    |Mar |Mie |Jue |Vie |Sab |Dom |
-|:-: |:-:    |:-: |:-: |:-: |:-: |:-: |:-: |
-|    | 30    | 31 |  1 |  2 |  3 |  4 |  5 |
-| 15 |       |    | FF |    |    |    |    |
-|    |  6    |  7 |  8 |  9 | 10 | 11 | 12 |
-| 16 | LB LC |    | 24 |    |    |    |    |
-|    | 13    | 14 | 15 | 16 | 17 | 18 | 19 |
-| 17 | P3    |    | POR|    |    | TT |    |
-|    | 20    | 21 | 22 | 23 | 24 | 25 | 26 |
-|    |       |    |    |    |    |    |    |
+|Sem |Lun      |Mar |Mie |Jue |Vie |Sab |Dom |
+|:-: |:-:      |:-: |:-: |:-: |:-: |:-: |:-: |
+|    | 30      | 31 |  1 |  2 |  3 |  4 |  5 |
+| 15 |         |    | FF |    |    |    |    |
+|    |  6      |  7 |  8 |  9 | 10 | 11 | 12 |
+| 16 | L8(a+b) |    | 24 |    |    |    |    |
+|    | 13      | 14 | 15 | 16 | 17 | 18 | 19 |
+| 17 | P3      |    | POR|    |    | TT |    |
+|    | 20      | 21 | 22 | 23 | 24 | 25 | 26 |
+|    |         |    |    |    |    |    |    |
 
 - II: Inicio del Semestre
 - RR: Receso de Actividades
@@ -103,7 +103,7 @@
 | [21](/teoria/21_oscilators.md) | Osciladores | Osciladores | Entrega $T_9$ (miercoles) |  |
 | [22](/teoria/22_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores, entrega guia PEP3 |  |  |
 | [23](/teoria/23_manufacturing.md) | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, respuestas guia PEP3 | Entrega $T_A$ | inicio $T_A$ |
-| P3 | PEP3 | Multiviradores, Fuentes Conmutadas, Osciladores, Física de semiconductores | entrega dispositivo diseñado | |
+| P3 | PEP3 | Multivibradores, Fuentes Conmutadas, Osciladores, Física de semiconductores | entrega dispositivo diseñado | |
 | PO | POR | Prueba Optativa Recuperativa | | |
 
 # Laboratórios
