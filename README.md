@@ -1,4 +1,4 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 1/2024
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2/2024
 ##### enfoque Ingeniería Biomédia
 
 ## Página de la asignatura
@@ -24,10 +24,10 @@ contacto: juliano.dawid @usach.cl
 
 Al término de la asignatura el alumno será capaz de:
 1. Identificar, analizar y especificar dispositivos de electrónica
-1. Analizar circuitos que utilizan dispositivos de electrónica (rectificadores, filtros, cargadores de batería, amplificadores, respuesta de frecuencia, etc)
-1. Analizar circuitos que utilizan amplificadores operacionales para diferentes aplicaciones (amplificadores, generadores de formas de ondas, filtros activos, osciladores, etc)
+1. Analizar circuitos que utilizan dispositivos de electrónica (rectificadores, LEDs, drivers, filtros, amplificadores etc)
+1. Analizar circuitos que utilizan amplificadores operacionales para diferentes aplicaciones (amplificadores, sumadores, amplificadores de instrumentación, generadores de formas de ondas, filtros activos, osciladores etc)
 1. Identificar y analizar amplificadores de potencia (analisis de eficiencia, temperatura, distorción)
-1. Identificar y analizar fuentes de alimentación conmutadas
+1. Identificar y analizar fuentes de alimentación lineales y conmutadas
 
 ## Resultados de Aprendizaje - Laboratório
 
