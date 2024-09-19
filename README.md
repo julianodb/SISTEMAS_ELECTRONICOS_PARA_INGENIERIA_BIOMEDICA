@@ -22,12 +22,13 @@ contacto: juliano.dawid @usach.cl
 
 ## Resultados de Aprendizaje - Teoría
 
-Al término de la asignatura el alumno será capaz de:
-1. Identificar, analizar y especificar dispositivos de electrónica
-1. Analizar circuitos que utilizan dispositivos de electrónica (rectificadores, LEDs, drivers, filtros, amplificadores etc)
-1. Analizar circuitos que utilizan amplificadores operacionales para diferentes aplicaciones (amplificadores, sumadores, amplificadores de instrumentación, generadores de formas de ondas, filtros activos, osciladores etc)
-1. Identificar y analizar amplificadores de potencia (analisis de eficiencia, temperatura, distorción)
-1. Identificar y analizar fuentes de alimentación lineales y conmutadas
+Al término de la asignatura el alumno será capaz de identificar, analizar y especificar:
+1. Resistores, capacitores, diodos, transistores
+2. Aplicaciones directas de diodos y transistores, como rectificadores y drivers
+3. Amplificadores operacionales y sus aplicaciones
+4. Filtros análogos pasivos y activos
+5. Osciladores
+6. Fuentes de alimentación lineales y conmutadas
 
 ## Resultados de Aprendizaje - Laboratório
 
