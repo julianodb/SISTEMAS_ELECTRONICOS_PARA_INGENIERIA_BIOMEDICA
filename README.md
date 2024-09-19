@@ -22,11 +22,11 @@ contacto: juliano.dawid @usach.cl
 
 ## Resultados de Aprendizaje - Teoría
 
-Al término de la asignatura el alumno será capaz de identificar, analizar y especificar:
+Al término de la asignatura el alumno será capaz de identificar, analizar y especificar los principales componentes y circuitos de la electrónica analógica:
 1. Resistores, capacitores, diodos, transistores
 2. Aplicaciones directas de diodos y transistores, como rectificadores y drivers
 3. Amplificadores operacionales y sus aplicaciones
-4. Filtros análogos pasivos y activos
+4. Filtros analógicos pasivos y activos
 5. Osciladores
 6. Fuentes de alimentación lineales y conmutadas
 
