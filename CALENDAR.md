@@ -61,9 +61,9 @@
 |    | 30      | 31 |  1 |  2 |  3 |  4 |  5 |
 | 15 |         |    | FF |    |    |    |    |
 |    |  6      |  7 |  8 |  9 | 10 | 11 | 12 |
-| 16 | L8(a+b) |    | 24 |    |    |    |    |
+| 16 | P3 L8(a+b) |    | POR |    | TT   |    |    |
 |    | 13      | 14 | 15 | 16 | 17 | 18 | 19 |
-| 17 | P3      |    | POR|    |    | TT |    |
+| 17 |       |    |    |    |    |    |    |
 |    | 20      | 21 | 22 | 23 | 24 | 25 | 26 |
 |    |         |    |    |    |    |    |    |
 
@@ -79,7 +79,7 @@
 | #  | Titulo |  Descripción |  Entrega |  Trabajo |
 | -- | --     | -- | -- | -- |
 | [01](/teoria/01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, convenciones y simbología en esquemáticos | | |
-| [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto Espirómetro |  | inicio $T_1$ |
+| [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto Termometro |  | inicio $T_1$ |
 | [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos |  |  |
 | [04](/teoria/04_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos | Entrega $T_1$ | inicio $T_2$ |
 | [05](/teoria/05_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del BJT como llave|  |  |
