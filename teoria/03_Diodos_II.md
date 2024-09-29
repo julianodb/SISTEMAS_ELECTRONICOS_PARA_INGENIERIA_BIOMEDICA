@@ -1,8 +1,12 @@
 # 03 - Diodos y Aplicaciones II
 
-## Revisión de sentido de voltaje y corrientes
+## Limites del Diodo y Hojas de Dato
 
-Corriente tiene el sentido contrario de la tensión eléctrica, a menos que sea un dispositivo que entrega energía al circuito, como una batería.
+- Polarizado en directa
+- Polarizado en inversa
+- Tensión inversa
+- Tensión de ruptura
+- Potencia
 
 ## Diodos Zener y TVS
 
