@@ -77,3 +77,19 @@ $$ T_t = R_{m3}C_{m1}\ln \frac{1}{1- \beta}$$
 La siguiente figura muestra un bosquejo de las formas de onda del circuito, siendo la primera señal del circuito de disparo ($TRIGGER$).
 
 ![T7_F5](../img/T7_F4.jpeg)
+
+## Ejercicios
+
+1. Determine la frecuencia de oscilación del siguiente circuito considerando los siguientes valores de los componentes:
+
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/astable_multivibrator.png" width="300">
+    
+    1. $R_8 = R_9 = 10\ k\Omega$ ; $R_{10} = 10\ k\Omega$ ; $C_4 = 10\ nF$ ; $V_{bias} = 12\ V$
+
+1. Determine el tiempo en el estado "cuasi estable" del siguiente circuito, considerando los siguientes valores para los componentes:
+
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/monostable_multivibrator.png" width="400">
+    
+    1. $R_8 = R_9 = 10\ k\Omega$ ; $R_{10} = 10\ k\Omega$ ; $C_4 = 10\ nF$ ; $V_{bias} = 12\ V$ ; diodos ideales 
+
+    1. $R_8 = R_9 = 10\ k\Omega$ ; $R_{10} = 10\ k\Omega$ ; $C_4 = 10\ nF$ ; $V_{bias} = 12\ V$ ; $V_f=0.7\ V$ para los diodos polarizados en directa

@@ -83,3 +83,33 @@ Primeramente, notese que $v_o$ tiene dos posibles valores: $-V_{CC}$ o $+V_{CC}$
 Sin embargo, esta configuración contiene una característica peculiar que lo distingue del comparador tradicional. Si la entrada está entre $-\beta V_{CC}$ y $+\beta V_{CC}$, la salida puede estar en alguno de los dos estados. Solamente la información del valor de $v_i$ es insuficiente para determinar en cual de los dos. Es necesario saber, también, el pasado del circuito. Si antes de entrar en la región entre $-\beta V_{CC}$ y $+\beta V_{CC}$ $v_i$ era mayor que $+\beta V_{CC}$, la salida estará en $+V_{CC}$. Si, en el caso contrario, $v_i$ era menor que $-\beta V_{CC}$ antes de entrar a la región central, la salida se mantiene en $-V_{CC}$. Por ésta razon se dice que el comparador con histeresis es un circuito con memoria, y se puede utilizar como bloque básico para construir circuitos digitales.
 
 Otra forma de entender el circuito es observar que el umbral de $v_i$ para hacer la salida cambiar a $+V_{CC}$ es $+\beta V_{CC}$, pero el umbral de $v_i$ para hacer la salida cambiar a $-V_{CC}$ es $-\beta V_{CC}$. Es decir, el comparador tiene dos umbrales distintos. Es ésta característica que lo hace muy útil para minimizar el fenómeno de rebote descrito anteriormente. Esto porque al cruzar el umbral positivo por primera vez, será más dificil que el voltaje cruce el umbral negativo que se encuentra más bajo por diversos milivolts. Se generan transiciones más limpias, en este caso.
+
+### Ejercicios
+
+1. Determine los umbrales positivo ( $V_{TH}$ ) y negativo ( $V_{TL}$ ) del siguiente circuito considerando los siguientes valores de los componentes:
+
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/comparator_schmitt_inverting.png" width="300">
+
+    1. $R_8 = R_9 = 10\ k\Omega$; $V_{CC} = 12\ V$
+
+    1. $R_8 = 1\ k\Omega$; $R_9 = 11\ k\Omega$; $V_{CC} = 12\ V$
+
+    1. $R_8 = 1\ k\Omega$; $R_9 = 100\ k\Omega$; $V_{CC} = 12\ V$
+
+1. Determine los umbrales positivo y negativo del siguiente circuito considerando los siguientes valores de los componentes:
+
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/comparator_schmitt_non_inverting.png" width="300">
+
+    1. $R_8 = R_9 = 10\ k\Omega$; $V_{CC} = 12\ V$
+
+    1. $R_8 = 1\ k\Omega$; $R_9 = 10\ k\Omega$; $V_{CC} = 12\ V$
+
+    1. $R_8 = 1\ k\Omega$; $R_9 = 100\ k\Omega$; $V_{CC} = 12\ V$
+
+### Respuestas
+
+1.i. $V_{TH} = -6\ V$ ; $V_{TL} = 6\ V$
+
+1.ii. $V_{TH} = -1\ V$ ; $V_{TL} = 1\ V$
+
+1.iii. $V_{TH} \approx -0.12\ V$ ; $V_{TL} \approx 0.12\ V$
