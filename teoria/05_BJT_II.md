@@ -1,6 +1,6 @@
 # Transistor de Unión Bipolar (BJT) III
 
-- El efecto de $V_{CE}$
+- Modo Activo
 
 ## Resúmen BJT: Modo de Saturación vs modo activo
 
