@@ -17,12 +17,14 @@
           \textrm{conduce }(I_B>0) & \quad \textrm{si } V_{BE} >  V_{BE_{SAT}} \\
           \textrm{no conduce }(I_B=0)                 & \quad \textrm{si } V_{BE} \leq V_{BE_{SAT}}
       \end{array} 
-   \right.
+   \right}
    $$
 1. $I_B$ vs $I_C$ vs $V_{CE}$
    1. En modo de corte ($I_B = 0$)
+
    $$I_C = 0$$
    1. (en modo saturado ($\beta I_B > I_{C_{SAT}} $)):
+   
    $$V_{CE} = V_{CE_{SAT}}$$
 
 $V_{BE_{SAT}}$, $\beta$ y $V_{CE_{SAT}}$ son constantes para cada transistor
