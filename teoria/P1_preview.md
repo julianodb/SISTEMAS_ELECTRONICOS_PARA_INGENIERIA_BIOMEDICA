@@ -1,4 +1,4 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/01
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/02
 ## Guía Prueba Escrita 1
 
 1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F = 0.7\ V$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y que el voltaje de zener del diodo zener es $V_Z=5.1\ V$, resuelva los siguientes circuitos (1.5 pt):
