@@ -6,16 +6,43 @@
    1. Datos: $V_{CC}=10\ V$, $R_1=5.1\ k\Omega$, $R_2=10\ k\Omega$
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_2R.png" width="350">
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_2R_with_currents.png" width="350">
+      >
+      > Ambos diodos están conduciendo: $D_1$ en directa y el diodo zener en inversa.
+      >
+      > $V_1 = 0.7\ V$
+      >
+      > $V_2 = 5.8\ V$
+      >
+      > $I_{D_1} = I_{R_1} \approx 0.8\ mA$
+      >
+      > $I_{R_2} \approx 0.5\ mA\ V$
+      >
+      > $I_{D_Z} \approx 0.3\ mA\ V$
    
    1. Datos: $V_{CC}=5\ V$, $R_3=6.8\ k\Omega$, $R_4=4.7\ k\Omega$, $R_5=3.3\ k\Omega$
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R.png" width="300">
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_with_currents.png" width="350">
+      >
+      > Ambos diodos están cortados.
+      >
+      > $V_3 = V_4 = V_5 = 0\ V$
+      >
+      > $I_3 = I_4 = I_5 = 0\ A$
 
 2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 10\ V$, $R_B= 1\ M\Omega$, $R_C= 5.1\ k\Omega$, $R_E= 100\ \Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
    1. La corriente de colector de polarización $I_{C_Q}$
    2. La ganancia de voltaje AC ($A_V$)
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_base_polarized_no_ce.png" width="300"> 
+
+      > $I_{C_Q} \approx 950\ \mu A$
+      >
+      > $A_V \approx 40$
+
 
 # Fórmulas
 
