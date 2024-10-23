@@ -41,7 +41,7 @@
 
       > $I_{C_Q} \approx 950\ \mu A$
       >
-      > $A_V \approx 40$
+      > $A_V \approx -40$
 
 
 # Fórmulas
