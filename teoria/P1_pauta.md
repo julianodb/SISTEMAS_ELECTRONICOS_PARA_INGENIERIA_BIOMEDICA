@@ -1,6 +1,8 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/02
 ## Prueba Escrita 1 - Pauta
 
+$\require{cancel}$
+
 1. Un determinado sensor genera una señal de voltaje $V_{in}$ que representa la respiración de un paciente. La señal es aproximadamente una onda sinusoidal con frecuencia entre 14 y 18 respiraciones por minuto y amplitud 20 mV peak-to-peak. Sin embargo, al medir $V_{in}$, se observa que, además de la señal esperada, también hay una oscilación de 50 Hz con amplitud 10 mV peak-to-peak, conforme se muestra en la figura a continuación:
 
    ![vi](../img/P1_F2.png)
@@ -67,7 +69,7 @@
 
       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_2R_with_currents.png" width="300">
       >
-      > Al remover el diodo del circuito, se encuentra que $V_{D_1} = V_{CC} = 5\ V$. Por lo tanto, el diodo está polarizado en directa y conduce. (+0.2pt)
+      > Al remover el diodo del circuito, se encuentra que $V_{D_1} = V_{CC} = 5\ V$. Por lo tanto, el diodo está polarizado en directa y conduce ($V_{D_1} = V_F$). (+0.2pt)
       >
       > $ V_{R_1} = V_{CC} - V_{D_1} = 5 - 0.7 = 4.3\ V $ (+0.1pt)
       >
@@ -82,7 +84,7 @@
       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_with_currents.png" width="300">
       >
       > Al remover ambos diodos del circuito se encuentra que:
-      > - $V_{D_Z} = V_3 - V_{CC} = -10\ V$. Como -10 V es menor que $-V_Z = -3.3\ V$, el diodo zener conduce en inversa. (+0.1pt)
+      > - $V_{D_Z} = V_3 - V_{CC} = -10\ V$. Como -10 V es menor que $-V_Z = -3.3\ V$, el diodo zener conduce en inversa ($V_{D_Z} = -V_Z$). (+0.1pt)
       > - $V_{D_2} = V_4 - V_{CC} = -10\ V$. Como -10 V es menor que $V_F = 0.7\ V$, el diodo 2 no conduce. (+0.1pt)
       >
       > $V_3 = V_{CC} + V_{D_Z} = 10 - 3.3 = 6.7\ V$ (+0.05pt)
@@ -113,7 +115,7 @@
       >
       > $I_2 = I_3 = \frac{V_{CC}-V_1}{R_7+R_8} = \frac{3.6-2.9}{2000} = 0.35\ mA$ (+0.05pt)
       >
-      > $I_1 = I_5 - I_3 = 2.9 - 0.35 = 2.65\ mA$ (+0.05pt)
+      > $I_1 = I_5 - I_3 = 2.9 - 0.35 = 2.55\ mA$ (+0.05pt)
       >
       > $V_2 = V_{CC} - R_8 I_2 = 3.6 - 0.35 = 3.25\ V$ (+0.05pt)
       >
