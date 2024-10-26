@@ -61,17 +61,63 @@
 
 1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (1.5 pt):
    
-   1. Datos: $V_{CC}=5\ V$, $R_1=3.3\ k\Omega$, $R_2=4.7\ k\Omega$, $V_F=0.7\ V$
+   1. Datos: $V_{CC}=5\ V$, $R_1=3.3\ k\Omega$, $R_2=4.7\ k\Omega$, $V_F=0.7\ V$ (0.5 pt)
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_2R.png" width="300">
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_2R_with_currents.png" width="300">
+      >
+      > Al remover el diodo del circuito, se encuentra que $V_{D_1} = V_{CC} = 5\ V$. Por lo tanto, el diodo está polarizado en directa y conduce. (+0.2pt)
+      >
+      > $ V_{R_1} = V_{CC} - V_{D_1} = 5 - 0.7 = 4.3\ V $ (+0.1pt)
+      >
+      > $ I_1 = \frac{V_{R_1}}{R_1} = \frac{4.3}{3300} \approx 1.3\ mA $ (+0.1pt)
+      >
+      > $ I_2 = \frac{V_{CC}}{R_2} = \frac{5}{4700} \approx 1.1\ mA $ (+0.1pt)
    
-   1. Datos: $V_{CC}=10\ V$, $R_3=1\ k\Omega$, $R_4=10\ k\Omega$, $R_5=6.8\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
+   1. Datos: $V_{CC}=10\ V$, $R_3=1\ k\Omega$, $R_4=10\ k\Omega$, $R_5=6.8\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$ (0.5 pt)
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R.png" width="300">
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_with_currents.png" width="300">
+      >
+      > Al remover ambos diodos del circuito se encuentra que:
+      > - $V_{D_Z} = V_3 - V_{CC} = -10\ V$. Como -10 V es menor que $-V_Z = -3.3\ V$, el diodo zener conduce en inversa. (+0.1pt)
+      > - $V_{D_2} = V_4 - V_{CC} = -10\ V$. Como -10 V es menor que $V_F = 0.7\ V$, el diodo 2 no conduce. (+0.1pt)
+      >
+      > $V_3 = V_{CC} + V_{D_Z} = 10 - 3.3 = 6.7\ V$ (+0.05pt)
+      >
+      > $I_4 = 0$ (+0.05pt)
+      >
+      > $I_3 = I_5 = \frac{V_3}{R_3+R_5} = \frac{6.7}{1000 + 6800} \approx 860\ \mu A$ (+0.1pt)
+      >
+      > $V_4 = V_5 = R_5 I_5 = 6800 \times 860 \times 10^{-6} \approx 5.8\ V$ (+0.1pt)
 
    1. Datos: $V_{CC}=3.6\ V$, $R_6=R_7=R_8=1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt.png" width="300">
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt_with_currents.png" width="300">
+      >
+      > Al remover ambos diodos del circuito se encuentra que:
+      > - $V_1 = \frac{R_6}{R_6+R_7+R_8} V_{CC} = \frac{V_{CC}}{3} = 1.2\ V$
+      > - $V_2 = \frac{R_6+R_7}{R_6+R_7+R_8} V_{CC} = \frac{2 V_{CC}}{3} = 2.4\ V$
+      > - $V_{D_3} = V_{CC} - V_1 = 2.4\ V $. Como 2.4 V es mayor que $V_F=0.7\ V$, $D_3$ conduce. (+0.1pt)
+      > - $V_{D_Z} = - V_2 = -2.4\ V $. Como -2.4 V está entre $-V_Z$ y $V_F$, el diodo zener no conduce. (+0.1pt)
+      >
+      > $V_1 = V_{CC} - V_F = 3.6 - 0.7 = 2.9\ V$ (+0.05pt)
+      >
+      > $I_5 = \frac{V_1}{R_6} = \frac{2.9}{1000} = 2.9\ mA$ (+0.05pt)
+      >
+      > $I_4 = 0$ (+0.05pt)
+      >
+      > $I_2 = I_3 = \frac{V_{CC}-V_1}{R_7+R_8} = \frac{3.6-2.9}{2000} = 0.35\ mA$ (+0.05pt)
+      >
+      > $I_1 = I_5 - I_3 = 2.9 - 0.35 = 2.65\ mA$ (+0.05pt)
+      >
+      > $V_2 = V_{CC} - R_8 I_2 = 3.6 - 0.35 = 3.25\ V$ (+0.05pt)
+      >
+      > se observa que $V_{D_Z} = - V_2 = -3.25\ V $ sigue entre $-V_Z$ y $V_F$, confirmando que el diodo zener no conduce
 
 1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=12\ V$, $R_B= 2.7\ M\Omega$, $R_C= 6.8\ k\Omega$, $\beta = 200$, $V_{CE_{SAT}} = 0.2\ V$ y que $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
    1. $V_i = 0.6\ V$
@@ -81,10 +127,16 @@
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_inverter.png" width="200">
 
 2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 12\ V$, $R_1= 150\ k\Omega$, $R_2=39\ k\Omega$, $R_C= 2\ k\Omega$, $\beta = 50$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_no_re.png" width="300"> 
+
    1. La corriente de colector de polarización $I_{C_Q}$
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_thevenin_no_re.png" width="300"> 
+
    2. La ganancia de voltaje AC ($A_V$)
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_no_re.png" width="300"> 
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_small_signal.png" width="300"> 
+      
 
 # Fórmulas
 
