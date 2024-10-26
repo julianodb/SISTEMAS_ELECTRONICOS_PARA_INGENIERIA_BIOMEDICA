@@ -13,11 +13,51 @@
 
    Figura 2: Filtro
 
+   > reemplazando C por una resistencia con valor $\frac{1}{Cs}$ y aplicando divisor de voltaje:
+   >
+   > $V_{out} = \frac{\frac{1}{Cs}}{\frac{1}{Cs}+R} V_{in}$
+   >
+   > $V_{out} = \frac{1}{1+RCs} V_{in}$
+   >
+   > $H(s) = \frac{v_{out}}{v_{in}} = \frac{1}{1+RCs}$
+   >
+   > La ganancia en función de la frecuencia es, por lo tanto:
+   >
+   > $A_v(\omega) = | H(s=j\omega) | = |\frac{1}{1+RCj\omega}|$
+   >
+   > $A_v(\omega) = \frac{1}{\sqrt{1+(RC\omega)^2}}$
+   >
+   > $A_v(\omega) = \frac{1}{\sqrt{1+(4.7 \omega)^2}}$
+
    1. Determine en cuanto el circuito atenua el ruido. Es decir, si la entrada es una entrada sinusoidal con amplitud 10 mV y frecuencia 50 Hz, cual seria la amplitud de la salida en estado estacionario. (0.5 pt)
 
+      > $\omega = 2\pi f = 2 \pi 50 = 100 \pi$ (+0.2pt)
+      >
+      > $A_v(100 \pi) = \frac{1}{\sqrt{1+(4.7 \times 100 \pi)^2}} \approx \frac{1}{\sqrt{2.18 \times 10^8}} \approx 6.8 \times 10^{-5}$ (+0.2pt)
+      >
+      > Por lo tanto, la amplitud de salida para una entrada con amplitud 10 mV sería:
+      >
+      > $|V_{out}| = A_v(\omega) |V_{in}| = 6.8 \times 10^{-5} 10 \times 10^{-3} = 6.8 \times 10^{-7} V = 0.68\ \mu V$ (+0.1pt)
+
    1. Determine en cuanto el circuito atenua la señal de respiración si la frecuencia respiratoria es 14 respiraciones / minuto. Es decir, si la entrada es sinusoidal con amplitud 20 mV y frecuencia 14 rpm, cual seria la amplitud de la salida en estado estacionario. (0.5 pt)
+   
+      > $\omega = 2\pi f = 2 \pi \frac{14}{60} \approx 1.466\ rad/s$ (+0.2pt)
+      >
+      > $A_v(1.466) = \frac{1}{\sqrt{1+(4.7 \times 1.466)^2}} \approx \frac{1}{\sqrt{48}} \approx 0.144$ (+0.2pt)
+      >
+      > Por lo tanto, la amplitud de salida para una entrada con amplitud 20 mV sería:
+      >
+      > $|V_{out}| = A_v(\omega) |V_{in}| = 0.144 \times 20 \times 10^{-3} = 2.88 \times 10^{-3} = 2.88\ m V$ (+0.1pt)
 
    1. Determine en cuanto el circuito atenua la señal de respiración si la frecuencia respiratoria es 18 respiraciones / minuto. Es decir, si la entrada es sinusoidal con amplitud 20 mV y frecuencia 18 rpm, cual seria la amplitud de la salida en estado estacionario. (0.5 pt)
+   
+      > $\omega = 2\pi f = 2 \pi \frac{18}{60} \approx 1.885\ rad/s$ (+0.2pt)
+      >
+      > $A_v(1.885) = \frac{1}{\sqrt{1+(4.7 \times 1.885)^2}} \approx \frac{1}{\sqrt{79}} \approx 0.112$ (+0.2pt)
+      >
+      > Por lo tanto, la amplitud de salida para una entrada con amplitud 20 mV sería:
+      >
+      > $|V_{out}| = A_v(\omega) |V_{in}| = 0.112 \times 20 \times 10^{-3} = 2.24 \times 10^{-3} = 2.24\ m V$ (+0.1pt)
 
 1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (1.5 pt):
    
