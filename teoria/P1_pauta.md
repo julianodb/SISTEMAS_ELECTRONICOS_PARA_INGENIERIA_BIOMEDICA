@@ -120,11 +120,68 @@
       > se observa que $V_{D_Z} = - V_2 = -3.25\ V $ sigue entre $-V_Z$ y $V_F$, confirmando que el diodo zener no conduce
 
 1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=12\ V$, $R_B= 2.7\ M\Omega$, $R_C= 6.8\ k\Omega$, $\beta = 200$, $V_{CE_{SAT}} = 0.2\ V$ y que $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
-   1. $V_i = 0.6\ V$
-   1. $V_i = 6\ V$
-   1. $V_i = 12\ V$
    
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_inverter.png" width="200">
+   <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_inverter.png" width="200">
+
+   1. $V_i = 0.6\ V$ (0.5pt)
+
+      > Si se remueve el diodo base-emisor del circuito se encuentra que $V_{BE} = 0.6\ V < V_{BE_{SAT}}$. Por lo tanto el diodo no conduce y el transistor está cortado.
+      >
+      > $I_B = I_C = 0$ (+0.4pt)
+      >
+      > $V_o = V_{CE} = V_{CC} = 12\ V$ (+0.1pt)
+
+   1. $V_i = 6\ V$ (0.5pt)
+
+      > Si se remueve el diodo base-emisor del circuito se encuentra que $V_{BE} = 6\ V > V_{BE_{SAT}}$. Por lo tanto el diodo conduce y $V_{BE} = 0.7\ V$.
+      >
+      > $V_i - R_B I_B - V_{BE} = 0$
+      >
+      > $\implies I_B = \frac{V_i- V_{BE}}{R_B} = \frac{6- 0.7}{2.7 \times 10^6} \approx 1.96\ \mu A$ (+0.1pt)
+      >
+      > Si se asume modo saturado:
+      >
+      > $V_o = V_{CE} =V_{CE_{SAT}} = 0.2\ V$
+      >
+      > $I_C = \frac{V_{CC}-V_o}{R_C} = \frac{12-0.2}{6800} \approx 1.7\ mA$ 
+      >
+      > Comprobación del modo saturado:
+      >
+      > $I_B > I_C / \beta$
+      >
+      > $\xcancel{1.96\ \mu A > 1.7\ mA / 200 \approx 8.7\ \mu A}$
+      >
+      > No se cumple la condición de modo saturado, por lo tanto está en modo activo.
+      >
+      > $I_C = \beta I_B = 200 \times 1.96 \times 10^{-6} \approx 392\ \mu A $ (+0.2pt)
+      >
+      > $V_o = V_{CE} = V_{CC} - R_C I_C = 12 - 6800 \times 392 \times 10^{-6} \approx 9.3\ V$ (+0.2pt)
+
+   1. $V_i = 12\ V$ (0.5pt)
+
+      > Si se remueve el diodo base-emisor del circuito se encuentra que $V_{BE} = 12\ V > V_{BE_{SAT}}$. Por lo tanto el diodo conduce y $V_{BE} = 0.7\ V$.
+      >
+      > $V_i - R_B I_B - V_{BE} = 0$
+      >
+      > $\implies I_B = \frac{V_i- V_{BE}}{R_B} = \frac{12- 0.7}{2.7 \times 10^6} \approx 4.2\ \mu A$ (+0.1pt)
+      >
+      > Si se asume modo saturado:
+      >
+      > $V_o = V_{CE} =V_{CE_{SAT}} = 0.2\ V$
+      >
+      > $I_C = \frac{V_{CC}-V_o}{R_C} = \frac{12-0.2}{6800} \approx 1.7\ mA$ 
+      >
+      > Comprobación del modo saturado:
+      >
+      > $I_B > I_C / \beta$
+      >
+      > $\xcancel{4.2\ \mu A > 1.7\ mA / 200 \approx 8.7\ \mu A}$
+      >
+      > No se cumple la condición de modo saturado, por lo tanto está en modo activo.
+      >
+      > $I_C = \beta I_B = 200 \times 4.2 \times 10^{-6} = 840\ \mu A $ (+0.2pt)
+      >
+      > $V_o = V_{CE} = V_{CC} - R_C I_C = 12 - 6800 \times 840 \times 10^{-6} \approx 6.3\ V$ (+0.2pt)
 
 2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 12\ V$, $R_1= 150\ k\Omega$, $R_2=39\ k\Omega$, $R_C= 2\ k\Omega$, $\beta = 50$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_no_re.png" width="300"> 
