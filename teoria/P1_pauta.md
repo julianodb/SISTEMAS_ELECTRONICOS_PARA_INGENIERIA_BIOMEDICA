@@ -188,11 +188,71 @@
 
    1. La corriente de colector de polarización $I_{C_Q}$
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_thevenin_no_re.png" width="300"> 
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_thevenin_no_re.png" width="150"> 
+      >
+      > $V_{th} = \frac{R_2}{R_1+R_2} V_{CC} = \frac{39}{150+39} 12 \approx 2.48\ V$ (+0.1pt)
+      >
+      > $R_{th} = R_1 // R_2 = \frac{R_1 R_2}{R_1+R_2} = \frac{39k \times 150k}{39k+150k} \approx 31\ k\Omega$ (+0.1pt)
+      >
+      > $I_B = \frac{V_{th}-V_{BE}}{R_{th}} = \frac{2.48-0.7}{31000} \approx 57\ \mu A$ (+0.2pt)
+      >
+      > Asumiendo modo activo:
+      >
+      > $I_{C_Q} = \beta I_B = 50 \times 57\ \mu A \approx 2.9\ mA$ (+0.2pt)
+      >
+      > Comprobación del modo activo:(+0.15pt)
+      >
+      > $V_{CE} > V_{CE_{SAT}}$
+      >
+      > $V_{CE} = V_{CC} - R_C I_{C_Q} = 12 - 2000 \times 2.9\ mA = 6.2\ V$
+      >
+      > $6.2 > 0.2$ (OK)
 
    2. La ganancia de voltaje AC ($A_V$)
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_small_signal.png" width="300"> 
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_small_signal.png" width="400"> 
+      >
+      > Dibujo del circuito equivalente en AC (+0.25pt)
+      >
+      > Malla de la base (+0.15pt)
+      >
+      > $v_{i_{AC}} - r_\pi i_{B_{AC}} = 0$
+      >
+      > $ v_{i_{AC}} = r_\pi i_{B_{AC}}$ (1)
+      >
+      > Malla del colector (+0.1pt)
+      >
+      > $v_{o_{AC}} + R_C i_{C_{AC}} = 0$
+      >
+      > $v_{o_{AC}} = - R_C i_{C_{AC}}$
+      >
+      > Asumiendo modo activo (comprobado en analisis DC)
+      >
+      > $v_{o_{AC}} = - R_C \beta i_{B_{AC}}$ (2)
+      >
+      > Calculo de la ganancia de voltaje (+0.25pt)
+      >
+      > $A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$
+      >
+      > Usando (1) y (2)
+      >
+      > $A_V = \frac{- R_C \beta i_{B_{AC}}}{r_\pi i_{B_{AC}}}$
+      >
+      > $\implies A_V = \frac{- R_C \beta }{r_\pi}$
+      >
+      > Calculo de $V_T$:
+      >
+      > $V_T = \frac{kT}{q} = \frac{1.38 \times 10^{-23} 300}{1.6 \times 10^{-19}} \approx 26\ mV$
+      >
+      > Utilizando la fórumla de $r_\pi$
+      >
+      > $A_V = \frac{- R_C \beta I_{C_Q} }{\beta V_T}$
+      >
+      > $A_V = \frac{- R_C I_{C_Q} }{V_T}$
+      >
+      > $A_V = \frac{- 2000 * 0.0029 }{0.026}$
+      >
+      > $A_V \approx -223$
       
 
 # Fórmulas
