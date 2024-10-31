@@ -33,7 +33,7 @@
 |Sem |Lun    |Mar |Mie    |Jue |Vie |Sab |Dom | | Sesión A | Sesión B |
 |:-: |:-:    |:-: |:-:    |:-: |:-: |:-: |:-: |-| :-:      | :-:      |
 |    |  4    |  5 |  6    |  7 |  8 |  9 | 10 | |          |          |
-|  7 | 11 L4 |    | 12 T4 |    |    |    |    | | Online   |Presencial|
+|  7 | 11 L4 |    | 12    | T4 |    |    |    | | Online   |Presencial|
 |    | 11    | 12 | 13    | 14 | 15 | 16 | 17 | |          |          |
 |  8 | 13 L5 |    | 14 T5 |    |    |    |    | | Online   |Presencial|
 |    | 18    | 19 | 20    | 21 | 22 | 23 | 24 | |          |          |
