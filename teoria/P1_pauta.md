@@ -35,11 +35,11 @@ $\require{cancel}$
 
       > $\omega = 2\pi f = 2 \pi 50 = 100 \pi$ (+0.2pt)
       >
-      > $A_v(100 \pi) = \frac{1}{\sqrt{1+(4.7 \times 100 \pi)^2}} \approx \frac{1}{\sqrt{2.18 \times 10^8}} \approx 6.8 \times 10^{-5}$ (+0.2pt)
+      > $A_v(100 \pi) = \frac{1}{\sqrt{1+(4.7 \times 100 \pi)^2}} \approx \frac{1}{\sqrt{2.18 \times 10^8}} \approx 6.8 \times 10^{-4}$ (+0.2pt)
       >
       > Por lo tanto, la amplitud de salida para una entrada con amplitud 10 mV sería:
       >
-      > $|V_{out}| = A_v(\omega) |V_{in}| = 6.8 \times 10^{-5} 10 \times 10^{-3} = 6.8 \times 10^{-7} V = 0.68\ \mu V$ (+0.1pt)
+      > $|V_{out}| = A_v(\omega) |V_{in}| = 6.8 \times 10^{-4} 10 \times 10^{-3} = 6.8 \times 10^{-6} V = 6.8\ \mu V$ (+0.1pt)
 
    1. Determine en cuanto el circuito atenua la señal de respiración si la frecuencia respiratoria es 14 respiraciones / minuto. Es decir, si la entrada es sinusoidal con amplitud 20 mV y frecuencia 14 rpm, cual seria la amplitud de la salida en estado estacionario. (0.5 pt)
    
