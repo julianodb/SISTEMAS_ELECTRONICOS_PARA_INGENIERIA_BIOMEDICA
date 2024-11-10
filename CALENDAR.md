@@ -37,16 +37,16 @@
 |    | 11    | 12 | 13    | 14 | 15 | 16 | 17 | |          |          |
 |  8 | 12 L5 T4 |    | 13    |    |    |    |    | | Online   |Presencial|
 |    | 18    | 19 | 20    | 21 | 22 | 23 | 24 | |          |          |
-|  9 | 14 L5 T5 |    | P2    |    |    |    |    | |Presencial| Online   |
+|  9 | 14 L5 T5 T7 |    | P2    |    |    |    |    | |Presencial| Online   |
 |    | 25    | 26 | 27    | 28 | 29 | 30 |  1 | |          |          |
-| 10 | 15 L6 T6 | | 16    |    |    |    |    | |Presencial| Online   |
+| 10 | 15 L6 | | 16    |    |    |    |    | |Presencial| Online   |
 
 ## DICIEMBRE / 2024
 
 |Sem |Lun       |Mar |Mie |Jue |Vie |Sab |Dom | | Sesión A | Sesión B |
 |:-: |:-:       |:-: |:-: |:-: |:-: |:-: |:-: |-| :-:      | :-:      |
 |    |  2       |  3 |  4 |  5 |  6 |  7 |  8 | |          |          |
-| 11 | 17 L6 T7 |    | 18 |    |    |    |    | | Online   |Presencial|
+| 11 | 17 L6 T6 |    | 18 |    |    |    |    | | Online   |Presencial|
 |    |  9       | 10 | 11 | 12 | 13 | 14 | 15 | |          |          |
 | 12 | 19 L7 T8 |    | 20 |    |    |    |    | | Online   |Presencial|
 |    | 16       | 17 | 18 | 19 | 20 | 21 | 22 | |          |          |
