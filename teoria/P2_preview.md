@@ -7,7 +7,7 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs.png" width="400">
        
-    1. Configuración 3: $Z_{i1} = 100\ k\Omega$, $Z_{o1} = 1\ k\Omega$, $A_{V_{NL1}} = 20$, $Z_{i2} = 100 \Omega$, $Z_{o2} = 100 \Omega$, $A_{V_{NL2}} = 10$. (0.75 pt)
+    1. Configuración 3: $Z_{i1} = 100\ k\Omega$, $Z_{o1} = 1\ k\Omega$, $A_{V_{NL1}} = 20$, $Z_{i2} = 100\ \Omega$, $Z_{o2} = 100\ \Omega$, $A_{V_{NL2}} = 10$. (0.75 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
 
@@ -17,11 +17,12 @@
 
     Figura 5: Circuito con topología Sallen-Key.
 
-    1. La ganancia en dB en corriente contínua.(0.4 pt)
-    1. La ganancia en dB para una entrada con frecuencia 25 Hz. (0.4 pt)
-    1. La ganancia maxima en dB (0.4 pt)
-    1. Qué tipo de filtro está implementado. (0.4 pt)
-    1. La(s) frecuencia(s) de corte en Hz. (0.4 pt)
+    1. La función de transferencia $H(s) = \frac{v_o(s)}{v_i(s)}$ (0.5pt)
+    1. La ganancia en dB en corriente contínua.(0.3 pt)
+    1. La ganancia en dB conforme la frecuencia de la entrada tiende al infinito. (0.3 pt)
+    1. La ganancia maxima en dB (0.3 pt)
+    1. Qué tipo de filtro está implementado. (0.3 pt)
+    1. La(s) frecuencia(s) de corte en Hz. (0.3 pt)
 
 # Fórmulas
 

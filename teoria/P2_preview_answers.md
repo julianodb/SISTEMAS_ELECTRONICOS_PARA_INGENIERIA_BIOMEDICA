@@ -7,33 +7,36 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs.png" width="400">
 
-       > $A_V = \frac{v_o}{v_S} \approx 12.82$
+       > $A_V = \frac{v_o}{v_S} \approx 12.8$
        
-    1. Configuración 3: $Z_{i1} = 100\ k\Omega$, $Z_{o1} = 1\ k\Omega$, $A_{V_{NL1}} = 20$, $Z_{i2} = 100 \Omega$, $Z_{o2} = 100 \Omega$, $A_{V_{NL2}} = 10$. (0.75 pt)
+    1. Configuración 3: $Z_{i1} = 100\ k\Omega$, $Z_{o1} = 1\ k\Omega$, $A_{V_{NL1}} = 20$, $Z_{i2} = 100\ \Omega$, $Z_{o2} = 100\ \Omega$, $A_{V_{NL2}} = 10$. (0.75 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
        
-       > $A_V = \frac{v_o}{v_S} \approx 64.1$
+       > $A_V = \frac{v_o}{v_S} \approx 11.7$
 
 3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=270\ k\Omega$ ,$R_2= 15\ k\Omega$, $C_1=C_2=10\ \mu F$, $R_a=1.2\ k\Omega$ y $R_b=2.7\ k\Omega$ determine:
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_high_2_with_gain.png" width="400"> 
 
     Figura 5: Circuito con topología Sallen-Key.
+    
+    1. La función de transferencia $H(s) = \frac{v_o(s)}{v_i(s)}$ (0.5pt)
 
-    1. La ganancia en dB en corriente contínua.(0.4 pt)
+        > TBD
+    1. La ganancia en dB en corriente contínua.(0.3 pt)
 
         > $A_{v_{dB}}(0) = -\infty$
-    1. La ganancia en dB para una entrada con frecuencia 25 Hz. (0.4 pt)
+    1. La ganancia en dB conforme la frecuencia de la entrada tiende al infinito. (0.3 pt)
 
-        > $A_{v_{dB}}(25\ Hz) \approx 3.2\ dB$
-    1. La ganancia maxima en dB (0.4 pt)
+        > $A_{v_{dB}}(\infty) \approx 3.2\ dB$
+    1. La ganancia maxima en dB (0.3 pt)
 
         > $max (A_{v_{dB}}) \approx 3.2\ dB$
-    1. Qué tipo de filtro está implementado. (0.4 pt)
+    1. Qué tipo de filtro está implementado. (0.3 pt)
 
         > filtro paso-alta.
-    1. La(s) frecuencia(s) de corte en Hz. (0.4 pt)
+    1. La(s) frecuencia(s) de corte en Hz. (0.3 pt)
 
         > $f_c \approx 0.25\ Hz$
 
