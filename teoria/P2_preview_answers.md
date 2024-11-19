@@ -23,7 +23,7 @@
     
     1. La función de transferencia $H(s) = \frac{v_o(s)}{v_i(s)}$ (0.5pt)
 
-        > TBD
+        > $H(s) = \frac{R_a+R_b}{R_b}\frac{R_1R_2C_1C_2s^2}{1+R_1(C_1+C_2)s-\frac{R_a}{R_b}R_2C_2s+R_1R_2C_1C_2s^2}$
     1. La ganancia en dB en corriente contínua.(0.3 pt)
 
         > $A_{v_{dB}}(0) = -\infty$
@@ -38,7 +38,7 @@
         > filtro paso-alta.
     1. La(s) frecuencia(s) de corte en Hz. (0.3 pt)
 
-        > $f_c \approx 0.25\ Hz$
+        > $f_c \approx 2\ Hz$.
 
 # Fórmulas
 
