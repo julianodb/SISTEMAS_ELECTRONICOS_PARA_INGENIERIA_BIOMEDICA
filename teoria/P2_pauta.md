@@ -1,44 +1,53 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/01
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/02
 ## Prueba Escrita 2 - Pauta
 
 > En general, por errores de cálculo se descuenta 0.05pt, y por errores conceptuales o en la aplicación de fórmulas 0.1pt.
 
-1. Para la adquisición de un electrocardiograma (ECG), es necesario medir la diferencia de voltaje entre electrodos que se posicionan en puntos específicos del paciente. Dicha diferencia de voltaje suele ser muy pequeña, del orden de pocos milivolts, por lo que requiere amplificación para poder graficarse y ser procesada. Considerando que la resistencia eléctrica de la interfaz piel-electrodo es de $R_S =56\ k\Omega$, y que se disponen de amplificadores con las características a continuación, determine el factor de amplificación de la señal $v_S$ de cada una de las siguientes configuraciones. Considere que el voltaje de salida de cada circuito es $v_o$. ¿ Cuál configuración permite amplificar más la señal de ECG ?
+1. Para la adquisición de un electrocardiograma (ECG), es necesario medir la diferencia de voltaje entre electrodos que se posicionan en puntos específicos del paciente. Dicha diferencia de voltaje suele ser muy pequeña, del orden de pocos milivolts, por lo que requiere amplificación para poder graficarse y ser procesada. Considerando que la resistencia eléctrica de la interfaz piel-electrodo es de $R_S =47\ k\Omega$, que el circuito que consume la señal amplificada tiene una resistencia de entrada $R_L= 20\ k\Omega$, y que se disponen de amplificadores con las características a continuación, determine el factor de amplificación de la señal $v_S$ de cada una de las siguientes configuraciones. Considere que el voltaje de salida de cada circuito es $v_o$. ¿ Cuál configuración permite amplificar más la señal de ECG ?
 
-    1. Configuración 1: $Z_i = 10\ k\Omega$, $Z_o = 100\ \Omega$, $A_{V_{NL}} = 6$. (0.5 pt)
+   - Amplificador 1: $Z_i = 12\ k\Omega$, $Z_o = 200\ \Omega$, $A_{V_{NL}} = 10$
+   - Amplificador 2: $Z_i = 120\ k\Omega$, $Z_o = 2\ k\Omega$, $A_{V_{NL}} = 10$
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs.png" width="400">
+    1. Configuración 1: (0.5 pt)
 
-       > $v_o = A_{V_{NL}} v_i$ (+0.2pt)
-       >
-       > $v_o = A_{V_{NL}} \frac{Z_i}{Z_i+R_S}v_S$ (+0.2pt)
-       >
-       > $\therefore A_V = \frac{v_o}{v_S} = A_{V_{NL}} \frac{Z_i}{Z_i+R_S} = 6 \frac{10k}{10k + 56k} \approx 0.91$ (+0.1pt)
-
-    1. Configuración 2: $Z_{i1} = 10\ k\Omega$, $Z_{o1} = 100\ \Omega$, $A_{V_{NL1}} = 6$, $Z_{i2} = 10\ k\Omega$, $Z_{o2} = 100\ \Omega$, $A_{V_{NL2}} = 6$. (0.75 pt)
-
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
-
-       > $v_o = A_{V_{NL2}} v_{i2}$ (+0.2pt)
-       >
-       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} v_{i1}$ (+0.2pt)
-       >
-       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+R_S} v_S$ (+0.2pt)
-       >
-       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{Z_{i1}}{Z_{i1}+R_S} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = 6*6 \frac{10k}{10k + 56k} \frac{10k}{10k + 100} \approx 5.4 $ (+0.15pt)
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rl_rs.png" width="400">
        
-    1. Configuración 3: $Z_{i1} = 10\ k\Omega$, $Z_{o1} = 100\ \Omega$, $A_{V_{NL1}} = 6$, $Z_{i2} = 1\ k\Omega$, $Z_{o2} = 1\ k\Omega$, $A_{V_{NL2}} = 20$. (0.75 pt)
+       > $v_o = \frac{R_L}{Z_o+R_L} A_{V_{NL}} v_i  $ (+0.2pt)
+       >
+       > $v_o = \frac{R_L}{Z_o+R_L} A_{V_{NL}} \frac{Z_i}{Z_i+R_S}v_S$ (+0.2pt)
+       >
+       > $\therefore A_V = \frac{v_o}{v_S} = A_{V_{NL}} \frac{R_L}{Z_o+R_L} \frac{Z_i}{Z_i+R_S} = 10 \frac{20k}{20k + 200} \frac{12k}{12k + 47k} \approx 2$ (+0.1pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
+    1. Configuración 2: (0.75 pt)
 
-       > $v_o = A_{V_{NL2}} v_{i2}$ (+0.2pt)
-       >
-       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} v_{i1}$ (+0.2pt)
-       >
-       > $v_o = A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+R_S} v_S$ (+0.2pt)
-       >
-       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{Z_{i1}}{Z_{i1}+R_S} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} = 6*20 \frac{10k}{10k + 56k} \frac{1k}{1k + 100} \approx 16.53 $ (+0.15pt)
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box.png" width="800">
        
+       > Se utilizará la notación $Z_{i1}$, $Z_{o1}$ y $A_{V_{NL1}}$ para representar la impedancia de entrada, impedancia de salida y ganancia sin carga del amplificador 1, respectivamente, y $Z_{i2}$, $Z_{o2}$ y $A_{V_{NL2}}$ para representar la impedancia de entrada, impedancia de salida y ganancia sin carga del amplificador 2, respectivamente.
+       >
+       > $v_o = \frac{R_L}{Z_{o2}+R_L} A_{V_{NL2}} v_{i2}  $ (+0.2pt)
+       >
+       > $v_o = \frac{R_L}{Z_{o2}+R_L} A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} v_{i1}$ (+0.2pt)
+       >
+       > $v_o = \frac{R_L}{Z_{o2}+R_L} A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+R_S} v_S$ (+0.2pt)
+       >
+       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{R_L}{Z_{o2}+R_L} \frac{Z_{i2}}{Z_{i2}+Z_{o1}} \frac{Z_{i1}}{Z_{i1}+R_S} = 10*10 \frac{20k}{20k + 2k} \frac{120k}{120k + 200} \frac{12k}{12k + 47k} \approx 18.5$ (+0.15pt)
+       
+    1. Configuración 3: (0.75 pt)
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box2.png" width="800">
+       
+       > Se utilizará la notación $Z_{i1}$, $Z_{o1}$ y $A_{V_{NL1}}$ para representar la impedancia de entrada, impedancia de salida y ganancia sin carga del amplificador 1, respectivamente, y $Z_{i2}$, $Z_{o2}$ y $A_{V_{NL2}}$ para representar la impedancia de entrada, impedancia de salida y ganancia sin carga del amplificador 2, respectivamente.
+       >
+       > $v_o = \frac{R_L}{Z_{o1}+R_L} A_{V_{NL1}} v_{i2}  $ (+0.2pt)
+       >
+       > $v_o = \frac{R_L}{Z_{o1}+R_L} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+Z_{o2}} A_{V_{NL2}} v_{i1}$ (+0.2pt)
+       >
+       > $v_o = \frac{R_L}{Z_{o1}+R_L} A_{V_{NL1}} \frac{Z_{i1}}{Z_{i1}+Z_{o2}} A_{V_{NL2}} \frac{Z_{i2}}{Z_{i2}+R_S} v_S$ (+0.2pt)
+       >
+       > $\therefore A_V = A_{V_{NL1}} A_{V_{NL2}} \frac{R_L}{Z_{o1}+R_L} \frac{Z_{i1}}{Z_{i1}+Z_{o2}} \frac{Z_{i2}}{Z_{i2}+R_S} = 10*10 \frac{20k}{20k + 200} \frac{12k}{12k + 2k} \frac{120k}{120k + 47k} \approx  61$ (+0.15pt)
+
+       > La configuración 3 es la que tiene mayor factor de amplificación
+
 2. Para medir la actividad eléctrica del corazón en un ECG se utilizan electrodos en determinadas posiciones del paciente. La siguiente figura muestra la ubicación y color estándar de los electrodos para un ECG que utiliza 4 electrodos.
 
     <div style="width:400px; overflow:hidden;">
