@@ -56,69 +56,72 @@
 
     A partir de esta configuración, se puede medir la actividad eléctrica en distintas direcciones, dependiendo de como se combinan los voltajes de los electrodos. Cada dirección de medición se denomina derivación. Por ejemplo, la llamada derivación I mide el voltaje producido por corrientes eléctricas que se mueven de la derecha del paciente hacia su izquierda, y se obtiene a partir de la diferencia de voltaje $I = LA-RA$ (brazo izquierdo menos brazo derecho). Otro ejemplo es la derivación aVF, que mide el voltaje producido por corrientes eléctricas que se mueven desde arriba hacia abajo, y se obtiene a través de la siguiente combinación de voltajes: $aVF = LL- \frac{LA+RA}{2}$ . Los siguientes circuitos implementan algunas de las derivaciones del ECG, además de amplificar la señal. Determine que fórmula implementa cada uno de ellos:
 
-    1. Encontrar $aVR$ en función de $RA$, $LL$ y $LA$, con $R=10\ k\Omega$ (1 pt)
+    1. Encontrar $aVL$ en función de $LA$, $LL$ y $RA$, con $R=3.9\ k\Omega$ (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr.png" width="400"> 
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl2.png" width="400"> 
 
        > Aplicando corto circuito virtual a todos los amplificadores operacionales y denominando $V_1$ y $V_2$ los voltajes desconocidos: (+0.2pt)
        >
-       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr_annotated.png" width="400"> 
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl2_annotated.png" width="400"> 
        >
-       > En la parte superior del circuito, se forma un divisor resistivo entre LL, RA y $V_2$, por lo que se puede escribir:
+       > En la parte superior del circuito, se forma un divisor resistivo entre LL, LA y $V_2$, por lo que se puede escribir:
        >
-       > $RA = LL \frac{R}{R+R} + V_2 \frac{R}{R+R}$ (+0.2pt)
+       > $LA = LL \frac{R}{R+R} + V_2 \frac{R}{R+R}$ (+0.2pt)
        >
-       > $2 RA = LL + V_2$
+       > $2 LA = LL + V_2$
        >
-       > $V_2 = 2 RA - LL$ (ecuación 1)
+       > $V_2 = 2 LA - LL$ (ecuación 1)
        >
-       > De la misma forma, en la parte inferior del circuito se forma un divisor de voltaje entre tierra, LA y $V_1$:
+       > De la misma forma, en la parte inferior del circuito se forma un divisor de voltaje entre tierra, RA y $V_1$:
        >
-       > $LA = V_1 \frac{R}{R+R}$ (+0.2pt)
+       > $RA = V_1 \frac{2R}{2R+R}$ (+0.2pt)
        >
-       > $ V_1 = 2 LA $ (ecuación 2)
+       > $ V_1 = \frac{3}{2} RA $ (ecuación 2)
        >
-       > Finalmente, también hay un divisor de voltaje entre $V_1$, $V_2$ y $aVR$:
+       > Finalmente, también hay un divisor de voltaje entre $V_1$, $V_2$ y $aVL$:
        >
-       > $V_2 = V_1 \frac{R}{R+R} + aVR \frac{R}{R+R} $ (+0.2pt)
+       > $V_2 = V_1 \frac{2R}{2R+R} + aVL \frac{R}{2R+R} $ (+0.2pt)
        >
        > Reemplazando las ecuaciones 1 y 2:
        >
-       > $ 2 RA - LL = 2 LA \frac{1}{2} + aVR \frac{1}{2} $ (+0.2pt)
+       > $ 2 LA - LL = \frac{3}{2} RA \frac{2}{3} + aVL \frac{1}{3} $ (+0.2pt)
        >
-       > $ 2 RA - LL - LA = aVR \frac{1}{2} $
+       > $ 2 LA - LL - RA = aVL \frac{1}{3} $
        >
-       > $ aVR = 4 RA - 2 LL - 2 LA $
+       > $ aVL = 6 LA - 3 LL - 3 RA $
        >
-       > En realidad, la derivación aVR se define como: $aVR_{real} = RA - \frac{LA + LL}{2}$. Por lo tanto la señal que el circuito obtiene es la derivación aVR amplificada por 4.
+       > En realidad, la derivación aVL se define como: $aVL_{real} = LA - \frac{RA + LL}{2}$. Por lo tanto la señal que el circuito obtiene es la derivación aVL amplificada por 6.
 
-    2. Encontrar $aVL$ en función de $RA$, $LL$ y $LA$, con $R=20\ k\Omega$ (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl.png" width="400"> 
+    2. Encontrar $aVR$ en función de $LA$, $LL$ y $RA$, con $R=47\ k\Omega$ (1 pt)
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr2.png" width="400"> 
 
        > Aplicando LKC en el nodo $V_-$: (+0.4pt)
        >
-       > $\frac{RA-V_-}{2R} + \frac{LL-V_-}{2R} = \frac{V_- - aVL}{R}$
+       > $\frac{LA-V_-}{2R} + \frac{LL-V_-}{2R} = \frac{V_- - aVR}{2R}$
        >
-       > $RA-V_- + LL-V_- = 2V_- - 2aVL$
+       > $LA-V_- + LL-V_- = V_- - aVR$
        >
-       > $RA + LL + 2aVL = 4V_- $
+       > $LA + LL + aVR = 3V_- $
        >
-       > $V_- = \frac{RA + LL + 2aVL}{4}$
+       > $V_- = \frac{LA + LL + aVR}{3}$
        >
        > Aplicando divisor de voltaje en  $V_+$: (+0.4pt)
        >
-       > $V_+ = \frac{LA}{2}$
+       > $V_+ = \frac{2RA}{3}$
        >
        > Aplicando corto circuito virtual:
        >
        > $V_+ = V_-$ (+0.2pt)
        >
-       > $\frac{LA}{2} = \frac{RA + LL + 2aVL}{4}$
+       > $\frac{2RA}{3} = \frac{LA + LL + aVR}{3}$
        >
-       > $2LA = RA + LL + 2aVL$
+       > $2RA = LA + LL + aVR$
        >
-       > $aVL = LA - \frac{RA + LL}{2}$
+       > $aVR = 2RA - LA - LL$
+       >
+       > En realidad, la derivación aVR se define como: $aVR_{real} = RA - \frac{LA + LL}{2}$. Por lo tanto la señal que el circuito obtiene es la derivación aVR amplificada por 2.
 
 3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=10\ k\Omega$ ,$R_2= 2 R_1 = 20\ k\Omega$, $C_1=C_2=10\ nF$ y $R_a=R_b=10\ k\Omega$ determine:
 
