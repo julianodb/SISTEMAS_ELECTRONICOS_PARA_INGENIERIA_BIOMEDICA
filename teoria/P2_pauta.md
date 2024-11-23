@@ -237,32 +237,32 @@
       > $A_v(\omega_c) = A_v(2\pi f_c) = \frac{A_{v_{max}}}{\sqrt{2}}$
       >
       > $\frac{19.355}{\sqrt{1  - 2*10^{-9} (2\pi f_c)^2 + 6.2*10^{-16}(2\pi f_c)^4}} = \frac{19.394}{\sqrt{2}}$
-       >
-       > $\sqrt{1  - 2*10^{-9} (2\pi f_c)^2 + 6.2*10^{-16}(2\pi f_c)^4} = 0.998\sqrt{2}$
-       >
-       > $1  - 4\pi^2*10^{-9} f_c^2 + 9.92\pi^4*10^{-15} f_c^4 - 0.996*2 = 0$
-       >
-       > $9.7*10^{-13}f_c^4 -3.9*10^{-8} f_c^2 -0.992= 0$
-       >
-       > haciendo la transformación de variables $x=f_c^2$,
-       >
-       > $9.7*10^{-13}x^2 -3.9*10^{-8} x -0.992= 0$
-       >
-       > Aplicando la fórmula $x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}$:
-       >
-       > $x = \frac{-(-3.9*10^{-8})\pm \sqrt{(-3.9*10^{-8})^2-4*9.7*10^{-13}*(-0.992)}}{2*9.7*10^{-13}}$
-       >
-       > $x = \frac{3.9*10^{-8}\pm \sqrt{1.5*10^{-15}+3.85*10^{-12}}}{1.94*10^{-12}}$
-       >
-       > $x_1 \approx 10^6$
-       >
-       > $x_2 \approx -10^6$ (solución no válida porque $x=f_c^2$ es positivo)
-       >
-       > $\therefore x = 10^6$
-       >
-       > $\implies f_c^2 = 10^6$
-       >
-       > $\implies f_c \approx 1\ kHz$
+      >
+      > $\sqrt{1  - 2*10^{-9} (2\pi f_c)^2 + 6.2*10^{-16}(2\pi f_c)^4} = 0.998\sqrt{2}$
+      >
+      > $1  - 4\pi^2*10^{-9} f_c^2 + 9.92\pi^4*10^{-15} f_c^4 - 0.996*2 = 0$
+      >
+      > $9.7*10^{-13}f_c^4 -3.9*10^{-8} f_c^2 -0.992= 0$
+      >
+      > haciendo la transformación de variables $x=f_c^2$,
+      >
+      > $9.7*10^{-13}x^2 -3.9*10^{-8} x -0.992= 0$
+      >
+      > Aplicando la fórmula $x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}$:
+      >
+      > $x = \frac{-(-3.9*10^{-8})\pm \sqrt{(-3.9*10^{-8})^2-4*9.7*10^{-13}*(-0.992)}}{2*9.7*10^{-13}}$
+      >
+      > $x = \frac{3.9*10^{-8}\pm \sqrt{1.5*10^{-15}+3.85*10^{-12}}}{1.94*10^{-12}}$
+      >
+      > $x_1 \approx 10^6$
+      >
+      > $x_2 \approx -10^6$ (solución no válida porque $x=f_c^2$ es positivo)
+      >
+      > $\therefore x = 10^6$
+      >
+      > $\implies f_c^2 = 10^6$
+      >
+      > $\implies f_c \approx 1\ kHz$
 
 # Fórmulas
 
