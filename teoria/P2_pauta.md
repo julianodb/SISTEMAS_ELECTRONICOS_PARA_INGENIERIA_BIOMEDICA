@@ -185,7 +185,7 @@
        >
        > $A_v(0) = \frac{R_3}{R_1} = \frac{12k}{620} \approx 19 $
        >
-       > $A_{v_{dB}}(0) \approx 20 \log{19} \approx 25.6$
+       > $A_{v_{dB}}(0) \approx 20 \log{19} \approx 25.6\ dB$
     1. La ganancia en dB conforme la frecuencia de la entrada tiende al infinito. (0.3 pt)
       
        > $$\lim_{\omega\to\infty} A_v(\omega) = \lim_{\omega\to\infty}\frac{\frac{R_3}{R_1}}{\sqrt{(1  - R_2 R_3 C_1 C_2 \omega^2)^2 + ((\frac{R_3R_2}{R_1} + R_2+R_3 ) C_2 \omega)^2 } } $$
