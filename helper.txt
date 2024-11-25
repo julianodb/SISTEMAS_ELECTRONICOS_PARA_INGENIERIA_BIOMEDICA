@@ -3,6 +3,7 @@
   MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
 </script>
 
+<style>
 li>p:first-of-type {
 display:inline;
 }
@@ -32,3 +33,4 @@ ol ol > li:before {
 td, th {
 	border: 1px solid;
 }
+</style>
