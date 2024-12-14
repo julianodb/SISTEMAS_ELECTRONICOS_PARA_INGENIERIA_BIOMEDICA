@@ -1,10 +1,10 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Trabajo 10 de Sistemas Electrónicos
 
-#### Primer Semestre de 2024
+#### Segundo Semestre de 2024
 
 ## Introducción
 
-Felicitaciones, el diseño del espirometro está completo ! En este último trabajo el objetivo será fabricar un prototipo del circuito que ustedes proyectaron para cada miembro del grupo.
+Felicitaciones, el diseño del termometro está completo ! En este último trabajo el objetivo será fabricar un prototipo del circuito que ustedes proyectaron para cada miembro del grupo.
 
 ## Fabricación
 
@@ -14,6 +14,6 @@ Consulten los recursos en uvirtual para ayudarlos. Ahí encontrarán imágenes d
 
 Antes del fin del semestre, hagan una demonstración de la placa funcionando al profesor (6pt)
 
-NOTA: Este trabajo también cubre el Laboratorio 11. Es decir, la nota que obtengan será tanto la nota del Trabajo 10 como del Laboratorio 11.
+NOTA: Este trabajo también cubre el Laboratorio 8. Es decir, la nota que obtengan será tanto la nota del Trabajo 10 como del Laboratorio 8.
 
 ## Plazo de entrega: por definir
