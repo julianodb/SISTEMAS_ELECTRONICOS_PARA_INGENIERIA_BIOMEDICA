@@ -1,0 +1,11 @@
+<style>
+#page-header {
+	display:none;
+}
+div.state {
+	display:none;
+}
+body, input[type="radio"] + label, label {
+font-size: 24px;
+}
+</style>
