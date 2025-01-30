@@ -1,4 +1,4 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2/2024
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 1/2025
 ##### enfoque Ingeniería Biomédia
 
 ## Página de la asignatura
@@ -8,11 +8,10 @@
 [Clase de Tinkercad para Laboratorios Online](https://www.tinkercad.com/joinclass/5XK7AATBK)
 
 ## Horário Teoría
-- Lunes: bloque 5 (L5: 15:20 - 16:40), EAO561
-- Miércoles: bloque 5 (W5: 15:20 - 16:40), EAO573
+- Martes: bloques 5 y 6 (L5: 15:20 - 16:40, L6: 16:55 - 18:15), SALA POR DEFINIR
 
 ## Horário Laboratório
-- Lunes, bloque 6 (L6: 16:55 - 18:15), Laboratorio de Electromedicina y Mediciones Fisiológicas
+- Jueves, bloque 6 (J6: 16:55 - 18:15), Laboratorio de Electromedicina y Mediciones Fisiológicas
 
 ## Profesor
 
@@ -73,7 +72,11 @@ $$ Promedio Teoría = 0.7\frac{ \sum{P_i} + POR - min\{P_i\}}{np} + 0.3\sum_{j=1
 
 Si el Promedio Teoría es menor a 4.0, el/la estudiante reprueba la parte teórica de la asignatura.
 
-Además, se exige un mínimo de 75 % de asistencia a clases presenciales. Una asistencia inferior al 75 % sin justificaciones ante docencia causa reprobación automatica de la parte teórica de la asignatura, con una nota 3.5 .
+#### Asistencia a Clases
+
+Se exige un mínimo de 75 % de asistencia a clases presenciales. Una asistencia inferior al 75 % sin justificaciones ante docencia causa reprobación automatica de la parte teórica de la asignatura, con una nota 3.5 .
+
+Están planificadas 30 clases de teoría, por lo que el número maximo de ausencias injustificadas es 7.
 
 ### Laboratorio
 
@@ -86,6 +89,8 @@ $$ Promedio Laboratorio = 0.7\sum_{i=1}^{nl} \frac {Lp_i}{nl} + 0.3\sum_{j=1}^{n
 Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Lo_j$ son las notas de las experiencias de laboratorio online. Están planificados $nl=8$ actividades de laboratorio presenciales y $no=7$ actividades online durante el semestre.
 
 Si el Promedio Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
+
+#### Asistencia a Laboratorios
 
 La inasistencia al laboratorio presencial deberá ser justificada ante docencia, quien informará a los profesores sobre la justificación de ésta. En caso de inasistencia justificada, la actividad de recuperación será informada caso a caso.
 
