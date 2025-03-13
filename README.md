@@ -20,7 +20,7 @@
 
 ### Ayudante
 
-- Jorge Aguilar (jorge.aguilar @usach.cl)
+- Joaquín Marchant (joaquin.marchant.l @usach.cl)
 
 ## Resultados de Aprendizaje - Teoría
 
