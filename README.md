@@ -13,11 +13,14 @@
 ## Horário Laboratório
 - Jueves, bloque 6 (J6: 16:55 - 18:15), Laboratorio de Electromedicina y Mediciones Fisiológicas
 
-## Profesor
+## Profesores
 
-Juliano Dawid Barboza
+- Juliano Dawid Barboza (juliano.dawid @usach.cl)
+- Britam Gomez Arias (britam.gomez @usach.cl)
 
-contacto: juliano.dawid @usach.cl
+### Ayudante
+
+- Jorge Aguilar (jorge.aguilar @usach.cl)
 
 ## Resultados de Aprendizaje - Teoría
 
@@ -76,7 +79,7 @@ Si el Promedio Teoría es menor a 4.0, el/la estudiante reprueba la parte teóri
 
 Se exige un mínimo de 75 % de asistencia a clases presenciales. Una asistencia inferior al 75 % sin justificaciones ante docencia causa reprobación automatica de la parte teórica de la asignatura, con una nota 3.5 .
 
-Están planificadas 30 clases de teoría, por lo que el número maximo de ausencias injustificadas es 7.
+Están planificadas 24 clases de teoría, por lo que el número maximo de ausencias injustificadas es 3 días.
 
 ### Laboratorio
 
