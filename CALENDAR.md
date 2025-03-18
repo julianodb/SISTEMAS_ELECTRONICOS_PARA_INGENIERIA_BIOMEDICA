@@ -11,7 +11,7 @@
 |    | 17 | 18    | 19 | 20 | 21 | 22 | 23 | |       |       |
 |  1 |    | 01 02 |    | L1 |    |    |    | | Presencial | Presencial |
 |    | 24 | 25    | 26 | 27 | 28 | 29 | 30 | |       |       |
-|  2 |    | 03 04 | E1 | L2 |    |    |    | | Presencial | Online |
+|  2 |    | 03 04 |    | L2 E1 |    |    |    | | Presencial | Online |
 
 ## ABRIL / 2025
 
