@@ -91,8 +91,8 @@
 | [04](/teoria/04_BJT_I.md) | Transistor de Unión Bipolar (BJT) | Descripción del BJT (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del BJT como llave |  | inicio $T_2$ |
 | [05](/teoria/05_BJT_II.md) | BJT como amplificador | Uso del BJT como amplificador, polarización fija, emisor comun, emisor seguidor, Análisis de grandes señales, Amplificador diferencial| Entrega $T_2$ |  |
 | [06](/teoria/06_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |  | inicio $T_3$ |
-| [07](/teoria/07_CE.md) | Amplificador diferencial | modelo $\pi$ híbrido, Amplificador con emisor comun | Entrega $T_3$  |  |
-| [08](/teoria/08_CE_II.md) | Amplificador diferencial II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios, entrega guía PEP1 |  | Inicio $T_4$ |
+| [07](/teoria/07_CE.md) | Amplificador con emisor comun | modelo $\pi$ híbrido, Amplificador con emisor comun | Entrega $T_3$  |  |
+| [08](/teoria/08_CE_II.md) | Amplificador con emisor comun II | Amplificador con emisor común, polarización por divisor resistivo, ejercicios, entrega guía PEP1 |  | Inicio $T_4$ |
 | [09](/teoria/09_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores | Entrega $T_4$ |  |
 | [10](/teoria/10_manufacturing.md) | Técnicas de Fabricación y Prototipaje en Electrónica | Técnicas de Fabricación y Prototipaje en Electrónica, respuestas guía PEP1 |  | inicio $T_A$ |
 | [P1](/teoria/P1.md) | PEP1 | Diodos, Transistores| | |
