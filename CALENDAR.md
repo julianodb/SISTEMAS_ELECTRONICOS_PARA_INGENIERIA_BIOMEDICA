@@ -11,7 +11,7 @@
 |    | 17 | 18    | 19 | 20 | 21 | 22 | 23 | |       |       |
 |  1 |    | 01 02 |    | L1 |    |    |    | | Presencial | Presencial |
 |    | 24 | 25    | 26 | 27 | 28 | 29 | 30 | |       |       |
-|  2 |    | 03 04 |    | L2 |    |    |    | | Presencial | Online |
+|  2 |    | 03 04 | E1 | L2 |    |    |    | | Presencial | Online |
 
 ## ABRIL / 2025
 
@@ -20,11 +20,11 @@
 |    | 31 |  1    |  2 |  3 |  4 |  5 |  6 | |       |       |
 |  3 |    | 05 06 |    | L2 |    |    |    | | Online | Presencial |
 |    |  7 |  8    |  9 | 10 | 11 | 12 | 13 | |       |       |
-|  4 |    | 07 08 |    | L3 |    |    |    | | Online | Presencial |
+|  4 |    | 07 08 | E2 | L3 |    |    |    | | Online | Presencial |
 |    | 14 | 15    | 16 | 17 | 18 | 19 | 20 | |       |       |
 |  5 |    | 09 10 |    | L3 | FF | FF |    | | Presencial | Online |
 |    | 21 | 22    | 23 | 24 | 25 | 26 | 27 | |       |       |
-|  6 |    | P1    |    | L4 |    |    |    | | Presencial | Online |
+|  6 | E3 | P1    |    | L4 |    |    |    | | Presencial | Online |
 
 ## MAYO / 2025
 
@@ -35,7 +35,7 @@
 |    |  5 |  6    |  7 |  8 |  9 | 10 | 11 | |       |       |
 |  8 |    | 13 14 |    | L4 |    |    |    | | Online | Presencial |
 |    | 12 | 13    | 14 | 15 | 16 | 17 | 18 | |       |       |
-|  9 |    | 15 16 |    | L5 |    |    |    | | Online | Presencial |
+|  9 |    | 15 16 | E4 | L5 |    |    |    | | Online | Presencial |
 |    | 19 | 20    | 21 | 22 | 23 | 24 | 25 | |       |       |
 |  - | RR | RR    | RR | RR | RR | RR |    | |       |       |
 |    | 26 | 27    | 28 | 29 | 30 | 31 |  1 | |       |       |
@@ -46,11 +46,11 @@
 |Sem |Lun |Mar    |Mie |Jue |Vie |Sab |Dom | | Sesión A | Sesión B |
 |:-: |:-: |:-:    |:-: |:-: |:-: |:-: |:-: |-| :-:   | :-:   |
 |    |  2 |  3    |  4 |  5 |  6 |  7 |  8 | |       |       |
-| 11 |    | P2    |    | L6 |    |    |    | | Presencial | Online |
+| 11 | E5 | P2    |    | L6 |    |    |    | | Presencial | Online |
 |    |  9 | 10    | 11 | 12 | 13 | 14 | 15 | |       |       |
 | 12 |    | 19 20 |    | L6 |    |    |    | | Online | Presencial |
 |    | 16 | 17    | 18 | 19 | 20 | 21 | 22 | |       |       |
-| 13 |    | 21 22 |    | L7 | FF | FF |    | | Online | Presencial |
+| 13 |    | 21 22 | E6 | L7 | FF | FF |    | | Online | Presencial |
 |    | 23 | 24    | 25 | 26 | 27 | 28 | 29 | |       |       |
 | 14 |    | 23 24 |    | L7 |    |    |    | | Presencial | Online |
 
@@ -59,7 +59,7 @@
 |Sem |Lun |Mar    |Mie |Jue |Vie |Sab |Dom | | Sesión A | Sesión B |
 |:-: |:-: |:-:    |:-: |:-: |:-: |:-: |:-: |-| :-:   | :-:   |
 |    | 30 |  1    |  2 |  3 |  4 |  5 |  6 | |       |       |
-| 15 |    | P3 L8 |    | L8 |    |    |    | | Presencial | Presencial |
+| 15 | E7 | P3 L8 |    | L8 |    |    |    | | Presencial | Presencial |
 |    |  7 |  8    |  9 | 10 | 11 | 12 | 13 | |       |       |
 | 16 |    | L8    |    | TA |    |    |    | | Presencial | Presencial |
 |    | 14 | 15    | 16 | 17 | 18 | 19 | 20 | |       |       |
@@ -74,6 +74,12 @@
 - TT: Término del Semestre
 - CC: Congreso
 - LL: Licencia medica
+- n : número de un digito (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E o F)
+- Ln: Laboratorio n
+- En: Plazo maximo para divulgación de notas y respuestas del Laboratorio Online n
+- Tn: Entrega del Trabajo n
+- Pn: PEP n
+- nn: Clase Teórica número nn
 
 # Clases
 
