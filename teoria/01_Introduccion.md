@@ -14,7 +14,7 @@ Electrónica Analógica
 
 [Texas Instruments Medical Applications](https://www.ti.com/applications/industrial/medical/overview.html)
 
-<!-- ![01_app](../img/01_aplicaciones4.jpeg) -->
+![01_app](../img/01_aplicaciones5.jpg)
 
 ## Trabajos
 
