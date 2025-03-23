@@ -11,18 +11,18 @@
 |    | 17 | 18    | 19 | 20 | 21 | 22 | 23 | |       |       |
 |  1 |    | 01 02 |    | L1 |    |    |    | | Presencial | Presencial |
 |    | 24 | 25    | 26 | 27 | 28 | 29 | 30 | |       |       |
-|  2 |    | 03 04 |    | L2 E1 |    |    |    | | Presencial | Online |
+|  2 | T1 | 03 04 |    | L2 E1 |    |    |    | | Presencial | Online |
 
 ## ABRIL / 2025
 
 |Sem |Lun |Mar    |Mie |Jue |Vie |Sab |Dom | | Sesión A | Sesión B |
 |:-: |:-: |:-:    |:-: |:-: |:-: |:-: |:-: |-| :-:   | :-:   |
 |    | 31 |  1    |  2 |  3 |  4 |  5 |  6 | |       |       |
-|  3 |    | 05 06 |    | L2 |    |    |    | | Online | Presencial |
+|  3 | T2 | 05 06 |    | L2 |    |    |    | | Online | Presencial |
 |    |  7 |  8    |  9 | 10 | 11 | 12 | 13 | |       |       |
-|  4 |    | 07 08 | E2 | L3 |    |    |    | | Online | Presencial |
+|  4 | T3 | 07 08 | E2 | L3 |    |    |    | | Online | Presencial |
 |    | 14 | 15    | 16 | 17 | 18 | 19 | 20 | |       |       |
-|  5 |    | 09 10 |    | L3 | FF | FF |    | | Presencial | Online |
+|  5 | T4 | 09 10 |    | L3 | FF | FF |    | | Presencial | Online |
 |    | 21 | 22    | 23 | 24 | 25 | 26 | 27 | |       |       |
 |  6 | E3 | P1    |    | L4 |    |    |    | | Presencial | Online |
 
@@ -33,13 +33,13 @@
 |    | 28 | 29    | 30 |  1 |  2 |  3 |  4 | |       |       |
 |  7 |    | 11 12 |    | FF | FF | FF |    | |       |       |
 |    |  5 |  6    |  7 |  8 |  9 | 10 | 11 | |       |       |
-|  8 |    | 13 14 |    | L4 |    |    |    | | Online | Presencial |
+|  8 |    | 13 14 | T5 | L4 |    |    |    | | Online | Presencial |
 |    | 12 | 13    | 14 | 15 | 16 | 17 | 18 | |       |       |
-|  9 |    | 15 16 | E4 | L5 |    |    |    | | Online | Presencial |
+|  9 |    | 15 16 | E4 T6 | L5 |    |    |    | | Online | Presencial |
 |    | 19 | 20    | 21 | 22 | 23 | 24 | 25 | |       |       |
 |  - | RR | RR    | RR | RR | RR | RR |    | |       |       |
 |    | 26 | 27    | 28 | 29 | 30 | 31 |  1 | |       |       |
-| 10 |    | 17 18 |    | L5 |    |    |    | | Presencial | Online |
+| 10 |    | 17 18 | T7 | L5 |    |    |    | | Presencial | Online |
 
 ## JUNIO / 2025
 
@@ -50,9 +50,9 @@
 |    |  9 | 10    | 11 | 12 | 13 | 14 | 15 | |       |       |
 | 12 |    | 19 20 |    | L6 |    |    |    | | Online | Presencial |
 |    | 16 | 17    | 18 | 19 | 20 | 21 | 22 | |       |       |
-| 13 |    | 21 22 | E6 | L7 | FF | FF |    | | Online | Presencial |
+| 13 | T8 | 21 22 | E6 | L7 | FF | FF |    | | Online | Presencial |
 |    | 23 | 24    | 25 | 26 | 27 | 28 | 29 | |       |       |
-| 14 |    | 23 24 |    | L7 |    |    |    | | Presencial | Online |
+| 14 |    | 23 24 | T9 | L7 |    |    |    | | Presencial | Online |
 
 ## JULIO / 2025
 
