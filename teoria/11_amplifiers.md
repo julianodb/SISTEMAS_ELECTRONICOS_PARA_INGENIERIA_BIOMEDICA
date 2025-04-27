@@ -75,7 +75,7 @@ Al igual que al agregar una carga, al considerar la resistencia de salida del ci
 
 ## Un amplificador ideal y compromisos
 
-Al diseñar un circuito amplificador, el objetivo es tener una alta ganancia de voltaje. Sin embargo, el efecto de las impedancias de entrada y de salida pueden afectar negativamente a la ganancia total. De ésta forma, buscando que los factores asociados a dichas imepdancias sean lo más grandes posible (lo más cercanos a 1), es deseable que $Z_i$ sea lo más grande posible y $Z_o$ lo más pequeña posible. En el caso ideal,
+Al diseñar un circuito amplificador, el objetivo es tener una alta ganancia de voltaje. Sin embargo, el efecto de las impedancias de entrada y de salida pueden afectar negativamente a la ganancia total. De ésta forma, buscando que los factores asociados a dichas impedancias sean lo más grandes posible (lo más cercanos a 1), es deseable que $Z_i$ sea lo más grande posible y $Z_o$ lo más pequeña posible. En el caso ideal,
 
 - $A_{V_{NL}} = \infty$
 - $Z_i = \infty$
@@ -83,7 +83,7 @@ Al diseñar un circuito amplificador, el objetivo es tener una alta ganancia de 
 
 En la práctica, no es posible mejorar todos los parámetros del amplificador, pues al mejorar uno puede que se afecte negativamente a otro. Si observamos las fórmulas para $A_{V_{NL}}$ y $Z_o$ del amplificador con emisor común, por ejemplo:
 
-- $|A_{V_{NL}}| = \frac{R_C I_{CQ}}{V_T}$
+- $\|A_{V_{NL}}\| = \frac{R_C I_{CQ}}{V_T}$
 - $Z_o = R_C$
 
 Podemos observar que si queremos disminuir $Z_o$, es necesario disminuir $R_C$. Sin embargo, al hacerlo, también estamos disminuyendo la ganancia ($A_{V_{NL}}$). Hay compromisos similares con respecto a $Z_i$. As veces es posible mejorarlos pero aumentando el consumo de energía del amplificador, o el costo de sus componentes.
