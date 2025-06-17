@@ -18,7 +18,9 @@ NOTA: Este trabajo también cubre el Laboratorio 8. Es decir, la nota que obteng
 
 EXTRA (+2pt distribuidos en los trabajos con menores notas): una vez que logren fabricar el prototipo, realicen experimentos para medir los siguientes valores:
 
-1. Frecuencia cardíaca de cada miembro del grupo en reposo
-1. PTT de cada miembro del grupo en reposo
+1. Frecuencia cardíaca de cada miembro del grupo sentado en reposo (3 mediciones para cada uno)
+1. PTT de cada miembro del grupo sentado en reposo (recuerden registrar también la distancia entre los sensores, para que se pueda calcular la velocidad de propagación de la ola de presión sanguínea)
+1. Frecuencia cardíaca de cada miembro del grupo de pie (3 mediciones para cada uno)
+1. PTT de cada miembro del grupo de pie (recuerden registrar también la distancia entre los sensores, para que se pueda calcular la velocidad de propagación de la ola de presión sanguínea)
 
 ## Plazo de entrega: por definir
