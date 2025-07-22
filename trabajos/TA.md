@@ -12,15 +12,15 @@ Utilizando los recursos disponibles en el laboratorio, y bajo la supervisión de
 
 Consulten los recursos en uvirtual para ayudarlos. Ahí encontrarán imágenes de ejemplo y los archivos finales de los circuitos que se mandaron a fabricar.
 
-Antes del fin del semestre, hagan una demonstración de la placa funcionando al profesor (6pt)
+1. Antes del fin del semestre, hagan una demonstración de la placa funcionando al profesor (6pt)
 
 NOTA: Este trabajo también cubre el Laboratorio 8. Es decir, la nota que obtengan será tanto la nota del Trabajo 10 como del Laboratorio 8.
 
 EXTRA (+2pt distribuidos en los trabajos con menores notas): una vez que logren fabricar el prototipo, realicen experimentos para medir los siguientes valores:
 
-1. Frecuencia cardíaca de cada miembro del grupo sentado en reposo (3 mediciones para cada uno)
-1. PTT de cada miembro del grupo sentado en reposo (recuerden registrar también la distancia entre los sensores, para que se pueda calcular la velocidad de propagación de la ola de presión sanguínea)
-1. Frecuencia cardíaca de cada miembro del grupo de pie (3 mediciones para cada uno)
-1. PTT de cada miembro del grupo de pie (recuerden registrar también la distancia entre los sensores, para que se pueda calcular la velocidad de propagación de la ola de presión sanguínea)
+- Frecuencia cardíaca de cada miembro del grupo sentado en reposo (3 mediciones para cada uno)
+- PTT de cada miembro del grupo sentado en reposo (recuerden registrar también la distancia entre los sensores, para que se pueda calcular la velocidad de propagación de la ola de presión sanguínea)
+- Frecuencia cardíaca de cada miembro del grupo de pie (3 mediciones para cada uno)
+- PTT de cada miembro del grupo de pie (recuerden registrar también la distancia entre los sensores, para que se pueda calcular la velocidad de propagación de la ola de presión sanguínea)
 
 ## Plazo de entrega: por definir
