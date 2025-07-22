@@ -1,4 +1,4 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 1/2025
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2/2025
 ##### enfoque Ingeniería Biomédia
 
 ## Página de la asignatura
@@ -13,10 +13,9 @@
 ## Horário Laboratório
 - Jueves, bloque 6 (J6: 16:55 - 18:15), Laboratorio de Electromedicina y Mediciones Fisiológicas
 
-## Profesores
+## Profesor
 
 - Juliano Dawid Barboza (juliano.dawid @usach.cl)
-- Britam Gomez Arias (britam.gomez @usach.cl)
 
 ### Ayudante
 
