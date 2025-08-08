@@ -77,14 +77,13 @@
 - CC: Congreso
 - LL: Licencia medica
 - n : número de un digito (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E o F)
-- Ln:A: Laboratorio n, sesión A
-- Ln:B: Laboratorio n, sesión B
-- Ln:A+B: Laboratorio n, sesiones A y B
-- En: Plazo maximo para divulgación de notas y respuestas del Laboratorio Online n
+- nn: Clase Teórica número nn
+- Pn: PEP n
+- Ln:A: Laboratorio Presencial n, sesión A
+- Ln:B: Laboratorio Presencial n, sesión B
+- Ln:A+B: Laboratorio Presencial n, sesiones A y B
 - [Tn: Inicio del Trabajo n
 - Tn]: Entrega del Trabajo n
-- Pn: PEP n
-- nn: Clase Teórica número nn
 
 # Clases
 
