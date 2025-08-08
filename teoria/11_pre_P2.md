@@ -1,4 +1,4 @@
-# Ejercicios y Preparación para PEP2
+# Ejercicios sobre Filtros
 
 ## Capítulos del libro
 - Capítulo 9

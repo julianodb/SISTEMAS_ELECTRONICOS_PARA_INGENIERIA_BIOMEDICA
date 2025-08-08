@@ -101,7 +101,7 @@
 | [08](/teoria/08_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_3$ | 
 | [09](/teoria/09_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
 | [10](/teoria/10_oscilators.md) | Osciladores | Osciladores | inicio $T_4$ | 
-| [18](/teoria/18_pre_P2.md) | Ejercicios filtros |  | 
+| [11](/teoria/11_pre_P2.md) | Ejercicios filtros y osciladores |  | 
 | [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto PPG |  inicio $T_5$ |
 | [03](/teoria/03_Diodos_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos | | 
 | [18](/teoria/18_pre_P2.md) | Ejercicios diodos |  | 
