@@ -109,7 +109,7 @@
 | [15](/teoria/15_MOSFET_I.md) | Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave |  |
 | [16](/teoria/16_MOSFET_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común| inicio $T_6$ |
 | [17](/teoria/17_voltage_regulators.md) | Reguladores de Voltaje + Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | | 
-| [22](/teoria/22_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
+| [18](/teoria/18_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
 | [19](/teoria/19_multivibrators.md) | Multivibradores | multivibradores bi-estables |  | 
 | [20](/teoria/20_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable | inicio $T_8$  | 
 | [09](/teoria/09_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |
