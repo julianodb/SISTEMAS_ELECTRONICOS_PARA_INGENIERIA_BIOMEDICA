@@ -112,7 +112,7 @@
 | [18](/teoria/18_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
 | [19](/teoria/19_multivibrators.md) | Multivibradores | multivibradores bi-estables |  | 
 | [20](/teoria/20_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable | inicio $T_8$  | 
-| [09](/teoria/09_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |
+| [21](/teoria/21_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |
 | [24](/teoria/24_pre_P3.md) | Ejercicios pre-PEP3 |  | inicio $T_9$ | 
 | P3 | PEP3 | mosfet, reguladores de voltaje, fuentes conmutadas, multivibradores y semiconductores | |
 | PO | POR | Prueba Optativa Recuperativa | |
