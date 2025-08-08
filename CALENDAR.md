@@ -99,7 +99,7 @@
 | [P1](/teoria/P1.md) | PEP1 | Amplificadores DC y AC, respuesta transiente y estado estacionario | |
 | [07](/teoria/07_frec.md) | Respuesta en frecuencia | Respuesta en frecuencia, Relación con Función de Transferencia, filtros pasivos, diagrama de Bode |  |
 | [08](/teoria/08_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_3$ | 
-| [16](/teoria/16_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización, entrega guía PEP 2 |  |
+| [09](/teoria/09_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
 | [23](/teoria/23_oscilators.md) | Osciladores | Osciladores | inicio $T_4$ | 
 | [18](/teoria/18_pre_P2.md) | Ejercicios filtros |  | 
 | [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto PPG |  inicio $T_5$ |
@@ -109,11 +109,11 @@
 | [04](/teoria/04_BJT_I.md) | Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave |  |
 | [05](/teoria/05_BJT_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común| inicio $T_6$ |
 | [21](/teoria/21_voltage_regulators.md) | Reguladores de Voltaje + Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | | 
-| [22](/teoria/22_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II, entrega guía PEP3 |  inicio $T_7$ |
+| [22](/teoria/22_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
 | [19](/teoria/19_multivibrators.md) | Multivibradores | multivibradores bi-estables |  | 
 | [20](/teoria/20_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable | inicio $T_8$  | 
 | [09](/teoria/09_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |
-| [24](/teoria/24_pre_P3.md) | Ejercicios pre-PEP3 | respuestas guía PEP3 | inicio $T_9$ | 
+| [24](/teoria/24_pre_P3.md) | Ejercicios pre-PEP3 |  | inicio $T_9$ | 
 | P3 | PEP3 | mosfet, reguladores de voltaje, fuentes conmutadas, multivibradores y semiconductores | |
 | PO | POR | Prueba Optativa Recuperativa | |
 
