@@ -94,12 +94,12 @@
 | [02](/teoria/02_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  inicio $T_1$ |
 | [03](/teoria/03_opamp.md) | Amplificadores Operacionales | Amplificador Operacional, comparador, buffer |  |
 | [04](/teoria/04_opamp_II.md) | Aplicaciones de Amplificadores operacionales: dc | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | inicio $T_2$ |
-| [06](/teoria/06_frec.md) | Respuesta transiente y estado estacionario | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |  |
+| [05](/teoria/05_transient.md) | Respuesta transiente y estado estacionario | Capacitancia, transientes y estado estacionario, aplicación de Laplace |  |
 | [14](/teoria/14_opamp_III.md) | Aplicaciones de Amplificadores operacionales: ac | Circuitos con op amps y elementos que almacenan energía, diferenciador, integrador, intro filtros activos | | 
 | [P1](/teoria/P1.md) | PEP1 | Amplificadores DC y AC, respuesta transiente y estado estacionario | |
-| [15](/teoria/15_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte |  | 
-| [16](/teoria/16_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización, entrega guía PEP 2 | inicio $T_3$ |
-| [17](/teoria/17_frec_IV.md) | Filtros activos III | TBD |   |
+| [06](/teoria/06_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |  |
+| [15](/teoria/15_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_3$ | 
+| [16](/teoria/16_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización, entrega guía PEP 2 |  |
 | [23](/teoria/23_oscilators.md) | Osciladores | Osciladores | inicio $T_4$ | 
 | [18](/teoria/18_pre_P2.md) | Ejercicios filtros |  | 
 | [02](/teoria/02_Diodos.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto PPG |  inicio $T_5$ |
