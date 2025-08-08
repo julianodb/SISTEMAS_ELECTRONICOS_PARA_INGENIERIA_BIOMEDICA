@@ -120,8 +120,8 @@ Respecto a las demás reglas de docencia, este curso se adscribe a las [DIRECTRI
 
 ### Clases
 
-1. Introducción y contexto. (clases [01](/teoria/01_Introduccion.md) y [10](/teoria/10_manufacturing.md))
-1. Amplificadores operacionales y sus aplicaciones (clases [11](/teoria/11_amplifiers.md), [12](/teoria/12_opamp.md), [13](/teoria/13_opamp_II.md), [14](/teoria/14_opamp_III.md))
+1. Introducción y contexto. (clase [01](/teoria/01_Introduccion.md))
+1. Amplificadores operacionales y sus aplicaciones (clases [02](/teoria/02_amplifiers.md), [12](/teoria/12_opamp.md), [13](/teoria/13_opamp_II.md), [14](/teoria/14_opamp_III.md))
 1. Filtros activos y pasivos (clases [06](/teoria/06_frec.md), [15](/teoria/15_frec_II.md), [16](/teoria/16_frec_III.md), [17](/teoria/17_frec_IV.md) y [18](/teoria/18_pre_P2.md))
 1. Osciladores (clases [19](/teoria/19_multivibrators.md), [20](/teoria/20_multivibrators_II.md), [23](/teoria/23_oscilators.md) y [24](/teoria/24_pre_P3.md))
 1. Dispositivos electronicos: diodos (clases [02](/teoria/02_Diodos.md), [03](/teoria/03_Diodos_II.md) y [09](/teoria/09_semiconductors.md)) y transistores (clases [04](/teoria/04_BJT_I.md), [05](/teoria/05_BJT_II.md), [07](/teoria/07_CE.md) y [08](/teoria/08_CE_II.md))

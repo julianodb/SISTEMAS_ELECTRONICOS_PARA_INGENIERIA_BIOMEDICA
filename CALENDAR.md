@@ -91,7 +91,7 @@
 | #  | Titulo |  Descripción |  Trabajo |
 | -- | --     | -- | -- | 
 | [01](/teoria/01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, convenciones y simbología en esquemáticos | |
-| [11](/teoria/11_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  inicio $T_1$ |
+| [02](/teoria/02_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  inicio $T_1$ |
 | [12](/teoria/12_opamp.md) | Amplificadores Operacionales | Amplificador Operacional, comparador, buffer |  |
 | [13](/teoria/13_opamp_II.md) | Aplicaciones de Amplificadores operacionales: dc | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | inicio $T_2$ |
 | [06](/teoria/06_frec.md) | Respuesta transiente y estado estacionario | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |  |
