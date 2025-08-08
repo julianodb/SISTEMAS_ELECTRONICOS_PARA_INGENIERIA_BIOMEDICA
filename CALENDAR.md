@@ -129,4 +129,4 @@
 - [L7](/laboratorio/L7_mosfet.md): transistor mosfet (curvas características) + corte y saturación. 
 - [L8](/laboratorio/L8_vreg.md): Reguladores Conmutados
 - [L9](/laboratorio/L9_multivibrators.md): multivibradores
-- [L8](/laboratorio/L8.md): Técnicas de Fabricación y Prototipaje en Electrónica II
+- [LA](/laboratorio/LA_fab_III.md): Técnicas de Fabricación y Prototipaje en Electrónica III
