@@ -127,6 +127,6 @@
 - [L5](/laboratorio/L5_diodes.md): Diodo DC y LEDs
 - [L6](/laboratorio/L6_fab_II.md): Técnicas de Fabricación y Prototipaje en Electrónica II
 - [L7](/laboratorio/L7_mosfet.md): transistor mosfet (curvas características) + corte y saturación. 
-- [L7](/laboratorio/L7.md): Reguladores Conmutados
+- [L8](/laboratorio/L8_vreg.md): Reguladores Conmutados
 - [L6](/laboratorio/L6.md): multivibradores
 - [L8](/laboratorio/L8.md): Técnicas de Fabricación y Prototipaje en Electrónica II
