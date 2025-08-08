@@ -124,7 +124,7 @@
 - [L2](/laboratorio/L2_opamp.md): amplificador operacional y aplicaciones en CC
 - [L3](/laboratorio/L3_fab_I.md): Técnicas de Fabricación y Prototipaje en Electrónica I
 - [L4](/laboratorio/L4_frec.md): respuesta en frecuencia / filtros activos. 
-- [L2](/laboratorio/L2.md): Diodo DC y LEDs
+- [L5](/laboratorio/L5_diodes.md): Diodo DC y LEDs
 - [L8](/laboratorio/L8.md): Técnicas de Fabricación y Prototipaje en Electrónica II
 - [L3](/laboratorio/L3.md): transistor mosfet (curvas características) + corte y saturación. 
 - [L7](/laboratorio/L7.md): Reguladores Conmutados
