@@ -104,7 +104,7 @@
 | [11](/teoria/11_pre_P2.md) | Ejercicios filtros y osciladores |  | 
 | [12](/teoria/12_diodes.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto PPG |  inicio $T_5$ |
 | [13](/teoria/03_diodes_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos | | 
-| [18](/teoria/18_pre_P2.md) | Ejercicios diodos |  | 
+| [14](/teoria/14_diodes_exs.md) | Ejercicios diodos |  | 
 | [P2](/teoria/P2.md) | PEP2 | respuesta en frecuencia, filtros activos, osciladores y diodos |  | | 
 | [04](/teoria/04_BJT_I.md) | Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave |  |
 | [05](/teoria/05_BJT_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común| inicio $T_6$ |
