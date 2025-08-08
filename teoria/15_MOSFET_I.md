@@ -1,4 +1,7 @@
-# Transistor de Unión Bipolar (BJT)
+# Transistor de Unión Bipolar (BJT) ???
+
+Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave
+
 
 - Motivación
 - Transistores a grandes rasgos
