@@ -124,5 +124,5 @@ Respecto a las demás reglas de docencia, este curso se adscribe a las [DIRECTRI
 1. Amplificadores operacionales y sus aplicaciones (clases [02](/teoria/02_amplifiers.md), [03](/teoria/03_opamp.md), [04](/teoria/04_opamp_II.md), [06](/teoria/06_opamp_III.md))
 1. Filtros activos y pasivos (clases [05](/teoria/05_transient.md), [07](/teoria/07_frec.md), [08](/teoria/08_frec_II.md), [09](/teoria/09_frec_III.md) y [11](/teoria/11_pre_P2.md))
 1. Osciladores (clases [10](/teoria/10_oscilators.md),[19](/teoria/19_multivibrators.md), [20](/teoria/20_multivibrators_II.md) y [24](/teoria/24_pre_P3.md))
-1. Dispositivos electronicos: diodos (clases [12](/teoria/12_Diodos.md), [03](/teoria/03_Diodos_II.md) y [09](/teoria/09_semiconductors.md)) y transistores (clases [04](/teoria/04_BJT_I.md), [05](/teoria/05_BJT_II.md), [07](/teoria/07_CE.md) y [08](/teoria/08_CE_II.md))
+1. Dispositivos electronicos: diodos (clases [12](/teoria/12_diodes.md), [03](/teoria/03_Diodos_II.md) y [09](/teoria/09_semiconductors.md)) y transistores (clases [04](/teoria/04_BJT_I.md), [05](/teoria/05_BJT_II.md), [07](/teoria/07_CE.md) y [08](/teoria/08_CE_II.md))
 1. Fuentes de alimentación conmutadas (clases [21](/teoria/21_voltage_regulators.md) y [22](/teoria/22_voltage_regulators_II.md))
