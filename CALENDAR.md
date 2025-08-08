@@ -107,7 +107,7 @@
 | [14](/teoria/14_diodes_exs.md) | Ejercicios diodos |  | 
 | [P2](/teoria/P2.md) | PEP2 | respuesta en frecuencia, filtros activos, osciladores y diodos |  | | 
 | [15](/teoria/15_MOSFET_I.md) | Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave |  |
-| [05](/teoria/05_BJT_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común| inicio $T_6$ |
+| [16](/teoria/16_MOSFET_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común| inicio $T_6$ |
 | [21](/teoria/21_voltage_regulators.md) | Reguladores de Voltaje + Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | | 
 | [22](/teoria/22_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
 | [19](/teoria/19_multivibrators.md) | Multivibradores | multivibradores bi-estables |  | 

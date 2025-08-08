@@ -1,4 +1,6 @@
-# Transistor de Unión Bipolar (BJT) III
+# Transistor de Unión Bipolar (BJT) III ???
+
+mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común
 
 - Modo Activo
 
