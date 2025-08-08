@@ -121,10 +121,12 @@
 
 - [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
 - [L1](/laboratorio/L1.md): Instrumentación básica utilizada en electrónica, resistencias especiales
-- [L2](/laboratorio/L2.md): Diodo DC y LEDs
-- [L3](/laboratorio/L3.md): transistor BJT (curvas características) + corte y saturación. 
 - [L4](/laboratorio/L4.md): amplificador operacional y aplicaciones en CC
+- [L8](/laboratorio/L8.md): Técnicas de Fabricación y Prototipaje en Electrónica I
 - [L5](/laboratorio/L5.md): respuesta en frecuencia / filtros activos. 
-- [L6](/laboratorio/L6.md): multivibradores
+- [L2](/laboratorio/L2.md): Diodo DC y LEDs
+- [L8](/laboratorio/L8.md): Técnicas de Fabricación y Prototipaje en Electrónica II
+- [L3](/laboratorio/L3.md): transistor mosfet (curvas características) + corte y saturación. 
 - [L7](/laboratorio/L7.md): Reguladores Conmutados
-- [L8](/laboratorio/L8.md): Técnicas de Fabricación y Prototipaje en Electrónica (entrega del dispositivo diseñado)
+- [L6](/laboratorio/L6.md): multivibradores
+- [L8](/laboratorio/L8.md): Técnicas de Fabricación y Prototipaje en Electrónica II
