@@ -97,7 +97,7 @@
 | [05](/teoria/05_transient.md) | Respuesta transiente y estado estacionario | Capacitancia, transientes y estado estacionario, aplicación de Laplace |  |
 | [06](/teoria/06_opamp_III.md) | Aplicaciones de Amplificadores operacionales: ac | Circuitos con op amps y elementos que almacenan energía, diferenciador, integrador | | 
 | [P1](/teoria/P1.md) | PEP1 | Amplificadores DC y AC, respuesta transiente y estado estacionario | |
-| [06](/teoria/06_frec.md) | Respuesta en frecuencia | Capacitancia, Respuesta en frecuencia,  diagrama de Bode, Relación con Función de Transferencia, filtros pasivos |  |
+| [07](/teoria/07_frec.md) | Respuesta en frecuencia | Respuesta en frecuencia, Relación con Función de Transferencia, filtros pasivos, diagrama de Bode |  |
 | [15](/teoria/15_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_3$ | 
 | [16](/teoria/16_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización, entrega guía PEP 2 |  |
 | [23](/teoria/23_oscilators.md) | Osciladores | Osciladores | inicio $T_4$ | 
