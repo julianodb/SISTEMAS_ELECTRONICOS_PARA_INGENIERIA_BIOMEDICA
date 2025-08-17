@@ -14,15 +14,14 @@ Electrónica Analógica
 
 [Texas Instruments Medical Applications](https://www.ti.com/applications/industrial/medical/overview.html)
 
-![01_app](../img/01_aplicaciones5.jpg)
+![01_app](../img/01_aplicaciones6.jpg)
 
 ## Trabajos
 
-Un Fotopletismógrafo es un dispositivo que mide de forme óptica el cambio de volúmen de sangre en alguna parte del cuerpo. Dicho cambio en volúmen se detecta alumbrando la parte del cuerpo bajo estudio y midiendo la cantidad de luz transmitida o reflejada. En cada pulso cardíaco, las arterias y arteriolas se expanden y contraen ligeramente, generando una pequeña diferencia en la cantidad de luz detectada. Se pueden calcular diversas mediciones fisiológicas a partir de la señal obtenida de ésta forma, tales como la frecuencia cardíaca, la frecuencia respiratoria y la presión arterial. En este [video](https://www.youtube.com/embed/AXxBt_TyKTw) se puede ver un fotopletismógrafo que enciende una luz cada vez que detecta un pulso cardíaco.
 
-Los sistemas electrónicos de los fotopletismógrafos utilizan los componentes y circuitos estudiados en esta asignatura. Por lo tanto, este semestre su grupo desarrollará un fotopletismógrafo para reforzar y ejemplificar la aplicación de los conocimientos obtenidos. El dispositivo propuesto será capaz de medir dos variables: frecuencia cardíaca y tiempo de transito de pulso (PTT).
+Los sistemas electrónicos de los estetoscopios electrónicos utilizan los componentes y circuitos estudiados en esta asignatura. Por lo tanto, este semestre su grupo desarrollará un estetoscopio electronico para reforzar y ejemplificar la aplicación de los conocimientos obtenidos. El dispositivo propuesto será capaz de amplificar los sonidos medidos además de estimar la frecuencia cardíaca.
 
-El proyecto será implementado por 4 grupos distintos, cada uno con 3 o 4 estudiantes. Cada grupo implementará un prototipo ligeramente distinto, de acuerdo al color del LED que se utilizará: Rojo, Amarillo, Azul y Verde. El diseño del prototipo se dividirá en 10 trabajos, conforme la imagen a continuación.
+El proyecto será implementado por 5 grupos distintos, cada uno con 3 o 4 estudiantes. Cada grupo implementará un prototipo ligeramente distinto, de acuerdo al color del LED que se utilizará: Rojo, Amarillo, Azul, Verde y Blanco. El diseño del prototipo se dividirá en 9 trabajos, conforme la imagen a continuación.
 
 ![TX](../img/TX.png)
 
@@ -39,18 +38,6 @@ El proyecto será implementado por 4 grupos distintos, cada uno con 3 o 4 estudi
 
 ## Revisión/Resúmen de Conceptos
 
-Teoría de Circuitos
-
-$$R_{series} = R_1 + R_2$$
-
-$$R_{paralelo} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2}}$$
-
-$$\sum{corrientes} = 0$$
-
-$$\sum{voltajes} = 0$$
-
-Divisor de voltaje
-
 - Impedancia
 - Potenciometro
 - BODE
@@ -66,6 +53,19 @@ Divisor de voltaje
 - Nyquist
 - Ley de Ohm
 
+Teoría de Circuitos
+
+$$\sum{corrientes} = 0$$
+
+$$\sum{voltajes} = 0$$
+
+$$R_{series} = R_1 + R_2$$
+
+$$R_{paralelo} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2}}$$
+
+Divisor de voltaje
+
+Thevenin
 
 ## Introducción al Laboratorio
 
