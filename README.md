@@ -60,7 +60,7 @@ La nota de teoría está compuesta por 70% del promedio simple de las evaluacion
 
 $$ Promedio Teoría = 0.7\sum_{i=1}^{np} \frac{P_i}{np} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
 
-Están planificados $np=3$ pruebas escritas y $nt=10$ trabajos de diseño.
+Están planificados $np=3$ pruebas escritas y $nt=9$ trabajos de diseño.
 
 Cada trabajo de diseño tiene una fecha y hora maxima de entrega. En el caso de que se entregue el trabajo con hasta 24 horas de atraso, se descuenta la mitad de la nota (máxima nota posible 4.0). Si se entrega el trabajo con más de 24 horas de atraso, se considera una nota 1.0.
 
@@ -88,7 +88,7 @@ Las ponderaciones para la evaluación de laboratorio serán 70% del promedio sim
 
 $$ Promedio Laboratorio = 0.7\sum_{i=1}^{nl} \frac {Lp_i}{nl} + 0.3\sum_{j=1}^{no} \frac {Lo_j}{no}$$
 
-Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Lo_j$ son las notas de las experiencias de laboratorio online. Están planificados $nl=8$ actividades de laboratorio presenciales y $no=7$ actividades online durante el semestre.
+Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Lo_j$ son las notas de las experiencias de laboratorio online. Están planificados $nl=10$ actividades de laboratorio presenciales y $no=6$ actividades online durante el semestre.
 
 Si el Promedio Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
 
