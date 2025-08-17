@@ -8,7 +8,7 @@
 [Clase de Tinkercad para Laboratorios Online](https://www.tinkercad.com/joinclass/5XK7AATBK)
 
 ## Horário Teoría
-- Martes: bloques 5 y 6 (M5: 15:20 - 16:40, M6: 16:55 - 18:15), EAO53
+- Martes: bloques 5 y 6 (M5: 15:20 - 16:40, M6: 16:55 - 18:15), EAO532
 
 ## Horário Laboratório
 - Jueves, bloque 6 (J6: 16:55 - 18:15), Laboratorio de Electromedicina y Mediciones Fisiológicas
