@@ -20,6 +20,8 @@ Electrónica Analógica
 
 Un estetoscopio es un aparato destinado a auscultar los sonidos del pecho y otras partes del cuerpo, ampliándolos con la menor deformación posible. También se conoce como fonendoscopio, un nombre que se asocia a la variedad de estetoscopio comúnmente utilizada por médicos. 
 
+![17554524035777758236533003654529](https://github.com/user-attachments/assets/5118bff2-271b-4c48-9814-d0bee2451c65)
+
 Un estetoscopio electrónico es un dispositivo médico que amplifica electrónicamente los sonidos corporales para facilitar la auscultación, especialmente de sonidos débiles o sutiles, como ciertos soplos cardíacos. A diferencia de los estetoscopios tradicionales, los electrónicos pueden filtrar el ruido ambiental y a menudo permiten grabar y reproducir los sonidos para su análisis posterior.
 
 Los sistemas electrónicos de los estetoscopios electrónicos utilizan los componentes y circuitos estudiados en esta asignatura. Por lo tanto, este semestre su grupo desarrollará un estetoscopio electronico para reforzar y ejemplificar la aplicación de los conocimientos obtenidos. El dispositivo propuesto será capaz de amplificar los sonidos medidos además de estimar la frecuencia cardíaca.
