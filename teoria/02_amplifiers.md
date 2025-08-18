@@ -1,7 +1,13 @@
 # Amplificadores
 
+- Introducción
+- modelo de 4 puertas
 - Efecto de $R_L$ y $R_S$
 - Definición de impedancia de entrada ($Z_i$) y de salida ($Z_o$)
+
+## Introducción 
+
+
 
 ## Efecto de $R_L$ y Definición de impedancia de salida ($Z_o$)
 
