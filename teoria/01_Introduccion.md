@@ -70,6 +70,8 @@ $$R_{paralelo} = \frac{1}{\frac{1}{R_1} + \frac{1}{R_2}}$$
 
 Divisor de voltaje
 
+Potenciometro
+
 Thevenin
 
 ## Introducción al Laboratorio
