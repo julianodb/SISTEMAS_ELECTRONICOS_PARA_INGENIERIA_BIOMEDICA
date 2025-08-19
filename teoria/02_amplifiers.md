@@ -2,8 +2,9 @@
 
 - Introducción
 - Modelo de 2 compuertas
+- Ejemplo
 - Efecto de $R_L$ y $R_S$
-- Definición de impedancia de entrada ($Z_i$) y de salida ($Z_o$)
+- Un amplificador ideal y compromisos
 
 ## Introducción 
 
@@ -35,7 +36,7 @@ $V_{th} = A_V * v_i$
 
 No es posible determinar $R_{th}$ a priori, por lo que la dejaremos como un parametro del amplificador, y la denominaremos resistencia de salida, con el símbolo $R_o$ (**o**utput **R**esistance).
 
-Para modelar la entrada del amplificador, nuevamente utilizamos un equivalente de Thevenin. Al desconectar $v_i$ y medir el voltaje en la entrada normalmente se obtiene 0V. Esto es esperado pues se trata de la entrada del circuito y por lo tanto no produce un voltaje. Una fuente de voltaje de 0V es equivalente a un cortocircuito, por lo que la omitiremos del modelo. Por otro lado, al medir la resistencia entre el terminal de entrada y tierra, obtendremos algún valor para $R_{th}$. Tampoco se puede determinar el valor a priori, por lo que agregaremos más un parámetro del amplificador con este valor, y lo denominaremos resistencia de entrada, con el símbolo $R_i$ (**i**nput **R**esistance)
+Para modelar la entrada del amplificador, nuevamente utilizamos un equivalente de Thevenin. Al desconectar $v_i$ y medir el voltaje en la entrada normalmente se obtiene 0V. Esto es esperado pues se trata de la entrada del circuito y por lo tanto no produce un voltaje. Una fuente de voltaje de 0V es equivalente a un cortocircuito, por lo que la omitiremos del modelo. Por otro lado, al medir la resistencia entre el terminal de entrada y tierra, obtendremos algún valor para $R_{th}$. Tampoco se puede determinar el valor a priori, por lo que agregaremos más un parámetro al amplificador con este valor, y lo denominaremos resistencia de entrada, con el símbolo $R_i$ (**i**nput **R**esistance)
 
 El modelo finalizado se muestra a continuación
 
@@ -47,18 +48,21 @@ Suponga que un determinado sensor produce una señal de voltaje $v_s = 0.001 cos
 
 Respuesta: 20 mV en ambos casos.
 
-
 ## Efecto de $R_L$
 
 Así como modelamos la entrada del amplificador como una resistencia $R_i$, podemos igualmente modelar el resto del circuito que se conectará a la salida del amplificador como una resistencia de carga $R_L$ (**L**oad **R**esistance). Es decir, de forma general el circuito que se conectará a la salida del amplificador se puede reemplazar por una resistencia $R_L$, conforme la figura a continuación:
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rl.png" width="300"> 
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rl_av.png" width="300"> 
 
 Se observa que el voltaje de salida del amplificador ya no es simplemente $A_V * v_i$,  pues se forma un divisor de voltaje entre $R_o$ y $R_L$. Aplicando la forma de divisor de voltaje, se obtiene que el voltaje de salida del sistema completo es:
 
 $v_o = \frac{R_L}{R_L+R_o} A_{V} v_i $
 
-Para no confundir el $A_V$ del amplificador con el factor de amplificación del sistema con carga, llamaremos a la ganancia del amplificador sin carga $A_{V_{NL}}$ (NL = no load). De ésta forma, la ganancia con carga $A_V$ se puede escribir como:
+Para no confundir el $A_V$ del amplificador con el factor de amplificación del sistema completo (incluyendo la carga), llamaremos a la ganancia del amplificador sin carga $A_{V_{NL}}$ (NL = no load).
+
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rl.png" width="300"> 
+
+De ésta forma, la ganancia con carga $A_V$ se puede escribir como:
 
 $\frac{v_o}{v_i} = A_V = \frac{R_L}{R_L+R_o} A_{V_{NL}} $
 
