@@ -12,7 +12,7 @@ En electrónica muchas veces se requiere amplificar señales. En aplicaciones bi
 
 El problema inverso -es decir, atenuar señales- es relativamente facil de resolver con un divisor de voltaje. Si deseamos, por ejemplo, dividir una señal de voltaje en 100, basta construir un divisor de voltaje con resistencias que obedecen la siguiente relación: $R_1 = 99 R_2$
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/voltage_divider.png" width="150"> 
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/voltage_divider.png" width="80"> 
 
 $V_o = V_i / 100$
 
