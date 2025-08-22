@@ -23,7 +23,8 @@
 Nota: Ante cualquier duda en el uso de los instrumentos, o las conexiones eléctricas, consulten al profesor.
 
 ### Introducción
-En este laboratorio utilizaremos generadores de funciones por primera vez. Pidan una demonstración al profesor o al ayudante antes de iniciar la parte 2.
+
+En este laboratorio utilizaremos la fuente C.C por primera vez. Pidan una demonstración al profesor o al ayudante antes de conectarla y encenderla en la parte 1.
 
 Los circuitos integrados ("chips") continenen diversos componentes electrónicos en su interior, y permiten conectarlos a un circuito electrónico externo a través de sus pines.
 
@@ -45,14 +46,13 @@ Cada amplificador operacional es un dispositivo electrónico con el siguiente s�
 
 Figura 3: Amplificador Operacional
 
-Para este laboratorio no es necesario entender el funcionamiento de un amplificador operacional, basta poder armar el circuito que se pide con las conexiones correctas.
-
 Los amplificadore operacionales son dispositivos activos, es decir, necesitan ser alimentados por una fuente de voltaje entre $V_{EE}$ y $V_{CC}$ para poder funcionar. 
+
 En el LM324, el $V_{CC}$ de los 4 amplificadores operacionales están unidos y se conectan al pin 4, como se pude ver en la figura 2. De manera similar, el $V_{EE}$ de los 4 amplificadores operacionales están unidos y se conectan al pin 11. Para encender los amplificadores operacionales conectaremos la tierra de la fuente de poder al pin 11, y el voltaje positivo al pin 4.
 
 ### Parte 1: DC
 
-Armen el circuito de la figura 4 en un protoboard. Pueden utilizar cualquier uno de los 4 amplificadores operacionales del LM324 para OA1. Configuren la fuente CC para un 12 V (tolerancia de 0.5 V si están utilizando una fuente que no permite ajustar valores exactos) y una corriente maxima entre 0.2 y 0.5 A. No se olviden de alimentar el LM324 con la fuente de poder. Por ahora no es necesari conectar $v_{AC}$.
+Armen el circuito de la figura 4 en un protoboard. Pueden utilizar cualquier uno de los 4 amplificadores operacionales del LM324 para OA1. Configuren la fuente CC para un voltaje de 12 V (tolerancia de 0.5 V si están utilizando una fuente que no permite ajustar valores exactos) y una corriente maxima entre 0.2 y 0.5 A. No se olviden de alimentar el LM324 con la fuente de poder. Por ahora no es necesario conectar $v_{AC}$.
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_non_inverting_potentiometer.png" width="300">
 
@@ -79,9 +79,11 @@ Figura 4: Circuito amplificador utilizando amplificador operacional.
 
     1. Anoten el valor de "$v_i$ medido" y del voltaje de salida "$v_o$" para cada caso. (1.6pt)
 
-    2. Calculen el factor de amplificación de voltaje en cada caso ($A_v = \frac{v_o}{v_i}$) y comparen con el valor teórico ( $1+\frac{R_2}{R_1}$ ). (1pt)
+    2. Calculen el factor de amplificación de voltaje en cada caso ($A_v = \frac{v_o}{v_i}$) y comparen con el valor teórico. (1pt)
 
 ### Parte 2: AC
+
+En este laboratorio utilizaremos generadores de funciones por primera vez. Pidan una demonstración al profesor o al ayudante antes de utilizarla.
 
 2. Ajusten el potenciometro para que $v_o$ sea aproximadamente $6\ V \pm 10\ \%$. Configuren el generador de funciones para generar una señal sinusoidal, sin offset, con frecuencia de 10 kHz y amplitud 100 mV. Conecten la señal del generador de funciones en lugar de la fuente $v_{AC}$ en el circuito. Midan $v_i$ y $v_o$ con el osciloscopio.
     
@@ -96,6 +98,6 @@ Figura 4: Circuito amplificador utilizando amplificador operacional.
 
     1. Anoten los valores de "$v_{i_{pp}}$ medido", "$v_{o_{promedio}}$" y "$v_{o_{pp}}$", bien como la forma de la señal $v_o$ para cada caso. (2pt)
 
-    2. Calculen el factor de amplificación de voltaje AC en cada caso ($A_{v_{AC}} = \frac{v_{o_{pp}}}{v_{i_{pp}}}$) y comparen con el valor teórico ( $1+\frac{R_2}{R_1}$ ). (1pt)
+    2. Calculen el factor de amplificación de voltaje AC en cada caso ($A_{v_{AC}} = \frac{v_{o_{pp}}}{v_{i_{pp}}}$) y comparen con el valor teórico. (1pt)
 
     2. De acuerdo a las mediciones realizadas tanto en la parte 1 como en la parte 2, ¿cuales son los valores máximo y mínimo que puede producir la salida del amplificador operacional ($v_o$) ? ¿Cómo se relacionan con el voltaje de alimentación ($V_{CC} \approx 12\ V$ y $V_{EE} = 0\ V$) ? (0.4pt)
