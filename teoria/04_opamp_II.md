@@ -16,13 +16,13 @@ $V_{bias} = V_{bias\\_weak}$
 
 ## Sumador inversor
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/inverting_summing_amplifier.png" width="200"> 
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/inverting_summing_amplifier.png" width="270"> 
 
-$v_o = -\frac{R_{11}}{R_10} v_i -\frac{R_{11}}{R_9} v_x$
+$v_o = -\frac{R_{11}}{R_{10}} v_i -\frac{R_{11}}{R_9} v_x$
 
 ## Amplificador de diferencias
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/difference_amplifier.png" width="200"> 
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/difference_amplifier.png" width="270"> 
 
 Si $R_{DA1} = R_{DA2} = R_{DA3} = R_{DA4}$
 
@@ -34,7 +34,7 @@ $v_o = A (v_1 - v_2)$
 
 ## Amplificador de Instrumentación
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/instrumentation_amplifier.png" width="200"> 
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/instrumentation_amplifier.png" width="350"> 
 
 Si $R_1 = R_2 = R_3 = R_4 = R_5 = R_6 = R_7 = R$
 
