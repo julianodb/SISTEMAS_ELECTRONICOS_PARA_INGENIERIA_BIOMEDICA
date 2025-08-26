@@ -1,10 +1,10 @@
 # Circuitos con Amplificador Operacional: DC
 
-## Amplificador inversor
+## Amplificador no_inversor
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_inverting.png" width="200"> 
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_non_inverting.png" width="200"> 
 
-$v_o = -\frac{R_3}{R_2} v_i$
+$v_o = (1+\frac{R_5}{R_6}) v_i$
 
 ## Buffer / Seguidor unitario
 
