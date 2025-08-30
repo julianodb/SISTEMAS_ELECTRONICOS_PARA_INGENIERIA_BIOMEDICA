@@ -95,9 +95,9 @@
 | [02](/teoria/02_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  inicio $T_1$ |
 | [03](/teoria/03_opamp.md) | Amplificadores Operacionales | Amplificador Operacional, comparador, buffer |  |
 | [04](/teoria/04_opamp_II.md) | Aplicaciones de Amplificadores operacionales: dc | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | inicio $T_2$ |
-| [05](/teoria/05_transient.md) | Respuesta transiente y estado estacionario | Capacitancia, transientes y estado estacionario, aplicación de Laplace |  |
+| [05](/teoria/05_transient.md) | Respuesta transitoria y estado estacionario | Capacitancia, transitórios y estado estacionario, aplicación de Laplace |  |
 | [06](/teoria/06_opamp_III.md) | Aplicaciones de Amplificadores operacionales: ac | Circuitos con op amps y elementos que almacenan energía, diferenciador, integrador | | 
-| [P1](/teoria/P1.md) | PEP1 | Amplificadores DC y AC, respuesta transiente y estado estacionario | |
+| [P1](/teoria/P1.md) | PEP1 | Amplificadores DC y AC, respuesta transitoria y estado estacionario | |
 | [07](/teoria/07_frec.md) | Respuesta en frecuencia | Respuesta en frecuencia, Relación con Función de Transferencia, filtros pasivos, diagrama de Bode |  |
 | [08](/teoria/08_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_3$ | 
 | [09](/teoria/09_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
