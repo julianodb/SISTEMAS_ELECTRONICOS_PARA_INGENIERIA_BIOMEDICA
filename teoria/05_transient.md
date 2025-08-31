@@ -256,6 +256,16 @@ $\therefore H(s) = \frac{V_{out}}{V_{in}} = \frac{1}{1+RCs}$
 
 ##  7. <a name='Resmenyejemplo'></a>Resúmen y ejemplo
 
+En resúmen, para encontrar la respuesta en DC de un sistema podemos reemplazar capacitores por circuitos abiertos y resolver el circuito normalmente. Luego, para hacer el analisis transitorio podemos reemplazar capacitores por resistencias con valor $\frac{1}{Cs}$ y resolver el circuito normalmente, lo que nos permitirá encontrar la función de transferencia $H(s)$. Una vez que tenemos $H(s)$, podemos deducir, por ejemplo, la constante de tiempo $\tau$ del circuito, que será -1 dividido por el pólo dominante.
+
+Ejemplo:
+
+Para el siguiente circuito, encuentre:
+1. El valor de $v_o$ en estado estacionario.
+1. Si $v_i$ es un escalón de 5 V, cuanto tiempo demora $v_o$ en alcanzar 99 % del valor en estado estacionario.
+
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example.png" width="180"> 
+
 ##  8. <a name='captulosdellibro'></a>capítulos del libro ???
 - Capítulo 9
   - sesión 9.3 y 9.6
