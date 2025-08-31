@@ -14,8 +14,7 @@
 	* 6.1. [Encontrando $\tau$ a partir de la función de transferencia](#Encontrandotauapartirdelafuncindetransferencia)
 	* 6.2. [Encontrando la función de transferencia sin escribir ecuaciones diferencials](#Encontrandolafuncindetransferenciasinescribirecuacionesdiferencials)
 * 7. [Resúmen y ejemplo](#Resmenyejemplo)
-* 8. [capítulos del libro ???](#captulosdellibro)
-* 9. [ejercicios recomendados ???](#ejerciciosrecomendados)
+* 8. [ejercicios recomendados](#ejerciciosrecomendados)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -254,24 +253,30 @@ $\implies V_{out} = \frac{1}{1+RCs} V_{in}$
 
 $\therefore H(s) = \frac{V_{out}}{V_{in}} = \frac{1}{1+RCs}$
 
+Algo para reflexionar: ¿Cual es la relación entre $\frac{1}{Cs}$ y la impedancia del capacitor ?
+
 ##  7. <a name='Resmenyejemplo'></a>Resúmen y ejemplo
 
 En resúmen, para encontrar la respuesta en DC de un sistema podemos reemplazar capacitores por circuitos abiertos y resolver el circuito normalmente. Luego, para hacer el analisis transitorio podemos reemplazar capacitores por resistencias con valor $\frac{1}{Cs}$ y resolver el circuito normalmente, lo que nos permitirá encontrar la función de transferencia $H(s)$. Una vez que tenemos $H(s)$, podemos deducir, por ejemplo, la constante de tiempo $\tau$ del circuito, que será -1 dividido por el pólo dominante.
 
 Ejemplo:
 
-Para el siguiente circuito, encuentre:
+Para el siguiente circuito, si $v_i$ es un escalón de 3 V, encuentre:
 1. El valor de $v_o$ en estado estacionario.
-1. Si $v_i$ es un escalón de 5 V, cuanto tiempo demora $v_o$ en alcanzar 99 % del valor en estado estacionario.
+1. Cuanto tiempo demora $v_o$ en estar a menos de 10 mV del valor en estado estacionario.
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example.png" width="180"> 
+Datos:  $R_1=R_2=10\ k\Omega$, $C_1=10\ \mu F$
 
-##  8. <a name='captulosdellibro'></a>capítulos del libro ???
-- Capítulo 9
-  - sesión 9.3 y 9.6
-- Capítulo 11
-  - sesión 11.5 (parte de amplificador de instrumentación) 
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example4.png" width="180"> 
 
-##  9. <a name='ejerciciosrecomendados'></a>ejercicios recomendados ???
-- Capítulo 9
-  - ejercicios 11 y 12
+##  8. <a name='ejerciciosrecomendados'></a>ejercicios recomendados
+
+Para el siguiente circuito, si $v_i$ es un escalón de 3 V, encuentre:
+1. El valor de $v_o$ en estado estacionario.
+1. Cuanto tiempo demoran los términos transitorios en bajar a menos de 1% de su valor inicial.
+
+Datos:  $R_1=10\ k\Omega$, $R_2=15\ k\Omega$, $C_1=C_2=10\ \mu F$
+
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example3.png" width="180"> 
+
+- Intercambie las resistencias y capacitores del ejemplo anterior de todas las formas posibles y resuelva el ejercicio nuevamente. Por ejemplo, intercambie $R_1$ y $C_1$.
