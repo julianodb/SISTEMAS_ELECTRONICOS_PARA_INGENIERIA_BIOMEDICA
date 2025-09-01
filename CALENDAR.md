@@ -22,37 +22,37 @@
 |    |  1 |  2       |  3 |  4    |  5 |  6 |  7 |
 |  3 | T2]| 05 06    |    | L2:B E1:A |    |    |    |
 |    |  8 |  9       | 10 | 11    | 12 | 13 | 14 |
-|  4 |    | P1       |    | L3:A+B|    |    |    |
+|  4 |    | P1 [T3   |    | x     |    |    |    |
 |    | 15 | 16       | 17 | 18    | 19 | 20 | 21 |
 |    | RR | RR       | RR | RR    | RR |    |    |
 |    | 22 | 23       | 24 | 25    | 26 | 27 | 28 |
-|  5 |    | 07 08 [T3|    | L4:B E2:A |    |    |    |
+|  5 |    | L3:A+B   |    | L4:B E2:A |    |    |    |
 
 ## OCTUBRE / 2025
 
 |Sem |Lun |Mar       |Mie |Jue    |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:    |:-: |:-: |:-: |
 |    | 29 | 30       |  1 |  2    |  3 |  4 |  5 |
-|  6 | T3]| 09 10 [T4|    | L4:A E2:B |    |    |    |
+|  6 | T3]| 07 08 [T4|    | L4:A E2:B |    |    |    |
 |    |  6 |  7       |  8 |  9    | 10 | 11 | 12 |
-|  7 | T4]| 11 12 [T5|    | L5:A E3:B |    |    |    |
+|  7 | T4]| 09 10 [T5|    | L5:A E3:B |    |    |    |
 |    | 13 | 14       | 15 | 16    | 17 | 18 | 19 |
-|  8 | T5]| 13 14    |    | L5:B E3:A |    |    |    |
+|  8 | T5]| 11 12    |    | L5:B E3:A |    |    |    |
 |    | 20 | 21       | 22 | 23    | 24 | 25 | 26 |
 |  9 |    | P2       |    | L6:A+B|    |    |    |
 |    | 27 | 28       | 29 | 30    | 31 |  1 |  2 |
-| 10 |    | 15 16 [T6|    | L7:B E4:A | FF |    |    |
+| 10 |    | 13 14 [T6|    | L7:B E4:A | FF |    |    |
 
 ## NOVIEMBRE / 2025
 
 |Sem |Lun |Mar       |Mie |Jue    |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:    |:-: |:-: |:-: |
 |    |  3 |  4       |  5 |  6    |  7 |  8 |  9 |
-| 11 | T6]| 17 18 [T7|    | L7:A E4:B |    |    |    |
+| 11 | T6]| 15 16 [T7|    | L7:A E4:B |    |    |    |
 |    | 10 | 11       | 12 | 13    | 14 | 15 | 16 |
-| 12 | T7]| 19 20 [T8|    | L8:A E5:B |    |    |    |
+| 12 | T7]| 17 18 [T8|    | L8:A E5:B |    |    |    |
 |    | 17 | 18       | 19 | 20    | 21 | 22 | 23 |
-| 13 | T8]| 21 22 [T9|    | L8:B E5:A |    |    |    |
+| 13 | T8]| 19 20 [T9|    | L8:B E5:A |    |    |    |
 |    | 24 | 25       | 26 | 27    | 28 | 29 | 30 |
 | 14 |    | LA:A+B   |    | L9:B E6:A |    |    |    |
 
@@ -102,19 +102,17 @@
 | [08](/teoria/08_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_3$ | 
 | [09](/teoria/09_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
 | [10](/teoria/10_oscilators.md) | Osciladores | Osciladores | inicio $T_4$ | 
-| [11](/teoria/11_frec_exs.md) | Ejercicios filtros y osciladores |  | 
-| [12](/teoria/12_diodes.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto PPG |  inicio $T_5$ |
-| [13](/teoria/13_diodes_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos | | 
-| [14](/teoria/14_diodes_exs.md) | Ejercicios diodos |  | 
+| [11](/teoria/11_diodes.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto PPG |  inicio $T_5$ |
+| [12](/teoria/12_diodes_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos | | 
 | [P2](/teoria/P2.md) | PEP2 | respuesta en frecuencia, filtros activos, osciladores y diodos |  | | 
-| [15](/teoria/15_MOSFET_I.md) | Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave |  |
-| [16](/teoria/16_MOSFET_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común| inicio $T_6$ |
-| [17](/teoria/17_voltage_regulators.md) | Reguladores de Voltaje + Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | | 
-| [18](/teoria/18_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
-| [19](/teoria/19_multivibrators.md) | Multivibradores | multivibradores bi-estables |  | 
-| [20](/teoria/20_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable | inicio $T_8$  | 
-| [21](/teoria/21_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |
-| [22](/teoria/22_pre_P3.md) | Ejercicios pre-PEP3 |  | inicio $T_9$ | 
+| [13](/teoria/13_MOSFET_I.md) | Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave |  |
+| [14](/teoria/14_MOSFET_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común| inicio $T_6$ |
+| [15](/teoria/15_voltage_regulators.md) | Reguladores de Voltaje + Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | | 
+| [16](/teoria/16_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
+| [17](/teoria/17_multivibrators.md) | Multivibradores | multivibradores bi-estables |  | 
+| [18](/teoria/18_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable | inicio $T_8$  | 
+| [19](/teoria/19_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |
+| [20](/teoria/20_pre_P3.md) | Ejercicios pre-PEP3 |  | inicio $T_9$ | 
 | P3 | PEP3 | mosfet, reguladores de voltaje, fuentes conmutadas, multivibradores y semiconductores | |
 | PO | POR | Prueba Optativa Recuperativa | |
 

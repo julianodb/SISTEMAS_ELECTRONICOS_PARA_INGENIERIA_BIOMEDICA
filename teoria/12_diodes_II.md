@@ -1,4 +1,4 @@
-# 03 - Diodos y Aplicaciones II
+# Diodos y Aplicaciones II
 
 ## Limites del Diodo y Hojas de Dato
 

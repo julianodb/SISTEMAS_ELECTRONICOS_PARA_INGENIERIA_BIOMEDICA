@@ -1,4 +1,4 @@
-# 02 - Diodos y Aplicaciones
+# Diodos y Aplicaciones
 
 ## Símbolo, nomenclatura y convenciones
 
