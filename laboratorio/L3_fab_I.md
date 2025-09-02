@@ -5,20 +5,15 @@
 
 ## Recursos del pañol
 
-| tipo | descripcion | cantidad | | tipo | descripcion | valor | cantidad |
-| -- | -- | -- | --| -- | -- | -- | -- |
-| Instrumentos |  |  | | Dispositivos |  |  |  |
-|  | Osciloscopio | 1 | |  | LM324 |  | 1 |
-|  | Generador de señales | 1 | |  | Resistencias (Ω) |  |  |
-|  | Multímetro | 1 | |  |  | 47 k | 1 |
-|  | Fuente CC. | 1 | |  | | 68 k  | 1 |
-| Implementos |  |  | |  |  | 680 k | 1 |
-|  | Cable Banana-Caimán | 2 | |  |  | Potenciometro 10k (de panel) | 1 |
-|  | Sonda | 2 | |  | Condensadores |  |  |
-|  | BNC-Caimán | 1 | |  |  | $0.1 \mu F$ | 1 |
-| Otros |  |  | |  | |  |  |
-| | Protoboard | 1 | |  | | | |
-| | cables, alicate, etc | | |  | | |  |
+- Cautín + estaño
+- Alicates
+- Cables
+- Stripboard
+- Componentes de la BOM, más LM324, LM386, asltavoz y micrófono
+- Fuente CC para probar
 
 ## Procedimiento experimental e informe
 
+1. Solden los componentes del circuito de estetoscópio diseñado hasta el momento en una stripboard. Pueden utilizar la ubicación en la imagen a continuación como referencia. Fabriquen al menos 1 placa por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. (6pt)
+
+![21_1](../img/stethoscope.png)
