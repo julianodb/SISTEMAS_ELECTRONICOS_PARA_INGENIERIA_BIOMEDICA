@@ -14,6 +14,6 @@
 
 ## Procedimiento experimental e informe
 
-1. Solden los componentes del circuito de estetoscópio diseñado hasta el momento en una stripboard. Pueden utilizar la ubicación en la imagen a continuación como referencia. Fabriquen al menos 1 placa por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. (6pt)
+1. Solden los componentes del circuito de estetoscópio diseñado hasta el momento en una stripboard. Pueden utilizar la imagen a continuación como referencia. Fabriquen al menos 1 placa por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. (6pt)
 
 ![21_1](../img/stethoscope.png)
