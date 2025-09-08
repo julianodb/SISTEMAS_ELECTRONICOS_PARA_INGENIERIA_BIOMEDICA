@@ -12,6 +12,8 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box.png" width="800">
 
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box_a.png" width="800">
+       > 
        > Para el amplificador 1: (+0.2pt)
        >
        > $v_{o1} = A_{V_{NL1}} \frac{R_{i2}}{R_{i2}+R_{o1}} \frac{R_{i1}}{R_S+R_{i1}} v_S$
@@ -34,6 +36,8 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box2.png" width="800">
 
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box_b.png" width="800">
+       > 
        > Para el amplificador 2: (+0.2pt)
        >
        > $v_{o2} = A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S$
@@ -66,9 +70,65 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl.png" width="400"> 
 
+       > Aplicando LKC en el nodo $V_-$: (+0.3pt)
+       >
+       > $\frac{RA-V_-}{2R} + \frac{LL-V_-}{2R} = \frac{V_- - aVL}{R}$
+       >
+       > $RA-V_- + LL-V_- = 2V_- - 2aVL$
+       >
+       > $RA + LL + 2aVL = 4V_- $
+       >
+       > $V_- = \frac{RA + LL + 2aVL}{4}$
+       >
+       > Aplicando divisor de voltaje en  $V_+$: (+0.3pt)
+       >
+       > $V_+ = \frac{LA}{2}$
+       >
+       > Aplicando corto circuito virtual:
+       >
+       > $V_+ = V_-$ (+0.2pt)
+       >
+       > $\frac{LA}{2} = \frac{RA + LL + 2aVL}{4}$
+       >
+       > $2LA = RA + LL + 2aVL$
+       >
+       > $aVL = LA - \frac{RA + LL}{2}$
+       >
     2. Encontrar $aVR$ en función de $LA$, $LL$ y $RA$, con $R=10\ k\Omega$ (0.8 pt)
-
+    
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr3.png" width="400"> 
+         
+       > Aplicando corto circuito virtual a todos los amplificadores operacionales y denominando $V_1$ y $V_2$ los voltajes desconocidos: (+0.2pt)
+       >
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr3_annotated.png" width="400"> 
+       >
+       > En la parte superior del circuito, se forma un divisor resistivo entre LL, RA y $V_2$, por lo que se puede escribir:
+       >
+       > $RA = LL \frac{R}{R+R} + V_2 \frac{R}{R+R}$ (+0.15pt)
+       >
+       > $2 RA = LL + V_2$
+       >
+       > $V_2 = 2 RA - LL$ (ecuación 1)
+       >
+       > De la misma forma, en la parte inferior del circuito se forma un divisor de voltaje entre tierra, LA y $V_1$:
+       >
+       > $LA = V_1 \frac{3R}{3R+R}$ (+0.15pt)
+       >
+       > $ V_1 = \frac{4}{3} LA $ (ecuación 2)
+       >
+       > Finalmente, también hay un divisor de voltaje entre $V_1$, $V_2$ y $aVR$:
+       >
+       > $V_2 = V_1 \frac{3R}{3R+R} + aVR \frac{R}{3R+R} $ (+0.15pt)
+       >
+       > Reemplazando las ecuaciones 1 y 2:
+       >
+       > $ 2 RA - LL = \frac{4}{3} LA \frac{3}{4} + aVR \frac{1}{4} $ (+0.15pt)
+       >
+       > $ 2 RA - LL - LA = aVR \frac{1}{4} $
+       >
+       > $ aVR = 8 RA - 4 LL - 4 LA $
+       >
+       > En realidad, la derivación aVR se define como: $aVR_{real} = RA - \frac{LA + LL}{2}$. Por lo tanto la señal que el circuito obtiene es la derivación aVR amplificada por 8.
 
 3. Es muy común que la señal de ECG contenga un valor DC que no se utiliza para su análisis. Una de las formas de eliminar el valor DC (línea de base) es utilizando el circuito a continuación. $v_s$ y $R_S$ son el circuito equivalente de Thevenin del electrodo (sensor) de ECG. Asumiendo que $v_s$ es un escalón de 5 V, $R_S=47\ k\Omega$ ,$R_1= 100\ k\Omega$ y $C=0.22\ \mu F$, determine:
 
