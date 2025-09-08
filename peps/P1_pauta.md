@@ -34,6 +34,26 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box2.png" width="800">
 
+       > Para el amplificador 2: (+0.2pt)
+       >
+       > $v_{o2} = A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S$
+       >
+       > Para el amplificador 1: (+0.2pt)
+       >
+       > $v_{o} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} v_{i1}$
+       >
+       > Como $v_{o2} = v_{i1}$: (+0.1pt)
+       >
+       > $v_{o} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S $
+       >
+       > Y, por lo tanto:
+       >
+       > $A_V = \frac{v_o}{v_S} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} $
+       >
+       > $A_V = 8 \frac{1k}{1k+100} 12 \frac{10k}{10k+20k} \frac{200k}{47k+200k} \approx 23.6 $
+
+   > $\therefore $ La configuración 2 permite amplificar más la señal de ECG
+
 2. Para medir la actividad eléctrica del corazón en un ECG se utilizan electrodos en determinadas posiciones del paciente. La siguiente figura muestra la ubicación y color estándar de los electrodos para un ECG que utiliza 4 electrodos.
 
     <div style="width:400px; overflow:hidden;">
