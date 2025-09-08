@@ -9,7 +9,7 @@
 - Alicates
 - Cables
 - Stripboard
-- Componentes de la BOM, más LM324, LM386, asltavoz y micrófono
+- Componentes de la BOM, más LM324, LM386, altavoz y micrófono
 - Fuente CC para probar
 
 ## Procedimiento experimental e informe
