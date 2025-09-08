@@ -12,7 +12,7 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box.png" width="800">
 
-       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box_a.png" width="800">
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double_2025_02_a.png" width="800">
        > 
        > Para el amplificador 1: (+0.2pt)
        >
@@ -36,17 +36,17 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box2.png" width="800">
 
-       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box_b.png" width="800">
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double_2025_02_b.png" width="800">
        > 
        > Para el amplificador 2: (+0.2pt)
        >
-       > $v_{o2} = A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S$
+       > $v_{o1} = A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S$
        >
        > Para el amplificador 1: (+0.2pt)
        >
-       > $v_{o} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} v_{i1}$
+       > $v_{o} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} v_{i2}$
        >
-       > Como $v_{o2} = v_{i1}$: (+0.1pt)
+       > Como $v_{o1} = v_{i2}$: (+0.1pt)
        >
        > $v_{o} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S $
        >
