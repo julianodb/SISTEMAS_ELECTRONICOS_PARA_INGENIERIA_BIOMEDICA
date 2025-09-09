@@ -135,8 +135,88 @@
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/sensor_active_high_pass.png" width="400"> 
 
     1. El valor de $v_o$ en estado estacionario (0.5 pt)
+
+       > Como capacitores actuan como circuitos abiertos en DC, basta desconectar el capacitor y resolver el circuito. (+0.2pt)
+       >
+       > En el nodo $V_-$ sólo estaría conectada  la resistencia $R_1$ y, asumiendo un amp op ideal, esto significa que no fluye corriente en este nodo. Por lo tanto, la corriente en $R_1$ es cero. Si la corriente en $R_1$ es cero, la caída de tensión también es cero: (+0.1pt)
+       >
+       > $V_{R_1} = v_o - V_- = R_1 I = 0$
+       >
+       > Además, como hay retroalimentación negativa, (+0.2pt)
+       >
+       > $V_+ = V_- = 0$
+       >
+       > Por lo tanto:
+       >
+       > $v_o - V_- = 0$
+       >
+       > $v_o = 0$
     1. La(s) constante(s) de tiempo del sistema (0.8 pt)
+
+       > Reemplazando $C$ por una resistencia con valor $\frac{1}{Cs}$: (+0.2pt)
+       >
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/sensor_active_high_pass_laplace.png" width="400"> 
+       >
+       > Como la corriente que entre en el nodo $V_-$ por la izquierda es igual a la corriente que sale por $R_1$, podemos escribir: (+0.2pt)
+       >
+       > $\frac{V_S-V_-}{R_S+\frac{1}{Cs}} = \frac{V_--V_o}{R_1}$
+       >
+       > Además, como hay retroalimentación negativa: (+0.2pt)
+       >
+       > $V_- = V_+ = 0$
+       >
+       > Por lo tanto
+       >
+       > $\frac{V_S}{R_S+\frac{1}{Cs}} = \frac{-V_o}{R_1}$
+       >
+       > $V_o = -\frac{R_1V_S}{R_S+\frac{1}{Cs}} $
+       >
+       > Finalmente,
+       >
+       > $H(s) = \frac{V_o}{V_S} = -\frac{R_1}{R_S+\frac{1}{Cs}} = -\frac{R_1 C s}{R_S C s+1} $
+       >
+       > El pólo de la función de transferencia ($s_1$) es: (+0.1pt)
+       >
+       > $R_S C s_1+1=0$
+       >
+       > $\implies s_1 = -\frac{1}{R_S C}$
+       >
+       > Y la constante de tiempo es, por lo tanto: (+0.1pt)
+       >
+       > $\tau = -\frac{1}{s_1} = R_S C = 47k \times 0.22 \mu \approx 10\ ms$
     1. Cuanto tiempo demoran los términos transitorios en bajar a menos de 1% de su valor inicial. (0.4 pt)
+       
+       > Para poder utilizar la formula en anexo para la respuesta a escalón unitario de un sistema $H(s)=K\frac{\tau s}{1+\tau s}$ hay que reordenar los factores de la función de transferencia encontrada en el ítem anterior:
+       >
+       > $-\frac{R_1 C s}{R_S C s+1} = -\frac{R_1}{R_S}\frac{R_S C s}{1+R_S C s}$
+       >
+       > Se observa que $K = -\frac{R_1}{R_S}$ y $\tau =R_S C $.
+       >
+       > Por lo tanto, la respuesta a escalón unitario será: (+0.1pt)
+       >
+       > $v_{o,escalon\ unitario}(t) = Ke^{-\frac{t}{\tau}} = -\frac{R_1}{R_S}e^{-\frac{t}{R_S C}}$
+       >
+       > Como la entrada es un escalón de 5V, la respuesta será: (+0.1pt)
+       >
+       > $v_o(t) = -5\frac{R_1}{R_S}e^{-\frac{t}{R_S C}}$
+       >
+       > El valor inicial del término transitorio es: (+0.1pt)
+       >
+       > $v_o(0) = -5\frac{R_1}{R_S}e^{-\frac{0}{R_S C}}= -5\frac{R_1}{R_S}$
+       >
+       > Por lo tanto, el valor de t en el cual los términos transitorios bajan a 1% de su valor inicial es el tiempo $t_1$ en que: (+0.1pt)
+       >
+       > $v_o(t_1) = 0.01 (-5\frac{R_1}{R_S})$
+       >
+       > Reemplazando $v_o(t_1)$: 
+       >
+       > $-5\frac{R_1}{R_S}e^{-\frac{t_1}{R_S C}} = 0.01 (-5\frac{R_1}{R_S})$
+       >
+       > $e^{-\frac{t_1}{R_S C}} = 0.01 $
+       >
+       > $-\frac{t_1}{R_S C} = \ln (0.01) $
+       >
+       > $t_1 = -\ln (0.01) R_S C \approx  47.6\ ms$
 
 4. Además de eliminar el valor DC, también es deseable eliminar ruido de alta frecuencia de la señal de ECG. Una de las formas de hacerlo es con el circuito a continuación, que implementa un filtro pasa-baja. Este circuito atenúa ruido con frecuencia mayor a $\approx\frac{0.3247}{RC}$ rad/s cuando $C_1=C_2=C$, $R_1=R$ y $R_2=1.5 R$. Sin embargo, uno de los problemas con filtros pasa-baja es que cuanto menor su frecuencia de corte, más tiempo demoran en llegar a estado estacionario. Suponiendo que $v_i$ es un escalón unitario, que $C_1=C_2=C$, que $R_1=R$, que $R_2=1.5 R$ y que elegimos $R$ y $C$ para eliminar frecuencias mayores a 1 Hz ($\frac{0.3247}{RC} = 2\pi $), determine:
 
@@ -145,6 +225,72 @@
     1. El valor de $v_o$ en estado estacionario (0.5 pt)
     1. La(s) constante(s) de tiempo del sistema (0.8 pt)
     1. Cuanto tiempo demoran los términos transitorios en bajar a menos de 1% de su valor inicial. (0.4 pt)
+
+     > Reemplazando $C_1$ y $C_2$ por resistencias con valores $\frac{1}{C_1s}$ y $\frac{1}{C_2s}$, respectivamente: (+0.2pt)
+       >
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example2_laplace.png" width="220">
+       >
+       > Escribiendo $V_X$ en función de $V_o$:
+       >
+       > $V_o = \frac{\frac{1}{C_2s}}{\frac{1}{C_2s}+R_2} V_X = \frac{1}{1+R_2C_2s} V_X$ 
+       >
+       > $\implies V_X = (1+R_2C_2s) V_o$
+       >
+       > Por otro lado, $i_1 = i_2 + i_3$, por lo que podemos escribir:
+       >
+       > $\frac{V_i-V_X}{R_1} = \frac{V_X}{\frac{1}{C_1s}} + \frac{V_o}{\frac{1}{C_2s}}$
+       >
+       > $\frac{V_i-V_X}{R_1} = V_X C_1 s + V_o C_2 s$
+       >
+       > $V_i-V_X = V_X R_1 C_1 s + V_o R_1 C_2 s$
+       >
+       > Reemplazando $V_X$:
+       >
+       > $V_i-(1+R_2C_2s) V_o = (1+R_2C_2s) V_o R_1 C_1 s + V_o R_1 C_2 s$
+       >
+       > $V_i= V_o(1+R_2C_2s)  + V_o (R_1 C_1 s+R_1R_2C_1C_2s^2)   + V_o R_1 C_2 s$
+       >
+       > $V_i= V_o(1+R_2C_2s  + R_1 C_1 s+R_1R_2C_1C_2s^2 +  R_1 C_2 s)$
+       >
+       > $\therefore H(s) = \frac{V_o}{V_i}= \frac{1}{1+R_2C_2s  + R_1 C_1 s +  R_1 C_2 s +R_1R_2C_1C_2s^2}$
+       >
+       > Como  $C_1=C_2=C$, $R_1=R$ y $R_2=1.5 R$ :
+       >
+       > $H(s) = \frac{1}{1+1.5RCs  + R C s +  R C s +1.5R^2C^2s^2}$
+       >
+       > $H(s) = \frac{1}{1+3.5RCs +1.5R^2C^2s^2}$
+       >
+       > Los pólos ($s_1$ y $s_2$) de $H(s)$ son:
+       >
+       > $s_{1,2} = \frac{-3.5RC \pm \sqrt{(3.5RC)^2 - 4 \times 1.5R^2C^2 \times 1 }}{2 \times 1.5R^2C^2}$
+       >
+       > $s_{1,2} = \frac{-3.5 \pm \sqrt{(3.5)^2 - 4 \times 1.5 }}{3RC}$
+       >
+       > $s_{1,2} = \frac{-3.5 \pm \sqrt{(\frac{7}{2})^2 - 6 }}{3RC}= \frac{-3.5 \pm \sqrt{\frac{49}{4} - 6 }}{3RC}= \frac{-3.5 \pm \sqrt{\frac{49}{4} - \frac{24}{4} }}{3RC}$
+       >
+       > $s_{1,2} = \frac{-3.5 \pm \sqrt{\frac{25}{4} }}{3RC} = \frac{-3.5 \pm \frac{5}{2} }{3RC}$
+       >
+       > $\therefore s_1 = -\frac{1}{3RC}$ ; $s_2 = -\frac{6}{3RC} = -\frac{2}{RC}$
+       >
+       > Luego, las constantes de tiempo $\tau_1$ y $\tau_2$ asociadas a dichos pólos son:
+       >
+       > $\tau_1 = -\frac{1}{s_1} = 3 R C$ ; y
+       >
+       > $\tau_2 = -\frac{1}{s_1} = \frac{R C}{2}$
+       >
+       > Finalmente, del enunciado tenemos que:
+       >
+       >  $\frac{0.3247}{RC} = 2\pi $
+       >
+       > $\implies RC = \frac{0.3247}{2 \pi}$
+       >
+       > Por lo tanto,
+       >
+       > $\tau_1 = 3 R C = 3\frac{0.3247}{2 \pi} \approx 155\ ms$ ; y 
+       >
+       >  $\tau_2 = \frac{R C}{2} = \frac{0.3247}{2 \times 2 \pi} \approx 25.8\ ms$
+       >
+       > Se nota que  $\tau_1 \approx 155\ ms$ es la constante de tiempo más lenta y, por lo tanto, la que dominará la respuesta dinamica del sistema.
 
 # Fórmulas
 
