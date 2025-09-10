@@ -223,10 +223,28 @@
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example2.png" width="220"> 
 
     1. El valor de $v_o$ en estado estacionario (0.5 pt)
-    1. La(s) constante(s) de tiempo del sistema (0.8 pt)
-    1. Cuanto tiempo demoran los términos transitorios en bajar a menos de 1% de su valor inicial. (0.4 pt)
+       
+       > Como capacitores actuan como circuitos abiertos en DC, basta desconectar el capacitor y resolver el circuito. (+0.2pt)
+       >
+       > El resultado es la conexión entre $v_i$ y $v_o$ por $R_1$ y $R_2$, sin ninguna ramificación que se conecta a tierra. Por lo tanto, la corriente en $R_1$ y en $R_2$ es cero. Si la corriente en $R_1$ y $R_2$ es cero, la caída de tensión también es cero: (+0.1pt)
+       >
+       > $V_{R_1} = 0$
+       >
+       > $V_{R_2} = 0$
+       >
+       > Además, la diferencia de voltaje entre $v_i$ y $v_o$ es la suma de $V_{R_1}$ y $V_{R_2}$: (+0.2pt)
+       >
+       > $v_i - v_o = V_{R_1} + V_{R_2}$
+       >
+       > Por lo tanto:
+       >
+       > $v_i - v_o = 0 + 0 = 0$
+       >
+       > $v_o = v_i = 1\ V$
 
-     > Reemplazando $C_1$ y $C_2$ por resistencias con valores $\frac{1}{C_1s}$ y $\frac{1}{C_2s}$, respectivamente: (+0.2pt)
+    1. La(s) constante(s) de tiempo del sistema (0.8 pt)
+
+       > Reemplazando $C_1$ y $C_2$ por resistencias con valores $\frac{1}{C_1s}$ y $\frac{1}{C_2s}$, respectivamente: (+0.2pt)
        >
        > <img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example2_laplace.png" width="220">
        >
@@ -252,7 +270,7 @@
        >
        > $V_i= V_o(1+R_2C_2s  + R_1 C_1 s+R_1R_2C_1C_2s^2 +  R_1 C_2 s)$
        >
-       > $\therefore H(s) = \frac{V_o}{V_i}= \frac{1}{1+R_2C_2s  + R_1 C_1 s +  R_1 C_2 s +R_1R_2C_1C_2s^2}$
+       > $\therefore H(s) = \frac{V_o}{V_i}= \frac{1}{1+R_2C_2s  + R_1 C_1 s +  R_1 C_2 s +R_1R_2C_1C_2s^2}$ (+0.2pt)
        >
        > Como  $C_1=C_2=C$, $R_1=R$ y $R_2=1.5 R$ :
        >
@@ -270,7 +288,7 @@
        >
        > $s_{1,2} = \frac{-3.5 \pm \sqrt{\frac{25}{4} }}{3RC} = \frac{-3.5 \pm \frac{5}{2} }{3RC}$
        >
-       > $\therefore s_1 = -\frac{1}{3RC}$ ; $s_2 = -\frac{6}{3RC} = -\frac{2}{RC}$
+       > $\therefore s_1 = -\frac{1}{3RC}$ ; $s_2 = -\frac{6}{3RC} = -\frac{2}{RC}$ (+0.2pt)
        >
        > Luego, las constantes de tiempo $\tau_1$ y $\tau_2$ asociadas a dichos pólos son:
        >
@@ -284,13 +302,56 @@
        >
        > $\implies RC = \frac{0.3247}{2 \pi}$
        >
-       > Por lo tanto,
+       > Por lo tanto, (+0.2pt)
        >
        > $\tau_1 = 3 R C = 3\frac{0.3247}{2 \pi} \approx 155\ ms$ ; y 
        >
        >  $\tau_2 = \frac{R C}{2} = \frac{0.3247}{2 \times 2 \pi} \approx 25.8\ ms$
        >
        > Se nota que  $\tau_1 \approx 155\ ms$ es la constante de tiempo más lenta y, por lo tanto, la que dominará la respuesta dinamica del sistema.
+
+    1. Cuanto tiempo demoran los términos transitorios en bajar a menos de 1% de su valor inicial. (0.4 pt)
+    
+       > Para poder utilizar la formula en anexo para la respuesta a escalón unitario de un sistema $H(s)=K\frac{1}{1+\tau s}$ hay que reordenar los factores de la función de transferencia encontrada en el ítem anterior:
+       >
+       > $H(s) = \frac{1}{1+3.5RCs +1.5R^2C^2s^2}$
+       >
+       > Como encontramos que las raices del denominador son $s_1 = -\frac{1}{3RC}$ y $s_2 = -\frac{2}{RC}$, podemos factorizar el polinomio:
+       >
+       > $H(s) = \frac{\frac{2}{3R^2C^2}}{(s + \frac{1}{3RC})(s+\frac{2}{RC})}$
+       >
+       > Y separarlo en dos fracciones:
+       >
+       > $H(s) = \frac{2}{3R^2C^2}(\frac{\frac{3RC}{5}}{s + \frac{1}{3RC}} + \frac{-\frac{3RC}{5}}{s+\frac{2}{RC}}) = \frac{2}{5RC}(\frac{1}{s + \frac{1}{3RC}} + \frac{-1}{s+\frac{2}{RC}}) = \frac{2}{5RC}\frac{1}{s + \frac{1}{3RC}} - \frac{2}{5RC}\frac{1}{s+\frac{2}{RC}}$
+       >
+       > Que es la suma de dos funciones de la forma $K\frac{1}{1+\tau s}$ con $K_1 = \frac{2}{5RC}$ , $\tau_1 = 3R C $, $K_2 = -\frac{2}{5RC}$ , $\tau_2 = \frac{R C}{2} $.
+       >
+       > Por lo tanto, la respuesta a escalón unitario será: (+0.2pt)
+       >
+       > $v_{o}(t) = K_1(1-e^{-\frac{t}{\tau_1}}) + K_2(1-e^{-\frac{t}{\tau_2}}) = \frac{2}{5RC}(1-e^{-\frac{t}{3R C}})- \frac{2}{5RC}(1-e^{-\frac{2t}{R C}})$
+       >
+       > Cuyos términos transitorios son $-\frac{2}{5RC}e^{-\frac{t}{3R C}}$ y $ \frac{2}{5RC}e^{-\frac{2t}{R C}}$
+       >
+       > Los valores iniciales de los términos transitorios son $-\frac{2}{5RC}$ y $\frac{2}{5RC}$, respectivamente (+0.1pt)
+       >
+       > Por lo tanto, los valores de t en que los términos transitorios bajan a 1% de su valor inicial son los tiempos $t_1$ y $t_2$ en los cuales: (+0.1pt)
+       >
+       > $-\frac{2}{5RC}e^{-\frac{t_1}{3R C}} = -0.01\frac{2}{5RC}$
+       >
+       > y
+       >
+       > $ \frac{2}{5RC}e^{-\frac{2t_2}{R C}} = 0.01\frac{2}{5RC}$
+       >
+       > Resolviendo las ecuaciones:
+       >
+       > $e^{-\frac{t_1}{3R C}} = 0.01 \implies t_1 = -\ln (0.01) 3 R C \approx 710\ ms$
+       >
+       > y 
+       >
+       > $ e^{-\frac{2t_2}{R C}} = 0.01 \implies t_2 = -\ln (0.01)\frac{RC}{2} \approx 120\ ms$
+       >
+       > OBS: también era aceptable utilizar la fórmula $t = -\ln (0.01) \tau$ directamente
+
 
 # Fórmulas
 
