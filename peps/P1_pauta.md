@@ -1,287 +1,371 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/02
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2025/02
 ## Prueba Escrita 1 - Pauta
 
-$\require{cancel}$
+> En general, por errores de cálculo se descuenta 0.05pt, y por errores conceptuales o en la aplicación de fórmulas 0.1pt.
 
-1. Un determinado sensor genera una señal de voltaje $V_{in}$ que representa la respiración de un paciente. La señal es aproximadamente una onda sinusoidal con frecuencia entre 14 y 18 respiraciones por minuto y amplitud 20 mV peak-to-peak. Sin embargo, al medir $V_{in}$, se observa que, además de la señal esperada, también hay una oscilación de 50 Hz con amplitud 10 mV peak-to-peak, conforme se muestra en la figura a continuación:
+1. Para la adquisición de un electrocardiograma (ECG), es necesario medir la diferencia de voltaje entre electrodos que se posicionan en puntos específicos del paciente. Dicha diferencia de voltaje suele ser muy pequeña, del orden de pocos milivolts, por lo que requiere amplificación para poder graficarse y ser procesada. Considerando que la resistencia eléctrica de la interfaz piel-electrodo es de $R_S =47\ k\Omega$, que el circuito que consume la señal amplificada tiene una resistencia de entrada $R_L= 1\ k\Omega$, y que se disponen de amplificadores con las características a continuación, determine el factor de amplificación de la señal $v_S$ de cada una de las siguientes configuraciones. Considere que el voltaje de salida de cada circuito es $v_o$. ¿ Cuál configuración permite amplificar más la señal de ECG ?
 
-   ![vi](../img/P1_F2.png)
+   - Amplificador 1: $R_i = 10\ k\Omega$, $R_o = 100\ \Omega$, $A_{V_{NL}} = 8$
+   - Amplificador 2: $R_i = 200\ k\Omega$, $R_o = 20\ k\Omega$, $A_{V_{NL}} = 12$
 
-   Figura 1: Señal $V_{in}$
+    1. Configuración 1: (0.5 pt)
 
-   Se determinó que la oscilación de 50 Hz es ruido inducido por la red eléctrica. Para eliminar el ruido, un estudiante de biomédica propuso el siguiente circuito, con $R= 1\ M\Omega$ y $C= 4.7\ \mu F$:
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box.png" width="800">
 
-   <img src="https://julianodb.github.io/electronic_circuits_diagrams/RC_lowpass.png" width="200">
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double_2025_02_a.png" width="800">
+       > 
+       > Para el amplificador 1: (+0.2pt)
+       >
+       > $v_{o1} = A_{V_{NL1}} \frac{R_{i2}}{R_{i2}+R_{o1}} \frac{R_{i1}}{R_S+R_{i1}} v_S$
+       >
+       > Para el amplificador 2: (+0.2pt)
+       >
+       > $v_{o} = A_{V_{NL2}} \frac{R_{L}}{R_{L}+R_{o2}} v_{i2}$
+       >
+       > Como $v_{o1} = v_{i2}$: (+0.1pt)
+       >
+       > $v_{o} = A_{V_{NL2}} \frac{R_{L}}{R_{L}+R_{o2}} A_{V_{NL1}} \frac{R_{i2}}{R_{i2}+R_{o1}} \frac{R_{i1}}{R_S+R_{i1}} v_S $
+       >
+       > Y, por lo tanto:
+       >
+       > $A_V = \frac{v_o}{v_S} = A_{V_{NL2}} \frac{R_{L}}{R_{L}+R_{o2}} A_{V_{NL1}} \frac{R_{i2}}{R_{i2}+R_{o1}} \frac{R_{i1}}{R_S+R_{i1}} $
+       >
+       > $A_V = 12 \frac{1k}{1k+20k} 8 \frac{200k}{200k+100} \frac{10k}{47k+10k} \approx 15.3 $
+       
+    1. Configuración 2: (0.5 pt)
 
-   Figura 2: Filtro
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box2.png" width="800">
 
-   > reemplazando C por una resistencia con valor $\frac{1}{Cs}$ y aplicando divisor de voltaje:
-   >
-   > $V_{out} = \frac{\frac{1}{Cs}}{\frac{1}{Cs}+R} V_{in}$
-   >
-   > $V_{out} = \frac{1}{1+RCs} V_{in}$
-   >
-   > $H(s) = \frac{v_{out}}{v_{in}} = \frac{1}{1+RCs}$
-   >
-   > La ganancia en función de la frecuencia es, por lo tanto:
-   >
-   > $A_v(\omega) = | H(s=j\omega) | = |\frac{1}{1+RCj\omega}|$
-   >
-   > $A_v(\omega) = \frac{1}{\sqrt{1+(RC\omega)^2}}$
-   >
-   > $A_v(\omega) = \frac{1}{\sqrt{1+(4.7 \omega)^2}}$
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double_2025_02_b.png" width="800">
+       > 
+       > Para el amplificador 2: (+0.2pt)
+       >
+       > $v_{o1} = A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S$
+       >
+       > Para el amplificador 1: (+0.2pt)
+       >
+       > $v_{o} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} v_{i2}$
+       >
+       > Como $v_{o1} = v_{i2}$: (+0.1pt)
+       >
+       > $v_{o} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S $
+       >
+       > Y, por lo tanto:
+       >
+       > $A_V = \frac{v_o}{v_S} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} $
+       >
+       > $A_V = 8 \frac{1k}{1k+100} 12 \frac{10k}{10k+20k} \frac{200k}{47k+200k} \approx 23.6 $
 
-   1. Determine en cuanto el circuito atenua el ruido. Es decir, si la entrada es una entrada sinusoidal con amplitud 10 mV y frecuencia 50 Hz, cual seria la amplitud de la salida en estado estacionario. (0.5 pt)
+   > $\therefore $ La configuración 2 permite amplificar más la señal de ECG
 
-      > $\omega = 2\pi f = 2 \pi 50 = 100 \pi$ (+0.2pt)
-      >
-      > $A_v(100 \pi) = \frac{1}{\sqrt{1+(4.7 \times 100 \pi)^2}} \approx \frac{1}{\sqrt{2.18 \times 10^8}} \approx 6.8 \times 10^{-4}$ (+0.2pt)
-      >
-      > Por lo tanto, la amplitud de salida para una entrada con amplitud 10 mV sería:
-      >
-      > $|V_{out}| = A_v(\omega) |V_{in}| = 6.8 \times 10^{-4} 10 \times 10^{-3} = 6.8 \times 10^{-6} V = 6.8\ \mu V$ (+0.1pt)
+2. Para medir la actividad eléctrica del corazón en un ECG se utilizan electrodos en determinadas posiciones del paciente. La siguiente figura muestra la ubicación y color estándar de los electrodos para un ECG que utiliza 4 electrodos.
 
-   1. Determine en cuanto el circuito atenua la señal de respiración si la frecuencia respiratoria es 14 respiraciones / minuto. Es decir, si la entrada es sinusoidal con amplitud 20 mV y frecuencia 14 rpm, cual seria la amplitud de la salida en estado estacionario. (0.5 pt)
-   
-      > $\omega = 2\pi f = 2 \pi \frac{14}{60} \approx 1.466\ rad/s$ (+0.2pt)
-      >
-      > $A_v(1.466) = \frac{1}{\sqrt{1+(4.7 \times 1.466)^2}} \approx \frac{1}{\sqrt{48}} \approx 0.144$ (+0.2pt)
-      >
-      > Por lo tanto, la amplitud de salida para una entrada con amplitud 20 mV sería:
-      >
-      > $|V_{out}| = A_v(\omega) |V_{in}| = 0.144 \times 20 \times 10^{-3} = 2.88 \times 10^{-3} = 2.88\ m V$ (+0.1pt)
+    <div style="width:400px; overflow:hidden;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Limb_leads.svg" style="width:570px; max-width:none;">
+    </div>
 
-   1. Determine en cuanto el circuito atenua la señal de respiración si la frecuencia respiratoria es 18 respiraciones / minuto. Es decir, si la entrada es sinusoidal con amplitud 20 mV y frecuencia 18 rpm, cual seria la amplitud de la salida en estado estacionario. (0.5 pt)
-   
-      > $\omega = 2\pi f = 2 \pi \frac{18}{60} \approx 1.885\ rad/s$ (+0.2pt)
-      >
-      > $A_v(1.885) = \frac{1}{\sqrt{1+(4.7 \times 1.885)^2}} \approx \frac{1}{\sqrt{79}} \approx 0.112$ (+0.2pt)
-      >
-      > Por lo tanto, la amplitud de salida para una entrada con amplitud 20 mV sería:
-      >
-      > $|V_{out}| = A_v(\omega) |V_{in}| = 0.112 \times 20 \times 10^{-3} = 2.24 \times 10^{-3} = 2.24\ m V$ (+0.1pt)
+    A partir de esta configuración, se puede medir la actividad eléctrica en distintas direcciones, dependiendo de como se combinan los voltajes de los electrodos. Cada dirección de medición se denomina derivación. Por ejemplo, la llamada derivación I mide el voltaje producido por corrientes eléctricas que se mueven de la derecha del paciente hacia su izquierda, y se obtiene a partir de la diferencia de voltaje $I = LA-RA$ (brazo izquierdo menos brazo derecho). Otro ejemplo es la derivación aVF, que mide el voltaje producido por corrientes eléctricas que se mueven desde arriba hacia abajo, y se obtiene a través de la siguiente combinación de voltajes: $aVF = LL- \frac{LA+RA}{2}$ . Los siguientes circuitos implementan algunas de las derivaciones del ECG, además de amplificar la señal. Determine que fórmula implementa cada uno de ellos:
 
-1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (1.5 pt):
-   
-   1. Datos: $V_{CC}=5\ V$, $R_1=3.3\ k\Omega$, $R_2=4.7\ k\Omega$, $V_F=0.7\ V$ (0.5 pt)
+    1. Encontrar $aVL$ en función de $LA$, $LL$ y $RA$, con $R=6.8\ k\Omega$ (0.8 pt)
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_2R.png" width="300">
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl.png" width="400"> 
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_2R_with_currents.png" width="300">
-      >
-      > Al remover el diodo del circuito, se encuentra que $V_{D_1} = V_{CC} = 5\ V$. Por lo tanto, el diodo está polarizado en directa y conduce ($V_{D_1} = V_F$). (+0.2pt)
-      >
-      > $ V_{R_1} = V_{CC} - V_{D_1} = 5 - 0.7 = 4.3\ V $ (+0.1pt)
-      >
-      > $ I_1 = \frac{V_{R_1}}{R_1} = \frac{4.3}{3300} \approx 1.3\ mA $ (+0.1pt)
-      >
-      > $ I_2 = \frac{V_{CC}}{R_2} = \frac{5}{4700} \approx 1.1\ mA $ (+0.1pt)
-   
-   1. Datos: $V_{CC}=10\ V$, $R_3=1\ k\Omega$, $R_4=10\ k\Omega$, $R_5=6.8\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$ (0.5 pt)
+       > Aplicando LKC en el nodo $V_-$: (+0.3pt)
+       >
+       > $\frac{RA-V_-}{2R} + \frac{LL-V_-}{2R} = \frac{V_- - aVL}{R}$
+       >
+       > $RA-V_- + LL-V_- = 2V_- - 2aVL$
+       >
+       > $RA + LL + 2aVL = 4V_- $
+       >
+       > $V_- = \frac{RA + LL + 2aVL}{4}$
+       >
+       > Aplicando divisor de voltaje en  $V_+$: (+0.3pt)
+       >
+       > $V_+ = \frac{LA}{2}$
+       >
+       > Aplicando corto circuito virtual:
+       >
+       > $V_+ = V_-$ (+0.2pt)
+       >
+       > $\frac{LA}{2} = \frac{RA + LL + 2aVL}{4}$
+       >
+       > $2LA = RA + LL + 2aVL$
+       >
+       > $aVL = LA - \frac{RA + LL}{2}$
+       >
+    2. Encontrar $aVR$ en función de $LA$, $LL$ y $RA$, con $R=10\ k\Omega$ (0.8 pt)
+    
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr3.png" width="400"> 
+         
+       > Aplicando corto circuito virtual a todos los amplificadores operacionales y denominando $V_1$ y $V_2$ los voltajes desconocidos: (+0.2pt)
+       >
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr3_annotated.png" width="400"> 
+       >
+       > En la parte superior del circuito, se forma un divisor resistivo entre LL, RA y $V_2$, por lo que se puede escribir:
+       >
+       > $RA = LL \frac{R}{R+R} + V_2 \frac{R}{R+R}$ (+0.15pt)
+       >
+       > $2 RA = LL + V_2$
+       >
+       > $V_2 = 2 RA - LL$ (ecuación 1)
+       >
+       > De la misma forma, en la parte inferior del circuito se forma un divisor de voltaje entre tierra, LA y $V_1$:
+       >
+       > $LA = V_1 \frac{3R}{3R+R}$ (+0.15pt)
+       >
+       > $ V_1 = \frac{4}{3} LA $ (ecuación 2)
+       >
+       > Finalmente, también hay un divisor de voltaje entre $V_1$, $V_2$ y $aVR$:
+       >
+       > $V_2 = V_1 \frac{3R}{3R+R} + aVR \frac{R}{3R+R} $ (+0.15pt)
+       >
+       > Reemplazando las ecuaciones 1 y 2:
+       >
+       > $ 2 RA - LL = \frac{4}{3} LA \frac{3}{4} + aVR \frac{1}{4} $ (+0.15pt)
+       >
+       > $ 2 RA - LL - LA = aVR \frac{1}{4} $
+       >
+       > $ aVR = 8 RA - 4 LL - 4 LA $
+       >
+       > En realidad, la derivación aVR se define como: $aVR_{real} = RA - \frac{LA + LL}{2}$. Por lo tanto la señal que el circuito obtiene es la derivación aVR amplificada por 8.
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R.png" width="300">
+3. Es muy común que la señal de ECG contenga un valor DC que no se utiliza para su análisis. Una de las formas de eliminar el valor DC (línea de base) es utilizando el circuito a continuación. $v_s$ y $R_S$ son el circuito equivalente de Thevenin del electrodo (sensor) de ECG. Asumiendo que $v_s$ es un escalón de 5 V, $R_S=47\ k\Omega$ ,$R_1= 100\ k\Omega$ y $C=0.22\ \mu F$, determine:
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_with_currents.png" width="300">
-      >
-      > Al remover ambos diodos del circuito se encuentra que:
-      > - $V_{D_Z} = V_3 - V_{CC} = -10\ V$. Como -10 V es menor que $-V_Z = -3.3\ V$, el diodo zener conduce en inversa ($V_{D_Z} = -V_Z$). (+0.1pt)
-      > - $V_{D_2} = V_4 - V_{CC} = -10\ V$. Como -10 V es menor que $V_F = 0.7\ V$, el diodo 2 no conduce. (+0.1pt)
-      >
-      > $V_3 = V_{CC} + V_{D_Z} = 10 - 3.3 = 6.7\ V$ (+0.05pt)
-      >
-      > $I_4 = 0$ (+0.05pt)
-      >
-      > $I_3 = I_5 = \frac{V_3}{R_3+R_5} = \frac{6.7}{1000 + 6800} \approx 860\ \mu A$ (+0.1pt)
-      >
-      > $V_4 = V_5 = R_5 I_5 = 6800 \times 860 \times 10^{-6} \approx 5.8\ V$ (+0.1pt)
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/sensor_active_high_pass.png" width="400"> 
 
-   1. Datos: $V_{CC}=3.6\ V$, $R_6=R_7=R_8=1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
+    1. El valor de $v_o$ en estado estacionario (0.5 pt)
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt.png" width="300">
+       > Como capacitores actuan como circuitos abiertos en DC, basta desconectar el capacitor y resolver el circuito. (+0.2pt)
+       >
+       > En el nodo $V_-$ sólo estaría conectada  la resistencia $R_1$ y, asumiendo un amp op ideal, esto significa que no fluye corriente en este nodo. Por lo tanto, la corriente en $R_1$ es cero. Si la corriente en $R_1$ es cero, la caída de tensión también es cero: (+0.1pt)
+       >
+       > $V_{R_1} = v_o - V_- = R_1 I = 0$
+       >
+       > Además, como hay retroalimentación negativa, (+0.2pt)
+       >
+       > $V_+ = V_- = 0$
+       >
+       > Por lo tanto:
+       >
+       > $v_o - V_- = 0$
+       >
+       > $v_o = 0$
+    1. La(s) constante(s) de tiempo del sistema (0.8 pt)
 
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt_with_currents.png" width="300">
-      >
-      > Al remover ambos diodos del circuito se encuentra que:
-      > - $V_1 = \frac{R_6}{R_6+R_7+R_8} V_{CC} = \frac{V_{CC}}{3} = 1.2\ V$
-      > - $V_2 = \frac{R_6+R_7}{R_6+R_7+R_8} V_{CC} = \frac{2 V_{CC}}{3} = 2.4\ V$
-      > - $V_{D_3} = V_{CC} - V_1 = 2.4\ V $. Como 2.4 V es mayor que $V_F=0.7\ V$, $D_3$ conduce. (+0.1pt)
-      > - $V_{D_Z} = - V_2 = -2.4\ V $. Como -2.4 V está entre $-V_Z$ y $V_F$, el diodo zener no conduce. (+0.1pt)
-      >
-      > $V_1 = V_{CC} - V_F = 3.6 - 0.7 = 2.9\ V$ (+0.05pt)
-      >
-      > $I_5 = \frac{V_1}{R_6} = \frac{2.9}{1000} = 2.9\ mA$ (+0.05pt)
-      >
-      > $I_4 = 0$ (+0.05pt)
-      >
-      > $I_2 = I_3 = \frac{V_{CC}-V_1}{R_7+R_8} = \frac{3.6-2.9}{2000} = 0.35\ mA$ (+0.05pt)
-      >
-      > $I_1 = I_5 - I_3 = 2.9 - 0.35 = 2.55\ mA$ (+0.05pt)
-      >
-      > $V_2 = V_{CC} - R_8 I_2 = 3.6 - 0.35 = 3.25\ V$ (+0.05pt)
-      >
-      > se observa que $V_{D_Z} = - V_2 = -3.25\ V $ sigue entre $-V_Z$ y $V_F$, confirmando que el diodo zener no conduce
+       > Reemplazando $C$ por una resistencia con valor $\frac{1}{Cs}$: (+0.2pt)
+       >
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/sensor_active_high_pass_laplace.png" width="400"> 
+       >
+       > Como la corriente que entre en el nodo $V_-$ por la izquierda es igual a la corriente que sale por $R_1$, podemos escribir: (+0.2pt)
+       >
+       > $\frac{V_S-V_-}{R_S+\frac{1}{Cs}} = \frac{V_--V_o}{R_1}$
+       >
+       > Además, como hay retroalimentación negativa: (+0.2pt)
+       >
+       > $V_- = V_+ = 0$
+       >
+       > Por lo tanto
+       >
+       > $\frac{V_S}{R_S+\frac{1}{Cs}} = \frac{-V_o}{R_1}$
+       >
+       > $V_o = -\frac{R_1V_S}{R_S+\frac{1}{Cs}} $
+       >
+       > Finalmente,
+       >
+       > $H(s) = \frac{V_o}{V_S} = -\frac{R_1}{R_S+\frac{1}{Cs}} = -\frac{R_1 C s}{R_S C s+1} $
+       >
+       > El pólo de la función de transferencia ($s_1$) es: (+0.1pt)
+       >
+       > $R_S C s_1+1=0$
+       >
+       > $\implies s_1 = -\frac{1}{R_S C}$
+       >
+       > Y la constante de tiempo es, por lo tanto: (+0.1pt)
+       >
+       > $\tau = -\frac{1}{s_1} = R_S C = 47k \times 0.22 \mu \approx 10\ ms$
+    1. Cuanto tiempo demoran los términos transitorios en bajar a menos de 1% de su valor inicial. (0.4 pt)
+       
+       > Para poder utilizar la formula en anexo para la respuesta a escalón unitario de un sistema $H(s)=K\frac{\tau s}{1+\tau s}$ hay que reordenar los factores de la función de transferencia encontrada en el ítem anterior:
+       >
+       > $-\frac{R_1 C s}{R_S C s+1} = -\frac{R_1}{R_S}\frac{R_S C s}{1+R_S C s}$
+       >
+       > Se observa que $K = -\frac{R_1}{R_S}$ y $\tau =R_S C $.
+       >
+       > Por lo tanto, la respuesta a escalón unitario será: (+0.1pt)
+       >
+       > $v_{o,escalon\ unitario}(t) = Ke^{-\frac{t}{\tau}} = -\frac{R_1}{R_S}e^{-\frac{t}{R_S C}}$
+       >
+       > Como la entrada es un escalón de 5V, la respuesta será: (+0.1pt)
+       >
+       > $v_o(t) = -5\frac{R_1}{R_S}e^{-\frac{t}{R_S C}}$
+       >
+       > El valor inicial del término transitorio es: (+0.1pt)
+       >
+       > $v_o(0) = -5\frac{R_1}{R_S}e^{-\frac{0}{R_S C}}= -5\frac{R_1}{R_S}$
+       >
+       > Por lo tanto, el valor de t en el cual los términos transitorios bajan a 1% de su valor inicial es el tiempo $t_1$ en que: (+0.1pt)
+       >
+       > $v_o(t_1) = 0.01 (-5\frac{R_1}{R_S})$
+       >
+       > Reemplazando $v_o(t_1)$: 
+       >
+       > $-5\frac{R_1}{R_S}e^{-\frac{t_1}{R_S C}} = 0.01 (-5\frac{R_1}{R_S})$
+       >
+       > $e^{-\frac{t_1}{R_S C}} = 0.01 $
+       >
+       > $-\frac{t_1}{R_S C} = \ln (0.01) $
+       >
+       > $t_1 = -\ln (0.01) R_S C \approx  47.6\ ms$
 
-1. Calcule $I_C$ en el siguiente circuito, cuando el valor de $V_i$ es el señalado en cada ítem. Para cada ítem, calcule también $\beta_{forzado}$ si el transistor está operando en modo saturado, o $V_{CE}$ si está operando en modo activo. Asuma $V_{CC}=12\ V$, $R_B= 2.7\ M\Omega$, $R_C= 6.8\ k\Omega$, $\beta = 200$, $V_{CE_{SAT}} = 0.2\ V$ y que $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
-   
-   <img src="https://julianodb.github.io/electronic_circuits_diagrams/npn_inverter.png" width="200">
+4. Además de eliminar el valor DC, también es deseable eliminar ruido de alta frecuencia de la señal de ECG. Una de las formas de hacerlo es con el circuito a continuación, que implementa un filtro pasa-baja. Este circuito atenúa ruido con frecuencia mayor a $\approx\frac{0.3247}{RC}$ rad/s cuando $C_1=C_2=C$, $R_1=R$ y $R_2=1.5 R$. Sin embargo, uno de los problemas con filtros pasa-baja es que cuanto menor su frecuencia de corte, más tiempo demoran en llegar a estado estacionario. Suponiendo que $v_i$ es un escalón unitario, que $C_1=C_2=C$, que $R_1=R$, que $R_2=1.5 R$ y que elegimos $R$ y $C$ para eliminar frecuencias mayores a 1 Hz ($\frac{0.3247}{RC} = 2\pi $), determine:
 
-   1. $V_i = 0.6\ V$ (0.5pt)
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example2.png" width="220"> 
 
-      > Si se remueve el diodo base-emisor del circuito se encuentra que $V_{BE} = 0.6\ V < V_{BE_{SAT}}$. Por lo tanto el diodo no conduce y el transistor está cortado.
-      >
-      > $I_B = I_C = 0$ (+0.4pt)
-      >
-      > $V_o = V_{CE} = V_{CC} = 12\ V$ (+0.1pt)
+    1. El valor de $v_o$ en estado estacionario (0.5 pt)
+       
+       > Como capacitores actuan como circuitos abiertos en DC, basta desconectar el capacitor y resolver el circuito. (+0.2pt)
+       >
+       > El resultado es la conexión entre $v_i$ y $v_o$ por $R_1$ y $R_2$, sin ninguna ramificación que se conecta a tierra. Por lo tanto, la corriente en $R_1$ y en $R_2$ es cero. Si la corriente en $R_1$ y $R_2$ es cero, la caída de tensión también es cero: (+0.1pt)
+       >
+       > $V_{R_1} = 0$
+       >
+       > $V_{R_2} = 0$
+       >
+       > Además, la diferencia de voltaje entre $v_i$ y $v_o$ es la suma de $V_{R_1}$ y $V_{R_2}$: (+0.2pt)
+       >
+       > $v_i - v_o = V_{R_1} + V_{R_2}$
+       >
+       > Por lo tanto:
+       >
+       > $v_i - v_o = 0 + 0 = 0$
+       >
+       > $v_o = v_i = 1\ V$
 
-   1. $V_i = 6\ V$ (0.5pt)
+    1. La(s) constante(s) de tiempo del sistema (0.8 pt)
 
-      > Si se remueve el diodo base-emisor del circuito se encuentra que $V_{BE} = 6\ V > V_{BE_{SAT}}$. Por lo tanto el diodo conduce y $V_{BE} = 0.7\ V$.
-      >
-      > $V_i - R_B I_B - V_{BE} = 0$
-      >
-      > $\implies I_B = \frac{V_i- V_{BE}}{R_B} = \frac{6- 0.7}{2.7 \times 10^6} \approx 1.96\ \mu A$ (+0.1pt)
-      >
-      > Si se asume modo saturado:
-      >
-      > $V_o = V_{CE} =V_{CE_{SAT}} = 0.2\ V$
-      >
-      > $I_C = \frac{V_{CC}-V_o}{R_C} = \frac{12-0.2}{6800} \approx 1.7\ mA$ 
-      >
-      > Comprobación del modo saturado:
-      >
-      > $I_B > I_C / \beta$
-      >
-      > $\xcancel{1.96\ \mu A > 1.7\ mA / 200 \approx 8.7\ \mu A}$
-      >
-      > No se cumple la condición de modo saturado, por lo tanto está en modo activo.
-      >
-      > $I_C = \beta I_B = 200 \times 1.96 \times 10^{-6} \approx 392\ \mu A $ (+0.2pt)
-      >
-      > $V_o = V_{CE} = V_{CC} - R_C I_C = 12 - 6800 \times 392 \times 10^{-6} \approx 9.3\ V$ (+0.2pt)
+       > Reemplazando $C_1$ y $C_2$ por resistencias con valores $\frac{1}{C_1s}$ y $\frac{1}{C_2s}$, respectivamente: (+0.2pt)
+       >
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example2_laplace.png" width="220">
+       >
+       > Escribiendo $V_X$ en función de $V_o$:
+       >
+       > $V_o = \frac{\frac{1}{C_2s}}{\frac{1}{C_2s}+R_2} V_X = \frac{1}{1+R_2C_2s} V_X$ 
+       >
+       > $\implies V_X = (1+R_2C_2s) V_o$
+       >
+       > Por otro lado, $i_1 = i_2 + i_3$, por lo que podemos escribir:
+       >
+       > $\frac{V_i-V_X}{R_1} = \frac{V_X}{\frac{1}{C_1s}} + \frac{V_o}{\frac{1}{C_2s}}$
+       >
+       > $\frac{V_i-V_X}{R_1} = V_X C_1 s + V_o C_2 s$
+       >
+       > $V_i-V_X = V_X R_1 C_1 s + V_o R_1 C_2 s$
+       >
+       > Reemplazando $V_X$:
+       >
+       > $V_i-(1+R_2C_2s) V_o = (1+R_2C_2s) V_o R_1 C_1 s + V_o R_1 C_2 s$
+       >
+       > $V_i= V_o(1+R_2C_2s)  + V_o (R_1 C_1 s+R_1R_2C_1C_2s^2)   + V_o R_1 C_2 s$
+       >
+       > $V_i= V_o(1+R_2C_2s  + R_1 C_1 s+R_1R_2C_1C_2s^2 +  R_1 C_2 s)$
+       >
+       > $\therefore H(s) = \frac{V_o}{V_i}= \frac{1}{1+R_2C_2s  + R_1 C_1 s +  R_1 C_2 s +R_1R_2C_1C_2s^2}$ (+0.2pt)
+       >
+       > Como  $C_1=C_2=C$, $R_1=R$ y $R_2=1.5 R$ :
+       >
+       > $H(s) = \frac{1}{1+1.5RCs  + R C s +  R C s +1.5R^2C^2s^2}$
+       >
+       > $H(s) = \frac{1}{1+3.5RCs +1.5R^2C^2s^2}$
+       >
+       > Los pólos ($s_1$ y $s_2$) de $H(s)$ son:
+       >
+       > $s_{1,2} = \frac{-3.5RC \pm \sqrt{(3.5RC)^2 - 4 \times 1.5R^2C^2 \times 1 }}{2 \times 1.5R^2C^2}$
+       >
+       > $s_{1,2} = \frac{-3.5 \pm \sqrt{(3.5)^2 - 4 \times 1.5 }}{3RC}$
+       >
+       > $s_{1,2} = \frac{-3.5 \pm \sqrt{(\frac{7}{2})^2 - 6 }}{3RC}= \frac{-3.5 \pm \sqrt{\frac{49}{4} - 6 }}{3RC}= \frac{-3.5 \pm \sqrt{\frac{49}{4} - \frac{24}{4} }}{3RC}$
+       >
+       > $s_{1,2} = \frac{-3.5 \pm \sqrt{\frac{25}{4} }}{3RC} = \frac{-3.5 \pm \frac{5}{2} }{3RC}$
+       >
+       > $\therefore s_1 = -\frac{1}{3RC}$ ; $s_2 = -\frac{6}{3RC} = -\frac{2}{RC}$ (+0.2pt)
+       >
+       > Luego, las constantes de tiempo $\tau_1$ y $\tau_2$ asociadas a dichos pólos son:
+       >
+       > $\tau_1 = -\frac{1}{s_1} = 3 R C$ ; y
+       >
+       > $\tau_2 = -\frac{1}{s_1} = \frac{R C}{2}$
+       >
+       > Finalmente, del enunciado tenemos que:
+       >
+       >  $\frac{0.3247}{RC} = 2\pi $
+       >
+       > $\implies RC = \frac{0.3247}{2 \pi}$
+       >
+       > Por lo tanto, (+0.2pt)
+       >
+       > $\tau_1 = 3 R C = 3\frac{0.3247}{2 \pi} \approx 155\ ms$ ; y 
+       >
+       >  $\tau_2 = \frac{R C}{2} = \frac{0.3247}{2 \times 2 \pi} \approx 25.8\ ms$
+       >
+       > Se nota que  $\tau_1 \approx 155\ ms$ es la constante de tiempo más lenta y, por lo tanto, la que dominará la respuesta dinamica del sistema.
 
-   1. $V_i = 12\ V$ (0.5pt)
+    1. Cuanto tiempo demoran los términos transitorios en bajar a menos de 1% de su valor inicial. (0.4 pt)
+    
+       > Para poder utilizar la formula en anexo para la respuesta a escalón unitario de un sistema $H(s)=K\frac{1}{1+\tau s}$ hay que reordenar los factores de la función de transferencia encontrada en el ítem anterior:
+       >
+       > $H(s) = \frac{1}{1+3.5RCs +1.5R^2C^2s^2}$
+       >
+       > Como encontramos que las raices del denominador son $s_1 = -\frac{1}{3RC}$ y $s_2 = -\frac{2}{RC}$, podemos factorizar el polinomio:
+       >
+       > $H(s) = \frac{\frac{2}{3R^2C^2}}{(s + \frac{1}{3RC})(s+\frac{2}{RC})}$
+       >
+       > Y separarlo en dos fracciones:
+       >
+       > $H(s) = \frac{2}{3R^2C^2}(\frac{\frac{3RC}{5}}{s + \frac{1}{3RC}} + \frac{-\frac{3RC}{5}}{s+\frac{2}{RC}}) = \frac{2}{5RC}(\frac{1}{s + \frac{1}{3RC}} + \frac{-1}{s+\frac{2}{RC}}) = \frac{2}{5RC}\frac{1}{s + \frac{1}{3RC}} - \frac{2}{5RC}\frac{1}{s+\frac{2}{RC}}$
+       >
+       > Que es la suma de dos funciones de la forma $K\frac{1}{1+\tau s}$ con $K_1 = \frac{2}{5RC}$ , $\tau_1 = 3R C $, $K_2 = -\frac{2}{5RC}$ , $\tau_2 = \frac{R C}{2} $.
+       >
+       > Por lo tanto, la respuesta a escalón unitario será: (+0.2pt)
+       >
+       > $v_{o}(t) = K_1(1-e^{-\frac{t}{\tau_1}}) + K_2(1-e^{-\frac{t}{\tau_2}}) = \frac{2}{5RC}(1-e^{-\frac{t}{3R C}})- \frac{2}{5RC}(1-e^{-\frac{2t}{R C}})$
+       >
+       > Cuyos términos transitorios son $-\frac{2}{5RC}e^{-\frac{t}{3R C}}$ y $ \frac{2}{5RC}e^{-\frac{2t}{R C}}$
+       >
+       > Los valores iniciales de los términos transitorios son $-\frac{2}{5RC}$ y $\frac{2}{5RC}$, respectivamente (+0.1pt)
+       >
+       > Por lo tanto, los valores de t en que los términos transitorios bajan a 1% de su valor inicial son los tiempos $t_1$ y $t_2$ en los cuales: (+0.1pt)
+       >
+       > $-\frac{2}{5RC}e^{-\frac{t_1}{3R C}} = -0.01\frac{2}{5RC}$
+       >
+       > y
+       >
+       > $ \frac{2}{5RC}e^{-\frac{2t_2}{R C}} = 0.01\frac{2}{5RC}$
+       >
+       > Resolviendo las ecuaciones:
+       >
+       > $e^{-\frac{t_1}{3R C}} = 0.01 \implies t_1 = -\ln (0.01) 3 R C \approx 710\ ms$
+       >
+       > y 
+       >
+       > $ e^{-\frac{2t_2}{R C}} = 0.01 \implies t_2 = -\ln (0.01)\frac{RC}{2} \approx 120\ ms$
+       >
+       > OBS: también era aceptable utilizar la fórmula $t = -\ln (0.01) \tau$ directamente
 
-      > Si se remueve el diodo base-emisor del circuito se encuentra que $V_{BE} = 12\ V > V_{BE_{SAT}}$. Por lo tanto el diodo conduce y $V_{BE} = 0.7\ V$.
-      >
-      > $V_i - R_B I_B - V_{BE} = 0$
-      >
-      > $\implies I_B = \frac{V_i- V_{BE}}{R_B} = \frac{12- 0.7}{2.7 \times 10^6} \approx 4.2\ \mu A$ (+0.1pt)
-      >
-      > Si se asume modo saturado:
-      >
-      > $V_o = V_{CE} =V_{CE_{SAT}} = 0.2\ V$
-      >
-      > $I_C = \frac{V_{CC}-V_o}{R_C} = \frac{12-0.2}{6800} \approx 1.7\ mA$ 
-      >
-      > Comprobación del modo saturado:
-      >
-      > $I_B > I_C / \beta$
-      >
-      > $\xcancel{4.2\ \mu A > 1.7\ mA / 200 \approx 8.7\ \mu A}$
-      >
-      > No se cumple la condición de modo saturado, por lo tanto está en modo activo.
-      >
-      > $I_C = \beta I_B = 200 \times 4.2 \times 10^{-6} = 840\ \mu A $ (+0.2pt)
-      >
-      > $V_o = V_{CE} = V_{CC} - R_C I_C = 12 - 6800 \times 840 \times 10^{-6} \approx 6.3\ V$ (+0.2pt)
-
-2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 12\ V$, $R_1= 150\ k\Omega$, $R_2=39\ k\Omega$, $R_C= 2\ k\Omega$, $\beta = 50$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.2\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_no_re.png" width="300"> 
-
-   1. La corriente de colector de polarización $I_{C_Q}$
-
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_thevenin_no_re.png" width="150"> 
-      >
-      > $V_{th} = \frac{R_2}{R_1+R_2} V_{CC} = \frac{39}{150+39} 12 \approx 2.48\ V$ (+0.1pt)
-      >
-      > $R_{th} = R_1 // R_2 = \frac{R_1 R_2}{R_1+R_2} = \frac{39k \times 150k}{39k+150k} \approx 31\ k\Omega$ (+0.1pt)
-      >
-      > $I_B = \frac{V_{th}-V_{BE}}{R_{th}} = \frac{2.48-0.7}{31000} \approx 57\ \mu A$ (+0.2pt)
-      >
-      > Asumiendo modo activo:
-      >
-      > $I_{C_Q} = \beta I_B = 50 \times 57\ \mu A \approx 2.9\ mA$ (+0.2pt)
-      >
-      > Comprobación del modo activo:(+0.15pt)
-      >
-      > $V_{CE} > V_{CE_{SAT}}$
-      >
-      > $V_{CE} = V_{CC} - R_C I_{C_Q} = 12 - 2000 \times 2.9\ mA = 6.2\ V$
-      >
-      > $6.2 > 0.2$ (OK)
-
-   2. La ganancia de voltaje AC ($A_V$)
-
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_small_signal.png" width="400"> 
-      >
-      > Dibujo del circuito equivalente en AC (+0.25pt)
-      >
-      > Malla de la base (+0.15pt)
-      >
-      > $v_{i_{AC}} - r_\pi i_{B_{AC}} = 0$
-      >
-      > $ v_{i_{AC}} = r_\pi i_{B_{AC}}$ (1)
-      >
-      > Malla del colector (+0.1pt)
-      >
-      > $v_{o_{AC}} + R_C i_{C_{AC}} = 0$
-      >
-      > $v_{o_{AC}} = - R_C i_{C_{AC}}$
-      >
-      > Asumiendo modo activo (comprobado en analisis DC)
-      >
-      > $v_{o_{AC}} = - R_C \beta i_{B_{AC}}$ (2)
-      >
-      > Calculo de la ganancia de voltaje (+0.25pt)
-      >
-      > $A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$
-      >
-      > Usando (1) y (2)
-      >
-      > $A_V = \frac{- R_C \beta i_{B_{AC}}}{r_\pi i_{B_{AC}}}$
-      >
-      > $\implies A_V = \frac{- R_C \beta }{r_\pi}$
-      >
-      > Calculo de $V_T$:
-      >
-      > $V_T = \frac{kT}{q} = \frac{1.38 \times 10^{-23} 300}{1.6 \times 10^{-19}} \approx 26\ mV$
-      >
-      > Utilizando la fórumla de $r_\pi$
-      >
-      > $A_V = \frac{- R_C \beta I_{C_Q} }{\beta V_T}$
-      >
-      > $A_V = \frac{- R_C I_{C_Q} }{V_T}$
-      >
-      > $A_V = \frac{- 2000 * 0.0029 }{0.026}$
-      >
-      > $A_V \approx -223$
-      
 
 # Fórmulas
 
-$$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
-$$ V_T = \frac{kT}{q}$$
+$$v_o = A_{V_{NL}} \frac{R_L}{R_L+R_o}v_i$$
 
-- $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
-- $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
-- $T$: Temperatura en Kelvin
+$$v_o = A_{V_{NL}} \frac{R_L}{R_L+R_o} \frac{R_i}{R_S+R_i} v_S$$
+
+Corto Circuito Virtual: $V_+ = V_-$
 
 $$ H(s) = \frac{v_o(s)}{v_i(s)} $$
-$$ A_v(\omega) = | H(s=j\omega) |$$
-$$ A_{v_{dB}}(\omega) = 20 log\left(| H(j\omega) |\right)$$
-$$ \phi(\omega) = arg\left( H(j\omega) \right) = tan^{-1} \left( \frac{Im\{H(j\omega)\}}{Re\{H(j\omega)\}} \right)$$
-$$\omega = 2 \pi f$$
-$$ 1 [rad/s] = 2\pi [Hz]$$
-$$ 1 [Hz] = 60 [rpm]$$
+$$1 [Hz] = 2\pi [rad/s]$$
 
-$$I_E = I_C + I_B$$
-- en modo activo ($V_{CE} > V_{CE_{SAT}}$):
-$$I_C = \beta I_B $$
-- en modo saturado ($0 < \beta_{forzado} < \beta$):
-$$V_{CE} = V_{CE_{SAT}}$$
-$$I_C = I_{C_{SAT}} = \beta_{forzado} I_B $$
+Resistencia equivalente a una capacitancia C en el dominio de Laplace: $\frac{1}{Cs}$
 
-- modelo híbrido-$\pi$ de pequeñas señales:
-$$r_{\pi} = \frac{\beta V_T}{I_{C_Q}}$$
-$$i_{C_{AC}} = \beta i_{B_{AC}} $$
-$$A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$$
+Respuesta a escalón unitário del sistema $H(s)=K\frac{1}{1+\tau s}$: $v_o(t) = K(1-e^{-\frac{t}{\tau}})$
+
+Respuesta a escalón unitário del sistema $H(s)=K\frac{\tau s}{1+\tau s}$: $v_o(t) = Ke^{-\frac{t}{\tau}}$

@@ -1,47 +1,43 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/02
-## Guía de Ejercícios para la Prueba Escrita 2
+## Guía Prueba Escrita 1
 
-1. Para la adquisición de un electrocardiograma (ECG), es necesario medir la diferencia de voltaje entre electrodos que se posicionan en puntos específicos del paciente. Dicha diferencia de voltaje suele ser muy pequeña, del orden de pocos milivolts, por lo que requiere amplificación para poder graficarse y ser procesada. Considerando que la resistencia eléctrica de la interfaz piel-electrodo es de $R_S =56\ k\Omega$, y que se disponen de amplificadores con las características a continuación, determine el factor de amplificación de la señal $v_S$ de cada una de las siguientes configuraciones. Considere que el voltaje de salida de cada circuito es $v_o$. ¿ Cuál configuración permite amplificar más la señal de ECG ?
+1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F = 0.7\ V$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y que el voltaje de zener del diodo zener es $V_Z=5.1\ V$, resuelva los siguientes circuitos (1.5 pt):
+   
+   1. Datos: $V_{CC}=10\ V$, $R_1=5.1\ k\Omega$, $R_2=10\ k\Omega$
 
-    1. Configuración 1: $Z_i = 100\ k\Omega$, $Z_o = 1\ k\Omega$, $A_{V_{NL}} = 20$. (0.5 pt)
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_2R.png" width="350">
+   
+   1. Datos: $V_{CC}=5\ V$, $R_3=6.8\ k\Omega$, $R_4=4.7\ k\Omega$, $R_5=3.3\ k\Omega$
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs.png" width="400">
-       
-    1. Configuración 3: $Z_{i1} = 100\ k\Omega$, $Z_{o1} = 1\ k\Omega$, $A_{V_{NL1}} = 20$, $Z_{i2} = 100\ \Omega$, $Z_{o2} = 100\ \Omega$, $A_{V_{NL2}} = 10$. (0.75 pt)
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R.png" width="300">
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
+2. Para el siguiente circuito de amplificador en emisor común, calcule lo que se pide. Asuma $V_{CC} = 10\ V$, $R_B= 1\ M\Omega$, $R_C= 5.1\ k\Omega$, $R_E= 100\ \Omega$, $\beta = 100$, la temperatura $T=300\ K$, $V_{CE_{SAT}} = 0.3\ V$ y $V_{BE} =0.7\ V$ cuando la unión base-emisor está polarizada en directa. (1.5 pt)
+   1. La corriente de colector de polarización $I_{C_Q}$
+   2. La ganancia de voltaje AC ($A_V$)
 
-3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=15\ k\Omega$ ,$R_2= 270\ k\Omega$, $C_1=C_2=10\ \mu F$, $R_a=1.2\ k\Omega$ y $R_b=2.7\ k\Omega$ determine:
-
-    <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_high_2_with_gain.png" width="400"> 
-
-    Figura 5: Circuito con topología Sallen-Key.
-
-    1. La función de transferencia $H(s) = \frac{v_o(s)}{v_i(s)}$ (0.5pt)
-    1. La ganancia en dB en corriente contínua.(0.3 pt)
-    1. La ganancia en dB conforme la frecuencia de la entrada tiende al infinito. (0.3 pt)
-    1. La ganancia maxima en dB (0.3 pt)
-    1. Qué tipo de filtro está implementado. (0.3 pt)
-    1. La(s) frecuencia(s) de corte en Hz. (0.3 pt)
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/common_emitter_base_polarized_no_ce.png" width="300"> 
 
 # Fórmulas
 
-Corto Circuito Virtual: $V_+ = V_-$
+$$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
+$$ V_T = \frac{kT}{q}$$
+
+- $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
+- $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
+- $T$: Temperatura en Kelvin
+
 $$ H(s) = \frac{v_o(s)}{v_i(s)} $$
 $$ A_v(\omega) = | H(s=j\omega) |$$
 $$ A_{v_{dB}}(\omega) = 20 log\left(| H(j\omega) |\right)$$
-$$ A_v(\omega_c) = A_v(2\pi f_c) = \frac{A_{v_{max}}}{\sqrt{2}}$$
 $$ \phi(\omega) = arg\left( H(j\omega) \right) = tan^{-1} \left( \frac{Im\{H(j\omega)\}}{Re\{H(j\omega)\}} \right)$$
 
-$$ V_T = \frac{kT}{q}$$
-- $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
-- $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
 $$I_E = I_C + I_B$$
 - en modo activo ($V_{CE} > V_{CE_{SAT}}$):
 $$I_C = \beta I_B $$
 - en modo saturado ($0 < \beta_{forzado} < \beta$):
 $$V_{CE} = V_{CE_{SAT}}$$
-$$I_C = \beta_{forzado} I_B $$
+$$I_C = I_{C_{SAT}} = \beta_{forzado} I_B $$
+
 - modelo híbrido-$\pi$ de pequeñas señales:
 $$r_{\pi} = \frac{\beta V_T}{I_{C_Q}}$$
 $$i_{C_{AC}} = \beta i_{B_{AC}} $$
