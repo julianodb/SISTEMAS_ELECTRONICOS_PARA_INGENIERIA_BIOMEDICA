@@ -10,10 +10,7 @@
 		* 2.2.2. [Tarjeta de Circuito Impreso Universal / Placa con Pistas (Stripboard)](#TarjetadeCircuitoImpresoUniversalPlacaconPistasStripboard)
 	* 2.3. [Producto Comercial](#ProductoComercial)
 		* 2.3.1. [Tarjeta de Circuito Impreso (PCB - Printed Circuit Board)](#TarjetadeCircuitoImpresoPCB-PrintedCircuitBoard)
-* 3. [Circuitos Integrados](#CircuitosIntegrados)
-	* 3.1. [Encapsulados](#Encapsulados)
-	* 3.2. [Fabricación de un Circuito Integrado](#FabricacindeunCircuitoIntegrado)
-* 4. [Resúmen: Conceptos Clave](#Resmen:ConceptosClave)
+* 3. [Resúmen: Conceptos Clave](#Resmen:ConceptosClave)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -23,7 +20,7 @@
 
 ##  1. <a name='AntesdelosCircuitosImpresos'></a>Antes de los Circuitos Impresos
 
-Soldadura punto a punto
+[Soldadura punto a punto](https://www.youtube.com/watch?v=rK38rpUy568&t=167s)
 
 ![21_1](../img/23_point_to_point_clean.jpg)
 
@@ -123,41 +120,10 @@ Fotolitografia
 
 [pick and place](https://www.youtube.com/watch?v=S8qkaTsr2_o&t=32s)
 
-##  3. <a name='CircuitosIntegrados'></a>Circuitos Integrados
-
-###  3.1. <a name='Encapsulados'></a>Encapsulados
-
-![21_1](../img/23_packaging_transistor.jpg)
-
-![21_1](../img/23_packaging_thermistors.jpg)
-
-![21_1](../img/23_packaging_diode.jpg)
-
-![21_1](../img/23_packaging.jpg)
-
-Agujero Pasante vs Montaje Superficial (Through-Hole vs Surface Mount Device (SMD))
-
-![21_1](../img/23_tht_vs_smd.png)
-
-###  3.2. <a name='FabricacindeunCircuitoIntegrado'></a>Fabricación de un Circuito Integrado
-
-![21_1](../img/23_wafer.jpg)
-
-![21_1](../img/23_photolithography.jpg)
-
-![21_1](../img/23_current_source.jpg)
-
-![21_1](../img/23_npn_cross_section.jpg)
-
-![21_1](../img/23_resistance.jpg)
-
-##  4. <a name='Resmen:ConceptosClave'></a>Resúmen: Conceptos Clave
+##  3. <a name='Resmen:ConceptosClave'></a>Resúmen: Conceptos Clave
 
 - Tarjeta de Circuito Impreso (PCB)
 - Protoboard
 - Perfboard
 - Stripboard
 - Fotolitografia
-- Circuito Integrado
-- Agujero Pasante
-- Montaje Superficial
