@@ -22,6 +22,8 @@
 
 [Soldadura punto a punto](https://www.youtube.com/watch?v=rK38rpUy568&t=167s)
 
+[tips para soldar](https://www.youtube.com/shorts/D5IvlJVqa7M)
+
 ![21_1](../img/23_point_to_point_clean.jpg)
 
 ![21_1](../img/23_soldering_diagram.jpg)
