@@ -14,10 +14,12 @@
 
 1. Solden los componentes del circuito de estetoscópio diseñado hasta el momento en una stripboard. Pueden utilizar la imagen a continuación como referencia. Fabriquen al menos 1 placa por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. (6pt)
 
-    AYUDA: utilicen los valores de componentes corregidos del Trabajo 2
+    AYUDA: utilicen los valores de componentes corregidos del Trabajo 2.
 
-    AYUDA2: conecten la tierra de la fuente CC al cable azul y +5V al cable rojo en la parte superior de la placa para probar
+    AYUDA2: conecten la tierra de la fuente CC al cable azul y +5V al cable rojo en la parte superior de la placa para probar. No es necesario utilizar cables con los mismos colores que la imagen.
 
-    AYUDA3: pregunten sobre como conectar el micrófono al tubo del estetoscopio
+    AYUDA3: pregunten sobre como conectar el micrófono al tubo del estetoscopio.
 
 ![21_1](../img/stethoscope.png)
+
+Como cada miembro del equipo recibirá una placa al terminar el curso, aprovechen de avanzar en la fabricación de las otras placas una vez que terminen la demonstración.
