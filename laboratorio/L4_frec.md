@@ -29,7 +29,7 @@ Configuren la fuente CC para un voltaje de 12 V y una corriente maxima entre 0.2
 
    Figura 1: Divisor de voltaje
 
-   1. Utilizando el osciloscopio, observen el valor de $V_{bias\\_weak}$. Enciendan la fuente CC, anoten cuanto tiempo demora en estabilizarse y su valor en estado estacionario. Ayuda: utilicen al menos 0.5 segundo por division en la escala horizontal. (0.5 pt)
+   1. Utilizando el osciloscopio, observen el valor de $V_{bias\\_weak}$. Enciendan la fuente CC, anoten cuanto tiempo demora en estabilizarse y su valor en estado estacionario. ¿Como se compara con el valor teórico ? Ayuda: utilicen al menos 0.5 segundo por division en la escala horizontal. Ayuda2: Activen la opción roll en los osciloscopios que tienen ésta opción. (0.5 pt)
 
 2. Sin desarmar el circuito anterior, armen el circuito de la figura 2 para obtener la señal $V_{bias}$. Utilicen uno de los amplificadores operacionales del circuito integrado LM324. No olviden alimentar el LM324 (conectar $V_{CC}$ y tierra a sus pines 4 y 11, respectivamente).
 
@@ -47,23 +47,25 @@ Configuren la fuente CC para un voltaje de 12 V y una corriente maxima entre 0.2
 
    1. Configuren el generador de funciones para generar una señal sinusoidal, sin offset, con amplitud 1 V. Ajusten la frecuencia de $v_i$ a los valores indicados en la siguiente tabla, y midan la amplitud de $v_o$. (3.5 pt)
 
-        | frecuencia (Hz) | frecuencia (rad/s) | amplitud de $v_o$ (V) |
-        | -- | -- | -- |
-        | 100 | ~628  |  |
-        | 316 | ~1 985 |  |
-        | 1 000 | ~6 280  |  |
-        | 3 160 | ~19 850 |  |
-        | 10 000 | ~62 800  |  |
-        | 31 600 | ~198 500 |  |
-        | 100 000 | ~628 000  |  |
+        | frecuencia (Hz) | frecuencia (rad/s) | amplitud de $v_o$ (V) | $A_V = \frac{amplitud(v_o)}{amplitud(v_i)}$ |
+        | -- | -- | -- | -- |
+        | 100 | ~628  |  |  |
+        | 316 | ~1 985 |  |  |
+        | 1 000 | ~6 280  |  |  |
+        | 3 160 | ~19 850 |  |  |
+        | 10 000 | ~62 800  |  |  |
+        | 31 600 | ~198 500 |  |  |
+        | 100 000 | ~628 000  |  |  |
 
-   1. Observando los resultados en la tabla anterior, ¿qué tipo de filtro está implementado ? (0.5pt)
-   1. Observando los resultados en la tabla anterior, ¿dentro de que rango de frecuencias se encuentra su frecuencia de corte? (0.6pt)
-   1. Considerando que la función de transferencia entre $v_o$ y $v_i$ es 
-       $$ H(s) = \frac{R_1 R_2 C_1 C_2 s^2}{1 + R_1 C_1 s + R_1 C_2 s + R_1 R_2 C_1 C_2 s^2}  $$
+   1. Calculen el factor de amplificación de voltaje en cada caso $A_V = \frac{amplitud(v_o)}{amplitud(v_i)}$ (0.35pt)
 
-       y, por lo tanto, la ganancia en frecuencia es:
+   1. Observando los resultados en la tabla anterior, y la descripción de los tipos de filtros abajo, determinen qué tipo de filtro está implementado. (0.45pt)
 
-       $$ |H(j\omega)| = \frac{R_1 R_2 C_1 C_2 \omega^2}{\sqrt{(1 - R_1 R_2 C_1 C_2 \omega^2)^2 + ((R_1 C_1 + R_1 C_2) \omega)^2}} $$
+      |tipo de filtro| forma de $A_V$ vs $frecuencia$ |
+      | -- | -- |
+      | filtro pasa-baja | ![low_pass](../img/low_pass.png) |
+      | filtro pasa-alta | ![high_pass](../img/high_pass.png) |
+      | filtro pasa-banda | ![band_pass](../img/band_pass.png) |
+      | filtro rechaza-banda | ![band_stop](../img/band_stop.png) |
 
-       estimen la frecuencia de corte teórica y contesten como se compara con la experimental (0.7pt).
+   1. Observando los resultados, y considerando que la frecuencia de corte es la frecuencia en que $A_V = \frac{max(A_V)}{\sqrt{2}}$ ($A_V$ es el $A_V$ maximo dividido por $\sqrt{2}$), ¿dentro de que rango de frecuencias se encuentra la frecuencia de corte del filtro? (1pt)
