@@ -97,13 +97,13 @@
 | [04](/teoria/04_opamp_II.md) | Aplicaciones de Amplificadores operacionales: dc | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | inicio $T_2$ |
 | [05](/teoria/05_transient.md) | Respuesta transitoria y estado estacionario | Capacitancia, transitórios y estado estacionario, aplicación de Laplace |  |
 | [06](/teoria/06_opamp_III.md) | Aplicaciones de Amplificadores operacionales: ac | Circuitos con op amps y elementos que almacenan energía, diferenciador, integrador | | 
-| [P1](/teoria/P1.md) | PEP1 | Amplificadores DC y AC, respuesta transitoria y estado estacionario | |
+| [P1](/teoria/P1.md) | PEP1 | Amplificadores DC y AC, respuesta transitoria y estado estacionario | inicio $T_3$ |
 | [07](/teoria/07_frec.md) | Respuesta en frecuencia | Respuesta en frecuencia, Relación con Función de Transferencia, filtros pasivos, diagrama de Bode |  |
-| [08](/teoria/08_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_3$ | 
-| [09](/teoria/09_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
-| [10](/teoria/10_oscilators.md) | Osciladores | Osciladores | inicio $T_4$ | 
-| [11](/teoria/11_diodes.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto PPG |  inicio $T_5$ |
-| [12](/teoria/12_diodes_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos | | 
+| [08](/teoria/08_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_4$ | 
+| [09](/teoria/09_oscilators.md) | Osciladores | Osciladores |  | 
+| [10](/teoria/10_diodes.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto PPG |  inicio $T_5$ |
+| [11](/teoria/11_diodes_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos | | 
+| [12](/teoria/12_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
 | [P2](/teoria/P2.md) | PEP2 | respuesta en frecuencia, filtros activos, osciladores y diodos |  | | 
 | [13](/teoria/13_MOSFET_I.md) | Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave |  |
 | [14](/teoria/14_MOSFET_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común| inicio $T_6$ |
