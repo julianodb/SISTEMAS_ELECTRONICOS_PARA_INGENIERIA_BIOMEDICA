@@ -123,6 +123,6 @@ Respecto a las demás reglas de docencia, este curso se adscribe a las [DIRECTRI
 1. Introducción y contexto. (clase [01](/teoria/01_Introduccion.md))
 1. Amplificadores operacionales y sus aplicaciones (clases [02](/teoria/02_amplifiers.md), [03](/teoria/03_opamp.md), [04](/teoria/04_opamp_II.md), [06](/teoria/06_opamp_III.md))
 1. Filtros activos y pasivos (clases [05](/teoria/05_transient.md), [07](/teoria/07_frec.md), [08](/teoria/08_frec_II.md), [09](/teoria/09_frec_III.md) y [11](/teoria/11_frec_exs.md))
-1. Osciladores (clases [10](/teoria/10_oscilators.md),[19](/teoria/19_multivibrators.md), [20](/teoria/20_multivibrators_II.md) y [22](/teoria/22_pre_P3.md))
+1. Osciladores (clases [09](/teoria/09_oscilators.md),[19](/teoria/19_multivibrators.md), [20](/teoria/20_multivibrators_II.md) y [22](/teoria/22_pre_P3.md))
 1. Dispositivos electronicos semiconductores: materiales y física (clase [21](/teoria/21_semiconductors.md)), diodos (clases [12](/teoria/12_diodes.md), [13](/teoria/13_diodes_II.md), [14](/teoria/14_diodes_exs.md)) y transistores (clases [15](/teoria/15_MOSFET_I.md) y [16](/teoria/16_MSOFET_II.md))
 1. Fuentes de alimentación conmutadas (clases [17](/teoria/17_voltage_regulators.md) y [18](/teoria/18_voltage_regulators_II.md))
