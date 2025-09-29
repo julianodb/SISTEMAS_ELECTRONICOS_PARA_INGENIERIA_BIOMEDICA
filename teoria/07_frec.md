@@ -1,4 +1,4 @@
-# Respuesta em frecuencia
+# Respuesta en frecuencia
 
 <details>
 
