@@ -7,10 +7,13 @@
 <br />
 
 $\mathcal{L} \left\{  e^{-at} \right\} = \frac{1}{s+a}$
+<br />
 
 $\mathcal{L} \left\{ cos(\omega t) \right\} = \frac{s}{s^s+\omega^2}$
+<br />
 
 $\mathcal{L} \left\{ sen(\omega t) \right\} = \frac{\omega}{s^s+\omega^2}$
+<br />
 
 $\mathcal{L} \left\{ cos(\omega t + \phi) \right\} = \frac{s\ cos(\phi) + \omega\ sin(\phi)}{s^s+\omega^2}$
 
@@ -110,10 +113,13 @@ Dependiendo de la forma del diagrama de Bode, podemos definir distintos tipos de
 <br />
 
 $|a+bj| = \sqrt{a^2+b^2}$
+<br />
 
 $|\frac{1}{a+bj}| = \frac{|1|}{|a+bj|} = \frac{1}{\sqrt{a^2+b^2}}$
+<br />
 
 $|(a+bj)(c+dj)| = |a+bj||c+dj| = (\sqrt{a^2+b^2})(\sqrt{c^2+d^2})$
+<br />
 
 $|\frac{a+bj}{c+dj}| = \frac{|a+bj|}{|c+dj|} = \frac{\sqrt{a^2+b^2}}{\sqrt{c^2+d^2}}$
 
@@ -127,7 +133,7 @@ Donde $H(j\omega)$ es un número imaginario obtenido al reemplazar $s=j\omega$ e
 
 Por ejemplo, para el circuito visto al principio de la clase, como $H(s) = \frac{1}{RCs+1}$:
 
-$A_v(\omega) = |H(j\omega)| = |\frac{1}{RCj\omega+1}|$
+$A_v(\omega) = \|H(j\omega)\| = \|\frac{1}{RCj\omega+1}\|$
 
 $A_v(\omega) = \frac{1}{\sqrt{(RC\omega)^2+1}} = \frac{1}{\sqrt{R^2C^2\omega^2+1}}$
 
