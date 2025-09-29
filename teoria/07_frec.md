@@ -65,7 +65,7 @@ Se realize una manipulación algebraica para que el último término sea de la f
 
 $V_{out}(s) = 2(A\frac{1}{RCs+1}+\frac{1}{\sqrt{R^2C^2\omega^2+1}}\frac{s\frac{1}{\sqrt{R^2C^2\omega^2+1}} + \omega\frac{RC\omega}{\sqrt{R^2C^2\omega^2+1}}}{s^2+\omega^2})$
 
-Y finalmente se realiza la transformada de Laplace ivnersa:
+Y finalmente se realiza la transformada de Laplace inversa:
 
 $v_{out}(t) = 2Ae^{-\frac{t}{RC}} + 2\frac{1}{\sqrt{R^2C^2\omega^2+1}} cos(\omega t + \phi)$
 
