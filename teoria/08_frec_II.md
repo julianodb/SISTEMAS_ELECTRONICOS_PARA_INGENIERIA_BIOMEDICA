@@ -22,7 +22,7 @@ Ejemplo:
 
 $H(s) = \frac{1}{RCs+1}$
 
-$A_v(\omega) = |H(j\omega)| = |\frac{1}{RCj\omega+1}|$
+$A_v(\omega) = \|H(j\omega)\| = \|\frac{1}{RCj\omega+1}\|$
 
 $A_v(\omega) = \frac{1}{\sqrt{(RC\omega)^2+1}} = \frac{1}{\sqrt{R^2C^2\omega^2+1}}$
 
@@ -56,8 +56,7 @@ $f_c = \frac{1}{2\pi RC}$
 
 - Encuentre una fórmula para la frecuencia de corte del siguiente circuito:
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_low_2_samevalues
-.png" width="400">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_low_2_samevalues.png" width="400">
 
 ## Capítulos del libro
 - Capítulo 9

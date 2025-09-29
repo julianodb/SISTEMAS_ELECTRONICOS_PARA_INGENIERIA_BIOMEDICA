@@ -36,11 +36,11 @@ Donde $B^*$ es el complejo cojungado del número complejo $B$
 
 Para encontrar cada coeficiente, basta remover su denominador de la forma original y reemplazar s por el valor de la raiz del término removido:
 
-$ A = \left.\frac{s}{s^2+\omega^2}\right|_{s=-\frac{1}{RC}} = \frac{-\frac{1}{RC}}{(\frac{1}{RC})^2+\omega^2}$
+$ A = \left.\frac{s}{s^2+\omega^2}\right\|_{s=-\frac{1}{RC}} = \frac{-\frac{1}{RC}}{(\frac{1}{RC})^2+\omega^2}$
 
-$ B = \left.\frac{s}{(RCs+1)(s-j\omega)}\right|_{s=-j\omega} = \frac{-j\omega}{(-RCj\omega+1)(-j\omega-j\omega)} = \frac{1}{2(-RCj\omega+1)}$
+$ B = \left.\frac{s}{(RCs+1)(s-j\omega)}\right\|_{s=-j\omega} = \frac{-j\omega}{(-RCj\omega+1)(-j\omega-j\omega)} = \frac{1}{2(-RCj\omega+1)}$
 
-$ B^* = \left.\frac{s}{(RCs+1)(s+j\omega)}\right|_{s=+j\omega} = \frac{j\omega}{(RCj\omega+1)(j\omega+j\omega)} = \frac{1}{2(RCj\omega+1)}$
+$ B^* = \left.\frac{s}{(RCs+1)(s+j\omega)}\right\|_{s=+j\omega} = \frac{j\omega}{(RCj\omega+1)(j\omega+j\omega)} = \frac{1}{2(RCj\omega+1)}$
 
 Como comprobación de los cálculos, notamos que efectivamente $B$ y $B^*$ son números complejos conjugados.
 
@@ -74,7 +74,7 @@ $v_{out,estado\ estacionario}(t) = 2\frac{1}{\sqrt{R^2C^2\omega^2+1}} cos(\omega
 
 Se observa que la respuesta en estado estacionario tiene la misma frecuencia que la entrada ($\omega$). Podemos definir la ganancia de voltaje en la frecuencia $\omega$ del circuito como la relación entre la amplitud de la respuesta en estado estacionario y la amplitud de la entrada:
 
-$A_V(\omega) = \frac{|v_{out,estado\ estacionario} (t)|}{|v_{in} (t)|}$
+$A_V(\omega) = \frac{\|v_{out,estado\ estacionario} (t)\|}{\|v_{in} (t)\|}$
 
 Y en el caso del circuito del ejercicio:
 
@@ -90,7 +90,7 @@ En escala logarítimica (en decibeles, $A_{V,dB}(\omega) = 20 \log_{10}(A_V(\ome
 
 Al revisar como se dedujo $A_V(\omega)$, se observa que la respuesta del sistema a una entrada sinusoidal siempre tendrá un término con denominador $s^2 + \omega^2$. Es decir, si el sistema es estable, la respuesta en estado estacionario siempre será sinusoidal y con la misma frecuencia de la entrada. Las únicas diferencias entre la entrada y la salida serán la amplitud y la fase. Por lo tanto, para todos los sistemas dinámicos estables podemos definir la ganancia en frecuencia como lo hicimos en el primer ejemplo, y graficarla en un diagrama de Bode.
 
-$A_V(\omega) = \frac{|v_{out,estado\ estacionario} (t)|}{|v_{in} (t)|}$
+$A_V(\omega) = \frac{\|v_{out,estado\ estacionario} (t)\|}{\|v_{in} (t)\|}$
 
 Dependiendo de la forma del diagrama de Bode, podemos definir distintos tipos de filtros:
 
