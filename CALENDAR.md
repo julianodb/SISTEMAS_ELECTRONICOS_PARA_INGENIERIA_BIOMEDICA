@@ -101,7 +101,7 @@
 | [07](/teoria/07_frec.md) | Respuesta en frecuencia | Respuesta en frecuencia, Relación con Función de Transferencia, filtros pasivos, diagrama de Bode |  |
 | [08](/teoria/08_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_4$ | 
 | [09](/teoria/09_oscilators.md) | Osciladores | Osciladores |  | 
-| [10](/teoria/10_diodes.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners, Proyecto PPG |  inicio $T_5$ |
+| [10](/teoria/10_diodes.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  inicio $T_5$ |
 | [11](/teoria/11_diodes_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos | | 
 | [12](/teoria/12_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
 | [P2](/teoria/P2.md) | PEP2 | respuesta en frecuencia, filtros activos, osciladores y diodos |  | | 
