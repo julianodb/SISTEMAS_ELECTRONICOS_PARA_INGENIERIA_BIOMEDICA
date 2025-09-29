@@ -87,7 +87,11 @@ $A_V(\omega) = \frac{2\frac{1}{\sqrt{R^2C^2\omega^2+1}}}{2} = \frac{1}{\sqrt{R^2
 
 Gráfica de $A_V(\omega)$:
 
+![low_pass](../img/07_low_pass.png)
+
 En escala logarítimica (en decibeles, $A_{V,dB}(\omega) = 20 \log_{10}(A_V(\omega))$):
+
+![low_pass](../img/07_low_pass_log_log.png)
 
 ## Generalización y tipos de filtros
 
