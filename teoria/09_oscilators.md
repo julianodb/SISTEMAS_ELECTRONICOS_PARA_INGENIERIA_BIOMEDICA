@@ -51,7 +51,7 @@ $V_o(1 - A \beta)= A V_s $
 
 $\frac{V_o}{V_s} = \frac{A}{1 - A \beta} $
 
-Que es lo que pasa cuando $A(j\omega) \beta(j\omega) = 1$ para algún $\omega$ ?
+Que pasa cuando $A(j\omega) \beta(j\omega) = 1$ para algún $\omega$ ?
 
 Respuesta: una señal con frecuencia $\omega$ se amplificaría infinitamente por este sistema.
 
