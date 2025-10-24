@@ -61,6 +61,8 @@ Si $A \beta > 1$ para cierto $\omega_2$, significa que señales con frecuencia $
 
 Cuano $A \beta = 1$, para cierto $\omega_3$, significa que señales con frecuencia $\omega_3$ mantienen su amplitud incluso cuando se apaga la entrada. 
 
+## Ejemplo
+
 Aplicando el criterio al circuito inicial:
 
 ![abeta](../img/21_6.png)
@@ -119,6 +121,11 @@ $A = 4 $
 
 este es el valor de A que genera polos con parte real igual a cero. Es el punto limite en que empieza a oscilar el sistema.
 
+## Ejemplos de Aplicaciones
+
+1. Estudiar estabilidad de los circuitos (por ejemplo, evitar que filtros activos oscilen)
+1. Generar señales para terapia (por ejemplo en un marcapaso)
+1. Generar señales para diagnóstico y monitoreo (por ejemplo señales de ultrasonido para ecografía)
 
 ## Ejercicio
 
