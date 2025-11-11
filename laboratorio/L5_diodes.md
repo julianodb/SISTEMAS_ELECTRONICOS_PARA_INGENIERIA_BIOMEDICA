@@ -43,7 +43,7 @@ Configuren la fuente C.C. para una corriente maxima de 0.4 A. Dejen el voltaje a
 
     Tabla 1: $V_D$ e $I_D$ del diodo polarizado en inversa
     
-1. Apaguen la fuente, cambien la dirección del diodo y cambien la resistencia para armar el circuito de la Figura 2
+1. Apaguen la fuente, cambien la dirección del diodo y cambien el valor de la resistencia para armar el circuito de la Figura 2
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/forward_diode_resistance.png" width="200">
 
