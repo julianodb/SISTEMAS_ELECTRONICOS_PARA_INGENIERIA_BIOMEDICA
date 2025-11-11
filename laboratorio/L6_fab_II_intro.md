@@ -3,7 +3,6 @@
 	* 1.1. [Tarjeta de Circuito Impreso (PCB - Printed Circuit Board)](#TarjetadeCircuitoImpresoPCB-PrintedCircuitBoard)
 * 2. [Circuitos Integrados](#CircuitosIntegrados)
 	* 2.1. [Encapsulados](#Encapsulados)
-	* 2.2. [Fabricación de un Circuito Integrado](#FabricacindeunCircuitoIntegrado)
 * 3. [Resúmen: Conceptos Clave](#Resmen:ConceptosClave)
 
 <!-- vscode-markdown-toc-config
@@ -67,18 +66,6 @@ Fotolitografia
 Agujero Pasante vs Montaje Superficial (Through-Hole vs Surface Mount Device (SMD))
 
 ![21_1](../img/23_tht_vs_smd.png)
-
-###  2.2. <a name='FabricacindeunCircuitoIntegrado'></a>Fabricación de un Circuito Integrado
-
-![21_1](../img/23_wafer.jpg)
-
-![21_1](../img/23_photolithography.jpg)
-
-![21_1](../img/23_current_source.jpg)
-
-![21_1](../img/23_npn_cross_section.jpg)
-
-![21_1](../img/23_resistance.jpg)
 
 ##  3. <a name='Resmen:ConceptosClave'></a>Resúmen: Conceptos Clave
 
