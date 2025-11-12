@@ -16,7 +16,7 @@
 
 1. La figura 1 muestra el circuito de la Placa 2 diseñado hasta el momento. Solden los componentes cuyos valores ya han sido determinados en la PCB correspondiente a su grupo. Fabriquen al menos 1 placa, y demuestren el funcionamiento del Filtro 2 al profesor antes del fin del Laboratorio. (3pt)
 
-    AYUDA: utilicen los valores de componentes de la BOM del Trabajo 5 corregidos por el profesor. 
+    AYUDA: utilicen los valores de componentes de la BOM del Trabajo 5 corregidos por el profesor. Además, para los amplificadores operacionales y comparadores, utilicen el circuito integrado MCP6009T-E/SL
     
     AYUDA2: Pidan una demostración de cómo soldar los componentes de montaje superficial
 
