@@ -3,18 +3,21 @@
 
 ## Recursos del pañol
 
+- Placa de Circuito Impreso (PCB) del color del grupo
+- Stencil para la PCB
+- Pasta de soldadura
+- Componentes de la BOM, más LM324, LM386, altavoz, micrófono y LED
+- Fuente CC, generador de funciones y osciloscopio para probar
 - Cautín + estaño
 - Alicates
 - Cables
 - Stripboard
-- Componentes de la BOM, más LM324, LM386, altavoz, micrófono y LED
-- Fuente CC, generador de funciones y osciloscopio para probar
 
 ## Procedimiento experimental e informe
 
 ### Placa 2
 
-1. La figura 1 muestra el circuito de la Placa 2 diseñado hasta el momento. Solden los componentes cuyos valores ya han sido determinados en la PCB correspondiente a su grupo. Fabriquen al menos 1 placa, y demuestren el funcionamiento del Filtro 2 al profesor antes del fin del Laboratorio. (3pt)
+1. La figura 1 muestra el circuito de la Placa 2 diseñado hasta el momento. Solden los componentes cuyos valores ya han sido determinados en la PCB del color de su grupo. Fabriquen al menos 1 placa, y demuestren el funcionamiento del Detector de envolvente y Generador de pulso al profesor antes del fin del Laboratorio. (3pt)
 
     AYUDA: utilicen los valores de componentes de la BOM del Trabajo 5 corregidos por el profesor. Además, para los amplificadores operacionales y comparadores, utilicen el circuito integrado MCP6009T-E/SL
     
