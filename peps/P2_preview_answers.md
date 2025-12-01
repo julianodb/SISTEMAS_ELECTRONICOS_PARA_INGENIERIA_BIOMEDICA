@@ -1,64 +1,72 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2024/02
-## Guía de Ejercícios para la Prueba Escrita 2 - Respuestas
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2025/02
+## Guía Prueba Escrita 2 - Respuestas
 
-1. Para la adquisición de un electrocardiograma (ECG), es necesario medir la diferencia de voltaje entre electrodos que se posicionan en puntos específicos del paciente. Dicha diferencia de voltaje suele ser muy pequeña, del orden de pocos milivolts, por lo que requiere amplificación para poder graficarse y ser procesada. Considerando que la resistencia eléctrica de la interfaz piel-electrodo es de $R_S =56\ k\Omega$, y que se disponen de amplificadores con las características a continuación, determine el factor de amplificación de la señal $v_S$ de cada una de las siguientes configuraciones. Considere que el voltaje de salida de cada circuito es $v_o$. ¿ Cuál configuración permite amplificar más la señal de ECG ?
-
-    1. Configuración 1: $Z_i = 100\ k\Omega$, $Z_o = 1\ k\Omega$, $A_{V_{NL}} = 20$. (0.5 pt)
-
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs.png" width="400">
-
-       > $A_V = \frac{v_o}{v_S} \approx 12.8$
-       
-    1. Configuración 3: $Z_{i1} = 100\ k\Omega$, $Z_{o1} = 1\ k\Omega$, $A_{V_{NL1}} = 20$, $Z_{i2} = 100\ \Omega$, $Z_{o2} = 100\ \Omega$, $A_{V_{NL2}} = 10$. (0.75 pt)
-
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double.png" width="800">
-       
-       > $A_V = \frac{v_o}{v_S} \approx 11.7$
-
-3. Es muy común que la señal de ECG contenga ruido, y por lo tanto se apliquen filtros como el que se muestra a continuación para reducirlo. Asumiendo que $R_1=270\ k\Omega$ ,$R_2= 15\ k\Omega$, $C_1=C_2=10\ \mu F$, $R_a=1.2\ k\Omega$ y $R_b=2.7\ k\Omega$ determine:
+2. El siguiente circuito implementa un filtro activo:
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_high_2_with_gain.png" width="400"> 
 
-    Figura 5: Circuito con topología Sallen-Key.
-    
-    1. La función de transferencia $H(s) = \frac{v_o(s)}{v_i(s)}$ (0.5pt)
+    Figura 2: Filtro con amplificador operacional
 
-        > $H(s) = \frac{R_a+R_b}{R_b}\frac{R_1R_2C_1C_2s^2}{1+R_1(C_1+C_2)s-\frac{R_a}{R_b}R_2C_2s+R_1R_2C_1C_2s^2}$
-    1. La ganancia en dB en corriente contínua.(0.3 pt)
+    La función de transferencia del circuito es
+       $H(s) = \frac{V_o(s)}{V_i(s)} = \frac{2R^2C^2s^2}{1+RCs+R^2C^2s^2}$
 
-        > $A_{v_{dB}}(0) = -\infty$
-    1. La ganancia en dB conforme la frecuencia de la entrada tiende al infinito. (0.3 pt)
+    1. Determine qué tipo de filtro está implementado. (0.3pt)
+        > Filtro pasa alta
+    1. Muestre que la frecuencia con la que se obtiene la ganancia maxima es $\omega = \frac{\sqrt{2}}{RC}$. (0.5pt)
+        > $|A_v(\omega)| = \frac{2R^2C^2\omega^2}{\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1}}$
+        >
+        > $\frac{\partial |A_v(\omega)|}{\partial \omega} = \frac{4R^2C^2\omega}{\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1}} - \frac{2R^2C^2\omega^2}{2(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3}(4R^4C^4\omega^3 - 2R^2C^2\omega)$
+        >
+        > $\frac{\partial |A_v(\omega)|}{\partial \omega} =  \frac{4R^2C^2\omega(R^4C^4\omega^4 - R^2C^2\omega^2 +1)-R^2C^2\omega^2(4R^4C^4\omega^3 - 2R^2C^2\omega)}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3}$
+        >
+        > $\frac{\partial |A_v(\omega)|}{\partial \omega} =  \frac{4R^6C^6\omega^5 - 4R^4C^4\omega^3+4R^2C^2\omega-4R^6C^6\omega^5+2R^4C^4\omega^3}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3}$
+        >
+        > $\frac{\partial |A_v(\omega)|}{\partial \omega} =  \frac{ -2R^4C^4\omega^3+4R^2C^2\omega}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3}$
+        >
+        > $\frac{\partial |A_v(\omega)|}{\partial \omega} = 0 \implies \frac{ -2R^4C^4\omega^3+4R^2C^2\omega}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3} = 0$
+        >
+        > $\frac{ -R^2C^2\omega^2+2}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3} = 0$
+        >
+        > Asumiendo que $\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1} \neq 0$
+        >
+        > $2-R^2C^2\omega^2 = 0$
+        >
+        > $\omega = \frac{\sqrt{2}}{RC}$
+    1. Determine la(s) frecuencia(s) de corte en Hz, asumiendo que $R=1\ k\Omega$ y $C=0.1\ \mu F$. (1pt)
+        > $\omega_c \approx 8500\ rad/s \approx 1300\ Hz$
+    1. Considere que $A = (1+\frac{R_a}{R_b})$. Al aumentar el valor de A, eventualmente el filtro se vuelve inestable. Determine el valor de A en que esto ocurre y con qué frecuencia oscila $v_o$, en Hz. Asuma nuevamente que $R=1\ k\Omega$ y $C=0.1\ \mu F$. (0.7pt)
+        > $A=3$
+        >
+        > $\omega_{osc} = 10000\ rad/s \approx 1600\ Hz$
 
-        > $A_{v_{dB}}(\infty) \approx 3.2\ dB$
-    1. La ganancia maxima en dB (0.3 pt)
+1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (1.5 pt):
+   
+   1. Datos: $V_{CC}=10\ V$, $R_1=3.3\ k\Omega$, $R_2=4.7\ k\Omega$, $V_F=0.7\ V$
 
-        > $max (A_{v_{dB}}) \approx 3.2\ dB$
-    1. Qué tipo de filtro está implementado. (0.3 pt)
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_alt.png" width="300">
+   
+   1. Datos: $V_{CC}=10\ V$, $R_3=1\ k\Omega$, $R_4=10\ k\Omega$, $R_5=5.1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
 
-        > filtro paso-alta.
-    1. La(s) frecuencia(s) de corte en Hz. (0.3 pt)
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R.png" width="300">
 
-        > $f_c \approx 2\ Hz$.
+   1. Datos: $V_{CC}=3.6\ V$, $R_6=R_7=R_8=1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
+
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt.png" width="300">
 
 # Fórmulas
 
-Corto Circuito Virtual: $V_+ = V_-$
+$$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
+$$ V_T = \frac{kT}{q}$$
+
+- $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
+- $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
+- $T$: Temperatura en Kelvin
+
 $$ H(s) = \frac{v_o(s)}{v_i(s)} $$
 $$ A_v(\omega) = | H(s=j\omega) |$$
 $$ A_{v_{dB}}(\omega) = 20 log\left(| H(j\omega) |\right)$$
-$$ A_v(\omega_c) = A_v(2\pi f_c) = \frac{A_{v_{max}}}{\sqrt{2}}$$
 $$ \phi(\omega) = arg\left( H(j\omega) \right) = tan^{-1} \left( \frac{Im\{H(j\omega)\}}{Re\{H(j\omega)\}} \right)$$
-
-$$ V_T = \frac{kT}{q}$$
-- $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
-- $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
-$$I_E = I_C + I_B$$
-- en modo activo ($V_{CE} > V_{CE_{SAT}}$):
-$$I_C = \beta I_B $$
-- en modo saturado ($0 < \beta_{forzado} < \beta$):
-$$V_{CE} = V_{CE_{SAT}}$$
-$$I_C = \beta_{forzado} I_B $$
-- modelo híbrido-$\pi$ de pequeñas señales:
-$$r_{\pi} = \frac{\beta V_T}{I_{C_Q}}$$
-$$i_{C_{AC}} = \beta i_{B_{AC}} $$
-$$A_V = \frac{v_{o_{AC}}}{v_{i_{AC}}}$$
+$$\omega = 2 \pi f$$
+$$ 2\pi [rad/s] = 1 [Hz]$$
+$$ 1 [Hz] = 60 [rpm]$$
+$$ A \beta = 1$$
