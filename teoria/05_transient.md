@@ -2,26 +2,6 @@
 
 # Título alternativo: Análsis DC y transitório
 
-<!-- vscode-markdown-toc -->
-* 1. [Capacitores](#Capacitores)
-* 2. [Circuitos eléctricos como sistemas dinámicos](#Circuitoselctricoscomosistemasdinmicos)
-	* 2.1. [ Ecuaciones diferenciales](#Ecuacionesdiferenciales)
-	* 2.2. [Solución usando Laplace](#SolucinusandoLaplace)
-* 3. [Respuesta en Estado Estacionario](#RespuestaenEstadoEstacionario)
-* 4. [Análisis DC: Encontrando la respuesta en estado estacionario cuando la entrada es DC](#AnlisisDC:EncontrandolarespuestaenestadoestacionariocuandolaentradaesDC)
-* 5. [Respuesta Transitoria](#RespuestaTransitoria)
-* 6. [Análisis transitório](#Anlisistransitrio)
-	* 6.1. [Encontrando $\tau$ a partir de la función de transferencia](#Encontrandotauapartirdelafuncindetransferencia)
-	* 6.2. [Encontrando la función de transferencia sin escribir ecuaciones diferencials](#Encontrandolafuncindetransferenciasinescribirecuacionesdiferencials)
-* 7. [Resúmen y ejemplo](#Resmenyejemplo)
-* 8. [ejercicios recomendados](#ejerciciosrecomendados)
-
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
-
 ##  1. <a name='Capacitores'></a>Capacitores
 
 Cuando hay dos materiales conductores eléctricos separados por un material aislante eléctrico, se observa que al aplicar una diferencia de voltaje entre los materiales conductores, cargas eléctricas se acumulan en ellos (una vez que no son capaces de cruzar el material aislante). Además, la cantidad de carga eléctrica que se acumula (Q) es proporcional al voltaje aplicado (V):
@@ -110,7 +90,7 @@ $v_{out}(t) = 1-e^\frac{-t}{RC}$
 
 <br />
 
-$\mathcal{L}^{-1} \left\\{ \frac{1}{s+a} \right\\} = e^{-at}$
+$\mathcal{L}^{-1} \left\{ \frac{1}{s+a} \right\} = e^{-at}$
 
 </details>
 
@@ -263,6 +243,7 @@ Ejemplo:
 
 Para el siguiente circuito, si $v_i$ es un escalón de 3 V, encuentre:
 1. El valor de $v_o$ en estado estacionario.
+1. La constante de tiempo del sistema
 1. Cuanto tiempo demora $v_o$ en estar a menos de 10 mV del valor en estado estacionario.
 
 Datos:  $R_1=R_2=10\ k\Omega$, $C_1=10\ \mu F$
@@ -273,6 +254,7 @@ Datos:  $R_1=R_2=10\ k\Omega$, $C_1=10\ \mu F$
 
 Para el siguiente circuito, si $v_i$ es un escalón de 3 V, encuentre:
 1. El valor de $v_o$ en estado estacionario.
+1. La constante de tiempo del sistema
 1. Cuanto tiempo demoran los términos transitorios en bajar a menos de 1% de su valor inicial.
 
 Datos:  $R_1=10\ k\Omega$, $R_2=15\ k\Omega$, $C_1=C_2=10\ \mu F$

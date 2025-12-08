@@ -30,7 +30,7 @@
        >
        > $A_V = \frac{v_o}{v_S} = A_{V_{NL2}} \frac{R_{L}}{R_{L}+R_{o2}} A_{V_{NL1}} \frac{R_{i2}}{R_{i2}+R_{o1}} \frac{R_{i1}}{R_S+R_{i1}} $
        >
-       > $A_V = 12 \frac{1k}{1k+20k} 8 \frac{200k}{200k+100} \frac{10k}{47k+10k} \approx 15.3 $
+       > $A_V = 12 \frac{1k}{1k+20k} 8 \frac{200k}{200k+100} \frac{10k}{47k+10k} \approx 0.8 $
        
     1. Configuración 2: (0.5 pt)
 
