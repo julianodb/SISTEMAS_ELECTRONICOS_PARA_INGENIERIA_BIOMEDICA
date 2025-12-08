@@ -32,6 +32,16 @@
         > $2-R^2C^2\omega^2 = 0$
         >
         > $\omega = \frac{\sqrt{2}}{RC}$
+        >
+        > Para determinar si a este valor de frecuencia corresponde un punto maximo de la expresión, se evalua $A_V(\omega)$ en algunos puntos notables:
+        >
+        > $A_V(\omega=0) = 0$ 
+        >
+        > $\lim_{\omega \to +\infty} A_V(\omega) = 2$
+        >
+        > $A_V(\omega=\frac{\sqrt{2}}{RC}) = \frac{4}{\sqrt{3}}$
+        >
+        > Se observa que  $\frac{4}{\sqrt{3}} > 2 > 0$, por lo tanto $\omega = \frac{\sqrt{2}}{RC}$ es la frecuencia en que se obtiene el valor maximo, y $max(A_V(\omega)) = \frac{4}{\sqrt{3}}$
     1. Determine la(s) frecuencia(s) de corte en Hz, asumiendo que $R=1\ k\Omega$ y $C=0.1\ \mu F$. (1pt)
         > $\omega_c \approx 8500\ rad/s \approx 1300\ Hz$
     1. Considere que $A = (1+\frac{R_a}{R_b})$. Al aumentar el valor de A, eventualmente el filtro se vuelve inestable. Determine el valor de A en que esto ocurre y con qué frecuencia oscila $v_o$, en Hz. Asuma nuevamente que $R=1\ k\Omega$ y $C=0.1\ \mu F$. (0.7pt)
@@ -64,6 +74,7 @@ $$ V_T = \frac{kT}{q}$$
 
 $$ H(s) = \frac{v_o(s)}{v_i(s)} $$
 $$ A_v(\omega) = | H(s=j\omega) |$$
+$$ A_V(\omega_c) = \frac{max(A_V(\omega))}{\sqrt{2}}$$
 $$ A_{v_{dB}}(\omega) = 20 log\left(| H(j\omega) |\right)$$
 $$ \phi(\omega) = arg\left( H(j\omega) \right) = tan^{-1} \left( \frac{Im\{H(j\omega)\}}{Re\{H(j\omega)\}} \right)$$
 $$\omega = 2 \pi f$$
