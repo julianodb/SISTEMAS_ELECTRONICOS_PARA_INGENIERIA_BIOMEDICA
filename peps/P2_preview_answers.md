@@ -54,14 +54,50 @@
    1. Datos: $V_{CC}=10\ V$, $R_1=3.3\ k\Omega$, $R_2=4.7\ k\Omega$, $V_F=0.7\ V$
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_alt.png" width="300">
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_alt_with_currents.png" width="300">
+      > 
+      > $V_1 = 0.7\ V$
+      >
+      > $V_2 = 1.4\ V$
+      >
+      > $I_{R_2} \approx 150\ \mu A $
+      >
+      > $I_{R_1} = I_{D_1} \approx 2.5\ m A $
+      >
+      > $I_{D_2} \approx 2.35\ m A$
    
    1. Datos: $V_{CC}=10\ V$, $R_3=1\ k\Omega$, $R_4=10\ k\Omega$, $R_5=5.1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R.png" width="300">
+      
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_with_currents.png" width="300">
+      >
+      > $I_4 = 0$
+      >
+      > $V_3 = 6.7\ V$
+      >
+      > $I_3 = I_5 \approx 1.1\ mA$
+      >
+      > $V_4 = V_5 \approx 5.6\ V$
 
    1. Datos: $V_{CC}=3.6\ V$, $R_6=R_7=R_8=1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt.png" width="300">
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt_with_currents.png" width="300">
+      >
+      > $V_1 = 2.9\ V$
+      >
+      > $I_5 = 2.9\ m A$
+      >
+      > $V_2 = 3.25\ V$
+      >
+      > $I_4 = 0$
+      >
+      > $I_2 = I_3 = 0.35\ mA$
+      >
+      > $I_1 = 2.55\ mA$
 
 # Fórmulas
 
