@@ -167,6 +167,73 @@
          >
          > $f_{c_2} \approx 460\ Hz$
     1. Considere que $A = (1+\frac{R_a}{R_b})$. Al aumentar el valor de A, eventualmente el filtro se vuelve inestable. Determine el valor de A en que esto ocurre y con qué frecuencia oscila $v_o$, en Hz. Asuma nuevamente que $R=1\ k\Omega$ y $C=0.1\ \mu F$. (0.7pt)
+         > Considerando la división del circuito conforme la siguiente imagen, donde la entrada de $A$ es $V_+$, su salida es $v_o$, la entrada de $\beta$ es $v_o$ y su salida es $V_+$:
+         >
+         > ![ABeta](/img/sallen_key_band_pass_2_A_beta.png)
+         >
+         > La función de transferencia del bloque A es simplemente $1+\frac{R_a}{R_b} = A$. Luego, para el bloque $\beta$:
+         >
+         > $V_+ = \frac{4R}{4R+\frac{1}{Cs}} V_x$
+         >
+         > $V_x = \frac{1+4RCs}{4RCs}V_+$ (ecuación 1)
+         >
+         > Definimos $R_{eq}$ como la resistencia entre $V_x$ y tierra:
+         >
+         > $R_{eq} = R//\frac{1}{Cs}//(\frac{1}{Cs}+4R)$
+         >
+         > $R_{eq} = \frac{1}{\frac{1}{R}+Cs+\frac{Cs}{1+4RCs}}$
+         >
+         > $R_{eq} = \frac{R(1+4RCs)}{1+4RCs+Cs(R)(1+4RCs)+RCs}$
+         >
+         > $R_{eq} = \frac{R(1+4RCs)}{1+6RCs+4R^2C^2s^2}$
+         >
+         > Luego, la relación entre $V_x$ y $v_o$ se encuentra aplicando divisor de voltaje y recordando que $v_i = 0$ para calcular la función de transferencia de $\beta$:
+         >
+         > $V_x = \frac{R_{eq}}{R_{eq}+2R}v_o$
+         >
+         > $V_x = \frac{\frac{R(1+4RCs)}{1+6RCs+4R^2C^2s^2}}{\frac{R(1+4RCs)}{1+6RCs+4R^2C^2s^2}+2R}v_o$
+         >
+         > $V_x = \frac{R(1+4RCs)}{R(1+4RCs)+2R(1+6RCs+4R^2C^2s^2)}v_o$
+         >
+         > $V_x = \frac{1+4RCs}{1+4RCs+2(1+6RCs+4R^2C^2s^2)}v_o$
+         >
+         > $V_x = \frac{1+4RCs}{3+16RCs+8R^2C^2s^2}v_o$ (ecuación 2)
+         >
+         > Igualando la ecuación 1 y la ecuación 2:
+         >
+         > $\frac{1+4RCs}{4RCs}V_+ = \frac{1+4RCs}{3+16RCs+8R^2C^2s^2}v_o$
+         >
+         > $\beta(s) = \frac{V_+}{v_o} = \frac{4RCs}{3+16RCs+8R^2C^2s^2}$
+         >
+         > Aplicando el criterio de Barkhausen:
+         >
+         > $ A(j\omega_{osc}) \beta (j\omega_{osc}) = 1$
+         >
+         > $ A\frac{4RCj\omega_{osc}}{3+16RCj\omega_{osc}+8R^2C^2(j\omega_{osc})^2} = 1$
+         >
+         > $ 4ARCj\omega_{osc} = 3+16RCj\omega_{osc}-8R^2C^2\omega_{osc}^2 $
+         >
+         > Igualando la parte imaginaria:
+         >
+         > $4ARC\omega_{osc} = 16RC\omega_{osc}$
+         >
+         > $A = 4$
+         >
+         > Por lo tanto, el valor de A en que el filtro se vuelve inestable es 4.
+         >
+         > Igualando la parte real:
+         >
+         > $0 = 3-8R^2C^2\omega_{osc}^2$
+         >
+         > $8R^2C^2\omega_{osc}^2 = 3$
+         >
+         > $\omega_{osc}^2 = \frac{3}{8R^2C^2}$
+         >
+         > $\omega_{osc} = \frac{\sqrt{3}}{2\sqrt{2}RC}$
+         >
+         > En Hz:
+         >
+         > $f_{osc} = \frac{\sqrt{3}}{4\pi\sqrt{2}RC} \approx 975\ Hz$
 
 1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (1.5 pt):
    
