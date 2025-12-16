@@ -39,7 +39,7 @@ Figura 3: Placa 2 - BOTTOM (vista inferior)
 
 ### Placa 1
 
-2. Fabriquen al menos una "placa 1" en stripboard por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. A diferencia de la(s) placa(s) fabricada(s) en el Laboratorio 3, ésta vez se debe incluir el circuito del filtro 1 y del LED indicador de encendido, además de las correcciones a valores de componentes. (3pt)
+2. Fabriquen al menos una "placa 1" en stripboard por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. A diferencia de la(s) placa(s) fabricada(s) en el Laboratorio 3, ésta vez se debe incluir el circuito del filtro 1 y del LED indicador de encendido, además de las correcciones a valores de componentes (principalmente $R_2$ y $R_3$). (3pt)
 
     AYUDA: utilicen los valores de componentes de la BOM del Trabajo 5 corregidos por el profesor. Acuérdense de utilizar el LED del color que corresponde al nombre del grupo.
 
