@@ -1,4 +1,4 @@
-# Transistor de Unión Bipolar (BJT) ???
+# Transistor de Efecto de Campo Semiconductor de óxido metálico (MOSFET) tipo enriquecimento de canal n 
 
 Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave
 
