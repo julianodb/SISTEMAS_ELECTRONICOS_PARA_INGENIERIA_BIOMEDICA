@@ -1,51 +1,54 @@
 # Transistor de Efecto de Campo Semiconductor de óxido metálico (MOSFET) tipo enriquecimento de canal n 
 
-Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave
+## Motivación
 
+## Transistores a grandes rasgos
 
-- Motivación
-- Transistores a grandes rasgos
-- Símbolo, nomenclatura y convenciones
+- Tres terminales
+- Un terminal controla la corriente que fluye entre los otros dos terminales
+- Se utilizan como "llaves on/off" o como amplificadores de señales
 
-![npn](https://julianodb.github.io/electronic_circuits_diagrams/npn.png)
+1. Transistores
+   1. Bipolares (BJT)
+      1. PNP
+      1. NPN
+   1. de Efecto de Campo (FET)
+      1. de Unión (JFET)
+         1. de canal n
+         1. de canal p
+      1. Semiconductor de óxido metálico (MOSFET)
+         1. tipo empobrecimento
+            1. de canal n
+            1. de canal p
+         1. tipo enriquecimiento
+            1. de canal n
+            1. de canal p
 
-- Ecuaciones del transistor bipolar NPN
+## MOSFET tipo enriquecimiento de canal n: Símbolo, nomenclatura y convenciones
 
-1. LKC
-   $$I_E = I_C + I_B$$
-1. BASE-EMISOR es un diodo:
-   $$ 
-   \left\{ 
-      \begin{array}{ c l }
-          \textrm{conduce }(I_B>0) & \quad \textrm{si } V_{BE} >  V_{BE_{SAT}} \\
-          \textrm{no conduce }(I_B=0)                 & \quad \textrm{si } V_{BE} \leq V_{BE_{SAT}}
-      \end{array} 
-   \right}
-   $$
-1. $I_B$ vs $I_C$ vs $V_{CE}$
-   1. En modo de corte ($I_B = 0$)
+![nmosfet](https://julianodb.github.io/electronic_circuits_diagrams/nmosfet.png)
 
-   $$I_C = 0$$
-   1. (en modo saturado ($\beta I_B > I_{C_{SAT}} $)):
-   
-   $$V_{CE} = V_{CE_{SAT}}$$
+## Ecuaciones del MOSFET 
 
-$V_{BE_{SAT}}$, $\beta$ y $V_{CE_{SAT}}$ son constantes para cada transistor
+1. $I_G = 0$
+1. LKC: $I_S = I_D$
+1. (en saturación) $I_D = k(V_{GS}-V_{th})^2$
 
-tipicamente $V_{BE_{SAT}} \approx 0.7\ V$, $V_{CE_{SAT}} \approx 0.2\ V$ y $\beta \approx 100 $
+$V_{th}$ es el voltaje de umbral en la compuerta y es un valor aproximadamente constante para cada transistor, que depende de su construcción.
+
+k es una constante que también es función de la construcción del dispositivo.
 
 ## Bibliografia
 
 Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.)
 
 ### Capítulos
-- Capítulo 3, sesión 3.6
-- Capítulo 4, sesiones 4.1, 4.3
+- Capítulo 6, sesiones 6.1, 6.8 y 6.9
+- Capítulo 7, sesiones 7.8 y 7.11 (ejemplo 7.16)
 
 ### Ejercícios Recomendados
-- Capítulo 3
-  - Sesión 3.3: ej 8, 9
-  - Sesión 3.6: ej 20
-- Capítulo 4
-  - Sesíon 4.3: ejs 1, 2, 3
-  - Sesión 4.4: ejs 6, 7, 8, 11
+- Capítulo 6
+  - Sesión 6.8: ejs 34, 36 y 40
+- Capítulo 7
+  - Sesíon 7.8: ejs 20 y 21
+  
