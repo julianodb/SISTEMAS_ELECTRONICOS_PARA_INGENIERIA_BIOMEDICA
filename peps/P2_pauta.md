@@ -240,6 +240,20 @@
    1. Datos: $V_{CC}=10\ V$, $R_1=3.3\ k\Omega$, $R_2=4.7\ k\Omega$, $V_F=0.7\ V$
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R.png" width="300">
+
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_with_currents.png" width="300">
+      >
+   > Al remover los diodos se observa que $V_{D_1} = 10\ V$ y $V_{D_2} = 0 V$. Por lo tanto $D_1$ conduce y $D_2$ no. 
+   >
+   > Al reemplazar $D_1$ por una fuente de voltaje de $0.7\ V$, se observa que $V_2 = 9.3\ V$ y $V_1 \approx 3.8\ V $. Por lo tanto, el nuevo $V_{D_2} = 9.3 - 3.8 = 5.5\ V > V_F$, lo que implica que $D_2$ también conduce.
+   >
+   > Al reemplazar $D_2$ por una fuente de voltaje de $0.7\ V$, se observa que $V_1 = 8.6\ V$
+   >
+   > $I_{R_2} =  \frac{V_2-V_1}{R_2} = \frac{0.7}{4.7\ k} \approx 150\ \mu A$
+   >
+   > $I_{R_1} = I_{D_1} = \frac{V_1}{R_1} = \frac{8.6}{3.3\ k} \approx 2.6\ m A$
+   >
+   > $I_{D_2} = I_{D_1} - I_{R_2} = 2.6\ mA - 150\ \mu A = 2.45\ mA$
    
    1. Datos: $V_{CC}=10\ V$, $R_3=1\ k\Omega$, $R_4=10\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
 
