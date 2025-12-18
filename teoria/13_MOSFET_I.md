@@ -28,20 +28,29 @@
 
 ![nmosfet](https://julianodb.github.io/electronic_circuits_diagrams/nmosfet.png)
 
-## Ecuaciones del MOSFET 
+## Ecuaciones del NMOS - parte 1
 
 1. $I_G = 0$
 1. LKC: $I_S = I_D$
 1. relación entre $V_{GS}$ y $I_D$:
-   1. (apagado) si $V_{GS} < V_{th} \implies$ $I_D=0$
-   1. (encendido, triodo) si $V_{GS} > V_{th}$ y $V_{DS} < V_{GS} - V_{th} \implies$ $V_{DS} = R_{DS(ON)}I_D$
-   1. (encendido, saturado) si $V_{GS} > V_{th}$ y $V_{DS} > V_{GS} - V_{th} \implies$ $I_D = k(V_{GS}-V_{th})^2$
+   1. (apagado) si $V_{GS} < V_{GS(th)} \implies$ $I_D=0$
+   1. (encendido, triodo) si $V_{GS} > V_{GS(th)} \implies$ $V_{DS} = R_{DS(ON)}I_D$
 
-$V_{th}$ es el voltaje de umbral en la compuerta y es un valor aproximadamente constante para cada transistor, que depende de su construcción.
+$V_{GS(th)}$ es el voltaje de umbral en la compuerta y es un valor aproximadamente constante para cada transistor, que depende de su construcción.
 
-$R_{DS(ON)}$ es la resistencia drenador-fuente en estado ON y depende de $V_{GS}$ (cuanto mayor $V_{GS}$, menor $R_{DS(ON)}$), la temperatura y el diseño del MOSFET
+$R_{DS(ON)}$ es la resistencia dreno-fuente en estado ON y depende de $V_{GS}$ (cuanto mayor $V_{GS}$, menor $R_{DS(ON)}$), la temperatura y el diseño del MOSFET
 
-k es una constante que también es función de la construcción del dispositivo.
+Ejemplos: [2n7002](https://www.st.com/resource/en/datasheet/cd00005134.pdf), [BSS806N](https://www.infineon.com/assets/row/public/documents/24/49/infineon-bss806n-ds-en.pdf?fileId=db3a304330f686060131185f0553451c)
+
+## Interruptor con NMOS
+
+NMOS, LED
+
+## Dinamica del interruptor con NMOS
+
+Ciss, Coss, Crss
+tdon, tr, ton
+tdoff, tf, toff
 
 ## Bibliografia
 

@@ -1,47 +1,33 @@
-# Transistor de Unión Bipolar (BJT) III ???
+# Uso de Transistores como Amplificadores
 
 mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común
 
-- Modo Activo
+- Modo Saturado
 
-## Resúmen BJT: Modo de Saturación vs modo activo
+## Ecuaciones del NMOS - parte 2 
 
-$$I_E = I_C + I_B$$
+1. $I_G = 0$
+1. LKC: $I_S = I_D$
+1. relación entre $V_{GS}$ y $I_D$:
+   1. (apagado) si $V_{GS} < V_{GS(th)} \implies$ $I_D=0$
+   1. (encendido, triodo) si $V_{GS} > V_{GS(th)}$ y $V_{DS} < V_{GS} - V_{GS(th)} \implies$ $V_{DS} = R_{DS(ON)}I_D$
+   1. (encendido, saturado) si $V_{GS} > V_{GS(th)}$ y $V_{DS} > V_{GS} - V_{GS(th)} \implies$ $I_D = k(V_{GS}-V_{GS(th)})^2$
+   
+$V_{GS(th)}$ es el voltaje de umbral en la compuerta y es un valor aproximadamente constante para cada transistor, que depende de su construcción.
 
-- en modo activo ($V_{CE} > V_{CE_{SAT}}$):
+$R_{DS(ON)}$ es la resistencia dreno-fuente en estado ON y depende de $V_{GS}$ (cuanto mayor $V_{GS}$, menor $R_{DS(ON)}$), la temperatura y el diseño del MOSFET
 
-$$I_C = \beta I_B $$
+k es una constante que también es función de la construcción del dispositivo.
 
-- en modo saturado ($0 < \beta_{forzado} < \beta$):
+## Análisis de pequeñas señales
 
-$$V_{CE} = V_{CE_{SAT}}$$
+Respuesta AC
 
-$$I_C = \beta_{forzado} I_B $$
+Parece que $V_{out,AC} = A_V V_{in,AC}$
 
-## ejercicios con BJT
+$I_D = I_{D_Q} + 2k(V_{GS_Q}-V_{GS(th)}) \Delta V + k\Delta V^2$
 
-- Calcular $V_C$, $V_E$, $I_B$, $I_C$ y $I_E$ si $V_{CC} = 10\ V$, $R_C=4.7\ k\Omega$, $R_E=3.3\ k\Omega$ y:
-  - $\beta = 100$ y $V_i = 4\ V$ 
-  - $\beta = 50$ y $V_i = 6\ V$
-
-![npn_re_rc](https://julianodb.github.io/electronic_circuits_diagrams/npn_re_rc.png)
-
-## $I_{C_{SAT}}$
-
-- corriente de colector impuesta por el circuito externo cuando $V_{CE} = V_{CE_{SAT}}$
-
-## Uso del BJT como llave
-
-![npn_inverter](https://julianodb.github.io/electronic_circuits_diagrams/npn_inverter.png)
-
-![v_i_square_wave](https://julianodb.github.io/electronic_circuits_diagrams/v_i_square_wave.png)
-
-Asumiendo $V_{LOW} < V_{BE}$ y $V_{HIGH} > V_{BE}$:
-
-1. Calcular $I_{C_{Sat}}$ (en el ejemplo, $I_{C_{Sat}} = \frac{V_{CC} - V_{CE_{SAT}}}{R_C}$)
-2. Elegir $\beta_{forzado} < \beta$
-3. Calcular $I_B = \frac{I_{C_{Sat}}}{\beta_{forzado}}$
-4. Calcular $R_B = \frac{V_{HIGH} - V_{BE}}{I_B}$
+$  $
 
 ## Bibliografia
 
