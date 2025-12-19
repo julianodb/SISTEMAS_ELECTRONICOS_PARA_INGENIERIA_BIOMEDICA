@@ -44,13 +44,26 @@ Ejemplos: [2n7002](https://www.st.com/resource/en/datasheet/cd00005134.pdf), [BS
 
 ## Interruptor con NMOS
 
-NMOS, LED
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_led_mosfet.png" width="200">
+
+Si $R_{22} = 100\ \Omega$, $V_F = 1\ V$, $V_{GS(th)}=3\ V$, $R_{DS(ON)}=1\ \Omega$, cuanto vale la corriente en el LED cuando:
+1. $v_i=2\ V$ ?
+   > $I=0$
+1. $v_i=4\ V$ ?
+   > $I \approx 40\ mA$
 
 ## Dinamica del interruptor con NMOS
 
-Ciss, Coss, Crss
-tdon, tr, ton
-tdoff, tf, toff
+Cuando se cambia el valor de $V_{GS}$, $I_D$ no cambia inmediatamente. El pequeño atraso en que el cambio de la entrada se refleja en la salida se caracteriza a través de los siguientes parametros:
+
+- $td_{on}$ (time delay on)
+- $t_r$ (time rise)
+- $td_{off}$ (time delay off)
+- $t_f$ (time fall)
+
+La siguiente figura muestra la definición de cada uno de ellos:
+
+![dynamic](../img/mosfet_dynamic.png)
 
 ## Bibliografia
 
