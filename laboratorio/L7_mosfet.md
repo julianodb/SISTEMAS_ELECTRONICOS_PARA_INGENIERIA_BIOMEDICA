@@ -7,9 +7,12 @@
 | -- | --  | -- | --| -- | -- | -- | -- |
 | Instrumentos  |  |  | | Dispositivos |  |  |  |
 |  | Multímetro  | 1 | |  | Transistor NMOS | BC170 | 1 |
+|  | Osciloscopio | 1 | |  |  |  |  |
+|  | Generador de señales | 1 | |  | |  |  |
 |  | Fuente CC.  | 1 | |  | Resistencias (Ω) |  |  |
 | Implementos |   |  | |  |  | 20 (5W) | 1 |
 |  | Cable Banana-Caimán  | 2 | |  |  |1M | 1 |
+|  | Sonda | 2 | | | | |  |
 | Otros |   |  | |  | | Potenciometro 10k (de panel) |1 |
 | | Protoboard |  1 | |  |Capacitores |  |  |
 | | cables, alicate, etc |  | |  | |$0.1\ \mu$| 1|
@@ -20,7 +23,7 @@ Nota: Ante cualquier duda en el uso de los instrumentos, o las conexiones eléct
 
 Armen el circuito de la Figura 1, con $R_1=20\ \Omega$ y $R_2 = 1\ M \Omega$. Conecten $V_2$ a la fuente CC, configurada para limitar la corriente a 0.5 A.
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_mosfet.png" width="300">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_mosfet.png" width="320">
 
 Figura 1: Prueba de $V_{GS}$, $V_{DS}$ e $I_D$ 
 
@@ -46,7 +49,7 @@ Figura 1: Prueba de $V_{GS}$, $V_{DS}$ e $I_D$
 
 Cambien el circuito para la configuración de la Figura 2, utilizando $C_1=0.1\ \mu F$. Conecten el generador de funciones a $v_i$ y midal la señal $v_o$ con el osciloscopio.
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_amplifier.png" width="200">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_amplifier.png" width="250">
 
 Figura 2: Prueba AC
 
