@@ -139,11 +139,13 @@ $\Delta I =2k(V_Q- V_{GS(th)})\Delta V$
 
 $g_m = \frac{\Delta I}{\Delta V} =2k(V_Q- V_{GS(th)})$
 
-La relación entre una corriente y un voltaje es una conductancia. Como se trata de la corriente en un terminal distinto que el voltaje ($I_D$ vs $V_{GS}$), la relación $\frac{\Delta I}{\Delta V}$ se denomina transconductancia, y se simboliza como $g_m$ o $g_{ _{FS}}$. La transconductancia tiene como unidad A/V (también denominada Siemens (S) en el sistema internacional). Las hojas de datos de los MOSFET suelen especificar $g_{ _{FS}}$ en vez de $k$.
+La relación entre una corriente y un voltaje es una conductancia. Como se trata de la corriente en un terminal distinto que el voltaje ($I_D$ vs $V_{GS}$), la relación $\frac{\Delta I}{\Delta V}$ se denomina transconductancia, y se simboliza como $g_m$ o $g_{ _{FS}}$. 
+
+La transconductancia tiene como unidad A/V (también denominada Siemens (S) en el sistema internacional). Las hojas de datos de los MOSFET suelen especificar $g_{ _{FS}}$ en vez de $k$.
 
 Así, cuando se están analizando las pequeñas señales, el transistor se comporta como una fuente de corriente, cuyo valor es $g_{ _{FS}} \Delta V$:
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/nmosfet_small_signal.png" width="300">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/nmosfet_small_signal.png" width="500">
 
 Los resultados nos muestran que podemos analizar el transistor en modo saturado en dos pasos:
 
@@ -173,7 +175,7 @@ $g_m = 2 k(V_{Q}-V_{GS(th)})$
 
 Dado el circuito de ejemplo del principio de la clase, calcular $A_V = \frac{amplitud(v_o)}{amplitud(v_i)}$.
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_amplifier.png" width="200">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_amplifier.png" width="300">
 
 Consideren que $R_1=20\ \Omega$, $R_2=1\ M \Omega$, $C_1=10\ \mu F$, $V_{GS(th)}=2.1\ V$ y $k=0.128\ \frac{A}{V^2}$
 
@@ -203,7 +205,7 @@ Paso 2:
 
 Al reemplazar $Q_1$ por su modelo de pequeñas señales, considerando sólo la parte variable (AC) de las señales (ignorando las señales constantes como $V_Q$ y $+10\ V$), ignorando $I_{R_2}$ y, además, considerando que $C_2$ es aproximadamente un corto-circuito en la frecuencia de $v_i$:
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_amplifier_small_signal.png" width="200">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_amplifier_small_signal.png" width="300">
 
 $\Delta I_D = g_m \Delta V_{GS}$
 
