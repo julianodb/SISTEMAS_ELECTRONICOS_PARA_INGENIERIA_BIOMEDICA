@@ -19,7 +19,7 @@ k es una constante que también es función de la construcción del dispositivo.
 
 ## NMOS como amplificador
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_amplifier.png" width="200">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_amplifier.png" width="300">
 
 Al simular el siguiente circuito con $R_1=20\ \Omega$, $R_2=1\ M \Omega$, $C_1=10\ \mu F$ y $v_i=0.1 cos(\omega t)$ con $\omega = 2 \pi 2000$, se observa que $v_o$ tiene una componente DC constante, más una componente AC que es proporcional a $v_i$. 
 
@@ -155,7 +155,8 @@ Paso 1: resolver la corriente y el voltaje en el punto fijo (constante) $I_Q$ y 
       ![idvgs](../img/mosfet_id_vgs.png)
 
 Paso 2: resolver la relación entre las pequeñas señales que se suman al punto fijo ($\Delta V_{GS}$, $\Delta I_D$, $\Delta V_{DS}$ etc) utilizando el modelo de pequeñas señales del mosfet:
-   - $\Delta I_D = g_{ _{FS}} \Delta V_{GS}$
+
+$\Delta I_D = g_{ _{FS}} \Delta V_{GS}$
 
 ## Relación entre $k$ y $g_m$
 
