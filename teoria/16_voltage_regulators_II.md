@@ -2,7 +2,7 @@
 
 ## Reguladores Conmutados
 
-En general, utilizan una señal de control que es una onda rectangular con duty cycle D (en español, ciclo de trabajo). D es un número entre 0 y 1, que representa el porcentaje del tiempo que la señal está encendido, como muestra la fugura a continuación:
+En general, utilizan una señal de control que es una onda rectangular con duty cycle D (en español, ciclo de trabajo). D es un número entre 0 y 1, que representa el porcentaje del tiempo que la señal está encendida, como muestra la figura a continuación:
 
 ![duty](../img/duty_cycle.webp)
 
