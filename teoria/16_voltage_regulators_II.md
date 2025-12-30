@@ -36,6 +36,8 @@ $\Delta I_L =  \frac{V_L \Delta t}{L}$
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/boost_converter.png" width="400"> 
 
+![initial_boost](../img/intial_boost.png)
+
 ![20_1](../img/20_1.png)
 
 $$\Delta I =  \frac{V \Delta t}{L}$$
