@@ -4,7 +4,9 @@
 
 En la clase anteriores estudiamos los reguladores de voltaje lineales. Una de las limitaciones para su utilización es que el voltaje regulado necesariamente es menor que el voltaje de entrada. Será posible construir un regulador cuya salida es mayor que la entrada ?
 
-Imagínense un circuito que tiene dos capacitores. En un determinado instante, ambos capacitores se conectan en paralelo al voltaje de entrada $v_i$. Con esto, se cargan hasta que sus voltajes son iguales a $v_i$. Luego, los capacitores se desconectan de la entrada y se conectan en serie entre sí. El voltaje total a través del circuito formado por ambos capacitores en serie es $2 v_i$. Luego, la carga $R_L$ se conecta a este voltaje de $2 v_i$ lo que hace con que una corriente fluya de los capacitores hacia la carga. Esta corriente alimenta la carga pero también descarga los capacitores. Después de un breve instante de descarga, el circuito desconecta los capacitores de la carga y los vuelve a conectar, en paralelo, a la entrada. Si este ciclo se repite con una frecuencia suficientemente alta, parecerá que la carga efectivamente está siendo alimentada con $2 v_i$. Es, por lo tanto, posible producir un voltaje de salida mayor que el de entrada. El circuito que lo hace, sin embargo, necesita conectar y desconectar componentes que almacenan energía (capacitores o inductores, por ejemplo), de forma a transportar la corriente desde un voltaje más bajo hasta uno más alto. Este tipo de regulador de voltaje es conocido como Regulador Conmutado. 
+Imagínense un circuito que tiene un capacitor. En un determinado instante, el capacitor se conectan en paralelo al voltaje de entrada $v_i$. Con esto, se carga hasta que su voltaje es igual a $v_i$. Luego, el capacitor se desconecta de la entrada y se conecta ahora en serie con ella. Es decir, el terminal negativo del capacitor ahora está conectado a $v_i$. El voltaje total a través del circuito formado por el capacitor en serie con $v_i$ es $2 v_i$. Luego, la carga $R_L$ se conecta a este voltaje de $2 v_i$ lo que hace con que una corriente fluya a través de $v_i$, el capacitor y finalmente hacia la carga. Esta corriente alimenta la carga pero también descarga el capacitor. Después de un breve instante de descarga, el circuito desconecta el capacitor de la carga y lo vuelve a conectar, en paralelo, a la entrada. Si este ciclo se repite con una frecuencia suficientemente alta, parecerá que la carga efectivamente está siendo alimentada con $2 v_i$. Es, por lo tanto, posible producir un voltaje de salida mayor que el de entrada. El circuito que lo hace, sin embargo, necesita conectar y desconectar componentes que almacenan energía (capacitores o inductores, por ejemplo), de forma a transportar la corriente desde un voltaje más bajo hasta uno más alto. Este tipo de regulador de voltaje es conocido como Regulador Conmutado.
+
+![charge_pump](../img/charge_pump.png)
 
 ## Reguladores Conmutados
 
@@ -17,6 +19,8 @@ Figura 1: Ejemplos de duty cycles.
 En ésta clase estudiaremos 4 circuitos de convertidores conmutados. Todos ellos utilizan inductores como elementos que almacenan energía. Como recordatorio, la ecuación fundamental que describe el comportamento del inductor es:
 
 $V_L = L \frac{dI_L}{dt}$
+
+![ind](../img/inductancia.png)
 
 Nótese que es una ecuación muy similar a la del capacitor, pero con la corriente y el voltaje intercambiados entre sí, y la constante L (inductancia) en vez de C (capacitancia). Así, de la misma forma que podemos "cargar" voltajeen un capacitor, el que lo mantiene hasta que se conecta a un circuito que consume corriente y lo descarga (baja el voltaje nuevamente), se puede "cargar" corriente en un inductor hasta que el circuito produzca un voltaje en sentido contrario que "descarga" (baja) la corriente.
 
