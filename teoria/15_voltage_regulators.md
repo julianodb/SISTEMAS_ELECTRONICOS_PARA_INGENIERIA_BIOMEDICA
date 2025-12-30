@@ -363,7 +363,8 @@ Figura 10: Voltaje de salida del LDO VREG3 vs corriente de la carga
 En esta clase aprendimos como funcionan los reguladores de voltaje lineales, siendo el LDO la forma más común que se encuentran en los circuitos electrónicos. Una de las características de los reguladores lineales es que la eficiencia depende de la diferencia de voltaje entre la entrada y la salida. Si ésta es muy alta, la eficiencia será baja, y vice-versa. Además, también se caracterizan por una corriente de polarización o alimentación necesaria para generar los voltajes de referencia (por ejemplo con diodos zeners) y energizar los circuitos de retroalimentación (por ejemplo amplificadores operacionales). Otro punto importante es que la salida tiene un valor de voltaje más bajo que la entrada. ¿Será posible implementar un regulador de voltaje que produce un voltaje de salida más alto que la entrada ?
 
 ## Capítulos del libro
-- 
+- Capítulo 15, sesiones 1, 2, 3 y 6
    
 ## Ejercicios recomendados
-- 
+- Capítulo 15
+   - Sesión 15.6: ejs 23, 25, 26 y 27
