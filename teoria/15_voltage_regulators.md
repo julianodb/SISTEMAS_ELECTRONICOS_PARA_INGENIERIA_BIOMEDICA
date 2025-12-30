@@ -84,7 +84,7 @@ Para las siguientes secciones supondremos que el voltaje después del filtro tie
 
 Como el objetivo es bajar el voltaje promedio de 10 V a 5 V, un primer circuito para lograr el objetivo es un divisor de voltaje:
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/voltage_divider.png" width="100">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/voltage_divider.png" width="80">
 
 Si $R_1=R_2$, $v_o =\frac{v_i}{2}$. Esto se aplica tanto al promedio cuanto al voltaje de rizo, por lo que la oscilación del voltaje de salida también se reducirá por la mitad, a 50 mV peak-to-peak.
 
@@ -182,14 +182,18 @@ Habrá una forma de reducir la corriente que fluye por el zener al mismo tiempo 
 
 Si el objetivo es amplificar, probablemente transistores están involucrados en la solución. El siguiente circuito implementa un regulador de voltaje que es capaz de mantener la corriente en el zener baja al mismo tiempo en que también entrega una corriente mucho más alta a la carga:
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/shunt_regulator_nmos.png" width="350">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/shunt_regulator_nmos.png" width="400">
 
-Figura 7: Regulador Shunt con MOSFET
+Figura 7.1: Regulador Shunt con MOSFET
 
 Comprobando que hay retroalimentación negativa para el amplificador operacional:
 - Asumiendo que el MOSFET $Q_1$ está saturado, tendremos que $I_D = k(V_{GS}-V_{GS(th)})^2$. Es decir, cuanto mayor $V_{GS}$, mayor $I_D$.
 - Por otro lado, cuanto mayor $I_D$, más corriente fluye por $R_S$, lo que baja $v_o$.
 - Finalmente, cuando $v_o$ aumenta, la salida no inversora del amp op aumenta, lo que induce un aumento en su salida. Como la salida del amp op es el $V_{GS}$ del MOSFET, un aumento de $v_o$ induce un aumento de $I_D$ que vuelve a disminuir $v_o$. Hay, por lo tanto, retroalimentación negativa, y podemos aplicar corto-circuito virtual.
+
+![shunt_feedback](../img/retroalimentacion_shunt.png)
+
+Figura 7.2: Comprobación de retroalimentación negativa del regulador shunt
 
 Aplicando corto-circuito virtual, tenemos:
 
@@ -217,9 +221,9 @@ $\eta_{regulador} \approx 0.49$
 
 Es decir, la eficiencia es de 49 %.
 
-Tanto el regulador de la figura 7, cuanto el de la figura 6 consumen una corriente constante de la entrada, incluso cuando la carga disminuye su consumo de corriente. Esto significa que la eficiencia del regulador disminuye drasticamente cuando el consumo de corriente de la carga es menor que el maximo. Como ejemplo, asumamos que la carga consume la mitad de la corriente maxima, es decir, 250 mA. En este caso:
+Tanto el regulador de la figura 7.1, cuanto el de la figura 6 consumen una corriente constante de la entrada, incluso cuando la carga disminuye su consumo de corriente. Esto significa que la eficiencia del regulador disminuye drasticamente cuando el consumo de corriente de la carga es menor que el maximo. Como ejemplo, asumamos que la carga consume la mitad de la corriente maxima, es decir, 250 mA. En este caso:
 
-$\eta_{regulador} = \frac{v_o i_{R_L}}{v_i (i_{R_L}+i_{Q_1}+i_{B})} = \frac{5*0.5}{10(0.5+0.01)}$
+$\eta_{regulador} = \frac{v_o i_{R_L}}{v_i (i_{R_L}+i_{Q_1}+i_{B})}$
 
 $\eta_{regulador} = \frac{v_o i_{R_L}}{v_i (i_{R_S}+i_{B})} = \frac{5*0.25}{10(0.5+0.01)}$
 
@@ -233,12 +237,16 @@ Para mejorar el regulador anterior, es necesario un cambio de paradigma. La baja
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/ldo_pmos.png" width="350">
 
-Figura 8: LDO
+Figura 8.1: LDO
 
 Comprobando que hay retroalimentación negativa para el amplificador operacional:
 - Asumiendo que el MOSFET $Q_1$ está saturado, tendremos que $I_D = k(V_{GS}-V_{GS(th)})^2$. Observamos que, como $Q_1$ es un MOSFET de canal p, tanto $I_D$ cuando $V_{GS(th)}$ son negativos y la corriente $I_D$ "aumenta" (en valor absoluto) cuando $V_{GS}$ se hace más negativo que $V_{GS(th)}$. Es decir, $I_D$ aumenta conforme $V_{GS}$ se pone más negativo.
 - Por otro lado, cuanto mayor $I_D$, más corriente fluye por $R_L$, lo que aumenta $v_o$.
 - Finalmente, cuando $v_o$ aumenta, la salida no inversora del amp op aumenta, lo que induce un aumento en su salida. Como la salida del amp op ($v_{out}$) se relaciona de forma positiva con el $V_{GS}$ del MOSFET ($V_{GS} = v_{out} - v_i$), un aumento de $v_o$ induce una disminución de $I_D$, lo que vuelve a disminuir $v_o$. Hay, por lo tanto, retroalimentación negativa, y podemos aplicar corto-circuito virtual.
+
+![reccap_waveform](../img/ldo_pmosfet_corrientes.png)
+
+Figura 8.2: Comprobación de retroalimentación negativa del LDO
 
 Aplicando corto-circuito virtual, tenemos el mismo resultado que en el tercer intento:
 
@@ -248,7 +256,7 @@ $v_o \frac{R_1}{R_1+R_2} = V_Z$
 
 $v_o = \frac{R_1+R_2}{R_1} V_Z$
 
-Sin embargo, la ventaja del circuito de la Figura 8 es que cuando la corriente en la carga es menor que la maxima, el MOSFET simplemente se ajusta para consumir menos corriente de la fuente, mejorando la eficiencia en dicho caso. Efectivamente el MOSFET actua como una resistencia variable, que cambia su valor de forma que el divisor de voltaje compusto por $Q_1$ y $R_L$ siempre resulte en un mismo $v_o$.
+Sin embargo, la ventaja del circuito de la Figura 8.1 es que cuando la corriente en la carga es menor que la maxima, el MOSFET simplemente se ajusta para consumir menos corriente de la fuente, mejorando la eficiencia en dicho caso. Efectivamente el MOSFET actua como una resistencia variable, que cambia su valor de forma que el divisor de voltaje compusto por $Q_1$ y $R_L$ siempre resulte en un mismo $v_o$.
 
 Por ejemplo, como visto anteriormente, si $V_Z=3.6\ V$, $R_1=12\ k\Omega$ y $R_2=4.7\ k\Omega$,
 
@@ -272,7 +280,7 @@ $\eta_{regulador} \approx 0.48$
 
 Es decir, la eficiencia es de 48 %.
 
-Se puede observar que la eficiencia ideal del circuito de la Figura 8, que se da cuando $i_b=0$, solo depende del voltaje de entrada y de salida:
+Se puede observar que la eficiencia ideal del circuito de la Figura 8.1, que se da cuando $i_b=0$, solo depende del voltaje de entrada y de salida:
 
 $\eta_{regulador} = \frac{v_o i_{R_L}}{v_i (i_{R_L}+\cancel{i_{B}})}$
 
@@ -284,7 +292,7 @@ $\eta_{max} = \frac{5}{10} = 0.5$
 
 ### Reguladores de Voltaje Lineales Comerciales
 
-Podemos reescribir la ecuación para eficiencia maxima del circuito de la Figura 8 definiendo el voltaje de desconexión ($v_{do}$, donde $do$ viene del inglés, drop-out) como la diferencia entre el voltaje de entrada y el de salida:
+Podemos reescribir la ecuación para eficiencia maxima del circuito de la Figura 8.1 definiendo el voltaje de desconexión ($v_{do}$, donde $do$ viene del inglés, drop-out) como la diferencia entre el voltaje de entrada y el de salida:
 
 $v_{do} = v_i - v_o$
 
@@ -296,7 +304,7 @@ $\eta_{max} = \frac{-v_{do} + v_i}{v_i} = 1 - \frac{v_{do}}{v_i}$
 
 Es decir, cuanto menor la diferencia entre el voltaje de entrada y salida ($v_{do}$), mayor la eficiencia maxima teórica. 
 
-En la practica el circuito de la Figura 8 requiere un valor mínimo de $v_{do}$ para funcionar. Por ejemplo, podemos considerar que la resistencia mínima que el MOSFET puede alcanzar es su valor de $R_{DS(ON)}$, cuando está en la región del triodo. Por otro lado, incluso cuando la resistencia es mínima, al entregar corriente a la carga aún habrá una caída de tensión entre la fuente y el dreno igual a $V_{do} = R_{DS(ON)} I_{R_L}$.
+En la practica el circuito de la Figura 8.1 requiere un valor mínimo de $v_{do}$ para funcionar. Por ejemplo, podemos considerar que la resistencia mínima que el MOSFET puede alcanzar es su valor de $R_{DS(ON)}$, cuando está en la región del triodo. Por otro lado, incluso cuando la resistencia es mínima, al entregar corriente a la carga aún habrá una caída de tensión entre la fuente y el dreno igual a $V_{do} = R_{DS(ON)} I_{R_L}$.
 
 Suponiendo que utilizamos un PMOS con $R_{DS(ON)} = 0.5\ \Omega$, y que la corriente maxima que entregamos a la carga es de 500 mA, esto significa que el $v_{do}$ mínimo sería de:
 
@@ -350,15 +358,12 @@ Figura 10: Voltaje de salida del LDO VREG3 vs corriente de la carga
    >
    > R: La eficiencia del regulador es de aproximadamente 49.6 %
 
-
 ## Conclusión
 
 En esta clase aprendimos como funcionan los reguladores de voltaje lineales, siendo el LDO la forma más común que se encuentran en los circuitos electrónicos. Una de las características de los reguladores lineales es que la eficiencia depende de la diferencia de voltaje entre la entrada y la salida. Si ésta es muy alta, la eficiencia será baja, y vice-versa. Además, también se caracterizan por una corriente de polarización o alimentación necesaria para generar los voltajes de referencia (por ejemplo con diodos zeners) y energizar los circuitos de retroalimentación (por ejemplo amplificadores operacionales). Otro punto importante es que la salida tiene un valor de voltaje más bajo que la entrada. ¿Será posible implementar un regulador de voltaje que produce un voltaje de salida más alto que la entrada ?
 
 ## Capítulos del libro
-- Capítulo 15
-   - sesiones 15.1, 15.5 y 15.6
+- 
    
 ## Ejercicios recomendados
-- Capítulo 15
-  - sesión 15.5 ejercicios 19, 21, 23, 26 y 27
+- 
