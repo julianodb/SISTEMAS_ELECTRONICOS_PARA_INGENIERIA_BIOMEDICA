@@ -42,15 +42,43 @@ Figura 5: Filtro de capacitor
 
 Durante la parte ascendiente de la señal rectificada, el capacitor se carga, elevando su voltaje junto con la señal de entrada hasta que llega al punto más alto. Una vez que la señal rectificada empieza a bajar, los diodos del rectificador dejan de conducir, y el capacitor mantiene el voltaje elevado. Como la carga consume cierta corriente, el capacitor se descarga, pero se elige un valor de capacitancia suficientemente alto para que el tiempo de descarga sea mucho más alto que el período de la señal de entrada. De ésta forma, el capacitor se vuelve a cargar en el siguiente ciclo de la señal rectificada, conforme muestra la figura a continuación:
 
-![reccap](../img/cap_filter_waveform.png)
+![reccap_waveform](../img/cap_filter_waveform.png)
 
 Figura 6: Señal del filtro de capacitor
+
+La amplitud de oscilación del voltaje filtrado se denomina voltaje de rizo.
+
+Podemos estimar la amplitud del voltaje de rizo calculando cuanto el voltaje del capacitor se descarga. La ecuación fundamental del capacitor relaciona la corriente con el cambio de voltaje:
+
+$I_C = C\frac{dV_C}{dt}$
+
+Si asumimos que la corriente es constante, significa que el voltaje en el capacitor cambia linealmente. En este caso, podemos cambiar la derivada por las variaciones de $V_C$ y $t$:
+
+$I_C = C\frac{\Delta V_C}{\Delta t}$
+
+Y, reescribiendo para determinar el cambio del voltaje en el capacitor:
+
+$\Delta V_C = \frac{I_C \Delta t}{C}$
+
+En el caso del filtro de capacitor la corriente seria igual a la corriente en la carga. Una aproximación incial para el valor de $\Delta t$ seria considerar que el capacitor se descarga durante la totalidad del período de la señal recificada. Recordando que la señal rectificada tiene la mitad del período de la señal sinusoidal, se tiene:
+
+$\Delta v_o = v_{rizo\ (peak-to-peak)} = \frac{I_{R_L} T}{2C}$
+
+Por ejemplo, si la corriente de carga es 50 mA y el capacitor es de $100\ \mu F$, considerando la frecuencia de la señal sinusoidal como 50 Hz, se tiene:
+
+$v_{rizo\ (peak-to-peak)} = \frac{I_{R_L} T}{2C} = \frac{0.05*0.02}{2*100*10^{-6}} = 5\ V$
+
+Que es un valor bastante alto principalmente si el voltaje de salida es bajo. Para mejorar el rizo, se puede aumentar el valor de la capacitancia. Por ejemplo, empleando 10 capacitores de $100\ \mu F$ en paralelo se podría obtener $1\ mF$ de capacitancia en total, y reducir el voltaje de rizo a:
+
+$v_{rizo\ (peak-to-peak)} = \frac{I_{R_L} T}{2C} = \frac{0.05*0.02}{2*1*10^{-3}} = 0.5\ V$
+
+Una mejor aproximación para el voltaje de rizo considera que el capacitor no se descarga durante la totalidad del período de la señal rectificada, y se puede encontrar en el Apendice B.2 del libro.
 
 ## Reguladores de Voltaje Lineales
 
 Incluso con buenos filtros, la salida del rectificador filtrada no es completamente constante. Además, es posible que el valor de voltaje promedio obtenido no sea el necesario para alimentar los otros circuitos del sistema electrónico. Por lo tanto, se requiere un último bloque en la fuente de alimentación que termina de estabilizar el voltaje y también ajusta su valor. Este último bloque se conoce como regulador de voltaje.
 
-Para las siguientes secciones supondremos que el voltaje después del filtro tiene un valor promedito de 10 V y una oscilación (rizo) de 100 mV peak-to-peak, y que se requiere un voltaje regulado de $5\ V \pm 10\ mV$. Supongamos también que los circuitos que necesitan los 5 V de alimentación consumen hasta 500 mA en total.
+Para las siguientes secciones supondremos que el voltaje después del filtro tiene un valor promedito de 10 V y una oscilación (voltaje de rizo) de 100 mV peak-to-peak, y que se requiere un voltaje regulado de $5\ V \pm 10\ mV$. Supongamos también que los circuitos que necesitan los 5 V de alimentación consumen hasta 500 mA en total.
 
 #### Primer intento de Regulador
 
@@ -58,7 +86,7 @@ Como el objetivo es bajar el voltaje promedio de 10 V a 5 V, un primer circuito 
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/voltage_divider.png" width="100">
 
-Si $R_1=R_2$, $v_o =\frac{v_i}{2}$. Esto se aplica tanto al promedio cuanto al rizo, por lo que la oscilación del voltaje de salida también se reducirá por la mitad, a 50 mV peak-to-peak.
+Si $R_1=R_2$, $v_o =\frac{v_i}{2}$. Esto se aplica tanto al promedio cuanto al voltaje de rizo, por lo que la oscilación del voltaje de salida también se reducirá por la mitad, a 50 mV peak-to-peak.
 
 La última restricción del diseño es que el circuito sea capaz de alimentar hasta 500 mA de corriente. Al considerar que el circuito que se conecta a $v_o$ consume $i_{carga} = 500 mA$, podemos calcular de qué forma se afecta $v_o$, aplicando LKC:
 
