@@ -9,7 +9,7 @@
     
     > por divisor de voltaje,
     >
-    > $H(s) = \frac{RCs}{1+RCs}$
+    > $H(s) = \frac{RCs}{1+RCs}$ (+0.3pt)
     >
     > por lo tanto,
     >
@@ -20,7 +20,7 @@
     > $A_v(\omega) = \frac{0.068\omega}{\sqrt{1+(0.068\omega)^2}}$
 
     1. $\omega = 1\ rad/s$
-       > $A_v(\omega = 1) = \frac{0.068}{\sqrt{1+(0.068)^2}}$ (+0.3pt)
+       > $A_v(\omega = 1) = \frac{0.068}{\sqrt{1+(0.068)^2}}$ (+0.2pt)
        >
        > $A_v(\omega = 1) \approx 0.068$ 
        >
@@ -30,7 +30,7 @@
        >
        > $|V_{o}| \approx 0.068 \times 10 = 0.68\ V$
     1. $\omega = 10\ rad/s$
-       > $A_v(\omega = 10) = \frac{0.068 \times 10}{\sqrt{1+(0.068\times 10)^2}}$ (+0.3pt)
+       > $A_v(\omega = 10) = \frac{0.068 \times 10}{\sqrt{1+(0.068\times 10)^2}}$ (+0.2pt)
        >
        > $A_v(\omega = 10) \approx 0.56$ 
        >
@@ -40,7 +40,7 @@
        >
        > $|V_{o}| \approx 0.56 \times 10 = 5.6\ V$
     1. $\omega = 100\ rad/s$
-       > $A_v(\omega = 100) = \frac{0.068 \times 100}{\sqrt{1+(0.068\times 100)^2}}$ (+0.3pt)
+       > $A_v(\omega = 100) = \frac{0.068 \times 100}{\sqrt{1+(0.068\times 100)^2}}$ (+0.2pt)
        >
        > $A_v(\omega = 100) \approx 0.99$ 
        >
