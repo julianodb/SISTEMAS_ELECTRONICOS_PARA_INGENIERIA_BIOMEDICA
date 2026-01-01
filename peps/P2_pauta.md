@@ -325,14 +325,14 @@
 
    1. Cuál es el valor de $V_D$ si la temperatura es -65 °C (y $I_F = 5\ mA$).
 
-      > $V_T = \frac{kT}{q} = \frac{1.38 * 10^{-23} * (-65+273)}{1.6*10^{-19}} \approx 17.94\ mA$ (+0.2pt)
+      > $V_T = \frac{kT}{q} = \frac{1.38 \times  10^{-23} \times  (-65+273)}{1.6\times 10^{-19}} \approx 17.94\ mA$ (+0.2pt)
       >
-      > $V_D = nV_T\ln{(\frac{I_D+I_S}{I_S})} = 17.94*10^{-3} \ln{(\frac{5*10^{-3}+0.05*10^{-12}}{0.05*10^{-12}})} \approx 0.45\ V$ (+0.25pt)
+      > $V_D = nV_T\ln{(\frac{I_D+I_S}{I_S})} = 17.94\times 10^{-3} \ln{(\frac{5\times 10^{-3}+0.05\times 10^{-12}}{0.05\times 10^{-12}})} \approx 0.45\ V$ (+0.25pt)
    1. Cuál es el valor de $V_D$ si la temperatura es +175 °C (y $I_F = 5\ mA$).
 
-      > $V_T = \frac{kT}{q} = \frac{1.38 * 10^{-23} * (175+273)}{1.6*10^{-19}} \approx 38.64\ mA$ (+0.2pt)
+      > $V_T = \frac{kT}{q} = \frac{1.38 \times  10^{-23} \times  (175+273)}{1.6\times 10^{-19}} \approx 38.64\ mA$ (+0.2pt)
       >
-      > $V_D = nV_T\ln{(\frac{I_D+I_S}{I_S})} = 38.64*10^{-3} \ln{(\frac{5*10^{-3}+0.05*10^{-12}}{0.05*10^{-12}})} \approx 0.98\ V$ (+0.25pt)
+      > $V_D = nV_T\ln{(\frac{I_D+I_S}{I_S})} = 38.64\times 10^{-3} \ln{(\frac{5\times 10^{-3}+0.05\times 10^{-12}}{0.05\times 10^{-12}})} \approx 0.98\ V$ (+0.25pt)
 
 # Fórmulas
 
