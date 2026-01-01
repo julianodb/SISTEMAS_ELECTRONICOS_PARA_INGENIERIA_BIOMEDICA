@@ -173,7 +173,7 @@
     1. Considere que $A = (1+\frac{R_a}{R_b})$. Al aumentar el valor de A, eventualmente el filtro se vuelve inestable. Determine el valor de A en que esto ocurre y con qué frecuencia oscila $v_o$, en Hz. Asuma nuevamente que $R=1\ k\Omega$ y $C=0.1\ \mu F$. ($\cancel{0.7}\ 0.8pt$)
          > Considerando la división del circuito conforme la siguiente imagen, donde la entrada de $A$ es $V_+$, su salida es $v_o$, la entrada de $\beta$ es $v_o$ y su salida es $V_+$ (+0.2pt):
          >
-         > ![ABeta](/img/sallen_key_band_pass_2_A_beta.png)
+         > ![ABeta](../img/sallen_key_band_pass_2_A_beta.png)
          >
          > La función de transferencia del bloque A es simplemente $1+\frac{R_a}{R_b} = A$. (+0.1pt)
          >
