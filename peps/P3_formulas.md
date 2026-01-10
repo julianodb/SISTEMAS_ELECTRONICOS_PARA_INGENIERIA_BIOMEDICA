@@ -3,14 +3,18 @@
 
 ## Fórmulas
 
-$$ V_o = V_{final} - (V_{final}-V_{inicial})e^{\frac{-t}{RC}} $$
-$$ T_t = R C \ln{\frac{1}{1-\beta}} $$
-$$ T = \frac{1}{f} = 2 R C \ln{\frac{1+\beta}{1-\beta}} $$
-$$ \beta A = Ganancia\ de\ Malla $$
-$$ \beta A = 1 $$
+$$ V_{DS} = R_{DS(ON)} I_D$$
+$$ I_D = k(V_{GS}-V_{GS(th)})^2 $$
+$$V_{GS} < V_{GS(th)}$$
+$$ V_{DS} < V_{GS}-V_{GS(th)}$$
+$$ V_{DS} > V_{GS}-V_{GS(th)}$$
+$$ \Delta I_{D} = g_{ _{FS}} \Delta V_{GS}$$
+$$ g_{ _{FS}} = k(V_{GS}-V_{GS(th)})  $$
 $$ \eta = \frac{V_o I_o}{V_i I_i}  $$
 $$ \eta = \frac{V_o}{V_i} \frac{I_o}{I_o + I_Q} $$
 $$ V_{DO} = V_i - V_o$$
 $$ V_o = D V_i$$
 $$ V_o = \frac{1}{1-D} V_i$$
 $$ V_o = \frac{D}{D-1} V_i$$
+$$ T = \frac{1}{f} = 2 R C \ln{\frac{1+\beta}{1-\beta}} $$
+$$ T_t = R C \ln{\frac{1}{1-\beta}} $$
