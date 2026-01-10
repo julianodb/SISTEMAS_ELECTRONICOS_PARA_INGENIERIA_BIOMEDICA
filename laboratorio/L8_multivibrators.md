@@ -15,10 +15,6 @@
 | | cables, alicate, etc | | 
 | | Placa de Circuito Impreso | 1 | 
 
-## Introducción
-
-Pongan atención a la explicación sobre multivibradores monoestables y astables.
-
 ## Procedimiento experimental e informe
 
 Nota: Ante cualquier duda en el uso de los instrumentos, o las conexiones eléctricas, consulten al profesor.
