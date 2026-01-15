@@ -23,6 +23,7 @@ Grupos con 3 miembros
 
 | número de placas funcionales | nota |
 | -- | -- |
+| 0 | 1 |
 | 0.5 | 3.9 |
 | 1 | 5.4 |
 | 1.5 | 6.2 |
@@ -34,6 +35,7 @@ Grupos con 4 miembros
 
 | número de placas funcionales | nota |
 | -- | -- |
+| 0 | 1 |
 | 0.5 | 3.4 |
 | 1 | 4.8|
 | 1.5 | 5.7 |
@@ -44,3 +46,25 @@ Grupos con 4 miembros
 | 4 | 7 |
 
 A criterio del profesor, placas "parcialmente funcionales" podrán recibir una nota parcial.
+
+Se adjuntan diagramas de los circuitos completos a continuación
+
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T5_stethoscope_board_1_so_far.png" width="800">
+
+Figura 1: Circuito de la "Placa 1"
+
+![21_1](../img/L6_sthetoscope_with_filter.png)
+
+Figura 2: Sugerencia de como soldar los componentes en la stripboard
+
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T5_stethoscope_board_2_so_far.png" width="800">
+
+Figura 3: Circuito de la "Placa 2"
+
+![21_1](../img/stethoscope_top.png)
+
+Figura 4: Placa 2 - TOP (vista superior)
+
+![21_1](../img/stethoscope_bottom.png)
+
+Figura 5: Placa 2 - BOTTOM (vista inferior)
