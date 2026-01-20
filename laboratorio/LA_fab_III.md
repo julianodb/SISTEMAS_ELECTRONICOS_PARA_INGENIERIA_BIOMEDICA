@@ -49,15 +49,15 @@ A criterio del profesor, placas "parcialmente funcionales" podrán recibir una n
 
 Se adjuntan diagramas de los circuitos completos a continuación
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T5_stethoscope_board_1_so_far.png" width="800">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T9_stethoscope_board_1.png" width="800">
 
 Figura 1: Circuito de la "Placa 1"
 
-![21_1](../img/L6_sthetoscope_with_filter.png)
+![21_1](../img/T9_board_1_layout.png)
 
 Figura 2: Sugerencia de como soldar los componentes en la stripboard
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T5_stethoscope_board_2_so_far.png" width="800">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T9_stethoscope_board_2.png" width="800">
 
 Figura 3: Circuito de la "Placa 2"
 
