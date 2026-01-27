@@ -1,4 +1,5 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 9 de Sistemas Electrónicos
+# Opción 1
 #### Segundo Semestre de 2025
 
 ## Recursos del pañol
