@@ -10,7 +10,9 @@ $$ V_{DS} < V_{GS}-V_{GS(th)}$$
 $$ V_{DS} > V_{GS}-V_{GS(th)}$$
 $$ \Delta I_{D} = g_{ _{FS}} \Delta V_{GS}$$
 $$ g_{ _{FS}} = k(V_{GS}-V_{GS(th)})  $$
+$$ k = \frac{g_{ _{FS}}^2}{I_D}  $$
 $$ \eta = \frac{V_o I_o}{V_i I_i}  $$
+$$ \eta_{teorico} = \frac{V_o}{V_i}  $$
 $$ \eta = \frac{V_o}{V_i} \frac{I_o}{I_o + I_Q} $$
 $$ V_{DO} = V_i - V_o$$
 $$ V_o = D V_i$$
