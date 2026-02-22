@@ -121,8 +121,8 @@ Respecto a las demás reglas de docencia, este curso se adscribe a las [DIRECTRI
 ### Clases
 
 1. Introducción y contexto. (clase [01](/teoria/01_Introduccion.md))
-1. Amplificadores operacionales y sus aplicaciones (clases [02](/teoria/02_amplifiers.md), [03](/teoria/03_opamp.md), [04](/teoria/04_opamp_II.md), [06](/teoria/06_opamp_III.md))
-1. Filtros activos y pasivos (clases [05](/teoria/05_transient.md), [07](/teoria/07_frec.md), [08](/teoria/08_frec_II.md) y [12](/teoria/12_frec_III.md))
-1. Osciladores (clases [09](/teoria/09_oscilators.md),[17](/teoria/17_multivibrators.md), [18](/teoria/18_multivibrators_II.md) y [20](/teoria/20_pre_P3.md))
-1. Dispositivos electronicos semiconductores: materiales y física (clase [19](/teoria/19_semiconductors.md)), diodos (clases [10](/teoria/10_diodes.md), [11](/teoria/11_diodes_II.md)) y transistores (clases [13](/teoria/13_MOSFET_I.md) y [14](/teoria/14_MOSFET_II.md))
-1. Fuentes de alimentación conmutadas (clases [15](/teoria/15_voltage_regulators.md) y [16](/teoria/16_voltage_regulators_II.md))
+1. Amplificadores operacionales y sus aplicaciones (clases [06](/teoria/06_amplifiers.md), [07](/teoria/07_opamp.md), [08](/teoria/08_opamp_II.md), [10](/teoria/10_opamp_III.md))
+1. Filtros activos y pasivos (clases [09](/teoria/09_transient.md), [11](/teoria/11_frec.md), [12](/teoria/12_frec_II.md) y [14](/teoria/14_frec_III.md))
+1. Osciladores (clases [13](/teoria/13_oscilators.md),[15](/teoria/15_multivibrators.md), [16](/teoria/16_multivibrators_II.md) y [20](/teoria/20_pre_P3.md))
+1. Dispositivos electronicos semiconductores: materiales y física (clase [19](/teoria/19_semiconductors.md)), diodos (clases [02](/teoria/02_diodes.md), [03](/teoria/03_diodes_II.md)) y transistores (clases [04](/teoria/04_MOSFET_I.md) y [05](/teoria/05_MOSFET_II.md))
+1. Fuentes de alimentación conmutadas (clases [17](/teoria/17_voltage_regulators.md) y [18](/teoria/18_voltage_regulators_II.md))

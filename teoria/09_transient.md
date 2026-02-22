@@ -199,7 +199,7 @@ Algo para reflexionar: ¿como sería la respuesta transitoria si $H(s)$ tiene m�
 
 Finalmente, discutiremos una forma de encontrar $H(s)$ sin tener que escribir ecuaciones diferenciales.
 
-Para esto, en vez de resolver el circuito eléctrico y después aplicar la transformada de laplace, podríamos primero aplicar la transformada de laplace a cada componente, y después resolver el circuito en el dominio de laplace. Al hacerlo, obtenemos las siguiente relación para la resistencia:
+Para esto, en vez de resolver el circuito eléctrico y después aplicar la transformada de laplace, podríamos primero aplicar la transformada de laplace a cada componente, y después resolver el circuito en el dominio de laplace. Al hacerlo, obtenemos la siguiente relación para la resistencia:
 
 $v(t) = R i(t)$
 

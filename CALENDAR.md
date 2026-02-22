@@ -82,25 +82,25 @@
 | #  | Titulo |  Descripción |  Trabajo |
 | -- | --     | -- | -- | 
 | [01](/teoria/01_Introduccion.md) | Introducción | organización de la asignatura, motivación, resúmen de teoría de circuitos, convenciones y simbología en esquemáticos | |
-| [02](/teoria/02_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  inicio $T_1$ |
-| [03](/teoria/03_opamp.md) | Amplificadores Operacionales | Amplificador Operacional, comparador, buffer |  |
-| [04](/teoria/04_opamp_II.md) | Aplicaciones de Amplificadores operacionales: dc | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | inicio $T_2$ |
-| [05](/teoria/05_transient.md) | Respuesta transitoria y estado estacionario | Capacitancia, transitórios y estado estacionario, aplicación de Laplace |  |
-| [06](/teoria/06_opamp_III.md) | Aplicaciones de Amplificadores operacionales: ac | Circuitos con op amps y elementos que almacenan energía, diferenciador, integrador | | 
-| [P1](/teoria/P1.md) | PEP1 | Amplificadores DC y AC, respuesta transitoria y estado estacionario | inicio $T_3$ |
-| [07](/teoria/07_frec.md) | Respuesta en frecuencia | Respuesta en frecuencia, Relación con Función de Transferencia, filtros pasivos, diagrama de Bode |  |
-| [08](/teoria/08_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_4$ | 
-| [09](/teoria/09_oscilators.md) | Osciladores | Osciladores |  | 
-| [10](/teoria/10_diodes.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  inicio $T_5$ |
-| [11](/teoria/11_diodes_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos | | 
-| [12](/teoria/12_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
+| [02](/teoria/02_diodes.md) | Diodos y Aplicaciones | Descipción del diodo (ideal, modelo con $V_f$, modelo con $V_Z$), circuitos con diodos, LEDs, Zeners |  inicio $T_5$ |
+| [03](/teoria/03_diodes_II.md) | Diodos y Aplicaciones II | Ecuación de Shockley, curva de carga, hojas de datos | | 
+| [04](/teoria/04_MOSFET_I.md) | Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave |  |
+| [05](/teoria/05_MOSFET_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de pequeñas señales, Amplificador dreno común, amplificador diferencial| inicio $T_6$ |
+| [06](/teoria/06_amplifiers.md) | Amplificadores | $Z_i$, $Z_o$, $A_{V}$, $A_{V_{NL}}$, $A_{V_L}$, Amplificadores |  inicio $T_1$ |
+| [07](/teoria/07_opamp.md) | Amplificadores Operacionales | Amplificador Operacional, comparador, buffer |  |
+| [08](/teoria/08_opamp_II.md) | Aplicaciones de Amplificadores operacionales: dc | amplificador no-inversor, buffer, sumador ponderado, amplificador de diferencias, amplificador de instrumentación | inicio $T_2$ |
+| [P1](/teoria/P1.md) | PEP1 | ??? Amplificadores DC y AC, respuesta transitoria y estado estacionario |  |
+| [09](/teoria/09_transient.md) | Respuesta transitoria y estado estacionario | Capacitancia, transitórios y estado estacionario, aplicación de Laplace |  |
+| [10](/teoria/10_opamp_III.md) | Aplicaciones de Amplificadores operacionales: ac | Circuitos con op amps y elementos que almacenan energía, diferenciador, integrador | | 
+| [11](/teoria/11_frec.md) | Respuesta en frecuencia | Respuesta en frecuencia, Relación con Función de Transferencia, filtros pasivos, diagrama de Bode |  |
+| [12](/teoria/12_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_4$ | 
+| [13](/teoria/13_oscilators.md) | Osciladores | Osciladores |  | 
+| [14](/teoria/14_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
 | [P2](/teoria/P2.md) | PEP2 | respuesta en frecuencia, filtros activos, osciladores y diodos |  | | 
-| [13](/teoria/13_MOSFET_I.md) | Transistor de efecto de campo metal-óxido-semiconductor (MOSFET) | Descripción del mosfet (terminales, convenciones, ecuaciones), modos de operacion: saturado y activo, uso del mosfet como llave |  |
-| [14](/teoria/14_MOSFET_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de grandes señales, Amplificador dreno común| inicio $T_6$ |
-| [15](/teoria/15_voltage_regulators.md) | Reguladores de Voltaje + Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | | 
-| [16](/teoria/16_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
-| [17](/teoria/17_multivibrators.md) | Multivibradores | multivibradores bi-estables |  | 
-| [18](/teoria/18_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable | inicio $T_8$  | 
+| [15](/teoria/15_multivibrators.md) | Multivibradores | multivibradores bi-estables |  | 
+| [16](/teoria/16_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable | inicio $T_8$  | 
+| [17](/teoria/17_voltage_regulators.md) | Reguladores de Voltaje + Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | | 
+| [18](/teoria/18_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
 | [19](/teoria/19_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |
 | [20](/teoria/20_pre_P3.md) | Ejercicios pre-PEP3 |  | inicio $T_9$ | 
 | P3 | PEP3 | mosfet, reguladores de voltaje, fuentes conmutadas, multivibradores y semiconductores | |
