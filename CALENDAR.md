@@ -7,54 +7,54 @@
 |    | 30 | 31       |  1 |  2        |  3 |  4 |  5 |
 |  1 | II | 01 02 [T1|    | A+B:L1    | FF |    |    |
 |    |  6 |  7       |  8 |  9        | 10 | 11 | 12 |
-|    |    | 03 04    |    | A:L2 B:E1 |    |    |    |
+|  2 | T1]| 03 04 [T2|    | A:L2 B:E1 |    |    |    |
 |    | 13 | 14       | 15 | 16        | 17 | 18 | 19 |
-|    |    | 05 06    |    | A:E1 B:L2 |    |    |    |
+|  3 | T2]| 05 06 [T3|    | A:E1 B:L2 |    |    |    |
 |    | 20 | 21       | 22 | 23        | 24 | 25 | 26 |
-|    |    | P1       |    | A+B:L3    |    |    |    |
+|  4 | T3]| 07 08 [T4|    | A+B:L3 T4]|    |    |    |
 |    | 27 | 28       | 29 | 30        | 1  | 2  | 3  |
-|    |    | 07 08    |    | A:E2 B:L4 | FF |    |    |
+|  5 |    | A+B:E2   |    | P1        | FF |    |    |
 
 ## MAYO / 2026
 
 |Sem |Lun |Mar       |Mie |Jue        |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:        |:-: |:-: |:-: |
 |    |  4 |  5       |  6 |  7        |  8 |  9 | 10 |
-|    |    | 09 10    |    | A:L4 B:E2 |    |    |    |
+|  6 |    | 09 10    |    | A+B:E3    |    |    |    |
 |    | 11 | 12       | 13 | 14        | 15 | 16 | 17 |
-|    |    | 11 12    |    | A:L5 B:E3 |    |    |    |
+|  7 |    | 11 12    |    | A:E4 B:L4 |    |    |    |
 |    | 18 | 19       | 20 | 21        | 22 | 23 | 24 |
 |    | RR | RR       | RR | RR        | RR | RR |    |
 |    | 25 | 26       | 27 | 28        | 29 | 30 | 31 |
-|    |    | A+B:L6   |    | A:E3 B:L5 |    |    |    |
+|  8 |    | 13 14    |    | A:L4 B:E4 |    |    |    |
 
 ## JUNIO / 2026
 
 |Sem |Lun |Mar       |Mie |Jue        |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:        |:-: |:-: |:-: |
 |    |  1 |  2       |  3 |  4        |  5 |  6 |  7 |
-|    |    | P2       |    | A+B:L6    |    |    |    |
+|  9 |    | A+B:L5   |    | P2        |    |    |    |
 |    |  8 |  9       | 10 | 11        | 12 | 13 | 14 |
-|    |    | 13 14    |    | A:E4 B:L7 |    |    |    |
+| 10 |    | 15 16    |    | A:L6 B:E5 |    |    |    |
 |    | 15 | 16       | 17 | 18        | 19 | 20 | 21 |
-|    |    | 15 16    |    | A:L7 B:E4 |    |    |    |
+| 11 |    | 17 18    |    | A:E5 B:L6 |    |    |    |
 |    | 22 | 23       | 24 | 25        | 26 | 27 | 28 |
-|    |    | 17 18    |    | A:L8 B:E5 |    |    |    |
+| 12 |    | 19 20    |    | A:E6 B:L7 |    |    |    |
 
 ## JULIO / 2026
 
 |Sem |Lun |Mar       |Mie |Jue        |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:        |:-: |:-: |:-: |
 |    | 29 | 30       |  1 |  2        |  3 |  4 |  5 |
-|    | FF | 19 20    |    | A:E5 B:L8 |    |    |    |
+| 13 | FF | A+B:L8   |    | A:L7 B:E6 |    |    |    |
 |    |  6 |  7       |  8 |  9        | 10 | 11 | 12 |
-|    |    | P3       |    | A:E6 B:L9 |    |    |    |
+| 14 |    | P3       |    | A+B:L8    |    |    |    |
 |    | 13 | 14       | 15 | 16        | 17 | 18 | 19 |
-|    |    | A+B:LA   |    | FF        | FF |    |    |
+| 15 |    | A+B:L8   |    | FF        | FF |    |    |
 |    | 20 | 21       | 22 | 23        | 24 | 25 | 26 |
-|    |    | A+B:LA   |    | A:L9 B:E6 |    |    |    |
+| 16 |    |A+B:L8 POR|    | A+B:L8    | TT?|    |    |
 |    | 27 | 28       | 29 | 30        | 1  | 2  | 3  |
-|    |    | A+B:LA   |    | A+B:LA    | TT |    |    |
+| 17?|    |          |    |           | TT?|    |    |
 
 ## Leyenda
 
@@ -106,16 +106,22 @@
 | P3 | PEP3 | mosfet, reguladores de voltaje, fuentes conmutadas, multivibradores y semiconductores | |
 | PO | POR | Prueba Optativa Recuperativa | |
 
-# Laboratórios
+# Laboratórios Presenciales
 
 - [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
 - [L1](/laboratorio/L1_intro.md): Instrumentación básica utilizada en electrónica, resistencias especiales
-- [L2](/laboratorio/L2_opamp.md): amplificador operacional y aplicaciones en CC
+- [L2](/laboratorio/L2_diodes.md): Diodo DC y LEDs
 - [L3](/laboratorio/L3_fab_I.md): Técnicas de Fabricación y Prototipaje en Electrónica I
 - [L4](/laboratorio/L4_frec.md): respuesta en frecuencia / filtros activos. 
-- [L5](/laboratorio/L5_diodes.md): Diodo DC y LEDs
-- [L6](/laboratorio/L6_fab_II.md): Técnicas de Fabricación y Prototipaje en Electrónica II
-- [L7](/laboratorio/L7_mosfet.md): transistor mosfet (curvas características) + corte y saturación. 
-- [L8](/laboratorio/L8_multivibrators.md): multivibradores
-- [L9](/laboratorio/L9_vreg.md): Reguladores Conmutados
-- [LA](/laboratorio/LA_fab_III.md): Técnicas de Fabricación y Prototipaje en Electrónica III
+<!-- - [L5](/laboratorio/L5_ampop.md): amplificador operacional y aplicaciones en CC -->
+- [L5](/laboratorio/L5_fab_II.md): Técnicas de Fabricación y Prototipaje en Electrónica II
+<!-- - [L7](/laboratorio/L7_mosfet.md): transistor mosfet (curvas características) + corte y saturación. --> 
+- [L6](/laboratorio/L6_multivibrators.md): multivibradores
+- [L7](/laboratorio/L7_vreg.md): Reguladores Conmutados
+- [L8](/laboratorio/L8_fab_III.md): Técnicas de Fabricación y Prototipaje en Electrónica III
+
+# Laboratorios Online
+
+- E0: Laboratorio Online cero: sin nota, solo para familiarización con la plataforma
+- E1: Laboratorio Online 1: Diodos
+- E2: Laboratorio Online 2: Transistores
