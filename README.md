@@ -1,4 +1,4 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2/2025
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 1/2026
 ##### enfoque Ingeniería Biomédia
 
 ## Página de la asignatura
@@ -11,7 +11,7 @@
 - Martes: bloques 5 y 6 (M5: 15:20 - 16:40, M6: 16:55 - 18:15), EAO532
 
 ## Horário Laboratório
-- Jueves, bloque 6 (J6: 16:55 - 18:15), Laboratorio de Electromedicina y Mediciones Fisiológicas
+- Jueves, bloques 5 y 6 (J5: 15:20 - 16:40, J6: 16:55 - 18:15), Laboratorio de Electromedicina y Mediciones Fisiológicas
 
 ## Profesor
 
@@ -19,7 +19,7 @@
 
 ### Ayudante
 
-- Joaquín Marchant (joaquin.marchant.l @usach.cl)
+- 
 
 ## Resultados de Aprendizaje - Teoría
 
