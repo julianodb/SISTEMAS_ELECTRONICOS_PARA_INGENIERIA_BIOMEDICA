@@ -117,7 +117,7 @@
 - [L5](/laboratorio/L5_fab_II.md): Técnicas de Fabricación y Prototipaje en Electrónica II
 <!-- - [L7](/laboratorio/L7_mosfet.md): transistor mosfet (curvas características) + corte y saturación. --> 
 - [L6](/laboratorio/L6_multivibrators.md): multivibradores
-- L7 [opcion 1](/laboratorio/L7_vreg_option_1.md) y [opcion 2](/laboratorio/L7_vreg_option_2.md): Reguladores Conmutados
+- L7 [opcion 1](/laboratorio/L7_vreg_option_1.md) y [opcion 2](/laboratorio/L7_vreg_option_2.md): Fuentes de Poder / Reguladores de Voltaje
 - [L8](/laboratorio/L8_fab_III.md): Técnicas de Fabricación y Prototipaje en Electrónica III
 
 # Laboratorios Online
@@ -125,3 +125,7 @@
 - E0: Laboratorio Online cero: sin nota, solo para familiarización con la plataforma
 - E1: Laboratorio Online 1: Diodos
 - E2: Laboratorio Online 2: Transistores
+- E3: Laboratorio Online 3: Amplificador operacional y aplicaciones en CC
+- E4: Laboratorio Online 4: Respuesta en frecuencia / filtros activos
+- E5: Laboratorio Online 5: Multivibradores
+- E6: Laboratorio Online 6: Fuentes de Poder / Reguladores de Voltaje
