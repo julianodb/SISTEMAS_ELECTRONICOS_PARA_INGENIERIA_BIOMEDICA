@@ -41,6 +41,11 @@ La tensión de polarización en directa ($V_f$) es una constante para cada diodo
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_led.png" width="50">
 
+## Tareas
+
+1. Practicar Laboratorio Online 0
+2. Realizar Trabajo 1 (en grupo) y entregarlo en Lunes via email
+
 ## Bibliografia
 
 Boylestad, R. & Nashelsky, L. (2009). Electrónica: Teoría de circuitos y dispositivos electrónicos (10ma.ed.). 

@@ -14,15 +14,10 @@ Electrónica Analógica
 
 [Texas Instruments Medical Applications](https://www.ti.com/applications/industrial/medical/overview.html)
 
-![01_app](../img/01_aplicaciones6.png)
+![01_app](../img/01_aplicaciones7.png)
 
 ## Trabajos
 
-Un estetoscopio es un aparato destinado a auscultar los sonidos del pecho y otras partes del cuerpo, ampliándolos con la menor deformación posible. También se conoce como fonendoscopio, un nombre que se asocia a la variedad de estetoscopio comúnmente utilizada por médicos. 
-
-![sthetoscope](../img/stethoscope.jpg)
-
-Un estetoscopio electrónico es un dispositivo médico que amplifica electrónicamente los sonidos corporales para facilitar la auscultación, especialmente de sonidos débiles o sutiles, como ciertos soplos cardíacos. A diferencia de los estetoscopios tradicionales, los electrónicos pueden filtrar el ruido ambiental y a menudo permiten grabar y reproducir los sonidos para su análisis posterior.
 
 Los sistemas electrónicos de los estetoscopios electrónicos utilizan los componentes y circuitos estudiados en esta asignatura. Por lo tanto, este semestre su grupo desarrollará un estetoscopio electronico para reforzar y ejemplificar la aplicación de los conocimientos obtenidos. El dispositivo propuesto será capaz de amplificar los sonidos medidos además de estimar la frecuencia cardíaca.
 
@@ -32,7 +27,7 @@ El proyecto será implementado por 5 grupos distintos, cada uno con 3 o 4 estudi
 
 ## Notación
 
-- Voltajes, corrientes, conexiones externas, entradas, salidas
+- Voltajes, corrientes, conexiones externas, entradas, salidas, fuentes
 - $\lceil x \rceil$
 - $\therefore$
 - $ \implies $
@@ -45,6 +40,7 @@ El proyecto será implementado por 5 grupos distintos, cada uno con 3 o 4 estudi
 
 - Impedancia
 - Potenciometro
+- Transformador
 - BODE
 - Circuito Equivalente de Thevenin / Norton
 - Fracciones Parciales
@@ -84,4 +80,13 @@ Multímetro y mediciones de baterias, resistencias fijas y resistencias variable
 
 Protoboard y buenas practicas para conexión de circuitos electrónicos
 
+![21_1](../img/23_breadboard.png)
+
 Osciloscopio y medición de voltajes cambiantes en el tiempo.
+
+## Tareas
+
+1. Inscribir Duplas de laboratorio
+2. Inscribir Grupos para los Trabajos
+3. Avisar si hay topes de PEPs con anticipación
+4. Practicar Laboratorio Online 0
