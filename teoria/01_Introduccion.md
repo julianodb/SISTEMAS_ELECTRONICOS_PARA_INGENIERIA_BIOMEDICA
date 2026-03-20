@@ -18,10 +18,11 @@ Electrónica Analógica
 
 ## Trabajos
 
+Los sensores capacitivos ...
 
-Los sistemas electrónicos de los estetoscopios electrónicos utilizan los componentes y circuitos estudiados en esta asignatura. Por lo tanto, este semestre su grupo desarrollará un estetoscopio electronico para reforzar y ejemplificar la aplicación de los conocimientos obtenidos. El dispositivo propuesto será capaz de amplificar los sonidos medidos además de estimar la frecuencia cardíaca.
+Los sistemas electrónicos de los sensores capacitivos utilizan los componentes y circuitos estudiados en esta asignatura. Por lo tanto, este semestre su grupo desarrollará un sensor capacitivo para reforzar y ejemplificar la aplicación de los conocimientos obtenidos. El dispositivo propuesto será capaz de producir un voltaje proporcional a la distancia entre el usuario y el sensor, y visualizar el voltaje a través de 5 luces. También podrá funcionar en modo diferencial, en el cual se conectan dos sensores y el voltaje resultante es la diferencia entre la señal de los dos sensores. Este tipo de configuración se puede utilizar para implementar un botón deslizante.
 
-El proyecto será implementado por 5 grupos distintos, cada uno con 3 o 4 estudiantes. Cada grupo implementará un prototipo ligeramente distinto, de acuerdo al color del LED que se utilizará: Rojo, Amarillo, Azul, Verde y Blanco. El diseño del prototipo se dividirá en 9 trabajos, conforme la imagen a continuación.
+El proyecto será implementado por 4 grupos distintos, cada uno con 3 estudiantes. Cada grupo implementará un prototipo ligeramente distinto, de acuerdo al color del LED que se utilizará: Rojo, Amarillo, Azul y Verde. El diseño del prototipo se dividirá en 9 trabajos, conforme la imagen a continuación.
 
 ![TX](../img/TX.png)
 
