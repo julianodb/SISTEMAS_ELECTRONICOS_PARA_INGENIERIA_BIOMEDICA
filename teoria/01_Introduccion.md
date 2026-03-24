@@ -18,9 +18,13 @@ Electrónica Analógica
 
 ## Trabajos
 
-Los sensores capacitivos ...
+Los sensores capacitivos de toque y proximidad son dispositivos que detectan la presencia o cercanía de un objeto —generalmente el cuerpo humano— a través de variaciones en la capacitancia eléctrica. Funcionan aprovechando que el cuerpo actúa como un conductor que altera el campo eléctrico generado por el sensor; cuando un dedo se acerca o toca la superficie, se produce un cambio medible en la capacitancia, el cual es interpretado por el sistema electrónico. A diferencia de los sensores mecánicos, no requieren contacto físico directo ni partes móviles, lo que los hace más duraderos, higiénicos y precisos. En el ámbito biomédico, su relevancia es alta, ya que permiten desarrollar interfaces limpias y seguras en equipos clínicos (como monitores o bombas de infusión), reducir el riesgo de contaminación cruzada, y habilitar tecnologías de interacción sin contacto, especialmente útiles en entornos hospitalarios donde la asepsia y la facilidad de desinfección son críticas
 
-Los sistemas electrónicos de los sensores capacitivos utilizan los componentes y circuitos estudiados en esta asignatura. Por lo tanto, este semestre su grupo desarrollará un sensor capacitivo para reforzar y ejemplificar la aplicación de los conocimientos obtenidos. El dispositivo propuesto será capaz de producir un voltaje proporcional a la distancia entre el usuario y el sensor, y visualizar el voltaje a través de 5 luces. También podrá funcionar en modo diferencial, en el cual se conectan dos sensores y el voltaje resultante es la diferencia entre la señal de los dos sensores. Este tipo de configuración se puede utilizar para implementar un botón deslizante.
+[video de ejemplo 1](https://www.youtube.com/watch?v=m0z9WJECjkU)
+
+[video de ejemplo 2](https://www.youtube.com/watch?v=1N_EP0QmFpQ)
+
+Los sistemas electrónicos de los sensores capacitivos utilizan los componentes y circuitos estudiados en esta asignatura. Por lo tanto, este semestre su grupo desarrollará un sensor capacitivo para reforzar y ejemplificar la aplicación de los conocimientos obtenidos. El dispositivo propuesto será capaz de producir un voltaje proporcional a la distancia entre el dedo del usuario y el sensor, y visualizar el voltaje a través de 5 luces. También podrá funcionar en modo diferencial, en el cual se conectan dos sensores y el voltaje resultante es la diferencia entre la señal de los dos sensores. Este tipo de configuración se puede utilizar para implementar un botón deslizante.
 
 El proyecto será implementado por 4 grupos distintos, cada uno con 3 estudiantes. Cada grupo implementará un prototipo ligeramente distinto, de acuerdo al color del LED que se utilizará: Rojo, Amarillo, Azul y Verde. El diseño del prototipo se dividirá en 9 trabajos, conforme la imagen a continuación.
 
