@@ -2,7 +2,7 @@
 
 ## Detalles Administrativos
 
-Página: [uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=42497)
+Página: [uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=49661)
 
 Correo: juliano.dawid @usach.cl
 
