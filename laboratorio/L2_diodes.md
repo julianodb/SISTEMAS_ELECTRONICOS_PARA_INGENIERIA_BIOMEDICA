@@ -67,11 +67,11 @@ Configuren la fuente C.C. para una corriente maxima de 0.4 A. Dejen el voltaje a
 
 4. Armen el circuito de la Figura 3. 
    
-    <img src="https://julianodb.github.io/electronic_circuits_diagrams/zener_rectifier.png" width="400">
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/zener_rectifier_2.png" width="400">
     
     Figura 3: Circuito regulador de voltaje con un diodo Zener
 
-    1. Ajusten el potenciometro en: 0 Ω, 1 kΩ y 5 kΩ y anoten los valores de $V_{R_L}$ para cada ajuste. (0.5 pt)
+    1. Ajusten la fuente C.C. a: 6 V, 7 V y 8 V y anoten los valores de $V_{R_L}$ para cada ajuste. (0.5 pt)
     
     2. ¿Es constante el voltaje? ¿A que se debe? (0.5 pt)
 
