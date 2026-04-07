@@ -76,7 +76,7 @@ Consulten al profesor o al auydante sobre el funcionamiento de la fuente C.C. Co
   - LED Verde: $R_1 = 150\ \Omega$
   - LED Azul: $R_1 = 100\ \Omega$
 
-4. Armen el circuito de la Figura 4 utilizando el LED elegido y su correspondiente valor de $R_1$. 
+5. Armen el circuito de la Figura 4 utilizando el LED elegido y su correspondiente valor de $R_1$. 
    
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_led_mosfet_2.png" width="200">
     
