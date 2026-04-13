@@ -66,7 +66,7 @@ Consulten al profesor o al auydante sobre el funcionamiento de la fuente C.C. Co
     
     Figura 3: Circuito regulador de voltaje con un diodo Zener
 
-    1. Ajusten la fuente C.C. a: 6 V, 7 V y 8 V y anoten los valores de $V_{R_L}$ para cada ajuste. (0.4 pt)
+    1. Ajusten la fuente C.C. a: 5.5 V, 6 V, 6.5 V y 7 V y anoten los valores de $V_{R_L}$ para cada ajuste. (0.4 pt)
     
     2. ¿Es constante el voltaje? ¿A que se debe? (0.5 pt)
 
