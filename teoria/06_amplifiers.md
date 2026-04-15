@@ -94,12 +94,12 @@ Al diseñar un circuito amplificador, el objetivo es tener una alta ganancia de 
 - $R_i = \infty$
 - $R_o = 0$
 
-En la práctica, no es posible mejorar todos los parámetros del amplificador, pues al mejorar uno puede que se afecte negativamente a otro. Más adelante veremos, por ejemplo, un circuito que tiene las siguientes fórmulas para $A_{V_{NL}}$ y $R_o$:
+En la práctica, no es posible mejorar todos los parámetros del amplificador, pues al mejorar uno puede que se afecte negativamente a otro. En otra clase vimos, por ejemplo, un circuito que tiene las siguientes fórmulas para $A_{V_{NL}}$ y $R_o$:
 
-- $\|A_{V_{NL}}\| = \frac{R_C I_{CQ}}{V_T}$
-- $R_o = R_C$
+- $\|A_{V_{NL}}\| = 2 k R_1 (V_{GS(CC)}-V_{GS(th)}) $
+- $R_o = R_1$
 
-Podemos observar que si queremos disminuir $R_o$, es necesario disminuir $R_C$. Sin embargo, al hacerlo, también estamos disminuyendo la ganancia ($A_{V_{NL}}$). Hay compromisos similares con respecto a $R_i$. As veces es posible mejorar los 3 factores, pero aumentando el consumo de energía del amplificador, o el costo de sus componentes.
+Podemos observar que si queremos disminuir $R_o$, es necesario disminuir $R_1$. Sin embargo, al hacerlo, también estamos disminuyendo la ganancia ($A_{V_{NL}}$). Hay compromisos similares con respecto a $R_i$. As veces es posible mejorar los 3 factores, pero aumentando el consumo de energía del amplificador, o el costo de sus componentes.
 
 ## Bibliografia
 
