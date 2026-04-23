@@ -1,31 +1,40 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 3 de Sistemas Electrónicos
-#### Segundo Semestre de 2025
+#### Primer Semestre de 2026
 
-## Recursos del pañol
+## Materiales
 
-- Cautín + estaño
+- Componentes de la BOM + conector hembra cortado para 5 posiciones
+- Placas de Circuito Impreso (PCB) de la Placa 1
+- Stencil para la Placa 1
+- Pasta de soldadura
+- Estaño
+- Cables macho-macho para probar el circuito
+
+## Equipamientos
+
+- Horno
+- Cautín
 - Alicates
-- Cables
-- Stripboard
-- Componentes de la BOM, más LM324, LM386, altavoz y micrófono
-- Fuente CC para probar
+- Fuente CC, generador de funciones y osciloscopio para probar
 
 ## Procedimiento experimental e informe
 
-1. Solden los componentes del circuito de estetoscópio diseñado hasta el momento en una stripboard. Pueden utilizar las imagenes a continuación como referencia. Fabriquen al menos 1 placa por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. (6pt)
+1. Solden los componentes de la placa 1 del sensor capacitivo, con los valores elegidos hasta el momento. Pueden utilizar las imagenes a continuación como referencia. Fabriquen al menos 1 placa por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. (6pt).
 
-    AYUDA: utilicen los valores de componentes corregidos del Trabajo 2. Para $C_8$, elijan un valor de capacitor electrolítico disponible mayor o igual a $10\ \mu F$.
+    AYUDA: Partan por los componentes de montaje superficial (pregunten al profesor y al ayudante como utilizar el horno)
 
-    AYUDA2: conecten la tierra de la fuente CC al cable azul y +5V al cable rojo en la parte superior de la placa para probar. No es necesario utilizar cables con los mismos colores que la imagen.
+    AYUDA2: Utilicen el área en blanco de la placa para identificarla. Con el marcador que indique el profesor, pueden diseñar palabras, números, símbolos o imágenes, lo importante es que quede claro cuales son las placas de su grupo
 
-    AYUDA3: pregunten sobre como conectar el micrófono al tubo del estetoscopio.
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T4_placa_1.png" width="800">
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T2_stethoscope_so_far.png" width="800">
+Figura 1: Circuito completo del sensor capacitivo hasta el Trabajo 4
 
-Figura 1: Circuito completo del estetoscopio electrónico hasta el Trabajo 2
+![21_1](../img/cap_touch_top.png)
 
-![21_1](../img/stethoscope.png)
+Figura 2: Diseño de la Placa 1 (TOP)
 
-Figura 2: Sugerencia de como soldar los componentes en la stripboard
+![21_1](../img/cap_touch_bot.png)
+
+Figura 3: Diseño de la Placa 1 (BOTTOM)
 
 Como cada miembro del equipo recibirá una placa al terminar el curso, aprovechen de avanzar en la fabricación de las otras placas una vez que terminen la demonstración.
