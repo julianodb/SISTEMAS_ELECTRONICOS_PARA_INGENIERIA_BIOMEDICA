@@ -62,7 +62,11 @@ fotodiodos y LEDs -> enlaces covalentes requieren justo la energía igual a la d
 
 ## 3. ¿Cómo se construye un transistor ?
 
-![21_1](../img/22_npn.jpg)
+![21_1](../img/nmos_construction.png)
+
+![21_1](../img/nmos_operation.png)
+
+![21_1](../img/nmos_saturation.png)
 
 ## 4. ¿Por qué todos los años sale una versión nueva de los celulares ?
 

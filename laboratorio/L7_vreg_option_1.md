@@ -1,22 +1,27 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 8 de Sistemas Electrónicos
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 9 de Sistemas Electrónicos
+# Opción 1
 #### Segundo Semestre de 2025
 
 ## Recursos del pañol
 
 - Fuente de poder de la impresora 3D
-- multímetro
+- Multímetro
 
 ## Procedimiento experimental e informe
 
 Para este laboratorio se debe entregar un único informe (sólo habrá un grupo con todos los estudiantes de la sesión). Dividan las tareas, trabajen en conjunto, revisen todas las preguntas y respuestas y entreguen el resultado al final de la actividad.
 
-El objetivo del Laboratorio 7 es estudiar una placa de fuente de poder real y entender como se utilizan en la practica diversos de los componentes, circuitos y conceptos estudiados en clase. También es un objetivo que los estudiantes practiquen hacer ingenieria inversa de circuitos electronicos, y buscar información para entender una placa de circuito impreso y sus componentes.
+El objetivo del Laboratorio 9 es estudiar una placa de fuente de poder real y entender como se utilizan en la practica diversos de los componentes, circuitos y conceptos estudiados en clase. También es un objetivo que los estudiantes practiquen hacer ingenieria inversa de circuitos electronicos, y buscar información para entender una placa de circuito impreso y sus componentes.
 
 La Figura 1 muestra la fuente de poder de una de las impresoras 3D del laboratorio. Pidan una demonstración al ayudante, y observen como la placa convierte el voltaje de entrada de la toma de corriente (220 V, 50 Hz) a un voltaje continuo de aproximadamente 30 V. Luego, contesten las siguientes preguntas.
 
 ![photo](../img/LA_photo.jpeg)
 
 Figura 1: Fuente de Poder de la impresora 3D
+
+1. Indiquen la cantidad de resistencias, la cantidad de capacitores, la cantidad de inductores, la cantidad de diodos, la cantidad de transistores y la cantidad de circuitos integrados que se utilizan en la placa. (0.5pt)
+
+1. ¿ Cuantos de los componentes indicados en la respuesta anterior son de montaje superficial, y cuantos son agujero pasante ? (0.5pt)
 
 1. ¿Qué significa AC/N, AC/L y FG ? (0.5pt)
 
@@ -32,19 +37,15 @@ Figura 1: Fuente de Poder de la impresora 3D
 
     Figura 2: Típica aplicación del JT3269, extraído de su hoja de datos.
 
-    1. Asumiendo que la parte resaltada en rojo es el sistema de control que genera la señal de encendido y apagado, que Q1 es un transistor utilizado como interruptor e ignorando las partes en azul, determinen qué tipo de regulador de voltaje está implementado (LDO, elevador, reductor, reductor-elevador o retroceso). (0.5pt)
+    1. Asumiendo que la parte resaltada en rojo es el sistema de control que genera la señal de encendido y apagado, que Q1 es utilizado como interruptor e ignorando las partes en azul, determinen qué tipo de regulador de voltaje está implementado (LDO, elevador, reductor, reductor-elevador o retroceso). (0.5pt)
 
     1. ¿Qué/Cuáles componente(s) en la placa implementa(n) el diodo marcado como "D?" en la figura 2 ? (0.5pt)
 
-    1. R1 y R2 implementan la resistencia marcada como "R?" en la figura 2, la que sirve para convertir la corriente que pasa por Q1 en un voltaje que se mide en el terminal SENSE del JT3269. ¿Cuánto vale "R?" ? (0.5pt)
-
-    1. La salida GATE del JT3269 (pin 8) no tiene suficiente capacidad de corriente para encender el interruptor Q1, por lo que la placa tiene partes extras que no aparecen en la figura 2. Identifiquen los 2 componentes que amplifican la corriente de salida de GATE, incluyendo su denominación en la placa, número de parte y qué tipo de componentes son. (0.5pt)
+    1. Basándose en las figuras 2 y 3, busquen en la placa las 2 resistencias que implementan la resistencia marcada como "R?" en la figura 2, la que sirve para convertir la corriente que pasa por Q1 en un voltaje que se mide en el terminal SENSE del JT3269. ¿Cuánto vale "R?" ? (0.5pt)
     
         ![pin8](../img/LA_SOIC8.png)
 
-        Figura 3: Ubicación de la salida GATE (pin 8) del JT3269. Vista superior.
-
-1. Tal vez el componente más grande de la placa sea el transformador, el que se puede ubicar por su forma cuadrada, cintas rojas que lo enrollan y bobinas protegidas por una cinta amarilla en su interior. Dicho transformador tiene 3 bobinas, todas conectadas al mismo nucleo ferromagnetico, y 12 terminales que lo conectan a la placa de circuito impreso. Basandose en la figura 2 y en las conexiones que pueden observar en la placa, determinen cómo están conectadas las 3 bobinas a los terminales del transformador. (0.5pt)
+        Figura 3: Denominación de los terminales del JT3269. Vista superior.
 
 1. La placa continene un potenciometro (trimmer) para hacer un ajuste fino del voltaje de salida. El potenciometro es más compacto que los que se utilizaron en laboratorio, y se puede ubicar por su color amarillo y espacio para girarlo con un destornillador. Determinen el valor de la resistencia total del potenciometro. (0.5pt)
 
