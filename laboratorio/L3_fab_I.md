@@ -3,7 +3,9 @@
 
 ## Materiales
 
-- Componentes de la BOM + conector hembra cortado para 5 posiciones
+- Componentes de la BOM 
+- Conector hembra cortado para 5 posiciones 
+- Conector macho (pin head) de 2 positicones + jumper
 - Placas de Circuito Impreso (PCB) de la Placa 1
 - Stencil para la Placa 1
 - Pasta de soldadura
@@ -18,6 +20,8 @@
 - Fuente CC, generador de funciones y osciloscopio para probar
 
 ## Procedimiento experimental e informe
+
+Para este Laboratorio, organicense en los mismos grupos que para los Trabajos.
 
 1. Solden los componentes de la placa 1 del sensor capacitivo, con los valores elegidos hasta el momento. Pueden utilizar las imagenes a continuación como referencia. Fabriquen al menos 1 placa por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. (6pt).
 
