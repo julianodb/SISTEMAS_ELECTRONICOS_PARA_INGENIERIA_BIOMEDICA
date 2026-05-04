@@ -1,17 +1,40 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2025/02
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2026/01
 ## Guía Prueba Escrita 1
 
-1. Para la adquisición de un electrocardiograma (ECG), es necesario medir la diferencia de voltaje entre electrodos que se posicionan en puntos específicos del paciente. Dicha diferencia de voltaje suele ser muy pequeña, del orden de pocos milivolts, por lo que requiere amplificación para poder graficarse y ser procesada. Considerando que la resistencia eléctrica de la interfaz piel-electrodo es de $R_S =47\ k\Omega$, que el circuito que consume la señal amplificada tiene una resistencia de entrada $R_L= 1\ k\Omega$, y que se disponen de amplificadores con las características a continuación, determine el factor de amplificación de la señal $v_S$ de cada una de las siguientes configuraciones. Considere que el voltaje de salida de cada circuito es $v_o$. ¿ Cuál configuración permite amplificar más la señal de ECG ?
+1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (2 pt):
+   
+   1. Datos: $V_{CC}=10\ V$, $R_3=1\ k\Omega$, $R_4=10\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
 
-   - Amplificador 1: $R_i = 10\ k\Omega$, $R_o = 1\ k\Omega$, $A_{V_{NL}} = 10$
-   - Amplificador 2: $R_i = 330\ k\Omega$, $R_o = 20\ k\Omega$, $A_{V_{NL}} = 10$
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_2R_alt.png" width="300">
 
-    1. Configuración 1: (0.5 pt)
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_2R_alt_with_currents.png" width="300">
+      >
+      > $V_2 = 6.7\ V$
+      >
+      > $V_1 = 6\ V$ 
+      >
+      > $I_{D_Z} = I_{R_3} = 6\ mA$ 
+      >
+      > $I_{R_4} = 70\ \mu A$
+      >
+      > $I_{D_3} = 5.93\ m A$ 
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box.png" width="800">
+   1. Datos: $V_{CC}=9\ V$, $R_5=R_6=R_7=1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 5.1\ V$
 
-    > 
-    > Respuesta: $A_V \approx 0.83$
+      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt2.png" width="300">
+      
+      >
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt2_with_currents.png" width="300">
+      >
+      > $V_1 = 4.5\ V$
+      >
+      > $V_2 = 5.1\ V$ 
+      >
+      >  $I_3=0$ 
+      >
+      > $I_1 = I_5 = 4.5\ mA$ 
+      >
+      > $I_2 = I_4 = 3.9\ mA$ 
 
 2. Para medir la actividad eléctrica del corazón en un ECG se utilizan electrodos en determinadas posiciones del paciente. La siguiente figura muestra la ubicación y color estándar de los electrodos para un ECG que utiliza 4 electrodos.
 
@@ -21,38 +44,47 @@
 
     A partir de esta configuración, se puede medir la actividad eléctrica en distintas direcciones, dependiendo de como se combinan los voltajes de los electrodos. Cada dirección de medición se denomina derivación. Por ejemplo, la llamada derivación I mide el voltaje producido por corrientes eléctricas que se mueven de la derecha del paciente hacia su izquierda, y se obtiene a partir de la diferencia de voltaje $I = LA-RA$ (brazo izquierdo menos brazo derecho). Otro ejemplo es la derivación aVF, que mide el voltaje producido por corrientes eléctricas que se mueven desde arriba hacia abajo, y se obtiene a través de la siguiente combinación de voltajes: $aVF = LL- \frac{LA+RA}{2}$ . Los siguientes circuitos implementan algunas de las derivaciones del ECG, además de amplificar la señal. Determine que fórmula implementa cada uno de ellos:
 
-    1. Encontrar $aVR$ en función de $LA$, $LL$ y $RA$, con $R=10\ k\Omega$ (0.8 pt)
+    1. Encontrar $aVL$ en función de $LA$, $LL$ y $RA$, con $R=6.8\ k\Omega$ (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr2.png" width="400"> 
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl.png" width="400"> 
+
+       > $aVL = LA - \frac{RA + LL}{2}$
+
+    2. Encontrar $aVR$ en función de $LA$, $LL$ y $RA$, con $R=10\ k\Omega$ (1 pt)
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr3.png" width="400"> 
        
-    > 
-    > Respuesta: 
-    >
-    > $aVR = 2 RA - LA - LL$
-
-4. Es deseable eliminar ruido de alta frecuencia de la señal de ECG. Una de las formas de hacerlo es con el circuito a continuación, que implementa un filtro pasa-baja. Este circuito atenúa ruido con frecuencia mayor a $\approx\frac{\sqrt{2}}{R_1C}$ rad/s. Sin embargo, uno de los problemas con filtros pasa-baja es que cuanto menor su frecuencia de corte, más tiempo demoran en llegar a estado estacionario. Suponiendo que $v_i$ es un escalón unitario, que $R_2=R_1$, y que elegimos $R_1$ y $C$ para eliminar frecuencias mayores a 1 Hz ($\frac{\sqrt{2}}{R_1C} = 2\pi $), determine:
-
-    <img src="https://julianodb.github.io/electronic_circuits_diagrams/active_low_pass2.png" width="220"> 
-
-    1. El valor de $v_o$ en estado estacionario (0.5 pt)
+       > $ aVR = 8 RA - 4 LL - 4 LA $
        >
-       > Respuesta: $v_{o,DC} = 2\ V$
-    1. La(s) constante(s) de tiempo del sistema (0.8 pt)
-       >
-       > Respuesta: $\tau = R_1 C = \frac{\sqrt{2}}{2\pi} \approx 0.23\ s$
-    1. Cuanto tiempo demoran los términos transitorios en bajar a menos de 1% de su valor inicial. (0.4 pt)
-       >
-       > Respuesta: $- \ln (0.01) R_1 C \approx 1\ s$
+       > En realidad, la derivación aVR se define como: $aVR_{real} = RA - \frac{LA + LL}{2}$. Por lo tanto la señal que el circuito obtiene es la derivación aVR amplificada por 8.
 
 # Fórmulas
 
+$$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
+$$ V_T = \frac{kT}{q}$$
+
+- $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
+- $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
+- $T$: Temperatura en Kelvin
+
+$$ V_{DS} = R_{DS(ON)} I_D$$
+$$ I_D = k(V_{GS}-V_{GS(th)})^2 $$
+$$V_{GS} < V_{GS(th)}$$
+$$ V_{DS} < V_{GS}-V_{GS(th)}$$
+$$ V_{DS} > V_{GS}-V_{GS(th)}$$
+
+$$ \Delta I_{D} = g_{FS} \Delta V_{GS} $$
+
+$$ \Delta I_{D} = g_{m} \Delta V_{GS} $$
+
+$$ g_{FS} = 2k(V_{GS}-V_{GS(th)})  $$
+
+$$ g_m = 2k(V_{GS}-V_{GS(th)})  $$
+
+$$ k = \frac{g_{ _{FS}}^2}{4I_D}  $$
+
+$$v_o = A_{V_{NL}} \frac{R_L}{R_L+R_o}v_i$$
+
+$$v_o = A_{V_{NL}} \frac{R_L}{R_L+R_o} \frac{R_i}{R_S+R_i} v_S$$
+
 Corto Circuito Virtual: $V_+ = V_-$
-
-$$ H(s) = \frac{v_o(s)}{v_i(s)} $$
-$$1 [Hz] = 2\pi [rad/s]$$
-
-Resistencia equivalente a una capacitancia C en el dominio de Laplace: $\frac{1}{Cs}$
-
-Respuesta a escalón unitário del sistema $H(s)=K\frac{1}{1+\tau s}$: $v_o(t) = K(1-e^{-\frac{t}{\tau}})$
-
-Respuesta a escalón unitário del sistema $H(s)=K\frac{\tau s}{1+\tau s}$: $v_o(t) = Ke^{-\frac{t}{\tau}}$
