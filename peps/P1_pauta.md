@@ -3,9 +3,25 @@
 
 1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (2 pt):
    
-   1. Datos: $V_{CC}=10\ V$, $R_1=2.2\ k\Omega$, $R_2=10\ k\Omega$, $V_F=0.7\ V$, $V_Z = 5.1\ V$
+   1. Datos: $V_{CC}=10\ V$, $R_1=2.2\ k\Omega$, $R_2=10\ k\Omega$, $V_F=0.7\ V$, $V_Z = 5.1\ V$ (1pt)
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_2R_alt2.png" width="300">
+      
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_2R_alt2_with_currents.png" width="300">
+      >
+      > Identificación de todos los voltajes y corrientes: 0.1pt
+      >
+      > Al remover los diodos se observa que $V_{D_1} = 10\ V$ y $V_{D_Z} = 0 V$. Por lo tanto $D_1$ conduce y $D_Z$ no. (+0.1pt) 
+      >
+      > Al reemplazar $D_1$ por una fuente de voltaje de $0.7\ V$, se observa que $V_2 = 9.3\ V$ (+0.1pt) y $V_1 \approx 1.7\ V $. Por lo tanto, el nuevo $V_{D_Z} = 1.7 - 9.3 = -7.6\ V < -V_Z$, lo que implica que $D_Z$ conduce en inversa. (+0.2pt)
+      >
+      > Al reemplazar $D_Z$ por una fuente de voltaje de $-5.1\ V$, se observa que $V_1 = 4.2\ V$ (+0.1pt)
+      >
+      > $I_{R_2} =  \frac{V_2-V_1}{R_2} = \frac{5.1}{10\ k} = 510\ \mu A$ (+0.1pt)
+      >
+      > $I_{R_1} = I_{D_1} = \frac{V_1}{R_1} = \frac{4.2}{2.2\ k} \approx 1.9\ m A$ (+0.2pt)
+      >
+      > $I_{D_Z} = I_{D_1} - I_{R_2} = 1.9\ mA - 510\ \mu A \approx 1.4\ mA$ (+0.1pt)
 
    1. Datos: $V_{CC}=9\ V$, $R_3=1\ k\Omega$, $R_4=R_5=2\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.9\ V$
 
