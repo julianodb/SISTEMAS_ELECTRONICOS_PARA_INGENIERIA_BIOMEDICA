@@ -183,11 +183,73 @@
 
     1. Encontrar $II$ en función de $LL$ y $RA$, con $R_1=R_2=R_3=R_4=R_5=R_6=100\ k\Omega$ y $R_G=51\ k\Omega$ (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/ecg_II.png" width="400"> 
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/ecg_II.png" width="400">
+
+       >
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/ecg_II_annotated.png" width="400">
+       >  
+       > Analisis del amplificador operacional de la derecha:
+       >
+       > $V_+ = \frac{R_4}{R_4+R_3}V_2 = \frac{V_2}{2}$
+       >
+       > $V_- = \frac{R_2}{R_2+R_1}V_1 + \frac{R_1}{R_2+R_1}II = \frac{V_1+II}{2}$
+       >
+       > Como hay retroalimentación negativa, aplicamos corto-circuito virtual:
+       >
+       > $V_+ = V_-$
+       >
+       > $\frac{V_2}{2} = \frac{V_1+II}{2}$
+       >
+       > $\implies II = V_2 - V_1$
+       >
+       > Como en los otros dos amplificadores operacionales también hay retroalimentación negativa, podemos  aplicar corto-circuito virtual, lo que nos permite encontrar los voltajes en los dos terminales de $R_G$, conforme lo indica la imagen.
+       >
+       > Esto nos permite calcular $i_{RG}$:
+       >
+       > $i_{RG} = \frac{LL-RA}{R_G}$
+       >
+       > Finalmente, para encontrar $V_2-V_1$, aplicamos ley de ohm en la resistencia equivalente compuesta por $R_5$, $R_G$ y $R_6$ en serie:
+       >
+       > $II = V_2-V_1 = (R_G+R_5+R_6) i_{RG}$
+       >
+       > $II = (R_G+R_5+R_6) \frac{LL-RA}{R_G}$
+       >
+       > $II = \frac{R_G+R_5+R_6}{R_G} (LL-RA)$
+       >
+       > $II = \frac{51k + 100k+100k}{51k} (LL-RA)$
+       >
+       > $II \approx 4.9 (LL-RA)$
 
     2. Encontrar $aVL$ en función de $LA$, $LL$ y $RA$, con $R=47\ k\Omega$ (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl3.png" width="400"> 
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl3.png" width="400">
+       
+       > Aplicando LKC en el nodo $V_-$: (+0.3pt)
+       >
+       > $\frac{RA-V_-}{4R} + \frac{LL-V_-}{4R} = \frac{V_- - aVL}{R}$
+       >
+       > $RA-V_- + LL-V_- = 4V_- - 4aVL$
+       >
+       > $RA + LL + 4aVL = 6V_- $
+       >
+       > $V_- = \frac{RA + LL + 4aVL}{6}$
+       >
+       > Aplicando divisor de voltaje en  $V_+$: (+0.3pt)
+       >
+       > $V_+ = \frac{LA}{3}$
+       >
+       > Aplicando corto circuito virtual:
+       >
+       > $V_+ = V_-$ (+0.2pt)
+       >
+       > $\frac{LA}{3} = \frac{RA + LL + 4aVL}{6}$
+       >
+       > $2LA = RA + LL + 4aVL$
+       >
+       > $aVL = \frac{2LA - RA - LL}{4}$
+       >
+       > En realidad, la derivación aVL se define como: $aVL_{real} = LA - \frac{RA + LL}{2}$. Por lo tanto la señal que el circuito obtiene es la derivación aVL dividida por 2.
+
 
 # Fórmulas
 
