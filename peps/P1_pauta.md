@@ -1,5 +1,8 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2026/01
-## Prueba Escrita 1
+## Prueba Escrita 1 - Pauta
+
+> En general, por errores de cálculo se descuenta 0.05pt, y por errores conceptuales o en la aplicación de fórmulas 0.1pt.
+
 
 1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (2 pt):
    
@@ -23,13 +26,96 @@
       >
       > $I_{D_Z} = I_{D_1} - I_{R_2} = 1.9\ mA - 510\ \mu A \approx 1.4\ mA$ (+0.1pt)
 
-   1. Datos: $V_{CC}=9\ V$, $R_3=1\ k\Omega$, $R_4=R_5=2\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.9\ V$
+   1. Datos: $V_{CC}=9\ V$, $R_3=1\ k\Omega$, $R_4=R_5=2\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.9\ V$ (1pt)
 
       <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt3.png" width="300">
 
+      >
+      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt3_with_currents.png" width="300">
+      >
+      > Identificación de todos los voltajes y corrientes: 0.1pt
+      >
+      > Al remover ambos diodos se observa que $V_{D_2} = V_2 - 0 = 9\ V$. Por lo tanto $D_2$ conduce. (+0.1pt)
+      >
+      > Por otro lado, $V_1 = V_{CC}\frac{R_4}{R_4+R_3} = 6\ V$ 
+      >
+      > Así, $V_{D_Z} = V_2-V_1= 3\ V$  y $D_Z$ conduce en directa 
+      >
+      > Como $D_2$ conduce, $V_2 = 0.7\ V$ (+0.1pt)
+      >
+      > Con el nuevo valor de $V_2$, se calcula $V_{D_Z}$ nuevamente:
+      >
+      > $V_{D_Z} = V_2-V_1= 0.7 - 6 = -5.4\ V$ y se obtiene que $D_Z$ conduce en inversa. (+0.1pt).
+      >
+      > Como $D_Z$ conduce en inversa, $V_1 = V_2 - V_{D_Z} = 0.7 - (-3.9) = 4.6\ V$ (+0.1pt)
+      >
+      > Se calculan las corrientes:
+      >
+      > $I_2 = \frac{V_{CC}-V_2}{R_5} = \frac{9-0.7}{2\ k} = 4.15\ mA$ (+0.1pt)
+      >
+      > $I_1 = \frac{V_{CC}-V_1}{R_3} = \frac{9-4.6}{1\ k} = 4.4\ mA$ (+0.1pt)
+      >
+      > $I_5 = \frac{V_1}{R_4} = \frac{4.6}{2\ k} = 2.3\ mA$ (+0.1pt)
+      >
+      > $I_3 = I_1 - I_5 = 4.4\ mA - 2.3\ mA = 2.1\ mA$ (+0.1pt)
+      >
+      > $I_4 = I_2 + I_3 = 4.15\ mA + 2.1\ mA = 6.25\ mA$ (+0.1pt)
+
+
 2. La siguiente imagen muestra la implementación de un circuito conocido como "par diferencial", que es la base para construir un amplificador operacional. Las entradas son $V_+$ y $V_-$  y la salida es $V_o $. El circuito se alimenta con un voltaje positivo $V_{CC} $ y uno negativo $-V_{CC}$. Además, el circuito contiene una fuente de corriente que se proyecta de tal forma que $ I_B = \frac{2 V_{CC}}{R} $. Asumiendo que se puede utilizar el modelo de pequeñas señales de los transistores $Q_1$ y $Q_2$, y que dichos transistores son identicos (tienen el mismo $g_{FS}$, $g_{m} $, $k$, $V_{GS(th)}$ y $R_{DS(on)}$ ), ¿Cuál es la relación entre el voltaje de salida y los de entrada ? Asuma que $V_{CC}=5\ V$, $R=100\ k\Omega$, $g_{FS} = 0.32\ S$, $g_m = 0.32\ S$, $V_{GS(th)} = 1\ V$, $R_{DS(on)}=1.2\ \Omega$ (1pt)
 
-   <img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_differencital_pair.png" width="280">
+   <img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_differential_pair.png" width="280">
+
+   >
+   > <img src="https://julianodb.github.io/electronic_circuits_diagrams/mosfet_differential_pair_small_signal.png" width="280">
+   >
+   > Estrategia: 
+   > 1. Aplicar la fórmula de pequeñas señales para escribir $I_1$ e $I_2$ en función de $V_+$, $V_-$ y $V_x$. 
+   > 1. Luego, aplicar LKC para encontrar $V_x$ en función de las otras variables. 
+   > 1. Después, reemplazar el valor de $V_x$ en la fórmula de $I_2$
+   > 4. Finalmente, escribir $V_o$ como $V_o = V_{CC} - R I_2$
+   >
+   > (1) Aplicar fórmula de pequeñas señales (+0.2pt)
+   >
+   > $I_1 = g_m (V_+-V_x)$
+   >
+   > $I_2 = g_m (V_--V_x)$
+   >
+   > (2) LKC (+0.3pt)
+   >
+   > $I_1 + I_2 = I_B$
+   > 
+   > $g_m (V_+-V_x) + g_m (V_--V_x) = \frac{2V_{CC}}{R}$
+   > 
+   > $g_m (V_++V_-) - 2g_m V_x = \frac{2V_{CC}}{R}$
+   > 
+   > $ 2g_m V_x = g_m (V_++V_-) -\frac{2V_{CC}}{R}$
+   > 
+   > $ V_x = \frac{V_++V_-}{2} -\frac{V_{CC}}{Rg_m}$
+   >
+   > (3) Reemplazar $V_x$ en la formula de $I_2$ (+0.3pt)
+   >
+   > $I_2 = g_m (V_--V_x)$
+   >
+   > $I_2 = g_m (V_--\frac{V_++V_-}{2} +\frac{V_{CC}}{Rg_m})$
+   >
+   > $I_2 = g_m (\frac{V_--V_+}{2} +\frac{V_{CC}}{Rg_m})$
+   >
+   > $I_2 = g_m (\frac{V_--V_+}{2}) +\frac{V_{CC}}{R}$
+   >
+   > (4) Resolver $V_o$ (+0.2pt)
+   >
+   > $V_o = V_{CC} - R I_2$
+   >
+   > $V_o = V_{CC} - R (g_m (\frac{V_--V_+}{2}) +\frac{V_{CC}}{R})$
+   >
+   > $V_o = V_{CC} - R g_m (\frac{V_--V_+}{2}) -V_{CC}$
+   >
+   > $V_o = \frac{R g_m}{2} (V_+-V_-)$
+   >
+   > Utilizando los valores dados en el enunciado:
+   >
+   > $V_o = 16000 (V_+-V_-)$
 
 1. Para la adquisición de un electrocardiograma (ECG), es necesario medir la diferencia de voltaje entre electrodos que se posicionan en puntos específicos del paciente. Dicha diferencia de voltaje suele ser muy pequeña, del orden de pocos milivoltios, por lo que requiere de amplificación antes de ser procesada o visualizada. Considerando que la resistencia eléctrica de la interfaz piel-electrodo es de $R_S =800\ k\Omega$, que el circuito que consume la señal amplificada tiene una resistencia de entrada $R_L= 200\ \Omega$, y que se disponen de amplificadores con las características a continuación, determine el factor de amplificación de la señal $v_S$ de cada una de las siguientes configuraciones. Considere que el voltaje de salida de cada circuito es $v_o$. ¿ Cuál configuración permite amplificar más la señal de ECG ?
 
