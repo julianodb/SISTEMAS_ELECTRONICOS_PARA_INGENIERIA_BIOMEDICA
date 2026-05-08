@@ -126,9 +126,52 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box.png" width="800">
        
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double_2025_02_a.png" width="800">
+       > 
+       > Para el amplificador 1: (+0.2pt)
+       >
+       > $v_{o1} = A_{V_{NL1}} \frac{R_{i2}}{R_{i2}+R_{o1}} \frac{R_{i1}}{R_S+R_{i1}} v_S$
+       >
+       > Para el amplificador 2: (+0.2pt)
+       >
+       > $v_{o} = A_{V_{NL2}} \frac{R_{L}}{R_{L}+R_{o2}} v_{i2}$
+       >
+       > Como $v_{o1} = v_{i2}$: (+0.1pt)
+       >
+       > $v_{o} = A_{V_{NL2}} \frac{R_{L}}{R_{L}+R_{o2}} A_{V_{NL1}} \frac{R_{i2}}{R_{i2}+R_{o1}} \frac{R_{i1}}{R_S+R_{i1}} v_S $
+       >
+       > Y, por lo tanto:
+       >
+       > $A_V = \frac{v_o}{v_S} = A_{V_{NL2}} \frac{R_{L}}{R_{L}+R_{o2}} A_{V_{NL1}} \frac{R_{i2}}{R_{i2}+R_{o1}} \frac{R_{i1}}{R_S+R_{i1}} $
+       >
+       > $A_V = 12 \frac{200}{200+2k} 8 \frac{1M}{1M+100} \frac{100k}{800k+100k} \approx 0.97 $
+       
+       
     1. Configuración 2: (0.5 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box2.png" width="800">
+
+       > <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_double_2025_02_b.png" width="800">
+       > 
+       > Para el amplificador 2: (+0.2pt)
+       >
+       > $v_{o1} = A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S$
+       >
+       > Para el amplificador 1: (+0.2pt)
+       >
+       > $v_{o} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} v_{i2}$
+       >
+       > Como $v_{o1} = v_{i2}$: (+0.1pt)
+       >
+       > $v_{o} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} v_S $
+       >
+       > Y, por lo tanto:
+       >
+       > $A_V = \frac{v_o}{v_S} = A_{V_{NL1}} \frac{R_{L}}{R_{L}+R_{o1}} A_{V_{NL2}} \frac{R_{i1}}{R_{i1}+R_{o2}} \frac{R_{i2}}{R_S+R_{i2}} $
+       >
+       > $A_V = 8 \frac{200}{200+100} 12 \frac{100k}{100k+2k} \frac{1M}{800k+1M} \approx 34.9 $
+
+   > $\therefore $ La configuración 2 permite amplificar más la señal de ECG
 
 2. Para medir la actividad eléctrica del corazón en un ECG se utilizan electrodos en determinadas posiciones del paciente. La siguiente figura muestra la ubicación y color estándar de los electrodos para un ECG que utiliza 4 electrodos.
 
