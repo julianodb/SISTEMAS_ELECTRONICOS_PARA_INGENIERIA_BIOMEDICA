@@ -188,7 +188,7 @@
        >
        > <img src="https://julianodb.github.io/electronic_circuits_diagrams/ecg_II_annotated.png" width="400">
        >  
-       > Analisis del amplificador operacional de la derecha:
+       > Analisis del amplificador operacional de la derecha: (+0.4pt)
        >
        > $V_+ = \frac{R_4}{R_4+R_3}V_2 = \frac{V_2}{2}$
        >
@@ -204,13 +204,13 @@
        >
        > Como en los otros dos amplificadores operacionales también hay retroalimentación negativa, podemos  aplicar corto-circuito virtual, lo que nos permite encontrar los voltajes en los dos terminales de $R_G$, conforme lo indica la imagen.
        >
-       > Esto nos permite calcular $i_{RG}$:
+       > Esto nos permite calcular $i_{RG}$: (+0.3pt)
        >
        > $i_{RG} = \frac{LL-RA}{R_G}$
        >
        > Finalmente, para encontrar $V_2-V_1$, aplicamos ley de ohm en la resistencia equivalente compuesta por $R_5$, $R_G$ y $R_6$ en serie:
        >
-       > $II = V_2-V_1 = (R_G+R_5+R_6) i_{RG}$
+       > $II = V_2-V_1 = (R_G+R_5+R_6) i_{RG}$ (+0.3pt)
        >
        > $II = (R_G+R_5+R_6) \frac{LL-RA}{R_G}$
        >
