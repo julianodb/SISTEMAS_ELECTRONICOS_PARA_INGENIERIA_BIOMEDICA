@@ -224,7 +224,7 @@
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl3.png" width="400">
        
-       > Aplicando LKC en el nodo $V_-$: (+0.3pt)
+       > Aplicando LKC en el nodo $V_-$: (+0.4pt)
        >
        > $\frac{RA-V_-}{4R} + \frac{LL-V_-}{4R} = \frac{V_- - aVL}{R}$
        >
@@ -240,7 +240,7 @@
        >
        > Aplicando corto circuito virtual:
        >
-       > $V_+ = V_-$ (+0.2pt)
+       > $V_+ = V_-$ (+0.3pt)
        >
        > $\frac{LA}{3} = \frac{RA + LL + 4aVL}{6}$
        >
