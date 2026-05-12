@@ -45,7 +45,7 @@
       >
       > Con el nuevo valor de $V_2$, se calcula $V_{D_Z}$ nuevamente:
       >
-      > $V_{D_Z} = V_2-V_1= 0.7 - 6 = -5.4\ V$ y se obtiene que $D_Z$ conduce en inversa. (+0.1pt).
+      > $V_{D_Z} = V_2-V_1= 0.7 - 6 = -5.3\ V$ y se obtiene que $D_Z$ conduce en inversa. (+0.1pt).
       >
       > Como $D_Z$ conduce en inversa, $V_1 = V_2 - V_{D_Z} = 0.7 - (-3.9) = 4.6\ V$ (+0.1pt)
       >
