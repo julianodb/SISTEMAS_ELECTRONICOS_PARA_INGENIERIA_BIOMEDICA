@@ -1,5 +1,5 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 4 de Sistemas Electrónicos
-#### Segundo Semestre de 2025
+#### Primer Semestre de 2026
 
 ## Recursos del pañol
 
@@ -59,13 +59,6 @@ Configuren la fuente CC para un voltaje de 12 V y una corriente maxima entre 0.2
 
    1. Calculen el factor de amplificación de voltaje en cada caso $A_V = \frac{amplitud(v_o)}{amplitud(v_i)}$ (0.35pt)
 
-   1. Observando los resultados en la tabla anterior, y la descripción de los tipos de filtros abajo, determinen qué tipo de filtro está implementado. (0.45pt)
+   1. Observando los resultados en la tabla anterior, determinen qué tipo de filtro está implementado (pasa-baja, pasa-alta, pasa-banda o rechaza-banda). (0.45pt)
 
-      |tipo de filtro| forma de $A_V$ vs $frecuencia$ |
-      | -- | -- |
-      | filtro pasa-baja | ![low_pass](../img/low_pass.png) |
-      | filtro pasa-alta | ![high_pass](../img/high_pass.png) |
-      | filtro pasa-banda | ![band_pass](../img/band_pass.png) |
-      | filtro rechaza-banda | ![band_stop](../img/band_stop.png) |
-
-   1. Observando los resultados, y considerando que la frecuencia de corte es la frecuencia en que $A_V = \frac{max(A_V)}{\sqrt{2}}$ ($A_V$ es el $A_V$ maximo dividido por $\sqrt{2}$), ¿dentro de que rango de frecuencias se encuentra la frecuencia de corte del filtro? (1pt)
+   1. Observando los resultados, y considerando que la frecuencia de corte es la frecuencia en que $A_V = \frac{max(A_V)}{\sqrt{2}}$, ¿dentro de que rango de frecuencias se encuentra la frecuencia de corte del filtro? (1pt)
