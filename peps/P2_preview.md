@@ -1,7 +1,7 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2026/01
 ## Guía Prueba Escrita 2
 
-3. El siguiente circuito implementa un filtro activo, con $R_1=R_2 = 100\ k\Omega$, $C_1=C_2= 0.1\ \mu F$, $R_a = 5.1\ k\Omega$ y $R_b=10\ k\Omega$. 
+3. El siguiente circuito implementa un filtro activo, con $R_1=R_2 = 100\ k\Omega$, $C_1=C_2= 0.1\ \mu F$, $R_a = 10\ k\Omega$ y $R_b=5.1\ k\Omega$. 
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_low_2_with_gain.png" width="400"> 
 
