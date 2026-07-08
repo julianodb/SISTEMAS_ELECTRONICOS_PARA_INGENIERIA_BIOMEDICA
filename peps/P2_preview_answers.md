@@ -1,114 +1,41 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2025/02
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2026/01
 ## Guía Prueba Escrita 2 - Respuestas
 
-2. El siguiente circuito implementa un filtro activo:
+3. El siguiente circuito implementa un filtro activo, con $R_1=R_2 = 100\ k\Omega$, $C_1=C_2= 0.1\ \mu F$, $R_a = 10\ k\Omega$ y $R_b=5.1\ k\Omega$. 
 
-    <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_high_2_with_gain.png" width="400"> 
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/sallen_key_low_2_with_gain.png" width="400"> 
 
     Figura 2: Filtro con amplificador operacional
 
     La función de transferencia del circuito es
-       $H(s) = \frac{V_o(s)}{V_i(s)} = \frac{2R^2C^2s^2}{1+RCs+R^2C^2s^2}$
+       $H(s) = \frac{V_o(s)}{V_i(s)} = \frac{151}{51+2RCs+51R^2C^2s^2}$. 
 
-    1. Determine qué tipo de filtro está implementado. (0.3pt)
-        > Filtro pasa alta
-    1. Muestre que la frecuencia con la que se obtiene la ganancia maxima es $\omega = \frac{\sqrt{2}}{RC}$. (0.5pt)
-        > $|A_v(\omega)| = \frac{2R^2C^2\omega^2}{\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1}}$
+    1. ¿Cual es el valor de $v_o$ en estado estacionario si $v_i$ se conecta a una fuente constante de 5 V en $t=0$? (0.5pt)
+       > $v_o \approx 14.8\ V $
+    2. ¿Cual es la constante de tiempo del circuito ? (0.5pt)
+       > $\tau \approx 0.2\ s$
+    3. ¿Qué tipo de filtro está implementado? (0.5pt)
+       > pasa-baja
+    1. Calcule la ganancia del circuito en las siguientes frecuencias: (0.6pt)
+        1. 10 Hz
+           > $A_v(\omega) \approx 4.89$
+        2. 30 Hz
+           > $A_v(\omega) \approx 1.16$
+        3. 100 Hz
+           > $A_v(\omega) \approx 0.077$
+    1. Determine la(s) frecuencia(s) de corte en Hz. Puedes asumir que la ganancia maxima en frecuencia es 75.5. (0.9pt)
+        > $\omega_{c1} \approx 15.6\ Hz$
         >
-        > $\frac{\partial |A_v(\omega)|}{\partial \omega} = \frac{4R^2C^2\omega}{\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1}} - \frac{2R^2C^2\omega^2}{2(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3}(4R^4C^4\omega^3 - 2R^2C^2\omega)$
-        >
-        > $\frac{\partial |A_v(\omega)|}{\partial \omega} =  \frac{4R^2C^2\omega(R^4C^4\omega^4 - R^2C^2\omega^2 +1)-R^2C^2\omega^2(4R^4C^4\omega^3 - 2R^2C^2\omega)}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3}$
-        >
-        > $\frac{\partial |A_v(\omega)|}{\partial \omega} =  \frac{4R^6C^6\omega^5 - 4R^4C^4\omega^3+4R^2C^2\omega-4R^6C^6\omega^5+2R^4C^4\omega^3}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3}$
-        >
-        > $\frac{\partial |A_v(\omega)|}{\partial \omega} =  \frac{ -2R^4C^4\omega^3+4R^2C^2\omega}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3}$
-        >
-        > $\frac{\partial |A_v(\omega)|}{\partial \omega} = 0 \implies \frac{ -2R^4C^4\omega^3+4R^2C^2\omega}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3} = 0$
-        >
-        > $\frac{ -R^2C^2\omega^2+2}{(\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1})^3} = 0$
-        >
-        > Asumiendo que $\sqrt{R^4C^4\omega^4 - R^2C^2\omega^2 +1} \neq 0$
-        >
-        > $2-R^2C^2\omega^2 = 0$
-        >
-        > $\omega = \frac{\sqrt{2}}{RC}$
-        >
-        > Para determinar si a este valor de frecuencia corresponde un punto maximo de la expresión, se evalua $A_V(\omega)$ en algunos puntos notables:
-        >
-        > $A_V(\omega=0) = 0$ 
-        >
-        > $\lim_{\omega \to +\infty} A_V(\omega) = 2$
-        >
-        > $A_V(\omega=\frac{\sqrt{2}}{RC}) = \frac{4}{\sqrt{3}}$
-        >
-        > Se observa que  $\frac{4}{\sqrt{3}} > 2 > 0$, por lo tanto $\omega = \frac{\sqrt{2}}{RC}$ es la frecuencia en que se obtiene el valor maximo, y $max(A_V(\omega)) = \frac{4}{\sqrt{3}}$
-    1. Determine la(s) frecuencia(s) de corte en Hz, asumiendo que $R=1\ k\Omega$ y $C=0.1\ \mu F$. (1pt)
-        > $\omega_c \approx 8500\ rad/s \approx 1300\ Hz$
-    1. Considere que $A = (1+\frac{R_a}{R_b})$. Al aumentar el valor de A, eventualmente el filtro se vuelve inestable. Determine el valor de A en que esto ocurre y con qué frecuencia oscila $v_o$, en Hz. Asuma nuevamente que $R=1\ k\Omega$ y $C=0.1\ \mu F$. (0.7pt)
-        > $A=3$
-        >
-        > $\omega_{osc} = 10000\ rad/s \approx 1600\ Hz$
-
-1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (1.5 pt):
-   
-   1. Datos: $V_{CC}=10\ V$, $R_1=3.3\ k\Omega$, $R_2=4.7\ k\Omega$, $V_F=0.7\ V$
-
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_alt.png" width="300">
-
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_2diode_2R_alt_with_currents.png" width="300">
-      > 
-      > $V_1 = 0.7\ V$
-      >
-      > $V_2 = 1.4\ V$
-      >
-      > $I_{R_2} \approx 150\ \mu A $
-      >
-      > $I_{R_1} = I_{D_1} \approx 2.5\ m A $
-      >
-      > $I_{D_2} \approx 2.35\ m A$
-   
-   1. Datos: $V_{CC}=10\ V$, $R_3=1\ k\Omega$, $R_4=10\ k\Omega$, $R_5=5.1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
-
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R.png" width="300">
-      
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_with_currents.png" width="300">
-      >
-      > $I_4 = 0$
-      >
-      > $V_3 = 6.7\ V$
-      >
-      > $I_3 = I_5 \approx 1.1\ mA$
-      >
-      > $V_4 = V_5 \approx 5.6\ V$
-
-   1. Datos: $V_{CC}=3.6\ V$, $R_6=R_7=R_8=1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
-
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt.png" width="300">
-
-      > <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt_with_currents.png" width="300">
-      >
-      > $V_1 = 2.9\ V$
-      >
-      > $I_5 = 2.9\ m A$
-      >
-      > $V_2 = 3.25\ V$
-      >
-      > $I_4 = 0$
-      >
-      > $I_2 = I_3 = 0.35\ mA$
-      >
-      > $I_1 = 2.55\ mA$
+        > $\omega_{c2} \approx 16.2\ Hz$
+    1. Considere que $A = (1+\frac{R_a}{R_b})$. Al aumentar el valor de A, eventualmente el filtro se vuelve inestable. Determine el valor de A en que esto ocurre y con qué frecuencia oscila $v_o$, en Hz. (1pt)
+       > $f_{osc} \approx 15.9\ Hz$
+       >
+       > $A_{osc} = 3$
 
 # Fórmulas
 
-$$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
-$$ V_T = \frac{kT}{q}$$
-
-- $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
-- $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
-- $T$: Temperatura en Kelvin
-
 $$ H(s) = \frac{v_o(s)}{v_i(s)} $$
+$$\tau = -\frac{1}{pólo}$$
 $$ A_v(\omega) = | H(s=j\omega) |$$
 $$ A_V(\omega_c) = \frac{max(A_V(\omega))}{\sqrt{2}}$$
 $$ A_{v_{dB}}(\omega) = 20 log\left(| H(j\omega) |\right)$$
@@ -116,4 +43,21 @@ $$ \phi(\omega) = arg\left( H(j\omega) \right) = tan^{-1} \left( \frac{Im\{H(j\o
 $$\omega = 2 \pi f$$
 $$ 2\pi [rad/s] = 1 [Hz]$$
 $$ 1 [Hz] = 60 [rpm]$$
+Criterio de Barkhausen, con $A$ y $\beta$ calculados en $s=j\omega$:
 $$ A \beta = 1$$
+
+$$ V_{DS} = R_{DS(ON)} I_D$$
+$$ I_D = k(V_{GS}-V_{GS(th)})^2 $$
+$$V_{GS} < V_{GS(th)}$$
+$$ V_{DS} < V_{GS}-V_{GS(th)}$$
+$$ V_{DS} > V_{GS}-V_{GS(th)}$$
+
+$$ \Delta I_{D} = g_{FS} \Delta V_{GS} $$
+
+$$ \Delta I_{D} = g_{m} \Delta V_{GS} $$
+
+$$ g_{FS} = 2k(V_{GS}-V_{GS(th)})  $$
+
+$$ g_m = 2k(V_{GS}-V_{GS(th)})  $$
+
+$$ k = \frac{g_{ _{FS}}^2}{4I_D}  $$
