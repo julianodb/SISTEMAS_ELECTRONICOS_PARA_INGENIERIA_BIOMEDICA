@@ -42,7 +42,32 @@
        >
        > $\tau = \frac{3.3k\ 5.1k\ 0.1\mu}{3.3k + 5.1k} = \frac{1.683}{8.4k} \approx 0.2\ ms$
     3. Qué tipo de filtro está implementado (0.5pt)
+       > $A_v(\omega) = | H(s=j\omega) | = | \frac{R_2}{R_1+R_2 + R_1 R_2 C_1 j \omega} | = \frac{R_2}{\sqrt{(R_1+R_2)^2 + (R_1R_2C_1\omega)^2}}$ (+0.2pt)
+       >
+       > $A_v(\omega = 0) = \frac{R_2}{R_1+R_2} \approx 0.61$ (+0.1pt)
+       >
+       > $\lim_{\omega \to \infty} A_v(\omega) = 0$ (+0.1pt)
+       >
+       > Se trata de un $A_v$ que es 0.61 en $\omega = 0$ y que decrece tendiendo a cero conforme $\omega$ crece. Por lo tanto, es un filtro pasa-baja (+0.1 pt)
+
     4. El valor de la(s) frecuencia(s) de corte en Hz (0.5pt)
+       > Como $A_v$ es una función estrictamente decendiente, $max(A_v(\omega)) = A_v(0) = \frac{R_2}{R_1+R_2}$ (+0.2pt)
+       >
+       > $A_v(\omega_c) = \frac{max(A_V(\omega))}{\sqrt{2}}$
+       >
+       > $\frac{R_2}{\sqrt{(R_1+R_2)^2 + (R_1R_2C_1\omega_c)^2}} = \frac{R_2}{(R_1+R_2)\sqrt{2}}$
+       >
+       > $(R_1+R_2)^2 + (R_1R_2C_1\omega_c)^2 = 2(R_1+R_2)^2 $
+       >
+       > $(R_1R_2C_1\omega_c)^2 = (R_1+R_2)^2 $
+       >
+       > $R_1R_2C_1\omega_c = R_1+R_2 $
+       >
+       > $\omega_c = \frac{R_1+R_2}{R_1R_2C_1} $
+       >
+       > $\omega_c \approx 5000\ rad/s$ (+0.2pt)
+       >
+       > $f_c = \frac{\omega_c}{2\pi} \approx 800\ Hz$ (+0.1pt)
 
 3. El siguiente circuito implementa un filtro activo, con $R = 10\ k\Omega$, $C= 47\ nF$, $R_a = 3.3\ k\Omega$ y $R_b=2.2\ k\Omega$. 
 
