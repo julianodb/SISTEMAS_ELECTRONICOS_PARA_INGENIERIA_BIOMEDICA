@@ -12,8 +12,35 @@
     1. El valor de $v_o$ en estado estacionario si $v_i$ se conecta a una fuente constante de 5 V en $t=0$. (0.5pt)
        > En estado estacionario $C_1$ se considera un circuito abierto, por lo que:
        >
-       > $v_o = \frac{R_2}{R_1+R_2}v_i = \frac{5.1}{3-3+5.1} 5 \approx 3\ V$
+       > $v_o = \frac{R_2}{R_1+R_2}v_i = \frac{5.1}{3.3+5.1} 5 \approx 3\ V$
     2. Cual es la constante de tiempo del circuito (0.5pt)
+       > Paso 1: Aplicar la transformada de Laplace (sustituir $C_1$ por una resistencia de valor $\frac{1}{C_1 s}$) (+0.1pt)
+       >
+       > Paso 2: Encontrar la función de transferencia (+0.2pt)
+       >
+       > Por divisor de voltaje (// significa en paralelo)
+       >
+       > $v_o = \frac{R_2 // C_1}{R_2 // C_1 + R_1} v_i$
+       >
+       > $R_2 // C_1 = \frac{1}{\frac{1}{R_2}+C_1 s} = \frac{R_2}{1+R_2 C_1 s}$
+       >
+       > $\therefore v_o = \frac{\frac{R_2}{1+R_2 C_1 s}}{\frac{R_2}{1+R_2 C_1 s}+R_1} v_i$
+       >
+       > $ v_o = \frac{R_2}{R_2+R_1(1+R_2 C_1 s)} v_i$
+       >
+       > $H(s) = \frac{v_o}{v_i} = \frac{R_2}{R_1+R_2 + R_1 R_2 C_1 s}$
+       >
+       > Paso 3: Encontrar el pólo (+0.1pt)
+       >
+       > $R_1+R_2 + R_1 R_2 C_1 s = 0$
+       >
+       > $\implies s = -\frac{R_1+R_2}{R_1 R_2C_1}$
+       >
+       > Paso 4: calcular $\tau$ (+0.1pt):
+       >
+       > $\tau = -\frac{1}{pólo} = \frac{R_1 R_2C_1}{R_1+R_2}$
+       >
+       > $\tau = \frac{3.3k\ 5.1k\ 0.1\mu}{3.3k + 5.1k} = \frac{1.683}{8.4k} \approx 0.2\ ms$
     3. Qué tipo de filtro está implementado (0.5pt)
     4. El valor de la(s) frecuencia(s) de corte en Hz (0.5pt)
 
