@@ -2,6 +2,8 @@
 ## Prueba Escrita 2 - Pauta
 
 > En general, por errores de cálculo se descuenta 0.05pt, y por errores conceptuales o en la aplicación de fórmulas 0.1pt.
+>
+> Los números entre paréntesis con un signo de + son la puntuación parcial. Por ejemplo, (+0.1pt) indica que haber desarrollado el paso entre la última puntiación parcial y el (+0.1pt) vale 0.1 puntos.
 
 1. El siguiente circuito implementa un filtro pasivo, con $R_1=3.3\ k\Omega$, $R_2=5.1\ k\Omega$ y $C_1=0.1\ \mu F$. Determine:
 
