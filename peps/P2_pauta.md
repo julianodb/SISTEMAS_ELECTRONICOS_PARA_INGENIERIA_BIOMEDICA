@@ -199,9 +199,69 @@
        >
        > Paso 2: Determinación de la función de transferencia de $\beta$ (+0.3pt):
        >
-       > 
+       > $V_+ = \frac{2R}{2R+\frac{1}{Cs}} V_x$
+       >
+       > $V_x = \frac{1+2RCs}{2RCs}V_+$ (ecuación 1)
+       >
+       > Definimos $R_{eq}$ como la resistencia entre $V_x$ y tierra:
+       >
+       > $R_{eq} = R//\frac{1}{Cs}//(\frac{1}{Cs}+2R)$
+       >
+       > $R_{eq} = \frac{1}{\frac{1}{R}+Cs+\frac{Cs}{1+2RCs}}$
+       >
+       > $R_{eq} = \frac{R(1+2RCs)}{1+2RCs+Cs(R)(1+2RCs)+RCs}$
+       >
+       > $R_{eq} = \frac{R(1+2RCs)}{1+4RCs+2R^2C^2s^2}$
+       >
+       > Luego, la relación entre $V_x$ y $v_o$ se encuentra aplicando divisor de voltaje y recordando que $v_i = 0$ para calcular la función de transferencia de $\beta$:
+       >
+       > $V_x = \frac{R_{eq}}{R_{eq}+R}v_o$
+       >
+       > $V_x = \frac{\frac{R(1+2RCs)}{1+4RCs+2R^2C^2s^2}}{\frac{R(1+2RCs)}{1+4RCs+2R^2C^2s^2}+R}v_o$
+       >
+       > $V_x = \frac{R(1+2RCs)}{R(1+2RCs)+R(1+4RCs+2R^2C^2s^2)}v_o$
+       >
+       > $V_x = \frac{1+2RCs}{1+2RCs+1+4RCs+2R^2C^2s^2}v_o$
+       >
+       > $V_x = \frac{1+2RCs}{2+6RCs+2R^2C^2s^2}v_o$ (ecuación 2)
+       >
+       > Igualando la ecuación 1 y la ecuación 2:
+       >
+       > $\frac{1+2RCs}{2RCs}V_+ = \frac{1+2RCs}{2+6RCs+2R^2C^2s^2}v_o$
+       >
+       > $\beta(s) = \frac{V_+}{v_o} = \frac{2RCs}{2+6RCs+2R^2C^2s^2}$ 
+       >
+       > Paso 3: Aplicando el criterio de Barkhausen: (+0.2pt)
+       >
+       > $ A(j\omega_{osc}) \beta (j\omega_{osc}) = 1$
+       >
+       > $ A\frac{2RCj\omega_{osc}}{2+6RCj\omega_{osc}-2R^2C^2\omega_{osc}^2} = 1$
+       >
+       > $ 2ARCj\omega_{osc} = 2+6RCj\omega_{osc}-2R^2C^2\omega_{osc}^2 $
+       >
+       > Igualando la parte imaginaria:
+       >
+       > $2ARC\omega_{osc} = 6RC\omega_{osc}$
+       >
+       > $A = 3$
+       >
+       > Por lo tanto, el valor de A en que el filtro se vuelve inestable es 3.
+       >
+       > Igualando la parte real:
+       >
+       > $0 = 2-2R^2C^2\omega_{osc}^2$
+        >
+       > $2R^2C^2\omega_{osc}^2 = 2$
+       >
+       > $\omega_{osc}^2 = \frac{1}{R^2C^2}$
+       >
+       > $\omega_{osc} = \frac{1}{RC}$
+       >
+       > En Hz: (+0.1pt)
+       >
+       > $f_{osc} = \frac{1}{2\pi RC} \approx 340\ Hz$
 
-3. **Pregunta Extra, (+0.5 pts en la PEP 1)**: Para el siguiente circuito, determine  cuanta corriente fluye a través del LED cuando $v_i$ tiene los valores a continuación. Asuma que $ R_{21} = 100\ \Omega$, $ R_{22} = 47\ \Omega $, el LED es del color BLANCO y tiene un $ V_f = 4\ V $, y que el transistor tiene los siguientes parametros: $V_{GS(th)}=2.1\ V $, $ g_{ _{FS}} = 320\ mS $ (medido a 200 mA), $R_{DS(on)} = 3\ \Omega $.
+3. **Pregunta Extra, (+0.5 pts en la PEP 1)**: Para el siguiente circuito, determine cuanta corriente fluye a través del LED cuando $v_i$ tiene los valores a continuación. Asuma que $ R_{21} = 100\ \Omega$, $ R_{22} = 47\ \Omega $, el LED es del color BLANCO y tiene un $ V_f = 4\ V $, y que el transistor tiene los siguientes parametros: $V_{GS(th)}=2.1\ V $, $ g_{ _{FS}} = 320\ mS $ (medido a 200 mA), $R_{DS(on)} = 3\ \Omega $.
 
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_led_mosfet.png" width="200">
 
