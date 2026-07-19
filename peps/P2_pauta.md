@@ -193,6 +193,13 @@
        >
        > $f_{c2} = \frac{\omega_{c2}}{2\pi} \approx 430$ Hz (+0.1pt)
     1. Considere que $A = (1+\frac{R_a}{R_b})$. Al aumentar el valor de A, eventualmente el filtro se vuelve inestable. Determine el valor de A en que esto ocurre y con qué frecuencia oscila $v_o$, en Hz. (1pt)
+       > Paso 1: identificación de A y $\beta$ (+0.4pt)
+       >
+       > ![Abeta](../img/sallen_key_band_pass_2_A_beta_b.png)
+       >
+       > Paso 2: Determinación de la función de transferencia de $\beta$ (+0.3pt):
+       >
+       > 
 
 3. **Pregunta Extra, (+0.5 pts en la PEP 1)**: Para el siguiente circuito, determine  cuanta corriente fluye a través del LED cuando $v_i$ tiene los valores a continuación. Asuma que $ R_{21} = 100\ \Omega$, $ R_{22} = 47\ \Omega $, el LED es del color BLANCO y tiene un $ V_f = 4\ V $, y que el transistor tiene los siguientes parametros: $V_{GS(th)}=2.1\ V $, $ g_{ _{FS}} = 320\ mS $ (medido a 200 mA), $R_{DS(on)} = 3\ \Omega $.
 
