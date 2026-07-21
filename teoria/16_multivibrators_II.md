@@ -40,6 +40,10 @@ La siguiente figura muestra las formas de onda, donde se definió $V_{SAT} = V_{
 
 ![T7_F4](../img/14_astable_waveform.gif)
 
+La siguiente imagen muestra las formas de onda y el circuito lado a lado:
+
+![lol](../img/astable_explanation.png)
+
 ## 3. Multivibrador monoestable
 
 El último tipo de multivibrador es el monoestable, el cual tiene un estado estable y otro estado "cuasi-estable". El multivibrador monoestable, cuando libre de perturbaciones exteriores, se mantiene en su estado estable. Cuando perturbado de la manera apropiada, cambia su estado al "cuasi-estable", se mantiene un período de tiempo predeterminado, y luego vuelve a estar en su estado estable. De ésa forma, es un sistema que produce un cambio de estado después de un valor fijo de tiempo. 
@@ -74,9 +78,9 @@ $$ -T_t = R_{m3}C_{m1}\ln (1- \beta)$$
 
 $$ T_t = R_{m3}C_{m1}\ln \frac{1}{1- \beta}$$
 
-La siguiente figura muestra un bosquejo de las formas de onda del circuito, siendo la primera señal del circuito de disparo ($TRIGGER$).
+La siguiente figura muestra las formas de onda y el circuito lado a lado:
 
-![T7_F5](../img/T7_F4.jpeg)
+![monostable](../img/monostable_explanation.png)
 
 ## Ejercicios
 
