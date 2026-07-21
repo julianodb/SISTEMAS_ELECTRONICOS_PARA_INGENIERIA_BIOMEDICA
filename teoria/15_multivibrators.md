@@ -30,9 +30,11 @@ Con respecto a circuitos eléctricos biestables, en realidad ya hemos estudiado 
 
 La salida del amplificador operacional depende de la diferencia entre $V_+$ y $V_-$: si es positiva la salida se satura con el voltaje de almientación positiva, y si la diferencia es negativa la salida se satura con el voltaje de alimentación negativo. El sistema, por lo tanto, tiene dos estados estables: salida en $+V_{CC}$ y salida en $-V_{CC}$. Al igual que en el caso mecanico, perturbar la entrada no cambia la salida a menos que se supere cierto umbral (0 V, en este caso), lo que hace con que el sistema "salte" a la otra configuración estable.
 
-Al utilizar el comparador en circuitos eléctricos para comparar señales se puede encontrar el problema de "rebote". Debido a que las señales reales pueden contener ruido, el cruce cuando una señal pasa de ser menor que la referencia a ser mayor puede no ser tan claro. Como se indica en la imagen a continuación, puede que hayan varios cruces de polaridad en el momento en que las dos señales tienen valores cercanos. La señal superior es la salida del amplificador.
+Al utilizar el comparador en circuitos eléctricos para comparar señales se puede encontrar el problema de "rebote". Debido a que las señales reales pueden contener ruido, el cruce cuando una señal pasa de ser menor que la referencia a ser mayor puede no ser tan claro. Como se indica en las imagenes a continuación, puede que hayan varios cruces de polaridad en el momento en que las dos señales tienen valores cercanos. 
 
 <img src="https://www.analog.com/-/media/images/analog-dialogue/en/volume-34/number-1/articles/curing-comparator-instability-with-hysteresis/comparators-fig-01.gif?la=en&imgver=1" width="300">
+
+![rebote](../img/comparador_ruido.png)
 
 Para corregir el fenomeno de "rebote", se puede modificar el circuito del comparador para que tenga dos umbrales distintos: uno para transicionar de $-V_{CC}$ a $+V_{CC}$, y otro para cambiar en la dirección contraria. Dichos comparadores se denominan comparadores con histeresis, o comparadores schmitt.
 
@@ -91,6 +93,25 @@ Otra forma de entender el circuito es observar que el umbral de $v_i$ para hacer
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/comparator_schmitt_inverting.png" width="300">
 
     1. $R_8 = R_9 = 10\ k\Omega$; $V_{CC} = 12\ V$
+        > $V_+ = \frac{R_8}{R_8+R_9}v_o$
+        >
+        > $V_+ = 0.5 v_o$
+        >
+        > Para encontrar el umbral positivo, asumimos que $v_o = -V_{CC}$, y encontramos el valor de $v_i$ que hace con que cambie a positivo, es decir, que $V_+ > V_-$
+        >
+        > $ 0.5 (-V_{CC}) > v_i$
+        >
+        > $v_i < -6\ V$
+        >
+        > $V_{TH} = -6\ V$
+        >
+        > Para el umbral negativo, asumimos que $v_o = +V_{CC}$, y encontramos el calor de entrada hace con que cambie a negativo, es decir, $V_+ < V_-$
+        >
+        > $ 0.5 (V_{CC}) < v_i$
+        >
+        > $v_i > +6\ V$
+        >
+        > $\therefore V_{TL} = +6\ V$
 
     1. $R_8 = 1\ k\Omega$; $R_9 = 11\ k\Omega$; $V_{CC} = 12\ V$
 
