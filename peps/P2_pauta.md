@@ -266,8 +266,51 @@
     <img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_led_mosfet.png" width="200">
 
     1. $v_i = 2\ V$ 
+       > En este caso, $V_{GS} = v_i = 2\ V$ es menor que $V_{GS(th)}$ (2.1 V). Por lo tanto, el transistor está apagado e $I_D = 0$. Como la corriente en el LED es igual a $I_D$, la corriente en el LED es cero. (+0.1 pt)
     1. $v_i = 2.3\ V$ 
+       > En este caso, $V_{GS} = v_i = 2.3\ V$ es mayor que $V_{GS(th)}$ (2.1 V). Por lo tanto, el transistor está encendido. (+0.05pt)
+       >
+       > Suponiendo que está en modo saturado:
+       >
+       > $I_D = k(V_{GS}-V_{GS(th)})^2$
+       >
+       > No tenemos k, pero podemos calcularla a través de $g_{ _{FS}} $:
+       >
+       > $k = \frac{g_{ _{FS}}^2}{4I_D} = \frac{0.32^2}{4\ 0.2} = 0.128 \ A/V^2$
+       >
+       > Por lo tanto, 
+       >
+       > $I_D = 0.128(2.3-2.1)^2 \approx 5\ mA $ (+0.1pt)
+       >
+       > Para comprobar la condición de saturación, necesitamos calcular $V_{DS}$. Como $V_S=0$, basta calcular $V_D$:
+       >
+       > $V_D = 5- R_{22} I_D - V_f = 5-47*0.005-4 \approx 0.77\ V$
+       >
+       > Efectivamente, $V_{DS} > V_{GS} - V_{GS(th)}$ (0.77 > 0.2), comprobando el modo saturado. (+0.05pt)
+       >
+       > Por lo tanto, la corriente en el LED es de 5 mA.
     1. $v_i = 2.6\ V$ 
+       > En este caso, $V_{GS} = v_i = 2.3\ V$ es mayor que $V_{GS(th)}$ (2.1 V). Por lo tanto, el transistor está encendido. (+0.05pt)
+       >
+       > Suponiendo que está en modo triodo:
+       >
+       > $V_{DS} = R_{DS(ON)} I_D$
+       >
+       > Podemos resolver la malla con el LED:
+       >
+       > $5 - R_{22} I_D - V_f - R_{DS(ON)} I_D = 0$ 
+       >
+       > $5 - 47 I_D - 4 - 3 I_D = 0$ 
+       >
+       > $50 I_D = 1$ 
+       >
+       > $ I_D = 20\ mA$ (+0.1pt)
+       >
+       > Para comprobar el modo triodo, calculamos $V_{DS}$:
+       >
+       > $V_{DS} = R_{DS(ON)} I_D = 3*0.02 = 0.06\ V$
+       >
+       > Efectivamente $V_{DS} < V_{GS}-V_{GS(th)} = 0.5\ V$, lo que comprueba que está en modo triodo y que la corriente en el LED es de 20 mA. (+0.05pt)
 
 # Fórmulas
 
