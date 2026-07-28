@@ -4,8 +4,10 @@
 ## Materiales
 
 - Componentes de la BOM 
-- Conector hembra cortado para 5 posiciones 
-- Conector macho (pin head) de 2 positicones + jumper
+- Conector macho cortado para 5 posiciones (CON2)
+- Conector macho cortado para 3 posiciones (CON3)
+- 5 x Conector macho (pin head) de 2 positicones 
+- 4 x jumpers
 - Placas de Circuito Impreso (PCB) de la Placa 2
 - Stencil para la Placa 2
 - Pasta de soldadura
@@ -29,16 +31,16 @@ Para este Laboratorio, organicense en los mismos grupos que para los Trabajos.
 
     AYUDA2: Utilicen el área en blanco de la placa para identificarla. 
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T4_placa_1.png" width="800">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/T4_placa_2.png" width="800">
 
-Figura 1: Circuito completo del sensor capacitivo hasta el Trabajo 4
+Figura 1: Circuito completo del sensor capacitivo hasta el Trabajo 7
 
-![21_1](../img/cap_touch_top.png)
+![21_1](../img/cap_touch2_top.png)
 
-Figura 2: Diseño de la Placa 1 (TOP)
+Figura 2: Diseño de la Placa 2 (TOP)
 
-![21_1](../img/cap_touch_bot.png)
+![21_1](../img/cap_touch2_bot.png)
 
-Figura 3: Diseño de la Placa 1 (BOTTOM)
+Figura 3: Diseño de la Placa 2 (BOTTOM)
 
 Como cada miembro del equipo recibirá una placa al terminar el curso, aprovechen de avanzar en la fabricación de las otras placas una vez que terminen la demonstración.
