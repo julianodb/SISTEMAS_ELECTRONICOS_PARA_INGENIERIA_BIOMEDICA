@@ -348,7 +348,7 @@ Figura 10: Voltaje de salida del LDO VREG3 vs corriente de la carga
    >
    > R: La eficiencia teórica maxima del VREG5 es 92.6 %.
 
-2. Una familia de LDOs muy común son los circuitos integrados 7800. Por ejemplo, el 7805 es un LDO que genera 5V, el 7812 genera 12 V, etc. La hoja de datos del LM7805 especifica su $v_{do}$ mínimo como 2 V y su corriente de polarización típica de $i_b = 4.2\ mA$. Considerando que el voltaje de entrada es 10 V y que la carga consume 500 mA, calcule la eficiencai del LM7805 en regular 5 V.
+2. Una familia de LDOs muy común son los circuitos integrados 7800. Por ejemplo, el 7805 es un LDO que genera 5V, el 7812 genera 12 V, etc. La hoja de datos del LM7805 especifica su $v_{do}$ mínimo como 2 V y su corriente de polarización típica de $i_b = 4.2\ mA$. Considerando que el voltaje de entrada es 10 V y que la carga consume 500 mA, calcule la eficiencia del LM7805 en regular 5 V.
 
    > $\eta_{regulador} = \frac{potencia(carga)}{potencia(total)}$
    >
