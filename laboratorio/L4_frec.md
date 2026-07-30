@@ -29,7 +29,7 @@ Configuren la fuente CC para un voltaje de 12 V y una corriente maxima entre 0.2
 
    Figura 1: Divisor de voltaje
 
-   1. Utilizando el osciloscopio, observen el valor de $V_{bias\\_weak}$. Enciendan la fuente CC, anoten cuanto tiempo demora en estabilizarse y su valor en estado estacionario. ¿Como se compara con el valor teórico ? Ayuda: utilicen al menos 0.5 segundo por division en la escala horizontal. Ayuda2: Activen la opción roll en los osciloscopios que tienen ésta opción. (0.5 pt)
+   1. Utilizando el osciloscopio, observen el valor de $V_{bias\\_weak}$. Enciendan la fuente CC, anoten cuanto tiempo demora en estabilizarse y su valor en estado estacionario. ¿Como se comparan el tiempo y el valor de voltaje con sus valores teóricos ? Ayuda: utilicen al menos 0.5 segundo por division en la escala horizontal. Ayuda2: Activen la opción roll en los osciloscopios que tienen ésta opción. (0.5 pt)
 
 2. Sin desarmar el circuito anterior, armen el circuito de la figura 2 para obtener la señal $V_{bias}$. Utilicen uno de los amplificadores operacionales del circuito integrado LM324. No olviden alimentar el LM324 (conectar $V_{CC}$ y tierra a sus pines 4 y 11, respectivamente).
 
