@@ -1,51 +1,54 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 10 de Sistemas Electrónicos
-#### Segundo Semestre de 2025
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 8 de Sistemas Electrónicos
+#### Primer Semestre de 2026
 
 ### La nota de este Laboratorio también es la nota del Trabajo 9
 
 ## Recursos del pañol
 
-- Placa de Circuito Impreso (PCB) del color del grupo
-- Stencil para la PCB
+- Placas de Circuito Impreso (PCB) de las placas 1, 2 y 3
+- Stencils para las PCBs
 - Pasta de soldadura
-- Componentes de la BOM, más LM324, LM386, altavoz, micrófono y LED
+- Componentes de la BOM
 - Fuente CC, generador de funciones y osciloscopio para probar
 - Cautín + estaño
 - Alicates
 - Cables
-- Stripboard
 
 ## Procedimiento experimental e informe
 
-Terminen de fabricar los prototipos de estetoscopio electrónico, utilizando los valores de componentes diseñados a lo largo del semestre. Acuérdense que cada prototipo está compuesto de una "Placa 1", que contiene el micrófono y altavoz, y una "Placa 2", que despliega la frecuencia cardíaca en un display. El objetivo es fabricar un prototipo por miembro del grupo. Demuestren al profesor el funcionamiento de los prototipos fabricados antes del fin del semestre. La nota final corresponde al número de prototipos funcionales:
+Terminen de fabricar los prototipos de sensor capacitivo de toque, utilizando los valores de componentes diseñados a lo largo del semestre. Acuérdense que cada prototipo está compuesto de una "Placa 1", una "Placa 2", y una "Placa 3". El objetivo es fabricar un prototipo por miembro del grupo. Demuestren al profesor el funcionamiento de los prototipos fabricados antes del fin del semestre. La nota final se calcula de acuerdo al número de placas funcionales, con enfasis en sets completos (placa 1+2+3).
 
-Grupos con 3 miembros
+Para cada miembro del grupo ($i$), se calcula cuantas placas completó:
 
-| número de placas funcionales | nota |
-| -- | -- |
-| 0 | 1 |
-| 0.5 | 3.9 |
-| 1 | 5.4 |
-| 1.5 | 6.2 |
-| 2 | 6.6 |
-| 2.5 | 6.8 |
-| 3 | 7 |
+$S_i = D_{1,i}+D_{2,i}+D_{3,i}$
 
-Grupos con 4 miembros
+Donde $D_{j,i}$ es el estado de avance de la placa $j$ para el alumno $i$, y puede ser cero, 50% o 100%, a criterio del profesor.
 
-| número de placas funcionales | nota |
-| -- | -- |
-| 0 | 1 |
-| 0.5 | 3.4 |
-| 1 | 4.8|
-| 1.5 | 5.7 |
-| 2 | 6.2 |
-| 2.5 | 6.5 |
-| 3 | 6.7 |
-| 3.5 | 6.9 |
-| 4 | 7 |
+Luego se calcula el total de placas completadas:
 
-A criterio del profesor, placas "parcialmente funcionales" podrán recibir una nota parcial.
+$T = S_1+S_2+S_3$
+
+También, cuantas placas hay en el set de placas más avanzado:
+
+$M = max(S_1,S_2,S_3)$
+
+Y la nota final es:
+
+$Nota = 1+0.5(T+M)$
+
+Algunos ejemplos:
+
+|Situación | Placas finalizadas por estudiante ($S_1$-$S_2$-$S_3$) | $T$ | $M$ | $Nota$ |
+| -- | -- | -- | -- | -- |
+| Nada funciona | 0-0-0 | 0 | 0 | 1.0 |
+| Una placa para un miembro | 1-0-0 | 1 | 1 | 2.0 |
+| Una placa para cada miembro | 1-1-1 | 3 | 1 | 3.0 |
+| 3 placas para 1 miembro | 3-0-0| 3 | 3 | 4.0 |
+| 2 placas para 1 miembro, 1 para otro | 2-1-0 | 3 | 2 | 3.5 |
+| 3 placas para un mimebro, 1 para otro | 3-1-0 | 4 | 3 | 4.5 |
+| 3 placas para 2 miembros | 3-3-0 | 6 | 3 | 5.5 |
+| 3 palcas para 2 mimebros, 1 para otro | 3-3-1 | 7 | 3 |6.0 |
+| todas las placas funcionando | 3-3-3 | 9 | 3 | 7.0 |
 
 Se adjuntan diagramas de los circuitos completos a continuación
 
