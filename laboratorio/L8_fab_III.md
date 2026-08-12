@@ -50,24 +50,45 @@ Algunos ejemplos:
 | 3 palcas para 2 mimebros, 1 para otro | 3-3-1 | 7 | 3 |6.0 |
 | todas las placas funcionando | 3-3-3 | 9 | 3 | 7.0 |
 
+Para grupos con apenas 2 estudiantes, $S_i$ se multiplica por 1.5.
+
 Se adjuntan diagramas de los circuitos completos a continuación
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T9_stethoscope_board_1.png" width="800">
+![placa1_sch](../img/cap_touch_1_sch.png)
 
 Figura 1: Circuito de la "Placa 1"
 
-![21_1](../img/T9_board_1_layout.png)
+![placa1_lay_top](../img/cap_touch_top.png)
 
-Figura 2: Sugerencia de como soldar los componentes en la stripboard
+Figura 2: Circuito Impreso de la "Placa 1" (vista superior / TOP)
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/T9_stethoscope_board_2.png" width="800">
+![placa1_lay_bot](../img/cap_touch_bot.png)
 
-Figura 3: Circuito de la "Placa 2"
+Figura 3: Circuito Impreso de la "Placa 1" (vista inferior / BOTTOM)
 
-![21_1](../img/stethoscope_top.png)
+![placa2_sch](../img/cap_touch_2_sch.png)
 
-Figura 4: Placa 2 - TOP (vista superior)
+Figura 4: Circuito de la "Placa 2"
 
-![21_1](../img/stethoscope_bottom.png)
+![placa2_lay_top](../img/cap_touch2_top.png)
 
-Figura 5: Placa 2 - BOTTOM (vista inferior)
+Figura 5: Circuito Impreso de la "Placa 2" (vista superior / TOP)
+
+![placa2_lay_bot](../img/cap_touch2_bot.png)
+
+Figura 6: Circuito Impreso de la "Placa 2" (vista inferior / BOTTOM)
+
+![placa3_sch](../img/cap_touch_3_sch.png)
+
+Figura 7: Circuito de la "Placa 3"
+
+![placa3_lay_top](../img/cap_touch3_top.png)
+
+Figura 8: Circuito Impreso de la "Placa 3" (vista superior / TOP)
+
+![placa3_lay_bot](../img/cap_touch3_bot.png)
+
+Figura 9: Circuito Impreso de la "Placa 3" (vista inferior / BOTTOM)
+
+
+
