@@ -1,11 +1,13 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 1/2026
 ##### enfoque Ingeniería Biomédia
 
-## Página de la asignatura
+## Links
 
-[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=49661)
+[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=49661): página oficial de la asignatura
 
-[Clase de Tinkercad para Laboratorios Online](https://www.tinkercad.com/joinclass/5XK7AATBK)
+[Clase de Tinkercad](https://www.tinkercad.com/joinclass/5XK7AATBK): para Laboratorios Online
+
+[Falstad](https://www.falstad.com/circuit/): para Simulaciones de circuitos
 
 ## Horário Teoría
 - Martes: 
@@ -25,46 +27,38 @@
 
 - 
 
-## Resultados de Aprendizaje - Teoría
+## Resultados de Aprendizaje
 
-Al término de la asignatura el alumno será capaz de identificar, analizar y especificar los principales componentes y circuitos de la electrónica analógica:
-1. Resistores, capacitores, diodos, transistores
-2. Aplicaciones directas de diodos y transistores, como rectificadores y drivers
-3. Amplificadores operacionales y sus aplicaciones
-4. Filtros analógicos pasivos y activos
-5. Osciladores
-6. Fuentes de alimentación lineales y conmutadas
+Al término de la asignatura, el estudiante será capaz de integrar los conocimientos de electrónica analógica para **analizar, diseñar, fabricar, probar y simular** circuitos electrónicos, con un énfasis especial en su aplicación en el ámbito de la ingeniería biomédica. Específicamente, el estudiante desarrollará las competencias necesarias para:
 
-## Resultados de Aprendizaje - Laboratório
-
-Al término de la asignatura el alumno será capaz de:
-1. Poner en práctica los conocimientos de electrónica aprendidos en cursos anteriores y en cátedra.
-    1. Desarrollar las habilidades de trabajo en un laboratorio de electrónica.
-    1. Comprender limitantes en el trabajo real con electrónica.
-    1. Trabajar con los circuitos más emblemáticos de la electrónica análoga.
-    1. Usar la instrumentación básica utilizada en electrónica.
-
-## Contribución al Perfil de Egreso
-- Capacidad de aprendizaje autónomo
-- Capacidad para abordar y resolver problemas de ingeniería en una perspectiva sistémica
-- Desarrollar la capacidad de diagnóstico, modelación y diseño de sistemas o procesos en el ámbito de su especialidad
+*   **Analizar** circuitos complejos identificando el comportamiento de componentes pasivos y semiconductores (resistores, capacitores, diodos, transistores, amplificadores operacionales).
+*   **Diseñar** soluciones electrónicas funcionales para necesidades biomédicas, utilizando técnicas de filtrado, amplificación y regulación.
+*   **Fabricar** prototipos electrónicos comprobando su funcionamiento mediante pruebas de concepto.
+*   **Probar y experimentar** con instrumentación real, comprendiendo las limitaciones físicas del trabajo de laboratorio.
+*   **Simular** circuitos utilizando herramientas digitales para validar el diseño previo a la implementación.
 
 ## Evaluaciones
 
-Las notas de todas las evaluaciones (pruebas escritas, trabajos de diseño y laboratorios) serán redondeadas a una casa decimal hacia arriba. Ejemplo: 4.51 se redondea a 4.6.
+Las notas de todas las evaluaciones serán redondeadas a una casa decimal hacia arriba (ej. 4.51 se redondea a 4.6):
 
 $$ Nota Redondeada = \frac{\lceil 10\  Nota Original \rceil}{10}$$
 
-La siguiente tabla muestra un resúmen de las evaluaciones.
+Las evaluaciones se estructuran según las capacidades desarrolladas:
 
-![notas](img/notas.png)
+| Capacidad | Evaluación | Cantidad |
+| :--- | :--- | :---: |
+| **Analizar** | Pruebas escritas | 3 |
+| **Diseñar** | Trabajos de diseño electrónico | 7 |
+| **Fabricar** | Actividades de fabricación/prueba de concepto | 3 |
+| **Probar** | Laboratorios presenciales | 7 |
+| **Simular** | Laboratorios online | 5 |
 
 ### Teoría
-La nota de teoría está compuesta por 70% del promedio simple de las evaluaciones escritas, y 30% del promedio simple de los trabajos. 
+La nota de teoría está compuesta por 60% del promedio simple de las evaluaciones escritas, 20% del promedio simple de los trabajos y 20% del promedio simple de las fabricación de prototipos. 
 
-$$ Promedio Teoría = 0.7\sum_{i=1}^{np} \frac{P_i}{np} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
+$$ Promedio Teoría = 0.6\sum_{i=1}^{np} \frac{P_i}{np} + 0.2\sum_{j=1}^{nt} \frac{T_j}{nt} + 0.2\sum_{k=1}^{nf} \frac{F_k}{nf} $$
 
-Están planificados $np=3$ pruebas escritas y $nt=9$ trabajos de diseño.
+Donde $P_i$ es la Prueba Escrita "i", $T_j$ es el trabajo de diseño "j", y $F_k$ es la actividad de fabricación "k". Están planificados $np=3$ pruebas escritas, $nt=7$ trabajos de diseño y $nf=3$ actividades de fabricación de prototipos.
 
 Cada trabajo de diseño tiene una fecha y hora maxima de entrega. En el caso de que se entregue el trabajo con hasta 24 horas de atraso, se descuenta la mitad de la nota (máxima nota posible 4.0). Si se entrega el trabajo con más de 24 horas de atraso, se considera una nota 1.0.
 
@@ -74,7 +68,7 @@ El sistema de evaluación contempla, además, una Prueba Optativa Recuperativa (
 - La POR reemplaza la peor nota de las 3 pruebas escritas.
 - El contenido de la POR es toda la materia
 
-$$ Promedio Teoría = 0.7\frac{ \sum{P_i} + POR - min\{P_i\}}{np} + 0.3\sum_{j=1}^{nt} \frac{T_j}{nt} $$
+$$ Promedio Teoría = 0.6\frac{ \sum{P_i} + POR - min\{P_i\}}{np} + 0.2\sum_{j=1}^{nt} \frac{T_j}{nt} + 0.2\sum_{k=1}^{nf} \frac{F_k}{nf}  $$
 
 Si el Promedio Teoría es menor a 4.0, el/la estudiante reprueba la parte teórica de la asignatura.
 
@@ -82,17 +76,17 @@ Si el Promedio Teoría es menor a 4.0, el/la estudiante reprueba la parte teóri
 
 Se exige un mínimo de 75 % de asistencia a clases presenciales. Una asistencia inferior al 75 % sin justificaciones ante docencia causa reprobación automatica de la parte teórica de la asignatura, con una nota 3.5 .
 
-Están planificadas 24 clases de teoría, por lo que el número maximo de ausencias injustificadas es 3 días.
+Están planificadas 20 clases de teoría, impartidas 2 por día en 10 días distintos, por lo que el número maximo de ausencias injustificadas es de 2 días.
 
 ### Laboratorio
 
-El desarrollo del laboratorio estará en función a experiencias presenciales y online. Las experiencias presenciales corresponderán a guías que deberán ser desarrolladas en clases, y cuyo informe deberá ser entregado al finalizar la sesión. Las experiencias online serán desarrolladas con la plataforma tinkercad, y serán evaluadas a través de cuestionarios en uvirtual.
+El desarrollo del laboratorio estará en función a experiencias presenciales, online y las actividades de fabricación. Las experiencias presenciales corresponderán a guías que deberán ser desarrolladas en clases, y cuyo informe deberá ser entregado al finalizar la sesión. Las experiencias online serán desarrolladas con la plataforma tinkercad, y serán evaluadas a través de cuestionarios en uvirtual. Las actividades de fabricación se desarrollan de forma similar a los laboratorios presenciales, con una guía que estipula un objetivo que debe ser alcanzado durante el horario de la clase, y cuyo resultado debe ser demonstrado al profesor antes de finalizar la sesión.
 
-Las ponderaciones para la evaluación de laboratorio serán 70% del promedio simple de las experiencias presenciales y 30% del promedio simple de las experiencias online:
+Las ponderaciones para la evaluación de laboratorio serán 60% del promedio simple de las experiencias presenciales, 20% del promedio simple de las experiencias online y 20% de las actividades de fabricación:
 
-$$ Promedio Laboratorio = 0.7\sum_{i=1}^{nl} \frac {Lp_i}{nl} + 0.3\sum_{j=1}^{no} \frac {Lo_j}{no}$$
+$$ Promedio Laboratorio = 0.6\sum_{i=1}^{nl} \frac {Lp_i}{nl} + 0.2\sum_{j=1}^{no} \frac {Lo_j}{no} + 0.2\sum_{k=1}^{nf} \frac{F_k}{nf} $$
 
-Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales y $Lo_j$ son las notas de las experiencias de laboratorio online. Están planificados $nl=8$ actividades de laboratorio presenciales y $no=6$ actividades online durante el semestre.
+Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales, $Lo_j$ son las notas de las experiencias de laboratorio online y $F_k$ las notas de las actividades de fabricación. Están planificados $nl=7$ actividades de laboratorio presenciales, $no=5$ actividades online y $nf=3$ actividades de fabricación de prototipos durante el semestre.
 
 Si el Promedio Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
 
