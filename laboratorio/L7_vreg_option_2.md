@@ -1,6 +1,6 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 9 de Sistemas Electrónicos
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 7 de Sistemas Electrónicos
 # Opción 2
-#### Segundo Semestre de 2025
+#### Primer Semestre de 2026
 
 ## Recursos del pañol
 
@@ -11,13 +11,13 @@
 
 Para este laboratorio se debe entregar un único informe (sólo habrá un grupo con todos los estudiantes de la sesión). Dividan las tareas, trabajen en conjunto, revisen todas las preguntas y respuestas y entreguen el resultado al final de la actividad.
 
-El objetivo del Laboratorio 9 es estudiar una placa de fuente de poder real y entender como se utilizan en la practica diversos de los componentes, circuitos y conceptos estudiados en clase. También es un objetivo que los estudiantes practiquen hacer ingenieria inversa de circuitos electronicos, y buscar información para entender una placa de circuito impreso y sus componentes.
+El objetivo del Laboratorio 7 es estudiar una placa de fuente de poder real y entender como se utilizan en la practica diversos de los componentes, circuitos y conceptos estudiados en clase. También es un objetivo que los estudiantes practiquen hacer ingenieria inversa de circuitos electronicos, y buscar información para entender una placa de circuito impreso y sus componentes.
 
 La Figura 1 muestra la fuente de poder de un cargador USB. La placa convierte el voltaje de entrada de la toma de corriente (220 V, 50 Hz) a un voltaje continuo de aproximadamente 5 V. Contesten las siguientes preguntas.
 
 ![photo](../img/LA_photo2.jpg)
 
-Figura 1: Fuente de Poder de la impresora 3D
+Figura 1: Fuente de Poder de un cargador USB
 
 1. Indiquen la cantidad de resistencias, la cantidad de capacitores, la cantidad de inductores, la cantidad de diodos, la cantidad de transistores y la cantidad de circuitos integrados que se utilizan en la placa. (0.5pt)
 
