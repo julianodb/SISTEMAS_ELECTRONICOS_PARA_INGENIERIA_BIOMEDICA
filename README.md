@@ -51,7 +51,7 @@ Las evaluaciones se estructuran según las capacidades desarrolladas:
 | **Diseñar** | Trabajos de diseño electrónico | 7 |
 | **Fabricar** | Actividades de fabricación/prueba de concepto | 3 |
 | **Probar** | Laboratorios presenciales | 7 |
-| **Simular** | Laboratorios online | 5 |
+| **Simular** | Laboratorios online | 6 |
 
 ### Teoría
 La nota de teoría está compuesta por 60% del promedio simple de las evaluaciones escritas, 20% del promedio simple de los trabajos y 20% del promedio simple de las fabricación de prototipos. 
@@ -86,7 +86,7 @@ Las ponderaciones para la evaluación de laboratorio serán 60% del promedio sim
 
 $$ Promedio Laboratorio = 0.6\sum_{i=1}^{nl} \frac {Lp_i}{nl} + 0.2\sum_{j=1}^{no} \frac {Lo_j}{no} + 0.2\sum_{k=1}^{nf} \frac{F_k}{nf} $$
 
-Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales, $Lo_j$ son las notas de las experiencias de laboratorio online y $F_k$ las notas de las actividades de fabricación. Están planificados $nl=7$ actividades de laboratorio presenciales, $no=5$ actividades online y $nf=3$ actividades de fabricación de prototipos durante el semestre.
+Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales, $Lo_j$ son las notas de las experiencias de laboratorio online y $F_k$ las notas de las actividades de fabricación. Están planificados $nl=7$ actividades de laboratorio presenciales, $no=6$ actividades online y $nf=3$ actividades de fabricación de prototipos durante el semestre.
 
 Si el Promedio Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
 
