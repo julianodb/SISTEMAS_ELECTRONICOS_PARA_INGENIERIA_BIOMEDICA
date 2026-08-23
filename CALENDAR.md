@@ -22,24 +22,24 @@
 |    | 5  | 6        | 7  | 8         | 9  | 10 | 11 |
 |  3 | T2]| 05 06    |    | A:E1 B:L2 |    |    |    |
 |    | 12 | 13       | 14 | 15        | 16 | 17 | 18 |
-|  4 | FF | P1       |    | A:L3 B:L3 |    |    |    |
+|  4 | FF | P1       |    | F1        |    |    |    |
 |    | 19 | 20       | 21 | 22        | 23 | 24 | 25 |
-|  5 |    | 07 08 [T3|    | A:E2 B:L4 |    |    |    |
+|  5 |    | 07 08 [T3|    | A:E2 B:L3 |    |    |    |
 |    | 26 | 27       | 28 | 29        | 30 | 31 | 1  |
-|  6 | T3]| 09 10 [T4|    | A:L4 B:E2 |    |    |    |
+|  6 | T3]| 09 10 [T4|    | A:L3 B:E2 |    |    |    |
 
 ## NOVIEMBRE / 2026
 
 |Sem |Lun |Mar       |Mie |Jue        |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:        |:-: |:-: |:-: |
 |    |  2 |  3       |  4 |  5        |  6 |  7 |  8 |
-|  7 | T4]| 11 12    |    | A:L5 B:L5 |    |    |    |
+|  7 | T4]| 11 12    |    | A:L4 B:L4 |    |    |    |
 |    |  9 | 10       | 11 | 12        | 13 | 14 | 15 |
-|  8 |    | P2       |    | A:L6 B:L6 |    |    |    |
+|  8 |    | P2       |    | F2        |    |    |    |
 |    | 16 | 17       | 18 | 19        | 20 | 21 | 22 |
-|  9 |    | 13 14 [T5|    | A:L7 B:E3 |    |    |    |
+|  9 |    | 13 14 [T5|    | A:L5 B:E3 |    |    |    |
 |    | 23 | 24       | 25 | 26        | 27 | 28 | 29 |
-| 10 | T5]| 15 16 [T6|    | A:E3 B:L7 |    |    |    |
+| 10 | T5]| 15 16 [T6|    | A:E3 B:L5 |    |    |    |
 
 
 ## DICIEMBRE / 2026
@@ -47,13 +47,13 @@
 |Sem |Lun |Mar       |Mie |Jue       |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:       |:-: |:-: |:-: |
 |    | 30 |  1       |  2 |  3       |  4 |  5 |  6 |
-| 11 | T6]| 17 18 [T7|    | A:E4 B:L8|    |    |    |
+| 11 | T6]| 17 18 [T7|    | A:E4 B:L6|    |    |    |
 |    |  7 |  8       |  9 | 10       | 11 | 12 | 13 |
-| 12 | FF | FF       | T7]| A:L8 B:E4|    |    |    |
+| 12 | FF | FF       | T7]| A:L6 B:E4|    |    |    |
 |    | 14 | 15       | 16 | 17       | 18 | 19 | 20 |
-| 13 |    | 19 20 [T8|    | A:L9 B:L9|    |    |    |
+| 13 |    | 19 20    |    | A:L7 B:L7|    |    |    |
 |    | 21 | 22       | 23 | 24       | 25 | 26 | 27 |
-| 14 |    | P3       |    | POR A:LA B:LA| FF | FF |    |
+| 14 |    | P3       |    | POR F3   | FF | FF |    |
 |    | 28 | 29       | 30 | 31       |  1 |  2 |  3 |
 | 15 |    |          |    |          | FF | FF |    |
 
@@ -62,7 +62,7 @@
 |Sem |Lun |Mar       |Mie |Jue        |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:        |:-: |:-: |:-: |
 |    |  4 |  5       |  6 |  7        |  8 |  9 | 10 |
-| 16 |    | A:LA B:LA|    |  A:LA B:LA| T8]| TT?|    |
+| 16 |    | F3       |    |  F3       |    | TT?|    |
 |    | 11 | 12       | 13 | 14        | 15 | 16 | 17 |
 | 17?|    |          |    |           |    | TT |    |
 |    | 18 | 19       | 20 | 21        | 22 | 23 | 24 |
@@ -99,9 +99,9 @@
 ## Leyenda
 
 - II: Inicio del Semestre
--   : Receso de Actividades
+- RR: Receso de Actividades
 - DD: Duelo institucional
--   : Paro Estudiantil
+- PP: Paro Estudiantil
 - FF: Feriado
 - TT: Término del Semestre
 - CC: Congreso
@@ -109,11 +109,11 @@
 - n : número de un digito (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E o F)
 - nn: Clase Teórica número nn
 - Pn: PEP n
-- Ln:A: Laboratorio Presencial n, sesión A
-- Ln:B: Laboratorio Presencial n, sesión B
-- Ln:A+B: Laboratorio Presencial n, sesiones A y B
-- En:A: Laboratorio Online n, sesión A
-- En:B: Laboratorio Online n, sesión B
+- Fn: Prueba de Concepto / Fabricación n
+- A:Ln: Laboratorio Presencial n, sesión A
+- B:Ln: Laboratorio Presencial n, sesión B
+- A:En: Laboratorio Online n, sesión A
+- B:En: Laboratorio Online n, sesión B
 - [Tn: Inicio del Trabajo n
 - Tn]: Entrega del Trabajo n
 - MB: Marcha Blanca (resolver dudas generales, reforzar la información relevante para la continuidad académica, y evitar avanzar con contenidos nuevos)
