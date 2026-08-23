@@ -28,6 +28,20 @@
 |    | 26 | 27       | 28 | 29        | 30 | 31 | 1  |
 |    |    |          |    |           |    |    |    |
 
+## NOVIEMBRE / 2026
+
+|Sem |Lun |Mar |Mie |Jue |Vie |Sab |Dom |
+|:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
+|    |  2 |  3 |  4 |  5 |  6 |  7 |  8 |
+|    |    |    |    |    |    |    |    |
+|    |  9 | 10 | 11 | 12 | 13 | 14 | 15 |
+|    |    |    |    |    |    |    |    |
+|    | 16 | 17 | 18 | 19 | 20 | 21 | 22 |
+|    |    |    |    |    |    |    |    |
+|    | 23 | 24 | 25 | 26 | 27 | 28 | 29 |
+|    |    |    |    |    |    |    |    |
+
+
 
 |Sem |Lun |Mar       |Mie |Jue        |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:        |:-: |:-: |:-: |
@@ -51,7 +65,7 @@
 |    | 11 | 12       | 13 | 14        | 15 | 16 | 17 |
 |  7 | T5]| DD       | DD | DD        | DD |    |    |
 |    | 18 | 19       | 20 | 21        | 22 | 23 | 24 |
-|    | RR | RR       | RR | RR        | RR | RR |    |
+|    |    |          |    |           |    |    |    |
 |    | 25 | 26       | 27 | 28        | 29 | 30 | 31 |
 |  8 |    | 11 12 [T6|    | A:E4 B:L4 | PP | PP | PP |
 
@@ -99,7 +113,7 @@
 ## Leyenda
 
 - II: Inicio del Semestre
-- RR: Receso de Actividades
+-   : Receso de Actividades
 - DD: Duelo institucional
 - PP: Paro Estudiantil
 - FF: Feriado
