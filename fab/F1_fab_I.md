@@ -1,4 +1,4 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 3 de Sistemas Electrónicos
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Taller de Fabricación F1 de Sistemas Electrónicos
 #### Primer Semestre de 2026
 
 ## Materiales
@@ -21,9 +21,9 @@
 
 ## Procedimiento experimental e informe
 
-Para este Laboratorio, organicense en los mismos grupos que para los Trabajos.
+Para este Taller de Fabricación, organícense en los mismos grupos que para los Trabajos.
 
-1. Solden los componentes de la placa 1 del sensor capacitivo, con los valores elegidos hasta el momento. Pueden utilizar las imagenes a continuación como referencia. Fabriquen al menos 1 placa por grupo, y demuestren su funcionamiento al profesor antes del fin del Laboratorio. (6pt).
+1. Solden los componentes de la placa 1 del sensor capacitivo, con los valores elegidos hasta el momento. Pueden utilizar las imágenes a continuación como referencia. Fabriquen al menos 1 placa por grupo, y demuestren su funcionamiento al profesor antes del fin del Taller de Fabricación. (6pt).
 
     AYUDA: Partan por los componentes de montaje superficial (pregunten al profesor y al ayudante como utilizar el horno)
 

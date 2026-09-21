@@ -1,7 +1,7 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 8 de Sistemas Electrónicos
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Taller de Fabricación F3 de Sistemas Electrónicos
 #### Primer Semestre de 2026
 
-### La nota de este Laboratorio también es la nota del Trabajo 9
+### La nota de este Taller de Fabricación también es la nota del Trabajo 9
 
 ## Recursos del pañol
 
@@ -89,6 +89,5 @@ Figura 8: Circuito Impreso de la "Placa 3" (vista superior / TOP)
 ![placa3_lay_bot](../img/cap_touch3_bot.png)
 
 Figura 9: Circuito Impreso de la "Placa 3" (vista inferior / BOTTOM)
-
 
 

@@ -109,7 +109,7 @@
 - n : número de un digito (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E o F)
 - nn: Clase Teórica número nn
 - Pn: PEP n
-- Fn: Prueba de Concepto / Fabricación n
+- Fn: Taller de Fabricación n
 - A:Ln: Laboratorio Presencial n, sesión A
 - B:Ln: Laboratorio Presencial n, sesión B
 - A:En: Laboratorio Online n, sesión A
@@ -150,15 +150,18 @@
 
 - [Introducción](/laboratorio/intro.pdf): Introducción a instrumentación y laboratorios de electrónica
 - [L1](/laboratorio/L1_intro.md): Instrumentación básica utilizada en electrónica, resistencias especiales
-- [L2](/laboratorio/L2_diodes.md): Diodo DC y LEDs
-- [L3](/laboratorio/L3_fab_I.md): Técnicas de Fabricación y Prototipaje en Electrónica I
-- [L4](/laboratorio/L4_frec.md): respuesta en frecuencia / filtros activos. 
-<!-- - [L5](/laboratorio/L5_ampop.md): amplificador operacional y aplicaciones en CC -->
-- [L5](/laboratorio/L5_fab_II.md): Técnicas de Fabricación y Prototipaje en Electrónica II
-<!-- - [L7](/laboratorio/L7_mosfet.md): transistor mosfet (curvas características) + corte y saturación. --> 
+- [L2](/laboratorio/L2_opamp.md): amplificador operacional y aplicaciones en CC
+- [L3](/laboratorio/L3_diodes.md): diodo DC y LEDs
+- [L4](/laboratorio/L4_mosfet.md): transistor MOSFET (curvas características), corte y saturación
+- [L5](/laboratorio/L5_frec.md): respuesta en frecuencia / filtros activos
 - [L6](/laboratorio/L6_multivibrators.md): multivibradores
-- L7 [opcion 1](/laboratorio/L7_vreg_option_1.md) y [opcion 2](/laboratorio/L7_vreg_option_2.md): Fuentes de Poder / Reguladores de Voltaje
-- [L8](/laboratorio/L8_fab_III.md): Técnicas de Fabricación y Prototipaje en Electrónica III
+- L7 [opción 1](/laboratorio/L7_vreg_option_1.md) y [opción 2](/laboratorio/L7_vreg_option_2.md): fuentes de poder / reguladores de voltaje
+
+# Talleres de Fabricación
+
+- F1: [Introducción](/fab/F1_fab_I_intro.md) y [actividad](/fab/F1_fab_I.md) — Técnicas de Fabricación y Prototipaje en Electrónica I
+- F2: [Introducción](/fab/F2_fab_II_intro.md) y [actividad](/fab/F2_fab_II.md) — Técnicas de Fabricación y Prototipaje en Electrónica II
+- F3: [Introducción](/fab/F3_fab_III_intro.md) y [actividad](/fab/F3_fab_III.md) — Técnicas de Fabricación y Prototipaje en Electrónica III
 
 # Laboratorios Online
 

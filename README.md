@@ -49,16 +49,16 @@ Las evaluaciones se estructuran según las capacidades desarrolladas:
 | :--- | :--- | :---: |
 | **Analizar** | Pruebas escritas | 3 |
 | **Diseñar** | Trabajos de diseño electrónico | 7 |
-| **Fabricar** | Actividades de fabricación/prueba de concepto | 3 |
+| **Fabricar** | Talleres de fabricación | 3 |
 | **Probar** | Laboratorios presenciales | 7 |
 | **Simular** | Laboratorios online | 6 |
 
 ### Teoría
-La nota de teoría está compuesta por 60% del promedio simple de las evaluaciones escritas, 20% del promedio simple de los trabajos y 20% del promedio simple de las fabricación de prototipos. 
+La nota de teoría está compuesta por 60% del promedio simple de las evaluaciones escritas, 20% del promedio simple de los trabajos y 20% del promedio simple de los talleres de fabricación.
 
 $$ Promedio Teoría = 0.6\sum_{i=1}^{np} \frac{P_i}{np} + 0.2\sum_{j=1}^{nt} \frac{T_j}{nt} + 0.2\sum_{k=1}^{nf} \frac{F_k}{nf} $$
 
-Donde $P_i$ es la Prueba Escrita "i", $T_j$ es el trabajo de diseño "j", y $F_k$ es la actividad de fabricación "k". Están planificados $np=3$ pruebas escritas, $nt=7$ trabajos de diseño y $nf=3$ actividades de fabricación de prototipos.
+Donde $P_i$ es la Prueba Escrita "i", $T_j$ es el trabajo de diseño "j", y $F_k$ es el taller de fabricación "k". Están planificados $np=3$ pruebas escritas, $nt=7$ trabajos de diseño y $nf=3$ talleres de fabricación.
 
 Cada trabajo de diseño tiene una fecha y hora maxima de entrega. En el caso de que se entregue el trabajo con hasta 24 horas de atraso, se descuenta la mitad de la nota (máxima nota posible 4.0). Si se entrega el trabajo con más de 24 horas de atraso, se considera una nota 1.0.
 
@@ -80,13 +80,13 @@ Están planificadas 20 clases de teoría, impartidas 2 por día en 10 días dist
 
 ### Laboratorio
 
-El desarrollo del laboratorio estará en función a experiencias presenciales, online y las actividades de fabricación. Las experiencias presenciales corresponderán a guías que deberán ser desarrolladas en clases, y cuyo informe deberá ser entregado al finalizar la sesión. Las experiencias online serán desarrolladas con la plataforma tinkercad, y serán evaluadas a través de cuestionarios en uvirtual. Las actividades de fabricación se desarrollan de forma similar a los laboratorios presenciales, con una guía que estipula un objetivo que debe ser alcanzado durante el horario de la clase, y cuyo resultado debe ser demonstrado al profesor antes de finalizar la sesión.
+El desarrollo del laboratorio estará en función a experiencias presenciales, online y talleres de fabricación. Las experiencias presenciales corresponderán a guías que deberán ser desarrolladas en clases, y cuyo informe deberá ser entregado al finalizar la sesión. Las experiencias online serán desarrolladas con la plataforma tinkercad, y serán evaluadas a través de cuestionarios en uvirtual. Los talleres de fabricación se desarrollan de forma similar a los laboratorios presenciales, con una guía que estipula un objetivo que debe ser alcanzado durante el horario de la clase, y cuyo resultado debe ser demonstrado al profesor antes de finalizar la sesión.
 
-Las ponderaciones para la evaluación de laboratorio serán 60% del promedio simple de las experiencias presenciales, 20% del promedio simple de las experiencias online y 20% de las actividades de fabricación:
+Las ponderaciones para la evaluación de laboratorio serán 60% del promedio simple de las experiencias presenciales, 20% del promedio simple de las experiencias online y 20% de los talleres de fabricación:
 
 $$ Promedio Laboratorio = 0.6\sum_{i=1}^{nl} \frac {Lp_i}{nl} + 0.2\sum_{j=1}^{no} \frac {Lo_j}{no} + 0.2\sum_{k=1}^{nf} \frac{F_k}{nf} $$
 
-Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales, $Lo_j$ son las notas de las experiencias de laboratorio online y $F_k$ las notas de las actividades de fabricación. Están planificados $nl=7$ actividades de laboratorio presenciales, $no=6$ actividades online y $nf=3$ actividades de fabricación de prototipos durante el semestre.
+Donde $Lp_i$ son las notas de las experiencias de laboratorio presenciales, $Lo_j$ son las notas de las experiencias de laboratorio online y $F_k$ las notas de los talleres de fabricación. Están planificados $nl=7$ actividades de laboratorio presenciales, $no=6$ actividades online y $nf=3$ talleres de fabricación durante el semestre.
 
 Si el Promedio Laboratorio es menor a 4.0, el/la estudiante reprueba la parte de laboratorio de la asignatura.
 
