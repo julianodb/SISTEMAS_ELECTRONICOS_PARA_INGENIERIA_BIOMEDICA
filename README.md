@@ -3,7 +3,7 @@
 
 ## Links
 
-[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=49661): página oficial de la asignatura
+[uvirtual](https://uvirtual.usach.cl/moodle/course/view.php?id=52359): página oficial de la asignatura
 
 [Clase de Tinkercad](https://www.tinkercad.com/joinclass/5XK7AATBK): para Laboratorios Online
 
