@@ -1,4 +1,4 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 1/2026
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2/2026
 ##### enfoque Ingeniería Biomédia
 
 ## Links
@@ -11,8 +11,8 @@
 
 ## Horário Teoría
 - Martes: 
-    - bloque 5 (M5: 15:20 - 16:40): ED703
-    - bloque 6 (M6: 16:55 - 18:15): ED304
+    - bloque 5 (M5: 15:20 - 16:40): ED606
+    - bloque 6 (M6: 16:55 - 18:15): ED606
 
 ## Horário Laboratório
 - Jueves:
