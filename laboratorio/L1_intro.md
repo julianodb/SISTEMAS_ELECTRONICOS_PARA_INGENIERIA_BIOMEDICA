@@ -1,5 +1,5 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Laboratorio 1 de Sistemas Electrónicos
-#### Primer Semestre de 2026
+#### Segundo Semestre de 2026
 
 ## Recursos del pañol
 
@@ -11,9 +11,6 @@
     - 2 x ??
     - 1 x Potenciometro de 10k o 100k
     - 1 x LDR
-  - Diodos
-    - 1 x ??
-    - 1 x LED Rojo
   - Baterías:
     - 2 x ??
 
@@ -25,10 +22,7 @@ Nota: Ante cualquier duda en el uso de los instrumentos, o las conexiones eléct
 
 1. Elijan 2 baterías o pilas. Utilizando el multímetro, midan sus voltajes con el mayor grado de precisión posible. Anoten el resultado junto a la descripción de cual batería midieron. (0.5 pts)
 
-1. Utilizando la configuración de medición de diodos del multímetro, midan el diodo (conecten un cable del multímetro a un terminal del diodo, y el otro cable al otro terminal). Anoten el valor obtenido cuando hacen la medición en un sentido y también en el sentido contrario. Repitan el experimento con el LED Rojo, y nuevamente anoten los valores obtenidos (0.3pt)
-   1. A cual terminal del diodo se debe conectar el cable rojo del multímetro para obtener el valor de $V_F$, ¿Ánodo o Cátodo? (0.2pt)
-
-1. Elijan un representante del grupo, quien tomará una punta del multímetro en cada mano. Asegúrense de apretar la parte metálica firmemente. Midan el voltaje DC y la resistencia y anoten sus valores. (0.3 pts)
+1. Elijan un representante del grupo, quien tomará una punta del multímetro en cada mano. Asegúrense de apretar la parte metálica firmemente. Midan el voltaje DC y la resistencia y anoten sus valores. (0.5 pts)
 
 2. Elijan 2 resistencias fijas. 
    1. Utilizando el multímetro, midan sus resistencias. Anoten el resultado junto a los colores de la resistencia que midieron. (Ejemplo: marrón, rojo, negro, marrón, marrón: 1213 $\Omega$) (0.5 pts)
@@ -37,7 +31,7 @@ Nota: Ante cualquier duda en el uso de los instrumentos, o las conexiones eléct
 3. Tomen un potenciómetro y realicen 2 mediciones: 1-la resistencia entre el terminal central y uno de los terminales extremos; y 2-la resistencia entre el terminal central y el otro terminal extremo. Anoten ambos valores y el valor de su suma. (0.5 pts)
    1. Cambien la rotación de la perilla del potenciómetro, repitan la medición, anoten los valores obtenidos y su suma. Comparen el nuevo valor de la suma con el anterior. ¿Es lo esperado ? (0.5 pts)
 
-4. Tomen una fotorresistencia y, mientras esté bien iluminada, midan su resistencia. Luego tápenla con la mano y midan nuevamente. Anoten ambos valores y calculen la razón entre el valor más alto y el más bajo. (0.3 pts)
+4. Tomen una fotorresistencia y, mientras esté bien iluminada, midan su resistencia. Luego tápenla con la mano y midan nuevamente. Anoten ambos valores y calculen la razón entre el valor más alto y el más bajo. (0.5 pts)
 
 ### Parte 2 - Osciloscopio
 
@@ -46,7 +40,7 @@ Nota: Ante cualquier duda en el uso de los instrumentos, o las conexiones eléct
    1. Familiarícense con las distintas perillas y controles del osciloscopio. Elijan 3 de ellos y describan cómo cambian la imagen en la pantalla del osciloscopio (0.6 pts)
    
 1. Cambien la atenuación de la sonda entre los dos valores disponible: 1X y 10X.
-   1. ¿Qué ocurre con la amplitud de la señal? (0.3 pts)
+   1. ¿Qué ocurre con la amplitud de la señal? (0.4 pts)
    1. ¿Qué configuración del osiloscopio se debe cambiar, y a que valor, para que entregue la medición correcta? (0.5 pts) AYUDA: dependiendo del osciloscopio, normalmente la señal de calibración tiene una amplitud de 5V o de 3V. AYUDA2: exploren las configuraciones del canal, las que se muestran al apretar el botón CH1.
 
 5. Desconecten la sonda y toquenla con sus manos. ¿ Qué se observa en el osciloscopio ? ( 0.5 pts)
