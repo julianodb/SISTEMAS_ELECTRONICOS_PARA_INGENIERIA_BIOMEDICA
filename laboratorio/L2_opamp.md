@@ -77,15 +77,15 @@ Figura 4: Circuito amplificador con un amplificador operacional.
     | 800 | <br><br> | <br><br> | <br><br> |
     | 1600 | <br><br> | <br><br> | <br><br> |
 
-    a. Anoten los valores de «$v_i$ medido» y del voltaje de salida $v_o$ para cada caso. (1,6 pt)
+    1. Anoten los valores de «$v_i$ medido» y del voltaje de salida $v_o$ para cada caso. (1,6 pt)
 
-    b. Calculen el factor de amplificación de voltaje en cada caso ($A_v = \frac{v_o}{v_i}$) y compárenlo con el valor teórico. (1 pt)
+    2. Calculen el factor de amplificación de voltaje en cada caso ($A_v = \frac{v_o}{v_i}$) y compárenlo con el valor teórico. (1 pt)
 
     Comparación con el valor teórico:
 
-    ____________________________________________________________________________________
-
-    ____________________________________________________________________________________
+    <table width="100%">
+        <tr><td><br><br><br></td></tr>
+    </table>
 
 ### Parte 2: AC
 
@@ -102,24 +102,20 @@ En este laboratorio utilizaremos el generador de funciones por primera vez. Pida
     | 800 | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
     | 1600 | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
 
-    a. Anoten los valores de «$v_{i_{pp}}$ medido», $v_{o_{promedio}}$ y $v_{o_{pp}}$, así como la forma de la señal $v_o$, para cada caso. (2 pt)
+    1. Anoten los valores de «$v_{i_{pp}}$ medido», $v_{o_{promedio}}$ y $v_{o_{pp}}$, así como la forma de la señal $v_o$, para cada caso. (2 pt)
 
-    b. Calculen el factor de amplificación de voltaje de CA en cada caso ($A_{v_{AC}} = \frac{v_{o_{pp}}}{v_{i_{pp}}}$) y compárenlo con el valor teórico. (1 pt)
+    2. Calculen el factor de amplificación de voltaje de CA en cada caso ($A_{v_{AC}} = \frac{v_{o_{pp}}}{v_{i_{pp}}}$) y compárenlo con el valor teórico. (1 pt)
 
     Comparación con el valor teórico:
 
-    ____________________________________________________________________________________
+    <table width="100%">
+        <tr><td><br><br><br></td></tr>
+    </table>
 
-    ____________________________________________________________________________________
-
-    c. De acuerdo con las mediciones realizadas en las partes 1 y 2, ¿cuáles son los valores máximo y mínimo que puede alcanzar la salida del amplificador operacional ($v_o$)? ¿Cómo se relacionan con los voltajes de alimentación ($V_{CC} \approx 12\ V$ y $V_{EE} = 0\ V$)? (0,4 pt)
+    3. De acuerdo con las mediciones realizadas en las partes 1 y 2, ¿cuáles son los valores máximo y mínimo que puede alcanzar la salida del amplificador operacional ($v_o$)? ¿Cómo se relacionan con los voltajes de alimentación ($V_{CC} \approx 12\ V$ y $V_{EE} = 0\ V$)? (0,4 pt)
 
     Respuesta:
 
-    ____________________________________________________________________________________
-
-    ____________________________________________________________________________________
-
-    ____________________________________________________________________________________
-
-    ____________________________________________________________________________________
+    <table width="100%">
+        <tr><td><br><br><br><br><br><br></td></tr>
+    </table>
