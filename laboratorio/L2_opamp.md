@@ -52,9 +52,9 @@ En el LM324, los terminales $V_{CC}$ de los cuatro amplificadores operacionales 
 
 ### Parte 1: DC
 
-Armen el circuito de la figura 4 en un protoboard. Pueden utilizar cualquiera de los cuatro amplificadores operacionales del LM324 como OA1. Configuren la fuente de CC con un voltaje de 12 V (se acepta una tolerancia de 0,5 V si la fuente no permite realizar un ajuste exacto) y un límite de corriente entre 0,2 y 0,5 A. Recuerden alimentar el LM324 con la fuente. Por ahora, no es necesario conectar $v_{AC}$.
+Armen el circuito de la figura 4 en un protoboard. Pueden utilizar cualquiera de los cuatro amplificadores operacionales del LM324 como OA1. Configuren la fuente de CC con un voltaje de 12 V (se acepta una tolerancia de 0,5 V si la fuente no permite realizar un ajuste exacto) y un límite de corriente entre 0,2 y 0,5 A. Recuerden alimentar el LM324 con la fuente. 
 
-<img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_non_inverting_potentiometer.png" width="300">
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_non_inverting_potentiometer_no_ac.png" width="300">
 
 Figura 4: Circuito amplificador con un amplificador operacional.
 
@@ -63,12 +63,10 @@ Figura 4: Circuito amplificador con un amplificador operacional.
     - $R_1 = 68\ k\Omega$
     - $R_2 = 680\ k\Omega$
     - $R_3 = 47\ k\Omega$
-    - $C = 0.1\ \mu F$
     - $R_{pot} = 10\ k\Omega$
-    - $v_{AC}$: generador de funciones
     - OA1: un amplificador operacional de un LM324 o similar
 
-1. Con el generador de funciones apagado ($v_{AC}=0$), enciendan la fuente de CC. Ajusten el potenciómetro hasta obtener valores de $v_i$ cercanos (con una tolerancia de $\pm 20\ \%$) a los indicados en la columna «$v_i$ objetivo» de la siguiente tabla.
+1. Enciendan la fuente de CC. Ajusten el potenciómetro hasta obtener valores de $v_i$ cercanos (con una tolerancia de $\pm 20\ \%$) a los indicados en la columna «$v_i$ objetivo» de la siguiente tabla.
 
     | $v_i$ objetivo (mV) | $v_i$ medido (mV) |&nbsp;&nbsp;&nbsp; $v_o$ (mV) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; $A_V$ (V/V) &nbsp;&nbsp;&nbsp;|
     | -- | -- | -- | -- |
@@ -79,19 +77,31 @@ Figura 4: Circuito amplificador con un amplificador operacional.
 
     1. Anoten los valores de «$v_i$ medido» y del voltaje de salida $v_o$ para cada caso. (1,6 pt)
 
-    2. Calculen el factor de amplificación de voltaje en cada caso ($A_v = \frac{v_o}{v_i}$) y compárenlo con el valor teórico. (1 pt)
+    2. Calculen el factor de amplificación de voltaje en cada caso ($A_v = \frac{v_o}{v_i}$), anótenlo en la tabla, y compárenlo con el valor teórico. (1 pt)
 
-    Comparación con el valor teórico:
+        Comparación con el valor teórico:
 
-    <table width="100%">
-        <tr><td><br><br><br></td></tr>
-    </table>
+        <table width="100%">
+            <tr><td><br><br><br></td></tr>
+        </table>
 
 ### Parte 2: AC
 
 En este laboratorio utilizaremos el generador de funciones por primera vez. Pidan una demostración al profesor o al ayudante antes de utilizarlo.
 
-2. Ajusten el potenciómetro para que $v_o$ sea aproximadamente $6\ V$, con una tolerancia de $\pm 10\ \%$. Configuren el generador de funciones para producir una señal sinusoidal sin offset, con una frecuencia de 10 kHz y una amplitud de 100 mV. Conecten la señal del generador de funciones a la entrada $v_{AC}$ del circuito. Midan $v_i$ y $v_o$ con el osciloscopio.
+Conecten el generador de funciones al circuito a través de un capacitor conforme el siguiente diagrama. Este tipo de conexión hace con que $v_i$ sea aproximadamente la suma del valor CC que produce el potenciometro con el valor AC de la señal producida por el generador de funciones.
+
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_non_inverting_potentiometer.png" width="300">
+
+Figura 5: Circuito amplificador con un amplificador operacional + generador de funciones.
+
+- Parámetros:
+    - $C = 0.1\ \mu F$
+    - $v_{AC}$: generador de funciones
+
+2. Con la salida del generador de funciones apagada, ajusten el potenciómetro para que $v_o$ sea aproximadamente $6\ V$, con una tolerancia de $\pm 10\ \%$. Luego, configuren el generador de funciones para producir una señal sinusoidal sin offset, con una frecuencia de 10 kHz y una amplitud de 100 mV. Midan $v_i$ y $v_o$ con el osciloscopio.
+
+    AYUDA: para medir el valor promedio es necesario configurar el canal del osciloscopio con acoplamento DC. Sin embargo, para medir la amplitud / valor pico a pico el acoplamento AC podría ser más práctico.
     
     Ajusten la amplitud de la señal del generador de funciones hasta obtener el valor pico a pico de $v_i$ indicado en la siguiente tabla.
 
@@ -102,20 +112,20 @@ En este laboratorio utilizaremos el generador de funciones por primera vez. Pida
     | 800 | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
     | 1600 | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
 
-    1. Anoten los valores de «$v_{i_{pp}}$ medido», $v_{o_{promedio}}$ y $v_{o_{pp}}$, así como la forma de la señal $v_o$, para cada caso. (2 pt)
+    1. Anoten los valores de «$v_{i_{pp}}$ medido», $v_{o_{promedio}}$ y $v_{o_{pp}}$, así como la forma de la señal $v_o$ (por ejemplo, sinusoidal), para cada caso. (2 pt)
 
-    2. Calculen el factor de amplificación de voltaje de CA en cada caso ($A_{v_{AC}} = \frac{v_{o_{pp}}}{v_{i_{pp}}}$) y compárenlo con el valor teórico. (1 pt)
+    2. Calculen el factor de amplificación de voltaje de CA en cada caso ($A_{v_{AC}} = \frac{v_{o_{pp}}}{v_{i_{pp}}}$), anótenlo en la tabla, y compárenlo con el valor teórico. (1 pt)
 
-    Comparación con el valor teórico:
+        Comparación con el valor teórico:
 
-    <table width="100%">
-        <tr><td><br><br><br></td></tr>
-    </table>
+        <table width="100%">
+            <tr><td><br><br><br></td></tr>
+        </table>
 
     3. De acuerdo con las mediciones realizadas en las partes 1 y 2, ¿cuáles son los valores máximo y mínimo que puede alcanzar la salida del amplificador operacional ($v_o$)? ¿Cómo se relacionan con los voltajes de alimentación ($V_{CC} \approx 12\ V$ y $V_{EE} = 0\ V$)? (0,4 pt)
 
-    Respuesta:
+        Respuesta:
 
-    <table width="100%">
-        <tr><td><br><br><br><br><br><br></td></tr>
-    </table>
+        <table width="100%">
+            <tr><td><br><br><br><br><br><br></td></tr>
+        </table>
