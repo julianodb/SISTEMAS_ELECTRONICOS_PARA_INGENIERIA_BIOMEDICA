@@ -1,5 +1,7 @@
 # Técnicas de Fabricación y Prototipaje en Electrónica
 
+En el primer taller de fabricación se montarán las etapas de amplificación de la Placa 1 del proyecto de amplificador de instrumentación de ganancia programable. Se utilizarán componentes de **agujero pasante**, soldados manualmente con cautín. Después del montaje se comprobarán las conexiones y se medirán la ganancia real y el rechazo de modo común (CMRR).
+
 <!-- vscode-markdown-toc -->
 * 1. [ 1. Tarjeta de Circuito Impreso (PCB - Printed Circuit Board)](#1.TarjetadeCircuitoImpresoPCB-PrintedCircuitBoard)
 	* 1.1. [Ejemplos](#Ejemplos)
@@ -50,6 +52,10 @@
 
 [tips para soldar](https://www.youtube.com/shorts/D5IvlJVqa7M)
 
+En el montaje de agujero pasante, los terminales atraviesan los orificios de la PCB y se sueldan a sus pads. Calienten simultáneamente el pad y el terminal con el cautín, aporten estaño a la unión y eviten puentes entre pads vecinos. Recorten los terminales sobrantes y revisen cada unión antes de alimentar la placa.
+
+Comprueben los valores de las resistencias antes de soldarlas y respeten la orientación de los circuitos integrados y la polaridad de los componentes que corresponda. Con la placa sin alimentación, utilicen el multímetro para verificar continuidad y descartar cortocircuitos entre alimentación y masa.
+
 ![21_1](../img/23_soldering_diagram.jpg)
 
 ![21_1](../img/23_soldering_small.jpg)
@@ -61,10 +67,6 @@
 Fotolitografia
 
 [fuente](https://www.pcbway.com/pcb-service.html)
-
-[montaje](https://www.youtube.com/watch?v=24ehoo6RX8w)
-
-[pick and place](https://www.youtube.com/watch?v=S8qkaTsr2_o&t=32s)
 
 ##  2. <a name='CircuitosIntegrados'></a>Circuitos Integrados
 
@@ -78,9 +80,7 @@ Fotolitografia
 
 ![21_1](../img/23_packaging.jpg)
 
-Agujero Pasante vs Montaje Superficial (Through-Hole vs Surface Mount Device (SMD))
-
-![21_1](../img/23_tht_vs_smd.png)
+Para este taller se utilizarán encapsulados de agujero pasante (Through-Hole). Identifiquen el pin 1 y la orientación del encapsulado antes de insertar cada circuito integrado en su zócalo.
 
 ##  3. <a name='Resmen:ConceptosClave'></a>Resúmen: Conceptos Clave
 
@@ -88,4 +88,6 @@ Agujero Pasante vs Montaje Superficial (Through-Hole vs Surface Mount Device (SM
 - Fotolitografia
 - Circuito Integrado
 - Agujero Pasante
-- Montaje Superficial
+- Soldadura con cautín
+- Verificación de continuidad y ausencia de cortocircuitos
+- Ganancia diferencial y rechazo de modo común (CMRR)
