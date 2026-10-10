@@ -70,7 +70,6 @@ Figura 4: Circuito amplificador con un amplificador operacional.
 
     | $v_i$ objetivo (mV) | $v_i$ medido (mV) |&nbsp;&nbsp;&nbsp; $v_o$ (mV) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; $A_V$ (V/V) &nbsp;&nbsp;&nbsp;|
     | -- | -- | -- | -- |
-    | 200 | <br><br> | <br><br> | <br><br> |
     | 400 | <br><br> | <br><br> | <br><br> |
     | 800 | <br><br> | <br><br> | <br><br> |
     | 1600 | <br><br> | <br><br> | <br><br> |
@@ -107,7 +106,6 @@ Figura 5: Circuito amplificador con un amplificador operacional + generador de f
 
     | $v_{i_{pp}}$ objetivo (mV)| $v_{i_{pp}}$ medido (mV) | &nbsp;&nbsp;&nbsp; $v_{o_{promedio}}$ (V) &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp; $v_{o_{pp}}$ (mV) &nbsp;&nbsp;&nbsp; | forma de la señal $v_o$ |&nbsp;&nbsp;&nbsp; $A_{v_{AC}}$ (V/V) &nbsp;&nbsp;&nbsp;|
     | --|--|--|--|--|--|
-    | 200 | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
     | 400 | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
     | 800 | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
     | 1600 | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> | <br><br><br> |
