@@ -1,93 +1,80 @@
-# Técnicas de Fabricación y Prototipaje en Electrónica
+# Taller F1: del montaje punto a punto al prototipo soldado
 
-En el primer taller de fabricación se construirá un **prototipo inicial en stripboard** de las etapas de amplificación del proyecto de amplificador de instrumentación de ganancia programable. La stripboard tiene pistas de cobre paralelas: las conexiones se definen mediante cortes de pista y puentes de cable. Se utilizarán componentes de **agujero pasante**, soldados manualmente con cautín. Después del montaje se comprobarán las conexiones y se medirán la ganancia real y el rechazo de modo común (CMRR), cuyos resultados se presentarán durante la demostración del prototipo.
+En este taller se construirá un **prototipo inicial en stripboard** del amplificador de instrumentación, con ganancia fija y componentes de agujero pasante. La demostración incluirá la ganancia real y el rechazo de modo común (CMRR). El recorrido siguiente permite comparar las formas de conectar componentes y elegir una distribución que facilite el montaje y las pruebas.
 
-<!-- vscode-markdown-toc -->
-* 1. [ 1. Tarjeta de Circuito Impreso (PCB - Printed Circuit Board)](#1.TarjetadeCircuitoImpresoPCB-PrintedCircuitBoard)
-	* 1.1. [Ejemplos](#Ejemplos)
-	* 1.2. [Materia Prima](#MateriaPrima)
-	* 1.3. [Proceso de Fabricación de la Placa](#ProcesodeFabricacindelaPlaca)
-		* 1.3.1. [Versión Casera](#VersinCasera)
-		* 1.3.2. [Soldadura de Componentes](#SoldaduradeComponentes)
-		* 1.3.3. [Versión Industrial](#VersinIndustrial)
-* 2. [Circuitos Integrados](#CircuitosIntegrados)
-	* 2.1. [Encapsulados](#Encapsulados)
-* 3. [Resúmen: Conceptos Clave](#Resmen:ConceptosClave)
+## Antes de los circuitos impresos
 
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
+En el montaje **punto a punto**, los terminales de los componentes se conectan directamente o mediante cables y soportes, sin una placa con pistas diseñadas para el circuito. Esta técnica precede al uso de circuitos impresos y también puede emplearse en construcciones actuales.
 
-##  1. <a name='1.TarjetadeCircuitoImpresoPCB-PrintedCircuitBoard'></a> 1. Tarjeta de Circuito Impreso (PCB - Printed Circuit Board)
+![Montaje punto a punto ordenado](../img/23_point_to_point_clean.jpg)
 
-###  1.1. <a name='Ejemplos'></a>Ejemplos
+![Ejemplo de conexiones punto a punto](../img/23_point_to_point.jpg)
 
-![21_1](../img/23_pcb_1.webp)
+![Montaje punto a punto con cableado denso](../img/23_point_to_point_messy.jpg)
 
-![21_1](../img/23_pcb_2.jpg)
+Los ejemplos muestran distintos grados de organización y complejidad. Al aumentar el número de conexiones, resulta más difícil seguir el circuito, localizar errores y reproducir el montaje. La automatización y la fabricación en cantidad también se dificultan; la resistencia a movimientos depende de cómo se sujeten los componentes y cables.
 
-![21_1](../img/23_pcb_3.jpg)
+## Prueba de concepto: protoboard
 
-![21_1](../img/23_freeform.jpg)
+La **protoboard** permite conectar componentes sin soldadura y modificar rápidamente el circuito. Es útil para comprobar una etapa antes de pasar a un montaje permanente.
 
-###  1.2. <a name='MateriaPrima'></a>Materia Prima
+![Protoboard y sus conexiones internas](../img/23_breadboard.png)
 
-![21_1](../img/23_pcb_raw_1.jpg)
+![Protoboard con abundante cableado](../img/23_breadboard_messy.jpg)
 
-![21_1](../img/23_pcb_raw_2.jpg)
+Su facilidad de modificación tiene límites: los contactos pueden ser poco confiables, los cables pueden soltarse y aparecen capacitancias parásitas. Un montaje extenso se vuelve difícil de revisar, replicar y transportar. En F1 se puede utilizar como apoyo para resolver una conexión dudosa; no se exige montar el circuito completo dos veces.
 
-![21_1](../img/23_fr4.jpg)
+## Prototipado con conexiones soldadas
 
-###  1.3. <a name='ProcesodeFabricacindelaPlaca'></a>Proceso de Fabricación de la Placa
+### Perfboard: placa perforada
 
-####  1.3.1. <a name='VersinCasera'></a>Versión Casera
+La **perfboard** ofrece orificios para insertar componentes. Según el modelo, puede tener pads de cobre aislados o carecer de cobre; las conexiones se realizan con cables, terminales o puentes de soldadura.
 
-![21_1](../img/23_etching.webp)
+![Placa perforada para prototipos](../img/23_perfboard.webp)
 
-####  1.3.2. <a name='SoldaduradeComponentes'></a>Soldadura de Componentes
+![Ejemplo de montaje en perfboard](../img/23_perfboard_1.jpg)
 
-[Soldadura punto a punto](https://www.youtube.com/watch?v=rK38rpUy568&t=167s)
+![Segundo ejemplo de perfboard](../img/23_perfboard_2.jpg)
 
-[tips para soldar](https://www.youtube.com/shorts/D5IvlJVqa7M)
+![Tercer ejemplo de perfboard](../img/23_perfboard_3.jpg)
 
-En el montaje de agujero pasante, los terminales atraviesan los orificios de la PCB y se sueldan a sus pads. Calienten simultáneamente el pad y el terminal con el cautín, aporten estaño a la unión y eviten puentes entre pads vecinos. Recorten los terminales sobrantes y revisen cada unión antes de alimentar la placa.
+La soldadura permite un montaje más estable que los contactos de una protoboard. Se evita fabricar una PCB específica, pero el cableado sigue siendo manual y depende de la distribución elegida. Los tamaños y la separación entre orificios son predeterminados, y producir muchas unidades resulta laborioso.
 
-Comprueben los valores de las resistencias antes de soldarlas y respeten la orientación de los circuitos integrados y la polaridad de los componentes que corresponda. Con la placa sin alimentación, utilicen el multímetro para verificar continuidad y descartar cortocircuitos entre alimentación y masa.
+### Stripboard: placa con pistas paralelas
 
-![21_1](../img/23_soldering_diagram.jpg)
+La **stripboard** tiene orificios unidos por pistas de cobre paralelas. Estas pistas reducen la necesidad de cables respecto de una placa con pads aislados, pero deben cortarse donde sea necesario separar nodos.
 
-![21_1](../img/23_soldering_small.jpg)
+![Stripboard y pistas de cobre](../img/23_stripboard.jpg)
 
-####  1.3.3. <a name='VersinIndustrial'></a>Versión Industrial
+![Ejemplo de montaje en stripboard](../img/23_stripboard_2.jpg)
 
-![21_1](../img/23_pcb_manufacturing.png)
+![Segundo ejemplo de stripboard](../img/23_stripboard_3.jpg)
 
-Fotolitografia
+![Tercer ejemplo de stripboard](../img/23_stripboard_4.jpg)
 
-[fuente](https://www.pcbway.com/pcb-service.html)
+![Cuarto ejemplo de stripboard](../img/23_stripboard_5.jpg)
 
-##  2. <a name='CircuitosIntegrados'></a>Circuitos Integrados
+Antes de soldar, dibujen la posición de los componentes, los puentes y los cortes. Presten atención a las pistas que pasan bajo los zócalos: no deben unir terminales que pertenecen a nodos distintos. Comprueben cada corte con el multímetro y dejen accesibles los puntos de prueba. Es una solución práctica para el prototipo inicial, aunque su montaje manual también limita la repetición en cantidad.
 
-###  2.1. <a name='Encapsulados'></a>Encapsulados
+## Soldadura de componentes de agujero pasante
 
-![21_1](../img/23_packaging_transistor.jpg)
+Los terminales atraviesan los orificios de la placa y se sueldan al cobre. Calienten simultáneamente el terminal y el pad con el cautín, aporten estaño a la unión y eviten puentes entre pistas vecinas. Recorten los terminales sobrantes y revisen las uniones.
 
-![21_1](../img/23_packaging_thermistors.jpg)
+![Esquema de una unión soldada](../img/23_soldering_diagram.jpg)
 
-![21_1](../img/23_packaging_diode.jpg)
+![Detalle de soldadura manual](../img/23_soldering_small.jpg)
 
-![21_1](../img/23_packaging.jpg)
+[Demostración de soldadura punto a punto](https://www.youtube.com/watch?v=rK38rpUy568&t=167s)
 
-Para este taller se utilizarán encapsulados de agujero pasante (Through-Hole). Identifiquen el pin 1 y la orientación del encapsulado antes de insertar cada circuito integrado en su zócalo.
+[Consejos para soldar](https://www.youtube.com/shorts/D5IvlJVqa7M)
 
-##  3. <a name='Resmen:ConceptosClave'></a>Resúmen: Conceptos Clave
+Comprueben los valores de las resistencias antes de soldarlas y respeten la orientación y polaridad de los componentes. Identifiquen el pin 1 de cada circuito integrado. Con el prototipo sin alimentación, revisen continuidad y ausencia de cortocircuitos entre alimentación y masa.
 
-- Tarjeta de Circuito Impreso (PCB)
-- Fotolitografia
-- Circuito Integrado
-- Agujero Pasante
-- Soldadura con cautín
-- Verificación de continuidad y ausencia de cortocircuitos
-- Ganancia diferencial y rechazo de modo común (CMRR)
+## Conceptos clave
+
+- Montaje punto a punto, protoboard, perfboard y stripboard.
+- Compromiso entre facilidad de modificación, estabilidad y repetibilidad.
+- Componentes de agujero pasante y soldadura con cautín.
+- Distribución de componentes, cortes de pista, puentes y puntos de prueba.
+
+La [introducción de F2](F2_fab_II_intro.md) presenta el paso a las PCB específicas y otras técnicas de montaje.
