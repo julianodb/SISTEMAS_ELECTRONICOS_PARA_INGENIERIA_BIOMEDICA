@@ -1,59 +1,93 @@
-# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2026/01
+# <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2026/02
 ## Guía Prueba Escrita 1
 
-1. "Resolver un circuito" significa calcular los voltajes en todos los nodos del circuito y las corrientes en cada uno de sus componentes. Asumiendo que $V_D = V_F$ cuando los diodos están polarizados en directa, $I_D=0$ cuando están polarizados en inversa, y $V_D = - V_Z$ si el diodo zener está conduciendo en inversa, resuelva los siguientes circuitos (2 pt):
-   
-   1. Datos: $V_{CC}=10\ V$, $R_3=1\ k\Omega$, $R_4=10\ k\Omega$, $V_F=0.7\ V$, $V_Z = 3.3\ V$
+Nombre: __________________________________________
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_2R_alt.png" width="300">
+Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
 
-   1. Datos: $V_{CC}=9\ V$, $R_5=R_6=R_7=1\ k\Omega$, $V_F=0.7\ V$, $V_Z = 5.1\ V$
+1. Los siguientes circuitos amplifican una señal biomédica. Datos del sensor y de la carga: $R_S=47\ k\Omega$, $R_L=2\ k\Omega$ y $v_S=2\ mV$. Para **cada configuración por separado**, calcule la ganancia total respecto del sensor y el voltaje de salida. Suponga operación lineal. (2 pt)
 
-      <img src="https://julianodb.github.io/electronic_circuits_diagrams/battery_diode_zener_3R_alt2.png" width="300">
+    - Amplificador 1: $R_{i1}=10\ k\Omega$, $R_{o1}=100\ \Omega$, $A_{V_{NL1}}=8$.
+    - Amplificador 2: $R_{i2}=200\ k\Omega$, $R_{o2}=20\ k\Omega$, $A_{V_{NL2}}=12$.
 
-2. Para medir la actividad eléctrica del corazón en un ECG se utilizan electrodos en determinadas posiciones del paciente. La siguiente figura muestra la ubicación y color estándar de los electrodos para un ECG que utiliza 4 electrodos.
+    1. Configuración 1: (1 pt)
 
-    <div style="width:400px; overflow:hidden;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Limb_leads.svg" style="width:570px; max-width:none;">
-    </div>
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box.png" width="460">
 
-    A partir de esta configuración, se puede medir la actividad eléctrica en distintas direcciones, dependiendo de como se combinan los voltajes de los electrodos. Cada dirección de medición se denomina derivación. Por ejemplo, la llamada derivación I mide el voltaje producido por corrientes eléctricas que se mueven de la derecha del paciente hacia su izquierda, y se obtiene a partir de la diferencia de voltaje $I = LA-RA$ (brazo izquierdo menos brazo derecho). Otro ejemplo es la derivación aVF, que mide el voltaje producido por corrientes eléctricas que se mueven desde arriba hacia abajo, y se obtiene a través de la siguiente combinación de voltajes: $aVF = LL- \frac{LA+RA}{2}$ . Los siguientes circuitos implementan algunas de las derivaciones del ECG, además de amplificar la señal. Determine que fórmula implementa cada uno de ellos:
+       <table width="100%" height="190">
+       <tr><td valign="top">&nbsp;</td></tr>
+       </table>
 
-    1. Encontrar $aVL$ en función de $LA$, $LL$ y $RA$, con $R=6.8\ k\Omega$ (1 pt)
+    2. Configuración 2: (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl.png" width="400"> 
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box2.png" width="460">
 
-    2. Encontrar $aVR$ en función de $LA$, $LL$ y $RA$, con $R=10\ k\Omega$ (1 pt)
+       <table width="100%" height="190">
+       <tr><td valign="top">&nbsp;</td></tr>
+       </table>
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr3.png" width="400"> 
+    <div style="page-break-after: always;"></div>
+
+2. Los siguientes circuitos se utilizan en el acondicionamiento de señales biomédicas. Los operacionales son ideales y se alimentan con $\pm5\ V$. Analice cada circuito de manera independiente. (2 pt)
+
+    1. Para el amplificador de instrumentación, $R_1=R_2=\cdots=R_6=12\ k\Omega$ y $R_G=3\ k\Omega$. Obtenga $v_o$ en función de $V_1$ y $V_2$, justificando la relación mediante las corrientes o ecuaciones de los nodos. Evalúe para $V_1=0.800\ V$ y $V_2=0.802\ V$. (1 pt)
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/instrumentation_amplifier.png" width="340">
+
+       <table width="100%" height="190">
+       <tr><td valign="top">&nbsp;</td></tr>
+       </table>
+
+    2. Para el segundo circuito, $R=50\ k\Omega$, $C=0.2\ \mu F$ y $v_o(0)=0.3\ V$. La entrada permanece en $0.1\ V$ desde $t=0$ hasta $t=40\ ms$; luego se hace cero. Determine el voltaje de salida al terminar ese intervalo y explique qué ocurre después. Verifique si se alcanza algún límite de alimentación. (1 pt)
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/integrator.png" width="280">
+
+       <table width="100%" height="190">
+       <tr><td valign="top">&nbsp;</td></tr>
+       </table>
+
+    <div style="page-break-after: always;"></div>
+
+3. Resuelva los siguientes casos independientes, relacionados con el comportamiento transitorio y la medición de amplificadores en laboratorio. (2 pt)
+
+    1. En el circuito mostrado, $R_1=20\ k\Omega$, $R_2=30\ k\Omega$ y $C_1=0.5\ \mu F$. El capacitor está inicialmente descargado y $v_i$ pasa de 0 a $5\ V$ en $t=0$. Determine el voltaje de salida en estado estacionario y la constante de tiempo, justificando ambos resultados desde el circuito. (1 pt)
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example4.png" width="240">
+
+       <table width="100%" height="190">
+       <tr><td valign="top">&nbsp;</td></tr>
+       </table>
+
+    2. En otro ensayo se utiliza el amplificador **no inversor** de L2, con $68\ k\Omega$ entre la entrada inversora y tierra, $680\ k\Omega$ en la realimentación y alimentación de 0 y $12\ V$. Se ajusta el promedio de salida a $6\ V$. La sonda que mide $v_i$ está físicamente en 10X, pero su canal indica 1X: la sinusoidal ocupa $3$ divisiones pico a pico con escala indicada de $0.01\ V/div$ y un período ocupa $4$ divisiones de $50\ \mu s/div$. Determine el voltaje pico a pico real de entrada, su frecuencia y el voltaje pico a pico esperado de salida. Indique el ajuste que corrige la lectura. Ignore limitaciones dinámicas. (1 pt)
+
+       <table width="100%" height="190">
+       <tr><td valign="top">&nbsp;</td></tr>
+       </table>
+
+<div style="page-break-before: always;"></div>
 
 # Fórmulas
 
-$$ I_D = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right) $$
-$$ V_T = \frac{kT}{q}$$
+$$ R_{serie}=R_a+R_b \qquad R_{paralelo}=\frac{R_aR_b}{R_a+R_b} $$
 
-- $k$: Constante de Boltzmann. $k=1.38 * 10^{-23}\ J/K$
-- $q$: Carga del electrón. $q=1.6*10^{-19}\ C$
-- $T$: Temperatura en Kelvin
+$$ v=Ri \qquad \sum i=0 \qquad \sum v=0 $$
 
-$$ V_{DS} = R_{DS(ON)} I_D$$
-$$ I_D = k(V_{GS}-V_{GS(th)})^2 $$
-$$V_{GS} < V_{GS(th)}$$
-$$ V_{DS} < V_{GS}-V_{GS(th)}$$
-$$ V_{DS} > V_{GS}-V_{GS(th)}$$
+$$ v_o=A_{V_{NL}}\frac{R_L}{R_L+R_o}\frac{R_i}{R_S+R_i}v_S $$
 
-$$ \Delta I_{D} = g_{FS} \Delta V_{GS} $$
+Cortocircuito virtual, con realimentación negativa y operación lineal: $V_+=V_-$; corrientes de entrada de un operacional ideal: $i_+=i_-=0$.
 
-$$ \Delta I_{D} = g_{m} \Delta V_{GS} $$
+$$ v_o=\left(1+\frac{R_f}{R_g}\right)v_i \qquad v_o=-R_f\sum_k\frac{v_k}{R_k} $$
 
-$$ g_{FS} = 2k(V_{GS}-V_{GS(th)})  $$
+$$ v_o=\left(1+\frac{2R}{R_G}\right)(V_2-V_1) $$
 
-$$ g_m = 2k(V_{GS}-V_{GS(th)})  $$
+La última expresión corresponde al amplificador de instrumentación de tres operacionales con las seis resistencias iguales a $R$.
 
-$$ k = \frac{g_{ _{FS}}^2}{4I_D}  $$
+$$ i_C=C\frac{dv_C}{dt} \qquad Z_C(s)=\frac{1}{Cs} $$
 
-$$v_o = A_{V_{NL}} \frac{R_L}{R_L+R_o}v_i$$
+$$ H(s)=\frac{V_o(s)}{V_i(s)} \qquad \tau=-\frac{1}{p} \quad (p\text{ real y negativo}) $$
 
-$$v_o = A_{V_{NL}} \frac{R_L}{R_L+R_o} \frac{R_i}{R_S+R_i} v_S$$
+$$ v_o(t)=V_f+(V_0-V_f)e^{-t/\tau} \qquad \tau=R_{Th}C $$
 
-Corto Circuito Virtual: $V_+ = V_-$
+$$ v_o(t)=v_o(0)-\frac{1}{RC}\int_0^t v_i(u)\,du \qquad v_o(t)=-RC\frac{dv_i}{dt} $$
+
+$$ f=\frac{1}{T} \qquad V_{pp}=2V_{pico} \qquad A_{v_{AC}}=\frac{v_{o,pp}}{v_{i,pp}} $$
