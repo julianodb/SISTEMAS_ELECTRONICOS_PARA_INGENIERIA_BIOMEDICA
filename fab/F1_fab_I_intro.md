@@ -1,6 +1,6 @@
 # Técnicas de Fabricación y Prototipaje en Electrónica
 
-En el primer taller de fabricación se montarán las etapas de amplificación de la Placa 1 del proyecto de amplificador de instrumentación de ganancia programable. Se utilizarán componentes de **agujero pasante**, soldados manualmente con cautín. Después del montaje se comprobarán las conexiones y se medirán la ganancia real y el rechazo de modo común (CMRR).
+En el primer taller de fabricación se construirá un **prototipo inicial en stripboard** de las etapas de amplificación del proyecto de amplificador de instrumentación de ganancia programable. La stripboard tiene pistas de cobre paralelas: las conexiones se definen mediante cortes de pista y puentes de cable. Se utilizarán componentes de **agujero pasante**, soldados manualmente con cautín. Después del montaje se comprobarán las conexiones y se medirán la ganancia real y el rechazo de modo común (CMRR), cuyos resultados se presentarán durante la demostración del prototipo.
 
 <!-- vscode-markdown-toc -->
 * 1. [ 1. Tarjeta de Circuito Impreso (PCB - Printed Circuit Board)](#1.TarjetadeCircuitoImpresoPCB-PrintedCircuitBoard)
