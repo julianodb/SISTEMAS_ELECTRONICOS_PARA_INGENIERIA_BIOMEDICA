@@ -11,6 +11,7 @@ Construir por grupo un **prototipo inicial en stripboard** de las dos etapas de 
 - Cautín, estaño, alicates y herramienta para cortar las pistas de cobre.
 - Multímetro, fuente CC con limitación de corriente, generador de funciones y osciloscopio.
 - Protoboard opcional y resistencias para atenuar la señal del generador, si es necesario.
+- Circuito de prueba de LED con potenciómetro, preparado por el profesor, y LED del color de cada equipo.
 
 ## Circuito
 
@@ -22,13 +23,13 @@ Figura 1: Circuito que se construirá en stripboard.
 
 Trabajen en los mismos grupos de T1 y T2. **Lleguen con los valores de los componentes, la ganancia teórica total y un bosquejo de distribución en stripboard**, indicando componentes, puentes y cortes de pista. Identifiquen las entradas $V_1$ y $V_2$, la salida final $V_o$, la alimentación y la referencia de voltaje.
 
-La protoboard puede utilizarse antes del taller o brevemente al inicio para comprobar una etapa o una conexión dudosa. No se exige duplicar el montaje completo: las mediciones evaluadas se realizarán en el prototipo soldado.
+La protoboard puede utilizarse antes del taller o brevemente al inicio para comprobar una etapa o una conexión dudosa. No se exige duplicar el montaje completo: las mediciones del amplificador se realizarán en el prototipo soldado.
 
-Distribución sugerida para **150 minutos**: 15 min para revisar la distribución, 90 min para montar y corregir, 30 min para medir y 15 min para la demostración. Repartan entre los integrantes las tareas de montaje, verificación y preparación de las pruebas.
+Distribución sugerida para **150 minutos**: 15 min para revisar la distribución, 90 min para montar y corregir, 30 min para medir (incluyendo la prueba del LED) y 15 min para la demostración. Repartan entre los integrantes las tareas de montaje, verificación y preparación de las pruebas.
 
 ## Actividad y evaluación (6 pt)
 
-### 1. Montaje y puesta en marcha (3 pt)
+### 1. Montaje y puesta en marcha (2,5 pt)
 
 1. Revisen los valores de las resistencias y la orientación de los circuitos integrados. Planifiquen los cortes para que las pistas no unan nodos distintos, especialmente bajo los zócalos. Mantengan accesibles las entradas y salidas de ambas etapas.
 2. Realicen los cortes y comprueben su aislamiento con el multímetro. Suelden los componentes y puentes siguiendo el bosquejo. Identifiquen el prototipo con el color del grupo.
@@ -54,6 +55,14 @@ Distribución sugerida para **150 minutos**: 15 min para revisar la distribució
 
 En todas las pruebas, conecten las masas del generador y del osciloscopio a la masa del circuito. Utilicen señales del generador y respeten los rangos de alimentación y entrada.
 
+### 4. Corriente del LED del equipo (0,5 pt)
+
+El profesor dispondrá de un circuito listo para probar un LED del color de cada equipo. Ajusten únicamente el potenciómetro hasta obtener el **brillo mínimo que el grupo considere aceptable**. Midan con el multímetro el voltaje $V_R$ entre los terminales de la resistencia de valor conocido $R$ indicada por el profesor, conectada en serie con el LED, y calculen la corriente resultante:
+
+$$I_{LED}=\frac{V_R}{R}$$
+
+Registren el color del LED, $R$, $V_R$ y la corriente calculada en mA para presentarlos durante la demostración.
+
 ## Demostración y presentación de resultados
 
-**No se solicita informe.** Antes de finalizar el taller, presenten el prototipo soldado y demuestren al profesor la amplificación diferencial y el rechazo de modo común. Acompañen la demostración con una tabla breve, en papel o pantalla, que incluya alimentación, consumo, voltaje de reposo, amplitudes medidas, ganancia teórica y real, error porcentual y CMRR a 50 Hz. Expliquen brevemente las diferencias con lo esperado y las correcciones realizadas.
+**No se solicita informe.** Antes de finalizar el taller, presenten el prototipo soldado y demuestren al profesor la amplificación diferencial y el rechazo de modo común. Acompañen la demostración con una tabla breve, en papel o pantalla, que incluya alimentación, consumo, voltaje de reposo, amplitudes medidas, ganancia teórica y real, error porcentual y CMRR a 50 Hz, además de los resultados de la prueba del LED. Expliquen brevemente las diferencias con lo esperado y las correcciones realizadas.
