@@ -1,67 +1,44 @@
 # <img src="https://julianodb.github.io/SISTEMAS_ELECTRONICOS_PARA_INGENIERIA_BIOMEDICA/img/logo_fing.png?raw=true" align="right" height="45"> Sistemas Electrónicos 2026/02
 ## Guía Prueba Escrita 1 — Respuestas
 
-Nombre: __________________________________________
+Preparación para las preguntas 2 y 3. Puntaje referencial: 4 pt.
 
-Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
+1. Analice estos circuitos independientes, con operacionales ideales alimentados con $\pm5\ V$. (2 pt)
 
-1. Los siguientes circuitos amplifican una señal biomédica. Datos del sensor y de la carga: $R_S=47\ k\Omega$, $R_L=2\ k\Omega$ y $v_S=2\ mV$. Para **cada configuración por separado**, calcule la ganancia total respecto del sensor y el voltaje de salida. Suponga operación lineal. (2 pt)
+    1. En el primer circuito, $R_{DA1}=R_{DA3}=10\ k\Omega$ y $R_{DA2}=R_{DA4}=30\ k\Omega$. Obtenga $v_o$ en función de $v_1$ y $v_2$, justificando mediante ecuaciones de nodos. Evalúe para $v_1=0.802\ V$ y $v_2=0.800\ V$. (1 pt)
 
-    - Amplificador 1: $R_{i1}=10\ k\Omega$, $R_{o1}=100\ \Omega$, $A_{V_{NL1}}=8$.
-    - Amplificador 2: $R_{i2}=200\ k\Omega$, $R_{o2}=20\ k\Omega$, $A_{V_{NL2}}=12$.
-
-    1. Configuración 1: (1 pt)
-
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box.png" width="460">
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/difference_amplifier.png" width="240">
 
        <table width="100%" height="190">
-       <tr><td valign="top">La carga de la primera etapa es la resistencia de entrada de la segunda. El sensor, las etapas y la carga generan tres divisores:<br>$G=\frac{R_{i1}}{R_S+R_{i1}}A_{V_{NL1}}\frac{R_{i2}}{R_{o1}+R_{i2}}A_{V_{NL2}}\frac{R_L}{R_{o2}+R_L}$. <b>(+0,60 pt: 0,20 por cada divisor correctamente combinado con las ganancias)</b><br>$G=\frac{10000}{57000}\,8\,\frac{200000}{200100}\,12\,\frac{2000}{22000}\approx 1.53\ V/V$. <b>(+0,25 pt)</b><br>$v_o=Gv_S\approx 3.06\ mV$. <b>(+0,15 pt)</b></td></tr>
+       <tr><td valign="top">$V_+=\frac{R_{DA2}}{R_{DA1}+R_{DA2}}v_1=\frac{3}{4}v_1$ y $V_-=V_+$. <b>(+0,25 pt)</b><br>LKC: $\frac{v_2-V_-}{R_{DA3}}=\frac{V_--v_o}{R_{DA4}}$; $v_o=4V_--3v_2$. <b>(+0,35 pt)</b><br>Así, $v_o=3(v_1-v_2)$. <b>(+0,25 pt)</b><br>$v_o=3(0.802-0.800)=0.006\ V=6\ mV$. <b>(+0,15 pt)</b></td></tr>
        </table>
 
-    2. Configuración 2: (1 pt)
+    2. En el segundo circuito, $R_6=100\ k\Omega$, $C_3=10\ nF$ y $v_i(t)=0.020\sin(500t)\ V$, con $t$ en segundos. Determine $v_o(t)$ y su amplitud pico, justificando desde la corriente del capacitor. Verifique si se alcanza algún límite de alimentación. (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/amplifier_thevenin_rs_rl_double_black_box2.png" width="460">
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/differentiator.png" width="240">
 
        <table width="100%" height="190">
-       <tr><td valign="top">La carga de la primera etapa es la resistencia de entrada de la segunda. El sensor, las etapas y la carga generan tres divisores:<br>$G=\frac{R_{i2}}{R_S+R_{i2}}A_{V_{NL2}}\frac{R_{i1}}{R_{o2}+R_{i1}}A_{V_{NL1}}\frac{R_L}{R_{o1}+R_L}$. <b>(+0,60 pt: 0,20 por cada divisor correctamente combinado con las ganancias)</b><br>$G=\frac{200000}{247000}\,12\,\frac{10000}{30000}\,8\,\frac{2000}{2100}\approx 24.68\ V/V$. <b>(+0,25 pt)</b><br>$v_o=Gv_S\approx 49.35\ mV$. <b>(+0,15 pt)</b></td></tr>
+       <tr><td valign="top">$V_-=0$; $i_C=C_3\,dv_i/dt$ y $v_o=-R_6i_C$. Entonces $v_o=-R_6C_3\,dv_i/dt$. <b>(+0,35 pt)</b><br>$R_6C_3=0.001\ s$; $dv_i/dt=10\cos(500t)\ V/s$, luego $v_o(t)=-0.010\cos(500t)\ V$. <b>(+0,35 pt)</b><br>La amplitud pico es $10\ mV$. <b>(+0,20 pt)</b><br>Los extremos son $\pm0.010\ V$, dentro de $\pm5\ V$: no se alcanza saturación. <b>(+0,10 pt)</b></td></tr>
        </table>
 
     <div style="page-break-after: always;"></div>
 
-2. Los siguientes circuitos se utilizan en el acondicionamiento de señales biomédicas. Los operacionales son ideales y se alimentan con $\pm5\ V$. Analice cada circuito de manera independiente. (2 pt)
+2. Analice de manera independiente los siguientes circuitos. (2 pt)
 
-    1. Para el amplificador de instrumentación, $R_1=R_2=\cdots=R_6=12\ k\Omega$ y $R_G=3\ k\Omega$. Obtenga $v_o$ en función de $V_1$ y $V_2$, justificando la relación mediante las corrientes o ecuaciones de los nodos. Evalúe para $V_1=0.800\ V$ y $V_2=0.802\ V$. (1 pt)
+    1. Datos: $R=20\ k\Omega$ y $C=0.5\ \mu F$. Con el capacitor inicialmente descargado, $v_{in}$ pasa de 0 a $3\ V$ en $t=0$. Determine $v_{out}$ en estado estacionario y la constante de tiempo. Justifique desde el circuito. (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/instrumentation_amplifier.png" width="340">
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/RC_lowpass.png" width="200">
 
        <table width="100%" height="190">
-       <tr><td valign="top">Las entradas inversoras de las primeras etapas están a $V_1$ y $V_2$. Tomando la corriente de $R_G$ desde arriba hacia abajo, $i_G=(V_1-V_2)/R_G$. <b>(+0,25 pt)</b><br>Sus salidas son $u_1=V_1+Ri_G$, $u_2=V_2-Ri_G$. La etapa final, con resistencias iguales, produce $v_o=u_2-u_1$. <b>(+0,35 pt)</b><br>$v_o=(1+2R/R_G)(V_2-V_1)=9(V_2-V_1)$. <b>(+0,25 pt)</b><br>$v_o=18\ mV$. <b>(+0,15 pt)</b></td></tr>
+       <tr><td valign="top">En DC el capacitor no conduce. No hay caída de tensión en $R$, por lo que $v_{out}(\infty)=v_{in}=3\ V$. <b>(+0,40 pt)</b><br>Al anular la fuente ideal de entrada, el capacitor ve $R_{Th}=R=20\ k\Omega$. <b>(+0,35 pt)</b><br>$\tau=RC=20k\cdot0.5\ \mu F=10\ ms$. <b>(+0,25 pt)</b></td></tr>
        </table>
 
-    2. Para el segundo circuito, $R=50\ k\Omega$, $C=0.2\ \mu F$ y $v_o(0)=0.3\ V$. La entrada permanece en $0.1\ V$ desde $t=0$ hasta $t=40\ ms$; luego se hace cero. Determine el voltaje de salida al terminar ese intervalo y explique qué ocurre después. Verifique si se alcanza algún límite de alimentación. (1 pt)
+    2. Considere $RA$, $LA$ y $LL$ voltajes de los electrodos de ECG. Con $R=10\ k\Omega$ y operacional ideal en régimen lineal, obtenga la salida rotulada $aVR$ en función de los tres voltajes. Justifique mediante ecuaciones de nodos e indique su relación con la derivación estándar $aVR_{ECG}$. (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/integrator.png" width="280">
-
-       <table width="100%" height="190">
-       <tr><td valign="top">Es un integrador inversor; se debe conservar la condición inicial. $RC=0.010\ s$ y $dv_o/dt=-v_i/(RC)=-10\ V/s$. <b>(+0,35 pt)</b><br>Durante el intervalo, $v_o(t)=0.3-10t$ V, con $t$ en segundos. En $t=40\ ms$, $v_o=0.3-10\cdot0.04=-0.10\ V$. <b>(+0,35 pt)</b><br>Luego la entrada es cero, la corriente del capacitor es cero y la salida se mantiene en $-0.10\ V$. <b>(+0,20 pt)</b><br>La salida va de $0.3\ V$ a $-0.10\ V$: no alcanza $\pm5\ V$. <b>(+0,10 pt)</b></td></tr>
-       </table>
-
-    <div style="page-break-after: always;"></div>
-
-3. Resuelva los siguientes casos independientes, relacionados con el comportamiento transitorio y la medición de amplificadores en laboratorio. (2 pt)
-
-    1. En el circuito mostrado, $R_1=20\ k\Omega$, $R_2=30\ k\Omega$ y $C_1=0.5\ \mu F$. El capacitor está inicialmente descargado y $v_i$ pasa de 0 a $5\ V$ en $t=0$. Determine el voltaje de salida en estado estacionario y la constante de tiempo, justificando ambos resultados desde el circuito. (1 pt)
-
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example4.png" width="240">
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr2.png" width="270">
 
        <table width="100%" height="190">
-       <tr><td valign="top">En estado estacionario DC el capacitor no conduce. El divisor resistivo da $v_o(\infty)=\frac{R_2}{R_1+R_2}v_i=\frac{30}{50}\cdot5=3\ V$. <b>(+0,40 pt)</b><br>Al anular la fuente ideal de entrada, el capacitor ve $R_{Th}=R_1\parallel R_2=\frac{20\cdot30}{50}\ k\Omega=12.000\ k\Omega$. <b>(+0,35 pt)</b><br>$\tau=R_{Th}C_1=6.000\ ms$. <b>(+0,25 pt)</b></td></tr>
-       </table>
-
-    2. En otro ensayo se utiliza el amplificador **no inversor** de L2, con $68\ k\Omega$ entre la entrada inversora y tierra, $680\ k\Omega$ en la realimentación y alimentación de 0 y $12\ V$. Se ajusta el promedio de salida a $6\ V$. La sonda que mide $v_i$ está físicamente en 10X, pero su canal indica 1X: la sinusoidal ocupa $3$ divisiones pico a pico con escala indicada de $0.01\ V/div$ y un período ocupa $4$ divisiones de $50\ \mu s/div$. Determine el voltaje pico a pico real de entrada, su frecuencia y el voltaje pico a pico esperado de salida. Indique el ajuste que corrige la lectura. Ignore limitaciones dinámicas. (1 pt)
-
-       <table width="100%" height="190">
-       <tr><td valign="top">La lectura es $3\cdot0.01=0.03\ V_{pp}$, pero la sonda atenúa diez veces: $v_{i,pp}=0.3\ V$. <b>(+0,30 pt)</b><br>$T=4\cdot50\ \mu s=0.2\ ms$; $f=1/T=5000\ Hz$. <b>(+0,20 pt)</b><br>La ganancia del no inversor es $1+680/68=11$; $v_{o,pp}=11v_{i,pp}=3.3\ V$. <b>(+0,30 pt)</b><br>Configurar la atenuación del canal en 10X para coincidir con la sonda. <b>(+0,20 pt)</b> La salida ideal oscila entre $4.35$ y $7.65\ V$, dentro de los rieles; el promedio dado no se suma al valor pico a pico.</td></tr>
+       <tr><td valign="top">El divisor no inversor da $V_+=\frac{2}{3}RA$; $V_-=V_+$. <b>(+0,25 pt)</b><br>LKC: $\frac{LA-V_-}{2R}+\frac{LL-V_-}{2R}=\frac{V_--aVR}{2R}$. <b>(+0,35 pt)</b><br>$LA+LL+aVR=3V_-=2RA$; $aVR=2RA-LA-LL$. <b>(+0,25 pt)</b><br>$aVR=2\left(RA-\frac{LA+LL}{2}\right)=2aVR_{ECG}$: amplifica la derivación por dos. <b>(+0,15 pt)</b></td></tr>
        </table>
 
 <div style="page-break-before: always;"></div>
@@ -90,4 +67,6 @@ $$ v_o(t)=V_f+(V_0-V_f)e^{-t/\tau} \qquad \tau=R_{Th}C $$
 
 $$ v_o(t)=v_o(0)-\frac{1}{RC}\int_0^t v_i(u)\,du \qquad v_o(t)=-RC\frac{dv_i}{dt} $$
 
-$$ f=\frac{1}{T} \qquad V_{pp}=2V_{pico} \qquad A_{v_{AC}}=\frac{v_{o,pp}}{v_{i,pp}} $$
+Definiciones de las derivaciones estándar de ECG (los rótulos de un circuito no garantizan ganancia unitaria):
+
+$$ aVL_{ECG}=LA-\frac{RA+LL}{2} \qquad aVR_{ECG}=RA-\frac{LA+LL}{2} $$

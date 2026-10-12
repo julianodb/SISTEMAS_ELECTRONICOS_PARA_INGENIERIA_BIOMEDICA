@@ -48,20 +48,22 @@ Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
 
     <div style="page-break-after: always;"></div>
 
-3. Resuelva los siguientes casos independientes, relacionados con el comportamiento transitorio y la medición de amplificadores en laboratorio. (2 pt)
+3. Analice de manera independiente los siguientes circuitos. (2 pt)
 
-    1. En el circuito mostrado, $R_1=10\ k\Omega$, $R_2=20\ k\Omega$ y $C_1=1\ \mu F$. El capacitor está inicialmente descargado y $v_i$ pasa de 0 a $3\ V$ en $t=0$. Determine el voltaje de salida en estado estacionario y la constante de tiempo, justificando ambos resultados desde el circuito. (1 pt)
+    1. Datos: $R_S=10\ k\Omega$, $R_1=20\ k\Omega$ y $C=1\ \mu F$. Con el capacitor inicialmente descargado, $v_S$ pasa de 0 a $3\ V$ en $t=0$. Determine $V_{out}$ en estado estacionario y la constante de tiempo. Justifique desde el circuito. (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/transient_example4.png" width="240">
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/sensor_passive_high_pass.png" width="250">
 
        <table width="100%" height="190">
-       <tr><td valign="top">En estado estacionario DC el capacitor no conduce. El divisor resistivo da $v_o(\infty)=\frac{R_2}{R_1+R_2}v_i=\frac{20}{30}\cdot3=2\ V$. <b>(+0,40 pt)</b><br>Al anular la fuente ideal de entrada, el capacitor ve $R_{Th}=R_1\parallel R_2=\frac{10\cdot20}{30}\ k\Omega=6.667\ k\Omega$. <b>(+0,35 pt)</b><br>$\tau=R_{Th}C_1=6.667\ ms$. <b>(+0,25 pt)</b></td></tr>
+       <tr><td valign="top">En estado estacionario DC el capacitor es un circuito abierto: no llega corriente desde la fuente a $R_1$. Por tanto $V_{out}(\infty)=0\ V$. <b>(+0,40 pt)</b><br>Al anular la fuente ideal $v_S$, cada placa del capacitor queda conectada a tierra por una resistencia distinta. La resistencia vista <b>entre las placas</b> es $R_{Th}=R_S+R_1=30\ k\Omega$; no están en paralelo. <b>(+0,35 pt)</b><br>$\tau=(R_S+R_1)C=30\ ms$. <b>(+0,25 pt)</b></td></tr>
        </table>
 
-    2. En otro ensayo se utiliza el amplificador **no inversor** de L2, con $68\ k\Omega$ entre la entrada inversora y tierra, $680\ k\Omega$ en la realimentación y alimentación de 0 y $12\ V$. Se ajusta el promedio de salida a $6\ V$. La sonda que mide $v_i$ está físicamente en 10X, pero su canal indica 1X: la sinusoidal ocupa $2$ divisiones pico a pico con escala indicada de $0.02\ V/div$ y un período ocupa $5$ divisiones de $100\ \mu s/div$. Determine el voltaje pico a pico real de entrada, su frecuencia y el voltaje pico a pico esperado de salida. Indique el ajuste que corrige la lectura. Ignore limitaciones dinámicas. (1 pt)
+    2. Considere $RA$, $LA$ y $LL$ voltajes de los electrodos de ECG. Con $R=47\ k\Omega$ y operacional ideal en régimen lineal, obtenga la salida rotulada $aVL$ en función de los tres voltajes. Justifique mediante ecuaciones de nodos e indique su relación con la derivación estándar $aVL_{ECG}$. (1 pt)
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl3.png" width="270">
 
        <table width="100%" height="190">
-       <tr><td valign="top">La lectura es $2\cdot0.02=0.04\ V_{pp}$, pero la sonda atenúa diez veces: $v_{i,pp}=0.4\ V$. <b>(+0,30 pt)</b><br>$T=5\cdot100\ \mu s=0.5\ ms$; $f=1/T=2000\ Hz$. <b>(+0,20 pt)</b><br>La ganancia del no inversor es $1+680/68=11$; $v_{o,pp}=11v_{i,pp}=4.4\ V$. <b>(+0,30 pt)</b><br>Configurar la atenuación del canal en 10X para coincidir con la sonda. <b>(+0,20 pt)</b> La salida ideal oscila entre $3.8$ y $8.2\ V$, dentro de los rieles; el promedio dado no se suma al valor pico a pico.</td></tr>
+       <tr><td valign="top">En la entrada no inversora hay un divisor: $V_+=LA/3$. Por realimentación negativa, $V_-=V_+$. <b>(+0,25 pt)</b><br>LKC en la entrada inversora: $\frac{RA-V_-}{4R}+\frac{LL-V_-}{4R}=\frac{V_--aVL}{R}$. <b>(+0,35 pt)</b><br>$RA+LL+4aVL=6V_-=2LA$; $aVL=\frac{2LA-RA-LL}{4}$. <b>(+0,25 pt)</b><br>$aVL=\frac{1}{2}\left(LA-\frac{RA+LL}{2}\right)=\frac{1}{2}aVL_{ECG}$: es la derivación atenuada a la mitad. <b>(+0,15 pt)</b></td></tr>
        </table>
 
 <div style="page-break-before: always;"></div>
@@ -90,4 +92,6 @@ $$ v_o(t)=V_f+(V_0-V_f)e^{-t/\tau} \qquad \tau=R_{Th}C $$
 
 $$ v_o(t)=v_o(0)-\frac{1}{RC}\int_0^t v_i(u)\,du \qquad v_o(t)=-RC\frac{dv_i}{dt} $$
 
-$$ f=\frac{1}{T} \qquad V_{pp}=2V_{pico} \qquad A_{v_{AC}}=\frac{v_{o,pp}}{v_{i,pp}} $$
+Definiciones de las derivaciones estándar de ECG (los rótulos de un circuito no garantizan ganancia unitaria):
+
+$$ aVL_{ECG}=LA-\frac{RA+LL}{2} \qquad aVR_{ECG}=RA-\frac{LA+LL}{2} $$
