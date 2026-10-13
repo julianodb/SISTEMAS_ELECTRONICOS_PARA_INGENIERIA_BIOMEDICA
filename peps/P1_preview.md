@@ -33,9 +33,9 @@ Preparación para las preguntas 2 y 3. Puntaje referencial: 4 pt.
        <tr><td valign="top">&nbsp;</td></tr>
        </table>
 
-    2. Considere $RA$, $LA$ y $LL$ voltajes de los electrodos de ECG. Con $R=10\ k\Omega$ y operacional ideal en régimen lineal, obtenga la salida rotulada $aVR$ en función de los tres voltajes. Justifique mediante ecuaciones de nodos e indique su relación con la derivación estándar $aVR_{ECG}$. (1 pt)
+    2. Considere $RA$, $LA$ y $LL$ voltajes de los electrodos de ECG. Con $R=10\ k\Omega$ y amplificadores operacionales ideales en régimen lineal, obtenga la salida rotulada $aVR$ en función de los tres voltajes. (1 pt)
 
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr2.png" width="270">
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr.png" width="270">
 
        <table width="100%" height="190">
        <tr><td valign="top">&nbsp;</td></tr>

@@ -33,7 +33,7 @@ Preparación para las preguntas 2 y 3. Puntaje referencial: 4 pt.
        <tr><td valign="top">En DC el capacitor no conduce. No hay caída de tensión en $R$, por lo que $v_{out}(\infty)=v_{in}=3\ V$. <b>(+0,40 pt)</b><br>Al anular la fuente ideal de entrada, el capacitor ve $R_{Th}=R=20\ k\Omega$. <b>(+0,35 pt)</b><br>$\tau=RC=20k\cdot0.5\ \mu F=10\ ms$. <b>(+0,25 pt)</b></td></tr>
        </table>
 
-    2. Considere $RA$, $LA$ y $LL$ voltajes de los electrodos de ECG. Con $R=10\ k\Omega$ y operacional ideal en régimen lineal, obtenga la salida rotulada $aVR$ en función de los tres voltajes. Justifique mediante ecuaciones de nodos e indique su relación con la derivación estándar $aVR_{ECG}$. (1 pt)
+    2. Considere $RA$, $LA$ y $LL$ voltajes de los electrodos de ECG. Con $R=10\ k\Omega$ y operacional ideal en régimen lineal, obtenga la salida rotulada $aVR$ en función de los tres voltajes. (1 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/avr2.png" width="270">
 
