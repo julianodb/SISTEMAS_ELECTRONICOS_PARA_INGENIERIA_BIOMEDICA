@@ -33,7 +33,7 @@ Preparación para las preguntas 2 y 3. Puntaje referencial: 4 pt.
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/RC_lowpass.png" width="260">
 
        <table width="100%" height="609">
-       <tr><td valign="top">En DC el capacitor no conduce. No hay caída de tensión en $R$, por lo que $v_{out}(\infty)=v_{in}=3\ V$. <b>(+0,40 pt)</b><br>Al anular la fuente ideal de entrada, el capacitor ve $R_{Th}=R=20\ k\Omega$. <b>(+0,35 pt)</b><br>$\tau=RC=20k\cdot0.5\ \mu F=10\ ms$. <b>(+0,25 pt)</b></td></tr>
+       <tr><td valign="top">En DC el capacitor no conduce. No hay caída de tensión en $R$, por lo que $v_{out}(\infty)=v_{in}=3\ V$. <b>(+0,40 pt)</b><br>Al reemplazar C por una resistencia de 1/Cs, se calcula $v_{out}$ utilizando divisor de voltaje: $v_{out} = \frac{\frac{1}{Cs}}{\frac{1}{Cs}+R} v_{in}= \frac{1}{1+RCs} v_{in}$. Por lo tanto, la función de transferencia es $H(s) = \frac{v_{out}}{v_{in}} = \frac{1}{1+RCs}$ <b>(+0,35 pt)</b><br>El pólo de $H(s)$ es $1+RCs=0 \implies s = -\frac{1}{RC}$. Por lo tanto, la constante de tiempo es $\tau = \frac{1}{Re(-\frac{1}{RC})} = RC = 10\ ms$ <b>(+0,25 pt)</b></td></tr>
        </table>
 
        <div style="page-break-after: always;"></div>

@@ -84,4 +84,4 @@ corrientes de entrada de un operacional ideal: $i_+=i_-=0$.
 
 $$ i_C=C\frac{dv_C}{dt} \qquad Z_C(s)=\frac{1}{Cs} $$
 
-$$ H(s)=\frac{V_o(s)}{V_i(s)} \qquad \tau=-\frac{1}{p} \quad (p\text{ real y negativo}) $$
+$$ H(s)=\frac{V_o(s)}{V_i(s)} \qquad \tau=-\frac{1}{Re\{p\}} $$
