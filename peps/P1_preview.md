@@ -13,7 +13,7 @@ Preparación para las preguntas 2 y 3. Puntaje referencial: 4 pt.
        <tr><td valign="top">&nbsp;</td></tr>
        </table>
 
-    2. En el segundo circuito, $R_6=100\ k\Omega$, $C_3=10\ nF$ y $v_i(t)=0.020\sin(500t)\ V$, con $t$ en segundos. Determine $v_o(t)$ y su amplitud pico, justificando desde la corriente del capacitor. Verifique si se alcanza algún límite de alimentación. (1 pt)
+    2. En el segundo circuito, $R_6=100\ k\Omega$, $C_3=10\ nF$ y $v_i(t)=0.020\sin(500t)\ V$, con $t$ en segundos. Determine $v_o(t)$ y su amplitud pico. Verifique si se alcanza algún límite de alimentación. (1 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/differentiator.png" width="240">
 
@@ -45,28 +45,12 @@ Preparación para las preguntas 2 y 3. Puntaje referencial: 4 pt.
 
 # Fórmulas
 
-$$ R_{serie}=R_a+R_b \qquad R_{paralelo}=\frac{R_aR_b}{R_a+R_b} $$
+Cortocircuito virtual, con realimentación negativa y operación lineal: $V_+=V_-$; 
 
-$$ v=Ri \qquad \sum i=0 \qquad \sum v=0 $$
-
-$$ v_o=A_{V_{NL}}\frac{R_L}{R_L+R_o}\frac{R_i}{R_S+R_i}v_S $$
-
-Cortocircuito virtual, con realimentación negativa y operación lineal: $V_+=V_-$; corrientes de entrada de un operacional ideal: $i_+=i_-=0$.
-
-$$ v_o=\left(1+\frac{R_f}{R_g}\right)v_i \qquad v_o=-R_f\sum_k\frac{v_k}{R_k} $$
-
-$$ v_o=\left(1+\frac{2R}{R_G}\right)(V_2-V_1) $$
-
-La última expresión corresponde al amplificador de instrumentación de tres operacionales con las seis resistencias iguales a $R$.
+corrientes de entrada de un operacional ideal: $i_+=i_-=0$.
 
 $$ i_C=C\frac{dv_C}{dt} \qquad Z_C(s)=\frac{1}{Cs} $$
 
 $$ H(s)=\frac{V_o(s)}{V_i(s)} \qquad \tau=-\frac{1}{p} \quad (p\text{ real y negativo}) $$
 
-$$ v_o(t)=V_f+(V_0-V_f)e^{-t/\tau} \qquad \tau=R_{Th}C $$
 
-$$ v_o(t)=v_o(0)-\frac{1}{RC}\int_0^t v_i(u)\,du \qquad v_o(t)=-RC\frac{dv_i}{dt} $$
-
-Definiciones de las derivaciones estándar de ECG (los rótulos de un circuito no garantizan ganancia unitaria):
-
-$$ aVL_{ECG}=LA-\frac{RA+LL}{2} \qquad aVR_{ECG}=RA-\frac{LA+LL}{2} $$
