@@ -32,47 +32,38 @@ Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
 
     <div style="page-break-after: always;"></div>
 
-2. **Alarma por disminución de amplitud del ECG.** Una etapa anterior entrega $v_E$, una tensión proporcional a la amplitud del ECG (su envolvente). El circuito compara ese nivel con un umbral y, si permanece bajo, el temporizador activa una alarma. Todos los operacionales son ideales, alimentados entre 0 y $+5\ V$.
+2. **Detección de amplitud baja del ECG.** Una etapa anterior entrega $v_E$, una tensión proporcional a la amplitud del ECG (su envolvente). El circuito mostrado entrega una salida $u$ que permite detectar si ese nivel está por debajo de un umbral. OA1 es ideal y se alimenta entre 0 y $+5\ V$.
 
-    OA1 tiene su entrada no inversora conectada a $v_E$ y su entrada inversora al nodo del divisor mostrado. Su salida es $u$ y no se realimenta a las entradas. $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$.
+    La entrada no inversora recibe $v_E$; la entrada inversora está conectada al punto medio del divisor entre $+5\ V$ y tierra, con $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$.
 
-    <pre>+5 V -- RA -- nodo de referencia -- RB -- GND
-    vE --> OA1(+) ; nodo de referencia --> OA1(-)
-    OA1(salida) = u --> temporizador --> alarma</pre>
+    <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
 
-    Determine el umbral y el valor de $u$ para cada caso independiente: $v_E=0.30\ V$ y $v_E=0.10\ V$. Explique qué cambio de $u$ inicia la temporización. (0,5 pt)
+    Determine el umbral y el valor de $u$ para cada caso independiente: $v_E=0.30\ V$ y $v_E=0.10\ V$. Indique qué estado de $u$ corresponde a una amplitud inferior al umbral. (1 pt)
 
-    <table width="100%" height="565">
-    <tr><td valign="top">El divisor no está cargado: $V_{ref}=5\frac{R_B}{R_A+R_B}=0.20\ V$. <b>(+0,15 pt)</b><br>OA1 no tiene realimentación negativa: se debe comparar $v_E$ con $V_{ref}$, sin imponer cortocircuito virtual. <b>(+0,15 pt)</b><br>Para $v_E=0.30\ V$, $u=5\ V$; para $v_E=0.10\ V$, $u=0\ V$. Una disminución sostenida de la amplitud bajo el umbral produce el cambio $5\to0\ V$ que inicia la temporización. <b>(+0,20 pt)</b></td></tr>
+    <table width="100%" height="398">
+    <tr><td valign="top">El divisor no está cargado: $V_{ref}=5\frac{R_B}{R_A+R_B}=0.20\ V$. <b>(+0,30 pt)</b><br>OA1 no tiene realimentación negativa: compara $v_E$ con $V_{ref}$, sin imponer cortocircuito virtual. <b>(+0,30 pt)</b><br>Si $v_E=0.30\ V$, $u=5\ V$; si $v_E=0.10\ V$, $u=0\ V$. El estado bajo de $u$ indica amplitud inferior al umbral. <b>(+0,40 pt)</b></td></tr>
     </table>
 
     <div style="page-break-after: always;"></div>
 
-3. **Temporización de la alarma.** El circuito siguiente recibe $u$. OA2 y OA3 son ideales, alimentados entre 0 y $+5\ V$. El módulo de alarma suena cuando $v_A$ pasa a $+5\ V$.
+3. El operacional del circuito siguiente es ideal, se alimenta con $+5\ V$ y $-5\ V$, y tiene la entrada no inversora conectada a tierra. $R_1=R_2=100\ k\Omega$, $R_3=1\ M\Omega$, $C_1=0.1\ \mu F$ y $C_2=1\ \mu F$.
 
-    - **Rama F:** $u$ se conecta por $R_f=100\ k\Omega$ al nodo $v_f$; $C_f=10\ \mu F$ conecta ese nodo a tierra.
-    - **Rama S:** $u$ se conecta por $R_i=200\ k\Omega$ a OA2(−). Entre la salida $v_s$ y OA2(−) están $R_t=200\ k\Omega$ y $C_t=10\ \mu F$ en paralelo. OA2(+) recibe $V_b$ desde un divisor de dos resistencias iguales de $10\ k\Omega$, entre $+5\ V$ y tierra.
-    - **Salida:** OA3(−) recibe $v_f$. OA3(+) recibe $v_m$, punto medio del divisor $v_s$–$R_5$–$v_m$–$R_6$–tierra, con $R_5=R_6=10\ k\Omega$. La salida de OA3 es $v_A$.
+    <pre>vi -- R1 -- vx -- R2 -- OA1(-)
+                C1 entre vx y tierra
+           R3 y C2 en paralelo entre OA1(-) y vs
+           OA1(+) a tierra; salida OA1 = vs</pre>
 
-    En un ensayo independiente, $u=5\ V$ durante mucho tiempo y en $t=0$ cambia a $0\ V$, manteniéndose allí. Determine los valores iniciales y finales de $v_f$ y $v_s$, los dos polos y las constantes de tiempo del bloque lineal entre $u$ y la diferencia de entradas de OA3. Halle cuándo se alcanza el umbral de activación de la alarma y exprese ese tiempo como múltiplo de las constantes de tiempo. **No se pide una expresión completa de $v_A(t)$.** (1,5 pt)
+    $R_2$ conecta el nodo $v_x$ de la etapa RC con la entrada inversora. La salida $v_s$ no tiene carga externa. Inicialmente el circuito está en reposo, con $v_i=0\ V$. En $t=0$ se aplica un escalón de $100\ mV$.
 
-    <table width="100%" height="588">
-    <tr><td valign="top">$V_b=2.5\ V$. En DC, $v_f=u$ y $v_s=2V_b-u=5-u$. Por continuidad: $(v_f,v_s)(0^+)=(5,0)\ V$; al final $(v_f,v_s)=(0,5)\ V$. <b>(+0,30 pt)</b><br>$\tau_f=R_fC_f=1\ s$, $\tau_s=R_tC_t=2\ s$. Para $d=v_s/2-v_f$, $H(s)=\Delta D/\Delta U=-\frac{3+5s}{2(1+s)(1+2s)}$: polos $-1$ y $-0.5\ s^{-1}$, sin cancelaciones. <b>(+0,40 pt)</b><br>De la transición de primer orden, sea $x=e^{-t/\tau_s}$: $v_f/5=x^2$ y $v_s/5=1-x$, pues $\tau_s=2\tau_f$. En el cruce $v_f=v_s/2$, luego $2x^2+x-1=0$. La raíz física es $x=1/2$; $t_d=\tau_s\ln2=2\tau_f\ln2\approx1.386\ s=1.386\tau_f=0.693\tau_s$. <b>(+0,60 pt)</b><br>En el cruce $(v_f,v_s)=(1.25,2.5)\ V$. Antes, $v_A=0\ V$; justo después, $v_A=5\ V$ y suena la alarma. La igualdad define el límite de conmutación; no fija la salida ideal exactamente en ese instante. <b>(+0,20 pt)</b></td></tr>
+    Determine el valor de $v_s$ en estado estacionario y estime en cuánto tiempo alcanza el 95 % de ese valor. Justifique su estimación. (2 pt)
+
+    <table width="100%" height="590">
+    <tr><td valign="top">En DC los capacitores son circuitos abiertos y $V_-=V_+=0$. La corriente de entrada es $i=100\ mV/(R_1+R_2)$. Entonces $v_s(\infty)=-R_3i=-\frac{R_3}{R_1+R_2}\,100\ mV=-0.50\ V$, dentro de los rieles. <b>(+0,70 pt)</b><br>$R_2$ carga el RC pasivo: $\tau_1=(R_1\parallel R_2)C_1=5\ ms$. La realimentación aporta $\tau_2=R_3C_2=1\ s$. Por tanto $H(s)=-\frac{R_3}{R_1+R_2}\frac{1}{(1+0.005s)(1+s)}$, con polos $-200$ y $-1\ s^{-1}$. <b>(+0,50 pt)</b><br>Como $\tau_2=200\tau_1$, domina el polo de $-1\ s^{-1}$. El formulario indica aproximadamente 95 % a las tres constantes de tiempo: $t_{95}\approx3\tau_2=3\ s$. En ese nivel $v_s\approx-0.475\ V$. Es una aproximación por polo dominante, no una regla exacta para todo sistema de dos polos. No se necesita invertir Laplace. <b>(+0,80 pt)</b></td></tr>
     </table>
 
     <div style="page-break-after: always;"></div>
 
-4. Datos: $R_S=10\ k\Omega$, $R_1=20\ k\Omega$ y $C=1\ \mu F$. Con el capacitor inicialmente descargado, $v_S$ pasa de 0 a $3\ V$ en $t=0$. Determine $V_{out}$ en estado estacionario y la constante de tiempo. (1 pt)
-
-   <img src="https://julianodb.github.io/electronic_circuits_diagrams/sensor_passive_high_pass.png" width="320">
-
-   <table width="100%" height="667">
-   <tr><td valign="top">En estado estacionario DC el capacitor es un circuito abierto: no llega corriente desde la fuente a $R_1$. Por tanto $V_{out}(\infty)=0\ V$. <b>(+0,40 pt)</b><br>Al anular la fuente ideal $v_S$, cada placa del capacitor queda conectada a tierra por una resistencia distinta. La resistencia vista <b>entre las placas</b> es $R_{Th}=R_S+R_1=30\ k\Omega$; no están en paralelo. <b>(+0,35 pt)</b><br>$\tau=(R_S+R_1)C=30\ ms$. <b>(+0,25 pt)</b></td></tr>
-   </table>
-
-    <div style="page-break-after: always;"></div>
-
-5. Las derivaciones estándar de ECG son combinaciones de los voltajes de los electrodos que permiten observar la actividad eléctrica cardíaca desde distintas direcciones. $RA$ = Right Arm (brazo derecho), $LA$ = Left Arm (brazo izquierdo) y $LL$ = Left Leg (pierna izquierda). Con $R=47\ k\Omega$ y operacional ideal en régimen lineal, obtenga la salida $aVL$ en función de esas entradas. (1 pt)
+4. Las derivaciones estándar de ECG son combinaciones de los voltajes de los electrodos que permiten observar la actividad eléctrica cardíaca desde distintas direcciones. $RA$ = Right Arm (brazo derecho), $LA$ = Left Arm (brazo izquierdo) y $LL$ = Left Leg (pierna izquierda). Con $R=47\ k\Omega$ y operacional ideal en régimen lineal, obtenga la salida $aVL$ en función de esas entradas. (1 pt)
 
    <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl3.png" width="340">
 
@@ -96,4 +87,16 @@ Transición de un sistema de primer orden entre estados constantes:
 
 $$ v(t)=V_f+(V_0-V_f)e^{-t/\tau} $$
 
-$$ e^{-2a}=(e^{-a})^2 \qquad e^{-a}=b\ \Longrightarrow\ a=-\ln b $$
+
+
+Respuesta a escalón de un sistema de primer orden, inicialmente en reposo:
+
+| Tiempo | Porcentaje del valor en estado estacionario alcanzado |
+| :---: | :---: |
+| $\tau$ | 63,2 % |
+| $2\tau$ | 86,5 % |
+| $3\tau$ | 95,0 % |
+| $4\tau$ | 98,2 % |
+| $5\tau$ | 99,3 % |
+
+Si un sistema tiene polos reales estables bien separados, puede estimarse el establecimiento mediante el polo dominante, que tiene la mayor constante de tiempo. La tabla es exacta, salvo redondeo, para primer orden y aproximada al emplear esta reducción de orden.
