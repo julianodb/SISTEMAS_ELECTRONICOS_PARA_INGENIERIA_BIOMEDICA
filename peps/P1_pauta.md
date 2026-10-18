@@ -6,7 +6,7 @@ Nombre: __________________________________________
 
 Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
 
-1. En el contexto de mediciones de señales biomédicas, los cables de los sensores añaden resistencia y pueden captar ruido. Una solución es amplificar en el propio pad (electrodo activo). Para **cada configuración por separado**, calcule la ganancia respecto de $v_S$ y el voltaje de salida. Suponga operación lineal; la resistencia efectiva del cable se ha elegido con fines didácticos. (2 pt)
+1. En las mediciones de señales biomédicas, los cables de los sensores añaden resistencia y pueden captar ruido. Una solución es amplificar en el propio pad (electrodo activo). Para **cada configuración por separado**, calcule la ganancia respecto de $v_S$ y el voltaje de salida. Suponga operación lineal; la resistencia efectiva del cable se ha elegido con fines didácticos. (2 pt)
 
     - Sensor, cable y carga: $R_S=51\ k\Omega$, $R_c=100\ k\Omega$, $v_S=1\ mV$ y $R_L=10\ k\Omega$.
     - Amplificador 1: $R_{i1}=51\ k\Omega$, $R_{o1}=100\ \Omega$, $A_{V_{NL1}}=10$.
@@ -32,38 +32,79 @@ Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
 
     <div style="page-break-after: always;"></div>
 
-2. **Detección de amplitud baja del ECG.** Una etapa anterior entrega $v_E$, una tensión proporcional a la amplitud del ECG (su envolvente). El circuito mostrado entrega una salida $u$ que permite detectar si ese nivel está por debajo de un umbral. OA1 es ideal y se alimenta entre 0 y $+5\ V$.
+2. Un sensor entrega $v_E$, una tensión proporcional a la amplitud del ECG del paciente (su envolvente). El circuito mostrado entrega una salida $u$ que permite detectar si ese nivel está por debajo de un umbral. OA1 es ideal y se alimenta entre 0 y $+5\ V$. Considere $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$. (1 pt)
 
-    La entrada no inversora recibe $v_E$; la entrada inversora está conectada al punto medio del divisor entre $+5\ V$ y tierra, con $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$.
+    1. Determine el valor del umbral de detección. (0,30 pt)
 
-    <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
 
-    Determine el umbral y el valor de $u$ para cada caso independiente: $v_E=0.30\ V$ y $v_E=0.10\ V$. Indique qué estado de $u$ corresponde a una amplitud inferior al umbral. (1 pt)
+       <table width="100%" height="506">
+       <tr><td valign="top">Como la entrada del operacional ideal no consume corriente, el divisor no está cargado: $V_{ref}=5\frac{R_B}{R_A+R_B}$. <b>(+0,20 pt)</b><br>$V_{ref}=5\frac{10}{240+10}=0.20\ V$. <b>(+0,10 pt)</b></td></tr>
+       </table>
 
-    <table width="100%" height="398">
-    <tr><td valign="top">El divisor no está cargado: $V_{ref}=5\frac{R_B}{R_A+R_B}=0.20\ V$. <b>(+0,30 pt)</b><br>OA1 no tiene realimentación negativa: compara $v_E$ con $V_{ref}$, sin imponer cortocircuito virtual. <b>(+0,30 pt)</b><br>Si $v_E=0.30\ V$, $u=5\ V$; si $v_E=0.10\ V$, $u=0\ V$. El estado bajo de $u$ indica amplitud inferior al umbral. <b>(+0,40 pt)</b></td></tr>
-    </table>
+       <div style="page-break-after: always;"></div>
+
+    2. Determine el voltaje de salida $u$ cuando $v_E=0.30\ V$. (0,25 pt)
+
+       OA1 es ideal y se alimenta entre 0 y $+5\ V$; $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$. La entrada es $v_E$ y la salida es $u$.
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
+
+       <table width="100%" height="500">
+       <tr><td valign="top">OA1 no tiene realimentación negativa. Con $v_E=0.30\ V$, la entrada no inversora está por encima de la referencia de $0.20\ V$. <b>(+0,15 pt)</b><br>La salida alcanza el límite superior de alimentación: $u=5\ V$. <b>(+0,10 pt)</b></td></tr>
+       </table>
+
+       <div style="page-break-after: always;"></div>
+
+    3. Determine el voltaje de salida $u$ cuando $v_E=0.10\ V$. (0,25 pt)
+
+       OA1 es ideal y se alimenta entre 0 y $+5\ V$; $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$. La entrada es $v_E$ y la salida es $u$.
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
+
+       <table width="100%" height="500">
+       <tr><td valign="top">OA1 no tiene realimentación negativa. Con $v_E=0.10\ V$, la entrada no inversora está por debajo de la referencia de $0.20\ V$. <b>(+0,15 pt)</b><br>La salida alcanza el límite inferior de alimentación: $u=0\ V$. <b>(+0,10 pt)</b></td></tr>
+       </table>
+
+       <div style="page-break-after: always;"></div>
+
+    4. Indique qué estado de la salida $u$ señala que la amplitud del ECG está por debajo del umbral. (0,20 pt)
+
+       OA1 es ideal y se alimenta entre 0 y $+5\ V$; $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$. La entrada es $v_E$ y la salida es $u$.
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
+
+       <table width="100%" height="478">
+       <tr><td valign="top">La amplitud está por debajo del umbral cuando $u=0\ V$ (estado bajo). <b>(+0,10 pt)</b><br>Esto ocurre porque $v_E<V_{ref}$: la entrada no inversora está a menor tensión que la inversora. <b>(+0,10 pt)</b></td></tr>
+       </table>
 
     <div style="page-break-after: always;"></div>
 
-3. El operacional del circuito siguiente es ideal, se alimenta con $+5\ V$ y $-5\ V$, y tiene la entrada no inversora conectada a tierra. $R_1=R_2=100\ k\Omega$, $R_3=1\ M\Omega$, $C_1=0.1\ \mu F$ y $C_2=1\ \mu F$.
+3. El operacional del circuito siguiente es ideal, se alimenta con $+5\ V$ y $-5\ V$ y tiene la entrada no inversora conectada a tierra. Considere $R_1=R_2=100\ k\Omega$, $R_3=1\ M\Omega$, $C_1=0.1\ \mu F$ y $C_2=1\ \mu F$. Inicialmente, el circuito está en reposo, con $v_i=0\ V$. En $t=0$ se aplica un escalón de $100\ mV$. (2 pt)
 
-    <pre>vi -- R1 -- vx -- R2 -- OA1(-)
-                C1 entre vx y tierra
-           R3 y C2 en paralelo entre OA1(-) y vs
-           OA1(+) a tierra; salida OA1 = vs</pre>
+    1. Determine el valor de $v_s$ en estado estacionario. (0,70 pt)
 
-    $R_2$ conecta el nodo $v_x$ de la etapa RC con la entrada inversora. La salida $v_s$ no tiene carga externa. Inicialmente el circuito está en reposo, con $v_i=0\ V$. En $t=0$ se aplica un escalón de $100\ mV$.
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_low_pass_2_poles.png" width="450">
 
-    Determine el valor de $v_s$ en estado estacionario y estime en cuánto tiempo alcanza el 95 % de ese valor. Justifique su estimación. (2 pt)
+       <table width="100%" height="328">
+       <tr><td valign="top">En DC los capacitores son circuitos abiertos y $V_-=V_+=0$. La corriente de entrada es $i=100\ mV/(R_1+R_2)$. Entonces $v_s(\infty)=-R_3i=-\frac{R_3}{R_1+R_2}\,100\ mV=-0.50\ V$, dentro de los rieles. <b>(+0,70 pt)</b></td></tr>
+       </table>
 
-    <table width="100%" height="590">
-    <tr><td valign="top">En DC los capacitores son circuitos abiertos y $V_-=V_+=0$. La corriente de entrada es $i=100\ mV/(R_1+R_2)$. Entonces $v_s(\infty)=-R_3i=-\frac{R_3}{R_1+R_2}\,100\ mV=-0.50\ V$, dentro de los rieles. <b>(+0,70 pt)</b><br>$R_2$ carga el RC pasivo: $\tau_1=(R_1\parallel R_2)C_1=5\ ms$. La realimentación aporta $\tau_2=R_3C_2=1\ s$. Por tanto $H(s)=-\frac{R_3}{R_1+R_2}\frac{1}{(1+0.005s)(1+s)}$, con polos $-200$ y $-1\ s^{-1}$. <b>(+0,50 pt)</b><br>Como $\tau_2=200\tau_1$, domina el polo de $-1\ s^{-1}$. El formulario indica aproximadamente 95 % a las tres constantes de tiempo: $t_{95}\approx3\tau_2=3\ s$. En ese nivel $v_s\approx-0.475\ V$. Es una aproximación por polo dominante, no una regla exacta para todo sistema de dos polos. No se necesita invertir Laplace. <b>(+0,80 pt)</b></td></tr>
-    </table>
+       <div style="page-break-after: always;"></div>
+
+    2. Estime el tiempo transcurrido desde $t=0$ para que $v_s$ alcance el 95 % de su valor en estado estacionario. Justifique la estimación. (1,30 pt)
+
+       Operacional ideal, alimentado con $\pm5\ V$; $R_1=R_2=100\ k\Omega$, $R_3=1\ M\Omega$, $C_1=0.1\ \mu F$ y $C_2=1\ \mu F$. El circuito parte del reposo y recibe un escalón de $100\ mV$ en $t=0$.
+
+       <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_low_pass_2_poles.png" width="450">
+
+       <table width="100%" height="322">
+       <tr><td valign="top">$R_2$ carga el RC pasivo: $\tau_1=(R_1\parallel R_2)C_1=5\ ms$. La realimentación aporta $\tau_2=R_3C_2=1\ s$. Por tanto $H(s)=-\frac{R_3}{R_1+R_2}\frac{1}{(1+0.005s)(1+s)}$, con polos $-200$ y $-1\ s^{-1}$. <b>(+0,50 pt)</b><br>Como $\tau_2=200\tau_1$, domina el polo de $-1\ s^{-1}$. El formulario indica aproximadamente 95 % a las tres constantes de tiempo: $t_{95}\approx3\tau_2=3\ s$. En ese nivel $v_s\approx-0.475\ V$. Es una aproximación por polo dominante, no una regla exacta para todo sistema de dos polos. No se necesita invertir Laplace. <b>(+0,80 pt)</b></td></tr>
+       </table>
 
     <div style="page-break-after: always;"></div>
 
-4. Las derivaciones estándar de ECG son combinaciones de los voltajes de los electrodos que permiten observar la actividad eléctrica cardíaca desde distintas direcciones. $RA$ = Right Arm (brazo derecho), $LA$ = Left Arm (brazo izquierdo) y $LL$ = Left Leg (pierna izquierda). Con $R=47\ k\Omega$ y operacional ideal en régimen lineal, obtenga la salida $aVL$ en función de esas entradas. (1 pt)
+4. Las derivaciones estándar de ECG son combinaciones de los voltajes de los electrodos que permiten observar la actividad eléctrica cardíaca desde distintas direcciones. $RA$ = Right Arm (brazo derecho), $LA$ = Left Arm (brazo izquierdo) y $LL$ = Left Leg (pierna izquierda). Con $R=47\ k\Omega$ y un operacional ideal en régimen lineal, obtenga la salida $aVL$ en función de esas entradas. (1 pt)
 
    <img src="https://julianodb.github.io/electronic_circuits_diagrams/avl3.png" width="340">
 
@@ -87,8 +128,6 @@ Transición de un sistema de primer orden entre estados constantes:
 
 $$ v(t)=V_f+(V_0-V_f)e^{-t/\tau} $$
 
-
-
 Respuesta a escalón de un sistema de primer orden, inicialmente en reposo:
 
 | Tiempo | Porcentaje del valor en estado estacionario alcanzado |
@@ -98,5 +137,3 @@ Respuesta a escalón de un sistema de primer orden, inicialmente en reposo:
 | $3\tau$ | 95,0 % |
 | $4\tau$ | 98,2 % |
 | $5\tau$ | 99,3 % |
-
-Si un sistema tiene polos reales estables bien separados, puede estimarse el establecimiento mediante el polo dominante, que tiene la mayor constante de tiempo. La tabla es exacta, salvo redondeo, para primer orden y aproximada al emplear esta reducción de orden.
