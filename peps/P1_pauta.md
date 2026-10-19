@@ -34,41 +34,18 @@ Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
 
 2. Un sensor entrega $v_E$, una tensión proporcional a la amplitud del ECG del paciente (su envolvente). El circuito mostrado entrega una salida $u$ que permite detectar si ese nivel está por debajo de un umbral. OA1 es ideal y se alimenta entre 0 y $+5\ V$. Considere $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$. (1 pt)
 
-    1. Determine el valor del umbral de detección. (0,30 pt)
+
+    1. Determine el voltaje de salida $u$ para cada caso independiente: $v_E=0.30\ V$ y $v_E=0.10\ V$. (0,80 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
 
-       <table width="100%" height="506">
-       <tr><td valign="top">Como la entrada del operacional ideal no consume corriente, el divisor no está cargado: $V_{ref}=5\frac{R_B}{R_A+R_B}$. <b>(+0,20 pt)</b><br>$V_{ref}=5\frac{10}{240+10}=0.20\ V$. <b>(+0,10 pt)</b></td></tr>
+       <table width="100%" height="484">
+       <tr><td valign="top">Como la entrada del operacional ideal no consume corriente, el divisor no está cargado: $V_{ref}=5\frac{R_B}{R_A+R_B}$. <b>(+0,20 pt)</b><br>$V_{ref}=5\frac{10}{240+10}=0.20\ V$. <b>(+0,10 pt)</b><br>OA1 no tiene realimentación negativa. Con $v_E=0.30\ V$, la entrada no inversora está por encima de la referencia de $0.20\ V$. <b>(+0,15 pt)</b><br>La salida alcanza el límite superior de alimentación: $u=5\ V$. <b>(+0,10 pt)</b><br>OA1 no tiene realimentación negativa. Con $v_E=0.10\ V$, la entrada no inversora está por debajo de la referencia de $0.20\ V$. <b>(+0,15 pt)</b><br>La salida alcanza el límite inferior de alimentación: $u=0\ V$. <b>(+0,10 pt)</b></td></tr>
        </table>
 
        <div style="page-break-after: always;"></div>
 
-    2. Determine el voltaje de salida $u$ cuando $v_E=0.30\ V$. (0,25 pt)
-
-       OA1 es ideal y se alimenta entre 0 y $+5\ V$; $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$. La entrada es $v_E$ y la salida es $u$.
-
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
-
-       <table width="100%" height="500">
-       <tr><td valign="top">OA1 no tiene realimentación negativa. Con $v_E=0.30\ V$, la entrada no inversora está por encima de la referencia de $0.20\ V$. <b>(+0,15 pt)</b><br>La salida alcanza el límite superior de alimentación: $u=5\ V$. <b>(+0,10 pt)</b></td></tr>
-       </table>
-
-       <div style="page-break-after: always;"></div>
-
-    3. Determine el voltaje de salida $u$ cuando $v_E=0.10\ V$. (0,25 pt)
-
-       OA1 es ideal y se alimenta entre 0 y $+5\ V$; $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$. La entrada es $v_E$ y la salida es $u$.
-
-       <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
-
-       <table width="100%" height="500">
-       <tr><td valign="top">OA1 no tiene realimentación negativa. Con $v_E=0.10\ V$, la entrada no inversora está por debajo de la referencia de $0.20\ V$. <b>(+0,15 pt)</b><br>La salida alcanza el límite inferior de alimentación: $u=0\ V$. <b>(+0,10 pt)</b></td></tr>
-       </table>
-
-       <div style="page-break-after: always;"></div>
-
-    4. Indique qué estado de la salida $u$ señala que la amplitud del ECG está por debajo del umbral. (0,20 pt)
+    2. Indique qué estado de la salida $u$ señala que la amplitud del ECG está por debajo del umbral. (0,20 pt)
 
        OA1 es ideal y se alimenta entre 0 y $+5\ V$; $R_A=240\ k\Omega$ y $R_B=10\ k\Omega$. La entrada es $v_E$ y la salida es $u$.
 
