@@ -57,26 +57,26 @@ Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
 
     <div style="page-break-after: always;"></div>
 
-3. El operacional del circuito siguiente es ideal, se alimenta con $+5\ V$ y $-5\ V$ y tiene la entrada no inversora conectada a tierra. Considere $R_1=R_2=100\ k\Omega$, $R_3=1\ M\Omega$, $C_1=0.1\ \mu F$ y $C_2=1\ \mu F$. Inicialmente, el circuito está en reposo, con $v_i=0\ V$. En $t=0$ se aplica un escalón de $100\ mV$. (2 pt)
+3. El operacional del circuito siguiente es ideal, se alimenta con $+5\ V$ y $-5\ V$ y tiene la entrada no inversora conectada a tierra. Considere $R_1=R_2=5.1\ k\Omega$, $R_3=100\ k\Omega$, $C_1=6.8\ \mu F$ y $C_2=2.2\ nF$. Inicialmente, el circuito está en reposo, con $v_i=0\ V$. En $t=0$ se aplica un escalón de $100\ mV$. (2 pt)
 
     1. Determine el valor de $v_s$ en estado estacionario. (0,70 pt)
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_low_pass_2_poles.png" width="450">
 
        <table width="100%" height="328">
-       <tr><td valign="top">En DC los capacitores son circuitos abiertos y $V_-=V_+=0$. La corriente de entrada es $i=100\ mV/(R_1+R_2)$. Entonces $v_s(\infty)=-R_3i=-\frac{R_3}{R_1+R_2}\,100\ mV=-0.50\ V$, dentro de los rieles. <b>(+0,70 pt)</b></td></tr>
+       <tr><td valign="top">En DC los capacitores son circuitos abiertos y $V_-=V_+=0$. La corriente de entrada es $i=100\ mV/(R_1+R_2)$. Entonces $v_s(\infty)=-R_3i=-\frac{R_3}{R_1+R_2}\,100\ mV\approx-0.980\ V$, dentro de los rieles. <b>(+0,70 pt)</b></td></tr>
        </table>
 
        <div style="page-break-after: always;"></div>
 
     2. Estime el tiempo transcurrido desde $t=0$ para que $v_s$ alcance el 95 % de su valor en estado estacionario. Justifique la estimación. (1,30 pt)
 
-       Operacional ideal, alimentado con $\pm5\ V$; $R_1=R_2=100\ k\Omega$, $R_3=1\ M\Omega$, $C_1=0.1\ \mu F$ y $C_2=1\ \mu F$. El circuito parte del reposo y recibe un escalón de $100\ mV$ en $t=0$.
+       Operacional ideal, alimentado con $\pm5\ V$; $R_1=R_2=5.1\ k\Omega$, $R_3=100\ k\Omega$, $C_1=6.8\ \mu F$ y $C_2=2.2\ nF$. El circuito parte del reposo y recibe un escalón de $100\ mV$ en $t=0$.
 
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_low_pass_2_poles.png" width="450">
 
        <table width="100%" height="322">
-       <tr><td valign="top">$R_2$ carga el RC pasivo: $\tau_1=(R_1\parallel R_2)C_1=5\ ms$. La realimentación aporta $\tau_2=R_3C_2=1\ s$. Por tanto $H(s)=-\frac{R_3}{R_1+R_2}\frac{1}{(1+0.005s)(1+s)}$, con polos $-200$ y $-1\ s^{-1}$. <b>(+0,50 pt)</b><br>Como $\tau_2=200\tau_1$, domina el polo de $-1\ s^{-1}$. El formulario indica aproximadamente 95 % a las tres constantes de tiempo: $t_{95}\approx3\tau_2=3\ s$. En ese nivel $v_s\approx-0.475\ V$. Es una aproximación por polo dominante, no una regla exacta para todo sistema de dos polos. No se necesita invertir Laplace. <b>(+0,80 pt)</b></td></tr>
+       <tr><td valign="top">$R_2$ carga el RC pasivo: $\tau_1=(R_1\parallel R_2)C_1=(2.55\ k\Omega)(6.8\ \mu F)=17.34\ ms$. La realimentación aporta $\tau_2=R_3C_2=0.220\ ms$. Por tanto $H(s)=-\frac{100}{10.2}\frac{1}{(1+0.01734s)(1+0.000220s)}$, con polos aproximadamente $-57.7$ y $-4545\ s^{-1}$. <b>(+0,50 pt)</b><br>Como $\tau_1\approx78.8\tau_2$, domina el polo de $-57.7\ s^{-1}$. El formulario indica aproximadamente 95 % a las tres constantes de tiempo: $t_{95}\approx3\tau_1=52.02\ ms\approx52\ ms$. En ese nivel $v_s\approx-0.931\ V$. Es una aproximación por polo dominante, no una regla exacta para todo sistema de dos polos. No se necesita invertir Laplace. <b>(+0,80 pt)</b></td></tr>
        </table>
 
     <div style="page-break-after: always;"></div>
