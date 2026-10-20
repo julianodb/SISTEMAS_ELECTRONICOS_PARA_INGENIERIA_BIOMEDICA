@@ -25,7 +25,11 @@ La tensión de zener ($V_Z$) es una constante para cada diodo. Depende del mater
 
 El diodo zener utilizado como protección de picos de voltaje limita el voltaje que llega a la carga a que esté entre $-V_f$ y $V_Z$.
 
+![zener](../img/08_1.png)
+
 ## Diodo real
+
+![realidad](../img/08_2.png)
 
 ### Ecuación de Shockley
 
@@ -42,6 +46,8 @@ $$ V_T = \frac{kT}{q}$$
 - $T$: Temperatura del diodo en Kelvin
 - $q$: Carga del electrón. $q=1.6*10^{-19} C$
 
+![puntos notables](../img/08_3.png)
+
 ### Curva de Carga
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_diode.png" width="48">
@@ -52,6 +58,8 @@ $I_R = I_D$
 - $I_D (V_D) = I_S \left( e^{\frac{V_D}{n V_T}} - 1 \right)$
 
 No tiene solucción analítica. Útil para entender el circuito graficamente
+
+![curva_carga](../img/08_4.png)
 
 ## Hojas de Datos
 

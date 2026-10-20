@@ -41,6 +41,10 @@ $$
 
 ![bateria_respaldo](../img/07_2.png)
 
+![media-onda](../img/07_5.png)
+
+![onda-completa](../img/07_6.png)
+
 ## Modelo mejorado
 
 ![motivacion_modelo_mejorado](../img/07_4.png)
@@ -77,7 +81,6 @@ LED en realidad no es una palabra, sino que una sigla: Light-Emitting Diode, que
 Tipicamente los $V_f$ de los LEDs son más grandes que los de los diodos convencionales (por ejemplo, 2.2 V, 3.5 V). Otra diferencia es que los LEDs no están proyectados para resistir a voltajes inversos altos, entonces se queman facilmente al aplicar un $V_f$ negativo (por ejemplo menos de -5 V).
 
 <img src="https://julianodb.github.io/electronic_circuits_diagrams/resistance_led.png" width="50">
-
 
 ## Bibliografia
 

@@ -2,6 +2,8 @@
 
 ## Motivación
 
+![zener](../img/09_1.png)
+
 ## Transistores a grandes rasgos
 
 - Tres terminales
