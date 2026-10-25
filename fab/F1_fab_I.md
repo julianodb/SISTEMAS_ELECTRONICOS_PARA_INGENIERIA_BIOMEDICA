@@ -47,7 +47,7 @@ La siguiente imagen muestra una propuesta de distribución y conexión de los co
 
 El bosquejo muestra las conexiones del LM324, el conector de entrada ($V_1$, $V_2$), el conector de alimentación ($+$, $-$, GND), la salida ($V_o$) y las resistencias $R_1$, $R_3$, $R_9$, $R_{11}$ y $R_{12}$. Falta determinar las conexiones de $R_2$, $R_8$, $R_{10}$ y $R_{13}$
 
-2. Suelden los componentes y puentes siguiendo el bosquejo. Identifiquen el prototipo con el color del grupo.
+2. Suelden los componentes y puentes. Identifiquen el prototipo con el color del grupo.
 3. Con la alimentación desconectada, revisen la continuidad de las conexiones, las soldaduras y la ausencia de cortocircuitos entre los pines de alimentación. Alimenten con la tensión y el límite de corriente indicados por el profesor. Conecten ambas entradas al mismo voltaje de referencia, dentro del rango de entrada permitido. Registren el consumo de corriente y el voltaje de reposo de la salida; comprueben que ninguna etapa esté saturada.
 
 ### 2. Ganancia real (1,5 pt)
