@@ -125,5 +125,5 @@ Figura 5: Circuito amplificador con un amplificador operacional + generador de f
         Respuesta:
 
         <table width="100%">
-            <tr><td><br><br><br><br><br><br></td></tr>
+            <tr><td><br><br><br><br><br><br><br><br><br></td></tr>
         </table>
