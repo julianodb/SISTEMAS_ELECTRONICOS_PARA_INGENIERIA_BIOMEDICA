@@ -52,7 +52,7 @@ Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_alarma_deteccion.png" width="350">
 
        <table width="100%" height="478">
-       <tr><td valign="top">La amplitud está por debajo del umbral cuando $u=0\ V$ (estado bajo). <b>(+0,10 pt)</b><br>Esto ocurre porque $v_E<V_{ref}$: la entrada no inversora está a menor tensión que la inversora. <b>(+0,10 pt)</b></td></tr>
+       <tr><td valign="top">La amplitud está por debajo del umbral cuando $u=0\ V$ (estado bajo). <b>(+0,10 pt)</b><br>Esto ocurre porque $v_E \lt V_{ref}$: la entrada no inversora está a menor tensión que la inversora. <b>(+0,10 pt)</b></td></tr>
        </table>
 
     <div style="page-break-after: always;"></div>
@@ -76,7 +76,7 @@ Puntaje total: 6 pt. Justifique sus respuestas e indique unidades.
        <img src="https://julianodb.github.io/electronic_circuits_diagrams/P1_low_pass_2_poles.png" width="450">
 
        <table width="100%" height="322">
-       <tr><td valign="top">$R_2$ carga el RC pasivo: $\tau_1=(R_1\parallel R_2)C_1=(2.55\ k\Omega)(6.8\ \mu F)=17.34\ ms$. La realimentación aporta $\tau_2=R_3C_2=0.220\ ms$. Por tanto $H(s)=-\frac{100}{10.2}\frac{1}{(1+0.01734s)(1+0.000220s)}$, con polos aproximadamente $-57.7$ y $-4545\ s^{-1}$. <b>(+0,50 pt)</b><br>Como $\tau_1\approx78.8\tau_2$, domina el polo de $-57.7\ s^{-1}$. El formulario indica aproximadamente 95 % a las tres constantes de tiempo: $t_{95}\approx3\tau_1=52.02\ ms\approx52\ ms$. En ese nivel $v_s\approx-0.931\ V$. Es una aproximación por polo dominante, no una regla exacta para todo sistema de dos polos. No se necesita invertir Laplace. <b>(+0,80 pt)</b></td></tr>
+       <tr><td valign="top">En Laplace, con condiciones iniciales nulas: $V_x$ es el nodo común a $R_1$, $R_2$ y $C_1$; por realimentación negativa, $V_-=0$, $i_-=0$.<br>En $V_x$: $\frac{V_x-V_i}{R_1}+sC_1V_x+\frac{V_x}{R_2}=0$; así, $V_i=(1+\frac{R_1}{R_2}+sR_1C_1)V_x$.<br>En la entrada inversora: $-\frac{V_x}{R_2}-\frac{V_s}{R_3}-sC_2V_s=0$, luego $V_x=-\frac{R_2}{R_3}(1+sR_3C_2)V_s$.<br>Sustituyendo $V_x$ en la primera ecuación: $V_i=-\frac{R_1+R_2+sR_1R_2C_1}{R_3}(1+sR_3C_2)V_s$.<br>Así, $H(s)=\frac{V_s}{V_i}=-\frac{R_3}{(R_1+R_2+sR_1R_2C_1)(1+sR_3C_2)}$.<br>Con los valores dados: $H(s)=\frac{-9.80392}{(1+0.01734s)(1+0.000220s)}$. <b>(+0,50 pt)</b><br>Los polos dan $\tau_1=17.34\ ms$ y $\tau_2=0.220\ ms$. Como $\tau_1/\tau_2\approx78.8$, domina $\tau_1$. Con el formulario, $t_{95}\approx3\tau_1\approx52\ ms$ (aproximación por polo dominante). <b>(+0,80 pt)</b></td></tr>
        </table>
 
     <div style="page-break-after: always;"></div>
