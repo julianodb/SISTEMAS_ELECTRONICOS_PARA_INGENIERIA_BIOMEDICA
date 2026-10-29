@@ -10,7 +10,7 @@
 
 Midan la resistencia de 1 kΩ y utilicen su valor real en los cálculos: $R = __________\ \Omega$.
 
-Configuren el límite de corriente de la fuente a **20 mA**. Apaguen la fuente antes de modificar conexiones. Consulten al docente ante dudas.
+Configuren el límite de corriente de la fuente a **200 mA**. Apaguen la fuente antes de modificar conexiones. Consulten al docente ante dudas.
 
 ## Parte A. Diodo en directa e inversa
 
@@ -18,7 +18,7 @@ Configuren el límite de corriente de la fuente a **20 mA**. Apaguen la fuente a
 
 Armen el circuito de la figura 1 con $R = 1\ k\Omega$. Inviertan solo el diodo para la última medición.
 
-![Diodo y resistencia en serie](../img/L3_L4_diode.svg)
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/L3_L4_diode.png" width="200">
 
 Figura 1: Conexión en directa.
 
@@ -31,7 +31,8 @@ Completen la tabla. Utilicen $V_D = V_A-V_K$ e $I_D$ positiva de ánodo a cátod
 | Directa | 0,5 | | | | |
 | Directa | 1 | | | | |
 | Directa | 3 | | | | |
-| Inversa | 3 | | | | |
+| Directa | 10 | | | | |
+| Inversa | 10 | | | | |
 
 Resolución del rango utilizado para medir $V_R$ en inversa: __________.
 
@@ -49,7 +50,7 @@ Resolución del rango utilizado para medir $V_R$ en inversa: __________.
 
 Armen el circuito de la figura 2 con $V_{CC} = 5\ V$, $R = 1\ k\Omega$, $R_G = 100\ k\Omega$ y un potenciómetro de **10 kΩ**. Mantengan este circuito durante toda la parte B.
 
-![LED con BS170 y control de compuerta por potenciómetro](../img/L3_L4_led_mosfet.svg)
+<img src="https://julianodb.github.io/electronic_circuits_diagrams/L3_L4_led_mosfet.png" width="400">
 
 Figura 2: El potenciómetro permite variar $V_{GS}$ sin cambiar conexiones.
 
