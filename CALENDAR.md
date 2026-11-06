@@ -39,18 +39,18 @@
 |    | 16 | 17       | 18 | 19        | 20 | 21 | 22 |
 |  9 | T5]| P2       |    | F2        |    |    |    |
 |    | 23 | 24       | 25 | 26        | 27 | 28 | 29 |
-| 10 |    | 15 16 [T6|A:E6 B:E6| A:L7 B:L7|    |    |    |
+| 10 |    | 15 16 [T6|A:E4 B:E4| A:L5 B:L5|    |    |    |
 
 ## DICIEMBRE / 2026
 
 |Sem |Lun |Mar       |Mie |Jue       |Vie |Sab |Dom |
 |:-: |:-: |:-:       |:-: |:-:       |:-: |:-: |:-: |
 |    | 30 |  1       |  2 |  3       |  4 |  5 |  6 |
-| 11 | T6]| 17 18 [T7|    | A:E4 B:L5|    |    |    |
+| 11 | T6]| 17 18 [T7|    | A:E5 B:L6|    |    |    |
 |    |  7 |  8       |  9 | 10       | 11 | 12 | 13 |
-| 12 | FF | FF       | T7]| A:L5 B:E4 |    |    |    |
+| 12 | FF | FF       | T7]| A:L6 B:E5 |    |    |    |
 |    | 14 | 15       | 16 | 17       | 18 | 19 | 20 |
-| 13 |    | 19 20    |A:E5 B:E5| A:L6 B:L6|    |    ||
+| 13 |    | 19 20    |A:E6 B:E6| A:L7 B:L7|    |    ||
 |    | 21 | 22       | 23 | 24       | 25 | 26 | 27 |
 | 14 |    | P3       |    | F3       | FF | FF |    |
 |    | 28 | 29       | 30 | 31       |  1 |  2 |  3 |
@@ -134,14 +134,14 @@
 | [10](/teoria/10_MOSFET_II.md) | mosfet como amplificador | Uso del mosfet como amplificador, Análisis de pequeñas señales, Amplificador dreno común, amplificador diferencial | inicio $T_6$ |
 | [11 y 12](/teoria/11_12_voltage_regulators.md) | Reguladores de Voltaje + Fuentes Conmutadas | Reguladores de Voltaje + Fuentes Conmutadas | |
 | [P2](/teoria/P2.md) | PEP2 | diodos, MOSFET y reguladores de voltaje |  |
-| [13](/teoria/13_frec.md) | Respuesta en frecuencia | Respuesta en frecuencia, Relación con Función de Transferencia, filtros pasivos, diagrama de Bode |  |
-| [14](/teoria/14_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_4$ |
-| [15](/teoria/15_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
-| [16](/teoria/16_oscilators.md) | Osciladores | Osciladores |  |
-| [17](/teoria/17_multivibrators.md) | Multivibradores | multivibradores bi-estables |  |
-| [18](/teoria/18_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable | inicio $T_8$  |
-| [19](/teoria/19_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
-| [20](/teoria/20_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |
+| [13](/teoria/13_voltage_regulators_II.md) | Fuentes Conmutadas II | Fuentes Conmutadas II |  inicio $T_7$ |
+| [14](/teoria/14_semiconductors.md) | Materiales y física de componentes pasivos y semiconductores | resistividad, semiconductores, diodos, fotodiodos, fototransistores |  |
+| [15](/teoria/15_frec.md) | Respuesta en frecuencia | Respuesta en frecuencia, Relación con Función de Transferencia, filtros pasivos, diagrama de Bode |  |
+| [16](/teoria/16_frec_II.md) | Filtros Activos | Filtros activos, respuesta en frecuencia, frecuencia de corte | inicio $T_4$ |
+| [17](/teoria/17_frec_III.md) | Filtros activos II | Filtros activos, ancho de banda, normalización |  |
+| [18](/teoria/18_oscilators.md) | Osciladores | Osciladores |  |
+| [19](/teoria/19_multivibrators.md) | Multivibradores | multivibradores bi-estables |  |
+| [20](/teoria/20_multivibrators_II.md) | Multivibradores | multivibradores astable y monoestable | inicio $T_8$  |
 | P3 | PEP3 | respuesta en frecuencia, filtros, osciladores, multivibradores, reguladores de voltaje y semiconductores | |
 | PO | POR | Prueba Optativa Recuperativa | |
 
@@ -152,9 +152,9 @@
 - [L2](/laboratorio/L2_opamp.md): amplificador operacional y aplicaciones en CC
 - [L3](/laboratorio/L3_diodes.md): diodo DC y LEDs
 - [L4](/laboratorio/L4_mosfet.md): transistor MOSFET (curvas características), corte y saturación
-- [L5](/laboratorio/L5_frec.md): respuesta en frecuencia / filtros activos
-- [L6](/laboratorio/L6_multivibrators.md): multivibradores
-- L7 [opción 1](/laboratorio/L7_vreg_option_1.md) y [opción 2](/laboratorio/L7_vreg_option_2.md): fuentes de poder / reguladores de voltaje
+- L5 [opción 1](/laboratorio/L5_vreg_option_1.md) y [opción 2](/laboratorio/L5_vreg_option_2.md): fuentes de poder / reguladores de voltaje
+- [L6](/laboratorio/L6_frec.md): respuesta en frecuencia / filtros activos
+- [L7](/laboratorio/L7_multivibrators.md): multivibradores
 
 # Talleres de Fabricación
 
@@ -168,6 +168,6 @@
 - E1: Laboratorio Online 1: Amplificador operacional y aplicaciones en CC
 - E2: Laboratorio Online 2: Diodos
 - E3: Laboratorio Online 3: Transistores
-- E4: Laboratorio Online 4: Respuesta en frecuencia / filtros activos
-- E5: Laboratorio Online 5: Multivibradores
-- E6: Laboratorio Online 6: Fuentes de Poder / Reguladores de Voltaje
+- E4: Laboratorio Online 4: Fuentes de Poder / Reguladores de Voltaje
+- E5: Laboratorio Online 5: Respuesta en frecuencia / filtros activos
+- E6: Laboratorio Online 6: Multivibradores
